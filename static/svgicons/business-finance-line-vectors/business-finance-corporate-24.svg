@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<svg width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	
-		.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:6,5;}
-</style><path class="st1" d="M52,16c0,1.1-0.5,2.1-1.2,2.8C50.1,19.5,49.1,20,48,20h-2v-4H18v4h-2c-2.2,0-4-1.8-4-4c0-1.1,0.5-2.1,1.2-2.8  c0.7-0.7,1.7-1.2,2.8-1.2h32C50.2,12,52,13.8,52,16z"/><line class="st1" x1="48" x2="46" y1="16" y2="16"/><line class="st1" x1="18" x2="16" y1="16" y2="16"/><path class="st1" d="M46,16v31c0,2.8-2.2,5-5,5H23c-2.8,0-5-2.2-5-5V16H46z"/><line class="st1" x1="38.8" x2="38.8" y1="52" y2="16"/><circle class="st1" cx="24" cy="46" r="2"/><circle class="st1" cx="24" cy="38" r="2"/></svg>

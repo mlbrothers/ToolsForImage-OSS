@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <path fill="var(--ci-primary-color, #000000)" d="M476,16H36A20.023,20.023,0,0,0,16,36V476a20.023,20.023,0,0,0,20,20H476a20.023,20.023,0,0,0,20-20V36A20.023,20.023,0,0,0,476,16ZM464,464H48V48H464Z" class="ci-primary"/>
-</svg>

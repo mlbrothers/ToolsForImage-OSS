@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 -2 32 32" xmlns="http://www.w3.org/2000/svg">
-  <g id="Group_5" data-name="Group 5" transform="translate(-1058 -114)">
-    <path id="Rectangle_3" data-name="Rectangle 3" d="M0,0H25.057A1.943,1.943,0,0,1,27,1.943V20.057A1.943,1.943,0,0,1,25.057,22H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1059 119)" fill="#cbff94" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Rectangle_4" data-name="Rectangle 4" d="M4,0h7a0,0,0,0,1,0,0V8a0,0,0,0,1,0,0H4A4,4,0,0,1,0,4V4A4,4,0,0,1,4,0Z" transform="translate(1078 126)" fill="#cbff94" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Rectangle_5" data-name="Rectangle 5" d="M2,0H21.057A1.943,1.943,0,0,1,23,1.943V4a0,0,0,0,1,0,0H2A2,2,0,0,1,0,2V2A2,2,0,0,1,2,0Z" transform="translate(1059 115)" fill="#cbff94" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <circle id="Ellipse_1" data-name="Ellipse 1" cx="1" cy="1" r="1" transform="translate(1081 129)" stroke="#333" stroke-miterlimit="10" stroke-width="1"/>
-  </g>
-</svg>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.4933 2.84436H6.50649C4.48389 2.84436 2.84424 4.48401 2.84424 6.50662V17.4934C2.84424 19.516 4.48389 21.1556 6.50649 21.1556H17.4933C19.5159 21.1556 21.1555 19.516 21.1555 17.4934V6.50662C21.1555 4.48401 19.5159 2.84436 17.4933 2.84436Z" stroke="#1C1C1C" stroke-width="1.7" stroke-linecap="round"/>
-<circle cx="8.5" cy="8.5" r="1.65" stroke="#DF1463" stroke-width="1.7"/>
-<circle cx="15.5" cy="8.5" r="1.65" stroke="#1C1C1C" stroke-width="1.7"/>
-<circle cx="8.5" cy="15.5" r="1.65" stroke="#1C1C1C" stroke-width="1.7"/>
-<circle cx="15.5" cy="15.5" r="1.65" stroke="#1C1C1C" stroke-width="1.7"/>
-</svg>

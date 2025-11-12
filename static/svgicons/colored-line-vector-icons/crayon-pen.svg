@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 32.062 32.062" xmlns="http://www.w3.org/2000/svg">
-  <g id="Group_1" data-name="Group 1" transform="translate(-1409.168 -43.938)">
-    <path id="Path_1" data-name="Path 1" d="M1415.824,73.586,1410.168,75l1.414-5.657,23.576-23.353a2.843,2.843,0,0,1,4.01.01h0a2.842,2.842,0,0,1,.009,4.01Z" fill="#99ecff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Line_1" data-name="Line 1" x2="4.243" y2="4.243" transform="translate(1433.168 47)" fill="#ffffff" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
-    <line id="Line_2" data-name="Line 2" x2="4.243" y2="4.243" transform="translate(1411.925 68.757)" fill="#ffffff" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
-  </g>
-</svg>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <polyline stroke="#979797" stroke-linecap="round" stroke-width="2" points="46.533 25.237 46.533 19.975 46.533 14.829" transform="scale(1 -1) rotate(-45 -1.331 0)"/>
-    <circle cx="55" cy="11" r="7" fill="#D8D8D8"/>
-    <polygon fill="#5EA7FF" points="19.734 17.985 27.709 17.985 27.709 66.985 19.734 66.985" transform="rotate(45 23.722 42.485)"/>
-    <rect width="8" height="5" x="38.814" y="20.893" fill="#80D25B" transform="rotate(45 42.814 23.393)"/>
-  </g>
-</svg>

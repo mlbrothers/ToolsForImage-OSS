@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <polygon fill="#D650C7" points="2 47.106 10.381 37.785 30.617 46.499 36.555 25.22 48.68 27.926 62 11.451 62 52.241 2 52.241"/>
-    <polygon fill="#FFAF40" points="2 50.865 14.981 44.085 30.136 52.093 48.497 23.331 62 40 62 56 2 56"/>
-    <rect width="60" height="3" x="2" y="59" fill="#BD7575"/>
-  </g>
-</svg>

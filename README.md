@@ -36,7 +36,6 @@ A multilingual web application that provides a suite of image processing tools. 
 - **Web-based Interface**: No installation required, works directly in your browser
 - **Clean and Modern UI**: User-friendly interface with responsive design
 - **Privacy-Focused**: All processing happens locally or temporarily - no data is stored
-- **SVG Icon Library**: Browse and download thousands of SVG icons
 
 ## Prerequisites
 
@@ -125,8 +124,6 @@ ToolsForImage-OSS/
 │   └── pull_request_template.md
 ├── static/                 # Static assets (CSS, JS, images)
 │   ├── styles.css
-│   ├── svg-styles.css
-│   ├── svgicons/           # SVG icon collections
 │   └── ...
 └── templates/              # HTML templates
     ├── en/                 # English templates
@@ -147,7 +144,6 @@ ToolsForImage-OSS/
 - **Crop Image**: Crop images to desired dimensions
 - **Blur Face**: Privacy protection by blurring faces
 - **Remove Background**: Automatic background removal
-- **SVG Icons**: Browse and download SVG icons
 
 ## Contributing
 

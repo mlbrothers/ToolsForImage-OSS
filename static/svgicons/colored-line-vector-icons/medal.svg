@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="-2 0 32.001 32.001" xmlns="http://www.w3.org/2000/svg">
-  <g id="medal" transform="translate(-1059 -253)">
-    <path id="Path_45" data-name="Path 45" d="M1075,265h-9l-6-11h9Z" fill="#99ecff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Path_46" data-name="Path 46" d="M1071,265h9l6-11h-9Z" fill="#99ecff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <circle id="Ellipse_12" data-name="Ellipse 12" cx="12" cy="12" r="12" transform="translate(1061 260.001)" fill="#fff1b6" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Path_47" data-name="Path 47" d="M1070,270l3-3v10" fill="none" stroke="#333" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>

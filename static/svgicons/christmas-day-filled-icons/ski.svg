@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 100.001 100.001" xmlns="http://www.w3.org/2000/svg">
-  <g id="Group_16" data-name="Group 16" transform="translate(-272.363 -1004.767)">
-    <path id="Rectangle_59" data-name="Rectangle 59" d="M7.685,0H87.853a0,0,0,0,1,0,0V15.541a0,0,0,0,1,0,0H7.685A7.685,7.685,0,0,1,0,7.856V7.685A7.685,7.685,0,0,1,7.685,0Z" transform="translate(348.302 1018.585) rotate(135)" fill="#5aade0" stroke="#2d4d68" stroke-linejoin="round" stroke-width="4"/>
-    <rect id="Rectangle_66" data-name="Rectangle 66" width="17.159" height="15.729" transform="translate(294.209 1050.435) rotate(-45)" fill="#ebf4f7" stroke="#2d4d68" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Rectangle_67" data-name="Rectangle 67" d="M7.685,0H87.853a0,0,0,0,1,0,0V15.541a0,0,0,0,1,0,0H7.685A7.685,7.685,0,0,1,0,7.856V7.685A7.685,7.685,0,0,1,7.685,0Z" transform="translate(369.535 1039.818) rotate(135)" fill="#5aade0" stroke="#2d4d68" stroke-linejoin="round" stroke-width="4"/>
-    <rect id="Rectangle_68" data-name="Rectangle 68" width="17.159" height="15.729" transform="translate(315.442 1071.668) rotate(-45)" fill="#ebf4f7" stroke="#2d4d68" stroke-linejoin="round" stroke-width="4"/>
-  </g>
-</svg>

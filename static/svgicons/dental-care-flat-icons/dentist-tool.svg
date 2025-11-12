@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <path stroke="#979797" stroke-linecap="round" stroke-width="2" d="M45.7841497,26.9902774 C46.8699361,28.0760638 48.3699361,28.7476367 50.0267904,28.7476367 C53.3404989,28.7476367 56.0267904,26.0613452 56.0267904,22.7476367 C56.0267904,19.4339282 53.3404989,16.7476367 50.0267904,16.7476367 L50.0267904,11.4849974 L50.0267904,6.33976325" transform="scale(1 -1) rotate(-45 8.551 0)"/>
-    <polygon fill="#5EA7FF" points="20.734 17.985 28.709 17.985 28.709 66.985 20.734 66.985" transform="rotate(45 24.722 42.485)"/>
-    <rect width="8" height="5" x="39.814" y="20.893" fill="#80D25B" transform="rotate(45 43.814 23.393)"/>
-  </g>
-</svg>
