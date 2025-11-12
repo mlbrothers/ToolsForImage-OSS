@@ -1,0 +1,194 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将PNG图像转换为BMP。快速、安全的在线PNG到BMP转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线PNG到BMP转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线PNG到BMP转换器</h1>
+<p>轻松将您的PNG图像转换为BMP格式。上传PNG图像，我们将为您将其转换为BMP。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是PNG到BMP的转换？</h2>
+        <p>PNG到BMP的转换是将图像文件从PNG格式转换为BMP格式的过程。BMP（位图）是一种用于存储数字图像的光栅图形格式。将PNG图像转换为BMP格式有助于在需要使用简单、未压缩的图像格式时，保持高质量以便进行编辑或打印。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将PNG转换为BMP？</h2>
+        <p>将PNG图像转换为BMP有几个原因：</p>
+        <ul>
+            <li><strong>高质量图像：</strong>BMP文件保持出色的图像质量，没有压缩，非常适合专业应用。</li>
+            <li><strong>编辑灵活性：</strong>由于没有压缩伪影，BMP格式通常更适合用于图形设计和编辑。</li>
+            <li><strong>兼容性：</strong>BMP文件被许多软件应用广泛支持，确保在不同平台上都能轻松访问和使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的PNG到BMP转换器</h2>
+        <p>我们的PNG到BMP转换工具设计简单易用，操作直观。以下是使用方法：</p>
+        <ul>
+            <li>点击“上传PNG文件”按钮，选择您要转换的PNG图像。</li>
+            <li>上传图像后，我们的工具会自动将其转换为BMP格式。</li>
+            <li>转换完成后，点击“下载BMP”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种PNG文件，确保每次转换都顺畅。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的PNG到BMP转换器的优势</h2>
+        <p>以下是使用我们转换工具的一些优点：</p>
+        <ul>
+            <li><strong>快速高效：</strong>快速轻松地将您的PNG图像转换为BMP，无需复杂步骤。</li>
+            <li><strong>无质量损失：</strong>享受高质量输出，无压缩，确保您的图像保持最佳状态。</li>
+            <li><strong>免费在线：</strong>直接在您的浏览器中免费使用我们的工具，无需下载任何软件。</li>
+            <li><strong>用户友好界面：</strong>我们的工具设计简单，易于操作，适合所有用户。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG到BMP转换的常见用途</h2>
+        <p>以下是一些情况下将PNG转换为BMP可能会带来好处的场景：</p>
+        <ul>
+            <li><strong>图形设计：</strong>在图形设计项目中使用BMP图像，要求高质量且无压缩的图像。</li>
+            <li><strong>图像编辑：</strong>将PNG文件转换为BMP，以便在各种软件中进行更方便的编辑。</li>
+            <li><strong>打印：</strong>使用BMP图像进行打印，因为它们保持高质量，无压缩伪影。</li>
+            <li><strong>归档：</strong>将图像存储为BMP格式，便于长期存档，保持图像质量。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将PNG转换为BMP如何帮助您</h2>
+        <p>将PNG图像转换为BMP可以增强它们在各种应用中的可用性和性能。以下是如何帮助您的方式：</p>
+        <ul>
+            <li><strong>更好的编辑体验：</strong>BMP图像在图形设计软件中更容易处理，使您的编辑过程更顺畅。</li>
+            <li><strong>改进的打印质量：</strong>使用BMP文件确保打印的图像保持清晰锐利。</li>
+            <li><strong>轻松访问：</strong>BMP格式与许多应用兼容，确保您的图像可以在需要的地方使用。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

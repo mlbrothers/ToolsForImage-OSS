@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>tokyo</title>
+
+<g id="tokyo">
+
+<path d="M31.786,43.982a14,14,0,1,1,1.03-26.632" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39.1,21.969a14,14,0,0,1-.88,18.1" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="28" y1="62" x2="42.611" y2="62" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="37" y1="24" x2="37.226" y2="28.594" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32.816" y1="28.594" x2="33" y2="24" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="37.503 34.249 38.867 62 31.48 62 32.591 34.233" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="38.105 33.903 32.242 33.903 29.389 28.944 40.958 28.944 38.105 33.903" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="37 24 32.745 23.986 31.042 21 39.306 21 37 24" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="33 21 33 16 37 16 37 21" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="35" y1="3" x2="35" y2="16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33.75" y1="3" x2="36.25" y2="3" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="28" y1="12" x2="28" y2="9" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="28" y1="52" x2="28" y2="49" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10" y1="29" x2="6" y2="29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="50" y1="29" x2="46" y2="29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

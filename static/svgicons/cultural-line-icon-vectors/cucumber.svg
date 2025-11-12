@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>cucumber</title>
+
+<g id="cucumber">
+
+<line x1="42.586" y1="40.586" x2="45.414" y2="43.414" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="45.414" y1="40.586" x2="42.586" y2="43.414" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34,31V61a2,2,0,0,1-2,2h0a2,2,0,0,1-2-2V31" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M38,16v9a6,6,0,0,1-6,6h0a6,6,0,0,1-6-6V16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30" y1="31" x2="30" y2="16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34" y1="31" x2="34" y2="16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30" y1="37" x2="34" y2="37" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29.979,19.073a44.46,44.46,0,0,1-15.91-2.99A6,6,0,1,1,18.442,4.909,29.547,29.547,0,0,0,44.907,2.868a6,6,0,0,1,6.219,10.263A40.3,40.3,0,0,1,29.979,19.073Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53.163" y1="4.919" x2="55" y2="4" style="fill:#a9ba5a;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="17.5" cy="9.5" r="1.132"/>
+
+<circle cx="14.5" cy="11.5" r="1.132"/>
+
+<circle cx="20.5" cy="13.5" r="1.132"/>
+
+<circle cx="24.5" cy="10.5" r="1.132"/>
+
+<circle cx="25.5" cy="13.5" r="1.132"/>
+
+<circle cx="30.5" cy="15.5" r="1.132"/>
+
+<circle cx="29.5" cy="11.5" r="1.132"/>
+
+<circle cx="34.5" cy="11.5" r="1.132"/>
+
+<circle cx="34.5" cy="15.5" r="1.132"/>
+
+<circle cx="40.5" cy="9.5" r="1.132"/>
+
+<circle cx="44.5" cy="11.5" r="1.132"/>
+
+<circle cx="44.5" cy="7.5" r="1.132"/>
+
+<circle cx="49.5" cy="9.5" r="1.132"/>
+
+<circle cx="38.5" cy="13.5" r="1.132"/>
+
+<circle cx="21" cy="49" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="51" cy="24" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="18" cy="34" r="1"/>
+
+</g>
+
+</svg>

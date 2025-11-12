@@ -1,0 +1,192 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images TIFF en PNG avec ToolsForImage. Convertisseur gratuit en ligne de TIFF en PNG.">
+{% endblock %}
+
+{% block title %}Convertir TIFF en PNG en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Conversion TIFF en PNG</h1>
+<p>Convertissez facilement vos images TIFF en format PNG. Téléchargez une image TIFF et nous la convertirons en PNG pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Conversion TIFF en PNG ?</h2>
+        <p>La conversion TIFF en PNG consiste à transformer des images du format TIFF (Tagged Image File Format) en PNG (Portable Network Graphics). Les fichiers TIFF sont connus pour leur haute qualité et sont souvent utilisés dans la photographie professionnelle et l'édition. Les fichiers PNG, quant à eux, sont populaires pour leur compression sans perte, permettant des images de haute qualité sans perte de clarté. Convertir des images TIFF en PNG vous permet de conserver la qualité de l'image tout en profitant de la compatibilité et de la prise en charge de la transparence du PNG.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Convertir un TIFF en PNG ?</h2>
+        <p>Voici plusieurs raisons de convertir des images TIFF en PNG :</p>
+        <ul>
+            <li><strong>Qualité sans Perte :</strong> Le format PNG conserve la qualité originale de vos images sans perte de compression, idéal pour les graphiques et les images avec texte.</li>
+            <li><strong>Prise en Charge de la Transparence :</strong> Le format PNG permet des arrière-plans transparents, parfait pour les logos et les graphiques Web.</li>
+            <li><strong>Compatibilité Élargie :</strong> Le format PNG est largement pris en charge sur toutes les plateformes et navigateurs, assurant la bonne qualité de vos images partout.</li>
+            <li><strong>Efficace pour le Web :</strong> Les fichiers PNG conviennent bien à une utilisation sur le web, offrant des visuels de haute qualité qui améliorent l'expérience utilisateur.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Convertisseur TIFF en PNG</h2>
+        <p>Notre outil de conversion TIFF en PNG est conçu pour être facile à utiliser. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger un Fichier TIFF" pour sélectionner l'image TIFF que vous souhaitez convertir.</li>
+            <li>Une fois le téléchargement terminé, la conversion commencera automatiquement.</li>
+            <li>Après la conversion, cliquez sur "Télécharger PNG" pour sauvegarder la nouvelle image PNG sur votre appareil.</li>
+        </ul>
+        <p>Notre outil prend en charge divers formats TIFF, assurant une conversion sans tracas.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'Utiliser Notre Convertisseur TIFF en PNG</h2>
+        <p>Voici quelques avantages d'utiliser notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et Simple :</strong> Convertissez vos images TIFF en PNG en quelques clics seulement.</li>
+            <li><strong>Pas de Perte de Qualité :</strong> Profitez de résultats de haute qualité sans dégradation lors de la conversion.</li>
+            <li><strong>Gratuit et Accessible :</strong> Utilisez notre outil en ligne gratuitement, sans besoin de téléchargement ou d'installation.</li>
+            <li><strong>Interface Intuitive :</strong> Notre outil est conçu pour être facile à naviguer, assurant une expérience fluide.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations Courantes de la Conversion TIFF en PNG</h2>
+        <p>Convertir TIFF en PNG est utile dans de nombreux cas :</p>
+        <ul>
+            <li><strong>Conception Graphique :</strong> Utilisez le format PNG pour des graphiques de haute qualité nécessitant de la transparence ou de la clarté.</li>
+            <li><strong>Contenu Web :</strong> Améliorez les sites Web avec des images nettes qui se chargent rapidement et ont un aspect professionnel.</li>
+            <li><strong>Réseaux Sociaux :</strong> Partagez des images qui conservent leur qualité et ont un bon rendu sur diverses plateformes.</li>
+            <li><strong>Archivage :</strong> Enregistrez des images dans un format sans perte pour un stockage à long terme et un accès facile.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la Conversion TIFF en PNG Peut Vous Aider</h2>
+        <p>Convertir vos images TIFF en PNG peut améliorer leur utilisation et leurs performances. Voici comment :</p>
+        <ul>
+            <li><strong>Qualité Améliorée :</strong> Les fichiers PNG conservent la qualité originale de l'image, les rendant adaptés aux graphiques détaillés.</li>
+            <li><strong>Partage Amélioré :</strong> Le format PNG est largement accepté, garantissant que vos images ont un bon rendu lorsqu'elles sont partagées en ligne.</li>
+            <li><strong>Grande Flexibilité :</strong> La prise en charge de la transparence par le PNG permet une utilisation graphique polyvalente dans divers projets.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

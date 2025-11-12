@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#993839;}.cls-2{fill:#cc4b4c;}.cls-3{fill:#f0c419;}.cls-4{fill:#b49313;}.cls-5{fill:#849eb4;}.cls-6{fill:#b0d3f0;}.cls-7{fill:#cbb292;}.cls-8{fill:#98856e;}.cls-9{fill:#4d4d4d;}.cls-10{fill:#666;}.cls-11{fill:#5f443e;}.cls-12{fill:#7f5b53;}.cls-13{fill:#726453;}.cls-14{fill:#3a3a3a;}.cls-15{fill:#ccc;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 27" id="Layer_27">
+
+<path class="cls-1" d="M19,2H45a1,1,0,0,1,1,1v7a0,0,0,0,1,0,0H18a0,0,0,0,1,0,0V3A1,1,0,0,1,19,2Z"/>
+
+<path class="cls-2" d="M42,2H19a1,1,0,0,0-1,1v7H43V3A1,1,0,0,0,42,2Z"/>
+
+<path class="cls-3" d="M54,20h4a2,2,0,0,1,2,2v2a2,2,0,0,1-2,2H54"/>
+
+<path class="cls-3" d="M10,20H6a2,2,0,0,0-2,2v2a2,2,0,0,0,2,2h4"/>
+
+<path class="cls-4" d="M8,30l3.68-18.39a2,2,0,0,1,2-1.61H50.36a2,2,0,0,1,2,1.61L56,30"/>
+
+<path class="cls-3" d="M47.36,10H13.64a2,2,0,0,0-2,1.61L8,30H53L49.32,11.61A2,2,0,0,0,47.36,10Z"/>
+
+<polygon class="cls-5" points="56 30 52.8 14 11.2 14 8 30 56 30"/>
+
+<path class="cls-6" d="M11.2,14,8,30H53L49.8,14Z"/>
+
+<path class="cls-4" d="M4,42V32a2,2,0,0,1,2-2H58a2,2,0,0,1,2,2V42"/>
+
+<path class="cls-3" d="M55,30H6a2,2,0,0,0-2,2V42H57V32A2,2,0,0,0,55,30Z"/>
+
+<rect class="cls-1" height="4" rx="2" ry="2" width="8" x="48" y="34"/>
+
+<path class="cls-2" d="M53,36a2,2,0,0,0-2-2H50a2,2,0,0,0,0,4h1A2,2,0,0,0,53,36Z"/>
+
+<rect class="cls-1" height="4" rx="2" ry="2" width="8" x="8" y="34"/>
+
+<path class="cls-2" d="M13,36a2,2,0,0,0-2-2H10a2,2,0,0,0,0,4h1A2,2,0,0,0,13,36Z"/>
+
+<rect class="cls-7" height="8" width="24" x="20" y="34"/>
+
+<path class="cls-8" d="M20,48v2a2,2,0,0,0,2,2H42a2,2,0,0,0,2-2V48"/>
+
+<path class="cls-7" d="M41,50V48H20v2a2,2,0,0,0,2,2H39A2,2,0,0,0,41,50Z"/>
+
+<rect class="cls-3" height="6" width="60" x="2" y="56"/>
+
+<path class="cls-9" d="M48,48v6a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V48"/>
+
+<path class="cls-10" d="M55,54V48H48v6a2,2,0,0,0,2,2h3A2,2,0,0,0,55,54Z"/>
+
+<path class="cls-9" d="M6,48v6a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V48"/>
+
+<path class="cls-10" d="M13,54V48H6v6a2,2,0,0,0,2,2h3A2,2,0,0,0,13,54Z"/>
+
+<rect class="cls-11" height="6" width="60" x="2" y="42"/>
+
+<rect class="cls-12" height="6" width="57" x="2" y="42"/>
+
+<rect class="cls-13" height="2" width="18" x="23" y="37"/>
+
+<rect class="cls-14" height="2" width="22" x="21" y="5"/>
+
+<rect class="cls-5" height="16" width="2" x="31" y="14"/>
+
+<rect class="cls-15" height="2" transform="translate(-4.13 34.02) rotate(-45)" width="8.49" x="34.76" y="21"/>
+
+<rect class="cls-15" height="2" transform="translate(-1.79 39.68) rotate(-45)" width="8.49" x="42.76" y="21"/>
+
+<rect class="cls-15" height="2" transform="translate(-10.58 18.46) rotate(-45)" width="8.49" x="12.76" y="21"/>
+
+<rect class="cls-15" height="2" transform="translate(-8.23 24.12) rotate(-45)" width="8.49" x="20.76" y="21"/>
+
+<rect class="cls-14" height="2" width="3" x="6" y="51"/>
+
+<rect class="cls-14" height="2" width="3" x="13" y="51"/>
+
+<rect class="cls-14" height="2" width="3" x="48" y="51"/>
+
+<rect class="cls-14" height="2" width="3" x="55" y="51"/>
+
+<polygon class="cls-14" points="2.59 62 5.41 62 11.41 56 8.59 56 2.59 62"/>
+
+<polygon class="cls-14" points="15.41 62 21.41 56 18.59 56 12.59 62 15.41 62"/>
+
+<polygon class="cls-14" points="25.41 62 31.41 56 28.59 56 22.59 62 25.41 62"/>
+
+<polygon class="cls-14" points="32.59 62 35.41 62 41.41 56 38.59 56 32.59 62"/>
+
+<polygon class="cls-14" points="45.41 62 51.41 56 48.59 56 42.59 62 45.41 62"/>
+
+<polygon class="cls-14" points="52.59 62 55.41 62 61.41 56 58.59 56 52.59 62"/>
+
+</g>
+
+</svg>

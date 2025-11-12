@@ -1,0 +1,90 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="404 - पृष्ठ नहीं मिला। अनुरोधित पृष्ठ ToolsForImage पर मौजूद नहीं है।">
+{% endblock %}
+
+{% block title %}404 - पृष्ठ नहीं मिला | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 2em;">
+    <h1>404 - पृष्ठ नहीं मिला</h1>
+    <p>अरे नहीं! जिस पृष्ठ की आप खोज कर रहे हैं, वह मौजूद नहीं है।</p>
+    <p>चलो, आपको सही रास्ते पर लाते हैं:</p>
+    <p><a href="/">मुखपृष्ठ पर लौटें</a></p>
+</div>
+
+<style>
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    .tools-list {
+        display: grid;
+        /* Use grid layout */
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns */
+        gap: 20px;
+        /* Space between grid items */
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        /* Center the grid */
+        max-width: 1200px;
+        /* Optional: set a max width for the grid */
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        display: flex;
+        /* Flexbox to center content */
+        flex-direction: column;
+        /* Stack children vertically */
+        align-items: center;
+        /* Center items horizontally */
+    }
+
+    .tools-list li:hover {
+        background-color: var(--primary-color);
+    }
+
+    .tools-list a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+        text-align: center;
+        /* Center text */
+    }
+
+    .tools-list a:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#ffffff;}.cls-4{fill:#d9dce1;}</style>
+
+</defs>
+
+<g id="envelope">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="28" width="22" x="5" y="2"/>
+
+<rect class="cls-3" height="16" width="2" x="15" y="8"/>
+
+<polygon class="cls-4" points="21.54 10 26.87 2 5.13 2 10.46 10 21.54 10"/>
+
+<polygon class="cls-4" points="10.46 22 5.13 30 26.87 30 21.54 22 10.46 22"/>
+
+<path d="M26.87,2H5V30H27V2ZM23.13,4,20.46,8H11.54L8.87,4ZM7,4.8,10.46,10H15V22H10.46L7,27.2ZM8.87,28l2.67-4h8.92l2.67,4Zm12.67-6H17V10h4.54L25,4.8V27.2Z"/>
+
+</g>
+
+</svg>

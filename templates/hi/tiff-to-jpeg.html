@@ -1,0 +1,192 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ TIFF को JPEG छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन TIFF से JPEG कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन TIFF से JPEG में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त TIFF से JPEG कनवर्जन टूल</h1>
+<p>अपनी TIFF छवियों को JPEG फॉर्मेट में आसानी से परिवर्तित करें। एक TIFF छवि अपलोड करें और हम इसे JPEG में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>TIFF से JPEG कनवर्जन क्या है?</h2>
+        <p>TIFF से JPEG कनवर्जन वह प्रक्रिया है जिसमें छवियों को TIFF (टैग्ड इमेज फाइल फॉर्मेट) से JPEG (जॉइंट फोटोग्राफिक एक्सपर्ट्स ग्रुप) फॉर्मेट में बदला जाता है। TIFF उच्च गुणवत्ता के लिए जाना जाता है और अक्सर पेशेवर फोटोग्राफी में उपयोग किया जाता है, जबकि JPEG छोटे फ़ाइल आकार और अच्छी गुणवत्ता के कारण दैनिक उपयोग के लिए एक लोकप्रिय फॉर्मेट है। TIFF छवियों को JPEG में परिवर्तित करना आपको स्थान बचाने और अपनी छवियों को आसानी से साझा करने में मदद कर सकता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को JPEG में क्यों परिवर्तित करें?</h2>
+        <p>TIFF छवियों को JPEG में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>छोटा फ़ाइल आकार:</strong> JPEG छवियाँ संकुचित होती हैं, जिससे उन्हें संग्रहित करना और साझा करना आसान होता है बिना बहुत अधिक स्थान घेरे।</li>
+            <li><strong>व्यापक संगतता:</strong> JPEG सबसे व्यापक रूप से समर्थित छवि फॉर्मेटों में से एक है, जो लगभग सभी उपकरणों और सॉफ़्टवेयर के साथ संगत है।</li>
+            <li><strong>अच्छी गुणवत्ता:</strong> JPEG फॉर्मेट फ़ोटोग्राफ़ के लिए अच्छी गुणवत्ता बनाए रखता है, जिससे यह वेब उपयोग और साझा करने के लिए आदर्श है।</li>
+            <li><strong>तेज़ लोडिंग:</strong> JPEG फ़ाइलें वेबसाइटों पर तेजी से लोड होती हैं, ऑनलाइन देखने के लिए उपयोगकर्ता अनुभव को बढ़ाती हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से JPEG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा TIFF से JPEG कनवर्जन टूल उपयोग में आसानी के लिए डिज़ाइन किया गया है। अपनी छवियों को परिवर्तित करने का तरीका यहाँ है:</p>
+        <ul>
+            <li>TIFF छवि चुनने के लिए "TIFF फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड के बाद, कनवर्जन प्रक्रिया स्वचालित रूप से शुरू हो जाएगी।</li>
+            <li>एक बार कनवर्जन पूरा होने के बाद, "JPEG डाउनलोड करें" पर क्लिक करें ताकि नई छवि को अपने उपकरण में सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न TIFF फॉर्मेट का समर्थन करता है, जिससे सभी उपयोगकर्ताओं के लिए एक सुगम अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से JPEG कनवर्टर के लाभ</h2>
+        <p>हमारे कनवर्जन टूल का उपयोग करने के कुछ लाभ यहाँ दिए गए हैं:</p>
+        <ul>
+            <li><strong>त्वरित और आसान:</strong> कुछ सरल कदमों में अपनी TIFF छवियों को JPEG में परिवर्तित करें।</li>
+            <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> कनवर्जन प्रक्रिया के दौरान महत्वपूर्ण गिरावट के बिना उच्च गुणवत्ता के परिणाम प्राप्त करें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> बिना सॉफ़्टवेयर इंस्टॉलेशन के ऑनलाइन हमारे टूल का उपयोग करें।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> हमारा टूल सहज और नेविगेट करने में आसान डिज़ाइन किया गया है, जिससे एक सुगम अनुभव सुनिश्चित होता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF से JPEG कनवर्जन के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ परिदृश्यों में हैं जहाँ TIFF को JPEG में परिवर्तित करना फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>वेब उपयोग:</strong> JPEG छोटे आकार और अच्छी गुणवत्ता के कारण वेबसाइटों और सोशल मीडिया पर छवियों के लिए आदर्श है।</li>
+            <li><strong>फोटोग्राफी:</strong> JPEG फॉर्मेट का उपयोग करते हुए अपने दोस्तों और परिवार के साथ अपनी तस्वीरें आसानी से साझा करें।</li>
+            <li><strong>डॉक्यूमेंट निर्माण:</strong> फ़ाइल आकार और संगतता महत्वपूर्ण होने पर प्रस्तुतियों या दस्तावेज़ों में JPEG छवियों का उपयोग करें।</li>
+            <li><strong>व्यक्तिगत उपयोग:</strong> विभिन्न प्लेटफार्मों पर साझा करने या अपने उपकरण पर स्थान बचाने के लिए व्यक्तिगत तस्वीरों को तेजी से परिवर्तित करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को JPEG में परिवर्तित करने से कैसे मदद मिलती है</h2>
+        <p>अपनी TIFF छवियों को JPEG में परिवर्तित करने से उनकी उपयोगिता और प्रदर्शन को बढ़ाया जा सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>सुविधा में वृद्धि:</strong> JPEG छवियों को सभी उपकरणों और प्लेटफार्मों पर आसानी से साझा किया जा सकता है।</li>
+            <li><strong>कुशल भंडारण:</strong> अपने उपकरण पर प्रबंधन और संग्रहण के लिए फ़ाइल के आकार को कम करें।</li>
+            <li><strong>साझा करने में सुधार:</strong> ऑनलाइन साझा करने के लिए JPEG फॉर्मेट को प्राथमिकता दी जाती है, यह सुनिश्चित करते हुए कि आपकी छवियाँ कहीं भी देखी जाएं, शानदार दिखें।</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

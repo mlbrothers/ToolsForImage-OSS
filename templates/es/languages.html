@@ -1,0 +1,72 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Elige tu idioma preferido para ToolsForImage - Accede a nuestras herramientas de imágenes en inglés, hindi, francés, chino o español.">
+{% endblock %}
+
+{% block title %}Selección de Idioma | ToolsForImage | Herramientas gratuitas en línea para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Elige tu idioma</h1>
+<p>Selecciona tu idioma preferido para usar ToolsForImage:</p>
+<div class="language-container">
+    <div class="language-box">
+        <a href="/{{ g.lang }}/en">Inglés (English)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/hi">हिन्दी (Hindi)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/fr">Francés (Français)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/zh">Chino (中文)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/es">Español (Spanish)</a>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .language-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .language-box {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-box a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    
+</style>
+{% endblock %}

@@ -1,0 +1,269 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Resize your images effortlessly with ToolsForImage. Adjust dimensions in pixels or percentages while maintaining or ignoring aspect ratio.">
+{% endblock %}
+
+{% block title %}Resize Image | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block content %}
+<h1>Free Online Image Resize Tool</h1>
+<p>Effortlessly resize your image by specifying dimensions in pixels or percentages. You can choose to maintain or ignore the aspect ratio.</p>
+
+<form id="resize-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload Image</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    
+    <div class="resize-options">
+        <label>
+            <input type="radio" name="resizeType" value="pixel" checked onchange="updateDimensionLabels()"> Pixels
+        </label>
+        <label>
+            <input type="radio" name="resizeType" value="percentage" onchange="updateDimensionLabels()"> Percentage
+        </label>
+        <br><br>
+        <label for="width"><span id="widthLabel">Width (px):</span></label>
+        <input type="number" id="width" name="width" min="1" required>
+        <label for="height"><span id="heightLabel">Height (px):</span></label>
+        <input type="number" id="height" name="height" min="1" required>
+        <br><br>
+        <label>
+            <input type="checkbox" id="lockRatio" checked> Lock aspect ratio
+        </label>
+    </div>
+    <br>
+    <button type="button" class="resize-button" onclick="resizeImage()">Resize Image</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is Image Resizing?</h2>
+        <p>Image resizing is the process of changing the dimensions of an image. You can adjust the width and height to fit your needs. Whether you're preparing images for a website, social media, or printing, resizing helps ensure your images look their best.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Resizing Images</h2>
+        <p>Resizing images can greatly improve website performance. Smaller images load faster, enhancing user experience and keeping visitors engaged. This is especially important for online stores, where slow images can lead to lost sales. Additionally, properly sized images help with search engine optimization (SEO), as search engines favor fast-loading pages.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>When to Resize Images</h2>
+        <p>Resize images before uploading them to your website or social media. Large images can slow down loading times, so adjusting their size helps improve performance. It's also helpful when you want to create thumbnails or optimize images for specific devices.</p>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .resize-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 300px;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .resize-options {
+        margin-top: 20px;
+    }
+
+    .resize-options label {
+        margin-right: 10px;
+    }
+
+    .resize-options input[type="number"] {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .resize-options input[type="radio"],
+    .resize-options input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+
+    .info-section {
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px;
+        max-width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    let originalWidth, originalHeight, aspectRatio;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                const img = new Image();
+                img.onload = function() {
+                    originalWidth = img.width;
+                    originalHeight = img.height;
+                    aspectRatio = originalWidth / originalHeight;
+                    document.getElementById('width').value = originalWidth;
+                    document.getElementById('height').value = originalHeight;
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.getElementById('width').addEventListener('input', updateHeight);
+    document.getElementById('height').addEventListener('input', updateWidth);
+
+    function updateHeight() {
+        if (document.getElementById('lockRatio').checked) {
+            const width = document.getElementById('width').value;
+            document.getElementById('height').value = Math.round(width / aspectRatio);
+        }
+    }
+
+    function updateWidth() {
+        if (document.getElementById('lockRatio').checked) {
+            const height = document.getElementById('height').value;
+            document.getElementById('width').value = Math.round(height * aspectRatio);
+        }
+    }
+
+    function updateDimensionLabels() {
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthLabel = document.getElementById('widthLabel');
+        const heightLabel = document.getElementById('heightLabel');
+        
+        if (resizeType === 'pixel') {
+            widthLabel.textContent = 'Width (px):';
+            heightLabel.textContent = 'Height (px):';
+        } else {
+            widthLabel.textContent = 'Width (%):';
+            heightLabel.textContent = 'Height (%):';
+        }
+    }
+
+    function resizeImage() {
+        const imagePreview = document.getElementById('image-preview');
+        if (!imagePreview.src) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthInput = document.getElementById('width').value;
+        const heightInput = document.getElementById('height').value;
+
+        let newWidth, newHeight;
+
+        if (resizeType === 'pixel') {
+            newWidth = parseInt(widthInput, 10);
+            newHeight = parseInt(heightInput, 10);
+        } else {
+            const widthPercentage = parseFloat(widthInput) / 100;
+            const heightPercentage = parseFloat(heightInput) / 100;
+            newWidth = Math.round(originalWidth * widthPercentage);
+            newHeight = Math.round(originalHeight * heightPercentage);
+        }
+
+        const canvas = document.createElement('canvas');
+        canvas.width = newWidth;
+        canvas.height = newHeight;
+        const ctx = canvas.getContext('2d');
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, newWidth, newHeight);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = canvas.toDataURL('image/png');
+            downloadLink.download = 'resized_image.png';
+            downloadLink.click();
+        }
+        img.src = imagePreview.src;
+    }
+</script>
+{% endblock %}

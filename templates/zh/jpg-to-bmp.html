@@ -1,0 +1,195 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用 ToolsForImage 轻松将 JPG 转换为 BMP 图像。免费、快速且安全的在线 JPG 到 BMP 转换工具，用于高质量图像转换。">
+{% endblock %}
+
+{% block title %}在线 JPG 到 BMP 转换器 | ToolsForImage | 免费在线图像转换工具{% endblock %}
+
+{% block content %}
+<h1>免费在线 JPG 到 BMP 转换器</h1>
+<p>轻松将您的图像从 JPG 格式转换为 BMP 格式。上传 JPG 图像，我们将为您转换为 BMP。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 JPG 到 BMP 转换？</h2>
+        <p>JPG 到 BMP 转换是将图像文件从 JPG（联合图像专家组）格式更改为 BMP（位图）格式的过程。这种转换适用于需要高质量图像而没有压缩痕迹的用户。我们的工具使 JPG 图像转换为 BMP 快捷高效。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 JPG 转换为 BMP？</h2>
+        <p>以下是将 JPG 图像转换为 BMP 的一些原因：</p>
+        <ul>
+            <li><strong>无损质量：</strong> BMP 图像未压缩，确保原始图像质量没有任何损失。</li>
+            <li><strong>编辑灵活性：</strong> BMP 格式非常适合图形设计软件中的编辑和处理，因为它保留了所有图像数据。</li>
+            <li><strong>兼容性：</strong> BMP 文件被各种应用程序广泛支持，非常适合用于打印和设计项目。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 JPG 到 BMP 转换器</h2>
+        <p>使用我们的 JPG 到 BMP 转换工具简单且用户友好。以下是操作步骤：</p>
+        <ul>
+            <li>点击“上传 JPG 文件”按钮，选择您想要转换的 JPG 图像。</li>
+            <li>上传后，我们的工具会自动将您的图像转换为 BMP 格式。</li>
+            <li>转换完成后，点击“下载 BMP”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种 JPG 文件，确保每次转换都顺利进行。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的 JPG 到 BMP 转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需几次点击即可将您的 JPG 图像转换为 BMP，无需复杂步骤。</li>
+            <li><strong>无质量损失：</strong>通过我们的高级转换过程，确保您的图像保持高质量。</li>
+            <li><strong>免费且易于访问：</strong>免费使用我们的在线转换器，无需下载或安装。</li>
+            <li><strong>用户友好界面：</strong>我们的工具为所有用户设计，简单易用，无论您的技术水平如何。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG 转 BMP 转换的常见用途</h2>
+        <p>以下是一些 JPG 转 BMP 的常见用途：</p>
+        <ul>
+            <li><strong>图形设计：</strong>在需要高质量图形和易于编辑的项目中使用 BMP 图像。</li>
+            <li><strong>打印：</strong> BMP 文件因其无损质量，非常适合打印，确保清晰锐利的打印效果。</li>
+            <li><strong>归档：</strong>将图像以 BMP 格式存储以供长期归档，因为它保留了所有细节而没有压缩。</li>
+            <li><strong>图像处理：</strong>将 JPG 转换为 BMP 以便在图像编辑和处理软件中获得更好的效果。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 JPG 转换为 BMP 如何改善您的图像</h2>
+        <p>将 JPG 图像转换为 BMP 可以显著提高其可用性和质量。以下是一些好处：</p>
+        <ul>
+            <li><strong>质量保留：</strong> BMP 格式保留了原始图像质量，非常适合高分辨率需求。</li>
+            <li><strong>增强编辑：</strong> BMP 图像在图形设计软件中更易于操作，允许更精确的编辑。</li>
+            <li><strong>多功能用途：</strong> BMP 文件可用于多种应用，从网页设计到印刷媒体，灵活性强。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

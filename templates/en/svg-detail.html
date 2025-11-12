@@ -1,0 +1,112 @@
+{% extends "en/base.html" %}
+
+{% block title %}{{ svg.name.replace('_', ' ').title() }} SVG Icon | ToolsforImage{% endblock %}
+
+{% block content %}
+<div class="svg-detail-container">
+    <h1>{{ svg.name.replace('_', ' ').title() }}</h1>
+    
+    <div class="svg-preview">
+        <img src="{{ svg.path }}" alt="{{ svg.name }}">
+    </div>
+    
+    <div class="svg-actions">
+        <div class="svg-buttons">
+            <button class="copy-btn" onclick="copySVGCode()">
+                <img src="/static/copy.svg" alt="copy svg">
+                Copy SVG
+            </button>
+            
+            <a href="{{ svg.path }}" download="{{ svg.name }}.svg" class="download-btn">
+                <img src="/static/download.svg" alt="download svg">
+                Download SVG
+            </a>
+        </div>
+    </div>
+    
+    <div class="svg-info">
+        <p>Category: {{ svg.category.replace('_', ' ').title() }}</p>
+        <p>Filename: {{ svg.filename }}</p>
+    </div>
+</div>
+
+<style>
+.svg-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.svg-preview {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.svg-preview img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.svg-actions {
+    margin: 2rem 0;
+}
+
+.svg-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.svg-info {
+    margin-top: 2rem;
+    text-align: left;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.copy-btn, .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.copy-btn:hover, .download-btn:hover {
+    background: #0056b3;
+}
+
+.copy-btn img, .download-btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+</style>
+
+<script>
+async function copySVGCode() {
+    try {
+        const response = await fetch('{{ svg.path }}');
+        const svgText = await response.text();
+        await navigator.clipboard.writeText(svgText);
+        
+        const button = document.querySelector('.copy-btn');
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+            button.innerHTML = `<img src="/static/copy.svg" alt="copy svg">Copy SVG`;
+        }, 2000);
+    } catch (err) {
+        console.error('Failed to copy SVG:', err);
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g id="ounce">
+	<rect x="384" y="204.8" width="25.936" height="25.6"/>
+	<rect x="434.975" y="256" width="25.825" height="25.6"/>
+	<g>
+		<rect x="205" y="179" style="fill:#C5B85D;" width="25" height="26"/>
+		<rect x="128" y="205" style="fill:#C5B85D;" width="26" height="25"/>
+		<rect x="256" y="205" style="fill:#C5B85D;" width="26" height="25"/>
+		<rect x="179" y="230" style="fill:#C5B85D;" width="26" height="26"/>
+		<rect x="307" y="230" style="fill:#C5B85D;" width="26" height="26"/>
+		<rect x="102" y="256" style="fill:#C5B85D;" width="26" height="26"/>
+		<rect x="230" y="256" style="fill:#C5B85D;" width="26" height="26"/>
+		<rect x="358" y="256" style="fill:#C5B85D;" width="26" height="26"/>
+		<rect x="154" y="282" style="fill:#C5B85D;" width="25" height="25"/>
+		<rect x="282" y="282" style="fill:#C5B85D;" width="25" height="25"/>
+		<rect x="205" y="307" style="fill:#C5B85D;" width="25" height="26"/>
+	</g>
+	<rect x="384" y="306.999" style="fill:#FF5425;" width="25.6" height="25.801"/>
+	<g>
+		<polygon style="fill:#D4B807;" points="154,358.4 154,384 154,409.6 154,435 179,435 179,409.6 179,384 179,358.4 179,333 
+			154,333 		"/>
+		<polygon style="fill:#D4B807;" points="307,333 307,358.4 307,384 307,409.6 307,435 333,435 333,409.6 333,384 333,358.4 
+			333,333 		"/>
+	</g>
+	<path style="fill:#FFDA00;" d="M410,205v25h-26v-25H410v-26h-26v-25h-26v25h-25v26h-0.2H307v-26h-25.4H256h-26v26h-25v-26h-25.8
+		h-25.6H128v26h26v25h-26v-25h-25.6H77v25H51v26v25.6V307v26v25h26v-25v-26v-25h25v-26h26v26h-26v25.2v25.6v25.6V384v25.6V435h26
+		v-25.4V384v-25.6V333h25.6h25.6H205v-26h25v26h26v25.4V384v25.6V435h26v-25.4V384v-25.6V333h25.2H333v-26h25v26h26v-26h25.6H435
+		v-25.4V256v-25.6V205H410z M179,307h-25v-25h25V307z M205,256h-26v-26h26V256z M256,282h-26v-26h26V282z M256,230v-25h26v25H256z
+		 M307,307h-25v-25h25V307z M333,256h-26v-26h26V256z M384,282h-26v-26h26V282z"/>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

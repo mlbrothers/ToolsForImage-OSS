@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="JPEG छवियों को BMP में आसानी से परिवर्तित करें ToolsForImage के साथ। मुफ्त ऑनलाइन JPEG से BMP कनवर्टर।">
+{% endblock %}
+
+{% block title %}JPEG से BMP ऑनलाइन परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त JPEG से BMP कनवर्जन टूल</h1>
+<p>अपनी JPEG छवियों को BMP फ़ॉर्मेट में आसानी से परिवर्तित करें। एक JPEG छवि अपलोड करें और हम इसे BMP में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpeg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>JPEG से BMP कनवर्जन क्या है?</h2>
+        <p>JPEG से BMP कनवर्जन उस प्रक्रिया को संदर्भित करता है जिसमें छवि फ़ाइलों को JPEG (जॉइंट फोटोग्राफिक एक्सपर्ट्स ग्रुप) प्रारूप से BMP (बिटमैप) प्रारूप में बदला जाता है। JPEG फ़ोटो के लिए एक लोकप्रिय प्रारूप है, क्योंकि इसकी कुशल संपीड़न क्षमता होती है, जबकि BMP उच्च गुणवत्ता और सादगी के लिए जाना जाता है। हमारा टूल इस कनवर्जन को आसान बनाता है, जिससे आप अपनी JPEG छवियों को जल्दी और प्रभावी ढंग से BMP फ़ाइलों में बदल सकते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG को BMP में परिवर्तित करने के कारण क्या हैं?</h2>
+        <p>JPEG छवियों को BMP में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>असंपीड़ित गुणवत्ता:</strong> BMP फ़ाइलें असंपीडित होती हैं, जिसका अर्थ है कि वे किसी भी विवरण के नुकसान के बिना उच्चतम गुणवत्ता बनाए रखती हैं, जिससे ये संपादन या प्रिंटिंग के लिए बिल्कुल सही होती हैं।</li>
+            <li><strong>सरल प्रारूप:</strong> BMP एक सरल प्रारूप है जो विभिन्न अनुप्रयोगों में उपयोग करने में आसान होता है, विशेष रूप से ग्राफिक डिजाइन और प्रिंटिंग में।</li>
+            <li><strong>संपादन लचीलापन:</strong> BMP में परिवर्तित करने से कुछ सॉफ़्टवेयर में संपादन आसान हो जाता है, क्योंकि यह सभी छवि डेटा को बनाए रखता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPEG से BMP कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा JPEG से BMP कनवर्जन टूल उपयोग में सरल और सीधा है। इसे कैसे उपयोग करें:</p>
+        <ul>
+            <li>JPEG छवि को चुनने के लिए "JPEG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड के बाद, हमारा टूल स्वचालित रूप से आपकी JPEG फ़ाइल को BMP प्रारूप में परिवर्तित कर देगा।</li>
+            <li>कनवर्जन पूरा होने पर, अपने नए चित्र को अपने डिवाइस पर सहेजने के लिए "BMP डाउनलोड करें" पर क्लिक करें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न JPEG फ़ाइलों का समर्थन करता है, जिससे हर बार एक सहज और परेशानी-मुक्त कनवर्जन अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPEG से BMP कनवर्टर के लाभ</h2>
+        <p>हमारे कनवर्जन टूल का उपयोग करने के कुछ लाभ यहां दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज और कुशल:</strong> अपनी JPEG छवियों को BMP में जल्दी और बिना जटिलताओं के परिवर्तित करें।</li>
+            <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> हमारी लॉसलेस कनवर्जन सुविधा के साथ उच्च-रिज़ॉल्यूशन छवियों का आनंद लें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> बिना डाउनलोड या इंस्टॉलेशन की आवश्यकता के लिए हमारे ऑनलाइन कनवर्टर का मुफ्त उपयोग करें।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> हमारा टूल सभी के लिए डिज़ाइन किया गया है, जिससे किसी भी तकनीकी कौशल के बावजूद छवियों को परिवर्तित करना आसान हो जाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG से BMP कनवर्जन के सामान्य उपयोग</h2>
+        <p>JPEG को BMP में परिवर्तित करना कई परिस्थितियों में लाभकारी हो सकता है:</p>
+        <ul>
+            <li><strong>छवि संपादन:</strong> ग्राफिक डिजाइन सॉफ़्टवेयर में विस्तृत संपादन के लिए BMP फ़ाइलों का उपयोग करें, सुनिश्चित करते हुए कि अधिकतम गुणवत्ता प्राप्त हो।</li>
+            <li><strong>प्रिंटिंग:</strong> BMP छवियां प्रिंटिंग के लिए आदर्श होती हैं, क्योंकि वे संपीड़न कलंक के बिना सभी विवरण बनाए रखती हैं।</li>
+            <li><strong>ग्राफिक डिजाइन:</strong> BMP फ़ाइलों के साथ काम करके उच्च-गुणवत्ता की ग्राफिक्स और चित्रण बनाएं।</li>
+            <li><strong>आर्काइविंग:</strong> भविष्य के उपयोग के लिए BMP प्रारूप में छवियों को संग्रहीत करें, यह सुनिश्चित करते हुए कि संपीड़न के दौरान कोई डेटा खो न जाए।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG से BMP में परिवर्तित करने से आपकी छवियों को कैसे बेहतर बनाता है</h2>
+        <p>JPEG छवियों को BMP में परिवर्तित करना उनकी उपयोगिता और समग्र गुणवत्ता में सुधार कर सकता है। यहां बताया गया है कि:</p>
+        <ul>
+            <li><strong>संपादन के लिए बेहतर गुणवत्ता:</strong> BMP फ़ाइलें बिना गुणवत्ता हानि के विस्तृत संपादन और हेरफेर की अनुमति देती हैं, जिससे ये पेशेवरों के लिए बिल्कुल सही होती हैं।</li>
+            <li><strong>अधिक विवरण बनाए रखना:</strong> BMP फ़ाइलें मूल छवि की गुणवत्ता बनाए रखती हैं, जिससे वे उच्च-रिज़ॉल्यूशन प्रिंट के लिए उपयुक्त होती हैं।</li>
+            <li><strong>संगतता:</strong> BMP प्रारूप कई सॉफ़्टवेयर अनुप्रयोगों के साथ व्यापक रूप से संगत है, जिससे संपादन और प्रिंटिंग के लिए आसान पहुँच सुनिश्चित होती है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

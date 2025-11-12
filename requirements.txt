@@ -1,0 +1,8 @@
+Flask
+Pillow
+uuid
+onnxruntime
+gunicorn
+requests
+beautifulsoup4
+jinja2

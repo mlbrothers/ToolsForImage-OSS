@@ -1,0 +1,192 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将BMP转换为ICO图像。快速、免费的在线BMP到ICO转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线ICO到JPEG转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线ICO到JPEG转换器</h1>
+<p>轻松将ICO图像转换为JPEG格式。上传ICO图像，我们将为您将其转换为JPEG。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是ICO到JPEG转换？</h2>
+        <p>ICO到JPEG转换是将ICO格式的图像文件转换为JPEG格式的过程。JPEG（联合图像专家组）是一种广泛使用的有损压缩图像格式。此转换对于需要使用图标图像的上下文，尤其是JPEG格式更为适用或要求使用时非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将ICO转换为JPEG？</h2>
+        <p>将ICO图像转换为JPEG有几个原因：</p>
+        <ul>
+            <li><strong>更小的文件大小：</strong>JPEG压缩可以显著减少文件大小，非常适合网页使用。</li>
+            <li><strong>广泛兼容性：</strong>JPEG在不同平台和应用程序中得到普遍支持。</li>
+            <li><strong>适合摄影使用：</strong>JPEG特别适合用于具有平滑色彩过渡的摄影图像。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的ICO到JPEG转换器</h2>
+        <p>使用我们的ICO到JPEG转换工具简单快捷。操作步骤如下：</p>
+        <ul>
+            <li>点击“上传ICO文件”按钮，选择您要转换的ICO图像。</li>
+            <li>上传图像后，我们的工具将自动开始将其转换为JPEG格式。</li>
+            <li>转换完成后，点击“下载JPEG”按钮，将新的图像文件保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持多种ICO文件，确保所有用户都能获得流畅高效的转换体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的ICO到JPEG转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速便捷：</strong>只需几次点击，即可将ICO图像快速转换为JPEG。</li>
+            <li><strong>优化质量：</strong>在转换过程中平衡图像质量和文件大小。</li>
+            <li><strong>免费且可访问：</strong>在线使用我们的工具，无需下载或安装。</li>
+            <li><strong>用户友好的界面：</strong>我们的工具设计直观，易于操作，适合每个人使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO到JPEG转换的常见用途</h2>
+        <p>以下是将ICO转换为JPEG可能有帮助的几种常见情况：</p>
+        <ul>
+            <li><strong>网站开发：</strong>在需要较小文件大小的网页项目中使用图标图像。</li>
+            <li><strong>电子邮件营销：</strong>在电子邮件营销活动中使用JPEG格式的图标图像，JPEG格式得到广泛支持。</li>
+            <li><strong>社交媒体：</strong>在社交媒体帖子中使用转换后的图标，JPEG格式常用。</li>
+            <li><strong>印刷材料：</strong>在需要JPEG格式的印刷设计中使用图标图像。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何通过转换ICO为JPEG来帮助您</h2>
+        <p>将ICO图像转换为JPEG可以提升其在各种场景中的可用性。具体方式如下：</p>
+        <ul>
+            <li><strong>减小文件大小：</strong>JPEG压缩可以显著减少文件大小，改善加载时间。</li>
+            <li><strong>更广泛的兼容性：</strong>JPEG得到普遍支持，确保您的图像可以在不同平台上查看。</li>
+            <li><strong>高效存储：</strong>较小的文件大小意味着您可以在相同空间内存储更多的图像。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

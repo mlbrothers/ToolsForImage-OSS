@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 -10.09 76.452 76.452" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group_1291" data-name="Group 1291" transform="translate(-530.362 -270.51)">
+    <path id="Path_932" data-name="Path 932" d="M582.495,325.982c13.014,0,24.319-13.258,24.319-26.271,0-12.877-8.513-23.343-21.39-23.343a23.289,23.289,0,0,0-16.834,7.188c-.319-.332-.645-.656-.983-.969l-.007.007a23.248,23.248,0,0,0-15.848-6.226c-12.877,0-21.39,10.466-21.39,23.343,0,13.013,11.3,26.271,24.319,26.271Zm-13.9.791,13.9-6.649a12.189,12.189,0,0,1-9.655-5.008c-.307-.383-.589-.8-.869-1.212.129-.275.259-.55.38-.828a33.774,33.774,0,0,0,2.753-13.365,23.245,23.245,0,0,0-2.955-11.343c.076-.089.144-.187.222-.275a17.419,17.419,0,0,1,13.053-5.867c9.645,0,15.532,7.839,15.532,17.485C600.956,309.434,592.228,320.124,582.495,320.124Zm-27.814,0c-9.734,0-18.462-10.69-18.462-20.413,0-9.646,5.887-17.485,15.533-17.485a17.4,17.4,0,0,1,12.718,5.527c.192.2.386.4.568.612a23.139,23.139,0,0,0-2.957,11.346,33.53,33.53,0,0,0,3.134,14.192c-.282.418-.573.827-.879,1.213A12.175,12.175,0,0,1,554.681,320.124Zm14.214-16.01c-.082.523-.194,1.04-.306,1.556a28.181,28.181,0,0,1-.65-5.959,17.292,17.292,0,0,1,.652-4.689c.06.211.119.423.168.637a16.819,16.819,0,0,1,.488,4.052A27.63,27.63,0,0,1,568.9,304.114Zm-.3,15.1,0,0,0,.005c.213.273.454.527.692.781H567.9Q568.253,319.623,568.593,319.217Z" fill="#534741" opacity="0.1" style="mix-blend-mode: multiply;isolation: isolate"/>
+    <g id="Group_1290" data-name="Group 1290">
+      <g id="Group_1287" data-name="Group 1287">
+        <path id="Path_933" data-name="Path 933" d="M581.567,320.007s-.107.02-.312.049l-3.661.43c-2.265.224-5.379.429-9,.429a75.778,75.778,0,0,1-8.884-.478h-.01l-.479-.068c-.868-.108-1.493-.215-1.874-.284l-.293-.048c-.058-.01-.1-.02-.117-.02a.031.031,0,0,0-.02-.01V314.15h23.109Z" fill="#e5b376"/>
+        <path id="Path_934" data-name="Path 934" d="M581.255,320.056l-3.661.43a23.162,23.162,0,0,1-9-5.057,21.817,21.817,0,0,1-8.884,5.008h-.01l-.479-.068-1.874-.284-.293-.048c-.058-.01-.1-.02-.117-.02a.031.031,0,0,0-.02-.01v-4.842a10.76,10.76,0,0,0,3.613-1.015h16.128a10.748,10.748,0,0,0,3.612,1.015Z" fill="#e5b376" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="Path_935" data-name="Path 935" d="M572.117,282.45v-.01a23.362,23.362,0,0,0-3.524-4.735l-.088-.087a23.269,23.269,0,0,0-16.753-7.108c-12.877,0-21.39,10.466-21.39,23.343,0,13.014,11.3,26.271,24.319,26.271a17.627,17.627,0,0,0,12.984-5.72,20.094,20.094,0,0,0,1.445-1.68c.342-.429.664-.878.976-1.347.41-.615.811-1.269,1.182-1.933.39-.713.751-1.464,1.083-2.226a33.77,33.77,0,0,0,2.753-13.365A23.246,23.246,0,0,0,572.117,282.45Zm-7.781,26.809a12.175,12.175,0,0,1-9.655,5.008c-9.734,0-18.462-10.69-18.462-20.414,0-9.646,5.887-17.485,15.533-17.485a17.423,17.423,0,0,1,13.053,5.867c.1.117.205.235.3.352a17.323,17.323,0,0,1,3.173,5.574,15.709,15.709,0,0,1,.479,1.64,16.819,16.819,0,0,1,.488,4.052,27.63,27.63,0,0,1-.352,4.4,27.068,27.068,0,0,1-.947,4,22.642,22.642,0,0,1-2.265,5.067A18.4,18.4,0,0,1,564.336,309.259Z" fill="#e5b376"/>
+        <path id="Path_936" data-name="Path 936" d="M567.607,276.729c-.088.078-.166.166-.244.244a22.491,22.491,0,0,0-3.339,4.442,17.3,17.3,0,0,1,3.817,5.565,17.3,17.3,0,0,1,3.31-5.477c.078-.088.156-.166.244-.254A23.1,23.1,0,0,0,567.607,276.729Z" fill="#e5b376"/>
+        <path id="Path_937" data-name="Path 937" d="M567.607,276.729c-.088.078-.166.166-.244.244a22.491,22.491,0,0,0-3.339,4.442,17.3,17.3,0,0,1,3.817,5.565,17.3,17.3,0,0,1,3.31-5.477c.078-.088.156-.166.244-.254A23.1,23.1,0,0,0,567.607,276.729Z" fill="#e5b376" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <g id="Group_1198" data-name="Group 1198">
+          <ellipse id="Ellipse_252" data-name="Ellipse 252" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(569.654 315.522) rotate(-84.094)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1197" data-name="Group 1197">
+            <ellipse id="Ellipse_253" data-name="Ellipse 253" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(569.622 315.834) rotate(-84.094)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_254" data-name="Ellipse 254" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(569.767 315.688) rotate(-73.232)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <path id="Path_938" data-name="Path 938" d="M585.424,270.51a23.29,23.29,0,0,0-16.841,7.195,23.385,23.385,0,0,0-6.5,16.148,33.1,33.1,0,0,0,3.837,15.591c.371.664.761,1.318,1.171,1.933a21.42,21.42,0,0,0,2.421,3.027,17.631,17.631,0,0,0,12.985,5.72c13.014,0,24.319-13.257,24.319-26.271C606.814,280.976,598.3,270.51,585.424,270.51Zm-2.929,43.757a12.189,12.189,0,0,1-9.655-5.008,21.444,21.444,0,0,1-3.613-7,27.916,27.916,0,0,1-1.288-8.406,17.46,17.46,0,0,1,4.432-11.618,17.423,17.423,0,0,1,13.053-5.867c9.645,0,15.532,7.839,15.532,17.485C600.956,303.577,592.228,314.267,582.495,314.267Z" fill="#e5b376"/>
+        <path id="Path_939" data-name="Path 939" d="M585.424,272.463a21.228,21.228,0,0,0-15.437,6.6,20.59,20.59,0,0,0-1.394,1.62,20.824,20.824,0,0,0-1.4-1.62,21.224,21.224,0,0,0-15.436-6.6c-11.264,0-19.438,9-19.438,21.39,0,12.5,10.869,24.319,22.366,24.319a15.684,15.684,0,0,0,11.569-5.113,19.371,19.371,0,0,0,2.213-2.765c.04-.06.081-.129.121-.191.04.062.081.131.121.191a19.307,19.307,0,0,0,2.213,2.765,15.682,15.682,0,0,0,11.568,5.113c11.5,0,22.367-11.819,22.367-24.319C604.862,281.459,596.687,272.463,585.424,272.463Zm-19.553,38.016a14.05,14.05,0,0,1-11.181,5.74c-11.308,0-20.414-12.235-20.414-22.366,0-11.263,7.354-19.438,17.486-19.438a19.438,19.438,0,0,1,14.512,6.523c.4.453.779.924,1.136,1.406-.222.348-.438.7-.641,1.064a21.319,21.319,0,0,0-2.735,10.445,31.108,31.108,0,0,0,3.416,14.3A20.656,20.656,0,0,1,565.871,310.479Zm2.722-26.337a18.914,18.914,0,0,1,1.545,3.389,19.112,19.112,0,0,1,1.061,6.322,30,30,0,0,1-1.381,9,25.693,25.693,0,0,1-1.225,3.12,25.524,25.524,0,0,1-1.225-3.12,30,30,0,0,1-1.382-9,19.138,19.138,0,0,1,1.061-6.322A18.918,18.918,0,0,1,568.593,284.142Zm13.9,32.077a14.049,14.049,0,0,1-11.18-5.74,20.519,20.519,0,0,1-1.579-2.33,31.108,31.108,0,0,0,3.416-14.3,21.33,21.33,0,0,0-2.735-10.445c-.2-.363-.419-.716-.641-1.064.356-.482.731-.953,1.135-1.406a19.44,19.44,0,0,1,14.513-6.523c10.132,0,17.485,8.175,17.485,19.438C602.909,303.984,593.8,316.219,582.495,316.219Z" fill="#e5b376" opacity="0.2" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="Path_940" data-name="Path 940" d="M571.961,308.058a24.887,24.887,0,0,1-1.875,3.319,22,22,0,0,1-1.493,1.992,13.155,13.155,0,0,0,.917,1.035,21.621,21.621,0,0,0,1.553-2.051,25.8,25.8,0,0,0,1.777-3.094Q572.385,308.687,571.961,308.058Z" fill="#e5b376" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <g id="Group_1200" data-name="Group 1200">
+          <ellipse id="Ellipse_255" data-name="Ellipse 255" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(551.181 272.984)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1199" data-name="Group 1199">
+            <ellipse id="Ellipse_256" data-name="Ellipse 256" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(551.181 272.67)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_257" data-name="Ellipse 257" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="matrix(0.188, -0.982, 0.982, 0.188, 551.715, 273.138)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1202" data-name="Group 1202">
+          <ellipse id="Ellipse_258" data-name="Ellipse 258" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.213, -0.977, 0.977, 0.213, 555.348, 276.183)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1201" data-name="Group 1201">
+            <ellipse id="Ellipse_259" data-name="Ellipse 259" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.213, -0.977, 0.977, 0.213, 555.415, 275.875)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_260" data-name="Ellipse 260" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(556.042 275.503) rotate(-66.852)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1204" data-name="Group 1204">
+          <ellipse id="Ellipse_261" data-name="Ellipse 261" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(535.415 282.808) rotate(-52.092)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1203" data-name="Group 1203">
+            <ellipse id="Ellipse_262" data-name="Ellipse 262" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(535.167 282.615) rotate(-52.092)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_263" data-name="Ellipse 263" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(535.586 282.164) rotate(-41.229)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1206" data-name="Group 1206">
+          <ellipse id="Ellipse_264" data-name="Ellipse 264" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(562.431 278.161) rotate(-51.665)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1205" data-name="Group 1205">
+            <ellipse id="Ellipse_265" data-name="Ellipse 265" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(562.626 277.914) rotate(-51.665)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_266" data-name="Ellipse 266" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(563.353 277.854) rotate(-40.802)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1208" data-name="Group 1208">
+          <ellipse id="Ellipse_267" data-name="Ellipse 267" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(571.555 287.867) rotate(-13.425)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1207" data-name="Group 1207">
+            <ellipse id="Ellipse_268" data-name="Ellipse 268" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(571.861 287.794) rotate(-13.425)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_269" data-name="Ellipse 269" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(572.469 288.198) rotate(-2.562)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1210" data-name="Group 1210">
+          <ellipse id="Ellipse_270" data-name="Ellipse 270" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(570.759 293.81) rotate(-82.49)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1209" data-name="Group 1209">
+            <ellipse id="Ellipse_271" data-name="Ellipse 271" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(571.071 293.851) rotate(-82.49)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_272" data-name="Ellipse 272" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(571.485 293.695) rotate(-71.627)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1212" data-name="Group 1212">
+          <ellipse id="Ellipse_273" data-name="Ellipse 273" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(571.904 300.755) rotate(-74.682)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1211" data-name="Group 1211">
+            <ellipse id="Ellipse_274" data-name="Ellipse 274" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(572.207 300.838) rotate(-74.682)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_275" data-name="Ellipse 275" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(572.639 300.74) rotate(-63.82)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1214" data-name="Group 1214">
+          <ellipse id="Ellipse_276" data-name="Ellipse 276" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.361, -0.932, 0.932, 0.361, 569.356, 306.866)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1213" data-name="Group 1213">
+            <ellipse id="Ellipse_277" data-name="Ellipse 277" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.361, -0.932, 0.932, 0.361, 569.649, 306.979)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_278" data-name="Ellipse 278" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(570.089 306.926) rotate(-57.946)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1216" data-name="Group 1216">
+          <ellipse id="Ellipse_279" data-name="Ellipse 279" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.295, -0.956, 0.956, 0.295, 558.939, 273.619)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1215" data-name="Group 1215">
+            <ellipse id="Ellipse_280" data-name="Ellipse 280" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.295, -0.956, 0.956, 0.295, 559.032, 273.318)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_281" data-name="Ellipse 281" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="matrix(0.469, -0.883, 0.883, 0.469, 559.688, 273)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1218" data-name="Group 1218">
+          <ellipse id="Ellipse_282" data-name="Ellipse 282" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.844, -0.537, 0.537, 0.844, 571.278, 278.742)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1217" data-name="Group 1217">
+            <ellipse id="Ellipse_283" data-name="Ellipse 283" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.844, -0.537, 0.537, 0.844, 571.109, 278.477)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_284" data-name="Ellipse 284" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.93, -0.368, 0.368, 0.93, 571.655, 278.193)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1220" data-name="Group 1220">
+          <ellipse id="Ellipse_285" data-name="Ellipse 285" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(575.902 273.106) rotate(-14.318)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1219" data-name="Group 1219">
+            <ellipse id="Ellipse_286" data-name="Ellipse 286" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(575.824 272.801) rotate(-14.318)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_287" data-name="Ellipse 287" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.998, -0.06, 0.06, 0.998, 576.431, 272.701)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1222" data-name="Group 1222">
+          <ellipse id="Ellipse_288" data-name="Ellipse 288" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(584.443 275.989) rotate(-86.059)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1221" data-name="Group 1221">
+            <ellipse id="Ellipse_289" data-name="Ellipse 289" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(584.465 275.675) rotate(-86.059)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_290" data-name="Ellipse 290" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="matrix(0.256, -0.967, 0.967, 0.256, 585.031, 275.215)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1224" data-name="Group 1224">
+          <ellipse id="Ellipse_291" data-name="Ellipse 291" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(567.758 287.361) rotate(-58.193)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1223" data-name="Group 1223">
+            <ellipse id="Ellipse_292" data-name="Ellipse 292" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(567.491 287.196) rotate(-58.193)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_293" data-name="Ellipse 293" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.678, -0.735, 0.735, 0.678, 567.859, 286.703)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1226" data-name="Group 1226">
+          <ellipse id="Ellipse_294" data-name="Ellipse 294" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(566.86 280.937) rotate(-47.726)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1225" data-name="Group 1225">
+            <ellipse id="Ellipse_295" data-name="Ellipse 295" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(566.627 280.726) rotate(-47.726)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_296" data-name="Ellipse 296" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(567.079 280.308) rotate(-36.864)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1228" data-name="Group 1228">
+          <ellipse id="Ellipse_297" data-name="Ellipse 297" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(563.996 290.489) rotate(-71.186)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1227" data-name="Group 1227">
+            <ellipse id="Ellipse_298" data-name="Ellipse 298" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(563.699 290.388) rotate(-71.186)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_299" data-name="Ellipse 299" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(563.947 289.825) rotate(-60.324)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1230" data-name="Group 1230">
+          <ellipse id="Ellipse_300" data-name="Ellipse 300" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.988, -0.153, 0.153, 0.988, 566.468, 296.729)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1229" data-name="Group 1229">
+            <ellipse id="Ellipse_301" data-name="Ellipse 301" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.988, -0.153, 0.153, 0.988, 566.157, 296.777)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_302" data-name="Ellipse 302" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.036, -0.999, 0.999, 0.036, 566.315, 297.449)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1232" data-name="Group 1232">
+          <ellipse id="Ellipse_303" data-name="Ellipse 303" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.914, -0.406, 0.406, 0.914, 565.248, 304.063)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1231" data-name="Group 1231">
+            <ellipse id="Ellipse_304" data-name="Ellipse 304" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.914, -0.406, 0.406, 0.914, 564.96, 304.191)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_305" data-name="Ellipse 305" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(565.16 304.244) rotate(-13.074)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1234" data-name="Group 1234">
+          <ellipse id="Ellipse_306" data-name="Ellipse 306" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.178, -0.984, 0.984, 0.178, 587.319, 272.228)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1233" data-name="Group 1233">
+            <ellipse id="Ellipse_307" data-name="Ellipse 307" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.178, -0.984, 0.984, 0.178, 587.375, 271.918)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_308" data-name="Ellipse 308" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(587.988 271.523) rotate(-68.894)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1236" data-name="Group 1236">
+          <ellipse id="Ellipse_309" data-name="Ellipse 309" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(592.752 275.627) rotate(-67.434)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1235" data-name="Group 1235">
+            <ellipse id="Ellipse_310" data-name="Ellipse 310" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(592.872 275.337) rotate(-67.434)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_311" data-name="Ellipse 311" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(593.556 275.082) rotate(-56.571)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1238" data-name="Group 1238">
+          <ellipse id="Ellipse_312" data-name="Ellipse 312" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(598.766 277.777) rotate(-43.978)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1237" data-name="Group 1237">
+            <ellipse id="Ellipse_313" data-name="Ellipse 313" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(598.992 277.558) rotate(-43.978)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_314" data-name="Ellipse 314" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(599.721 277.597) rotate(-33.116)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1240" data-name="Group 1240">
+          <ellipse id="Ellipse_315" data-name="Ellipse 315" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(598.368 283.253) rotate(-34.634)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1239" data-name="Group 1239">
+            <ellipse id="Ellipse_316" data-name="Ellipse 316" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(598.627 283.074) rotate(-34.634)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_317" data-name="Ellipse 317" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(599.34 283.23) rotate(-23.772)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1242" data-name="Group 1242">
+          <ellipse id="Ellipse_318" data-name="Ellipse 318" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.053, -0.999, 0.999, 0.053, 601.379, 291.253)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1241" data-name="Group 1241">
+            <ellipse id="Ellipse_319" data-name="Ellipse 319" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.053, -0.999, 0.999, 0.053, 601.693, 291.27)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_320" data-name="Ellipse 320" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.24, -0.971, 0.971, 0.24, 602.094, 291.082)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1244" data-name="Group 1244">
+          <ellipse id="Ellipse_321" data-name="Ellipse 321" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.104, -0.995, 0.995, 0.104, 604.5, 295.637)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1243" data-name="Group 1243">
+            <ellipse id="Ellipse_322" data-name="Ellipse 322" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.104, -0.995, 0.995, 0.104, 604.812, 295.669)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_323" data-name="Ellipse 323" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(605.222 295.502) rotate(-73.156)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1246" data-name="Group 1246">
+          <ellipse id="Ellipse_324" data-name="Ellipse 324" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.104, -0.995, 0.995, 0.104, 601.091, 300.861)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1245" data-name="Group 1245">
+            <ellipse id="Ellipse_325" data-name="Ellipse 325" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.104, -0.995, 0.995, 0.104, 601.404, 300.894)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_326" data-name="Ellipse 326" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(601.814 300.727) rotate(-73.156)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1248" data-name="Group 1248">
+          <ellipse id="Ellipse_327" data-name="Ellipse 327" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(601.406 306.597) rotate(-70.861)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1247" data-name="Group 1247">
+            <ellipse id="Ellipse_328" data-name="Ellipse 328" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(601.703 306.701) rotate(-70.861)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_329" data-name="Ellipse 329" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(602.14 306.631) rotate(-59.999)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1250" data-name="Group 1250">
+          <ellipse id="Ellipse_330" data-name="Ellipse 330" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(594.444 310.724) rotate(-55.912)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1249" data-name="Group 1249">
+            <ellipse id="Ellipse_331" data-name="Ellipse 331" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(594.705 310.9) rotate(-55.912)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_332" data-name="Ellipse 332" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.706, -0.708, 0.708, 0.706, 595.145, 310.946)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1252" data-name="Group 1252">
+          <ellipse id="Ellipse_333" data-name="Ellipse 333" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(593.083 315.287) rotate(-43.519)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1251" data-name="Group 1251">
+            <ellipse id="Ellipse_334" data-name="Ellipse 334" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(593.3 315.515) rotate(-43.519)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_335" data-name="Ellipse 335" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="matrix(0.842, -0.54, 0.54, 0.842, 593.72, 315.655)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1254" data-name="Group 1254">
+          <ellipse id="Ellipse_336" data-name="Ellipse 336" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(584.96 314.949) rotate(-13.675)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1253" data-name="Group 1253">
+            <ellipse id="Ellipse_337" data-name="Ellipse 337" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(585.034 315.255) rotate(-13.675)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_338" data-name="Ellipse 338" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(585.329 315.585) rotate(-2.813)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1256" data-name="Group 1256">
+          <ellipse id="Ellipse_339" data-name="Ellipse 339" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(578.098 318.243) rotate(-85.913)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1255" data-name="Group 1255">
+            <ellipse id="Ellipse_340" data-name="Ellipse 340" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(578.076 318.557) rotate(-85.913)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_341" data-name="Ellipse 341" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(578.216 318.406) rotate(-75.051)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1258" data-name="Group 1258">
+          <ellipse id="Ellipse_342" data-name="Ellipse 342" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(573.631 313.197) rotate(-58.949)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1257" data-name="Group 1257">
+            <ellipse id="Ellipse_343" data-name="Ellipse 343" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(573.469 313.466) rotate(-58.949)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_344" data-name="Ellipse 344" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(573.662 313.395) rotate(-48.086)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1260" data-name="Group 1260">
+          <ellipse id="Ellipse_345" data-name="Ellipse 345" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(564.808 318.264) rotate(-79.852)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1259" data-name="Group 1259">
+            <ellipse id="Ellipse_346" data-name="Ellipse 346" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(564.753 318.574) rotate(-79.852)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_347" data-name="Ellipse 347" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(564.909 318.438) rotate(-68.989)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1262" data-name="Group 1262">
+          <ellipse id="Ellipse_348" data-name="Ellipse 348" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(604.4 287.635) rotate(-18.651)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1261" data-name="Group 1261">
+            <ellipse id="Ellipse_349" data-name="Ellipse 349" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(604.698 287.534) rotate(-18.651)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_350" data-name="Ellipse 350" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(605.34 287.881) rotate(-7.789)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1264" data-name="Group 1264">
+          <ellipse id="Ellipse_351" data-name="Ellipse 351" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.926, -0.378, 0.378, 0.926, 542.866, 277.109)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1263" data-name="Group 1263">
+            <ellipse id="Ellipse_352" data-name="Ellipse 352" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.926, -0.378, 0.378, 0.926, 542.747, 276.818)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_353" data-name="Ellipse 353" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(543.335 276.636) rotate(-11.338)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1266" data-name="Group 1266">
+          <ellipse id="Ellipse_354" data-name="Ellipse 354" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(531.271 291.203) rotate(-81.746)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1265" data-name="Group 1265">
+            <ellipse id="Ellipse_355" data-name="Ellipse 355" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(530.96 291.158) rotate(-81.746)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_356" data-name="Ellipse 356" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(531.101 290.559) rotate(-70.884)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1268" data-name="Group 1268">
+          <ellipse id="Ellipse_357" data-name="Ellipse 357" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.956, -0.293, 0.293, 0.956, 533.007, 300.594)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1267" data-name="Group 1267">
+            <ellipse id="Ellipse_358" data-name="Ellipse 358" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.956, -0.293, 0.293, 0.956, 532.706, 300.686)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_359" data-name="Ellipse 359" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(532.898 300.763) rotate(-6.161)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1270" data-name="Group 1270">
+          <ellipse id="Ellipse_360" data-name="Ellipse 360" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(537.958 306.415) rotate(-31.816)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1269" data-name="Group 1269">
+            <ellipse id="Ellipse_361" data-name="Ellipse 361" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(537.691 306.581) rotate(-31.816)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_362" data-name="Ellipse 362" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(537.895 306.606) rotate(-20.954)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1272" data-name="Group 1272">
+          <ellipse id="Ellipse_363" data-name="Ellipse 363" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.791, -0.612, 0.612, 0.791, 540.689, 312.724)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1271" data-name="Group 1271">
+            <ellipse id="Ellipse_364" data-name="Ellipse 364" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="matrix(0.791, -0.612, 0.612, 0.791, 540.441, 312.917)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_365" data-name="Ellipse 365" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(540.647 312.92) rotate(-26.895)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1274" data-name="Group 1274">
+          <ellipse id="Ellipse_366" data-name="Ellipse 366" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(547.912 315.032) rotate(-58.596)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1273" data-name="Group 1273">
+            <ellipse id="Ellipse_367" data-name="Ellipse 367" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(547.748 315.301) rotate(-58.596)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_368" data-name="Ellipse 368" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(547.942 315.231) rotate(-47.733)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1276" data-name="Group 1276">
+          <ellipse id="Ellipse_369" data-name="Ellipse 369" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(554.804 318.463) rotate(-87.028)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1275" data-name="Group 1275">
+            <ellipse id="Ellipse_370" data-name="Ellipse 370" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(554.788 318.777) rotate(-87.028)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_371" data-name="Ellipse 371" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="matrix(0.239, -0.971, 0.971, 0.239, 554.925, 318.624)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1278" data-name="Group 1278">
+          <ellipse id="Ellipse_372" data-name="Ellipse 372" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(562.414 313.085) rotate(-41.337)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1277" data-name="Group 1277">
+            <ellipse id="Ellipse_373" data-name="Ellipse 373" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(562.621 313.321) rotate(-41.337)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_374" data-name="Ellipse 374" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(563.036 313.476) rotate(-30.474)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1280" data-name="Group 1280">
+          <ellipse id="Ellipse_375" data-name="Ellipse 375" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(534.72 288.359) rotate(-74.626)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1279" data-name="Group 1279">
+            <ellipse id="Ellipse_376" data-name="Ellipse 376" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="translate(534.417 288.275) rotate(-74.626)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_377" data-name="Ellipse 377" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(534.631 287.698) rotate(-63.764)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1282" data-name="Group 1282">
+          <ellipse id="Ellipse_378" data-name="Ellipse 378" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.857, -0.515, 0.515, 0.857, 539.21, 276.375)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1281" data-name="Group 1281">
+            <ellipse id="Ellipse_379" data-name="Ellipse 379" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.857, -0.515, 0.515, 0.857, 539.048, 276.105)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_380" data-name="Ellipse 380" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(539.602 275.835) rotate(-20.129)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1284" data-name="Group 1284">
+          <ellipse id="Ellipse_381" data-name="Ellipse 381" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.053, -0.999, 0.999, 0.053, 534.946, 295.046)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1283" data-name="Group 1283">
+            <ellipse id="Ellipse_382" data-name="Ellipse 382" cx="0.651" cy="0.483" rx="0.651" ry="0.483" transform="matrix(0.053, -0.999, 0.999, 0.053, 534.632, 295.03)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_383" data-name="Ellipse 383" cx="0.285" cy="0.211" rx="0.285" ry="0.211" transform="translate(534.717 294.42) rotate(-76.094)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+        <g id="Group_1286" data-name="Group 1286">
+          <ellipse id="Ellipse_384" data-name="Ellipse 384" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(545.65 273.184) rotate(-89.55)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <g id="Group_1285" data-name="Group 1285">
+            <ellipse id="Ellipse_385" data-name="Ellipse 385" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(545.652 272.869) rotate(-89.55)" fill="#efd8bd"/>
+            <ellipse id="Ellipse_386" data-name="Ellipse 386" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(546.19 272.375) rotate(-78.687)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_1289" data-name="Group 1289">
+        <ellipse id="Ellipse_387" data-name="Ellipse 387" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(571.212 320.099) rotate(-84.094)" fill="#efd8bd" opacity="0.5" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <g id="Group_1288" data-name="Group 1288">
+          <ellipse id="Ellipse_388" data-name="Ellipse 388" cx="0.483" cy="0.651" rx="0.483" ry="0.651" transform="translate(571.18 320.412) rotate(-84.094)" fill="#efd8bd"/>
+          <ellipse id="Ellipse_389" data-name="Ellipse 389" cx="0.211" cy="0.285" rx="0.211" ry="0.285" transform="translate(571.325 320.265) rotate(-73.232)" fill="#efd8bd" opacity="0.7" style="mix-blend-mode: screen;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="认识ToolsForImage背后的才华横溢的团队——图像压缩、调整大小、格式转换等方面的专家。了解我们的开发人员和远见者，他们使我们的免费在线图像编辑工具成为可能。">
+{% endblock %}
+
+{% block title %}我们的团队 | ToolsForImage | 提供模糊面孔、图像转换、编辑、调整大小、去背景、模糊背景等的全面免费在线工具{% endblock %}
+
+{% block content %}
+<h1>认识我们的团队</h1>
+<p>在ToolsForImage，我们致力于提供最好的免费在线图像编辑工具。我们的专家团队不懈努力，为您带来顶级的图像压缩、调整大小、格式转换等解决方案。</p>
+
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='sid.svg') }}" alt="Siddharth">
+        <h2>悉达尔特</h2>
+        <p>首席开发员</p>
+        <p>悉达尔特是我们的编码专家，专注于图像处理算法和优化技术。他是我们强大的图像压缩和调整大小工具背后的大脑。</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nandan.svg') }}" alt="Nandan">
+        <h2>楠丹</h2>
+        <p>前端开发员</p>
+        <p>楠丹设计了我们用户友好的界面，确保我们的图像编辑工具对每个人都易于访问和使用，无论是初学者还是专业人士。</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jeni.svg') }}" alt="Jenish">
+        <h2>杰尼什</h2>
+        <p>产品远见者</p>
+        <p>杰尼什是我们的创意生成者，不断探索新的方式来增强我们的图像编辑套件。从水印到面部模糊，他总是在推动技术的边界，挑战不可能。</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='viraj.svg') }}" alt="Viraj">
+        <h2>维拉吉</h2>
+        <p>质量保证</p>
+        <p>维拉吉确保我们的所有图像工具，从格式转换到旋转，符合最高的质量和可靠性标准。他是您图像编辑体验的守护者。</p>
+    </div>
+</div>
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .team-member {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1.5em;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    
+</style>
+{% endblock %}

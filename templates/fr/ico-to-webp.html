@@ -1,0 +1,194 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images ICO en WebP avec ToolsForImage. Convertisseur ICO vers WebP en ligne gratuit.">
+{% endblock %}
+
+{% block title %}Convertir ICO en WebP en ligne avec | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion ICO en WebP gratuit</h1>
+<p>Convertissez facilement vos images ICO au format WebP. Téléchargez une image ICO et nous la convertirons en WebP pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la conversion ICO en WebP ?</h2>
+        <p>La conversion ICO en WebP est le processus de changement des fichiers image du format ICO au format WebP. WebP est un format d'image moderne développé par Google qui offre une compression et une qualité supérieures par rapport à de nombreux autres formats. Cette conversion est utile lorsque vous devez utiliser des images d'icônes dans des contextes où WebP est préféré ou requis.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi convertir ICO en WebP ?</h2>
+        <p>Il y a plusieurs raisons de convertir des images ICO en WebP :</p>
+        <ul>
+            <li><strong>Taille de fichier plus petite :</strong> WebP offre une meilleure compression que de nombreux autres formats, ce qui entraîne des tailles de fichiers plus petites.</li>
+            <li><strong>Temps de chargement plus rapide :</strong> Des tailles de fichiers plus petites entraînent des temps de chargement plus rapides, ce qui est particulièrement important pour les applications web.</li>
+            <li><strong>Conservation de la qualité :</strong> WebP maintient une haute qualité d'image même avec des tailles de fichiers plus petites.</li>
+            <li><strong>Support de la transparence :</strong> Comme PNG, WebP prend en charge la transparence alpha.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre convertisseur ICO en WebP</h2>
+        <p>Utiliser notre outil de conversion ICO en WebP est simple et rapide. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger le fichier ICO" pour sélectionner l'image ICO que vous souhaitez convertir.</li>
+            <li>Une fois votre image téléchargée, notre outil commencera automatiquement à la convertir au format WebP.</li>
+            <li>Après la conversion, cliquez sur "Télécharger WebP" pour enregistrer votre nouveau fichier image sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge divers fichiers ICO, garantissant une expérience de conversion fluide et efficace pour tous les utilisateurs.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'utiliser notre convertisseur ICO en WebP</h2>
+        <p>Voici quelques avantages d'utiliser notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et facile :</strong> Convertissez vos images ICO en WebP rapidement en quelques clics.</li>
+            <li><strong>Haute qualité :</strong> Maintenez la qualité de l'image pendant le processus de conversion.</li>
+            <li><strong>Gratuit et accessible :</strong> Utilisez notre outil en ligne gratuitement, sans téléchargements ni installations nécessaires.</li>
+            <li><strong>Interface conviviale :</strong> Notre outil est conçu pour être intuitif et facile à naviguer pour tout le monde.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations courantes de la conversion ICO en WebP</h2>
+        <p>Voici quelques situations courantes où la conversion ICO en WebP peut être utile :</p>
+        <ul>
+            <li><strong>Développement web :</strong> Utilisez des images d'icônes dans des projets web où WebP est préféré pour sa compression supérieure.</li>
+            <li><strong>Applications mobiles :</strong> Utilisez des images WebP dans des applications mobiles pour réduire la consommation de données et améliorer les temps de chargement.</li>
+            <li><strong>E-commerce :</strong> Optimisez les images de produits et les icônes pour un chargement plus rapide des pages et une meilleure expérience utilisateur.</li>
+            <li><strong>Marketing numérique :</strong> Utilisez des images WebP dans les publicités en ligne pour un chargement plus rapide et de meilleures performances.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la conversion ICO en WebP peut aider</h2>
+        <p>Convertir vos images ICO en WebP peut améliorer leur utilisabilité dans divers contextes. Voici comment :</p>
+        <ul>
+            <li><strong>Performance améliorée du site Web :</strong> Les images WebP se chargent plus rapidement, améliorant la vitesse globale du site Web.</li>
+            <li><strong>Réduction de l'utilisation de la bande passante :</strong> Des tailles de fichiers plus petites signifient moins de transfert de données, ce qui est bénéfique pour les utilisateurs et les serveurs.</li>
+            <li><strong>Meilleure expérience utilisateur :</strong> Des temps de chargement plus rapides et des images de haute qualité contribuent à une meilleure expérience utilisateur.</li>
+            <li><strong>Avantages SEO :</strong> Les sites Web plus rapides ont tendance à mieux se classer dans les résultats des moteurs de recherche.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

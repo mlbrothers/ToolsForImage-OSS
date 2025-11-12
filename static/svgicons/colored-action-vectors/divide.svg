@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_zeventien{fill:#CC4121;}
+	.avocado_achttien{fill:#D1712A;}
+	.avocado_negentien{fill:#E0A838;}
+	.avocado_twintig{fill:#EAD13F;}
+	.st0{fill:#788287;}
+	.st1{fill:#FFFAEE;}
+	.st2{fill:#DBD2C1;}
+	.st3{fill:#3D3935;}
+	.st4{fill:#6F9B45;}
+	.st5{fill:#E598A3;}
+	.st6{fill:#D36781;}
+	.st7{fill:#8D3E93;}
+	.st8{fill:#BF63C1;}
+	.st9{fill:#A3AEB5;}
+	.st10{fill:#AF9480;}
+	.st11{fill:#716558;}
+	.st12{fill:#0E608E;}
+	.st13{fill:#248EBC;}
+	.st14{fill:#C3CC6A;}
+</style>
+<g>
+	<circle class="avocado_zeventien" cx="16" cy="16" r="13.5"/>
+	<g>
+		<path class="avocado_twintig" d="M15.5,15.5V2.517C15.665,2.507,15.832,2.5,16,2.5c7.276,0,13.228,5.787,13.491,13H15.5z"/>
+	</g>
+	<g>
+		<path class="avocado_negentien" d="M15.96,15.5h13.522c0.011,0.166,0.018,0.332,0.018,0.5c0,3.391-1.344,6.745-3.702,9.28
+			L15.96,15.5z"/>
+	</g>
+	<g>
+		<path class="avocado_achttien" d="M15.5,15.867V15.5h0.46l9.83,9.795c-0.87,0.892-2.311,1.994-3.389,2.594L15.5,15.867z"/>
+	</g>
+	<path class="avocado_een" d="M16,2C8.268,2,2,8.268,2,16s6.268,14,14,14s14-6.268,14-14S23.732,2,16,2z M28.949,15H16V3
+		C22.831,3,28.435,8.299,28.949,15z M3,16C3,9.169,8.299,3.565,15,3.051v12.959l6.724,11.645C19.994,28.508,18.056,29,16,29
+		C8.832,29,3,23.168,3,16z M16.636,16.843l8.444,8.444c-0.743,0.727-1.577,1.358-2.477,1.892L16.636,16.843z M25.763,24.556
+		L17.207,16H29C29,19.277,27.771,22.267,25.763,24.556z"/>
+</g>
+</svg>

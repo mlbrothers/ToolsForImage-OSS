@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ TIFF को PNG चित्रों में आसानी से बदलें। मुफ्त ऑनलाइन TIFF से PNG कनवर्टर।">
+{% endblock %}
+
+{% block title %}TIFF को PNG में ऑनलाइन बदलें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त TIFF से PNG कनवर्ज़न टूल</h1>
+<p>अपनी TIFF छवियों को PNG प्रारूप में आसानी से बदलें। एक TIFF छवि अपलोड करें और हम इसे आपके लिए PNG में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>TIFF से PNG कनवर्ज़न क्या है?</h2>
+        <p>TIFF से PNG कनवर्ज़न वह प्रक्रिया है जिसमें चित्रों को TIFF (Tagged Image File Format) से PNG (Portable Network Graphics) प्रारूप में बदल दिया जाता है। TIFF फ़ाइलें उच्च गुणवत्ता के लिए जानी जाती हैं और अक्सर पेशेवर फोटोग्राफी और प्रकाशन में उपयोग की जाती हैं। दूसरी ओर, PNG फ़ाइलें बिना हानि के संकुचन के लिए लोकप्रिय हैं, जिससे उच्च गुणवत्ता वाली छवियां बिना स्पष्टता खोए प्राप्त की जा सकती हैं। TIFF छवियों को PNG में बदलने से आप छवि की गुणवत्ता बनाए रख सकते हैं, जबकि PNG की व्यापक संगतता और पारदर्शिता के लाभ का लाभ उठा सकते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को PNG में क्यों बदलें?</h2>
+        <p>TIFF छवियों को PNG में बदलने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>बिना हानि की गुणवत्ता:</strong> PNG आपकी छवियों की मूल गुणवत्ता को बिना संकुचन हानि के बनाए रखता है, जिससे यह ग्राफिक्स और टेक्स्ट वाली छवियों के लिए आदर्श है।</li>
+            <li><strong>पारदर्शिता का समर्थन:</strong> PNG प्रारूप पारदर्शी पृष्ठभूमियों की अनुमति देता है, जो लोगो और वेब ग्राफिक्स के लिए एकदम सही है।</li>
+            <li><strong>व्यापक संगतता:</strong> PNG सभी प्लेटफार्मों और ब्राउज़रों में व्यापक रूप से समर्थित है, यह सुनिश्चित करता है कि आपकी छवियां हर जगह अच्छी दिखें।</li>
+            <li><strong>वेब उपयोग के लिए कुशल:</strong> PNG फ़ाइलें वेब उपयोग के लिए उपयुक्त हैं, जो उच्च गुणवत्ता के दृश्य प्रदान करती हैं जो उपयोगकर्ता अनुभव को बढ़ाती हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से PNG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा TIFF से PNG कनवर्ज़न टूल उपयोग में सरलता के लिए डिज़ाइन किया गया है। इसका उपयोग कैसे करें:</p>
+        <ul>
+            <li>"TIFF फ़ाइल अपलोड करें" बटन पर क्लिक करें और उस TIFF छवि का चयन करें जिसे आप बदलना चाहते हैं।</li>
+            <li>जब अपलोड पूरा हो जाए, तो कनवर्ज़न स्वचालित रूप से शुरू हो जाएगा।</li>
+            <li>कनवर्ज़न के बाद, "PNG डाउनलोड करें" पर क्लिक करें ताकि नई PNG छवि आपके उपकरण में सहेजी जा सके।</li>
+        </ul>
+        <p>हमारा टूल विभिन्न TIFF प्रारूपों का समर्थन करता है, जो आपको बिना किसी परेशानी के अपनी छवियों को बदलने की सुविधा देता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से PNG कनवर्टर के उपयोग के लाभ</h2>
+        <p>हमारे कनवर्ज़न टूल के उपयोग के कुछ लाभ हैं:</p>
+        <ul>
+            <li><strong>तेज़ और सरल:</strong> कुछ क्लिक में अपनी TIFF छवियों को PNG में बदलें।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> कनवर्ज़न प्रक्रिया के दौरान कोई गिरावट नहीं होने के साथ उच्च गुणवत्ता वाले परिणाम प्राप्त करें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारे टूल का ऑनलाइन मुफ्त उपयोग करें, बिना किसी डाउनलोड या स्थापना की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफेस:</strong> हमारा टूल सहज और नेविगेट करने में आसान है, जो एक सहज अनुभव सुनिश्चित करता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF से PNG कनवर्ज़न के सामान्य उपयोग</h2>
+        <p>TIFF को PNG में बदलना कई परिदृश्यों में उपयोगी है:</p>
+        <ul>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> PNG का उपयोग उन उच्च गुणवत्ता वाली ग्राफिक्स के लिए करें जिन्हें पारदर्शिता या स्पष्टता की आवश्यकता होती है।</li>
+            <li><strong>वेब सामग्री:</strong> वेबसाइटों को तेज़ी से लोड होने वाले और पेशेवर दिखने वाली स्पष्ट छवियों से बढ़ाएं।</li>
+            <li><strong>सोशल मीडिया:</strong> ऐसी छवियां साझा करें जो गुणवत्ता बनाए रखती हैं और विभिन्न प्लेटफार्मों पर अच्छी लगती हैं।</li>
+            <li><strong>आर्काइविंग:</strong> लंबे समय तक संग्रहण और आसान पहुंच के लिए बिना हानि वाले प्रारूप में छवियों को सहेजें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को PNG में बदलने से कैसे मदद मिलती है</h2>
+        <p>अपनी TIFF छवियों को PNG में बदलने से उपयोगिता और प्रदर्शन में सुधार हो सकता है। यहां बताया गया है:</p>
+        <ul>
+            <li><strong>उन्नत गुणवत्ता:</strong> PNG फ़ाइलें मूल छवि गुणवत्ता बनाए रखती हैं, जो उन्हें विस्तृत ग्राफिक्स के लिए उपयुक्त बनाती हैं।</li>
+            <li><strong>साझा करने में सुधार:</strong> PNG प्रारूप व्यापक रूप से स्वीकार किया जाता है, यह सुनिश्चित करता है कि आपकी छवियां ऑनलाइन साझा करते समय अच्छी दिखें।</li>
+            <li><strong>अधिक लचीलापन:</strong> PNG का पारदर्शिता के लिए समर्थन विभिन्न परियोजनाओं में बहुपरकारी ग्राफिक उपयोग की अनुमति देता है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="bottle_medicine" data-name="bottle medicine">
+
+<path class="cls-1" d="M8.18,5.32V7.23L5.32,10.09v10.5A1.9,1.9,0,0,0,7.23,22.5h9.54a1.9,1.9,0,0,0,1.91-1.91V10.09L15.82,7.23V5.32"/>
+
+<rect class="cls-1" x="7.23" y="1.5" width="9.55" height="3.82"/>
+
+<path class="cls-1" d="M11,11h7.64a0,0,0,0,1,0,0v7.64a0,0,0,0,1,0,0H11a1.91,1.91,0,0,1-1.91-1.91V13A1.91,1.91,0,0,1,11,11Z"/>
+
+<polyline class="cls-1" points="17.73 14.86 13.91 14.86 12.96 14.86 12 14.86"/>
+
+</g>
+
+</svg>

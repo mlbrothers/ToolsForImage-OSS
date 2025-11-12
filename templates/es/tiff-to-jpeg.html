@@ -1,0 +1,191 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convierte fácilmente imágenes TIFF a JPEG con ToolsForImage. Conversor online gratuito, rápido y seguro de TIFF a JPEG para transformaciones de imágenes de alta calidad.">
+{% endblock %}
+
+{% block title %}Conversor online de TIFF a JPEG | ToolsForImage | Conversor de imágenes online gratuito{% endblock %}
+
+{% block content %}
+<h1>Conversor Gratuito Online de TIFF a JPEG</h1>
+<p>Convierte fácilmente tus imágenes de TIFF a formato JPEG. Sube una imagen TIFF y la convertiremos a JPEG por ti.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Conversión de TIFF a JPEG?</h2>
+        <p>La conversión de TIFF a JPEG es el proceso de cambiar imágenes de formato TIFF (Tagged Image File Format) a formato JPEG (Joint Photographic Experts Group). TIFF es conocido por su alta calidad y se utiliza a menudo en fotografía profesional, mientras que JPEG es un formato popular para uso diario debido a su menor tamaño de archivo y buena calidad. Convertir imágenes TIFF a JPEG puede ayudarte a ahorrar espacio y compartir tus imágenes fácilmente.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Convertir TIFF a JPEG?</h2>
+        <p>Hay varias razones para convertir imágenes TIFF a JPEG:</p>
+        <ul>
+            <li><strong>Tamaño de Archivo Más Pequeño:</strong> Las imágenes JPEG están comprimidas, lo que las hace más fáciles de almacenar y compartir sin ocupar demasiado espacio.</li>
+            <li><strong>Amplia Compatibilidad:</strong> JPEG es uno de los formatos de imagen más ampliamente compatibles, compatible con casi todos los dispositivos y software.</li>
+            <li><strong>Buena Calidad:</strong> El formato JPEG mantiene una buena calidad para fotografías, lo que lo hace ideal para uso web y compartir.</li>
+            <li><strong>Carga Rápida:</strong> Los archivos JPEG se cargan rápidamente en los sitios web, mejorando la experiencia del usuario para la visualización en línea.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestro Conversor de TIFF a JPEG</h2>
+        <p>Nuestra herramienta de conversión de TIFF a JPEG está diseñada para ser fácil de usar. Así es como puedes convertir tus imágenes:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir Archivo TIFF" para seleccionar la imagen TIFF que deseas convertir.</li>
+            <li>Después de la subida, el proceso de conversión comenzará automáticamente.</li>
+            <li>Una vez que la conversión esté completa, haz clic en "Descargar JPEG" para guardar la nueva imagen en tu dispositivo.</li>
+        </ul>
+        <p>Nuestro conversor admite varios formatos TIFF, asegurando una experiencia sin problemas para todos los usuarios.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestro Conversor de TIFF a JPEG</h2>
+        <p>Aquí hay algunas ventajas de usar nuestra herramienta de conversión:</p>
+        <ul>
+            <li><strong>Rápido y Fácil:</strong> Convierte tus imágenes TIFF a JPEG en solo unos pocos pasos simples.</li>
+            <li><strong>Sin Pérdida de Calidad:</strong> Disfruta de resultados de alta calidad sin una degradación significativa durante el proceso de conversión.</li>
+            <li><strong>Gratuito y Accesible:</strong> Usa nuestra herramienta en línea de forma gratuita, sin necesidad de instalar software.</li>
+            <li><strong>Interfaz Amigable:</strong> Nuestra herramienta está diseñada para ser intuitiva y fácil de navegar, asegurando una experiencia fluida.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Usos Comunes para la Conversión de TIFF a JPEG</h2>
+        <p>Aquí hay algunos escenarios en los que convertir TIFF a JPEG puede ser beneficioso:</p>
+        <ul>
+            <li><strong>Uso Web:</strong> JPEG es ideal para imágenes en sitios web y redes sociales debido a su pequeño tamaño y buena calidad.</li>
+            <li><strong>Fotografía:</strong> Comparte tus fotos fácilmente con amigos y familiares usando el formato JPEG.</li>
+            <li><strong>Creación de Documentos:</strong> Usa imágenes JPEG en presentaciones o documentos donde el tamaño del archivo y la compatibilidad son importantes.</li>
+            <li><strong>Uso Personal:</strong> Convierte rápidamente fotos personales para compartir en varias plataformas o para ahorrar espacio en tu dispositivo.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Convertir TIFF a JPEG Puede Ayudar</h2>
+        <p>Convertir tus imágenes TIFF a JPEG puede mejorar su usabilidad y rendimiento. Aquí te explicamos cómo:</p>
+        <ul>
+            <li><strong>Mayor Accesibilidad:</strong> Las imágenes JPEG se pueden compartir fácilmente en todos los dispositivos y plataformas.</li>
+            <li><strong>Almacenamiento Eficiente:</strong> Reduce el tamaño de los archivos para una gestión y almacenamiento más fácil en tu dispositivo.</li>
+            <li><strong>Compartir Mejorado:</strong> El formato JPEG es preferido para compartir en línea, asegurando que tus imágenes se vean genial dondequiera que se vean.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

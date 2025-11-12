@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="capsule">
+
+<path class="cls-1" d="M17.74,11.07,13,6.28l3.79-3.79a3.38,3.38,0,0,1,2.39-1h0a3.38,3.38,0,0,1,3.38,3.38h0a3.34,3.34,0,0,1-1,2.39Z"/>
+
+<path class="cls-1" d="M6.26,11.07,11,6.28,7.25,2.49a3.38,3.38,0,0,0-2.39-1h0A3.38,3.38,0,0,0,1.48,4.88h0a3.34,3.34,0,0,0,1,2.39Z"/>
+
+<line class="cls-1" x1="12" y1="9.15" x2="12" y2="11.07"/>
+
+<line class="cls-1" x1="9.13" y1="12.02" x2="9.13" y2="13.93"/>
+
+<line class="cls-1" x1="14.87" y1="12.98" x2="14.87" y2="14.89"/>
+
+<line class="cls-1" x1="11.04" y1="14.89" x2="11.04" y2="16.8"/>
+
+<line class="cls-1" x1="16.78" y1="16.8" x2="16.78" y2="18.72"/>
+
+<line class="cls-1" x1="7.22" y1="16.8" x2="7.22" y2="18.72"/>
+
+<line class="cls-1" x1="10.09" y1="21.59" x2="10.09" y2="23.5"/>
+
+<line class="cls-1" x1="12.96" y1="18.72" x2="12.96" y2="20.63"/>
+
+<line class="cls-1" x1="15.83" y1="21.59" x2="15.83" y2="23.5"/>
+
+</g>
+
+</svg>

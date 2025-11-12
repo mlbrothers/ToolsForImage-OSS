@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>football-player-spain</title>
+
+<g id="football-player-spain">
+
+<path d="M18.2,19.636a17.035,17.035,0,0,0-.7,15.347" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.961,11.027C33.643,11.009,33.322,11,33,11a16.919,16.919,0,0,0-8.929,2.531" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M48.719,21.513A17.069,17.069,0,0,0,40.8,12.889" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29.506,44.641A17.014,17.014,0,0,0,49.83,25.588" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21.139,40.179a17.171,17.171,0,0,0,2.234,1.834" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21.018,52.567l-5.129-5.2a5.4,5.4,0,0,1-1.023-6.128l5.408-11.263" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M25.508,33.293,19.2,42.474a2.378,2.378,0,0,0,.51,3.029l2.141,1.811" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M55.692,19.692a1.425,1.425,0,0,0-1.587-.294L46.88,22.609a1.934,1.934,0,0,1-1.722-.076l-2.885-1.6L30.522,14.4a8.167,8.167,0,0,0-5.364-.907l-3.306.575L7.588,16.55a1.712,1.712,0,0,0-1.131,2.636h0a1.715,1.715,0,0,0,1.52.76l13.24-.736L25,19,20,29l5.882,3.921-5.93,24.194A3.138,3.138,0,0,0,23,61l9-24,6-12,3.26,1.4L43.605,27.4a3.014,3.014,0,0,0,2.706-.167l9.092-5.3A1.426,1.426,0,0,0,55.692,19.692Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="6" y1="30" x2="6" y2="32" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="6" y1="36" x2="6" y2="38" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="2" y1="34" x2="4" y2="34" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="34" x2="10" y2="34" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M6.082,53.667A1.069,1.069,0,1,1,5.013,52.6,1.07,1.07,0,0,1,6.082,53.667Z"/>
+
+<path d="M39.218,15.567l-1.9-.908a5.4,5.4,0,0,1-2.55-7.2l.584-1.226a3.756,3.756,0,0,1,5.005-1.773h0a3.755,3.755,0,0,1,1.773,5Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="42.5" cy="54.5" r="5.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="42.5" cy="54.5" r="1.09"/>
+
+<circle cx="42.5" cy="49.5" r="1.09"/>
+
+<circle cx="47.5" cy="54.5" r="1.09"/>
+
+<circle cx="45.5" cy="58.5" r="1.09"/>
+
+<circle cx="39.5" cy="58.5" r="1.09"/>
+
+<circle cx="37.5" cy="54.5" r="1.09"/>
+
+<line x1="48" y1="36" x2="33" y2="36" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="48" y1="20" x2="41" y2="20" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="37" x2="26.087" y2="33.058" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="21.852" y1="14.069" x2="21.217" y2="19.21" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="42.273" y1="20.93" x2="41.26" y2="26.533" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

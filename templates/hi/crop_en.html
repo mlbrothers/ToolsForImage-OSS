@@ -1,0 +1,348 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ अपने चित्रों को आसानी से क्रॉप करें। क्रॉप क्षेत्र को इंटरैक्टिव रूप से समायोजित करें और परिणामों का पूर्वावलोकन वास्तविक समय में करें।">
+{% endblock %}
+
+{% block title %}ऑनलाइन इमेज क्रॉप करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री इमेज क्रॉप टूल</h1>
+<p>आसान तरीके से अपने चित्र को इच्छित क्षेत्र चुनकर क्रॉप करें। अपने परिवर्तनों का पूर्वावलोकन वास्तविक समय में करें।</p>
+
+<form id="crop-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">छवि अपलोड करें</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" src="#" alt="छवि पूर्वावलोकन">
+        <div id="crop-area">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <button type="button" class="crop-button" onclick="cropImage()">छवि क्रॉप करें</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>इमेज क्रॉपिंग क्या है?</h2>
+        <p>इमेज क्रॉपिंग एक प्रक्रिया है जिसमें चित्र से अनावश्यक बाहरी क्षेत्रों को हटाकर इसकी संरचना को बेहतर बनाया जाता है। आवश्यक तत्वों पर ध्यान केंद्रित करके, क्रॉपिंग एक दृश्यात्मक रूप से आकर्षक चित्र बनाने में मदद करती है जो आपकी संदेश को प्रभावी रूप से संप्रेषित करता है। चाहे आप वेबसाइट, सोशल मीडिया, या व्यक्तिगत उपयोग के लिए तस्वीरें तैयार कर रहे हों, क्रॉपिंग इमेज संपादन का एक महत्वपूर्ण कदम है जो कुल मिलाकर गुणवत्ता को काफी सुधार सकता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>चित्रों को क्रॉप करने के लाभ</h2>
+        <p>क्रॉप किए गए चित्र दृश्यात्मक कहानी कहने को काफी बेहतर बना सकते हैं। ध्यान भटकाने वाले तत्वों को हटाकर, आप अपने दर्शकों को चित्र के सबसे महत्वपूर्ण भागों पर ध्यान केंद्रित करने की अनुमति देते हैं। यह विशेष रूप से उत्पाद की तस्वीरों के लिए लाभदायक है, जहां स्पष्ट रूप से आइटम को प्रदर्शित करने से बिक्री बढ़ सकती है। इसके अलावा, क्रॉपिंग विभिन्न प्लेटफार्मों के लिए आवश्यक विशेष पहलू अनुपात प्राप्त करने में मदद कर सकती है, यह सुनिश्चित करते हुए कि आपकी छवियाँ वेबसाइटों, ब्लॉगों और सोशल मीडिया पर सही ढंग से फिट हों।</p>
+        <p>इसके अलावा, अच्छी तरह से क्रॉप की गई छवियाँ आपकी वेबसाइट पर लोडिंग समय को भी सुधार सकती हैं। छोटे, अनुकूलित चित्र न केवल उपयोगकर्ता अनुभव को बेहतर बनाते हैं, बल्कि बेहतर SEO रैंकिंग में भी योगदान करते हैं, क्योंकि सर्च इंजन तेज़ लोड होने वाले पृष्ठों को प्राथमिकता देते हैं। इससे आपके कंटेंट के लिए बढ़ी हुई ट्रैफिक और उच्च दृश्यता मिल सकती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>कब चित्रों को क्रॉप करें</h2>
+        <p>जब आप ध्यान केंद्रित करना चाहते हैं या अव्यवस्था को समाप्त करना चाहते हैं, तो अपने चित्रों को क्रॉप करने पर विचार करें। यह ऑनलाइन उपयोग के लिए चित्र तैयार करते समय विशेष रूप से महत्वपूर्ण है, जैसे ब्लॉग पोस्ट, ऑनलाइन स्टोर, या सोशल मीडिया प्रोफाइल। क्रॉपिंग आपको अधिक क्लिक आकर्षित करने के लिए कस्टम थंबनेल बनाने में भी मदद कर सकती है, जिससे यह डिजिटल मार्केटिंग का एक आवश्यक पहलू बनता है।</p>
+        <p>इसके अतिरिक्त, जब आप एक परियोजना के लिए सहसंबंधित चित्रों की एक श्रृंखला बनाना चाहते हैं, जैसे कि पोर्टफोलियो या प्रस्तुति, तो क्रॉपिंग उपयोगी होती है। एक सुसंगत पहलू अनुपात के लिए क्रॉप करके, आप एक समान रूप बना सकते हैं जो आपके काम की पेशेवरता को बढ़ाता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>प्रभावी चित्र क्रॉपिंग के लिए टिप्स</h2>
+        <p>यहाँ चित्रों को क्रॉप करते समय ध्यान में रखने योग्य कुछ टिप्स दिए गए हैं:</p>
+        <ul>
+            <li><strong>थर्ड्स का नियम का उपयोग करें:</strong> अपने चित्र को नौ समान भागों के ग्रिड में विभाजित करें और प्रमुख तत्वों को इन रेखाओं या उनके चौराहों पर रखें ताकि संतुलन और रुचि बनाई जा सके।</li>
+            <li><strong>पहलू अनुपात बनाए रखें:</strong> उस प्लेटफार्म पर विचार करें जहाँ चित्र का उपयोग किया जाएगा और उपयुक्त रूप से क्रॉप करें ताकि इच्छित पहलू अनुपात बना रहे। यह सुनिश्चित करता है कि आपकी छवियाँ हर जगह अच्छी दिखें।</li>
+            <li><strong>विषय पर ध्यान केंद्रित करें:</strong> सुनिश्चित करें कि मुख्य विषय स्पष्ट रूप से दिखाई दे और सही तरीके से फ्रेम किया गया हो। इसके चारों ओर बहुत अधिक खाली स्थान छोड़ने से बचें।</li>
+            <li><strong>अलग-अलग क्रॉप्स के साथ प्रयोग करें:</strong> यह देखने के लिए कई क्रॉपिंग शैलियों का प्रयास करने से न डरें कि आपके चित्र और इच्छित संदेश के लिए क्या सबसे अच्छा काम करता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ToolsForImage के साथ चित्रों को क्रॉप करने का तरीका</h2>
+        <p>ToolsForImage पर, अपने चित्रों को क्रॉप करना आसान और प्रभावी है। हमारा उपयोगकर्ता-अनुकूल इंटरफ़ेस आपको क्रॉपिंग के लिए इच्छित क्षेत्र का चयन करने और वास्तविक समय में परिणामों का पूर्वावलोकन करने की अनुमति देता है। बस अपना चित्र अपलोड करें, आवश्यकतानुसार क्रॉप क्षेत्र समायोजित करें, और केवल कुछ क्लिक में क्रॉप किया हुआ चित्र डाउनलोड करें। चाहे आप एक पेशेवर फोटोग्राफर हों या एक आकस्मिक उपयोगकर्ता, हमारा क्रॉपिंग टूल आपके आवश्यकताओं को सटीकता और आसानी के साथ पूरा करने के लिए डिज़ाइन किया गया है।</p>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .crop-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .image-preview-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        max-height: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image-preview {
+        max-width: 100%;
+        max-height: 100%;
+        display: none;
+        object-fit: contain;
+    }
+
+    #crop-area {
+        position: absolute;
+        border: 2px dashed #fff;
+        cursor: move;
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw { top: -5px; left: -5px; cursor: nw-resize; }
+    .resize-handle.ne { top: -5px; right: -5px; cursor: ne-resize; }
+    .resize-handle.sw { bottom: -5px; left: -5px; cursor: sw-resize; }
+    .resize-handle.se { bottom: -5px; right: -5px; cursor: se-resize; }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    @media (max-width: 600px) {
+        .image-preview-container {
+            max-width: 100%;
+            max-height: 400px;
+        }
+    }
+</style>
+
+<script>
+    let cropArea, imagePreview, imagePreviewContainer;
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+    let imageOffset = { x: 0, y: 0 };
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                imagePreview.onload = function() {
+                    initCropArea();
+                }
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function initCropArea() {
+        cropArea = document.getElementById('crop-area');
+        imagePreviewContainer = document.querySelector('.image-preview-container');
+        const containerRect = imagePreviewContainer.getBoundingClientRect();
+        const imageRect = imagePreview.getBoundingClientRect();
+
+        const scale = Math.min(containerRect.width / imageRect.width, containerRect.height / imageRect.height);
+        const scaledWidth = imageRect.width * scale;
+        const scaledHeight = imageRect.height * scale;
+
+        // Calculate image offset
+        imageOffset.x = (containerRect.width - scaledWidth) / 2;
+        imageOffset.y = (containerRect.height - scaledHeight) / 2;
+
+        // Adjust initial crop size for small images
+        const initialCropSize = Math.min(scaledWidth, scaledHeight, 200);
+        
+        cropArea.style.width = `${initialCropSize}px`;
+        cropArea.style.height = `${initialCropSize}px`;
+        cropArea.style.left = `${imageOffset.x + (scaledWidth - initialCropSize) / 2}px`;
+        cropArea.style.top = `${imageOffset.y + (scaledHeight - initialCropSize) / 2}px`;
+
+        cropArea.addEventListener('mousedown', startDragging);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', stopDragging);
+
+        const resizeHandles = cropArea.querySelectorAll('.resize-handle');
+        resizeHandles.forEach(handle => {
+            handle.addEventListener('mousedown', startResizing);
+        });
+    }
+
+    function startDragging(e) {
+        if (e.target.classList.contains('resize-handle')) return;
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = cropArea.offsetLeft;
+        startTop = cropArea.offsetTop;
+        e.preventDefault();
+    }
+
+    function drag(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+        
+        let newLeft = startLeft + dx;
+        let newTop = startTop + dy;
+        
+        // Constrain crop area within image bounds
+        const imageRect = imagePreview.getBoundingClientRect();
+        newLeft = Math.max(imageOffset.x, Math.min(newLeft, imageOffset.x + imageRect.width - cropArea.offsetWidth));
+        newTop = Math.max(imageOffset.y, Math.min(newTop, imageOffset.y + imageRect.height - cropArea.offsetHeight));
+
+        cropArea.style.left = newLeft + 'px';
+        cropArea.style.top = newTop + 'px';
+    }
+
+    function stopDragging() {
+        isDragging = false;
+    }
+
+    function startResizing(e) {
+        isResizing = true;
+        currentHandle = e.target;
+        startX = e.clientX;
+        startY = e.clientY;
+        startWidth = parseInt(getComputedStyle(cropArea).width, 10);
+        startHeight = parseInt(getComputedStyle(cropArea).height, 10);
+        startLeft = cropArea.offsetLeft;
+        startTop = cropArea.offsetTop;
+        document.addEventListener('mousemove', resize);
+        document.addEventListener('mouseup', stopResizing);
+        e.stopPropagation();
+        e.preventDefault();
+    }
+
+    function resize(e) {
+        if (!isResizing) return;
+        e.preventDefault();
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        const imageRect = imagePreview.getBoundingClientRect();
+        let newWidth, newHeight, newLeft, newTop;
+
+        if (currentHandle.classList.contains('se')) {
+            newWidth = Math.min(startWidth + dx, imageRect.width + imageOffset.x - startLeft);
+            newHeight = Math.min(startHeight + dy, imageRect.height + imageOffset.y - startTop);
+        } else if (currentHandle.classList.contains('sw')) {
+            newWidth = Math.min(startWidth - dx, startLeft + startWidth - imageOffset.x);
+            newHeight = Math.min(startHeight + dy, imageRect.height + imageOffset.y - startTop);
+            newLeft = Math.max(imageOffset.x, startLeft + dx);
+        } else if (currentHandle.classList.contains('ne')) {
+            newWidth = Math.min(startWidth + dx, imageRect.width + imageOffset.x - startLeft);
+            newHeight = Math.min(startHeight - dy, startTop + startHeight - imageOffset.y);
+            newTop = Math.max(imageOffset.y, startTop + dy);
+        } else if (currentHandle.classList.contains('nw')) {
+            newWidth = Math.min(startWidth - dx, startLeft + startWidth - imageOffset.x);
+            newHeight = Math.min(startHeight - dy, startTop + startHeight - imageOffset.y);
+            newLeft = Math.max(imageOffset.x, startLeft + dx);
+            newTop = Math.max(imageOffset.y, startTop + dy);
+        }
+
+        // Ensure minimum size for crop area
+        const minSize = 20;
+        newWidth = Math.max(newWidth, minSize);
+        newHeight = Math.max(newHeight, minSize);
+
+        cropArea.style.width = `${newWidth}px`;
+        cropArea.style.height = `${newHeight}px`;
+        if (newLeft !== undefined) cropArea.style.left = `${newLeft}px`;
+        if (newTop !== undefined) cropArea.style.top = `${newTop}px`;
+    }
+
+    function stopResizing() {
+        isResizing = false;
+        document.removeEventListener('mousemove', resize);
+        document.removeEventListener('mouseup', stopResizing);
+    }
+
+    function cropImage() {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        const imageRect = imagePreview.getBoundingClientRect();
+        const cropRect = cropArea.getBoundingClientRect();
+
+        const scaleX = imagePreview.naturalWidth / imageRect.width;
+        const scaleY = imagePreview.naturalHeight / imageRect.height;
+
+        const cropX = (cropRect.left - imageRect.left) * scaleX;
+        const cropY = (cropRect.top - imageRect.top) * scaleY;
+        const cropWidth = cropRect.width * scaleX;
+        const cropHeight = cropRect.height * scaleY;
+
+        canvas.width = cropWidth;
+        canvas.height = cropHeight;
+
+        ctx.drawImage(
+            imagePreview,
+            cropX, cropY, cropWidth, cropHeight,
+            0, 0, cropWidth, cropHeight
+        );
+
+        // Convert canvas to image and download
+        canvas.toBlob((blob) => {
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.download = 'cropped_image.png';
+            downloadLink.click();
+        }, 'image/png');
+    }
+</script>
+{% endblock %}

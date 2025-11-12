@@ -1,0 +1,142 @@
+{% extends 'fr/base.html' %}
+
+{% block title %}Comment faire pivoter des images | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Découvrez comment faire pivoter des images en ligne gratuitement.">
+{% endblock %}
+
+{% block content %}
+<article class="blog-post">
+    <h1>Faire pivoter des images</h1>
+    <p><em>Publié le : 22 octobre 2024</em></p>
+
+    <section>
+        <h2>Introduction</h2>
+        <p><span class="bold-text">La rotation d'image</span> est le processus de rotation d'une image autour d'un point spécifique, généralement son centre. Cette manipulation modifie l'orientation de l'image sans altérer son contenu. <span class="bold-text">Faire pivoter des images</span> peut se faire à divers degrés, tels que 90, 180 ou 270 degrés, selon le résultat souhaité. Cette technique est essentielle en photographie, en design graphique et sur les réseaux sociaux, où la bonne orientation peut améliorer l'attrait visuel et le message d'une image.</p>
+
+        <p>
+            Faire pivoter une image est crucial pour plusieurs raisons. Tout d'abord, cela vous permet de corriger l'orientation des photos prises sous des angles inappropriés, garantissant que vos images apparaissent professionnelles. Deuxièmement, cela peut aider à créer des compositions plus dynamiques, rendant vos visuels plus engageants. De plus, faire pivoter des images peut aider à mettre en valeur des éléments spécifiques ou à améliorer l'esthétique générale d'un design. Que ce soit pour un usage personnel ou pour des projets professionnels, <span class="bold-text">faire pivoter des images</span> peut avoir un impact significatif sur leur perception.
+        </p>
+
+        <p>Avec <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a>, faire pivoter une image n'a jamais été aussi simple. Notre <a class="bold-text" href="/{{ g.lang }}/image-rotate">outil de rotation d'image</a> offre une interface conviviale qui vous permet de <span class="bold-text">faire pivoter des images</span> rapidement et efficacement. Vous n'avez pas besoin de télécharger un logiciel ni d'avoir une expertise technique : il vous suffit de télécharger votre image, de choisir le degré de rotation, et vous êtes prêt à partir ! Notre outil est conçu pour les utilisateurs de tous niveaux de compétence, garantissant une expérience sans faille.</p>
+
+    </section>
+
+    <section>
+        <h2>Comment utiliser notre outil de rotation d'image</h2>
+        <div class="container">
+            <div class="step">Étape 1 : Cliquez sur le bouton "Télécharger depuis l'ordinateur" pour télécharger l'image que vous souhaitez faire pivoter et vous pouvez voir l'aperçu de l'image.</div>
+            <div class="arrow">↓</div>
+            <div class="step">Étape 2 : Utilisez maintenant le bouton "Faire pivoter à gauche" ou "Faire pivoter à droite" pour faire pivoter l'image à droite ou à gauche.</div>
+            <div class="arrow">↓</div>
+            <div class="step">Étape 3 : Une fois que vous avez obtenu l'angle de rotation requis de l'image, cliquez sur "Télécharger l'image pivotée" et le téléchargement de l'image commencera automatiquement.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Choisir <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a> pour vos besoins de <a class="bold-text" href="/{{ g.lang }}/image-rotate">rotation d'image</a> offre de nombreux avantages. Notre outil est entièrement en ligne, ce qui signifie que vous pouvez y accéder de n'importe où, à tout moment, sans rien installer. Nous privilégions la rapidité et la facilité d'utilisation, vous permettant de <a class="bold-text" href="/{{ g.lang }}/image-rotate">faire pivoter des images</a> en quelques clics seulement. De plus, notre plateforme prend en charge divers formats de fichiers, répondant à vos besoins spécifiques. Avec un engagement envers la qualité et la satisfaction des utilisateurs, nous sommes votre solution incontournable pour toutes les tâches de manipulation d'image.</p>
+    </section>
+
+    <a href="{{ url_for('blogs', lang='fr') }}" class="back-link">← Retour aux Blogs</a>
+</article>
+
+<style>
+    .bold-text {
+        font-weight: 900;
+        color: #000000;
+    }
+
+    .blog-post {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+
+    .back-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section a {
+        text-decoration: underline;
+        color: #344b53;
+        font-weight: 900;
+    }
+
+    section a:hover {
+        color: #287791;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+{% endblock %}

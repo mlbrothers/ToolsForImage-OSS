@@ -1,0 +1,418 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}टूल्सफॉरइमेज | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="टूल्सफॉरइमेज मुफ्त ऑनलाइन इमेज संपादन उपकरण प्रदान करता है। आसानी से और तेजी से अपनी छवियों को संकुचित, आकार बदलें, क्रॉप करें, परिवर्तित करें, घुमाएँ, प्रभाव जोड़ें, वॉटरमार्क करें और चेहरों को धुंधला करें।">
+{% endblock %}
+
+{% block content %}
+
+
+<h1>फ्री ऑनलाइन इमेज टूल्स में आपका स्वागत है।</h1>
+<h2>अपनी छवियों को ऑनलाइन संकुचित, परिवर्तित, आकार बदलें, वॉटरमार्क करें, क्रॉप करें, घुमाएँ और प्रभाव लागू करें।</h2>
+
+<form action="javascript:void(0);" class="search-bar">
+    <input type="text" id="searchInput" placeholder="उपकरण खोजें..." aria-label="उपकरण खोजें" oninput="liveSearch()"
+        autocomplete="off">
+</form>
+
+<div class="grid-container">
+    <a href="/{{ g.lang }}/image-compression" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='compress.svg') }}" alt="Compress Image Icon">
+            <h2>इमेज संकुचन</h2>
+            <p>ऑनलाइन अपनी छवियों को संकुचित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-resize" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='resize1.svg') }}" alt="Resize Image Icon">
+            <h2>इमेज आकार बदलें</h2>
+            <p>ऑनलाइन अपनी छवियों का आकार बदलें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-crop" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='crop.svg') }}" alt="Crop Image Icon">
+            <h2>इमेज क्रॉप करें</h2>
+            <p>ऑनलाइन अपनी छवियों को क्रॉप करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert-image-format" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='convert1.svg') }}" alt="Convert Image Icon">
+            <h2>इमेज परिवर्तित करें</h2>
+            <p>ऑनलाइन अपनी छवि को विभिन्न प्रारूपों में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-rotate" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='rotate1.svg') }}" alt="Rotate Image Icon">
+            <h2>इमेज घुमाएँ</h2>
+            <p>ऑनलाइन किसी भी दिशा में अपनी छवि को घुमाएँ</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-effects" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='edit.svg') }}" alt="Image Effects Icon">
+            <h2>इमेज प्रभाव</h2>
+            <p>ऑनलाइन अपनी छवियों पर प्रभाव और फ़िल्टर लागू करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-watermarking" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='stamp.svg') }}" alt="Watermark Image Icon">
+            <h2>वॉटरमार्क</h2>
+            <p>ऑनलाइन अपनी छवियों में वॉटरमार्क जोड़ें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/blur-face" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='blur.svg') }}" alt="Blur Face Icon">
+            <h2>चेहरा धुंधला करें</h2>
+            <p>ऑनलाइन अपनी छवियों में चेहरे पर धुंधला प्रभाव डालें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/remove-background" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='background-icon.svg') }}" alt="Remove Background Icon">
+            <h2>पृष्ठभूमि हटाएँ</h2>
+            <p>ऑनलाइन अपनी छवियों से पृष्ठभूमि हटाएँ</p>
+        </div>
+    </a>
+
+
+    <a href="/{{ g.lang }}/convert/png-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="PNG to JPG">
+            <h2>PNG से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="PNG to JPEG">
+            <h2>PNG से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="PNG to BMP">
+            <h2>PNG से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="PNG to TIFF">
+            <h2>PNG से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="PNG to WEBP">
+            <h2>PNG से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="PNG to ICO">
+            <h2>PNG से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को PNG से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/jpg-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="JPG to PNG">
+            <h2>JPG से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="JPG to JPEG">
+            <h2>JPG से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="JPG to BMP">
+            <h2>JPG से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="JPG to TIFF">
+            <h2>JPG से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="JPG to WEBP">
+            <h2>JPG से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="JPG to ICO">
+            <h2>JPG से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को JPG से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/jpeg-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="JPEG से PNG">
+            <h2>JPEG से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="JPEG से JPG">
+            <h2>JPEG से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="JPEG से BMP">
+            <h2>JPEG से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="JPEG से TIFF">
+            <h2>JPEG से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="JPEG से WEBP">
+            <h2>JPEG से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="JPEG से ICO">
+            <h2>JPEG से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को JPEG से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/bmp-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="BMP से PNG">
+            <h2>BMP से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="BMP से JPG">
+            <h2>BMP से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="BMP से JPEG">
+            <h2>BMP से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="BMP से TIFF">
+            <h2>BMP से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="BMP से WEBP">
+            <h2>BMP से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="BMP से ICO">
+            <h2>BMP से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को BMP से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/tiff-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="TIFF से PNG">
+            <h2>TIFF से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="TIFF से JPG">
+            <h2>TIFF से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="TIFF से JPEG">
+            <h2>TIFF से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="TIFF से BMP">
+            <h2>TIFF से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="TIFF से WEBP">
+            <h2>TIFF से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="TIFF से ICO">
+            <h2>TIFF से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को TIFF से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/webp-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="WEBP से PNG">
+            <h2>WEBP से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="WEBP से JPG">
+            <h2>WEBP से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="WEBP से JPEG">
+            <h2>WEBP से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="WEBP से BMP">
+            <h2>WEBP से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="WEBP से TIFF">
+            <h2>WEBP से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="WEBP से ICO">
+            <h2>WEBP से ICO</h2>
+            <p>ऑनलाइन अपनी छवियों को WEBP से ICO में परिवर्तित करें</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/ico-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="ICO से PNG">
+            <h2>ICO से PNG</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से PNG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="ICO से JPG">
+            <h2>ICO से JPG</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से JPG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="ICO से JPEG">
+            <h2>ICO से JPEG</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से JPEG में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="ICO से BMP">
+            <h2>ICO से BMP</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से BMP में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="ICO से TIFF">
+            <h2>ICO से TIFF</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से TIFF में परिवर्तित करें</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="ICO से WEBP">
+            <h2>ICO से WEBP</h2>
+            <p>ऑनलाइन अपनी छवियों को ICO से WEBP में परिवर्तित करें</p>
+        </div>
+    </a>
+
+</div>
+
+<script>
+    function liveSearch() {
+        let query = document.getElementById('searchInput').value.toLowerCase();
+
+        let tools = document.getElementsByClassName('tool');
+
+        for (let i = 0; i < tools.length; i++) {
+            let tool = tools[i];
+
+            let toolName = tool.getElementsByTagName('h2')[0].textContent.toLowerCase();
+
+            if (toolName.includes(query)) {
+                tool.style.display = '';
+            } else {
+                tool.style.display = 'none';
+            }
+        }
+    }
+</script>
+
+{% endblock %}

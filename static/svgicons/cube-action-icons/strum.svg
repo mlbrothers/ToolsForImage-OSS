@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_achtien{fill:#EDB57E;}
+	.cubies_negentien{fill:#F2C99E;}
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_zeven{fill:#725A48;}
+	.cubies_acht{fill:#8E7866;}
+	.st0{fill:#2EB39A;}
+	.st1{fill:#65C3AB;}
+	.st2{fill:#CCE2CD;}
+	.st3{fill:#98D3BC;}
+	.st4{fill:#A4C83F;}
+	.st5{fill:#BCD269;}
+	.st6{fill:#E8E8B5;}
+	.st7{fill:#D1DE8B;}
+	.st8{fill:#C9483A;}
+	.st9{fill:#D97360;}
+	.st10{fill:#4C4842;}
+	.st11{fill:#67625D;}
+	.st12{fill:#FFF2DF;}
+	.st13{fill:#837F79;}
+	.st14{fill:#C9C6C0;}
+	.st15{fill:#EDEAE5;}
+	.st16{fill:#EC9B5A;}
+	.st17{fill:#E3D4C0;}
+	.st18{fill:#E69D8A;}
+	.st19{fill:#AB9784;}
+	.st20{fill:#C6B5A2;}
+	.st21{fill:#F9E0BD;}
+	.st22{fill:#F2C7B5;}
+</style>
+<g>
+	<path class="cubies_achtien" d="M29,32H3c-1.657,0-3-1.343-3-3V9c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v20
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_negentien" d="M27,32H3c-1.657,0-3-1.343-3-3V9c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v20
+		C30,30.657,28.657,32,27,32z"/>
+	<circle class="cubies_acht" cx="15" cy="19" r="7"/>
+	<path class="cubies_achtien" d="M9,19c0-3.697,2.868-6.717,6.5-6.975C15.334,12.013,15.169,12,15,12c-3.866,0-7,3.134-7,7
+		c0,3.866,3.134,7,7,7c0.169,0,0.334-0.013,0.5-0.025C11.868,25.717,9,22.697,9,19z"/>
+	<path class="cubies_zeven" d="M22,3h-1V2h1c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H10C9.448,0,9,0.448,9,1c0,0.552,0.448,1,1,1h1
+		v1h-1C9.448,3,9,3.448,9,4c0,0.552,0.448,1,1,1h1v1h10V5h1c0.552,0,1-0.448,1-1C23,3.448,22.552,3,22,3z"/>
+	<path class="cubies_acht" d="M21,3h-1V2h1c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H10C9.448,0,9,0.448,9,1c0,0.552,0.448,1,1,1h1
+		v1h-1C9.448,3,9,3.448,9,4c0,0.552,0.448,1,1,1h1v1h9V5h1c0.552,0,1-0.448,1-1C22,3.448,21.552,3,21,3z"/>
+	<path class="cubies_twintig" d="M12.5,30c-0.276,0-0.5-0.224-0.5-0.5v-27C12,2.224,12.224,2,12.5,2S13,2.224,13,2.5v27
+		C13,29.776,12.776,30,12.5,30z M15,29.5v-27C15,2.224,14.776,2,14.5,2S14,2.224,14,2.5v27c0,0.276,0.224,0.5,0.5,0.5
+		S15,29.776,15,29.5z M17,29.5v-27C17,2.224,16.776,2,16.5,2S16,2.224,16,2.5v27c0,0.276,0.224,0.5,0.5,0.5S17,29.776,17,29.5z
+		 M19,29.5v-27C19,2.224,18.776,2,18.5,2S18,2.224,18,2.5v27c0,0.276,0.224,0.5,0.5,0.5S19,29.776,19,29.5z"/>
+</g>
+</svg>

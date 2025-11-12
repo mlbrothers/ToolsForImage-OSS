@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>spanish-woman</title>
+
+<g id="spanish-woman">
+
+<circle cx="32" cy="36" r="23" style="fill:#e5efef"/>
+
+<polygon points="48 42 52 42 57 61 48 61 48 42" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="18 42 14 42 9 61 18 61 18 42" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M43,42.1H23.023a8.12,8.12,0,0,1-2.933-9.007l.363-1.136a13.179,13.179,0,0,1,.29-7.457l2.28-6.748H43V42.1Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36,37.679V33.985H29.935v3.694A4.321,4.321,0,0,1,25.614,42H18V57H48V42H40.321A4.321,4.321,0,0,1,36,37.679Z" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M32.989,35h0a10.011,10.011,0,0,1-10.01-10.011V15.435H43v9.554A10.011,10.011,0,0,1,32.989,35Z" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M42.689,16.094s-4.638,2.819-12.754.5c0,0-1.159,5.8-6.956,5.217V14.855A9.855,9.855,0,0,1,32.834,5h0a9.855,9.855,0,0,1,9.855,9.855Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="52.5" cy="28.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M59.326,14.371A1.069,1.069,0,1,1,58.257,13.3,1.069,1.069,0,0,1,59.326,14.371Z" style="fill:#4c241d"/>
+
+<line x1="7" y1="8" x2="7" y2="10" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="7" y1="14" x2="7" y2="16" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="3" y1="12" x2="5" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="9" y1="12" x2="11" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13.082,27.667A1.069,1.069,0,1,1,12.013,26.6,1.07,1.07,0,0,1,13.082,27.667Z" style="fill:#4c241d"/>
+
+<circle cx="43.268" cy="16.014" r="2.899" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M48,57,45.08,42h2.667a13.049,13.049,0,0,0,8.85-3.458L60,35.405V43.34a11.7,11.7,0,0,1-.9,4.5h0a11.689,11.689,0,0,1-4.781,5.524Z" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M18,57l3-15.1H18.333a13.053,13.053,0,0,1-8.851-3.458L6.08,35.3v7.935a11.7,11.7,0,0,0,.9,4.5h0a11.689,11.689,0,0,0,4.781,5.524Z" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33,52c-12.857-5-15,5-15,5v4H48V57S45.857,47,33,52Z" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

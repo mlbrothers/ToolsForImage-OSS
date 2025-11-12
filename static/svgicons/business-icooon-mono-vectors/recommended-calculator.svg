@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#000000;}
+]]>
+</style>
+<g>
+	<path class="st0" d="M394.656,0H117.359C92.313,0,72,20.313,72,45.344v421.313C72,491.688,92.313,512,117.359,512h277.297
+		C419.703,512,440,491.688,440,466.656V45.344C440,20.313,419.703,0,394.656,0z M416,466.656c0,11.766-9.578,21.344-21.344,21.344
+		H117.359C105.578,488,96,478.422,96,466.656V45.344C96,33.578,105.578,24,117.359,24h277.297C406.422,24,416,33.578,416,45.344
+		V466.656z"/>
+	<rect x="136" y="384" class="st0" width="48" height="48"/>
+	<rect x="136" y="304" class="st0" width="48" height="48"/>
+	<rect x="136" y="224" class="st0" width="48" height="48"/>
+	<rect x="232" y="384" class="st0" width="48" height="48"/>
+	<rect x="232" y="304" class="st0" width="48" height="48"/>
+	<rect x="232" y="224" class="st0" width="48" height="48"/>
+	<rect x="328" y="304" class="st0" width="48" height="128"/>
+	<rect x="328" y="224" class="st0" width="48" height="48"/>
+	<rect x="136" y="80" class="st0" width="240" height="80"/>
+</g>
+</svg>

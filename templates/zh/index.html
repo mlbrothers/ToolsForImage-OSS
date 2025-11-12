@@ -1,0 +1,416 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}ToolsForImage | 提供模糊人脸、图像转换、编辑、调整大小、去背景、模糊背景等免费的全面在线工具{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage 提供免费的在线图像编辑工具。压缩、调整大小、裁剪、转换、旋转、添加效果、水印、去除背景、模糊背景和模糊人脸，快速轻松地在线处理您的图像。">
+{% endblock %}
+
+{% block content %}
+
+<h1>欢迎来到 ToolsForImage - 免费在线图像工具。</h1>
+<h2>在线压缩、转换、调整大小、添加水印、裁剪、旋转、去除和模糊背景，应用图像效果。</h2>
+
+<form action="javascript:void(0);" class="search-bar">
+    <input type="text" id="searchInput" placeholder="搜索工具..." aria-label="搜索工具" oninput="liveSearch()" autocomplete="off">
+</form>
+
+<div class="grid-container">
+    <a href="/{{ g.lang }}/image-compression" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='compress.svg') }}" alt="压缩图像图标">
+            <h2>压缩图像</h2>
+            <p>在线压缩您的图像</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-resize" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='resize1.svg') }}" alt="调整图像大小图标">
+            <h2>调整图像大小</h2>
+            <p>在线调整您的图像大小</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-crop" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='crop.svg') }}" alt="裁剪图像图标">
+            <h2>裁剪图像</h2>
+            <p>在线裁剪您的图像</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert-image-format" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='convert1.svg') }}" alt="转换图像图标">
+            <h2>转换图像</h2>
+            <p>在线将您的图像转换为多种格式</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-rotate" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='rotate1.svg') }}" alt="旋转图像图标">
+            <h2>旋转图像</h2>
+            <p>在线旋转您的图像</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-effects" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='edit.svg') }}" alt="图像效果图标">
+            <h2>图像效果</h2>
+            <p>在线为您的图像应用效果和滤镜</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/image-watermarking" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='stamp.svg') }}" alt="水印图像图标">
+            <h2>水印</h2>
+            <p>在线为您的图像添加水印</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/blur-face" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='blur.svg') }}" alt="模糊人脸图标">
+            <h2>模糊人脸</h2>
+            <p>在线为您的图像中的人脸添加模糊效果</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/remove-background" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='background-icon.svg') }}" alt="去除背景图标">
+            <h2>去除背景</h2>
+            <p>在线去除图像的背景</p>
+        </div>
+    </a>
+
+
+    <a href="/{{ g.lang }}/convert/png-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="PNG 转 JPG">
+            <h2>PNG 转 JPG</h2>
+            <p>在线将您的图像从 PNG 转换为 JPG</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="PNG 转 JPEG">
+            <h2>PNG 转 JPEG</h2>
+            <p>在线将您的图像从 PNG 转换为 JPEG</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="PNG 转 BMP">
+            <h2>PNG 转 BMP</h2>
+            <p>在线将您的图像从 PNG 转换为 BMP</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="PNG 转 TIFF">
+            <h2>PNG 转 TIFF</h2>
+            <p>在线将您的图像从 PNG 转换为 TIFF</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="PNG 转 WEBP">
+            <h2>PNG 转 WEBP</h2>
+            <p>在线将您的图像从 PNG 转换为 WEBP</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/png-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="PNG 转 ICO">
+            <h2>PNG 转 ICO</h2>
+            <p>在线将您的图像从 PNG 转换为 ICO</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/jpg-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="JPG 转 PNG">
+            <h2>JPG 转 PNG</h2>
+            <p>在线将您的图像从 JPG 转换为 PNG</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="JPG 转 JPEG">
+            <h2>JPG 转 JPEG</h2>
+            <p>在线将您的图像从 JPG 转换为 JPEG</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="JPG 转 BMP">
+            <h2>JPG 转 BMP</h2>
+            <p>在线将您的图像从 JPG 转换为 BMP</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpg-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="JPG 转 TIFF">
+            <h2>JPG 转 TIFF</h2>
+            <p>在线将您的图像从 JPG 转换为 TIFF</p>
+        </div>
+    </a>
+
+    <a href="/{{ g.lang }}/convert/jpg-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="JPG to WEBP">
+            <h2>JPG 转 WEBP</h2>
+            <p>将您的图片从 JPG 转换为 WEBP 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/jpg-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="JPG to ICO">
+            <h2>JPG 转 ICO</h2>
+            <p>将您的图片从 JPG 转换为 ICO 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/jpeg-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="JPEG to PNG">
+            <h2>JPEG 转 PNG</h2>
+            <p>将您的图片从 JPEG 转换为 PNG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="JPEG to JPG">
+            <h2>JPEG 转 JPG</h2>
+            <p>将您的图片从 JPEG 转换为 JPG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="JPEG to BMP">
+            <h2>JPEG 转 BMP</h2>
+            <p>将您的图片从 JPEG 转换为 BMP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="JPEG to TIFF">
+            <h2>JPEG 转 TIFF</h2>
+            <p>将您的图片从 JPEG 转换为 TIFF 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="JPEG to WEBP">
+            <h2>JPEG 转 WEBP</h2>
+            <p>将您的图片从 JPEG 转换为 WEBP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/jpeg-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="JPEG to ICO">
+            <h2>JPEG 转 ICO</h2>
+            <p>将您的图片从 JPEG 转换为 ICO 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/bmp-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="BMP to PNG">
+            <h2>BMP 转 PNG</h2>
+            <p>将您的图片从 BMP 转换为 PNG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="BMP to JPG">
+            <h2>BMP 转 JPG</h2>
+            <p>将您的图片从 BMP 转换为 JPG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="BMP to JPEG">
+            <h2>BMP 转 JPEG</h2>
+            <p>将您的图片从 BMP 转换为 JPEG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="BMP to TIFF">
+            <h2>BMP 转 TIFF</h2>
+            <p>将您的图片从 BMP 转换为 TIFF 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="BMP to WEBP">
+            <h2>BMP 转 WEBP</h2>
+            <p>将您的图片从 BMP 转换为 WEBP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/bmp-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="BMP to ICO">
+            <h2>BMP 转 ICO</h2>
+            <p>将您的图片从 BMP 转换为 ICO 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/tiff-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="TIFF to PNG">
+            <h2>TIFF 转 PNG</h2>
+            <p>将您的图片从 TIFF 转换为 PNG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="TIFF to JPG">
+            <h2>TIFF 转 JPG</h2>
+            <p>将您的图片从 TIFF 转换为 JPG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="TIFF to JPEG">
+            <h2>TIFF 转 JPEG</h2>
+            <p>将您的图片从 TIFF 转换为 JPEG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="TIFF to BMP">
+            <h2>TIFF 转 BMP</h2>
+            <p>将您的图片从 TIFF 转换为 BMP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="TIFF to WEBP">
+            <h2>TIFF 转 WEBP</h2>
+            <p>将您的图片从 TIFF 转换为 WEBP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/tiff-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="TIFF to ICO">
+            <h2>TIFF 转 ICO</h2>
+            <p>将您的图片从 TIFF 转换为 ICO 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/webp-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="WEBP to PNG">
+            <h2>WEBP 转 PNG</h2>
+            <p>将您的图片从 WEBP 转换为 PNG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="WEBP to JPG">
+            <h2>WEBP 转 JPG</h2>
+            <p>将您的图片从 WEBP 转换为 JPG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="WEBP to JPEG">
+            <h2>WEBP 转 JPEG</h2>
+            <p>将您的图片从 WEBP 转换为 JPEG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="WEBP to BMP">
+            <h2>WEBP 转 BMP</h2>
+            <p>将您的图片从 WEBP 转换为 BMP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="WEBP to TIFF">
+            <h2>WEBP 转 TIFF</h2>
+            <p>将您的图片从 WEBP 转换为 TIFF 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/webp-to-ico" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="WEBP to ICO">
+            <h2>WEBP 转 ICO</h2>
+            <p>将您的图片从 WEBP 转换为 ICO 在线</p>
+        </div>
+    </a>
+    
+    <a href="/{{ g.lang }}/convert/ico-to-png" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_1.svg') }}" alt="ICO to PNG">
+            <h2>ICO 转 PNG</h2>
+            <p>将您的图片从 ICO 转换为 PNG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-jpg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_2.svg') }}" alt="ICO to JPG">
+            <h2>ICO 转 JPG</h2>
+            <p>将您的图片从 ICO 转换为 JPG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-jpeg" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_3.svg') }}" alt="ICO to JPEG">
+            <h2>ICO 转 JPEG</h2>
+            <p>将您的图片从 ICO 转换为 JPEG 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-bmp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_4.svg') }}" alt="ICO to BMP">
+            <h2>ICO 转 BMP</h2>
+            <p>将您的图片从 ICO 转换为 BMP 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-tiff" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_5.svg') }}" alt="ICO to TIFF">
+            <h2>ICO 转 TIFF</h2>
+            <p>将您的图片从 ICO 转换为 TIFF 在线</p>
+        </div>
+    </a>
+    <a href="/{{ g.lang }}/convert/ico-to-webp" style="text-decoration: none; color: inherit;">
+        <div class="grid-item tool">
+            <img src="{{ url_for('static', filename='format_6.svg') }}" alt="ICO to WEBP">
+            <h2>ICO 转 WEBP</h2>
+            <p>将您的图片从 ICO 转换为 WEBP 在线</p>
+        </div>
+    </a>
+    
+<script>
+    function liveSearch() {
+        let query = document.getElementById('searchInput').value.toLowerCase();
+
+        let tools = document.getElementsByClassName('tool');
+
+        for (let i = 0; i < tools.length; i++) {
+            let tool = tools[i];
+
+            let toolName = tool.getElementsByTagName('h2')[0].textContent.toLowerCase();
+
+            if (toolName.includes(query)) {
+                tool.style.display = '';
+            } else {
+                tool.style.display = 'none';
+            }
+        }
+    }
+</script>
+
+{% endblock %}

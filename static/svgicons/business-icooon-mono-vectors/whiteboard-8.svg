@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#000000;}
+</style>
+<g>
+	<path class="st0" d="M512,0H0v40h16v296h480V40h16V0z M464,304H48V40h416V304z"/>
+	<rect x="240" y="352" class="st0" width="32" height="160"/>
+	<polygon class="st0" points="113.274,512 145.274,512 212.18,352 180.18,352 	"/>
+	<polygon class="st0" points="299.821,352 366.727,512 398.727,512 331.821,352 	"/>
+	<path class="st0" d="M189.336,232.758c36.07-0.007,65.328-29.266,65.336-65.336c0.008-15.789-5.633-30.266-14.883-41.538
+		l-0.023-0.024c-12-14.476-30.172-23.766-50.43-23.766c-0.86,0-1.852,0-2.938,0.07c-0.016,0-0.024,0-0.047,0
+		c-0.024,0-0.031,0-0.07,0v0.008c-34.641,1.625-62.266,30.195-62.274,65.25C124.016,203.492,153.274,232.75,189.336,232.758z
+		 M189.641,166.117v-52.125c15.36,0.078,29.172,6.726,38.922,17.219L189.641,166.117z"/>
+	<rect x="292" y="106.094" class="st0" width="96" height="24"/>
+	<rect x="292" y="154.094" class="st0" width="96" height="24"/>
+	<rect x="292" y="202.094" class="st0" width="64" height="24"/>
+</g>
+</svg>

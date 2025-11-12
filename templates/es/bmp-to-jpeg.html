@@ -1,0 +1,220 @@
+{% extends 'es/base.html' %}
+
+{% block title %}Convertir BMP a JPEG en línea | ToolsForImage | Conversor de imágenes gratuito en línea{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Convierte fácilmente imágenes BMP a JPEG con ToolsForImage. Conversor en línea gratuito, rápido y seguro para transformaciones de imágenes de alta calidad.">
+{% endblock %}
+
+{% block content %}
+<h1>Conversor Gratuito de BMP a JPEG en Línea</h1>
+<p>Convierte fácilmente tus imágenes de formato BMP a JPEG. Sube una imagen BMP y la convertiremos a JPEG por ti.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Conversión de BMP a JPEG?</h2>
+        <p>La conversión de BMP a JPEG es el proceso de cambiar imágenes del formato BMP (Bitmap) al formato JPEG (Joint
+            Photographic Experts Group). Los archivos BMP son conocidos por su alta calidad y naturaleza no comprimida,
+            mientras que los archivos JPEG están más comprimidos, lo que los hace más fáciles de compartir y almacenar.
+            Nuestra herramienta te permite convertir rápidamente imágenes BMP a JPEG, asegurando que mantengas la
+            calidad mientras optimizas el tamaño del archivo.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por qué Convertir BMP a JPEG?</h2>
+        <p>Hay varias razones convincentes para convertir imágenes BMP a JPEG:</p>
+        <ul>
+            <li><strong>Reducción del Tamaño del Archivo:</strong> Los archivos JPEG son significativamente más pequeños
+                que los archivos BMP, lo que los hace más fáciles de subir, descargar y compartir.</li>
+            <li><strong>Mejor Compatibilidad:</strong> JPEG es uno de los formatos de imagen más ampliamente
+                compatibles, asegurando que tus imágenes puedan verse en varios dispositivos y plataformas.</li>
+            <li><strong>Tiempos de Carga Más Rápidos:</strong> Los tamaños de archivo más pequeños conducen a tiempos de
+                carga más rápidos para páginas web y aplicaciones, mejorando la experiencia del usuario.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestro Conversor de BMP a JPEG</h2>
+        <p>Nuestra herramienta de conversión de BMP a JPEG está diseñada para ser simple y fácil de usar. Así es como
+            funciona:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir Archivo BMP" para seleccionar la imagen BMP que deseas convertir.</li>
+            <li>Una vez cargada, la herramienta convertirá automáticamente tu imagen BMP a formato JPEG.</li>
+            <li>Haz clic en "Descargar JPEG" para guardar la imagen convertida en tu dispositivo.</li>
+        </ul>
+        <p>Nuestro conversor admite varios formatos BMP, asegurando un proceso de conversión fluido.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestro Conversor de BMP a JPEG</h2>
+        <p>Aquí están las ventajas de usar nuestra herramienta de conversión:</p>
+        <ul>
+            <li><strong>Rápido y Fácil:</strong> Convierte imágenes BMP a JPEG en solo unos clics, sin software
+                complicado.</li>
+            <li><strong>Sin Pérdida de Calidad:</strong> Nuestra herramienta mantiene la calidad de tus imágenes durante
+                el proceso de conversión.</li>
+            <li><strong>Gratuito y Accesible:</strong> Usa nuestra herramienta en línea de forma gratuita, sin necesidad
+                de descargas o instalaciones.</li>
+            <li><strong>Admite Múltiples Formatos:</strong> Convierte imágenes BMP de varios tamaños y resoluciones
+                fácilmente.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Casos de Uso Comunes para la Conversión de BMP a JPEG</h2>
+        <p>Convertir BMP a JPEG es útil en muchos escenarios, incluyendo:</p>
+        <ul>
+            <li><strong>Publicación en la Web:</strong> Prepara imágenes para sitios web y blogs, asegurando que se
+                carguen rápidamente y se vean geniales.</li>
+            <li><strong>Compartir en Redes Sociales:</strong> Optimiza imágenes para compartir en plataformas de redes
+                sociales donde JPEG es el formato preferido.</li>
+            <li><strong>Eficiencia de Almacenamiento:</strong> Ahorra espacio de almacenamiento en tu dispositivo o en la
+                nube convirtiendo archivos BMP grandes a archivos JPEG más pequeños.</li>
+            <li><strong>Diseño Gráfico:</strong> Gestiona y comparte imágenes fácilmente en un formato compatible con
+                software de diseño.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Convertir BMP a JPEG Puede Mejorar Tus Imágenes</h2>
+        <p>Convertir BMP a JPEG puede mejorar significativamente cómo gestionas y compartes tus imágenes. Aquí te
+            explicamos cómo:</p>
+        <ul>
+            <li><strong>Mejor Usabilidad:</strong> Los archivos JPEG son más convenientes para el uso diario, lo que los
+                hace ideales para compartir y almacenar en línea.</li>
+            <li><strong>Estética Mejorada:</strong> La compresión JPEG puede mejorar el atractivo visual de las imágenes,
+                haciéndolas más vibrantes y atractivas.</li>
+            <li><strong>Mayor Accesibilidad:</strong> Al convertir a JPEG, tus imágenes se vuelven accesibles en más
+                dispositivos, asegurando que todos puedan ver tu contenido.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+
+
+{% endblock %}

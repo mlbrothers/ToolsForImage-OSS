@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>doorpost</title>
+
+<g id="doorpost">
+
+<circle cx="24.5" cy="26.5" r="21.5" style="fill:#e5efef"/>
+
+<line x1="6" y1="25.463" x2="6" y2="26.878" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="6" y1="31.122" x2="6" y2="32.537" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="2.463" y1="29" x2="3.878" y2="29" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8.122" y1="29" x2="9.537" y2="29" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="55.044" cy="14.014" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="57.5" cy="37.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="16" y1="9" x2="19" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="19" y1="9" x2="16" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="25" y="13" width="12" height="40" style="fill:#f96e43;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="30 49 30 44 34 44 34 49" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28,42h0a2,2,0,0,0,2,2h0" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="29" x2="33" y2="37" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="29 30 30.5 31.5 33 31.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="29 33.5 30.5 35 33 35" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="17" x2="33" y2="17" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="20" x2="33" y2="20" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="17" x2="32" y2="23" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31,7h0a4,4,0,0,1,4,4v2a0,0,0,0,1,0,0H27a0,0,0,0,1,0,0V11A4,4,0,0,1,31,7Z" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31,53h0a4,4,0,0,1,4,4v2a0,0,0,0,1,0,0H27a0,0,0,0,1,0,0V57A4,4,0,0,1,31,53Z" transform="translate(62 112) rotate(180)" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="31" cy="5" r="2" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="31" cy="61" r="2" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

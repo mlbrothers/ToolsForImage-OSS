@@ -1,0 +1,193 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images PNG en BMP avec ToolsForImage. Convertisseur en ligne gratuit de PNG en BMP.">
+{% endblock %}
+
+{% block title %}Convertir PNG en BMP en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de Conversion PNG en BMP Gratuit</h1>
+<p>Convertissez facilement vos images PNG au format BMP. Téléchargez une image PNG et nous la convertirons en BMP pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Conversion PNG en BMP ?</h2>
+        <p>La conversion PNG en BMP est le processus de changement de fichiers image du format PNG au format BMP. BMP (Bitmap) est un format graphique matriciel utilisé pour stocker des images numériques. La conversion d'images PNG en BMP peut être utile lorsque vous avez besoin d'utiliser un format d'image simple et non compressé qui conserve une haute qualité pour l'édition ou l'impression.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Convertir PNG en BMP ?</h2>
+        <p>Il existe plusieurs raisons de convertir des images PNG en BMP :</p>
+        <ul>
+            <li><strong>Images de Haute Qualité :</strong> Les fichiers BMP maintiennent une excellente qualité d'image sans compression, ce qui les rend idéaux pour des applications professionnelles.</li>
+            <li><strong>Flexibilité d'Édition :</strong> Le format BMP est souvent préféré pour l'édition et la conception graphique en raison de sa simplicité et de l'absence d'artefacts de compression.</li>
+            <li><strong>Compatibilité :</strong> Les fichiers BMP sont largement supportés par de nombreuses applications logicielles, garantissant un accès et une utilisation faciles sur différentes plateformes.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Convertisseur PNG en BMP</h2>
+        <p>Notre outil de conversion PNG en BMP est conçu pour être convivial et simple. Voici comment vous pouvez l'utiliser :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger un Fichier PNG" pour sélectionner l'image PNG que vous souhaitez convertir.</li>
+            <li>Une fois l'image téléchargée, notre outil traitera automatiquement la conversion au format BMP.</li>
+            <li>Après la conversion, cliquez sur "Télécharger BMP" pour enregistrer votre nouvelle image sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge une variété de fichiers PNG, garantissant une expérience de conversion fluide à chaque fois.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'Utilisation de Notre Convertisseur PNG en BMP</h2>
+        <p>Voici quelques avantages de l'utilisation de notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et Efficace :</strong> Convertissez vos images PNG en BMP rapidement et facilement, sans étapes compliquées.</li>
+            <li><strong>Pas de Perte de Qualité :</strong> Profitez d'une sortie de haute qualité sans compression, garantissant que vos images sont à leur meilleur.</li>
+            <li><strong>Gratuit et En Ligne :</strong> Utilisez notre outil gratuitement, directement dans votre navigateur web, sans besoin de téléchargements de logiciels.</li>
+            <li><strong>Interface Conviviale :</strong> Conçu pour tout le monde, notre outil est simple et facile à naviguer, le rendant accessible à tous les utilisateurs.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations Courantes de la Conversion PNG en BMP</h2>
+        <p>Voici quelques situations où la conversion de PNG en BMP peut être bénéfique :</p>
+        <ul>
+            <li><strong>Conception Graphique :</strong> Utilisez des images BMP pour des projets de conception graphique où des images de haute qualité et non compressées sont requises.</li>
+            <li><strong>Édition d'Image :</strong> Convertissez des fichiers PNG en BMP pour une édition plus facile dans diverses applications logicielles.</li>
+            <li><strong>Impression :</strong> Utilisez des images BMP pour des fins d'impression, car elles conservent une haute qualité sans artefacts de compression.</li>
+            <li><strong>Archivage :</strong> Conservez des images au format BMP pour un archivage à long terme, préservant leur qualité dans le temps.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la Conversion de PNG en BMP Peut Aider</h2>
+        <p>La conversion de vos images PNG en BMP peut améliorer leur utilisabilité et leur performance dans diverses applications. Voici comment :</p>
+        <ul>
+            <li><strong>Meilleure Expérience d'Édition :</strong> Les images BMP sont plus faciles à manipuler dans les logiciels de conception graphique, rendant votre processus d'édition plus fluide.</li>
+            <li><strong>Qualité d'Impression Améliorée :</strong> Utilisez des fichiers BMP pour garantir que vos images imprimées conservent leur netteté et leur clarté.</li>
+            <li><strong>Accès Facile :</strong> Le format BMP est compatible avec de nombreuses applications, garantissant que vos images peuvent être utilisées partout où vous en avez besoin.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

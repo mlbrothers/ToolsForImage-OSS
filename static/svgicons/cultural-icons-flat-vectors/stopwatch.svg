@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>stopwatch</title>
+
+<g id="stopwatch">
+
+<circle cx="25.5" cy="24.5" r="21.5" style="fill:#eaeaea"/>
+
+<circle cx="45" cy="6" r="2" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="17.129" y1="15" x2="14.181" y2="17.948" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="14.181" y1="15" x2="17.129" y2="17.948" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21.632,10.5A1.132,1.132,0,1,1,20.5,9.368,1.132,1.132,0,0,1,21.632,10.5Z" style="fill:#4c241d"/>
+
+<path d="M53.632,51.5A1.132,1.132,0,1,1,52.5,50.368,1.132,1.132,0,0,1,53.632,51.5Z" style="fill:#4c241d"/>
+
+<rect x="32" y="13" width="4" height="4" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="30" y="10" width="8" height="3" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M49.177,24.349a4,4,0,1,0-5.526-5.526,18.038,18.038,0,1,0,5.526,5.526Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="34" cy="34" r="12" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M47,21h0A13,13,0,0,1,60,34V46A13,13,0,0,1,47,59H21A13,13,0,0,1,8,46V11" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="34 29 34 34 36 36" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34" y1="42" x2="34" y2="43" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34" y1="25" x2="34" y2="26" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="42" y1="34" x2="43" y2="34" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="25" y1="34" x2="26" y2="34" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="8" cy="8" r="3" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

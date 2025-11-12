@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#ffffff;}.cls-4{fill:#d9dce1;}</style>
+
+</defs>
+
+<g id="card">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="20" width="28" x="2" y="6"/>
+
+<rect class="cls-3" height="12" width="8" x="6" y="10"/>
+
+<rect class="cls-4" height="2" width="9" x="16" y="10"/>
+
+<rect class="cls-4" height="2" width="9" x="16" y="14"/>
+
+<rect class="cls-4" height="2" width="9" x="16" y="18"/>
+
+<path d="M2,6V26H30V6ZM28,24H4V8H28ZM14,10H6V22h8ZM12,20H8V12h4Z"/>
+
+</g>
+
+</svg>

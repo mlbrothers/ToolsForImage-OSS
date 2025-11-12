@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_tweeentwintig{fill:#D97360;}
+	.cubies_drieentwintig{fill:#E69D8A;}
+	.cubies_zesentwintig{fill:#65C3AB;}
+	.cubies_zevenentwintig{fill:#98D3BC;}
+	.cubies_achtentwintig{fill:#CCE2CD;}
+	.cubies_elf{fill:#E3D4C0;}
+	.cubies_twaalf{fill:#FFF2DF;}
+	.st0{fill:#2EB39A;}
+	.st1{fill:#A4C83F;}
+	.st2{fill:#BCD269;}
+	.st3{fill:#E8E8B5;}
+	.st4{fill:#D1DE8B;}
+	.st5{fill:#F2C99E;}
+	.st6{fill:#C9483A;}
+	.st7{fill:#F9E0BD;}
+	.st8{fill:#4C4842;}
+	.st9{fill:#67625D;}
+	.st10{fill:#837F79;}
+	.st11{fill:#C9C6C0;}
+	.st12{fill:#EDEAE5;}
+	.st13{fill:#EC9B5A;}
+	.st14{fill:#EDB57E;}
+	.st15{fill:#AB9784;}
+	.st16{fill:#C6B5A2;}
+	.st17{fill:#F2C7B5;}
+	.st18{fill:#8E7866;}
+	.st19{fill:#725A48;}
+</style>
+<g>
+	<rect x="0" y="10" class="cubies_zesentwintig" width="32" height="8"/>
+	<path class="cubies_elf" d="M0,18h32v11c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3L0,18z"/>
+	<path class="cubies_twaalf" d="M0,18h30v11c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3L0,18z"/>
+	<rect x="0" y="10" class="cubies_zevenentwintig" width="30" height="8"/>
+	<path class="cubies_tweeentwintig" d="M4,5.996c0-1.163,0.815-2.168,1.953-2.407l6.253-1.317C12.669,2.175,13,1.766,13,1.294V1
+		c0-0.552,0.448-1,1-1l4,0c0.552,0,1,0.448,1,1v0.294c0,0.473,0.331,0.881,0.794,0.979l6.253,1.317C27.185,3.828,28,4.833,28,5.996
+		H4z"/>
+	<path class="cubies_drieentwintig" d="M4,5.996c0-1.163,0.815-2.168,1.953-2.407l6.253-1.317C12.669,2.175,13,1.766,13,1.294V1
+		c0-0.552,0.448-1,1-1l2,0c0.552,0,1,0.448,1,1v0.294c0,0.473,0.331,0.881,0.794,0.979l6.253,1.317C25.185,3.828,26,4.833,26,5.996
+		H4z"/>
+	<path class="cubies_zevenentwintig" d="M3,6h26c1.657,0,3,1.343,3,3v1H0l0-1C0,7.343,1.343,6,3,6z"/>
+	<path class="cubies_achtentwintig" d="M3,6h24c1.657,0,3,1.343,3,3v1H0l0-1C0,7.343,1.343,6,3,6z"/>
+	<path class="cubies_elf" d="M4.5,26h-2C2.224,26,2,25.776,2,25.5S2.224,25,2.5,25h2C4.776,25,5,25.224,5,25.5S4.776,26,4.5,26z
+		 M5,28.5C5,28.224,4.776,28,4.5,28h-2C2.224,28,2,28.224,2,28.5S2.224,29,2.5,29h2C4.776,29,5,28.776,5,28.5z M5,22.5
+		C5,22.224,4.776,22,4.5,22h-2C2.224,22,2,22.224,2,22.5S2.224,23,2.5,23h2C4.776,23,5,22.776,5,22.5z M5,19.5
+		C5,19.224,4.776,19,4.5,19h-2C2.224,19,2,19.224,2,19.5S2.224,20,2.5,20h2C4.776,20,5,19.776,5,19.5z"/>
+	<path class="cubies_zesentwintig" d="M4.5,17h-2C2.224,17,2,16.776,2,16.5S2.224,16,2.5,16h2C4.776,16,5,16.224,5,16.5
+		S4.776,17,4.5,17z M5,13.5C5,13.224,4.776,13,4.5,13h-2C2.224,13,2,13.224,2,13.5S2.224,14,2.5,14h2C4.776,14,5,13.776,5,13.5z"/>
+</g>
+</svg>

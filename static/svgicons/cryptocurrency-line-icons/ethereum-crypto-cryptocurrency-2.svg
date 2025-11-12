@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#455A64;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]>
+</style>
+
+<g id="Ethereum_x2C__crypto_x2C__cryptocurrency">
+
+<g id="XMLID_1535_">
+
+<polyline class="st1" id="XMLID_1557_" points="7.3,16 16,1.5 24.7,16 16,30.5   "/>
+
+<line class="st1" id="XMLID_1539_" x1="16" x2="7.3" y1="30.5" y2="16"/>
+
+<line class="st1" id="XMLID_3278_" x1="18.04" x2="24.7" y1="12.67" y2="16"/>
+
+<line class="st1" id="XMLID_266_" x1="7.3" x2="13.95" y1="16" y2="12.67"/>
+
+<polygon class="st1" id="XMLID_1538_" points="16,30.5 7.3,16 16,20.35 24.7,16   "/>
+
+<line class="st1" id="XMLID_1537_" x1="16" x2="16" y1="19.85" y2="5.5"/>
+
+<polygon class="st1" id="XMLID_1536_" points="16,1.5 7.3,16 16,30.5 24.7,16   "/>
+
+</g>
+
+</g>
+
+</svg>

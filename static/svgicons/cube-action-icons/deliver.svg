@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_achtien{fill:#EDB57E;}
+	.cubies_negentien{fill:#F2C99E;}
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_zeven{fill:#725A48;}
+	.cubies_acht{fill:#8E7866;}
+	.st0{fill:#C9483A;}
+	.st1{fill:#D97360;}
+	.st2{fill:#98D3BC;}
+	.st3{fill:#CCE2CD;}
+	.st4{fill:#65C3AB;}
+	.st5{fill:#4C4842;}
+	.st6{fill:#67625D;}
+	.st7{fill:#EDEAE5;}
+	.st8{fill:#C9C6C0;}
+	.st9{fill:#E69D8A;}
+	.st10{fill:#2EB39A;}
+	.st11{fill:#FFF2DF;}
+	.st12{fill:#BCD269;}
+	.st13{fill:#D1DE8B;}
+	.st14{fill:#EC9B5A;}
+	.st15{fill:#837F79;}
+	.st16{fill:#A5A29C;}
+	.st17{fill:#F2C7B5;}
+	.st18{fill:#A4C83F;}
+	.st19{fill:#E3D4C0;}
+</style>
+<g>
+	<path class="cubies_zeven" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_acht" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<rect x="30" y="15" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 62 32)" class="cubies_achtien" width="2" height="2"/>
+	<polygon class="cubies_negentien" points="30,15 16,15 16,0 14,0 14,15 0,15 0,17 14,17 14,32 16,32 16,17 30,17 	"/>
+	<path class="cubies_twintig" d="M22,15c0-1.657-1.343-3-3-3c-1.083,0-2.881,1.278-4,2.166C13.881,13.278,12.083,12,11,12
+		c-1.657,0-3,1.343-3,3s1.343,3,3,3c0.598,0,1.414-0.392,2.215-0.891l-2.587,4.527C10.354,22.115,10.521,22.726,11,23
+		s1.09,0.107,1.364-0.372L15,18.015l2.636,4.613C17.91,23.107,18.521,23.274,19,23s0.646-0.885,0.372-1.364l-2.587-4.527
+		C17.586,17.608,18.402,18,19,18C20.657,18,22,16.657,22,15z M10.968,16C10.432,15.983,10,15.541,10,15s0.432-0.983,0.968-1
+		c0.336,0.06,1.029,0.453,1.811,0.998C11.998,15.543,11.3,15.94,10.968,16z M19.032,14C19.568,14.017,20,14.459,20,15
+		s-0.432,0.983-0.968,1c-0.336-0.06-1.029-0.453-1.811-0.998C18.002,14.457,18.7,14.06,19.032,14z"/>
+</g>
+</svg>

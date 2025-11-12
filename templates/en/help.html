@@ -1,0 +1,121 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Get help and support for ToolsForImage - Your comprehensive resource for image compression, resizing, cropping, format conversion, rotation, watermarking, face blurring, and more. Find answers to common questions and learn how to use our image enhancement tools effectively.">
+{% endblock %}
+
+{% block title %}Help | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block content %}
+<h1>Help Center - ToolsForImage</h1>
+
+<div class="help-section">
+    <h2>Getting Started</h2>
+    <p>Welcome to ToolsForImage! Here's how to get started:</p>
+    <ol>
+        <li>1 - Choose the tool you need from our navigation menu.</li>
+        <li>2 - Upload your image using the provided interface.</li>
+        <li>3 - Adjust settings as needed.</li>
+        <li>4 - Process your image and download the result.</li>
+    </ol>
+</div>
+
+<div class="help-section">
+    <h2>Frequently Asked Questions</h2>
+    <p>For a comprehensive list of FAQs, please visit our <a href="/faq">FAQ page</a>.</p>
+</div>
+
+<div class="help-section">
+    <h2>Tool-specific Help</h2>
+    <ul>
+        <li><a href="/image-compression">Image Compression</a> - Reduce file size while maintaining quality</li>
+        <li><a href="/image-resize">Image Resize</a> - Change image dimensions</li>
+        <li><a href="/convert-image-format">Format Conversion</a> - Convert between different image formats</li>
+        <li><a href="/image-rotate">Image Rotation</a> - Rotate or flip your images</li>
+        <li><a href="/image-watermarking">Watermarking</a> - Add text or image watermarks</li>
+        <li><a href="/image-effects">Image Effects</a> - Apply various filters and effects</li>
+        <li><a href="/image-crop">Image Cropping</a> - Cut out portions of your image</li>
+        <li><a href="/blur-face">Face Blurring</a> - Automatically detect and blur faces in images</li>
+        <li class="all-tools-li"><a href="/tools">All tools</a></li>
+    </ul>
+</div>
+
+<div class="help-section">
+    <h2>Contact Support</h2>
+    <p>If you need further assistance, please don't hesitate to contact our support team at <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a>.</p>
+</div>
+
+
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .help-section {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color); /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        max-width: 1200px; /* Ensure the content stays within a manageable width */
+        margin: 0 auto; /* Center align the content */
+        border: var(--background-color) 3px solid; /* Use border similar to tools list */
+        font-weight: 400; /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s; /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .help-section a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .help-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block; /* Makes it inline and allows padding */
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        background-color: var(--box-color); /* Background color */
+        color: black; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+
+    
+</style>
+{% endblock %}

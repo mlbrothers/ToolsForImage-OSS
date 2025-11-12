@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g id="dog">
+	<g>
+		<rect x="358" y="230" style="fill:#020202;" width="26" height="26"/>
+		<rect x="435" y="256" style="fill:#020202;" width="26" height="26"/>
+	</g>
+	<rect x="384" y="306.962" style="fill:#FF5425;" width="25.6" height="25.838"/>
+	<g>
+		<rect x="77" y="128" style="fill:#BD903A;" width="25" height="26"/>
+		<path style="fill:#BD903A;" d="M410,256v-25.6V205h-26v-26h-26v-25h-25v25h-26v25.8V230h-25.4H256h-25.6h-25.6h-25.6h-25.6H128
+			h-25.6H77v-25.2v-25.6V154H51v25.2v25.6v25.6V256v25.6V307h26v25.8v25.6V384v25.6v25.6V461h25v-25.8v-25.6V384v-26h26h25.6h25.6
+			h25.6h25.6H256v26v25.6v25.6V461h26v-25.8v-25.6V384v-26h25.2H333v-25h25v-26h26h25.6H435v-25.4V256H410z M384,256h-26v-26h26V256
+			z"/>
+	</g>
+	<g>
+		<polygon style="fill:#8C6E26;" points="128,384 128,409.6 128,435.2 128,461 154,461 154,435.2 154,409.6 154,384 154,358 
+			128,358 		"/>
+		<polygon style="fill:#8C6E26;" points="307,358 307,384 307,409.6 307,435.2 307,461 333,461 333,435.2 333,409.6 333,384 
+			333,358 		"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

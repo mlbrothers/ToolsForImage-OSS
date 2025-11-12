@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#455A64;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]>
+</style>
+
+<g id="Ripple_XRP_3_">
+
+<g id="XMLID_68_">
+
+<circle class="st1" cx="16" cy="16" id="XMLID_52_" r="14.5"/>
+
+<path class="st1" d="M22.01,8.7h2.46l-5.12,5.07c-1.85,1.83-4.85,1.83-6.7,0L7.53,8.7h2.46l3.89,3.85    c1.17,1.16,3.06,1.16,4.24,0L22.01,8.7z" id="XMLID_305_"/>
+
+<path class="st1" d="M9.96,23.3H7.5l5.15-5.1c1.85-1.83,4.85-1.83,6.7,0l5.15,5.1h-2.46l-3.92-3.88    c-1.17-1.16-3.06-1.16-4.24,0L9.96,23.3z" id="XMLID_304_"/>
+
+</g>
+
+</g>
+
+</svg>

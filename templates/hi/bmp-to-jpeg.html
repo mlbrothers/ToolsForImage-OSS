@@ -1,0 +1,222 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}ToolsForImage पर BMP को JPEG में ऑनलाइन परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{%
+endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ऑनलाइन BMP से JPEG कनवर्टर मुफ्त। ToolsForImage के साथ BMP को JPEG इमेज में आसानी से परिवर्तित करें।">
+{% endblock %}
+
+{% block content %}
+
+<h1>मुफ्त BMP से JPEG कनवर्ज़न टूल</h1>
+<p>अपने BMP इमेज को JPEG फॉर्मेट में आसानी से परिवर्तित करें। एक BMP इमेज अपलोड करें और हम इसे JPEG में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>BMP से JPEG परिवर्तित करना क्या है?</h2>
+        <p>BMP से JPEG परिवर्तित करना BMP (Bitmap) फॉर्मेट से JPEG (Joint Photographic Experts Group) फॉर्मेट में इमेज
+            बदलने की प्रक्रिया है। BMP फाइलें अपनी उच्च गुणवत्ता और बिना संकुचन की प्रकृति के लिए जानी जाती हैं, जबकि
+            JPEG फाइलें अधिक संकुचित होती हैं, जिससे उन्हें साझा और संग्रहीत करना आसान होता है। हमारा टूल आपको BMP इमेज
+            को JPEG में तेजी और कुशलता से परिवर्तित करने की अनुमति देता है, यह सुनिश्चित करते हुए कि आप गुणवत्ता बनाए
+            रखते हुए फाइल का आकार ऑप्टिमाइज़ कर सकते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP को JPEG में परिवर्तित करने के लिए क्यों?</h2>
+        <p>BMP इमेज को JPEG में परिवर्तित करने के कई आकर्षक कारण हैं:</p>
+        <ul>
+            <li><strong>फाइल का आकार घटाना:</strong> JPEG फाइलें BMP फाइलों की तुलना में काफी छोटी होती हैं, जिससे
+                इन्हें अपलोड, डाउनलोड और साझा करना आसान होता है।</li>
+            <li><strong>संगतता में सुधार:</strong> JPEG एक सबसे व्यापक रूप से समर्थित इमेज फॉर्मेट है, यह सुनिश्चित करता
+                है कि आपकी इमेज विभिन्न डिवाइस और प्लेटफार्मों पर देखी जा सके।</li>
+            <li><strong>तेज लोडिंग समय:</strong> छोटे फाइल आकार के कारण वेब पृष्ठों और अनुप्रयोगों के लिए तेज लोडिंग समय
+                मिलता है, जिससे उपयोगकर्ता अनुभव में सुधार होता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से JPEG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा BMP से JPEG कनवर्ज़न टूल सरलता और उपयोग में आसानी के लिए डिज़ाइन किया गया है। यहाँ यह कैसे काम करता है:
+        </p>
+        <ul>
+            <li>"BMP फ़ाइल अपलोड करें" बटन पर क्लिक करें ताकि आप उस BMP इमेज का चयन कर सकें जिसे आप परिवर्तित करना चाहते
+                हैं।</li>
+            <li>एक बार अपलोड होने के बाद, टूल स्वचालित रूप से आपकी BMP इमेज को JPEG फॉर्मेट में परिवर्तित कर देगा।</li>
+            <li>"JPEG डाउनलोड करें" पर क्लिक करें ताकि परिवर्तित इमेज को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न BMP फॉर्मेट का समर्थन करता है, यह सुनिश्चित करते हुए कि परिवर्तित प्रक्रिया सुचारू हो।
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से JPEG कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>यहाँ हमारे कन्वर्ज़न टूल के फायदे हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> केवल कुछ क्लिक में BMP इमेज को JPEG में परिवर्तित करें, बिना जटिल
+                सॉफ़्टवेयर के।</li>
+            <li><strong>गुणवत्ता का नुकसान नहीं:</strong> हमारा टूल परिवर्तित प्रक्रिया के दौरान आपकी इमेज की गुणवत्ता
+                बनाए रखता है।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारा टूल ऑनलाइन मुफ्त में उपयोग करें, बिना डाउनलोड या इंस्टॉलेशन की
+                आवश्यकता।</li>
+            <li><strong>कई फॉर्मेट का समर्थन करता है:</strong> विभिन्न आकारों और रिज़ॉल्यूशन की BMP इमेज को आसानी से
+                परिवर्तित करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP से JPEG परिवर्तित करने के सामान्य उपयोग</h2>
+        <p>BMP से JPEG में परिवर्तित करना कई परिदृश्यों में उपयोगी होता है, जिनमें शामिल हैं:</p>
+        <ul>
+            <li><strong>वेब प्रकाशन:</strong> वेबसाइटों और ब्लॉगों के लिए इमेज तैयार करें, यह सुनिश्चित करते हुए कि वे
+                जल्दी लोड हों और शानदार दिखें।</li>
+            <li><strong>सोशल मीडिया साझा करना:</strong> उन सोशल मीडिया प्लेटफार्मों पर साझा करने के लिए इमेज को
+                ऑप्टिमाइज़ करें जहाँ JPEG प्राथमिक फॉर्मेट है।</li>
+            <li><strong>स्टोरेज की दक्षता:</strong> बड़े BMP फाइलों को छोटे JPEG फाइलों में परिवर्तित करके अपने डिवाइस
+                या क्लाउड पर संग्रहण स्थान बचाएं।</li>
+            <li><strong>ग्राफिक डिजाइन:</strong> डिज़ाइन सॉफ़्टवेयर के साथ संगतता वाले फॉर्मेट में इमेज को आसानी से
+                प्रबंधित और साझा करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP से JPEG में परिवर्तित करने से आपकी इमेज कैसे बेहतर हो सकती हैं</h2>
+        <p>BMP से JPEG में परिवर्तित करना आपकी इमेज के प्रबंधन और साझा करने के तरीके को काफी सुधार सकता है। यहाँ कैसे:
+        </p>
+        <ul>
+            <li><strong>बेहतर उपयोगिता:</strong> JPEG फाइलें दैनिक उपयोग के लिए अधिक सुविधाजनक होती हैं, जिससे वे ऑनलाइन
+                साझा करने और संग्रहण के लिए आदर्श होती हैं।</li>
+            <li><strong>सौंदर्य में सुधार:</strong> JPEG संकुचन इमेज की दृश्य अपील को बढ़ा सकता है, जिससे वे अधिक जीवंत
+                और आकर्षक बनती हैं।</li>
+            <li><strong>बढ़ी हुई पहुँच:</strong> JPEG में परिवर्तित करने से आपकी इमेज अधिक डिवाइस पर उपलब्ध हो जाती हैं,
+                यह सुनिश्चित करते हुए कि हर कोई आपकी सामग्री को देख सके।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+
+
+{% endblock %}

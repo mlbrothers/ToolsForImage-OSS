@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="416" height="32" x="48" y="448" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+</svg>

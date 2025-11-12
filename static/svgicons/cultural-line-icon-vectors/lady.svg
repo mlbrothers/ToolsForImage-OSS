@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>lady</title>
+
+<g id="lady">
+
+<line x1="55.837" y1="6.663" x2="52.163" y2="10.337" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="52.163" y1="6.663" x2="55.837" y2="10.337" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="9" cy="12" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="9" cy="31" r="1"/>
+
+<circle cx="51" cy="35" r="1"/>
+
+<path d="M19.031,62.605,21,37.516a6.519,6.519,0,0,1,5.41-6.423" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37.548,31.086A6.518,6.518,0,0,1,43,37.516L44.969,62.6" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M42,19V13a2,2,0,0,0-2-2V8.823A7.83,7.83,0,0,0,39.786,7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M24.17,7.2A2.041,2.041,0,0,0,23,9.046v2.908a2.038,2.038,0,0,0,1,1.75V17" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27.018,7.484l.066,3.92A3.711,3.711,0,0,0,31,15h6V7.429" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M23.837,17.372l-6.248,4.464-9.1-.776c-1.07-.272-2.157-.617-2.425.455A2,2,0,0,0,7.515,23.94l10,2a2,2,0,0,0,1.648-.312l4.371-3.122" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M40.466,23.22l3.371,2.408a2,2,0,0,0,1.648.312l10-2a2,2,0,0,0,1.455-2.425c-.268-1.072-1.355-.727-2.425-.455l-9.1.776-6.188-4.421" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29.721,16H28.266a4.732,4.732,0,0,0-4.7,5.236l.5,2.688A2.324,2.324,0,0,0,26.373,26L27,34l5-2,5,2,.627-8a2.324,2.324,0,0,0,2.31-2.076l.5-2.688A4.732,4.732,0,0,0,35.734,16H34.466" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53" y1="63" x2="11" y2="63" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="19.224" x2="32" y2="31" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34,15.189V17a2,2,0,0,1-2,2h0a2,2,0,0,1-2-2V15.272" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26,6.663V6a5,5,0,0,1,5-5h2a5,5,0,0,1,5,5v.663" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="41" y1="7" x2="22" y2="7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30" y1="27" x2="34" y2="27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30" y1="30" x2="34" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10" y1="21.356" x2="10" y2="24" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53" y1="21.189" x2="53" y2="24.575" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

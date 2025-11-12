@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#d9dce1;}.cls-4{fill:#ffffff;}</style>
+
+</defs>
+
+<g id="opportunity">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="28" width="28" x="2" y="2"/>
+
+<path class="cls-3" d="M10,26a4,4,0,1,1,4-4A4,4,0,0,1,10,26Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,10,20Z"/>
+
+<polygon class="cls-3" points="25.54 7.88 24.12 6.46 22 8.59 19.88 6.46 18.46 7.88 20.59 10 18.46 12.12 19.88 13.54 22 11.41 24.12 13.54 25.54 12.12 23.41 10 25.54 7.88"/>
+
+<polygon class="cls-4" points="23 23 17 23 17 21 21 21 21 17 23 17 23 23"/>
+
+<path d="M2,2V30H30V2ZM28,28H4V4H28Z"/>
+
+</g>
+
+</svg>

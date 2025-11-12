@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="32" x="16" y="344" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="480" height="32" x="16" y="152.333" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="328" height="32" x="16" y="248" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="384" height="32" x="16" y="56" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="32" height="32" x="16" y="440" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="32" height="32" x="240" y="440" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+  <rect width="32" height="32" x="128" y="440" fill="var(--ci-primary-color, #000000)" class="ci-primary"/>
+</svg>

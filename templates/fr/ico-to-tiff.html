@@ -1,0 +1,192 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images ICO en TIFF avec ToolsForImage. Convertisseur ICO vers TIFF en ligne gratuit.">
+{% endblock %}
+
+{% block title %}Convertir ICO en TIFF en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion gratuit ICO en TIFF</h1>
+<p>Convertissez facilement vos images ICO en format TIFF. Téléchargez une image ICO et nous la convertirons en TIFF pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la conversion ICO en TIFF ?</h2>
+        <p>La conversion ICO en TIFF est le processus de changement de fichiers image du format ICO au format TIFF. TIFF (Tagged Image File Format) est un format de fichier flexible et adaptable pour gérer des images et des données dans un seul fichier. Cette conversion est utile lorsque vous devez utiliser des images d'icônes dans des contextes où le TIFF est préféré ou requis.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi convertir ICO en TIFF ?</h2>
+        <p>Il existe plusieurs raisons de convertir des images ICO en TIFF :</p>
+        <ul>
+            <li><strong>Haute qualité :</strong> Le TIFF est connu pour sa haute qualité d'image et est souvent utilisé dans l'édition et l'impression.</li>
+            <li><strong>Compression sans perte :</strong> Le TIFF prend en charge la compression sans perte, préservant la qualité de l'image.</li>
+            <li><strong>Flexibilité :</strong> Le TIFF peut stocker à la fois des images bitmap et vectorielles, ce qui le rend polyvalent pour diverses utilisations.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre convertisseur ICO en TIFF</h2>
+        <p>Utiliser notre outil de conversion ICO en TIFF est simple et rapide. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger le fichier ICO" pour sélectionner l'image ICO que vous souhaitez convertir.</li>
+            <li>Une fois votre image téléchargée, notre outil commencera automatiquement à la convertir au format TIFF.</li>
+            <li>Après la conversion, cliquez sur "Télécharger TIFF" pour enregistrer votre nouveau fichier image sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge divers fichiers ICO, garantissant une expérience de conversion fluide et efficace pour tous les utilisateurs.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'utilisation de notre convertisseur ICO en TIFF</h2>
+        <p>Voici quelques avantages de l'utilisation de notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et facile :</strong> Convertissez vos images ICO en TIFF rapidement en quelques clics.</li>
+            <li><strong>Haute qualité :</strong> Maintenez la qualité de l'image pendant le processus de conversion.</li>
+            <li><strong>Gratuit et accessible :</strong> Utilisez notre outil en ligne gratuitement, sans téléchargements ni installations nécessaires.</li>
+            <li><strong>Interface conviviale :</strong> Notre outil est conçu pour être intuitif et facile à naviguer pour tous.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations courantes de la conversion ICO en TIFF</h2>
+        <p>Voici quelques situations courantes où la conversion ICO en TIFF peut être utile :</p>
+        <ul>
+            <li><strong>Édition d'impression :</strong> Utilisez des images d'icônes dans des documents imprimés de haute qualité.</li>
+            <li><strong>Photographie professionnelle :</strong> Intégrez des images d'icônes dans des collections de photos professionnelles.</li>
+            <li><strong>Archivage :</strong> Stockez des images d'icônes dans un format de haute qualité et sans perte pour la préservation à long terme.</li>
+            <li><strong>Imagerie médicale :</strong> Utilisez dans des systèmes d'imagerie médicale où le TIFF est couramment utilisé.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la conversion ICO en TIFF peut aider</h2>
+        <p>Convertir vos images ICO en TIFF peut améliorer leur utilisabilité dans divers contextes. Voici comment :</p>
+        <ul>
+            <li><strong>Amélioration de la qualité :</strong> Le TIFF maintient une haute qualité d'image, idéal pour une utilisation professionnelle.</li>
+            <li><strong>Meilleure compatibilité :</strong> Le TIFF est largement pris en charge dans les logiciels d'imagerie et d'édition professionnelle.</li>
+            <li><strong>Stockage sans perte :</strong> La compression sans perte du TIFF garantit qu'aucune donnée n'est perdue lors du stockage ou de l'édition.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

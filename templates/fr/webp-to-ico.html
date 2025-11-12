@@ -1,0 +1,193 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images WebP en ICO avec ToolsForImage. Convertisseur WebP en ICO gratuit en ligne.">
+{% endblock %}
+
+{% block title %}Convertir WebP en ICO en ligne avec | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion WebP en ICO gratuit</h1>
+<p>Convertissez facilement vos images WebP au format ICO. Téléchargez une image WebP et nous la convertirons en ICO pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la conversion WebP en ICO ?</h2>
+        <p>La conversion WebP en ICO est le processus de changement des fichiers image du format WebP au format ICO. ICO est un format de fichier utilisé pour les icônes dans Microsoft Windows. Cette conversion est utile lorsque vous devez créer des icônes pour des applications Windows, des sites web ou des favicons.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi convertir WebP en ICO ?</h2>
+        <p>Il y a plusieurs raisons de convertir des images WebP en ICO :</p>
+        <ul>
+            <li><strong>Créer des icônes Windows :</strong> ICO est le format standard pour les icônes d'applications Windows.</li>
+            <li><strong>Favicons de site web :</strong> ICO est couramment utilisé pour les favicons de site web, les petites icônes affichées dans les onglets du navigateur.</li>
+            <li><strong>Plusieurs tailles :</strong> Les fichiers ICO peuvent contenir plusieurs tailles d'image dans un seul fichier, utile pour différents scénarios d'affichage.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre convertisseur WebP en ICO</h2>
+        <p>Utiliser notre outil de conversion WebP en ICO est simple et rapide. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger un fichier WebP" pour sélectionner l'image WebP que vous souhaitez convertir.</li>
+            <li>Une fois votre image téléchargée, notre outil commencera automatiquement à la convertir au format ICO.</li>
+            <li>Après la conversion, cliquez sur "Télécharger ICO" pour enregistrer votre nouveau fichier d'icône sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge divers fichiers WebP, garantissant une expérience de conversion fluide et efficace pour tous les utilisateurs.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'utiliser notre convertisseur WebP en ICO</h2>
+        <p>Voici quelques avantages d'utiliser notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et facile :</strong> Convertissez vos images WebP en ICO rapidement en quelques clics.</li>
+            <li><strong>Haute qualité :</strong> Maintenez la qualité de l'image pendant le processus de conversion.</li>
+            <li><strong>Gratuit et accessible :</strong> Utilisez notre outil en ligne gratuitement, sans téléchargement ni installation nécessaires.</li>
+            <li><strong>Interface conviviale :</strong> Notre outil est conçu pour être intuitif et facile à naviguer pour tout le monde.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations courantes de la conversion WebP en ICO</h2>
+        <p>Voici quelques situations courantes où la conversion de WebP en ICO peut être utile :</p>
+        <ul>
+            <li><strong>Développement d'applications :</strong> Créez des icônes pour des applications Windows.</li>
+            <li><strong>Design web :</strong> Générez des favicons pour des sites web à afficher dans les onglets du navigateur et les signets.</li>
+            <li><strong>Icônes de dossier personnalisées :</strong> Créez des icônes personnalisées pour les dossiers Windows.</li>
+            <li><strong>Raccourcis sur le bureau :</strong> Concevez des icônes personnalisées pour des raccourcis sur le bureau.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la conversion de WebP en ICO peut aider</h2>
+        <p>Convertir vos images WebP en ICO peut améliorer leur utilité dans des contextes spécifiques. Voici comment :</p>
+        <ul>
+            <li><strong>Compatibilité Windows :</strong> ICO est le format d'icône natif pour Windows, garantissant un affichage correct.</li>
+            <li><strong>Normes web :</strong> ICO est largement pris en charge en tant que format de favicon dans différents navigateurs.</li>
+            <li><strong>Multiples résolutions :</strong> Les fichiers ICO peuvent stocker plusieurs tailles d'image, utiles pour différents scénarios d'affichage.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'ico';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

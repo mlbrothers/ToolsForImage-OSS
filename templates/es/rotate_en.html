@@ -1,0 +1,289 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Rota tus imágenes fácilmente con ToolsForImage. Ajusta la orientación de las imágenes de manera rápida y sencilla. Rota imágenes en cualquier dirección.">
+{% endblock %}
+
+{% block title %}Rotar Imagen | ToolsForImage | Herramientas en línea gratuitas para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Herramienta Gratuita para Rotar Imágenes</h1>
+<p>Rota imágenes fácilmente con ToolsForImage. Sube una imagen, previsualiza la rotación y descarga el resultado.</p>
+<p>Sube tu archivo de imagen y rótalo al instante. Elige tu imagen:</p>
+<form id="rotation-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;"
+        onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen">
+    </div>
+    <br>
+    <div class="rotate-controls">
+        <button type="button" class="rotate-button" onclick="rotateImage(-90)">
+            Girar a la Izquierda
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+            </svg>
+        </button>
+        <button type="button" class="rotate-button" onclick="rotateImage(90)">
+            Girar a la Derecha
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                <path d="M21 3v5h-5"></path>
+            </svg>
+        </button>
+    </div>
+    <br>
+    <button type="button" class="rotate-button" onclick="downloadRotatedImage()">Descargar Imagen Rotada</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Rotación de Imágenes?</h2>
+        <p>La rotación de imágenes es el proceso de cambiar la orientación de una imagen girándola en sentido horario o antihorario. Esta función es útil cuando tu foto o gráfico está incorrectamente orientado, como cuando se tomó boca abajo o de lado. Al rotar las imágenes, puedes ajustarlas rápidamente al ángulo correcto, asegurando que estén alineadas adecuadamente para su visualización o compartir.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Rotar tus Imágenes?</h2>
+        <p>Hay muchas razones para rotar imágenes. A veces, las fotos tomadas con smartphones o cámaras no capturan la imagen en la orientación deseada. Rotar la imagen te ayuda a lograr la alineación perfecta, haciendo que tus fotos se vean profesionales. Además, rotar imágenes puede ayudar con diseños de layout, dándote más flexibilidad en cómo la imagen encaja con otros elementos en sitios web, publicaciones en redes sociales o proyectos de impresión. Las imágenes correctamente rotadas también mejoran la experiencia del usuario, especialmente en páginas web donde la orientación correcta asegura un mejor atractivo visual.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestra Herramienta de Rotación de Imágenes</h2>
+        <p>Nuestra herramienta de rotación de imágenes está diseñada para ser rápida y fácil de usar. Así es como funciona:</p>
+        <ul>
+            <li>Primero, sube la imagen que deseas rotar haciendo clic en el botón "Subir desde Computadora".</li>
+            <li>Después de que la imagen se haya subido, verás una vista previa.</li>
+            <li>Usa los botones "Rotar a la Izquierda" o "Rotar a la Derecha" para rotar la imagen en incrementos de 90 grados hasta que la orientación sea la deseada.</li>
+            <li>Una vez que estés satisfecho con la rotación, haz clic en "Descargar Imagen Rotada" para guardar la imagen ajustada en tu dispositivo.</li>
+        </ul>
+        <p>Nuestra herramienta te permite rotar imágenes en múltiples formatos, incluyendo PNG, JPG, JPEG, BMP y más. ¿La mejor parte? Mantiene la calidad original de tu imagen, por lo que no tendrás que preocuparte por ninguna degradación.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestra Herramienta de Rotación de Imágenes</h2>
+        <p>Nuestra herramienta de rotación de imágenes ofrece varias ventajas:</p>
+        <ul>
+            <li><strong>Rápida y Fácil:</strong> Rota imágenes con solo unos pocos clics, sin necesidad de software especial.</li>
+            <li><strong>Admite Todos los Formatos:</strong> Ya sea que estés trabajando con PNGs, JPGs u otros formatos populares, nuestra herramienta te cubre.</li>
+            <li><strong>Sin Pérdida de Calidad:</strong> Rota tus imágenes sin comprometer su resolución o claridad.</li>
+            <li><strong>Gratuita y Accesible:</strong> Usa nuestra herramienta en línea de forma gratuita, sin necesidad de descargas o instalaciones.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Casos Comunes de Uso para la Rotación de Imágenes</h2>
+        <p>Aquí hay algunas situaciones comunes en las que podrías necesitar rotar imágenes:</p>
+        <ul>
+            <li><strong>Fotografía:</strong> Ajusta fotos tomadas en la orientación incorrecta.</li>
+            <li><strong>Diseño de Layout:</strong> Rota imágenes para que encajen correctamente en proyectos de diseño o presentaciones.</li>
+            <li><strong>Redes Sociales:</strong> Asegúrate de que tus fotos y gráficos aparezcan en la orientación correcta al compartirlos en plataformas como Instagram o Facebook.</li>
+            <li><strong>Contenido Web:</strong> Mejora el atractivo visual de tu sitio web asegurándote de que las imágenes estén alineadas correctamente.</li>
+            <li><strong>Uso Personal:</strong> Rota rápidamente fotos familiares, imágenes de vacaciones o cualquier imagen personal para asegurarte de que se muestren como se pretendía.</li>
+        </ul>
+    </div>
+    <div class="info-section">
+        <h2>Cómo Rotar Imágenes Puede Ser Útil</h2>
+        <p>Rotar imágenes puede mejorar significativamente su usabilidad y apariencia. Aquí hay algunas formas en que rotar imágenes puede ser beneficioso:</p>
+        <ul>
+            <li><strong>Corregir la Orientación:</strong> Muchas fotos tomadas con smartphones o cámaras terminan con la orientación incorrecta. Rotar estas imágenes asegura que se muestren correctamente, mejorando la experiencia de visualización.</li>
+            <li><strong>Mejorar el Atractivo Visual:</strong> Las imágenes rotadas pueden crear un aspecto más equilibrado y estéticamente agradable, haciendo que tus fotos sean más atractivas y atrayentes para los espectadores.</li>
+            <li><strong>Mejor Compartir en Redes Sociales:</strong> Las plataformas de redes sociales a menudo prefieren imágenes en ciertas orientaciones. Rotar tus imágenes puede ayudar a asegurar que aparezcan como se pretende, aumentando el compromiso y las acciones de compartir.</li>
+        </ul>
+    </div>
+    
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .rotate-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .image-preview-container {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-preview {
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .rotate-controls {
+        margin-top: 20px;
+    }
+
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create three equal columns */
+        gap: 20px;
+        /* Space between the grid items */
+        margin: 20px auto;
+        /* Center the container */
+    }
+
+    /* Center the last row when it has fewer than three items */
+    .info-container> :nth-last-child(-n+3) {
+        justify-self: center;
+        /* Center the items in the last row */
+    }
+
+    /* Ensuring each section maintains its styling */
+    .info-section {
+        padding: 20px;
+        /* Padding for each section */
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Shadow for depth */
+    }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let rotation = 0;
+    let img, canvas, ctx;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                img = new Image();
+                img.onload = function () {
+                    canvas = document.createElement('canvas');
+                    ctx = canvas.getContext('2d');
+                    resetRotation();
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function rotateImage(degrees) {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        rotation = (rotation + degrees) % 360;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = `rotate(${rotation}deg)`;
+
+        // Adjust container size based on rotation
+        const container = document.querySelector('.image-preview-container');
+        if (rotation % 180 !== 0) {
+            container.style.height = imagePreview.offsetWidth + 'px';
+        } else {
+            container.style.height = 'auto';
+        }
+    }
+
+    function resetRotation() {
+        rotation = 0;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = 'rotate(0deg)';
+        document.querySelector('.image-preview-container').style.height = 'auto';
+    }
+
+    function downloadRotatedImage() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Create a canvas to draw the rotated image
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Translate and rotate the canvas
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((rotation * Math.PI) / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+
+        // Reset the canvas transformation
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        // Download the rotated image
+        const downloadLink = document.createElement('a');
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.download = 'rotated_image.png';
+        downloadLink.click();
+    }
+</script>
+{% endblock %}

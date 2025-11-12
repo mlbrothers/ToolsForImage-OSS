@@ -1,0 +1,382 @@
+{% extends 'fr/base.html' %}
+
+{% block title %}Flouter un visage en ligne avec | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock
+%}
+
+{% block meta_description %}
+<meta name="description"
+    content="Floutez les visages ou des zones spécifiques dans vos images avec ToolsForImage. Protégez la confidentialité en floutant des parties de vos photos. Floutez les visages en un seul clic.">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h1>Flouter des Zones Spécifiques en Ligne</h1>
+    <p>Outil en ligne gratuit pour flouter des zones spécifiques de vos images</p>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <button class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger une Image</button>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="blur-box">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <div id="blur-controls" style="display: none;">
+        <label for="blur-intensity">Intensité du Flou : <span id="blur-value">10px</span></label>
+        <input type="range" id="blur-intensity" min="1" max="50" value="10">
+    </div>
+    <button id="apply-blur" style="display: none;">Appliquer l'Effet de Flou</button>
+    <div id="error-message"></div>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que le floutage de visage ?</h2>
+        <p>Le floutage de visage est le processus qui consiste à obscurcir ou à pixelliser les visages dans les images
+            ou les vidéos afin de protéger l'identité des individus. Cette technique est essentielle pour préserver la
+            confidentialité et l'anonymat, surtout lors du partage de contenu personnel en ligne. Notre outil de
+            floutage de visage vous permet de flouter facilement et rapidement les visages, garantissant que vos images
+            respectent les normes de confidentialité tout en restant visuellement attrayantes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi flouter les visages dans les images ou vidéos ?</h2>
+        <p>Il y a plusieurs raisons importantes pour lesquelles vous devriez flouter les visages dans vos contenus :</p>
+        <ul>
+            <li><strong>Protéger la confidentialité :</strong> Le floutage des visages permet de préserver la vie privée
+                des individus, notamment dans des situations sensibles comme les événements, manifestations ou
+                rassemblements publics.</li>
+            <li><strong>Respecter les lois :</strong> Dans de nombreuses juridictions, le consentement est requis pour
+                utiliser des images identifiables de personnes. Le floutage des visages peut vous aider à rester en
+                conformité avec les lois sur la confidentialité.</li>
+            <li><strong>Concentrer l'attention sur le sujet :</strong> En floutant les visages, vous pouvez diriger
+                l'attention sur le sujet principal ou l'action dans votre image ou vidéo sans distractions.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre outil de floutage de visage</h2>
+        <p>Notre outil de floutage de visage est conçu pour être simple d'utilisation, vous permettant de protéger les
+            identités en quelques étapes seulement :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger depuis l'ordinateur" pour télécharger votre image ou vidéo.</li>
+            <li>L'outil détectera automatiquement les visages dans votre contenu. Vous pouvez choisir les visages à
+                flouter ou ajuster l'intensité du flou.</li>
+            <li>Une fois les ajustements terminés, cliquez sur "Télécharger l'image/vidéo floutée" pour enregistrer
+                votre contenu protégé sur votre appareil.</li>
+        </ul>
+        <p>Notre outil prend en charge différents formats, garantissant la compatibilité avec vos images et vidéos.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'utilisation de notre outil de floutage de visage</h2>
+        <p>Voici les principaux avantages de l'utilisation de notre outil de floutage de visage :</p>
+        <ul>
+            <li><strong>Rapide et efficace :</strong> Floutez facilement les visages en quelques clics, sans avoir
+                besoin de logiciels complexes.</li>
+            <li><strong>Détection automatique :</strong> L'outil identifie automatiquement les visages, rendant le
+                processus plus rapide et plus pratique.</li>
+            <li><strong>Maintenir la qualité :</strong> Assurez-vous que vos images et vidéos conservent leur qualité
+                tout en protégeant la confidentialité.</li>
+            <li><strong>Gratuit et accessible :</strong> Notre outil est disponible en ligne gratuitement, sans
+                téléchargement ni installation nécessaires.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cas d'utilisation fréquents du floutage de visage</h2>
+        <p>Le floutage de visage est utile dans divers scénarios, tels que :</p>
+        <ul>
+            <li><strong>Photographie événementielle :</strong> Protégez l'identité des individus dans les photos prises
+                lors d'événements publics ou de rassemblements.</li>
+            <li><strong>Documentaires et reportages :</strong> Floutez les visages dans les interviews ou les séquences
+                où les individus n'ont pas donné leur consentement pour être identifiés.</li>
+            <li><strong>Partage sur les réseaux sociaux :</strong> Partagez des images ou vidéos en ligne tout en
+                garantissant la confidentialité des personnes figurant dans votre contenu.</li>
+            <li><strong>Photos de famille :</strong> Floutez les visages des enfants ou des proches lorsque vous
+                partagez des images personnelles sur des plateformes publiques.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment le floutage des visages peut aider à protéger la confidentialité</h2>
+        <p>Le floutage des visages est un moyen efficace de garantir la confidentialité et la sécurité des individus.
+            Voici comment cela peut vous aider :</p>
+        <ul>
+            <li><strong>Empêcher l'utilisation non autorisée :</strong> Le floutage des visages empêche les autres
+                d'utiliser vos images ou vidéos pour identifier des personnes sans leur consentement.</li>
+            <li><strong>Améliorer la sécurité :</strong> Protéger l'identité des individus dans des situations sensibles
+                aide à maintenir leur sécurité et leur protection.</li>
+            <li><strong>Promouvoir un partage éthique de contenu :</strong> En utilisant notre outil de floutage de
+                visage, vous encouragez le partage responsable de contenu respectant les droits à la confidentialité des
+                individus.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    #canvas-container {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #canvas {
+        display: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #blur-box {
+        position: absolute;
+        border: 2px dashed #fff;
+        background-color: rgba(174, 107, 255, 0.3);
+        cursor: move;
+        display: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+    }
+
+    .resize-handle.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+    }
+
+    .resize-handle.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+    }
+
+    .resize-handle.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+    }
+
+    #apply-blur {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const blurBox = document.getElementById('blur-box');
+    const applyBlurButton = document.getElementById('apply-blur');
+    const errorMessage = document.getElementById('error-message');
+    const blurIntensityInput = document.getElementById('blur-intensity');
+    const blurValueDisplay = document.getElementById('blur-value');
+    let img;
+    let scale = 1;
+
+    // Handle image upload
+    document.getElementById('image-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                const maxWidth = window.innerWidth * 0.8;
+                const maxHeight = window.innerHeight * 0.8;
+                scale = Math.min(1, maxWidth / img.width, maxHeight / img.height);
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                canvas.style.display = 'block';
+                blurBox.style.display = 'block';
+                applyBlurButton.style.display = 'block';
+                document.getElementById('blur-controls').style.display = 'block';
+                errorMessage.style.display = 'none';
+                resetBlurBox();
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    });
+
+    // Dragging and resizing logic
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+
+    blurBox.addEventListener('mousedown', function (e) {
+        if (e.target.classList.contains('resize-handle')) {
+            isResizing = true;
+            currentHandle = e.target;
+        } else {
+            isDragging = true;
+        }
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = blurBox.offsetLeft;
+        startTop = blurBox.offsetTop;
+        startWidth = parseInt(getComputedStyle(blurBox).width, 10);
+        startHeight = parseInt(getComputedStyle(blurBox).height, 10);
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newLeft = startLeft + dx;
+            let newTop = startTop + dy;
+
+            newLeft = Math.max(0, Math.min(newLeft, canvas.width - blurBox.offsetWidth));
+            newTop = Math.max(0, Math.min(newTop, canvas.height - blurBox.offsetHeight));
+
+            blurBox.style.left = newLeft + 'px';
+            blurBox.style.top = newTop + 'px';
+        } else if (isResizing) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newWidth, newHeight, newLeft, newTop;
+
+            if (currentHandle.classList.contains('se')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+            } else if (currentHandle.classList.contains('sw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+                newLeft = Math.max(0, startLeft + dx);
+            } else if (currentHandle.classList.contains('ne')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newTop = Math.max(0, startTop + dy);
+            } else if (currentHandle.classList.contains('nw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newLeft = Math.max(0, startLeft + dx);
+                newTop = Math.max(0, startTop + dy);
+            }
+
+            // Ensure minimum size for blur box
+            const minSize = 20;
+            newWidth = Math.max(newWidth, minSize);
+            newHeight = Math.max(newHeight, minSize);
+
+            blurBox.style.width = `${newWidth}px`;
+            blurBox.style.height = `${newHeight}px`;
+            if (newLeft !== undefined) blurBox.style.left = `${newLeft}px`;
+            if (newTop !== undefined) blurBox.style.top = `${newTop}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+        isResizing = false;
+    });
+
+    // Reset blur box to initial size and position
+    function resetBlurBox() {
+        const initialSize = Math.min(100, canvas.width / 2, canvas.height / 2);
+        blurBox.style.width = `${initialSize}px`;
+        blurBox.style.height = `${initialSize}px`;
+        blurBox.style.left = '0px';
+        blurBox.style.top = '0px';
+    }
+
+    // Update blur intensity display
+    blurIntensityInput.addEventListener('input', function () {
+        blurValueDisplay.textContent = `${this.value}px`;
+    });
+
+    // Apply blur effect to the selected area
+    applyBlurButton.addEventListener('click', function () {
+        const boxRect = blurBox.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const x = boxRect.left - canvasRect.left;
+        const y = boxRect.top - canvasRect.top;
+        const width = boxRect.width;
+        const height = boxRect.height;
+
+        // Apply blur effect to the selected area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(x, y, width, height);
+        ctx.clip();
+        ctx.filter = `blur(${blurIntensityInput.value}px)`;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.restore();
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'blurred_image.png';
+        a.click();
+    });
+</script>
+{% endblock %}

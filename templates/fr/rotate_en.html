@@ -1,0 +1,289 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Faites pivoter vos images sans effort avec ToolsForImage. Ajustez rapidement et facilement l'orientation des images.">
+{% endblock %}
+
+{% block title %}Outil de Rotation d'Image en Ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Rotation d'Image</h1>
+<p>Faites pivoter facilement vos images avec ToolsForImage. Téléchargez une image, prévisualisez la rotation et téléchargez le résultat.</p>
+<p>Téléchargez votre fichier image et faites-le pivoter instantanément. Choisissez votre image :</p>
+<form id="rotation-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;"
+        onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'Image">
+    </div>
+    <br>
+    <div class="rotate-controls">
+        <button type="button" class="rotate-button" onclick="rotateImage(-90)">
+            Tourner à Gauche
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+            </svg>
+        </button>
+        <button type="button" class="rotate-button" onclick="rotateImage(90)">
+            Tourner à Droite
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                <path d="M21 3v5h-5"></path>
+            </svg>
+        </button>
+    </div>
+    <br>
+    <button type="button" class="rotate-button" onclick="downloadRotatedImage()">Télécharger l'Image Rotatée</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Rotation d'Image ?</h2>
+        <p>La rotation d'image est le processus de changement de l'orientation d'une image en la faisant pivoter dans le sens des aiguilles d'une montre ou dans le sens inverse. Cette fonctionnalité est utile lorsque votre photo ou graphique est mal orienté, par exemple lorsqu'il a été pris à l'envers ou de côté. En faisant pivoter les images, vous pouvez rapidement les ajuster à l'angle correct, en vous assurant qu'elles sont correctement alignées pour la visualisation ou le partage.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Faire Pivoter Vos Images ?</h2>
+        <p>Il existe de nombreuses raisons de faire pivoter des images. Parfois, les photos prises sur des smartphones ou des appareils photo ne capturent pas l'image dans l'orientation souhaitée. Faire pivoter l'image vous aide à obtenir l'alignement parfait, rendant vos photos plus professionnelles. De plus, faire pivoter les images peut aider dans les mises en page de conception, vous offrant plus de flexibilité sur la façon dont l'image s'intègre avec d'autres éléments sur des sites web, des publications sur les réseaux sociaux ou des projets imprimés. Des images correctement pivotées améliorent également l'expérience utilisateur, surtout sur les pages web où la bonne orientation garantit un meilleur attrait visuel.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Outil de Rotation d'Image</h2>
+        <p>Notre outil de rotation d'image est conçu pour être rapide et facile à utiliser. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Tout d'abord, téléchargez l'image que vous souhaitez faire pivoter en cliquant sur le bouton "Télécharger depuis l'ordinateur".</li>
+            <li>Après le téléchargement de l'image, vous verrez un aperçu.</li>
+            <li>Utilisez les boutons "Faire pivoter à gauche" ou "Faire pivoter à droite" pour faire pivoter l'image par incréments de 90 degrés jusqu'à ce que l'orientation soit celle souhaitée.</li>
+            <li>Une fois que vous êtes satisfait de la rotation, cliquez sur "Télécharger l'image pivotée" pour enregistrer l'image ajustée sur votre appareil.</li>
+        </ul>
+        <p>Notre outil vous permet de faire pivoter des images dans plusieurs formats, y compris PNG, JPG, JPEG, BMP, et plus encore. Le meilleur ? Il maintient la qualité originale de votre image, vous n'aurez donc pas à vous soucier de la dégradation.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'Utiliser Notre Outil de Rotation d'Image</h2>
+        <p>Notre outil de rotation d'image offre plusieurs avantages :</p>
+        <ul>
+            <li><strong>Rapide et Facile :</strong> Faites pivoter des images en quelques clics, sans avoir besoin d'un logiciel spécial.</li>
+            <li><strong>Prend en Charge Tous les Formats :</strong> Que vous travailliez avec des PNG, JPG ou d'autres formats populaires, notre outil vous couvre.</li>
+            <li><strong>Aucune Perte de Qualité :</strong> Faites pivoter vos images sans compromettre leur résolution ou leur clarté.</li>
+            <li><strong>Gratuit et Accessible :</strong> Utilisez notre outil en ligne gratuitement, sans téléchargements ni installations.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cas d'Utilisation Courants pour la Rotation d'Image</h2>
+        <p>Voici quelques situations courantes où vous pourriez avoir besoin de faire pivoter des images :</p>
+        <ul>
+            <li><strong>Photographie :</strong> Ajustez des photos prises dans la mauvaise orientation.</li>
+            <li><strong>Mise en Page de Design :</strong> Faites pivoter des images pour les adapter correctement à des projets de design ou à des présentations.</li>
+            <li><strong>Réseaux Sociaux :</strong> Assurez-vous que vos photos et graphiques apparaissent dans la bonne orientation lors du partage sur des plateformes sociales comme Instagram ou Facebook.</li>
+            <li><strong>Contenu Web :</strong> Améliorez l'attrait visuel de votre site web en vous assurant que les images sont correctement alignées.</li>
+            <li><strong>Utilisation Personnelle :</strong> Faites pivoter rapidement des photos de famille, des images de vacances ou toutes photos personnelles pour vous assurer qu'elles sont affichées comme prévu.</li>
+        </ul>
+    </div>
+    <div class="info-section">
+        <h2>Comment la Rotation d'Images Peut Être Utile</h2>
+        <p>Faire pivoter des images peut considérablement améliorer leur utilisabilité et leur apparence. Voici quelques façons dont la rotation d'images peut être bénéfique :</p>
+        <ul>
+            <li><strong>Correction de l'Orientation :</strong> De nombreuses photos prises avec des smartphones ou des appareils photo se retrouvent avec la mauvaise orientation. Faire pivoter ces images garantit qu'elles sont affichées correctement, améliorant l'expérience de visualisation globale.</li>
+            <li><strong>Amélioration de l'Attrait Visuel :</strong> Des images pivotées peuvent créer un aspect plus équilibré et esthétiquement plaisant, rendant vos photos plus attrayantes et engageantes pour les spectateurs.</li>
+            <li><strong>Meilleur Partage sur les Réseaux Sociaux :</strong> Les plateformes de réseaux sociaux préfèrent souvent des images dans certaines orientations. Faire pivoter vos images peut garantir qu'elles apparaissent comme prévu, augmentant l'engagement et les partages.</li>
+        </ul>
+    </div>
+    
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .rotate-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .image-preview-container {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-preview {
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .rotate-controls {
+        margin-top: 20px;
+    }
+
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create three equal columns */
+        gap: 20px;
+        /* Space between the grid items */
+        margin: 20px auto;
+        /* Center the container */
+    }
+
+    /* Center the last row when it has fewer than three items */
+    .info-container> :nth-last-child(-n+3) {
+        justify-self: center;
+        /* Center the items in the last row */
+    }
+
+    /* Ensuring each section maintains its styling */
+    .info-section {
+        padding: 20px;
+        /* Padding for each section */
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Shadow for depth */
+    }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let rotation = 0;
+    let img, canvas, ctx;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                img = new Image();
+                img.onload = function () {
+                    canvas = document.createElement('canvas');
+                    ctx = canvas.getContext('2d');
+                    resetRotation();
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function rotateImage(degrees) {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        rotation = (rotation + degrees) % 360;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = `rotate(${rotation}deg)`;
+
+        // Adjust container size based on rotation
+        const container = document.querySelector('.image-preview-container');
+        if (rotation % 180 !== 0) {
+            container.style.height = imagePreview.offsetWidth + 'px';
+        } else {
+            container.style.height = 'auto';
+        }
+    }
+
+    function resetRotation() {
+        rotation = 0;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = 'rotate(0deg)';
+        document.querySelector('.image-preview-container').style.height = 'auto';
+    }
+
+    function downloadRotatedImage() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Create a canvas to draw the rotated image
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Translate and rotate the canvas
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((rotation * Math.PI) / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+
+        // Reset the canvas transformation
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        // Download the rotated image
+        const downloadLink = document.createElement('a');
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.download = 'rotated_image.png';
+        downloadLink.click();
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ वेबपी को JPG चित्रों में आसानी से कनवर्ट करें। मुफ्त ऑनलाइन वेबपी से JPG कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन वेबपी को JPG में कनवर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त वेबपी से JPG कनवर्ज़न टूल</h1>
+<p>अपने वेबपी चित्रों को JPG फॉर्मेट में आसानी से कनवर्ट करें। एक वेबपी चित्र अपलोड करें और हम इसे आपके लिए JPG में कनवर्ट करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>वेबपी से JPG कनवर्ज़न क्या है?</h2>
+        <p>वेबपी से JPG कनवर्ज़न वह प्रक्रिया है जिसमें चित्रों को वेबपी फॉर्मेट से JPG (JPEG) फॉर्मेट में बदला जाता है। वेबपी एक आधुनिक इमेज फॉर्मेट है जो उत्कृष्ट संपीड़न और गुणवत्ता प्रदान करता है, जबकि JPG एक व्यापक रूप से उपयोग होने वाला फॉर्मेट है जो तस्वीरों और चित्रों के लिए उपयुक्त है। वेबपी को JPG में कनवर्ट करना तब आवश्यक होता है जब आपको ऐसे चित्रों की आवश्यकता होती है जो कई उपकरणों और अनुप्रयोगों के साथ संगत हों।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को JPG में क्यों कनवर्ट करें?</h2>
+        <p>वेबपी चित्रों को JPG में कनवर्ट करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>व्यापक संगतता:</strong> JPG सबसे सार्वभौमिक रूप से स्वीकृत इमेज फॉर्मेट में से एक है, यह सुनिश्चित करते हुए कि आपके चित्र किसी भी उपकरण या सॉफ़्टवेयर पर खोले जा सकते हैं।</li>
+            <li><strong>तस्वीरों के लिए आदर्श:</strong> JPG चित्र तस्वीरों के लिए एकदम सही होते हैं, जो इमेज गुणवत्ता और फ़ाइल आकार के बीच अच्छा संतुलन प्रदान करते हैं।</li>
+            <li><strong>साझा करना आसान:</strong> JPG फॉर्मेट सामाजिक मीडिया और अन्य प्लेटफार्मों पर व्यापक रूप से समर्थित है, जिससे दूसरों के साथ अपने चित्र साझा करना आसान होता है।</li>
+            <li><strong>फ़ाइल आकार में कमी:</strong> JPG अक्सर छोटे फ़ाइल आकार में परिणत होता है, जो वेबसाइटों को तेजी से लोड करने में मदद करता है और संग्रहण स्थान बचाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से JPG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे वेबपी से JPG कनवर्ज़न टूल का उपयोग करना त्वरित और आसान है। यहाँ शुरू करने का तरीका है:</p>
+        <ul>
+            <li>"वेबपी फ़ाइल अपलोड करें" बटन पर क्लिक करें ताकि आप उस वेबपी चित्र का चयन कर सकें जिसे आप कनवर्ट करना चाहते हैं।</li>
+            <li>एक बार जब चित्र अपलोड हो जाता है, तो हमारा टूल स्वचालित रूप से कनवर्ज़न प्रक्रिया शुरू कर देगा।</li>
+            <li>कनवर्ज़न के बाद, "JPG डाउनलोड करें" पर क्लिक करें ताकि आप अपने नए JPG चित्र को अपने उपकरण पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न वेबपी फ़ॉर्मेट का समर्थन करता है, जो एक सुचारू और कुशल कनवर्ज़न अनुभव सुनिश्चित करता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से JPG कनवर्टर के उपयोग के लाभ</h2>
+        <p>यहाँ हमारे कनवर्ज़न टूल के कुछ लाभ दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और कुशल:</strong> कुछ क्लिक में अपने वेबपी चित्रों को JPG में कनवर्ट करें, जिससे आपका समय बचता है।</li>
+            <li><strong>गुणवत्ता की हानि नहीं:</strong> कनवर्ज़न के दौरान कोई महत्वपूर्ण विवरण खोए बिना उच्च गुणवत्ता वाले JPG चित्रों का आनंद लें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारा टूल ऑनलाइन मुफ्त में उपलब्ध है, बिना किसी डाउनलोड या इंस्टॉलेशन के।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफेस:</strong> उपयोग में आसानी के लिए डिज़ाइन किया गया है, हमारा टूल सभी के लिए कनवर्ज़न प्रक्रिया को सरल बनाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी से JPG कनवर्ज़न के सामान्य उपयोग</h2>
+        <p>वेबपी को JPG में कनवर्ट करना विभिन्न स्थितियों में उपयोगी हो सकता है:</p>
+        <ul>
+            <li><strong>वेबसाइट ऑप्टिमाइज़ेशन:</strong> पृष्ठ लोडिंग गति और संगतता बढ़ाने के लिए JPG चित्रों का उपयोग करें।</li>
+            <li><strong>सामाजिक मीडिया पर साझा करना:</strong> सामाजिक प्लेटफार्मों पर चित्र साझा करना आसान बनाएं, यह सुनिश्चित करते हुए कि वे अपेक्षित रूप में प्रकट हों।</li>
+            <li><strong>डिजिटल फोटोग्राफी:</strong> JPG फॉर्मेट में तस्वीरें सहेजें और साझा करें ताकि संग्रहण और पहुंच आसान हो।</li>
+            <li><strong>व्यक्तिगत परियोजनाएँ:</strong> पारिवारिक एल्बम या रचनात्मक परियोजनाओं के लिए व्यापक रूप से उपयोग किए जाने वाले फॉर्मेट में चित्रों को कनवर्ट करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को JPG में कनवर्ट करने से आपको कैसे मदद मिलेगी</h2>
+        <p>वेबपी चित्रों को JPG फॉर्मेट में कनवर्ट करना उपयोगिता और साझा करने को बढ़ा सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>सुधरी हुई संगतता:</strong> JPG चित्र लगभग सभी उपकरणों और सॉफ़्टवेयर के साथ संगत होते हैं, जिससे आपके चित्र आसानी से सुलभ होते हैं।</li>
+            <li><strong>तेज़ लोडिंग समय:</strong> छोटे JPG फ़ाइल आकार वेबसाइटों पर तेजी से लोडिंग समय में योगदान करते हैं, उपयोगकर्ता अनुभव को बढ़ाते हैं।</li>
+            <li><strong>साझा करने में सरलता:</strong> JPG फ़ाइलें कई ऑनलाइन प्लेटफार्मों के लिए पसंदीदा विकल्प होती हैं, जिससे साझा करना सरल हो जाता है।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

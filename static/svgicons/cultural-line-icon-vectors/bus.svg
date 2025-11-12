@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>bus</title>
+
+<g id="bus">
+
+<line x1="54" y1="14.463" x2="54" y2="15.878" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="54" y1="20.122" x2="54" y2="21.537" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="50.463" y1="18" x2="51.878" y2="18" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="56.122" y1="18" x2="57.537" y2="18" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="20.5" cy="11.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="35.5" cy="20.5" r="1.069"/>
+
+<circle cx="46.5" cy="7.5" r="1.069"/>
+
+<circle cx="5.5" cy="5.5" r="1.069"/>
+
+<line x1="29.526" y1="56" x2="48.502" y2="56" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M57.055,56H62V50.6A2.6,2.6,0,0,0,59.4,48H59V39h3V31.252A5.253,5.253,0,0,0,56.747,26H11.252A5.253,5.253,0,0,0,6,31.252V56H21.1" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="10" y="30" width="6" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="20" y="30" width="6" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="30" y="30" width="6" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="40" y="30" width="6" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="50" y="30" width="6" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="10.118 55.69 10.118 43 16 43 16 55.648" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="20" y="43" width="27" height="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="59 48 51 48 51 39" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="52.824" cy="55.342" r="3.928" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="52.824" cy="55.342" r="1.028"/>
+
+<circle cx="25.353" cy="55.342" r="3.928" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="25.353" cy="55.342" r="1.01"/>
+
+<line x1="26" y1="43" x2="26" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="43" x2="32" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="38" y1="43" x2="38" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="59" y1="39" x2="6" y2="39" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

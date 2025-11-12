@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="800px" height="800px" viewBox="0 -1.5 2253 2253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+
+<rect id="line_chart_parallel" x="1.997" y="0" width="2250" height="2250" style="fill:none;"/>
+
+<g>
+
+<path d="M310.331,408.333l-100,-200l-100,200l200,0Z" style="fill:#202020;"/>
+
+<path d="M1885.33,1983.33l200,100l-200,100l-0,-200Z" style="fill:#202020;"/>
+
+<path d="M210.331,368.333l-0,1715l1715,0" style="fill:none;stroke:#202020;stroke-width:66.67px;"/>
+
+</g>
+
+<path d="M418.664,1875l625,-625l208.333,416.667l625,-625" style="fill:none;stroke:#1c4e80;stroke-width:66.67px;"/>
+
+<path d="M418.664,1583.33l625,-750l208.333,333.334l625,-750" style="fill:none;stroke:#ea6a47;stroke-width:66.67px;"/>
+
+</svg>

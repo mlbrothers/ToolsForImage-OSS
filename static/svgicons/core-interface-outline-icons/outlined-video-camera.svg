@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" id="Outlined" xmlns="http://www.w3.org/2000/svg">
+
+<title/>
+
+<g id="Fill">
+
+<path d="M30,6.2l-8,5V10a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3V22a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V20.8l8,5ZM20,22a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V10A1,1,0,0,1,5,9H19a1,1,0,0,1,1,1V22Zm8,.2-6-3.75v-4.9L28,9.8Z"/>
+
+<rect height="2" width="4" x="7" y="12"/>
+
+</g>
+
+</svg>

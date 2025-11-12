@@ -1,0 +1,196 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert PNG to JPG images with ToolsForImage. Free, fast, and secure online PNG to JPG converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online PNG to JPG converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online PNG to JPG Converter</h1>
+<p>Easily convert your images from PNG to JPG format. Upload a PNG image and we'll convert it to JPG for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/PNG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is PNG to JPG Conversion?</h2>
+        <p>PNG to JPG conversion is the process of changing image files from PNG format to JPG (or JPEG) format. JPG is a popular image format that uses compression to reduce file size while maintaining good image quality. This conversion is useful when you want smaller files for easier sharing on the web or social media.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert PNG to JPG?</h2>
+        <p>There are many reasons to convert PNG images to JPG:</p>
+        <ul>
+            <li><strong>Reduced File Size:</strong> JPG files are typically smaller than PNG files, making them easier to upload and share.</li>
+            <li><strong>Web Optimization:</strong> JPG is often the preferred format for images on websites due to its balance of quality and file size, improving loading speeds.</li>
+            <li><strong>Wider Compatibility:</strong> JPG files are compatible with most devices and software, ensuring easy viewing and sharing.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our PNG to JPG Converter</h2>
+        <p>Using our PNG to JPG conversion tool is simple and quick. Here’s how it works:</p>
+        <ul>
+            <li>Click the "Upload PNG File" button to select the PNG image you want to convert.</li>
+            <li>Once your image is uploaded, our tool will automatically start converting it to JPG format.</li>
+            <li>After the conversion is complete, click "Download JPG" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter supports various PNG files, ensuring a smooth and efficient conversion experience for all users.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our PNG to JPG Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your PNG images to JPG quickly with just a few clicks.</li>
+            <li><strong>No Quality Loss:</strong> Enjoy high-quality results with minimal loss during the conversion process.</li>
+            <li><strong>Free and Accessible:</strong> Use our tool online for free, with no downloads or installations needed.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed to be intuitive and easy to navigate for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for PNG to JPG Conversion</h2>
+        <p>Here are some common situations where converting PNG to JPG can be helpful:</p>
+        <ul>
+            <li><strong>Web Design:</strong> Use JPG images for websites to optimize loading times and improve user experience.</li>
+            <li><strong>Social Media:</strong> Share smaller JPG images on social media platforms for quicker uploads and better engagement.</li>
+            <li><strong>Photography:</strong> Convert PNG images to JPG for easier storage and sharing while maintaining good quality.</li>
+            <li><strong>Email Attachments:</strong> Send JPG images as email attachments, as they usually have smaller file sizes compared to PNGs.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting PNG to JPG Can Help</h2>
+        <p>Converting your PNG images to JPG can enhance their usability and performance. Here’s how:</p>
+        <ul>
+            <li><strong>Optimized File Size:</strong> JPG images are generally smaller, which makes them faster to upload and download.</li>
+            <li><strong>Improved Sharing:</strong> JPG format is ideal for sharing images on the web, ensuring compatibility with most platforms.</li>
+            <li><strong>Easy Editing:</strong> JPG images can be easily edited in various software, providing flexibility for your projects.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

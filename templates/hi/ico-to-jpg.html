@@ -1,0 +1,192 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ ICO को JPG छवियों में आसानी से परिवर्तित करें। फ्री ऑनलाइन ICO से JPG कनवर्टर।">
+{% endblock %}
+
+{% block title %}ICO को JPG में ऑनलाइन परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री ICO से JPG रूपांतरण टूल</h1>
+<p>आसान तरीके से अपने ICO चित्रों को JPG प्रारूप में परिवर्तित करें। एक ICO चित्र अपलोड करें और हम इसे आपके लिए JPG में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>ICO से JPG रूपांतरण क्या है?</h2>
+        <p>ICO से JPG रूपांतरण वह प्रक्रिया है जिसमें छवि फ़ाइलों को ICO प्रारूप से JPG प्रारूप में बदला जाता है। JPG (या JPEG) एक व्यापक रूप से उपयोग किया जाने वाला, लॉसी संपीड़न छवि प्रारूप है जो विशेष रूप से फ़ोटोग्राफ़ और जटिल छवियों के लिए उपयुक्त है। यह रूपांतरण तब उपयोगी है जब आपको उन संदर्भों में आइकन छवियों का उपयोग करना हो जहाँ JPG को प्राथमिकता दी जाती है या आवश्यक है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO को JPG में क्यों परिवर्तित करें?</h2>
+        <p>ICO चित्रों को JPG में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>छोटा फ़ाइल आकार:</strong> JPG फ़ाइलें आमतौर पर ICO फ़ाइलों की तुलना में छोटी होती हैं, जो उन्हें वेब उपयोग के लिए आदर्श बनाती हैं।</li>
+            <li><strong>विस्तृत संगतता:</strong> JPG विभिन्न प्लेटफ़ॉर्म और अनुप्रयोगों में सार्वभौमिक रूप से समर्थित है।</li>
+            <li><strong>जटिल छवियों के लिए बेहतर:</strong> JPG फ़ोटोग्राफ़ और जटिल रंग ग्रेडिएंट वाली छवियों के लिए उत्कृष्ट है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे ICO से JPG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे ICO से JPG रूपांतरण टूल का उपयोग करना सरल और तेज़ है। यह इस तरह काम करता है:</p>
+        <ul>
+            <li>ICO फ़ाइल अपलोड करने के लिए "ICO फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>एक बार जब आपकी छवि अपलोड हो जाती है, तो हमारा टूल स्वचालित रूप से इसे JPG प्रारूप में परिवर्तित करना शुरू कर देगा।</li>
+            <li>रूपांतरण पूरा होने के बाद, "JPG डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई छवि फ़ाइल अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न ICO फ़ाइलों का समर्थन करता है, जो सभी उपयोगकर्ताओं के लिए एक सहज और प्रभावी रूपांतरण अनुभव सुनिश्चित करता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे ICO से JPG कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>हमारे रूपांतरण उपकरण का उपयोग करने के कुछ फायदे यहां दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> केवल कुछ क्लिक के साथ अपने ICO चित्रों को JPG में जल्दी से परिवर्तित करें।</li>
+            <li><strong>उच्च गुणवत्ता:</strong> रूपांतरण प्रक्रिया के दौरान छवि गुणवत्ता बनाए रखें।</li>
+            <li><strong>फ्री और सुलभ:</strong> बिना किसी डाउनलोड या इंस्टॉलेशन की आवश्यकता के, हमारे टूल का ऑनलाइन मुफ्त में उपयोग करें।</li>
+            <li><strong>उपयोगकर्ता-अनुकूल इंटरफ़ेस:</strong> हमारा टूल सभी के लिए सहज और नेविगेट करने में आसान डिज़ाइन किया गया है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO से JPG रूपांतरण के सामान्य उपयोग</h2>
+        <p>यहां कुछ सामान्य स्थितियां हैं जहां ICO को JPG में परिवर्तित करना सहायक हो सकता है:</p>
+        <ul>
+            <li><strong>वेब विकास:</strong> ऐसे वेब प्रोजेक्ट में आइकन छवियों का उपयोग करें जहाँ छोटे फ़ाइल आकार के लिए JPG को प्राथमिकता दी जाती है।</li>
+            <li><strong>ईमेल मार्केटिंग:</strong> ऐसे ईमेल अभियानों में आइकन छवियों को शामिल करें जहाँ JPG व्यापक रूप से समर्थित है।</li>
+            <li><strong>दस्तावेज़ निर्माण:</strong> ऐसे दस्तावेज़ों या प्रस्तुतियों में आइकन छवियों को शामिल करें जहाँ फ़ाइल आकार चिंता का विषय हो।</li>
+            <li><strong>सोशल मीडिया:</strong> ऐसे सोशल मीडिया पोस्ट में परिवर्तित आइकन का उपयोग करें जहाँ JPG सामान्यतः उपयोग किया जाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO को JPG में परिवर्तित करना कैसे मदद कर सकता है</h2>
+        <p>अपने ICO चित्रों को JPG में परिवर्तित करना उनके उपयोगिता को विभिन्न संदर्भों में बढ़ा सकता है। यह इस प्रकार है:</p>
+        <ul>
+            <li><strong>फाइल का आकार कम करना:</strong> JPG संपीड़न फ़ाइल का आकार महत्वपूर्ण रूप से कम कर सकता है, जिससे वेब पृष्ठों के लिए लोड समय में सुधार होता है।</li>
+            <li><strong>व्यापक संगतता:</strong> JPG सार्वभौमिक रूप से समर्थित है, यह सुनिश्चित करते हुए कि आपकी छवियाँ लगभग किसी भी डिवाइस या प्लेटफ़ॉर्म पर देखी जा सकें।</li>
+            <li><strong>शेयरिंग में आसानी:</strong> छोटे फ़ाइल आकार JPG छवियों को ईमेल या मैसेजिंग ऐप के माध्यम से साझा करना आसान बनाते हैं।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

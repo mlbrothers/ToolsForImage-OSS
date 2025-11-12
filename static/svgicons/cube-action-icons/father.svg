@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_twee{fill:#67625D;}
+	.cubies_een{fill:#4C4842;}
+	.cubies_twaalf{fill:#FFF2DF;}
+	.cubies_acht{fill:#8E7866;}
+	.cubies_negen{fill:#AB9784;}
+	.st0{fill:#A4C83F;}
+	.st1{fill:#BCD269;}
+	.st2{fill:#D1DE8B;}
+	.st3{fill:#2EB39A;}
+	.st4{fill:#EC9B5A;}
+	.st5{fill:#A5C64A;}
+	.st6{fill:#65C3AB;}
+	.st7{fill:#EDB57E;}
+	.st8{fill:#F9E0BD;}
+	.st9{fill:#98D3BC;}
+	.st10{fill:#CCE2CD;}
+	.st11{fill:#D97360;}
+	.st12{fill:#E69D8A;}
+	.st13{fill:#F2C99E;}
+	.st14{fill:#C9483A;}
+	.st15{fill:#C9C6C0;}
+	.st16{fill:#725A48;}
+	.st17{fill:#EDEAE5;}
+	.st18{fill:#837F79;}
+	.st19{fill:#A5A29C;}
+	.st20{fill:#E3D4C0;}
+	.st21{fill:#E8E8B5;}
+</style>
+<g>
+	<path class="cubies_acht" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_een" d="M0,3v19h3c0.552,0,1-0.448,1-1v-6c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1v6c0,0.552,0.448,1,1,1h5
+		V3c0-1.657-1.343-3-3-3H3C1.343,0,0,1.343,0,3z"/>
+	<path class="cubies_negen" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<path class="cubies_een" d="M20,18c1.105,0,2,0.895,2,2s-0.895,2-2,2s-2-0.895-2-2S18.895,18,20,18z M8,20c0,1.105,0.895,2,2,2
+		s2-0.895,2-2s-0.895-2-2-2S8,18.895,8,20z"/>
+	<path class="cubies_twaalf" d="M20.5,19c0.276,0,0.5,0.224,0.5,0.5S20.776,20,20.5,20S20,19.776,20,19.5S20.224,19,20.5,19z
+		 M10,19.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5S10.776,19,10.5,19S10,19.224,10,19.5z"/>
+	<path class="cubies_twee" d="M0,3v19h3c0.552,0,1-0.448,1-1v-6c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1v6c0,0.552,0.448,1,1,1
+		h3V3c0-1.657-1.343-3-3-3H3C1.343,0,0,1.343,0,3z"/>
+	<path class="cubies_acht" d="M16,29h-2c-0.553,0-1-0.448-1-1s0.447-1,1-1h2c0.553,0,1,0.448,1,1S16.553,29,16,29z"/>
+</g>
+</svg>

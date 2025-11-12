@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>olive-oil</title>
+
+<g id="olive-oil">
+
+<circle cx="37.5" cy="35.5" r="21.5" style="fill:#e5efef"/>
+
+<circle cx="55" cy="10" r="2" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="42.044" cy="15.014" r="1.069" style="fill:#4c241d"/>
+
+<line x1="49" y1="22" x2="52" y2="25" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="52" y1="22" x2="49" y2="25" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="4 61 4 50 61 50 61 61" style="fill:#bf7e68"/>
+
+<line x1="4" y1="50" x2="61" y2="50" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26.683,15.928,37,7,16,9l4.057,6.592C13.739,18.125,9,28.318,9,36c0,6.045,2.671,8.757,7,10l-1,4H31l-1.264-3.792C34.065,44.965,37,42.045,37,36,37,28.621,32.627,18.927,26.683,15.928Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M16,9H12.587A4.587,4.587,0,0,0,8,13.587v6.2a13.473,13.473,0,0,0,2.538,7.871" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M25,19s5,2,7,9" style="fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="16" y1="46" x2="22" y2="46" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="33.5" cy="43.278" rx="3.5" ry="2.722" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="53.5" cy="40.5" rx="4.5" ry="3.5" transform="translate(-10.436 60.863) rotate(-54.792)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="38.786" cy="47.5" rx="5.786" ry="4.5" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="39.5" cy="40.5" rx="3.5" ry="4.5" transform="translate(-15.324 54.458) rotate(-60)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="47.5" cy="44.5" rx="4.5" ry="3.5" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="54.5" cy="46.5" rx="4.5" ry="3.5" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="53.5" cy="52.5" rx="3.5" ry="4.5" transform="translate(-10.492 91.533) rotate(-75.841)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="40.5" cy="51.5" rx="3.5" ry="4.5" transform="translate(-19.342 78.172) rotate(-75.841)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="46.5" cy="48.5" rx="3.5" ry="4.5" transform="translate(-11.901 81.724) rotate(-75.841)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="29.5" cy="48.5" rx="4.5" ry="3.5" transform="translate(-13.752 11.734) rotate(-18.324)" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="46.5" cy="54.5" rx="4.5" ry="3.5" style="fill:#a9ba5a;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

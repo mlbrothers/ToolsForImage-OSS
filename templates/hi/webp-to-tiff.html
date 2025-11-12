@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ वेबपी को TIFF छवियों में आसानी से परिवर्तित करें। फ्री ऑनलाइन वेबपी से TIFF कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन वेबपी को TIFF में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री वेबपी से TIFF परिवर्तक उपकरण</h1>
+<p>अपनी वेबपी छवियों को TIFF प्रारूप में आसानी से परिवर्तित करें। एक वेबपी छवि अपलोड करें और हम इसे आपके लिए TIFF में परिवर्तित करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>वेबपी से TIFF परिवर्तक क्या है?</h2>
+        <p>वेबपी से TIFF परिवर्तक वह प्रक्रिया है जिसमें छवियों को वेबपी प्रारूप से TIFF प्रारूप में बदला जाता है। वेबपी अपने कुशल संकुचन और गुणवत्ता के लिए जाना जाता है, जबकि TIFF एक उच्च गुणवत्ता वाली छवि प्रारूप है जिसका मुख्य उपयोग पेशेवर फोटोग्राफी और ग्राफिक डिज़ाइन में होता है। वेबपी को TIFF में परिवर्तित करने से आप अपनी छवियों में उच्च संकल्प और विवरण बनाए रख सकते हैं, जो इसे अभिलेखीय उद्देश्यों और उच्च गुणवत्ता वाले प्रिंट के लिए आदर्श बनाता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को TIFF में परिवर्तित करने के लाभ क्या हैं?</h2>
+        <p>वेबपी छवियों को TIFF में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>उच्च गुणवत्ता वाली छवियाँ:</strong> TIFF एक लॉसलेस प्रारूप है, जिसका मतलब है कि यह आपकी छवियों के सभी विवरणों को बिना संकुचन के बनाए रखता है।</li>
+            <li><strong>पेशेवर उपयोग:</strong> TIFF का उपयोग व्यापक रूप से प्रिंटिंग और प्रकाशन में होता है, जो इसे पेशेवर फोटोग्राफरों और डिजाइनरों के लिए आदर्श बनाता है।</li>
+            <li><strong>लचीलापन:</strong> TIFF विभिन्न रंग स्थानों का समर्थन करता है और कई संपादन और प्रिंटिंग अनुप्रयोगों के साथ संगत है।</li>
+            <li><strong>अभिलेखागार:</strong> इसकी उच्च गुणवत्ता और बड़े फ़ाइल आकारों को संभालने की क्षमता के कारण TIFF का उपयोग छवियों के दीर्घकालिक भंडारण के लिए करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से TIFF कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा वेबपी से TIFF परिवर्तक उपकरण उपयोग में आसान है। इन सरल चरणों का पालन करें:</p>
+        <ul>
+            <li>"वेबपी फ़ाइल अपलोड करें" बटन पर क्लिक करें और उस वेबपी छवि का चयन करें जिसे आप परिवर्तित करना चाहते हैं।</li>
+            <li>एक बार अपलोड होने पर, हमारा उपकरण स्वचालित रूप से आपकी छवि को TIFF प्रारूप में परिवर्तित करेगा।</li>
+            <li>एक बार परिवर्तित होने के बाद, "TIFF डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई TIFF छवि को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न प्रकार की वेबपी छवियों का समर्थन करता है, यह सुनिश्चित करते हुए कि आपके पास एक सुगम और प्रभावी परिवर्तक प्रक्रिया है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से TIFF कनवर्टर के उपयोग के लाभ</h2>
+        <p>हमारे परिवर्तक उपकरण का उपयोग करने के कई फायदे हैं:</p>
+        <ul>
+            <li><strong>तेज़ और सुविधाजनक:</strong> अपने वेबपी छवियों को केवल कुछ क्लिक में TIFF में परिवर्तित करें, जिससे यह त्वरित और परेशानी-मुक्त हो जाता है।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> कन्वर्ज़न के दौरान विवरण की हानि के बिना उच्चतम गुणवत्ता वाली TIFF छवियों का आनंद लें।</li>
+            <li><strong>फ्री और सुलभ:</strong> हमारा उपकरण ऑनलाइन मुफ्त में उपलब्ध है, जिसमें कोई डाउनलोड या स्थापना की आवश्यकता नहीं है।</li>
+            <li><strong>उपयोगकर्ता-मित्रता डिज़ाइन:</strong> हमारा आसान-से-नेविगेट इंटरफेस परिवर्तक प्रक्रिया को सभी के लिए सरल बनाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी से TIFF परिवर्तक के सामान्य उपयोग</h2>
+        <p>वेबपी को TIFF में परिवर्तित करना विभिन्न परिदृश्यों में सहायक हो सकता है:</p>
+        <ul>
+            <li><strong>फोटोग्राफी:</strong> पेशेवर उपयोग और प्रिंटिंग के लिए उच्च-संकल्प छवियों को संरक्षित करें।</li>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> ब्रॉशर, पोस्टर और अन्य मार्केटिंग सामग्रियों के लिए उच्च गुणवत्ता वाली छवियाँ बनाएं।</li>
+            <li><strong>अभिलेखागार:</strong> दीर्घकालिक संरक्षण के लिए लॉसलेस प्रारूप में छवियों को संग्रहीत करें।</li>
+            <li><strong>कला और चित्रण:</strong> उन चित्रणों के लिए TIFF का उपयोग करें जिन्हें विस्तृत पुनरुत्पादन की आवश्यकता होती है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को TIFF में परिवर्तित करने से आपको कैसे मदद मिल सकती है</h2>
+        <p>वेबपी छवियों को TIFF प्रारूप में परिवर्तित करना उपयोगिता और गुणवत्ता को बहुत बढ़ा सकता है। यह मदद कर सकता है:</p>
+        <ul>
+            <li><strong>छवि गुणवत्ता में सुधार:</strong> TIFF सभी छवि विवरणों को बनाए रखता है, जिससे यह उच्च गुणवत्ता वाले प्रिंट और पेशेवर उपयोग के लिए उपयुक्त होता है।</li>
+            <li><strong>संपादन में लचीलापन:</strong> TIFF फ़ाइलें छवि संपादन सॉफ़्टवेयर द्वारा व्यापक रूप से समर्थित होती हैं, जिससे संशोधन करना आसान होता है।</li>
+            <li><strong>अभिलेखीय के लिए आदर्श:</strong> TIFF की लॉसलेस प्रकृति इसे महत्वपूर्ण छवियों के दीर्घकालिक भंडारण के लिए परफेक्ट बनाती है।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

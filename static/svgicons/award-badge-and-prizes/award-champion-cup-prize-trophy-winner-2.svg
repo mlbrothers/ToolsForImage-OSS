@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 2" id="Layer_2">
+
+<g id="Interface-Light">
+
+<g id="interface-light-award-trophie-4">
+
+<rect class="cls-1" height="4" width="11" x="9.5" y="25.5"/>
+
+<path class="cls-1" d="M15,25.5h0c-5,0-9-20-9-25H24C24,5.47,20,25.5,15,25.5Z"/>
+
+<line class="cls-1" x1="29.5" x2="29.5" y1="10.5" y2="6.5"/>
+
+<line class="cls-1" x1="29.5" x2="23.5" y1="6.5" y2="6.5"/>
+
+<path class="cls-1" d="M29.5,10.5c0,5-4.7,10-9.7,9"/>
+
+<line class="cls-1" x1="0.5" x2="0.5" y1="10.5" y2="6.5"/>
+
+<line class="cls-1" x1="0.5" x2="6.5" y1="6.5" y2="6.5"/>
+
+<path class="cls-1" d="M.5,10.5c0,5,4.7,10,9.7,9"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>

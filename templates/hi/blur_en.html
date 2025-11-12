@@ -1,0 +1,356 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}ब्लर फेस ऑनलाइन | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage के साथ अपने चित्रों में चेहरे या विशेष क्षेत्रों को ब्लर करें। अपने फोटो के हिस्सों को चुनिंदा रूप से ब्लर करके गोपनीयता की सुरक्षा करें। एक क्लिक में चेहरे को ब्लर करें।">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h1>ऑनलाइन विशिष्ट क्षेत्रों को ब्लर करें</h1>
+    <p>अपनी छवियों के विशिष्ट क्षेत्रों को ब्लर करने के लिए मुफ्त ऑनलाइन टूल</p>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <button class="upload-button" onclick="document.getElementById('image-upload').click();">छवि अपलोड करें</button>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="blur-box">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <div id="blur-controls" style="display: none;">
+        <label for="blur-intensity">ब्लर की तीव्रता: <span id="blur-value">10px</span></label>
+        <input type="range" id="blur-intensity" min="1" max="50" value="10">
+    </div>
+    <button id="apply-blur" style="display: none;">ब्लर प्रभाव लागू करें</button>
+    <div id="error-message"></div>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>चेहरे को ब्लर करना क्या है?</h2>
+        <p>चेहरे को ब्लर करना छवियों या वीडियो में व्यक्तियों की पहचान को सुरक्षित करने के लिए चेहरे को अस्पष्ट या पिक्सेलेट करने की प्रक्रिया है। यह तकनीक गोपनीयता और गुमनामी बनाए रखने के लिए आवश्यक है, विशेषकर जब व्यक्तिगत सामग्री ऑनलाइन साझा की जाती है। हमारा फेस-ब्लरिंग टूल आपको आसानी और तेजी से चेहरे को ब्लर करने की सुविधा देता है, जिससे आपके चित्र गोपनीयता मानकों का पालन करते हुए दृश्य रूप से आकर्षक बने रहते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>छवियों या वीडियो में चेहरे को ब्लर करने के कारण क्या हैं?</h2>
+        <p>आपकी सामग्री में चेहरे को ब्लर करने के कई महत्वपूर्ण कारण हैं:</p>
+        <ul>
+            <li><strong>गोपनीयता की सुरक्षा:</strong> चेहरे को ब्लर करने से व्यक्तियों की गोपनीयता की सुरक्षा होती है, विशेषकर संवेदनशील परिस्थितियों में जैसे कार्यक्रमों, प्रदर्शनों, या सार्वजनिक समारोहों में।</li>
+            <li><strong>कानूनों के अनुपालन:</strong> कई क्षेत्रों में व्यक्तियों की पहचान योग्य छवियों के उपयोग के लिए सहमति की आवश्यकता होती है। चेहरे को ब्लर करने से आप गोपनीयता कानूनों के अनुपालन में रह सकते हैं।</li>
+            <li><strong>विषय पर ध्यान केंद्रित करें:</strong> चेहरे को ब्लर करके, आप अपने चित्र या वीडियो में मुख्य विषय या क्रिया पर ध्यान केंद्रित कर सकते हैं बिना किसी विकर्षण के।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे फेस ब्लरिंग टूल का उपयोग कैसे करें</h2>
+        <p>हमारा फेस-ब्लरिंग टूल उपयोग में आसान है, जिससे आप केवल कुछ चरणों में पहचान की सुरक्षा कर सकते हैं:</p>
+        <ul>
+            <li>"कंप्यूटर से अपलोड करें" बटन पर क्लिक करें अपनी छवि या वीडियो अपलोड करने के लिए।</li>
+            <li>यह उपकरण आपकी सामग्री में स्वचालित रूप से चेहरे का पता लगाएगा। आप यह चुन सकते हैं कि कौन से चेहरे को ब्लर करना है या ब्लर की ताकत को समायोजित कर सकते हैं।</li>
+            <li>एक बार जब आप समायोजनों से संतुष्ट हो जाएं, तो "ब्लर की गई छवि/वीडियो डाउनलोड करें" पर क्लिक करें ताकि आप अपने सुरक्षित कंटेंट को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा उपकरण विभिन्न प्रारूपों का समर्थन करता है, जिससे आपकी छवियों और वीडियो के साथ संगतता सुनिश्चित होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे फेस ब्लरिंग टूल के लाभ</h2>
+        <p>हमारे फेस-ब्लरिंग टूल का उपयोग करने के मुख्य लाभ यहां दिए गए हैं:</p>
+        <ul>
+            <li><strong>त्वरित और कुशल:</strong> बिना जटिल सॉफ़्टवेयर की आवश्यकता के केवल कुछ क्लिक में आसानी से चेहरे को ब्लर करें।</li>
+            <li><strong>स्वचालित पहचान:</strong> उपकरण स्वचालित रूप से चेहरों की पहचान करता है, जिससे प्रक्रिया तेजी और सुविधाजनक हो जाती है।</li>
+            <li><strong>गुणवत्ता बनाए रखें:</strong> गोपनीयता की सुरक्षा करते हुए सुनिश्चित करें कि आपकी छवियों और वीडियो की गुणवत्ता बरकरार रहे।</li>
+            <li><strong>फ्री और सुलभ:</strong> हमारा उपकरण ऑनलाइन मुफ्त में उपलब्ध है, कोई डाउनलोड या इंस्टॉलेशन की आवश्यकता नहीं है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>चेहरे को ब्लर करने के सामान्य उपयोग केस</h2>
+        <p>चेहरे को ब्लर करना विभिन्न परिदृश्यों में उपयोगी होता है, जैसे:</p>
+        <ul>
+            <li><strong>इवेंट फोटोग्राफी:</strong> सार्वजनिक कार्यक्रमों या समारोहों में ली गई तस्वीरों में व्यक्तियों की पहचान की सुरक्षा करें।</li>
+            <li><strong>डॉक्यूमेंट्री और समाचार रिपोर्ट:</strong> ऐसे इंटरव्यू या फुटेज में चेहरों को ब्लर करें जहां व्यक्तियों ने अपनी पहचान प्रकट करने की सहमति नहीं दी है।</li>
+            <li><strong>सोशल मीडिया शेयरिंग:</strong> अपनी सामग्री में शामिल व्यक्तियों की गोपनीयता सुनिश्चित करते हुए ऑनलाइन छवियों या वीडियो साझा करें।</li>
+            <li><strong>परिवार की तस्वीरें:</strong> सार्वजनिक प्लेटफार्मों पर व्यक्तिगत छवियों को साझा करते समय बच्चों या रिश्तेदारों के चेहरे को ब्लर करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>चेहरे को ब्लर करना गोपनीयता की सुरक्षा में कैसे मदद कर सकता है</h2>
+        <p>चेहरे को ब्लर करना व्यक्तियों की गोपनीयता और सुरक्षा सुनिश्चित करने का एक प्रभावी तरीका है। यह कैसे मदद कर सकता है:</p>
+        <ul>
+            <li><strong>अनधिकृत उपयोग को रोकें:</strong> चेहरे को ब्लर करने से दूसरों को आपकी छवियों या वीडियो का उपयोग करके व्यक्तियों की पहचान करने से रोका जा सकता है बिना उनकी सहमति के।</li>
+            <li><strong>सुरक्षा बढ़ाएं:</strong> संवेदनशील परिस्थितियों में व्यक्तियों की पहचान की सुरक्षा करना उनकी सुरक्षा और सुरक्षा बनाए रखने में मदद करता है।</li>
+            <li><strong>नैतिक सामग्री साझा करने को बढ़ावा दें:</strong> हमारे फेस-ब्लरिंग टूल का उपयोग करके, आप ऐसे सामग्री का जिम्मेदार तरीके से साझा करने को बढ़ावा देते हैं जो व्यक्तियों के गोपनीयता अधिकारों का सम्मान करती है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    #canvas-container {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #canvas {
+        display: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #blur-box {
+        position: absolute;
+        border: 2px dashed #fff;
+        background-color: rgba(174, 107, 255, 0.3);
+        cursor: move;
+        display: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+    }
+
+    .resize-handle.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+    }
+
+    .resize-handle.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+    }
+
+    .resize-handle.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+    }
+
+    #apply-blur {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const blurBox = document.getElementById('blur-box');
+    const applyBlurButton = document.getElementById('apply-blur');
+    const errorMessage = document.getElementById('error-message');
+    const blurIntensityInput = document.getElementById('blur-intensity');
+    const blurValueDisplay = document.getElementById('blur-value');
+    let img;
+    let scale = 1;
+
+    // Handle image upload
+    document.getElementById('image-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                const maxWidth = window.innerWidth * 0.8;
+                const maxHeight = window.innerHeight * 0.8;
+                scale = Math.min(1, maxWidth / img.width, maxHeight / img.height);
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                canvas.style.display = 'block';
+                blurBox.style.display = 'block';
+                applyBlurButton.style.display = 'block';
+                document.getElementById('blur-controls').style.display = 'block';
+                errorMessage.style.display = 'none';
+                resetBlurBox();
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    });
+
+    // Dragging and resizing logic
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+
+    blurBox.addEventListener('mousedown', function (e) {
+        if (e.target.classList.contains('resize-handle')) {
+            isResizing = true;
+            currentHandle = e.target;
+        } else {
+            isDragging = true;
+        }
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = blurBox.offsetLeft;
+        startTop = blurBox.offsetTop;
+        startWidth = parseInt(getComputedStyle(blurBox).width, 10);
+        startHeight = parseInt(getComputedStyle(blurBox).height, 10);
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newLeft = startLeft + dx;
+            let newTop = startTop + dy;
+
+            newLeft = Math.max(0, Math.min(newLeft, canvas.width - blurBox.offsetWidth));
+            newTop = Math.max(0, Math.min(newTop, canvas.height - blurBox.offsetHeight));
+
+            blurBox.style.left = newLeft + 'px';
+            blurBox.style.top = newTop + 'px';
+        } else if (isResizing) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newWidth, newHeight, newLeft, newTop;
+
+            if (currentHandle.classList.contains('se')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+            } else if (currentHandle.classList.contains('sw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+                newLeft = Math.max(0, startLeft + dx);
+            } else if (currentHandle.classList.contains('ne')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newTop = Math.max(0, startTop + dy);
+            } else if (currentHandle.classList.contains('nw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newLeft = Math.max(0, startLeft + dx);
+                newTop = Math.max(0, startTop + dy);
+            }
+
+            // Ensure minimum size for blur box
+            const minSize = 20;
+            newWidth = Math.max(newWidth, minSize);
+            newHeight = Math.max(newHeight, minSize);
+
+            blurBox.style.width = `${newWidth}px`;
+            blurBox.style.height = `${newHeight}px`;
+            if (newLeft !== undefined) blurBox.style.left = `${newLeft}px`;
+            if (newTop !== undefined) blurBox.style.top = `${newTop}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+        isResizing = false;
+    });
+
+    // Reset blur box to initial size and position
+    function resetBlurBox() {
+        const initialSize = Math.min(100, canvas.width / 2, canvas.height / 2);
+        blurBox.style.width = `${initialSize}px`;
+        blurBox.style.height = `${initialSize}px`;
+        blurBox.style.left = '0px';
+        blurBox.style.top = '0px';
+    }
+
+    // Update blur intensity display
+    blurIntensityInput.addEventListener('input', function () {
+        blurValueDisplay.textContent = `${this.value}px`;
+    });
+
+    // Apply blur effect to the selected area
+    applyBlurButton.addEventListener('click', function () {
+        const boxRect = blurBox.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const x = boxRect.left - canvasRect.left;
+        const y = boxRect.top - canvasRect.top;
+        const width = boxRect.width;
+        const height = boxRect.height;
+
+        // Apply blur effect to the selected area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(x, y, width, height);
+        ctx.clip();
+        ctx.filter = `blur(${blurIntensityInput.value}px)`;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.restore();
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'blurred_image.png';
+        a.click();
+    });
+</script>
+{% endblock %}

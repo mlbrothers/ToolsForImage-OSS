@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="paste">
+
+<path class="cls-1" d="M13.21,18.68H10.79A4.77,4.77,0,0,1,6,14.17L5.32,1.5H18.68L18,14.17A4.77,4.77,0,0,1,13.21,18.68Z"/>
+
+<line class="cls-1" x1="9.14" y1="12" x2="14.86" y2="12"/>
+
+<line class="cls-1" x1="12" y1="9.14" x2="12" y2="14.86"/>
+
+<rect class="cls-1" x="9.14" y="18.68" width="5.73" height="3.82"/>
+
+<line class="cls-1" x1="8.18" y1="5.32" x2="18.68" y2="5.32"/>
+
+</g>
+
+</svg>

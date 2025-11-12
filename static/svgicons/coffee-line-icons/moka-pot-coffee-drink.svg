@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<title/>
+
+<desc/>
+
+<g fill="none" fill-rule="evenodd" id="Moka-Pot" stroke="none" stroke-linejoin="round" stroke-width="1">
+
+<g id="Group-3" stroke="#583624" stroke-width="2" transform="translate(6.000000, 3.000000)">
+
+<g id="Group-2">
+
+<g id="Group" transform="translate(2.000000, 0.500000)">
+
+<polygon id="Rectangle" points="1 9 7 9 8 16 0 16"/>
+
+<polygon id="Rectangle-Copy" points="0 2 8 2 7 9 1 9"/>
+
+<path d="M9,3.5 L10,3.5 C10.5522847,3.5 11,3.94771525 11,4.5 L11,7.5" id="Path" stroke-linecap="round"/>
+
+<line id="Path-30" stroke-linecap="round" x1="4" x2="4" y1="15.5" y2="0.5"/>
+
+</g>
+
+<line id="Path-15-Copy-3" stroke-linecap="round" x1="0" x2="3" y1="2.5" y2="2.5"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>

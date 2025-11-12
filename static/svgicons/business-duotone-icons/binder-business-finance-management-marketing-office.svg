@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#d9dce1;}.cls-4{fill:#ffffff;}</style>
+
+</defs>
+
+<g id="binder">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="28" width="28" x="2" y="2"/>
+
+<rect class="cls-3" height="9" width="28" x="2" y="21"/>
+
+<rect class="cls-4" height="2" width="4" x="14" y="6"/>
+
+<rect class="cls-4" height="2" width="4" x="5" y="6"/>
+
+<rect class="cls-4" height="2" width="4" x="23" y="6"/>
+
+<path d="M21.67,2H2V30H30V2ZM19.33,4V21H13V4ZM4,4h6.67V21H4ZM4,28V23h6.67v5Zm9,0V23h6.33v5Zm15,0H21.67V23H28Zm-6.33-7V4H28V21Z"/>
+
+</g>
+
+</svg>

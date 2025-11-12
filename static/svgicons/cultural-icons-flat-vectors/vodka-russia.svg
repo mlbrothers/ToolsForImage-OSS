@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>vodka</title>
+
+<g id="vodka">
+
+<circle cx="35.685" cy="31.146" r="23" style="fill:#edebdc"/>
+
+<circle cx="57.975" cy="30.5" r="1.025" style="fill:#4c241d"/>
+
+<circle cx="47" cy="8" r="2" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47.137" y1="16.697" x2="47.137" y2="18.112" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47.137" y1="22.356" x2="47.137" y2="23.771" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="43.6" y1="20.234" x2="45.014" y2="20.234" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="49.259" y1="20.234" x2="50.674" y2="20.234" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="24" y="14" width="8" height="5" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39,29.475v-9.1a1.647,1.647,0,0,0-1.359-1.621L28,17l-9.656,1.749A1.646,1.646,0,0,0,17,20.367V59h-.145A1.856,1.856,0,0,0,15,60.855V63H41V60.855A1.856,1.856,0,0,0,39.145,59H39V35.137" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="6" y="33" width="44" height="13" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="39 43 41 36 42 36 44 43" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="40" y1="40" x2="43" y2="40" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="12 36 14 43 15 43 17 36" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="19" y="36" width="4" height="7" rx="2" ry="2" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26,36h2.751A1.249,1.249,0,0,1,30,37.249v4.5A1.249,1.249,0,0,1,28.751,43H26a0,0,0,0,1,0,0V36A0,0,0,0,1,26,36Z" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="36" x2="33" y2="43" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="24" y="1" width="8" height="13" style="fill:#c1dbdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="38.643" x2="37" y2="43" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="37" y1="36" x2="33.576" y2="38.568" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="39" y1="59" x2="21" y2="59" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="24" y="1" width="3" height="8" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="28" y1="29" x2="28" y2="25" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="30" x2="33" y2="28" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="25" y1="30" x2="23" y2="28" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

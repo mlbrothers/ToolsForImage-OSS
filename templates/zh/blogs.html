@@ -1,0 +1,108 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}博客 | ToolsForImage | 提供全面免费在线工具：模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="浏览我们的博客，了解如何使用 ToolsForImage 的免费工具，如图像转换、调整大小、裁剪、压缩和背景移除。学习最大化您的图像编辑体验的技巧。">
+{% endblock %}
+
+{% block content %}
+
+
+<h1>免费在线图像编辑工具：指南、教程和技巧</h1>
+<p>探索关于使用免费在线图像编辑工具的最新趋势、技巧和教程，包括转换、调整大小、压缩和优化。</p>
+
+<div class="blog-grid">
+    {% for blog in blogs %}
+    <div class="blog-post">
+        <img src="{{ url_for('static', filename=blog.image) }}" alt="{{ blog.title }}">
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.description }}</p>
+        <div class="read-more-container">
+            <a href="{{ url_for('blog_post', blog_slug=blog.slug, lang=lang) }}" class="read-more">阅读更多</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<style>
+    main p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+        grid-template-columns: repeat(3, 1fr);
+        /* Responsive columns */
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .blog-post {
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* min-width: 400px; */
+        max-width: 450px;
+    }
+
+    .blog-post img {
+        height: 50px;
+        object-fit: cover;
+        /* Ensure the image covers the space nicely */
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .blog-post p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #666;
+    }
+
+    .blog-post:hover {
+        transform: translateY(-5px);
+        /* Smooth hover effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Enhanced shadow on hover */
+    }
+
+    .read-more {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+
+    .read-more-container {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .read-more:hover {
+        border: var(--box-hover-text-color) 3px solid;
+        transform: translateY(-3px);
+    }
+</style>
+{% endblock %}

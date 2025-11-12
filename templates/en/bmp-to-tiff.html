@@ -1,0 +1,199 @@
+{% extends 'en/base.html' %}
+
+{% block title %}BMP to TIFF online | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert BMP to TIFF images with ToolsForImage. Free, fast, and secure online BMP to TIFF converter for high-quality image transformations.">
+{% endblock %}
+
+{% block content %}
+
+
+    <h1>Free Online BMP to TIFF Converter</h1>
+    <p>Easily convert your images from BMP to TIFF format. Upload a BMP image and we'll convert it to TIFF for you.</p>
+    <form id="conversion-form" method="post" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+        <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+        <br>
+        <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+        <br>
+        <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+    </form>
+
+    <div class="info-container">
+        <div class="info-section">
+            <h2>What is BMP to TIFF Conversion?</h2>
+            <p>BMP to TIFF conversion is the process of changing image files from BMP (Bitmap) format to TIFF (Tagged Image File Format). BMP files are high-quality but can be large, while TIFF files offer excellent quality and are widely used in professional settings, especially for printing and archiving. Our tool simplifies this conversion, allowing you to get the best of both formats with ease.</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>Why Convert BMP to TIFF?</h2>
+            <p>Converting BMP images to TIFF has several advantages:</p>
+            <ul>
+                <li><strong>High Quality:</strong> TIFF files are known for their superior image quality, making them ideal for printing and professional photography.</li>
+                <li><strong>Multiple Color Depths:</strong> TIFF supports various color depths, which is useful for detailed images and graphics.</li>
+                <li><strong>Lossless Compression:</strong> TIFF files can be compressed without losing quality, making them suitable for archiving images.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>How to Use Our BMP to TIFF Converter</h2>
+            <p>Our BMP to TIFF conversion tool is designed for simplicity. Just follow these easy steps:</p>
+            <ul>
+                <li>Click on the "Upload BMP File" button to select the BMP image you wish to convert.</li>
+                <li>Once the image is uploaded, our tool will automatically process the conversion to TIFF format.</li>
+                <li>After the conversion is complete, click "Download TIFF" to save your new image to your device.</li>
+            </ul>
+            <p>Our tool supports various BMP files, ensuring a hassle-free conversion experience every time.</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>Benefits of Using Our BMP to TIFF Converter</h2>
+            <p>Here are some advantages of using our conversion tool:</p>
+            <ul>
+                <li><strong>Fast and Efficient:</strong> Convert your BMP images to TIFF quickly and easily.</li>
+                <li><strong>No Loss of Quality:</strong> Enjoy high-resolution images with our lossless conversion process.</li>
+                <li><strong>Free and Accessible:</strong> Use our online converter for free, with no downloads or installations needed.</li>
+                <li><strong>User-Friendly:</strong> Designed for everyone, our intuitive interface makes it easy to convert images, regardless of your technical skills.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>Common Uses for BMP to TIFF Conversion</h2>
+            <p>There are many scenarios where converting BMP to TIFF is beneficial:</p>
+            <ul>
+                <li><strong>Professional Printing:</strong> Use TIFF images for high-quality prints that require detailed color and clarity.</li>
+                <li><strong>Archiving:</strong> Store important images in TIFF format for long-term preservation without quality loss.</li>
+                <li><strong>Graphic Design:</strong> Create graphics and illustrations with enhanced detail for design projects.</li>
+                <li><strong>Medical Imaging:</strong> TIFF is often used in medical applications for its ability to handle large images without losing detail.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>How Converting BMP to TIFF Enhances Your Images</h2>
+            <p>Transforming your BMP images to TIFF can greatly improve their usability and quality. Here’s how:</p>
+            <ul>
+                <li><strong>Superior Image Quality:</strong> TIFF files retain more detail, making them ideal for professional use.</li>
+                <li><strong>Versatile File Use:</strong> TIFF format is accepted by most image editing software, providing flexibility in your projects.</li>
+                <li><strong>Better Archiving:</strong> TIFF's lossless compression makes it a preferred choice for preserving important images over time.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function validateImageSelection() {
+            const imageUpload = document.getElementById('image-upload');
+            if (!imageUpload.value) {
+                alert('Please select an image to upload.');
+                return false;
+            }
+            return true;
+        }
+    
+        function previewImage(event) {
+            const imagePreview = document.getElementById('image-preview');
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    
+        async function convertImage() {
+            const fileInput = document.getElementById('image-upload');
+            const outputFormat = 'tiff';
+    
+            if (!fileInput.files || fileInput.files.length === 0) {
+                alert('Please select an image to upload.');
+                return;
+            }
+    
+            const file = fileInput.files[0];
+            const mimeType = `image/${outputFormat}`;
+    
+            try {
+                const convertedBlob = await imageConversion.compress(file, {
+                    type: mimeType,
+                    quality: 0.95 // Adjust quality as needed
+                });
+    
+                const downloadLink = document.createElement('a');
+                downloadLink.href = URL.createObjectURL(convertedBlob);
+                downloadLink.download = `converted_image.${outputFormat}`;
+                downloadLink.click();
+            } catch (error) {
+                console.error('Error converting image:', error);
+                alert('An error occurred while converting the image.');
+            }
+        }
+    </script>
+    
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}

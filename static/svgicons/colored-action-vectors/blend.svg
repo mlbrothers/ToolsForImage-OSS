@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_achttien{fill:#D1712A;}
+	.avocado_zeventien{fill:#CC4121;}
+	.avocado_acht{fill:#A3AEB5;}
+	.st0{fill:#FFFAEE;}
+	.st1{fill:#3D3935;}
+	.st2{fill:#E0A838;}
+	.st3{fill:#716558;}
+	.st4{fill:#DBD2C1;}
+	.st5{fill:#788287;}
+	.st6{fill:#EAD13F;}
+	.st7{fill:#8D3E93;}
+	.st8{fill:#248EBC;}
+	.st9{fill:#6F9B45;}
+	.st10{fill:#AF9480;}
+	.st11{fill:#C3CC6A;}
+</style>
+<g>
+	<g>
+		<polygon class="avocado_acht" points="24.502,3.5 9.5,3.5 9.5,4 11.566,21.5 22.445,21.5 24.503,3.941 		"/>
+	</g>
+	<path class="avocado_zeventien" d="M25.5,30.5h-1v1h-2v-1h-11v1h-2v-1h-1v-5.382l1.809-3.618h13.382l1.809,3.618V30.5z
+		 M8.5,3.5h17V2.207L23.793,0.5H10.207L8.5,2.207V3.5z"/>
+	<g>
+		<g>
+			<path class="avocado_achttien" d="M11.566,21.5l-1.297-11h13.463l-1.287,11H11.566z M13,25h1v2h-1V25z M15,25h1v2h-1V25z
+				 M18,25h1v2h-1V25z M20,25h1v2h-1V25z"/>
+		</g>
+	</g>
+	<path class="avocado_een" d="M26,5h-1.118L25,4h1V2l-2-2H10L8,2v2h1l2,17h-1l-2,4v6h1v1h3v-1h10v1h3v-1h1v-6l-2-4h-1
+		l0.687-5.842l3.207-1.606C27.572,13.214,28,12.521,28,11.764V7C28,5.895,27.105,5,26,5z M9,3V2.414L10.414,1h13.172L25,2.414V3H9z
+		 M23.382,22L25,25.236V30h-1v1h-1v-1h-1H12h-1v1h-1v-1H9v-4.764L10.618,22L11,22l12,0H23.382z M21.993,21h-9.986L10.83,11H23.17
+		L21.993,21z M10.713,10l-0.706-6h13.986l-0.706,6H10.713z M27,11.764c0,0.381-0.212,0.724-0.553,0.894l-2.62,1.309L24.765,6H26
+		c0.551,0,1,0.449,1,1V11.764z"/>
+</g>
+</svg>

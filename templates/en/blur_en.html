@@ -1,0 +1,331 @@
+{% extends 'en/base.html' %}
+
+{% block title %}Blur Specific Areas Online | ToolsForImage{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Blur specific areas of your images for free online easily. Free tool to blur parts of photos at ToolsForImage. Protect privacy by selectively blurring parts of your photos.">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Blur Specific Areas Online</h1>
+    <p>Free Online tool to blur specific areas of your images</p>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <button class="upload-button" onclick="document.getElementById('image-upload').click();">Upload Image</button>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="blur-box">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <div id="blur-controls" style="display: none;">
+        <label for="blur-intensity">Blur Intensity: <span id="blur-value">10px</span></label>
+        <input type="range" id="blur-intensity" min="1" max="50" value="10">
+    </div>
+    <button id="apply-blur" style="display: none;">Apply Blur Effect</button>
+    <div id="error-message"></div>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is Selective Blurring?</h2>
+        <p>Selective blurring allows you to blur specific areas of an image while keeping the rest of the image clear. This is useful for protecting privacy, hiding sensitive information, or focusing attention on specific parts of an image.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Use Selective Blurring?</h2>
+        <p>Selective blurring is useful in many scenarios:</p>
+        <ul>
+            <li><strong>Privacy Protection:</strong> Blur faces, license plates, or other identifiable information.</li>
+            <li><strong>Focus on Details:</strong> Highlight specific parts of an image by blurring the background.</li>
+            <li><strong>Creative Effects:</strong> Add artistic effects to your images.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our Selective Blurring Tool</h2>
+        <p>Our tool is simple and easy to use:</p>
+        <ul>
+            <li>Upload your image using the "Upload Image" button.</li>
+            <li>Adjust the box to cover the area you want to blur.</li>
+            <li>Use the slider to control the blur intensity.</li>
+            <li>Click "Apply Blur Effect" to blur the selected area and download the image.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    #canvas-container {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #canvas {
+        display: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #blur-box {
+        position: absolute;
+        border: 2px dashed #fff;
+        background-color: rgba(174, 107, 255, 0.3);
+        cursor: move;
+        display: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+    }
+
+    .resize-handle.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+    }
+
+    .resize-handle.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+    }
+
+    .resize-handle.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+    }
+
+    #blur-controls {
+        margin-top: 20px;
+    }
+
+    #blur-intensity {
+        width: 200px;
+    }
+
+    #apply-blur {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const blurBox = document.getElementById('blur-box');
+    const applyBlurButton = document.getElementById('apply-blur');
+    const errorMessage = document.getElementById('error-message');
+    const blurIntensityInput = document.getElementById('blur-intensity');
+    const blurValueDisplay = document.getElementById('blur-value');
+    let img;
+    let scale = 1;
+
+    // Handle image upload
+    document.getElementById('image-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                const maxWidth = window.innerWidth * 0.8;
+                const maxHeight = window.innerHeight * 0.8;
+                scale = Math.min(1, maxWidth / img.width, maxHeight / img.height);
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                canvas.style.display = 'block';
+                blurBox.style.display = 'block';
+                applyBlurButton.style.display = 'block';
+                document.getElementById('blur-controls').style.display = 'block';
+                errorMessage.style.display = 'none';
+                resetBlurBox();
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    });
+
+    // Dragging and resizing logic
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+
+    blurBox.addEventListener('mousedown', function (e) {
+        if (e.target.classList.contains('resize-handle')) {
+            isResizing = true;
+            currentHandle = e.target;
+        } else {
+            isDragging = true;
+        }
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = blurBox.offsetLeft;
+        startTop = blurBox.offsetTop;
+        startWidth = parseInt(getComputedStyle(blurBox).width, 10);
+        startHeight = parseInt(getComputedStyle(blurBox).height, 10);
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newLeft = startLeft + dx;
+            let newTop = startTop + dy;
+
+            newLeft = Math.max(0, Math.min(newLeft, canvas.width - blurBox.offsetWidth));
+            newTop = Math.max(0, Math.min(newTop, canvas.height - blurBox.offsetHeight));
+
+            blurBox.style.left = newLeft + 'px';
+            blurBox.style.top = newTop + 'px';
+        } else if (isResizing) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newWidth, newHeight, newLeft, newTop;
+
+            if (currentHandle.classList.contains('se')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+            } else if (currentHandle.classList.contains('sw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+                newLeft = Math.max(0, startLeft + dx);
+            } else if (currentHandle.classList.contains('ne')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newTop = Math.max(0, startTop + dy);
+            } else if (currentHandle.classList.contains('nw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newLeft = Math.max(0, startLeft + dx);
+                newTop = Math.max(0, startTop + dy);
+            }
+
+            // Ensure minimum size for blur box
+            const minSize = 20;
+            newWidth = Math.max(newWidth, minSize);
+            newHeight = Math.max(newHeight, minSize);
+
+            blurBox.style.width = `${newWidth}px`;
+            blurBox.style.height = `${newHeight}px`;
+            if (newLeft !== undefined) blurBox.style.left = `${newLeft}px`;
+            if (newTop !== undefined) blurBox.style.top = `${newTop}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+        isResizing = false;
+    });
+
+    // Reset blur box to initial size and position
+    function resetBlurBox() {
+        const initialSize = Math.min(100, canvas.width / 2, canvas.height / 2);
+        blurBox.style.width = `${initialSize}px`;
+        blurBox.style.height = `${initialSize}px`;
+        blurBox.style.left = '0px';
+        blurBox.style.top = '0px';
+    }
+
+    // Update blur intensity display
+    blurIntensityInput.addEventListener('input', function () {
+        blurValueDisplay.textContent = `${this.value}px`;
+    });
+
+    // Apply blur effect to the selected area
+    applyBlurButton.addEventListener('click', function () {
+        const boxRect = blurBox.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const x = boxRect.left - canvasRect.left;
+        const y = boxRect.top - canvasRect.top;
+        const width = boxRect.width;
+        const height = boxRect.height;
+
+        // Apply blur effect to the selected area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(x, y, width, height);
+        ctx.clip();
+        ctx.filter = `blur(${blurIntensityInput.value}px)`;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.restore();
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'blurred_image.png';
+        a.click();
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,197 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}BMP 转 JPG 在线 | ToolsForImage | 免费在线图片转换器{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="使用 ToolsForImage 轻松将 BMP 转换为 JPG 图片。免费、快速、安全的在线 BMP 转 JPG 转换器，实现高质量的图片转换。">
+{% endblock %}
+
+{% block content %}
+
+<h1>免费在线 BMP 转 JPG 转换器</h1>
+<p>轻松将您的图片从 BMP 格式转换为 JPG 格式。上传 BMP 图片，我们将为您转换为 JPG。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 BMP 转 JPG 转换？</h2>
+        <p>BMP 转 JPG 转换是将图片文件从 BMP（位图）格式更改为 JPG（联合图像专家组）格式的过程。BMP 文件以其高质量和细节著称，而 JPG 文件经过压缩，更便于分享和存储。我们的工具简化了这一过程，让您轻松快速地将 BMP 图片转换为 JPG。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 BMP 转换为 JPG？</h2>
+        <p>将 BMP 图片转换为 JPG 的原因如下：</p>
+        <ul>
+            <li><strong>更小的文件大小：</strong>JPG 文件比 BMP 文件小得多，这意味着需要更少的存储空间，并且上传/下载速度更快。</li>
+            <li><strong>更好的分享体验：</strong>JPG 是网络上最广泛使用的图片格式之一，让您可以更轻松地在社交媒体和网站上分享图片。</li>
+            <li><strong>更好的兼容性：</strong>大多数设备和应用程序都支持 JPG 格式，确保您的图片可以随处查看。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 BMP 转 JPG 转换器</h2>
+        <p>使用我们的 BMP 转 JPG 转换器简单且直接。按照以下步骤操作：</p>
+        <ul>
+            <li>点击“上传 BMP 文件”按钮选择您的 BMP 图片。</li>
+            <li>上传后，我们的工具会自动将您的图片转换为 JPG 格式。</li>
+            <li>转换完成后，点击“下载 JPG”将新图片保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持多种 BMP 文件，确保转换过程顺畅高效。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的 BMP 转 JPG 转换器的优势</h2>
+        <p>我们的转换工具提供以下优势：</p>
+        <ul>
+            <li><strong>快速高效：</strong>只需点击几下即可快速将 BMP 图片转换为 JPG。</li>
+            <li><strong>无质量损失：</strong>在转换过程中保持图片质量。</li>
+            <li><strong>免费在线使用：</strong>无需下载任何软件即可免费使用我们的工具。</li>
+            <li><strong>简单易用：</strong>用户友好的界面设计适合所有人，无需技术背景。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP 转 JPG 转换的常见用途</h2>
+        <p>将 BMP 转换为 JPG 在多种情况下都很有用：</p>
+        <ul>
+            <li><strong>网络用途：</strong>优化网站和博客的图片以提高加载速度。</li>
+            <li><strong>社交媒体：</strong>在 Instagram 和 Facebook 等平台上分享图片时，JPG 是首选格式。</li>
+            <li><strong>存储管理：</strong>通过将大型 BMP 文件转换为较小的 JPG 文件节省设备存储空间。</li>
+            <li><strong>图形设计：</strong>轻松在支持 JPG 格式的设计软件中使用转换后的图片。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 BMP 转换为 JPG 如何提升您的图片</h2>
+        <p>将 BMP 图片转换为 JPG 可以显著改善您管理和展示视觉内容的方式。以下是其中的一些优点：</p>
+        <ul>
+            <li><strong>增强可用性：</strong>JPG 文件更通用，可在各种平台和应用程序中使用。</li>
+            <li><strong>改进美观性：</strong>转换为 JPG 有时可以增强颜色质量和清晰度，使图片更具吸引力。</li>
+            <li><strong>更广泛的可访问性：</strong>JPG 图片可以在所有设备上访问，确保每个人都能无障碍地查看您的内容。</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

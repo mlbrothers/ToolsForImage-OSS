@@ -1,0 +1,199 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez vos images facilement avec ToolsForImage. Changez les formats d'image sans perdre en qualité.">
+{% endblock %}
+
+{% block title %}Convertir une Image en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de Conversion de Format d'Image Gratuit</h1>
+<p>Convertissez facilement votre image dans un autre format. Téléchargez une image et sélectionnez le format de sortie souhaité.</p>
+<p>Formats pris en charge : PNG, JPG, JPEG, BMP, TIFF, WEBP</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <select id="output-format" name="output_format" class="format-select">
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+        <option value="jpeg">JPEG</option>
+        <option value="bmp">BMP</option>
+        <option value="tiff">TIFF</option>
+        <option value="webp">WEBP</option>
+        <option value="ico">ICO</option>
+    </select>
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Conversion d'Image ?</h2>
+        <p>La conversion d'image est le processus de modification d'un fichier image d'un format à un autre. Par exemple, vous pourriez vouloir convertir un fichier PNG en un fichier JPG. Différents formats ont des utilisations différentes, et choisir le bon format peut avoir un impact significatif sur la qualité et la compatibilité de votre image. En convertissant vos images, vous pouvez vous assurer qu'elles sont compatibles avec divers appareils, applications et plateformes en ligne.</p>
+    </div>
+    <div class="info-section">
+        <h2>Pourquoi Convertir des Images ?</h2>
+        <p>Il existe de nombreuses raisons de convertir des images. Certains formats, comme PNG, sont excellents pour les graphiques de haute qualité, tandis que d'autres, comme JPG, conviennent mieux aux photographies. La conversion d'images peut aider à réduire la taille des fichiers, ce qui les rend plus rapides à charger sur les sites Web, ce qui est crucial pour l'expérience utilisateur et le SEO. De plus, des fichiers plus petits permettent d'économiser de l'espace de stockage. Cela garantit également que vos images sont optimisées, que vous les partagiez en ligne ou que vous les prépariez pour l'impression. En convertissant des images, vous pouvez également les adapter à différentes applications, comme les réseaux sociaux, les emails ou la conception de sites web.</p>
+    </div>
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Outil de Conversion d'Image</h2>
+        <p>Utiliser notre outil de conversion d'image est simple et direct. Il vous suffit de télécharger votre image, de choisir le format souhaité et de cliquer sur "Convertir !". Vous pouvez convertir des images dans des formats populaires comme PNG, JPG, JPEG, BMP, TIFF et WEBP. Notre outil garantit que vos images conservent leur qualité pendant la conversion, vous n'avez donc pas à vous soucier de la perte de détails importants.</p>
+        <p>De plus, notre outil de conversion d'image est conçu pour être convivial. Que vous soyez un photographe professionnel ayant besoin de convertir un lot d'images ou un utilisateur occasionnel souhaitant changer une seule photo, notre outil répond à tous les besoins. En plus, il fonctionne sur tous les appareils, ce qui le rend accessible partout, à tout moment.</p>
+    </div>
+    <div class="info-section">
+        <h2>Avantages de l'Utilisation de Notre Outil de Conversion d'Image</h2>
+        <p>Notre outil de conversion d'image offre de nombreux avantages :</p>
+        <ul>
+            <li><strong>Rapide et Efficace :</strong> Convertissez des images rapidement sans compromettre la qualité.</li>
+            <li><strong>Formats Multiples Pris en Charge :</strong> Passez facilement d'un format à un autre selon vos besoins.</li>
+            <li><strong>Accessibilité en Ligne :</strong> Aucun logiciel à installer. Accédez à l'outil directement depuis votre navigateur web.</li>
+            <li><strong>Interface Conviviale :</strong> Design intuitif qui rend la conversion d'images facile pour tous.</li>
+            <li><strong>Sortie de Haute Qualité :</strong> Assurez-vous que vos images restent nettes et éclatantes après la conversion.</li>
+        </ul>
+    </div>
+    <div class="info-section">
+        <h2>Cas d'Utilisation Courants de la Conversion d'Image</h2>
+        <p>La conversion d'image est essentielle dans divers scénarios :</p>
+        <ul>
+            <li><strong>Optimisation Web :</strong> Convertissez des images dans des formats qui se chargent rapidement et améliorent les performances des sites web.</li>
+            <li><strong>Partage sur les Réseaux Sociaux :</strong> Ajustez les tailles et les formats d'image pour répondre aux exigences des plateformes.</li>
+            <li><strong>Impression Professionnelle :</strong> Préparez des images dans des formats de haute qualité pour les projets d'impression.</li>
+            <li><strong>Marketing Digital :</strong> Améliorez votre contenu visuel pour les annonces et les campagnes en utilisant les bons formats.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = document.getElementById('output-format').value;
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+    .format-select {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+    }
+        form, h1, p {
+        text-align: center;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upload-button, .convert-button, .format-select {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

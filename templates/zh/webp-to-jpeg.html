@@ -1,0 +1,191 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="轻松使用 ToolsForImage 将 WEBP 转换为 JPEG 图像。免费、快速且安全的在线 WEBP 到 JPEG 转换器，提供高质量的图像转换服务。">
+{% endblock %}
+
+{% block title %}在线 WEBP 转 JPEG 转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线 WEBP 转 JPEG 转换器</h1>
+<p>轻松将您的图像从 WebP 格式转换为 JPEG 格式。上传一个 WebP 图像，我们将为您转换为 JPEG。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 WebP 转 JPEG 转换？</h2>
+        <p>WebP 转 JPEG 转换是将图像文件从 WebP 格式转换为 JPEG 格式的过程。WebP 是一种提供出色压缩效果的现代图像格式，而 JPEG 是一种以质量与文件大小平衡而闻名的广泛使用的格式。当您需要用于网站、社交媒体或其他更偏好 JPEG 格式的应用的图像时，转换 WebP 图像到 JPEG 非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 WebP 转换为 JPEG？</h2>
+        <p>将 WebP 图像转换为 JPEG 格式有以下几个原因：</p>
+        <ul>
+            <li><strong>广泛的兼容性：</strong>JPEG 是最广泛支持的图像格式之一，确保您的图像可以在任何设备或软件上查看。</li>
+            <li><strong>优化网页使用：</strong>JPEG 图像非常适合网页使用，因为它们在质量与文件大小之间提供了良好的平衡，使网站加载更快。</li>
+            <li><strong>轻松分享：</strong>JPEG 格式是社交媒体和其他平台上分享图像的首选格式，让您更容易分享视觉内容。</li>
+            <li><strong>优秀的压缩性能：</strong>JPEG 提供卓越的压缩能力，在不显著损失图像质量的情况下，生成更小的文件。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 WebP 转 JPEG 转换器</h2>
+        <p>使用我们的 WebP 转 JPEG 转换工具非常简单。以下是步骤：</p>
+        <ul>
+            <li>点击“上传 WebP 文件”按钮，选择您想要转换的 WebP 图像。</li>
+            <li>上传后，我们的工具会自动开始转换过程。</li>
+            <li>转换完成后，点击“下载 JPEG”按钮，将新的 JPEG 图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种 WebP 格式，使您的图像转换过程快捷方便。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的 WebP 转 JPEG 转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速高效：</strong>只需几次点击即可将您的 WebP 图像转换为 JPEG，节省您的时间和精力。</li>
+            <li><strong>无质量损失：</strong>在转换过程中保持图像的高质量，无重要细节丢失。</li>
+            <li><strong>免费在线使用：</strong>我们的工具可免费在线访问，无需下载或安装。</li>
+            <li><strong>用户友好界面：</strong>我们的工具设计简单直观，让每个人都能轻松操作。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>WebP 转 JPEG 转换的常见用途</h2>
+        <p>将 WebP 转换为 JPEG 在许多场景中非常有用：</p>
+        <ul>
+            <li><strong>网站：</strong>使用 JPEG 图像来提高页面加载速度并与所有浏览器兼容。</li>
+            <li><strong>社交媒体：</strong>以 JPEG 格式分享图像，在 Facebook 和 Instagram 等平台上获得更高的参与度和可见性。</li>
+            <li><strong>数码摄影：</strong>以 JPEG 格式保存和编辑照片，便于分享和存储。</li>
+            <li><strong>个人用途：</strong>为家庭相册或需要常用格式的剪贴簿项目转换图像。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 WebP 转换为 JPEG 如何帮助您</h2>
+        <p>将 WebP 图像转换为 JPEG 格式可以增强其可用性和分享性。以下是好处：</p>
+        <ul>
+            <li><strong>提高兼容性：</strong>JPEG 几乎与所有设备和软件兼容，使您的图像更易访问。</li>
+            <li><strong>更小的文件大小：</strong>JPEG 图像通常具有较小的文件大小，有助于提高网站加载速度。</li>
+            <li><strong>更容易分享：</strong>JPEG 文件是许多在线平台的首选格式，简化了分享过程。</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert TIFF to BMP images with ToolsForImage. Free, fast, and secure online TIFF to BMP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online TIFF to BMP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online TIFF to BMP Converter</h1>
+<p>Easily convert your images from TIFF to BMP format. Upload a TIFF image and we'll convert it to BMP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/TIFF" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is TIFF to BMP Conversion?</h2>
+        <p>TIFF to BMP conversion is the process of changing image files from TIFF format to BMP format. TIFF (Tagged Image File Format) is known for its high quality and is often used in professional photography and graphic design. BMP (Bitmap) is a simple image format that offers easy compatibility with various applications. Converting TIFF images to BMP can help you use your images in more versatile environments while retaining their quality.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert TIFF to BMP?</h2>
+        <p>There are several reasons to convert TIFF images to BMP:</p>
+        <ul>
+            <li><strong>Wider Compatibility:</strong> BMP files are widely supported across many software and platforms, making them easier to use in different applications.</li>
+            <li><strong>Simplicity:</strong> BMP files are straightforward and don’t require complex decoding, which can be beneficial for quick edits.</li>
+            <li><strong>High Quality:</strong> BMP preserves the quality of the original TIFF image, ensuring your visuals look great.</li>
+            <li><strong>No Compression:</strong> BMP format is uncompressed, which means it retains all image details without losing information.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our TIFF to BMP Converter</h2>
+        <p>Our TIFF to BMP conversion tool is easy to use and efficient. Here’s how to convert your images:</p>
+        <ul>
+            <li>Click the "Upload TIFF File" button to select the TIFF image you want to convert.</li>
+            <li>After the upload, our tool will automatically begin converting the image to BMP format.</li>
+            <li>Once the conversion is complete, click "Download BMP" to save the new image to your device.</li>
+        </ul>
+        <p>Our converter supports various TIFF files, ensuring a seamless experience for all users.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our TIFF to BMP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your TIFF images to BMP quickly with just a few clicks.</li>
+            <li><strong>No Quality Loss:</strong> Enjoy high-quality results with no degradation during the conversion process.</li>
+            <li><strong>Free and Accessible:</strong> Use our tool online for free, without needing to install any software.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed to be intuitive and easy to navigate, ensuring a smooth experience.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for TIFF to BMP Conversion</h2>
+        <p>Here are some scenarios where converting TIFF to BMP can be beneficial:</p>
+        <ul>
+            <li><strong>Graphic Design:</strong> Use BMP images for quick edits or when working with software that supports only BMP format.</li>
+            <li><strong>Photography:</strong> Convert high-resolution TIFF images for easier viewing or sharing without loss of quality.</li>
+            <li><strong>Web Applications:</strong> Incorporate BMP images into web applications that require easy compatibility.</li>
+            <li><strong>Document Creation:</strong> Use BMP files in documents or presentations where simplicity and compatibility are key.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting TIFF to BMP Can Help</h2>
+        <p>Converting your TIFF images to BMP can enhance their usability and performance. Here’s how:</p>
+        <ul>
+            <li><strong>Increased Compatibility:</strong> BMP files can be easily opened and edited in various applications, making them more versatile.</li>
+            <li><strong>Simplified Editing:</strong> BMP’s uncompressed nature allows for easier manipulation and editing of images.</li>
+            <li><strong>Preserved Quality:</strong> Converting to BMP ensures that the high-quality details of your TIFF images remain intact.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

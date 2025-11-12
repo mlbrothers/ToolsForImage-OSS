@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+
+</defs>
+
+<g id="roll_brush" data-name="roll brush">
+
+<rect class="cls-1" x="8.11" y="8.17" width="14.39" height="14.39"/>
+
+<line class="cls-1" x1="14.83" y1="1.45" x2="16.75" y2="1.45"/>
+
+<line class="cls-1" x1="14.83" y1="5.29" x2="16.75" y2="5.29"/>
+
+<line class="cls-1" x1="4.28" y1="15.84" x2="6.2" y2="15.84"/>
+
+<line class="cls-1" x1="0.44" y1="15.84" x2="2.36" y2="15.84"/>
+
+<line class="cls-1" x1="0.44" y1="12" x2="2.36" y2="12"/>
+
+<line class="cls-1" x1="0.44" y1="8.17" x2="2.36" y2="8.17"/>
+
+<line class="cls-1" x1="0.44" y1="4.33" x2="2.36" y2="4.33"/>
+
+<line class="cls-1" x1="0.44" y1="1.45" x2="2.36" y2="1.45"/>
+
+<line class="cls-1" x1="3.32" y1="1.45" x2="5.24" y2="1.45"/>
+
+<line class="cls-1" x1="7.16" y1="1.45" x2="9.07" y2="1.45"/>
+
+<line class="cls-1" x1="10.99" y1="1.45" x2="12.91" y2="1.45"/>
+
+</g>
+
+</svg>

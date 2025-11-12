@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#d9dce1;}.cls-3{fill:#ffffff;}.cls-4{fill:#52acf9;}</style>
+
+</defs>
+
+<g id="bank">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="16" width="6" x="7" y="10"/>
+
+<rect class="cls-2" height="16" width="6" x="19" y="10"/>
+
+<rect class="cls-3" height="16" width="6" x="15" y="10"/>
+
+<rect class="cls-3" height="16" width="5" x="11" y="10"/>
+
+<polygon class="cls-4" points="16 1.97 2 5.2 2 12 30 12 30 5.2 16 1.97"/>
+
+<rect class="cls-2" height="6" width="24" x="4" y="24"/>
+
+<path class="cls-3" d="M16,9a2,2,0,1,1,2-2A2,2,0,0,1,16,9Zm0-2Z"/>
+
+<path d="M30,12V5.2L16,2,2,5.2V12H7V24H4v6H28V24H25V12ZM4,10V6.8L16,4,28,6.8V10H4ZM19,24H17V12h2ZM13,12h2V24H13ZM9,12h2V24H9ZM26,26v2H6V26H26Zm-3-2H21V12h2ZM14,7a2,2,0,1,1,2,2A2,2,0,0,1,14,7Z"/>
+
+</g>
+
+</svg>

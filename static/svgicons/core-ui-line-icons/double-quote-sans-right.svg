@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <path fill="var(--ci-primary-color, #000000)" d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z" class="ci-primary"/>
+  <path fill="var(--ci-primary-color, #000000)" d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z" class="ci-primary"/>
+</svg>

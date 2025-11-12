@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="ear_drop" data-name="ear drop">
+
+<path class="cls-1" d="M4.36,10.09v1L1.5,13.91v6.68A1.9,1.9,0,0,0,3.41,22.5h7.64A1.9,1.9,0,0,0,13,20.59V13.91l-2.86-2.86v-1"/>
+
+<rect class="cls-1" x="3.41" y="6.27" width="7.64" height="3.82"/>
+
+<path class="cls-1" d="M7.23,1.5h0A1.91,1.91,0,0,1,9.14,3.41V6.27a0,0,0,0,1,0,0H5.32a0,0,0,0,1,0,0V3.41A1.91,1.91,0,0,1,7.23,1.5Z"/>
+
+<rect class="cls-1" x="14.86" y="6.27" width="7.64" height="3.82"/>
+
+<path class="cls-1" d="M18.68,1.5h0a1.91,1.91,0,0,1,1.91,1.91V6.27a0,0,0,0,1,0,0H16.77a0,0,0,0,1,0,0V3.41A1.91,1.91,0,0,1,18.68,1.5Z"/>
+
+<polygon class="cls-1" points="20.59 18.68 18.68 21.55 16.77 18.68 16.77 10.09 20.59 10.09 20.59 18.68"/>
+
+<rect class="cls-1" x="6.27" y="14.86" width="6.68" height="3.82"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,354 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="हमारे वॉटरमार्किंग टूल के साथ अपने चित्रों पर आसानी से वॉटरमार्क जोड़ें। अपने चित्रों की सुरक्षा करें और बिना किसी परेशानी के ब्रांडिंग करें।">
+{% endblock %}
+
+{% block title %}ऑनलाइन इमेज वॉटरमार्किंग टूल | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री इमेज वॉटरमार्किंग टूल</h1>
+
+<div class="watermark-editor">
+    <div class="watermark-controls">
+        <label for="imageUpload">छवि अपलोड करें:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="watermarkText">वॉटरमार्क टेक्स्ट:</label>
+        <input type="text" id="watermarkText" placeholder="वॉटरमार्क टेक्स्ट दर्ज करें">
+        
+        <label for="watermarkColor">वॉटरमार्क रंग:</label>
+        <input type="color" id="watermarkColor" value="#000000">
+        
+        <label for="watermarkOpacity">वॉटरमार्क अपारदर्शिता:</label>
+        <input type="range" id="watermarkOpacity" min="0" max="1" step="0.1" value="0.5">
+        
+        <label for="watermarkFontSize">वॉटरमार्क फ़ॉन्ट आकार:</label>
+        <input type="number" id="watermarkFontSize" min="8" value="20" placeholder="फ़ॉन्ट आकार">
+        
+        <label for="watermarkPosition">वॉटरमार्क स्थिति:</label>
+        <select id="watermarkPosition">
+            <option value="top-left">ऊपर बाईं ओर</option>
+            <option value="top-right">ऊपर दाईं ओर</option>
+            <option value="bottom-left">नीचे बाईं ओर</option>
+            <option value="bottom-right">नीचे दाईं ओर</option>
+            <option value="center">केंद्र</option>
+        </select>
+        
+        <label for="watermarkFontStyle">वॉटरमार्क फ़ॉन्ट शैली:</label>
+        <select id="watermarkFontStyle">
+            <option value="normal">सामान्य</option>
+            <option value="bold">बोल्ड</option>
+            <option value="italic">इटैलिक</option>
+            <option value="bold-italic">बोल्ड इटैलिक</option>
+        </select>
+    </div>
+
+    <div class="watermark-preview">
+        <img id="previewImage" src="" alt="पूर्वावलोकन">
+    </div>
+
+    <button class="button" id="downloadImage">वॉटरमार्क वाली छवि डाउनलोड करें</button>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>इमेज वॉटरमार्किंग क्या है?</h2>
+        <p>इमेज वॉटरमार्किंग वह प्रक्रिया है जिसमें आपके चित्रों में एक लोगो, टेक्स्ट, या प्रतीक जोड़ा जाता है ताकि उन्हें अनधिकृत उपयोग से सुरक्षित किया जा सके। वॉटरमार्क एक छोटा, अर्ध-अपारदर्शी चिह्न होता है जो चित्र में कहीं भी रखा जा सकता है। यह उपकरण आपको आसानी से वॉटरमार्क जोड़ने में मदद करता है, यह सुनिश्चित करते हुए कि आपकी तस्वीरें, ग्राफिक्स या डिजिटल क्रिएशंस सुरक्षित और आसानी से आपकी पहचान के रूप में पहचानी जा सकें।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>अपने चित्रों पर वॉटरमार्क क्यों लगाएं?</h2>
+        <p>अपने चित्रों पर वॉटरमार्क लगाना कई कारणों से महत्वपूर्ण है:</p>
+        <ul>
+            <li><strong>अपने काम की रक्षा करें:</strong> वॉटरमार्क जोड़कर दूसरों को आपकी चित्रों को बिना अनुमति के चुराने या उपयोग करने से रोकें।</li>
+            <li><strong>अपने ब्रांड का निर्माण करें:</strong> अपने लोगो या ब्रांड नाम के साथ वॉटरमार्क जोड़ने से दृश्यता और ब्रांड पहचान बढ़ सकती है।</li>
+            <li><strong>ऑनलाइन सुरक्षित रूप से साझा करें:</strong> सोशल मीडिया, ब्लॉग, या वेबसाइटों पर चित्र साझा करते समय, वॉटरमार्क आपके बौद्धिक संपदा की रक्षा करने में मदद कर सकता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वॉटरमार्किंग टूल का उपयोग कैसे करें</h2>
+        <p>हमारा वॉटरमार्किंग टूल उपयोग में आसान है और आपके चित्रों में जल्दी से वॉटरमार्क जोड़ने में मदद करता है। इन चरणों का पालन करें:</p>
+        <ul>
+            <li>"कंप्यूटर से अपलोड करें" बटन पर क्लिक करके अपनी इमेज अपलोड करें।</li>
+            <li>वॉटरमार्क के रूप में उपयोग के लिए टेक्स्ट दर्ज करें या अपने लोगो को अपलोड करें।</li>
+            <li>अपनी पसंद के अनुसार वॉटरमार्क का आकार, अपारदर्शिता, और स्थिति समायोजित करें।</li>
+            <li>एक बार जब आप संतुष्ट हों, तो "वॉटरमार्क वाला चित्र डाउनलोड करें" पर क्लिक करें ताकि आपकी सुरक्षित इमेज आपके डिवाइस पर सहेज ली जाए।</li>
+        </ul>
+        <p>हमारा उपकरण PNG, JPG, और BMP सहित विभिन्न चित्र प्रारूपों का समर्थन करता है और यह सुनिश्चित करता है कि आपकी इमेज की गुणवत्ता बनाए रखी जाए।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वॉटरमार्किंग टूल का उपयोग करने के लाभ</h2>
+        <p>यहां हमारे वॉटरमार्किंग टूल के उपयोग के शीर्ष लाभ दिए गए हैं:</p>
+        <ul>
+            <li><strong>त्वरित और आसान:</strong> कुछ क्लिक में अपने चित्रों पर वॉटरमार्क जोड़ें, कोई डिज़ाइन कौशल की आवश्यकता नहीं है।</li>
+            <li><strong>अनुकूलन योग्य वॉटरमार्क:</strong> टेक्स्ट, फ़ॉन्ट, आकार, और प्लेसमेंट का चयन करें जो आपकी आवश्यकताओं के अनुकूल हो।</li>
+            <li><strong>अपनी इमेज की सुरक्षा करें:</strong> सुनिश्चित करें कि आपकी इमेज सुरक्षित हैं और ऑनलाइन आपकी कृति के रूप में पहचानी जाती हैं।</li>
+            <li><strong>उपयोग के लिए मुफ्त:</strong> हमारा उपकरण मुफ्त है और बिना किसी सॉफ़्टवेयर डाउनलोड के उपयोग में आसानी से उपलब्ध है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>इमेज वॉटरमार्किंग के सामान्य उपयोग</h2>
+        <p>वॉटरमार्किंग कई परिस्थितियों में उपयोगी है, जैसे:</p>
+        <ul>
+            <li><strong>फोटोग्राफर:</strong> अपनी फोटोग्राफी को अनधिकृत उपयोग से बचाने के लिए अपने नाम या लोगो को जोड़ें।</li>
+            <li><strong>ग्राफिक डिज़ाइनर:</strong> दूसरों को इसे अपने नाम से पेश करने से रोकने के लिए अपने डिजिटल कला पर वॉटरमार्क जोड़ें।</li>
+            <li><strong>व्यवसाय और ब्रांड:</strong> अपने ब्रांड को बढ़ावा देने और यह सुनिश्चित करने के लिए वॉटरमार्क का उपयोग करें कि आपकी इमेज आपके खुद के रूप में पहचानी जाएं।</li>
+            <li><strong>कंटेंट क्रिएटर्स:</strong> सुनिश्चित करें कि आपका मूल कंटेंट सोशल मीडिया या वेबसाइटों पर साझा करते समय सुरक्षित है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>क्यों वॉटरमार्किंग आपके चित्रों के लिए महत्वपूर्ण है</h2>
+        <p>वॉटरमार्किंग आपके चित्रों को चोरी या दुरुपयोग से बचाने में मदद करता है। यहाँ इसके महत्व के कारण दिए गए हैं:</p>
+        <ul>
+            <li><strong>कॉपीराइट सुरक्षा:</strong> वॉटरमार्क उन लोगों के लिए एक अवरोध के रूप में कार्य करता है जो आपकी इमेज का बिना अनुमति उपयोग करने की कोशिश कर सकते हैं।</li>
+            <li><strong>ब्रांड जागरूकता बढ़ाएं:</strong> जब आपका वॉटरमार्क आपके लोगो या ब्रांड नाम को शामिल करता है, तो यह आपके व्यवसाय की जागरूकता फैलाने में मदद करता है क्योंकि आपकी इमेज ऑनलाइन साझा की जाती हैं।</li>
+            <li><strong>अपने काम को सुरक्षित रखें:</strong> चाहे आप एक फोटोग्राफर, डिज़ाइनर, या कंटेंट क्रिएटर हों, वॉटरमार्किंग यह सुनिश्चित करता है कि आपका कठिन काम आपको श्रेय दिया जाए, चाहे वह कहीं भी प्रदर्शित हो।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+
+    #downloadImage{
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .watermark-editor {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        margin-top: 2em;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .watermark-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-controls input, .watermark-controls select {
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-preview {
+        width: 100%;
+        height: 400px;
+        border: 1px solid var(--secondary-color);
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .watermark-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .watermark-text {
+        position: absolute;
+        cursor: move;
+        user-select: none;
+    }
+
+    .button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        border: none;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: var(--link-hover-color);
+        color: var(--box-color);
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    const imageUpload = document.getElementById('imageUpload');
+    const watermarkText = document.getElementById('watermarkText');
+    const watermarkColor = document.getElementById('watermarkColor');
+    const watermarkOpacity = document.getElementById('watermarkOpacity');
+    const watermarkFontSize = document.getElementById('watermarkFontSize');
+    const watermarkPosition = document.getElementById('watermarkPosition');
+    const watermarkFontStyle = document.getElementById('watermarkFontStyle');
+    const previewImage = document.getElementById('previewImage');
+    const downloadButton = document.getElementById('downloadImage');
+
+    let originalImage = null;
+
+    imageUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+            originalImage = new Image();
+            originalImage.onload = () => {
+                previewImage.src = originalImage.src;
+                applyWatermark(); // Apply watermark when the image is loaded
+            };
+            originalImage.src = event.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    // Debounce function to limit the rate of applying watermark
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    // Add event listeners for real-time updates with debouncing
+    const debouncedApplyWatermark = debounce(applyWatermark, 200); // 200ms delay
+    watermarkText.addEventListener('input', debouncedApplyWatermark);
+    watermarkColor.addEventListener('input', debouncedApplyWatermark);
+    watermarkOpacity.addEventListener('input', debouncedApplyWatermark);
+    watermarkFontSize.addEventListener('input', debouncedApplyWatermark);
+    watermarkPosition.addEventListener('change', debouncedApplyWatermark);
+    watermarkFontStyle.addEventListener('change', debouncedApplyWatermark);
+
+    downloadButton.addEventListener('click', downloadWatermarkedImage);
+
+    function applyWatermark() {
+        if (!originalImage) {
+            return;
+        }
+
+        // Create an offscreen canvas to apply watermark
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size to match the image size
+        canvas.width = originalImage.width;
+        canvas.height = originalImage.height;
+
+        // Draw the original image onto the canvas
+        ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+
+        // Set the watermark text style
+        const fontSize = parseInt(watermarkFontSize.value);
+        const fontStyle = watermarkFontStyle.value;
+
+        // Check if the font style includes both bold and italic
+        let fullFontStyle = '';
+        if (fontStyle === 'bold-italic') {
+            fullFontStyle = 'bold italic';
+        } else if (fontStyle === 'bold') {
+            fullFontStyle = 'bold';
+        } else if (fontStyle === 'italic') {
+            fullFontStyle = 'italic';
+        } else {
+            fullFontStyle = 'normal';
+        }
+
+        // Apply the font settings to the canvas context
+        ctx.font = `${fullFontStyle} ${fontSize}px Arial`;
+
+        ctx.fillStyle = watermarkColor.value;
+        ctx.globalAlpha = watermarkOpacity.value;
+
+        // Get text dimensions
+        const text = watermarkText.value;
+        const textMetrics = ctx.measureText(text);
+        const textWidth = textMetrics.width;
+        const textHeight = fontSize; // Approximate height based on font size
+
+        // Adjust for italic and bold font style
+        let italicAdjustment = 0;
+        if (fullFontStyle.includes('italic')) {
+            italicAdjustment = fontSize * 0.2; // Adjust this factor as needed
+        }
+
+        // Calculate text position based on the selected alignment
+        let x, y;
+        const position = watermarkPosition.value;
+
+        switch (position) {
+            case 'top-left':
+                x = 10 + italicAdjustment; // Add some padding
+                y = textHeight + 10;
+                break;
+            case 'top-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = textHeight + 10;
+                break;
+            case 'bottom-left':
+                x = 10 + italicAdjustment; // Left padding
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'bottom-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'center':
+                x = (canvas.width - textWidth) / 2 + italicAdjustment / 2;
+                y = (canvas.height + textHeight) / 2;
+                break;
+            default:
+                x = 10 + italicAdjustment;
+                y = textHeight + 10;
+        }
+
+        // Debug: Log the font style to ensure it's set correctly
+        console.log('Font style applied:', ctx.font);
+
+        // Draw the watermark text on the canvas
+        ctx.fillText(text, x, y);
+
+        // Update the preview image with the canvas content
+        previewImage.src = canvas.toDataURL();
+    }
+
+    function downloadWatermarkedImage() {
+        if (!originalImage) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const a = document.createElement('a');
+        a.href = previewImage.src;
+        a.download = 'watermarked_image.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+{% endblock %}

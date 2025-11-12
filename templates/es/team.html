@@ -1,0 +1,73 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Conoce al talentoso equipo detrás de ToolsForImage: expertos en compresión de imágenes, redimensionamiento, conversión de formatos y más. Descubre a nuestros desarrolladores y visionarios que hacen posibles nuestras herramientas gratuitas de edición de imágenes en línea.">
+{% endblock %}
+
+{% block title %}Nuestro Equipo | ToolsForImage | Herramientas en línea gratuitas para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Conoce a Nuestro Equipo</h1>
+<p>En ToolsForImage, nos apasiona ofrecer las mejores herramientas gratuitas de edición de imágenes en línea. Nuestro equipo de expertos trabaja incansablemente para brindarte soluciones de primera clase para compresión de imágenes, redimensionamiento, conversión de formatos y más.</p>
+
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='sid.svg') }}" alt="Siddharth">
+        <h2>Siddharth</h2>
+        <p>Desarrollador Principal</p>
+        <p>Siddharth es nuestro mago de la codificación, especializado en algoritmos de procesamiento de imágenes y técnicas de optimización. Es el cerebro detrás de nuestras potentes herramientas de compresión y redimensionamiento de imágenes.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nandan.svg') }}" alt="Nandan">
+        <h2>Nandan</h2>
+        <p>Desarrollador Frontend</p>
+        <p>Nandan crea nuestras interfaces fáciles de usar, asegurando que nuestras herramientas de edición de imágenes sean accesibles y sencillas para todos, desde principiantes hasta profesionales.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jeni.svg') }}" alt="Jenish">
+        <h2>Jenish</h2>
+        <p>Visionario de Producto</p>
+        <p>Jenish es nuestro generador de ideas, explorando constantemente nuevas formas de mejorar nuestra suite de edición de imágenes. Desde la marca de agua hasta el desenfoque de caras, siempre está empujando los límites de lo posible.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='viraj.svg') }}" alt="Viraj">
+        <h2>Viraj</h2>
+        <p>Control de Calidad</p>
+        <p>Viraj se asegura de que todas nuestras herramientas de imágenes, desde la conversión de formatos hasta la rotación, cumplan con los más altos estándares de calidad y confiabilidad. Es el guardián de tu experiencia de edición de imágenes.</p>
+    </div>
+</div>
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .team-member {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1.5em;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    
+</style>
+{% endblock %}

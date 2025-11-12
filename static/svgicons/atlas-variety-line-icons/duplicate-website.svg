@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+
+</defs>
+
+<g id="roll_brush" data-name="roll brush">
+
+<rect class="cls-1" x="1.41" y="5.32" width="17.26" height="17.26"/>
+
+<rect class="cls-1" x="1.41" y="5.32" width="17.26" height="5.75"/>
+
+<rect class="cls-1" x="18.68" y="7.24" width="3.84" height="11.51"/>
+
+<polygon class="cls-1" points="22.51 1.49 22.51 7.24 18.68 7.24 18.68 5.32 5.25 5.32 5.25 1.49 22.51 1.49"/>
+
+<line class="cls-1" x1="4.29" y1="8.2" x2="6.21" y2="8.2"/>
+
+<line class="cls-1" x1="8.13" y1="8.2" x2="10.05" y2="8.2"/>
+
+</g>
+
+</svg>

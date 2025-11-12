@@ -1,0 +1,348 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage的交互式裁剪工具，轻松裁剪您的图片。调整裁剪区域，并实时预览结果，轻松进行精确的图片编辑。">
+{% endblock %}
+
+{% block title %}在线裁剪图片 | ToolsForImage | 全面免费的在线工具：模糊人脸、图片转换、编辑、调整大小、去除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>免费在线图片裁剪工具</h1>
+<p>轻松裁剪您的图片，选择所需的区域。实时预览您的更改。</p>
+
+<form id="crop-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">上传图片</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" src="#" alt="图片预览">
+        <div id="crop-area">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <button type="button" class="crop-button" onclick="cropImage()">裁剪图片</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是图片裁剪？</h2>
+        <p>图片裁剪是去除图片不需要的外部区域，以增强图片的构图效果。通过聚焦关键元素，裁剪有助于创造一个视觉上吸引人的图像，有效传达信息。无论您是为网站、社交媒体还是个人使用准备照片，裁剪都是图片编辑中的关键步骤，可以显著提高整体质量。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>裁剪图片的好处</h2>
+        <p>裁剪后的图片可以极大增强视觉表现力。通过去除干扰，您可以让观众集中注意图片的最重要部分。这对于产品照片尤其有益，展示清晰的物品能够促进销售。此外，裁剪有助于实现特定的长宽比要求，确保您的图片在网站、博客和社交媒体上完美呈现。</p>
+        <p>此外，裁剪还可以改善您网站的加载速度。更小、优化过的图片不仅提升用户体验，还能有助于更好的SEO排名，因为搜索引擎更青睐快速加载的页面。这可能带来更多流量，并提高您的内容可见度。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>何时裁剪图片</h2>
+        <p>当您希望提升焦点或去除杂乱时，可以考虑裁剪图片。尤其是在准备用于在线使用时，如博客文章、在线商店或社交媒体个人资料时，裁剪尤为重要。裁剪还可以帮助您创建定制的缩略图，吸引更多点击，因此它是数字营销的一个重要方面。</p>
+        <p>此外，裁剪在创建项目的一系列统一图片时也非常有用，例如作品集或演示文稿。通过裁剪为一致的长宽比，您可以创建统一的外观，提升作品的专业性。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>有效裁剪图片的小贴士</h2>
+        <p>以下是裁剪图片时需要注意的一些小贴士：</p>
+        <ul>
+            <li><strong>使用三分法则：</strong>将图片分成九等分，将关键元素放在这些线条上或交点处，以创建平衡和兴趣。</li>
+            <li><strong>保持长宽比：</strong>考虑图片将在何种平台上使用，并相应裁剪以保持所需的长宽比。这样可以确保图片在各处看起来都很美观。</li>
+            <li><strong>聚焦主题：</strong>确保主要主题清晰可见，并适当地框定。避免在主题周围留下过多空白。</li>
+            <li><strong>尝试不同的裁剪方式：</strong>不要害怕尝试多种裁剪风格，看看哪种最适合您的图片和预期的信息传达。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用ToolsForImage裁剪图片</h2>
+        <p>在ToolsForImage，裁剪您的图片既简单又高效。我们的用户友好界面允许您选择裁剪区域并实时预览结果。只需上传您的图片，根据需要调整裁剪区域，几次点击即可下载裁剪后的图片。无论您是专业摄影师还是普通用户，我们的裁剪工具都能精准、轻松地满足您的需求。</p>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .crop-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .image-preview-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        max-height: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image-preview {
+        max-width: 100%;
+        max-height: 100%;
+        display: none;
+        object-fit: contain;
+    }
+
+    #crop-area {
+        position: absolute;
+        border: 2px dashed #fff;
+        cursor: move;
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw { top: -5px; left: -5px; cursor: nw-resize; }
+    .resize-handle.ne { top: -5px; right: -5px; cursor: ne-resize; }
+    .resize-handle.sw { bottom: -5px; left: -5px; cursor: sw-resize; }
+    .resize-handle.se { bottom: -5px; right: -5px; cursor: se-resize; }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    @media (max-width: 600px) {
+        .image-preview-container {
+            max-width: 100%;
+            max-height: 400px;
+        }
+    }
+</style>
+
+<script>
+    let cropArea, imagePreview, imagePreviewContainer;
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+    let imageOffset = { x: 0, y: 0 };
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                imagePreview.onload = function() {
+                    initCropArea();
+                }
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function initCropArea() {
+        cropArea = document.getElementById('crop-area');
+        imagePreviewContainer = document.querySelector('.image-preview-container');
+        const containerRect = imagePreviewContainer.getBoundingClientRect();
+        const imageRect = imagePreview.getBoundingClientRect();
+
+        const scale = Math.min(containerRect.width / imageRect.width, containerRect.height / imageRect.height);
+        const scaledWidth = imageRect.width * scale;
+        const scaledHeight = imageRect.height * scale;
+
+        // Calculate image offset
+        imageOffset.x = (containerRect.width - scaledWidth) / 2;
+        imageOffset.y = (containerRect.height - scaledHeight) / 2;
+
+        // Adjust initial crop size for small images
+        const initialCropSize = Math.min(scaledWidth, scaledHeight, 200);
+        
+        cropArea.style.width = `${initialCropSize}px`;
+        cropArea.style.height = `${initialCropSize}px`;
+        cropArea.style.left = `${imageOffset.x + (scaledWidth - initialCropSize) / 2}px`;
+        cropArea.style.top = `${imageOffset.y + (scaledHeight - initialCropSize) / 2}px`;
+
+        cropArea.addEventListener('mousedown', startDragging);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', stopDragging);
+
+        const resizeHandles = cropArea.querySelectorAll('.resize-handle');
+        resizeHandles.forEach(handle => {
+            handle.addEventListener('mousedown', startResizing);
+        });
+    }
+
+    function startDragging(e) {
+        if (e.target.classList.contains('resize-handle')) return;
+        isDragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = cropArea.offsetLeft;
+        startTop = cropArea.offsetTop;
+        e.preventDefault();
+    }
+
+    function drag(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+        
+        let newLeft = startLeft + dx;
+        let newTop = startTop + dy;
+        
+        // Constrain crop area within image bounds
+        const imageRect = imagePreview.getBoundingClientRect();
+        newLeft = Math.max(imageOffset.x, Math.min(newLeft, imageOffset.x + imageRect.width - cropArea.offsetWidth));
+        newTop = Math.max(imageOffset.y, Math.min(newTop, imageOffset.y + imageRect.height - cropArea.offsetHeight));
+
+        cropArea.style.left = newLeft + 'px';
+        cropArea.style.top = newTop + 'px';
+    }
+
+    function stopDragging() {
+        isDragging = false;
+    }
+
+    function startResizing(e) {
+        isResizing = true;
+        currentHandle = e.target;
+        startX = e.clientX;
+        startY = e.clientY;
+        startWidth = parseInt(getComputedStyle(cropArea).width, 10);
+        startHeight = parseInt(getComputedStyle(cropArea).height, 10);
+        startLeft = cropArea.offsetLeft;
+        startTop = cropArea.offsetTop;
+        document.addEventListener('mousemove', resize);
+        document.addEventListener('mouseup', stopResizing);
+        e.stopPropagation();
+        e.preventDefault();
+    }
+
+    function resize(e) {
+        if (!isResizing) return;
+        e.preventDefault();
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        const imageRect = imagePreview.getBoundingClientRect();
+        let newWidth, newHeight, newLeft, newTop;
+
+        if (currentHandle.classList.contains('se')) {
+            newWidth = Math.min(startWidth + dx, imageRect.width + imageOffset.x - startLeft);
+            newHeight = Math.min(startHeight + dy, imageRect.height + imageOffset.y - startTop);
+        } else if (currentHandle.classList.contains('sw')) {
+            newWidth = Math.min(startWidth - dx, startLeft + startWidth - imageOffset.x);
+            newHeight = Math.min(startHeight + dy, imageRect.height + imageOffset.y - startTop);
+            newLeft = Math.max(imageOffset.x, startLeft + dx);
+        } else if (currentHandle.classList.contains('ne')) {
+            newWidth = Math.min(startWidth + dx, imageRect.width + imageOffset.x - startLeft);
+            newHeight = Math.min(startHeight - dy, startTop + startHeight - imageOffset.y);
+            newTop = Math.max(imageOffset.y, startTop + dy);
+        } else if (currentHandle.classList.contains('nw')) {
+            newWidth = Math.min(startWidth - dx, startLeft + startWidth - imageOffset.x);
+            newHeight = Math.min(startHeight - dy, startTop + startHeight - imageOffset.y);
+            newLeft = Math.max(imageOffset.x, startLeft + dx);
+            newTop = Math.max(imageOffset.y, startTop + dy);
+        }
+
+        // Ensure minimum size for crop area
+        const minSize = 20;
+        newWidth = Math.max(newWidth, minSize);
+        newHeight = Math.max(newHeight, minSize);
+
+        cropArea.style.width = `${newWidth}px`;
+        cropArea.style.height = `${newHeight}px`;
+        if (newLeft !== undefined) cropArea.style.left = `${newLeft}px`;
+        if (newTop !== undefined) cropArea.style.top = `${newTop}px`;
+    }
+
+    function stopResizing() {
+        isResizing = false;
+        document.removeEventListener('mousemove', resize);
+        document.removeEventListener('mouseup', stopResizing);
+    }
+
+    function cropImage() {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        const imageRect = imagePreview.getBoundingClientRect();
+        const cropRect = cropArea.getBoundingClientRect();
+
+        const scaleX = imagePreview.naturalWidth / imageRect.width;
+        const scaleY = imagePreview.naturalHeight / imageRect.height;
+
+        const cropX = (cropRect.left - imageRect.left) * scaleX;
+        const cropY = (cropRect.top - imageRect.top) * scaleY;
+        const cropWidth = cropRect.width * scaleX;
+        const cropHeight = cropRect.height * scaleY;
+
+        canvas.width = cropWidth;
+        canvas.height = cropHeight;
+
+        ctx.drawImage(
+            imagePreview,
+            cropX, cropY, cropWidth, cropHeight,
+            0, 0, cropWidth, cropHeight
+        );
+
+        // Convert canvas to image and download
+        canvas.toBlob((blob) => {
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.download = 'cropped_image.png';
+            downloadLink.click();
+        }, 'image/png');
+    }
+</script>
+{% endblock %}

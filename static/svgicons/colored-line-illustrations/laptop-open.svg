@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 -14 84 84" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group_95" data-name="Group 95" transform="translate(-447 -45)">
+    <line id="Line_144" data-name="Line 144" x1="19.392" y2="19.392" transform="translate(472.608 62.608)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Rectangle_75" data-name="Rectangle 75" d="M2.655,0H63.345A2.655,2.655,0,0,1,66,2.655V47a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2.655A2.655,2.655,0,0,1,2.655,0Z" transform="translate(456 46)" fill="#e8f7f9" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Rectangle_76" data-name="Rectangle 76" d="M1.856,0H54.144A1.856,1.856,0,0,1,56,1.856V43a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1.856A1.856,1.856,0,0,1,1.856,0Z" transform="translate(461 51)" fill="#99ecff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Rectangle_77" data-name="Rectangle 77" d="M0,0H82a0,0,0,0,1,0,0V0a7,7,0,0,1-7,7H7A7,7,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(448 93)" fill="#e8f7f9" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="Rectangle_78" data-name="Rectangle 78" width="16" height="3" transform="translate(481 93)" fill="#e8f7f9" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="Group_94" data-name="Group 94">
+      <line id="Line_145" data-name="Line 145" x1="13.778" y2="13.778" transform="translate(477 61)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_146" data-name="Line 146" x1="19.392" y2="19.392" transform="translate(478.497 61)" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

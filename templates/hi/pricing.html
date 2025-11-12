@@ -1,0 +1,213 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage की मूल्य निर्धारण की जानकारी - हमारे सभी शक्तिशाली छवि संपादन उपकरण पूरी तरह से मुफ्त हैं! बिना किसी लागत के संकुचन, आकार बदलना, फसल करना, रूपांतरित करना और बहुत कुछ।">
+{% endblock %}
+
+{% block title %}मूल्य निर्धारण | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मूल्य निर्धारण</h1>
+<p>ToolsForImage में, हम मानते हैं कि शक्तिशाली छवि संपादन उपकरण सभी के लिए सुलभ होने चाहिए। इसलिए हमारी सभी सुविधाएँ पूरी तरह से मुफ्त हैं!</p>
+
+<div class="pricing-container">
+    <div class="pricing-box">
+        <h2>मुफ्त योजना</h2>
+        <div class="price"><span>$</span>0<span>/महीना</span></div>
+        <ul class="feature-list">
+            <li>छवि संकुचन</li>
+            <li>छवि आकार बदलना</li>
+            <li>रूपांतरण</li>
+            <li>छवि घुमाना</li>
+            <li>छवि प्रभाव</li>
+            <li>वॉटरमार्किंग</li>
+            <li>चेहरे को धुंधला करना</li>
+            <li>पृष्ठभूमि हटाना</li>
+            <li>पृष्ठभूमि धुंधला करना</li>
+            <li>असीमित उपयोग</li>
+        </ul>
+        <p>आज ही हमारी उपकरणों का मुफ्त में उपयोग करना शुरू करें!</p>
+        <a href="/{{ g.lang }}/" class="cta-button">शुरू करें</a>
+    </div>
+</div>
+
+<h2>ToolsForImage को क्यों चुनें?</h2>
+<ul>
+    <li>उपयोगकर्ता के अनुकूल इंटरफ़ेस</li>
+    <li>कोई पंजीकरण आवश्यक नहीं</li>
+    <li>तेज़ प्रोसेसिंग</li>
+    <li>उच्च गुणवत्ता वाले परिणाम</li>
+    <li>गोपनीयता पर ध्यान केंद्रित (हम आपकी छवियों को स्टोर नहीं करते)</li>
+    <li>नियमित अपडेट और नई सुविधाएँ</li>
+</ul>
+
+<h2>हमारे उपकरणों की खोज करें</h2>
+<p>हमारी छवि संपादन क्षमताओं की पूरी श्रृंखला का पता लगाएँ:</p>
+<ul>
+    <li><a href="/{{ g.lang }}/image-compression">छवि संकुचन</a> - गुणवत्ता खोए बिना फ़ाइल का आकार कम करें</li>
+    <li><a href="/{{ g.lang }}/image-resize">छवि आकार बदलना</a> - अपनी आवश्यकताओं के अनुसार आयाम समायोजित करें</li>
+    <li><a href="/{{ g.lang }}/convert-image-format">रूपांतरण</a> - JPEG, PNG, GIF और अन्य के बीच स्विच करें</li>
+    <li><a href="/{{ g.lang }}/image-rotate">छवि घुमाना</a> - छवि की दिशा को सही करें</li>
+    <li><a href="/{{ g.lang }}/image-effects">छवि प्रभाव</a> - फ़िल्टर और सुधार लागू करें</li>
+    <li><a href="/{{ g.lang }}/image-watermarking">वॉटरमार्किंग</a> - अपनी छवियों की सुरक्षा करें</li>
+    <li><a href="/{{ g.lang }}/blur-face">चेहरे को धुंधला करना</a> - फ़ोटो में गोपनीयता बनाए रखें</li>
+    <li><a href="//{{ g.lang }}/remove-background">पृष्ठभूमि हटाना</a> - अपनी छवियों से पृष्ठभूमि मुफ्त में ऑनलाइन हटाएँ</li>
+</ul>
+
+<style>
+    main {
+        max-width: 900px;
+        margin: 10px auto 10px auto;
+        padding: 20px;
+        background-color: var(--box-color); /* Background color for content consistency */
+        border-radius: 5px;
+        border: var(--background-color) 3px solid; /* Matching border with other pages */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for content depth */
+        text-align: center;
+    }
+
+    .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .pricing-box {
+        background-color: var(--box-color);
+        border: 2px solid var(--link-hover-color);
+        border-radius: 10px;
+        padding: 2em;
+        text-align: center;
+        box-shadow: 0 10px 10px #2f809b;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pricing-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px #40a9cb;
+    }
+
+    .price {
+        font-size: 3em;
+        font-weight: bold;
+        color: var(--link-hover-color);
+        margin: 0.5em 0;
+    }
+
+    .price span {
+        font-size: 0.5em;
+        vertical-align: super;
+    }
+
+    .feature-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0;
+    }
+
+    .feature-list li {
+        margin-bottom: 0.5em;
+        padding-left: 1.5em;
+        position: relative;
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    /* Checkmark icon for feature list items */
+    .feature-list li::before {
+        content: '✓';
+        color: var(--link-hover-color); /* Accent color for checkmark */
+        position: absolute;
+        left: 0;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: var(--link-hover-color); /* Accent color for button */
+        color: var(--box-color); /* Contrast with background */
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    }
+
+    /* Hover effect for call-to-action button */
+    .cta-button:hover {
+        background-color: var(--link-hover-color-hover); /* Slightly different hover color */
+        transform: scale(1.05); /* Button grows on hover */
+    }
+
+    ul {
+        line-height: 1.6;
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    ul li {
+        font-size: 16px;
+        color: var(--text-color); /* Consistent text color */
+        list-style: none;
+    }
+
+    /* Links for tools */
+    a {
+        color: var(--link-hover-color); /* Accent color for links */
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    a:hover {
+        color: var(--box-hover-text-color); /* Hover effect for links */
+    }
+
+    .tool-name {
+        font-weight: bold;
+    }
+
+    .tools-list ul{
+        line-height: 1.0;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        display: flex;
+        border: var(--background-color) 3px solid;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block;
+        padding: 15px;
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%;
+        border-radius: 5px;
+    }
+</style>
+{% endblock %}

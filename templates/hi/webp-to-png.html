@@ -1,0 +1,190 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ वेबपी को PNG छवियों में आसानी से परिवर्तित करें। फ्री ऑनलाइन वेबपी से PNG कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन वेबपी को PNG में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री वेबपी से PNG परिवर्तक उपकरण</h1>
+<p>अपनी वेबपी छवियों को PNG प्रारूप में आसानी से परिवर्तित करें। एक वेबपी छवि अपलोड करें और हम इसे आपके लिए PNG में परिवर्तित करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>वेबपी से PNG परिवर्तक क्या है?</h2>
+        <p>वेबपी से PNG परिवर्तक वह प्रक्रिया है जिसमें छवियों को वेबपी प्रारूप से PNG प्रारूप में बदला जाता है। जबकि वेबपी उत्कृष्ट संकुचन और गुणवत्ता प्रदान करता है, PNG एक लॉसलेस प्रारूप है जो छवि की स्पष्टता बनाए रखता है और पारदर्शिता का समर्थन करता है। यह परिवर्तक उन उपयोगकर्ताओं के लिए आवश्यक है जो बिना विवरण खोए उच्च गुणवत्ता वाली छवियाँ चाहते हैं या उन विशेष अनुप्रयोगों के लिए जिनके लिए PNG प्रारूप की आवश्यकता होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को PNG में परिवर्तित करने के लाभ क्या हैं?</h2>
+        <p>वेबपी छवियों को PNG में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>लॉसलेस गुणवत्ता:</strong> PNG प्रारूप सभी छवि विवरणों को बिना संकुचन के बनाए रखता है, जिससे यह ग्राफिक्स और टेक्स्ट वाली छवियों के लिए आदर्श बनाता है।</li>
+            <li><strong>पारदर्शिता समर्थन:</strong> PNG पारदर्शी पृष्ठभूमियों का समर्थन करता है, जो लोगो, आइकन और ओवरले के लिए उपयोगी है।</li>
+            <li><strong>व्यापक संगतता:</strong> PNG विभिन्न अनुप्रयोगों और प्लेटफार्मों में व्यापक रूप से स्वीकार किया जाता है, यह सुनिश्चित करते हुए कि आपकी छवियाँ आसानी से सुलभ हैं।</li>
+            <li><strong>ग्राफिक्स के लिए आदर्श:</strong> यदि आप उच्च निष्ठा और स्पष्टता की आवश्यकता वाली ग्राफिक्स पर काम कर रहे हैं, तो PNG पसंदीदा विकल्प है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से PNG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे वेबपी से PNG परिवर्तक का उपयोग करना सरल और तेज है। यह काम कैसे करता है:</p>
+        <ul>
+            <li>"वेबपी फ़ाइल अपलोड करें" बटन पर क्लिक करें और उस वेबपी छवि का चयन करें जिसे आप परिवर्तित करना चाहते हैं।</li>
+            <li>अपलोड करने के बाद, उपकरण स्वचालित रूप से छवि को PNG प्रारूप में परिवर्तित करेगा।</li>
+            <li>एक बार परिवर्तित हो जाने के बाद, "PNG डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई PNG छवि को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न वेबपी छवियों का समर्थन करता है, यह सुनिश्चित करते हुए कि आपके पास एक सुगम और प्रभावी परिवर्तक प्रक्रिया है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से PNG कनवर्टर के उपयोग के लाभ</h2>
+        <p>हमारे परिवर्तक उपकरण का उपयोग करने के कुछ लाभ यहां दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> अपने वेबपी छवियों को केवल कुछ क्लिक में PNG में परिवर्तित करें, जिससे आपका समय बचता है।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> कन्वर्ज़न के दौरान विवरण की हानि के बिना उच्च गुणवत्ता वाली PNG छवियाँ प्राप्त करें।</li>
+            <li><strong>फ्री और सुलभ:</strong> हमारा उपकरण ऑनलाइन मुफ्त में उपलब्ध है, जिसमें कोई डाउनलोड या स्थापना की आवश्यकता नहीं है।</li>
+            <li><strong>उपयोगकर्ता-मित्रता इंटरफेस:</strong> उपयोग में आसानी के लिए डिज़ाइन किया गया, हमारा उपकरण हर किसी के लिए परिवर्तक प्रक्रिया को सरल बनाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी से PNG परिवर्तक के सामान्य उपयोग</h2>
+        <p>वेबपी को PNG में परिवर्तित करना विभिन्न परिदृश्यों में फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>वेब डिज़ाइन:</strong> पारदर्शी पृष्ठभूमियों की आवश्यकता वाले वेब डिज़ाइन प्रोजेक्ट्स के लिए PNG छवियाँ का उपयोग करें।</li>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> स्पष्टता और विवरण सुनिश्चित करने के लिए PNG प्रारूप में लोगो और ग्राफिक्स सहेजें।</li>
+            <li><strong>छवि संपादन:</strong> लॉसलेस प्रारूपों का समर्थन करने वाले संपादन सॉफ़्टवेयर में PNG छवियों का उपयोग करें।</li>
+            <li><strong>सोशल मीडिया:</strong> विवरण खोए बिना सोशल प्लेटफार्मों पर उच्च गुणवत्ता वाली छवियों को साझा करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को PNG में परिवर्तित करने से आपको कैसे मदद मिल सकती है</h2>
+        <p>वेबपी छवियों को PNG प्रारूप में परिवर्तित करना उपयोगिता और साझा करने को बढ़ा सकता है। यह कैसे:</p>
+        <ul>
+            <li><strong>छवि गुणवत्ता में सुधार:</strong> PNG छवियाँ सभी दृश्य विवरणों को बनाए रखती हैं, जिससे वे उच्च गुणवत्ता वाले प्रोजेक्ट्स के लिए परफेक्ट बनती हैं।</li>
+            <li><strong>पारदर्शिता के साथ लचीलापन:</strong> PNG की पारदर्शिता विशेषता ओवरले और वॉटरमार्क सहित बहुपरकार के डिज़ाइन की अनुमति देती है।</li>
+            <li><strong>आसान साझाकरण:</strong> PNG फ़ाइलें अधिकांश प्लेटफार्मों के साथ संगत होती हैं, जो निर्बाध साझाकरण और सुलभता सुनिश्चित करती हैं।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

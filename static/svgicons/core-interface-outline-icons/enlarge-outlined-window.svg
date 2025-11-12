@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" id="Outlined" xmlns="http://www.w3.org/2000/svg">
+
+<title/>
+
+<g id="Fill">
+
+<path d="M27,3H19.88V5H27V12h2V5A2,2,0,0,0,27,3Z"/>
+
+<path d="M5,5h7.06V3H5A2,2,0,0,0,3,5v7.12H5Z"/>
+
+<path d="M5,19.94H3V27a2,2,0,0,0,2,2h7.12V27H5Z"/>
+
+<path d="M27,27H19.94v2H27a2,2,0,0,0,2-2V19.86H27Z"/>
+
+</g>
+
+</svg>

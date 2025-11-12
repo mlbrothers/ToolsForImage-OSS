@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>jewish</title>
+
+<g id="jewish">
+
+<circle cx="21.5" cy="34.5" r="18.5" style="fill:#e5efef"/>
+
+<path d="M16,62V55.785c0-2.8,2.074-5.336,5.293-6.473L33.5,45l12.207,4.312C48.926,50.449,51,52.986,51,55.785V62" style="fill:#9dc1e4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="47" x2="32" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="35" y1="47" x2="35" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="34 56 45 48 39 45 34 56" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="33 56 22 48 28 45 33 56" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="59.837" y1="34.663" x2="56.163" y2="38.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22,30l-.207-.641a2.225,2.225,0,0,1-2.108-.3,2.56,2.56,0,0,1-1.183-1.97A2.5,2.5,0,0,1,21,24.5V21.652A11.652,11.652,0,0,1,32.652,10h1.7A11.652,11.652,0,0,1,46,21.652V24.5a2.5,2.5,0,0,1,2.48,2.818,2.537,2.537,0,0,1-1.216,1.793,2.283,2.283,0,0,1-2.092.238L45,30v8L22,37Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="56.163" y1="34.663" x2="59.837" y2="38.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="58.5" cy="11.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M25,35l4-5h9l4,5,3-5v8.562A7.438,7.438,0,0,1,37.562,46H29.438A7.438,7.438,0,0,1,22,38.562V30Z" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M11.632,26.5A1.132,1.132,0,1,1,10.5,25.368,1.132,1.132,0,0,1,11.632,26.5Z" style="fill:#4c241d"/>
+
+<circle cx="39.5" cy="26.5" r="1" style="fill:#4c241d"/>
+
+<circle cx="27.5" cy="26.5" r="1" style="fill:#4c241d"/>
+
+<circle cx="52" cy="20" r="1" style="fill:#4c241d"/>
+
+<path d="M35,28v1.667A1.424,1.424,0,0,1,33.5,31h0A1.424,1.424,0,0,1,32,29.667V28" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="34" x2="36" y2="34" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="13" y1="8" x2="13" y2="10" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="13" y1="14" x2="13" y2="16" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="9" y1="12" x2="11" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="15" y1="12" x2="17" y2="12" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.5,12a29.9,29.9,0,0,1,8.96,1.214,8.994,8.994,0,0,0-17.92,0A29.9,29.9,0,0,1,33.5,12Z" style="fill:#bd53b5;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

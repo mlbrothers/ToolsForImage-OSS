@@ -1,0 +1,187 @@
+{% extends "en/base.html" %}
+
+{% block title %}Compress Image online | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Compress your images using powerful online tools from ToolsForImage. Reduce file size efficiently without compromising quality for better web performance.">
+{% endblock %}
+
+{% block content %}
+<h1>Free Online Image Compressor</h1>
+<p>Effortlessly compress a single <strong>JPG/JPEG</strong>, <strong>PNG</strong>, or <strong>WEBP</strong> image with top-notch quality and optimal compression.</p>
+
+<p>Upload your image file and compress it instantly. Choose your image:</p>
+
+<form id="compression-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <label for="compression-level">File size after compression (%):</label>
+    <input type="range" id="compression-level" name="compression-level" min="1" max="100" value="50">
+    <span id="compression-value">50%</span>
+    <br>
+    <button type="button" class="compress-button" onclick="compressImage()">Compress!</button>
+</form>
+
+<p>Your image will be compressed to achieve the best quality and smallest file size.</p>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is Image Compression?</h2>
+        <p>Image compression is an important method that reduces the file size of digital images while keeping their quality as good as possible. It uses special techniques to remove unnecessary data and organize image files more efficiently, which helps save storage space. There are two main types of image compression: lossless and lossy. Lossless compression keeps all the original data, so you can get back the exact image, while lossy compression removes some data to make the file smaller, which can help web pages load faster. Knowing about image compression is important for anyone working with digital images, as it helps improve the performance of websites and online services.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Image Compression</h2>
+        <p>The benefits of image compression go beyond just making files smaller. One of the biggest advantages is that it helps websites run better. Compressed images load more quickly, which improves the user experience and keeps people from leaving the site. This is especially important for online shopping websites, where slow images can cause customers to abandon their carts and miss out on sales. Plus, search engines like Google look for fast-loading websites when ranking them, so using optimized images can help your site rank higher in search results. In the end, image compression makes browsing smoother and more enjoyable for users, leading to more interactions and sales.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Use Cases of Image Compression</h2>
+        <p>Image compression is useful in many different areas and platforms. For example, social media sites use image compression to allow users to upload and share photos quickly and easily. Websites that show a lot of images, like galleries or news websites, benefit from compressed images to keep their pages loading fast and manage data efficiently. Additionally, mobile apps that display images often use compression to reduce data usage and improve performance, especially in areas with slow internet. In short, image compression is an essential tool for making digital content better, meeting the needs of both businesses and users by enhancing speed, user experience, and overall effectiveness online.</p>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Update the compression level display
+    const compressionLevelInput = document.getElementById('compression-level');
+    const compressionValueDisplay = document.getElementById('compression-value');
+    compressionLevelInput.addEventListener('input', function() {
+        compressionValueDisplay.textContent = `${this.value}%`;
+    });
+
+    async function compressImage() {
+        const file = document.getElementById('image-upload').files[0];
+        if (!file) {
+            alert('Please select an image to compress.');
+            return;
+        }
+
+        const compressionLevel = parseInt(document.getElementById('compression-level').value, 10);
+        const quality = compressionLevel / 100; // Convert percentage to a decimal (0.01 to 1.0)
+
+        try {
+            const compressedFile = await imageConversion.compress(file, { quality: quality });
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(compressedFile);
+            downloadLink.download = `compressed_image_${compressionLevel}%.jpg`; // Dynamic file name
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        } catch (error) {
+            console.error('Error compressing image:', error);
+            alert('An error occurred while compressing the image.');
+        }
+    }
+</script>
+
+<style>
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+    .compress-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    /* Style for the range input */
+    input[type="range"] {
+        width: 200px;
+        margin: 10px 0;
+    }
+
+    #compression-value {
+        margin-left: 10px;
+        font-weight: bold;
+    }
+</style>
+{% endblock %}

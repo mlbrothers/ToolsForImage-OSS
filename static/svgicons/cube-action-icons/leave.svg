@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_acht{fill:#8E7866;}
+	.cubies_zeven{fill:#725A48;}
+	.cubies_eenentwintig{fill:#C9483A;}
+	.cubies_zevenentwintig{fill:#98D3BC;}
+	.cubies_achtentwintig{fill:#CCE2CD;}
+	.cubies_tweeentwintig{fill:#D97360;}
+	.st0{fill:#F2C99E;}
+	.st1{fill:#F9E0BD;}
+	.st2{fill:#65C3AB;}
+	.st3{fill:#EDB57E;}
+	.st4{fill:#EC9B5A;}
+	.st5{fill:#4C4842;}
+	.st6{fill:#67625D;}
+	.st7{fill:#FFF2DF;}
+	.st8{fill:#C9C6C0;}
+	.st9{fill:#EDEAE5;}
+	.st10{fill:#A4C83F;}
+	.st11{fill:#BCD269;}
+	.st12{fill:#D1DE8B;}
+	.st13{fill:#E69D8A;}
+	.st14{fill:#E3D4C0;}
+	.st15{fill:#C6B5A2;}
+	.st16{fill:#837F79;}
+	.st17{fill:#A5A29C;}
+	.st18{fill:#2EB39A;}
+	.st19{fill:#AB9784;}
+</style>
+<g>
+	<path class="cubies_zeven" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_acht" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<path class="cubies_tweeentwintig" d="M26,32H4V5c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1V32z"/>
+	<path class="cubies_zeven" d="M6,4H5C4.448,4,4,4.448,4,5v27h1V5C5,4.448,5.448,4,6,4z"/>
+	<path class="cubies_zevenentwintig" d="M14,8v6c0,0.552-0.448,1-1,1H9c-0.552,0-1-0.448-1-1V8c0-0.552,0.448-1,1-1h4
+		C13.552,7,14,7.448,14,8z M22,7h-4c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1V8C23,7.448,22.552,7,22,7z
+		 M22,19h-2c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1C23,19.448,22.552,19,22,19z"/>
+	<path class="cubies_eenentwintig" d="M10,15H9c-0.552,0-1-0.448-1-1V8c0-0.552,0.448-1,1-1h1C9.448,7,9,7.448,9,8v6
+		C9,14.552,9.448,15,10,15z M18,14V8c0-0.552,0.448-1,1-1h-1c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1h1
+		C18.448,15,18,14.552,18,14z"/>
+	<path class="cubies_achtentwintig" d="M21,19h-1c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h1c0.552,0,1-0.448,1-1
+		C22,19.448,21.552,19,21,19z"/>
+</g>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>female</title>
+
+<g id="female">
+
+<circle cx="27" cy="36" r="23" style="fill:#e5efef"/>
+
+<line x1="44" y1="38" x2="38" y2="38" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="44" y1="42" x2="36" y2="42" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M42,45.045,35.969,42.3c.008-.1.031-.2.031-.3V40H28v2c0,.1.023.2.031.3l-8.587,3.9a9.184,9.184,0,0,0-3.687,3.085A9.486,9.486,0,0,0,14,54.775V63H42Z" style="fill:#fc8c29;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44.556,46.207,42,45.045V63h8V54.775a9.483,9.483,0,0,0-2-5.809A9.168,9.168,0,0,0,44.556,46.207Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="21" y1="63" x2="21" y2="58" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M19.444,46.207,22,45.045V63H14V54.775a9.483,9.483,0,0,1,2-5.809A9.168,9.168,0,0,1,19.444,46.207Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="42" y1="63" x2="42" y2="58" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="6.5" cy="6.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="53.5" cy="21.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="61.5" cy="18.5" r="1.132" style="fill:#4c241d"/>
+
+<circle cx="45.5" cy="4.5" r="1.132" style="fill:#4c241d"/>
+
+<circle cx="5.5" cy="31.5" r="1.132" style="fill:#4c241d"/>
+
+<circle cx="15.5" cy="4.5" r="1.132" style="fill:#4c241d"/>
+
+<line x1="60.837" y1="5.663" x2="57.163" y2="9.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="57.163" y1="5.663" x2="60.837" y2="9.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10.837" y1="18.663" x2="7.163" y2="22.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="7.163" y1="18.663" x2="10.837" y2="22.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33,55.993a18.046,18.046,0,0,0,17.158-21.65L47,18.885A14.752,14.752,0,0,0,33.16,4.015,14.475,14.475,0,0,0,21.07,9.578a13.923,13.923,0,0,0-2.475,5.3A17.947,17.947,0,0,0,18,18.5L14.79,34.378A18.055,18.055,0,0,0,24.905,54.345" style="fill:#fc8c29;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20,23v6c0,6.627,8,12,12.5,12S45,35.627,45,29V23Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29,48H23.925A3.925,3.925,0,0,1,20,44.075v-1.15A3.925,3.925,0,0,1,23.925,39h16.15A3.925,3.925,0,0,1,44,42.925" style="fill:#fc8c29;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.483,34.341a2,2,0,0,1-2.8.161" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="37" cy="29" r="1" style="fill:#4c241d"/>
+
+<circle cx="27" cy="29" r="1" style="fill:#4c241d"/>
+
+<path d="M23.319,18H41.681A4.319,4.319,0,0,1,46,22.319V23a0,0,0,0,1,0,0H19a0,0,0,0,1,0,0v-.681A4.319,4.319,0,0,1,23.319,18Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="45" x2="32" y2="50" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="36" y1="48" x2="36" y2="52" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="56" x2="33" y2="59" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

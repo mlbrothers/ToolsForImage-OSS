@@ -1,0 +1,191 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将WEBP转换为PNG图像。免费、快速、安全的在线WEBP到PNG转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线WEBP到PNG转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线WEBP到PNG转换器</h1>
+<p>轻松将您的WEBP图像转换为PNG格式。上传一个webp图像，我们将为您转换为PNG格式。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是WEBP到PNG的转换？</h2>
+        <p>WEBP到PNG的转换是将图像从WEBP格式转换为PNG格式的过程。虽然WEBP提供了出色的压缩和质量，但PNG是一种无损格式，能保持图像清晰度并支持透明度。此转换对于需要高质量图像而不丢失细节的用户或需要PNG格式的特定应用程序至关重要。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将WEBP转换为PNG？</h2>
+        <p>将WEBP图像转换为PNG有几个原因：</p>
+        <ul>
+            <li><strong>无损质量：</strong>PNG格式保留所有图像细节，无压缩损失，适合用于图形和带有文字的图像。</li>
+            <li><strong>支持透明度：</strong>PNG支持透明背景，对于徽标、图标和叠加层非常有用。</li>
+            <li><strong>更广泛的兼容性：</strong>PNG在各种应用程序和平台上得到广泛支持，确保您的图像轻松访问。</li>
+            <li><strong>适合图形：</strong>如果您处理的是需要高保真度和清晰度的图形，PNG是首选。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的WEBP到PNG转换器</h2>
+        <p>使用我们的WEBP到PNG转换工具既简单又快速。以下是操作步骤：</p>
+        <ul>
+            <li>点击“上传WEBP文件”按钮，选择您想要转换的WEBP图像。</li>
+            <li>上传后，工具将自动将图像转换为PNG格式。</li>
+            <li>转换完成后，点击“下载PNG”将新转换的PNG图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种WEBP图像，确保转换过程流畅有效。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的WEBP到PNG转换器的好处</h2>
+        <p>以下是使用我们转换工具的几个优势：</p>
+        <ul>
+            <li><strong>快速简便：</strong>仅需几次点击即可将您的WEBP图像转换为PNG，节省您的时间。</li>
+            <li><strong>无质量损失：</strong>在转换过程中，享受高质量的PNG图像，不会丢失任何细节。</li>
+            <li><strong>免费且可访问：</strong>我们的工具是在线提供的，免费使用，无需下载或安装。</li>
+            <li><strong>用户友好的界面：</strong>工具设计简便，适合每个人使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>WEBP到PNG转换的常见用途</h2>
+        <p>将WEBP转换为PNG在不同的场景中非常有用：</p>
+        <ul>
+            <li><strong>网页设计：</strong>用于需要透明背景的网页设计项目。</li>
+            <li><strong>平面设计：</strong>将徽标和图形保存为PNG格式，确保清晰度和细节。</li>
+            <li><strong>图像编辑：</strong>在支持无损格式的编辑软件中使用PNG图像。</li>
+            <li><strong>社交媒体：</strong>在社交平台上分享高质量的图像，保持细节不丢失。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将WEBP转换为PNG如何帮助您</h2>
+        <p>将WEBP图像转换为PNG格式可以增强可用性和共享。以下是几个优点：</p>
+        <ul>
+            <li><strong>改善图像质量：</strong>PNG图像保留所有视觉细节，非常适合高质量的项目。</li>
+            <li><strong>透明度的灵活性：</strong>PNG的透明功能使得设计更加多样化，包括叠加和水印。</li>
+            <li><strong>轻松共享：</strong>PNG文件与大多数平台兼容，确保无缝共享和访问。</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

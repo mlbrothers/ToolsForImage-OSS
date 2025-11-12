@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ ICO को WebP छवियों में आसानी से कनवर्ट करें। मुफ्त ऑनलाइन ICO से WebP कनवर्टर।">
+{% endblock %}
+
+{% block title %}ICO को WebP ऑनलाइन कनवर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त ICO से WebP कनवर्ज़न टूल</h1>
+<p>अपने ICO छवियों को WebP फॉर्मेट में आसानी से कनवर्ट करें। एक ICO छवि अपलोड करें और हम इसे आपके लिए WebP में कनवर्ट करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>ICO से WebP कनवर्ज़न क्या है?</h2>
+        <p>ICO से WebP कनवर्ज़न का अर्थ है ICO फॉर्मेट की छवियों को WebP फॉर्मेट में बदलना। WebP एक आधुनिक छवि फॉर्मेट है जिसे Google द्वारा विकसित किया गया है जो कई अन्य फॉर्मेट की तुलना में बेहतर संकुचन और गुणवत्ता प्रदान करता है। यह कनवर्ज़न तब उपयोगी है जब आपको उन संदर्भों में आइकन छवियों का उपयोग करना हो जहाँ WebP को प्राथमिकता दी जाती है या इसकी आवश्यकता होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO को WebP में कनवर्ट करने के फायदे क्या हैं?</h2>
+        <p>ICO छवियों को WebP में कनवर्ट करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>छोटा फ़ाइल आकार:</strong> WebP कई अन्य फॉर्मेट की तुलना में बेहतर संकुचन प्रदान करता है, जिससे फ़ाइल का आकार छोटा होता है।</li>
+            <li><strong>तेज लोडिंग समय:</strong> छोटे फ़ाइल आकार तेजी से लोडिंग समय की ओर ले जाते हैं, जो विशेष रूप से वेब अनुप्रयोगों के लिए महत्वपूर्ण है।</li>
+            <li><strong>गुणवत्ता बनाए रखना:</strong> WebP कम फ़ाइल आकार में भी उच्च छवि गुणवत्ता बनाए रखता है।</li>
+            <li><strong>पारदर्शिता समर्थन:</strong> PNG की तरह, WebP एलीफ चैनल पारदर्शिता का समर्थन करता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे ICO से WebP कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे ICO से WebP कनवर्ज़न टूल का उपयोग करना सरल और तेज़ है। यह इस तरह काम करता है:</p>
+        <ul>
+            <li>ICO छवि को चुनने के लिए "ICO फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>एक बार जब आपकी छवि अपलोड हो जाए, तो हमारा टूल स्वचालित रूप से इसे WebP फॉर्मेट में कनवर्ट करना शुरू कर देगा।</li>
+            <li>कनवर्ज़न पूरा होने के बाद, "WebP डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई छवि फ़ाइल अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न ICO फ़ाइलों का समर्थन करता है, जिससे सभी उपयोगकर्ताओं के लिए एक सुगम और प्रभावी कनवर्ज़न अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे ICO से WebP कनवर्टर का उपयोग करने के फायदे</h2>
+        <p>हमारे कनवर्ज़न टूल का उपयोग करने के कुछ लाभ यहाँ दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> केवल कुछ क्लिक के साथ अपने ICO छवियों को WebP में जल्दी से कनवर्ट करें।</li>
+            <li><strong>उच्च गुणवत्ता:</strong> कनवर्ज़न प्रक्रिया के दौरान छवि गुणवत्ता बनाए रखें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारा टूल ऑनलाइन मुफ्त में उपयोग करें, बिना किसी डाउनलोड या इंस्टॉलेशन की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> हमारा टूल सभी के लिए सरल और नेविगेट करने में आसान है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO से WebP कनवर्ज़न के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ सामान्य स्थितियाँ दी गई हैं जहाँ ICO को WebP में कनवर्ट करना सहायक हो सकता है:</p>
+        <ul>
+            <li><strong>वेब विकास:</strong> उन वेब परियोजनाओं में आइकन छवियों का उपयोग करें जहाँ WebP को इसके बेहतर संकुचन के लिए प्राथमिकता दी जाती है।</li>
+            <li><strong>मोबाइल ऐप्स:</strong> डेटा उपयोग को कम करने और लोड समय में सुधार करने के लिए मोबाइल अनुप्रयोगों में WebP छवियों का उपयोग करें।</li>
+            <li><strong>ई-कॉमर्स:</strong> उत्पाद छवियों और आइकों को तेज़ पृष्ठ लोडिंग और बेहतर उपयोगकर्ता अनुभव के लिए अनुकूलित करें।</li>
+            <li><strong>डिजिटल मार्केटिंग:</strong> ऑनलाइन विज्ञापनों में तेज़ लोडिंग और बेहतर प्रदर्शन के लिए WebP छवियों का उपयोग करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO को WebP में कनवर्ट करने से कैसे मदद मिलती है</h2>
+        <p>अपने ICO छवियों को WebP में कनवर्ट करना विभिन्न संदर्भों में उनकी उपयोगिता को बढ़ा सकता है। यह इस तरह मदद करता है:</p>
+        <ul>
+            <li><strong>वेबसाइट प्रदर्शन में सुधार:</strong> WebP छवियाँ तेजी से लोड होती हैं, जिससे वेबसाइट की गति में सुधार होता है।</li>
+            <li><strong>बैंडविड्थ उपयोग में कमी:</strong> छोटे फ़ाइल आकार का अर्थ है कम डेटा ट्रांसफर, जो उपयोगकर्ताओं और सर्वरों के लिए फायदेमंद है।</li>
+            <li><strong>बेहतर उपयोगकर्ता अनुभव:</strong> तेज़ लोडिंग समय और उच्च गुणवत्ता वाली छवियाँ बेहतर उपयोगकर्ता अनुभव में योगदान करती हैं।</li>
+            <li><strong>SEO के लाभ:</strong> तेज़ वेबसाइटें खोज इंजन परिणामों में बेहतर रैंक करती हैं।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

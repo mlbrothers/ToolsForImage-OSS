@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>no-pork</title>
+
+<g id="no-pork">
+
+<circle cx="42.5" cy="23.5" r="21.5" style="fill:#e5efef"/>
+
+<line x1="27.837" y1="10.663" x2="24.163" y2="14.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24.163" y1="10.663" x2="27.837" y2="14.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="6" cy="57" r="1" style="fill:#4c241d"/>
+
+<circle cx="56" cy="9" r="1" style="fill:#4c241d"/>
+
+<path d="M51,29a14.193,14.193,0,0,0-6-6.3V16a8.686,8.686,0,0,0-8,5H26A13,13,0,0,0,13,34v2a12.992,12.992,0,0,0,7,11.526V52h6l1-2c.424.038,10,0,10,0l1,2h5V48c4.489-1.758,8.107-5.143,9-10l4-2V29Z" style="fill:#f4aeab;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="43.5" cy="28.5" r="1.5" style="fill:#4c241d"/>
+
+<path d="M22.131,45.036a10.322,10.322,0,0,1-5.743-10.591" style="fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13,30H8a2,2,0,0,1-2-2V27a2,2,0,0,1,2-2H8a2,2,0,0,1,2,2v6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10.518" y1="12.518" x2="51.481" y2="53.481" style="fill:none;stroke:#f53e28;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="32" cy="32" r="29" style="fill:none;stroke:#f53e28;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

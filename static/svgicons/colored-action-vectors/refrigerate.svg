@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_tien{fill:#C3CC6A;}
+	.st0{fill:#A3AEB5;}
+	.st1{fill:#CC4121;}
+	.st2{fill:#FFFAEE;}
+	.st3{fill:#6F9B45;}
+	.st4{fill:#DBD2C1;}
+	.st5{fill:#3D3935;}
+	.st6{fill:#EAD13F;}
+	.st7{fill:#8D3E93;}
+	.st8{fill:#BF63C1;}
+	.st9{fill:#E0A838;}
+</style>
+<g>
+	<path class="avocado_tien" d="M7.5,30.5V3c0-1.378,1.121-2.5,2.5-2.5h12c1.379,0,2.5,1.122,2.5,2.5v27.5H7.5z"/>
+	<g>
+		<g>
+			<path class="avocado_een" d="M25,3c0-1.657-1.343-3-3-3H10C8.343,0,7,1.343,7,3v28h2v1h2v-1h10v1h2v-1h2V3z M10,1h12
+				c1.103,0,2,0.897,2,2v9H8V3C8,1.897,8.897,1,10,1z M8,30V13h16v17H8z"/>
+			<rect x="18" y="15" class="avocado_een" width="4" height="1"/>
+			<rect x="18" y="9" class="avocado_een" width="4" height="1"/>
+		</g>
+		<g>
+			<path class="avocado_een" d="M25,3c0-1.657-1.343-3-3-3H10C8.343,0,7,1.343,7,3v28h2v1h2v-1h10v1h2v-1h2V3z M10,1h12
+				c1.103,0,2,0.897,2,2v9H8V3C8,1.897,8.897,1,10,1z M8,30V13h16v17H8z"/>
+			<rect x="18" y="15" class="avocado_een" width="4" height="1"/>
+			<rect x="18" y="9" class="avocado_een" width="4" height="1"/>
+		</g>
+	</g>
+</g>
+</svg>

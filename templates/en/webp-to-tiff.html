@@ -1,0 +1,192 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert WEBP to TIFF images with ToolsForImage. Free, fast, and secure online WEBP to TIFF converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online WEBP to TIFF converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online WEBP to TIFF Converter</h1>
+<p>Easily convert your images from WEBP to TIFF format. Upload a webp image and we'll convert it to TIFF for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is WebP to TIFF Conversion?</h2>
+        <p>WebP to TIFF conversion is the process of changing images from WebP format to TIFF format. WebP is known for its efficient compression and quality, while TIFF is a high-quality image format used primarily in professional photography and graphic design. Converting WebP to TIFF allows you to maintain high resolution and detail in your images, making it perfect for archival purposes and high-quality prints.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert WebP to TIFF?</h2>
+        <p>There are several reasons to convert WebP images to TIFF:</p>
+        <ul>
+            <li><strong>High-Quality Images:</strong> TIFF is a lossless format, meaning it retains all the details of your images without compression artifacts.</li>
+            <li><strong>Professional Use:</strong> TIFF is widely used in printing and publishing, making it ideal for professional photographers and designers.</li>
+            <li><strong>Flexibility:</strong> TIFF supports various color spaces and is compatible with many editing and printing applications.</li>
+            <li><strong>Archiving:</strong> Use TIFF for long-term storage of images due to its high quality and ability to handle large file sizes.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our WebP to TIFF Converter</h2>
+        <p>Our WebP to TIFF conversion tool is easy to use. Follow these simple steps:</p>
+        <ul>
+            <li>Click the "Upload WebP File" button to select the WebP image you want to convert.</li>
+            <li>Once uploaded, our tool will automatically convert your image to TIFF format.</li>
+            <li>After the conversion is complete, click "Download TIFF" to save your new TIFF image to your device.</li>
+        </ul>
+        <p>Our converter supports a variety of WebP images, ensuring a smooth and efficient conversion process.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our WebP to TIFF Converter</h2>
+        <p>Using our conversion tool offers numerous advantages:</p>
+        <ul>
+            <li><strong>Fast and Convenient:</strong> Convert your WebP images to TIFF in just a few clicks, making it quick and hassle-free.</li>
+            <li><strong>No Quality Loss:</strong> Enjoy the highest quality TIFF images with no loss of detail during the conversion.</li>
+            <li><strong>Free and Accessible:</strong> Our tool is available online for free, requiring no downloads or installations.</li>
+            <li><strong>User-Friendly Design:</strong> Our easy-to-navigate interface makes the conversion process straightforward for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for WebP to TIFF Conversion</h2>
+        <p>Converting WebP to TIFF can be helpful in various scenarios:</p>
+        <ul>
+            <li><strong>Photography:</strong> Preserve high-resolution images for professional use and printing.</li>
+            <li><strong>Graphic Design:</strong> Create high-quality images for brochures, posters, and other marketing materials.</li>
+            <li><strong>Archiving:</strong> Store images in a lossless format for long-term preservation.</li>
+            <li><strong>Artwork and Illustration:</strong> Use TIFF for illustrations that require detailed reproduction.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting WebP to TIFF Can Help You</h2>
+        <p>Converting WebP images to TIFF format can greatly enhance usability and quality. Here are some ways it can help:</p>
+        <ul>
+            <li><strong>Improved Image Quality:</strong> TIFF retains all image details, making it suitable for high-quality prints and professional use.</li>
+            <li><strong>Flexibility in Editing:</strong> TIFF files are widely supported by image editing software, allowing for easier modifications.</li>
+            <li><strong>Ideal for Archival:</strong> TIFF’s lossless nature makes it perfect for long-term storage of important images.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

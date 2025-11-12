@@ -1,0 +1,191 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将TIFF图像转换为BMP格式。免费的、快速的、安全的在线TIFF到BMP转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线TIFF到BMP转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线TIFF到BMP转换器</h1>
+<p>轻松将您的图像从TIFF格式转换为BMP格式。上传TIFF图像，我们将为您将其转换为BMP格式。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是TIFF到BMP转换？</h2>
+        <p>TIFF到BMP转换是将图像文件从TIFF格式转换为BMP格式的过程。TIFF（标记图像文件格式）以其高质量著称，通常用于专业摄影和图形设计。而BMP（位图）是一种简单的图像格式，提供与各种应用程序的兼容性。将TIFF图像转换为BMP可以帮助您在更多通用的环境中使用图像，同时保持其质量。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将TIFF转换为BMP？</h2>
+        <p>将TIFF图像转换为BMP有多个原因：</p>
+        <ul>
+            <li><strong>更广泛的兼容性：</strong>BMP文件在许多软件和平台上得到广泛支持，使其在不同的应用程序中更易于使用。</li>
+            <li><strong>简单性：</strong>BMP文件直接且不需要复杂的解码，这对于快速编辑非常有益。</li>
+            <li><strong>高质量：</strong>BMP格式保持TIFF图像的原始质量，确保您的视觉效果看起来非常棒。</li>
+            <li><strong>无压缩：</strong>BMP格式是无压缩的，这意味着它保留所有图像细节，而不会丢失信息。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的TIFF到BMP转换器</h2>
+        <p>我们的TIFF到BMP转换工具简单易用且高效。以下是如何转换图像：</p>
+        <ul>
+            <li>点击“上传TIFF文件”按钮选择您要转换的TIFF图像。</li>
+            <li>上传后，我们的工具将自动开始将图像转换为BMP格式。</li>
+            <li>转换完成后，点击“下载BMP”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种TIFF文件，确保为所有用户提供无缝体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的TIFF到BMP转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需几次点击即可快速将您的TIFF图像转换为BMP。</li>
+            <li><strong>无质量损失：</strong>在转换过程中，确保没有质量下降，您将获得高质量的结果。</li>
+            <li><strong>免费且可访问：</strong>在线免费使用我们的工具，无需安装任何软件。</li>
+            <li><strong>用户友好的界面：</strong>我们的工具设计直观且易于操作，确保平稳的体验。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF到BMP转换的常见用途</h2>
+        <p>以下是将TIFF转换为BMP的几种场景：</p>
+        <ul>
+            <li><strong>图形设计：</strong>将BMP图像用于快速编辑或当使用仅支持BMP格式的软件时。</li>
+            <li><strong>摄影：</strong>转换高分辨率TIFF图像，方便查看或分享，且不会损失质量。</li>
+            <li><strong>Web应用程序：</strong>将BMP图像嵌入需要兼容性的Web应用程序中。</li>
+            <li><strong>文档创建：</strong>在文档或演示文稿中使用BMP文件，在这些场景中，简易性和兼容性至关重要。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将TIFF转换为BMP的帮助</h2>
+        <p>将您的TIFF图像转换为BMP可以增强其可用性和性能。以下是一些帮助：</p>
+        <ul>
+            <li><strong>增加兼容性：</strong>BMP文件可以轻松地在各种应用程序中打开和编辑，使它们更具通用性。</li>
+            <li><strong>简化编辑：</strong>BMP的无压缩性质使图像的操作和编辑更加容易。</li>
+            <li><strong>保留质量：</strong>转换为BMP可确保TIFF图像的高质量细节保持完整。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

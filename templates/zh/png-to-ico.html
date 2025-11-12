@@ -1,0 +1,193 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="轻松将PNG图像转换为ICO图像，使用ToolsForImage。免费的、快速的、安全的在线PNG到ICO转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线PNG到ICO转换器 | ToolsForImage | 免费的在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线PNG到ICO转换器</h1>
+<p>轻松将您的PNG图像转换为ICO格式。上传PNG图像，我们将为您转换为ICO格式。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是PNG到ICO转换？</h2>
+        <p>PNG到ICO转换是将PNG格式的图像文件转换为ICO格式的过程。ICO是用于Windows操作系统中图标的文件格式。此转换在您需要为Windows应用程序、网站或网站图标（favicon）创建图标时非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将PNG转换为ICO？</h2>
+        <p>将PNG图像转换为ICO有以下几个理由：</p>
+        <ul>
+            <li><strong>创建Windows图标：</strong>ICO是Windows应用程序图标的标准格式。</li>
+            <li><strong>网站图标：</strong>ICO通常用于网站的favicon，浏览器标签页中显示的小图标。</li>
+            <li><strong>多种尺寸：</strong>ICO文件可以在一个文件中包含多个图像尺寸，适用于不同的显示场景。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的PNG到ICO转换器</h2>
+        <p>使用我们的PNG到ICO转换工具既简单又快速。以下是操作步骤：</p>
+        <ul>
+            <li>点击“上传PNG文件”按钮，选择您要转换的PNG图像。</li>
+            <li>上传图像后，我们的工具将自动开始将其转换为ICO格式。</li>
+            <li>转换完成后，点击“下载ICO”按钮，将新的图标文件保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种PNG文件，确保为所有用户提供流畅、高效的转换体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的PNG到ICO转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需几次点击即可快速将PNG图像转换为ICO格式。</li>
+            <li><strong>高质量：</strong>在转换过程中保持图像质量。</li>
+            <li><strong>免费且可访问：</strong>直接在您的浏览器中使用我们的在线工具，无需下载或安装任何软件。</li>
+            <li><strong>用户友好的界面：</strong>我们的工具设计直观，任何人都可以轻松使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG到ICO转换的常见用途</h2>
+        <p>以下是一些在特定情况下转换PNG为ICO的常见用途：</p>
+        <ul>
+            <li><strong>应用程序开发：</strong>为Windows应用程序创建图标。</li>
+            <li><strong>网页设计：</strong>为网站生成favicon，用于浏览器标签和书签。</li>
+            <li><strong>自定义文件夹图标：</strong>为Windows文件夹创建个性化图标。</li>
+            <li><strong>桌面快捷方式：</strong>为桌面快捷方式设计自定义图标。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将PNG转换为ICO如何帮助您</h2>
+        <p>将PNG图像转换为ICO可以增强其在特定上下文中的可用性。以下是一些好处：</p>
+        <ul>
+            <li><strong>Windows兼容性：</strong>ICO是Windows的原生图标格式，确保图标正确显示。</li>
+            <li><strong>网页标准：</strong>ICO在不同浏览器中广泛支持，作为网站的favicon格式。</li>
+            <li><strong>多种分辨率：</strong>ICO文件可以存储多个图像尺寸，适用于不同的显示场景。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'ico';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

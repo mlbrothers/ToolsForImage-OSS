@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_negen{fill:#6F9B45;}
+	.avocado_twaalf{fill:#248EBC;}
+	.avocado_dertien{fill:#8D3E93;}
+	.avocado_zeventien{fill:#CC4121;}
+	.avocado_achttien{fill:#D1712A;}
+	.avocado_twintig{fill:#EAD13F;}
+	.st0{fill:#716558;}
+	.st1{fill:#FFFAEE;}
+	.st2{fill:#3D3935;}
+	.st3{fill:#E0A838;}
+	.st4{fill:#DBD2C1;}
+	.st5{fill:#A3AEB5;}
+	.st6{fill:#788287;}
+	.st7{fill:#AF9480;}
+	.st8{fill:#C3CC6A;}
+	.st9{fill:#231F20;}
+	.st10{fill:#EAD13F;}
+</style>
+<g>
+	<g>
+		<path class="avocado_dertien" d="M16.5,30.5V26c0-5.238,4.262-9.5,9.5-9.5h4.5v3H26c-3.584,0-6.5,2.916-6.5,6.5v4.5H16.5z"/>
+	</g>
+	<path class="avocado_twaalf" d="M13.5,30.5V26c0-6.893,5.607-12.5,12.5-12.5h4.5v3H26c-5.238,0-9.5,4.262-9.5,9.5v4.5H13.5z"/>
+	<path class="avocado_negen" d="M10.5,30.5V26c0-8.547,6.953-15.5,15.5-15.5h4.5v3H26c-6.893,0-12.5,5.607-12.5,12.5v4.5H10.5z"/>
+	<g>
+		<path class="avocado_twintig" d="M7.5,30.5V26C7.5,15.799,15.799,7.5,26,7.5h4.5v3H26c-8.547,0-15.5,6.953-15.5,15.5v4.5H7.5z"/>
+	</g>
+	<g>
+		<path class="avocado_achttien" d="M4.5,30.5V26C4.5,14.145,14.145,4.5,26,4.5h4.5v3H26C15.799,7.5,7.5,15.799,7.5,26v4.5H4.5z"/>
+	</g>
+	<path class="avocado_zeventien" d="M1.5,30.5V26C1.5,12.491,12.491,1.5,26,1.5h4.5v3H26C14.145,4.5,4.5,14.145,4.5,26v4.5H1.5z"/>
+	<path class="avocado_een" d="M26,1C12.215,1,1,12.215,1,26v5h19v-5c0-3.309,2.691-6,6-6h5V1H26z M30,19h-4c-3.86,0-7,3.14-7,7v4h-2
+		v-4c0-4.962,4.038-9,9-9h4V19z M30,16h-4c-5.514,0-10,4.486-10,10v4h-2v-4c0-6.617,5.383-12,12-12h4V16z M30,13h-4
+		c-7.168,0-13,5.832-13,13v4h-2v-4c0-8.271,6.729-15,15-15h4V13z M30,10h-4c-8.822,0-16,7.178-16,16v4H8v-4c0-9.925,8.075-18,18-18
+		h4V10z M30,7h-4C15.523,7,7,15.523,7,26v4H5v-4C5,14.42,14.42,5,26,5h4V7z M26,4C13.869,4,4,13.869,4,26v4H2v-4
+		C2,12.767,12.767,2,26,2h4v2H26z"/>
+</g>
+</svg>

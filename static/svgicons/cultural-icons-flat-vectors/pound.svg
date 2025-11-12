@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>pound</title>
+
+<g id="pound">
+
+<circle cx="34.5" cy="25.5" r="21.5" style="fill:#eaeaea"/>
+
+<circle cx="39" cy="14" r="2" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="40.129" y1="55" x2="37.181" y2="57.948" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="37.181" y1="55" x2="40.129" y2="57.948" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="48" cy="60" r="1" style="fill:#4c241d"/>
+
+<rect x="20" y="27" width="40" height="24" style="fill:#9dc1e4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="4" y="27" width="16" height="24" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="52.103 34.889 50 31 47.897 34.889 45 32 45 39 55 39 55 32 52.103 34.889" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M14.737,34.007A2,2,0,0,0,13,33h-.706A3.294,3.294,0,0,0,9,36.294l.454,2.591C11,42,8.656,43.031,8,45h8V43" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="39" x2="12" y2="39" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M45,39H55a0,0,0,0,1,0,0v3a5,5,0,0,1-5,5h0a5,5,0,0,1-5-5V39A0,0,0,0,1,45,39Z" style="fill:#ffded5;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27,31H24v2h1.5A1.5,1.5,0,0,1,27,34.5h0A1.5,1.5,0,0,1,25.5,36H24" style="fill:#9dc1e4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="29" y="31" width="3" height="5" rx="1.5" ry="1.5" style="fill:#9dc1e4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="4" y="24" width="56" height="3" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="4" y="21" width="56" height="3" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="22" y1="2" x2="22" y2="4" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="22" y1="8" x2="22" y2="10" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="18" y1="6" x2="20" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24" y1="6" x2="26" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

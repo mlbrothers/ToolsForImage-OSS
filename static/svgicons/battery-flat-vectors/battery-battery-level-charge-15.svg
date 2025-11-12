@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g id="Battery20"/>
+
+<g id="Battery19"/>
+
+<g id="Battery18"/>
+
+<g id="Battery17"/>
+
+<g id="Battery16"/>
+
+<g id="Battery15"/>
+
+<g id="Battery14"/>
+
+<g id="Battery13"/>
+
+<g id="Battery12"/>
+
+<g id="Battery11"/>
+
+<g id="Battery10">
+
+<g>
+
+<g>
+
+<path d="M15,3v3c0,0.55-0.45,1-1,1h-4C9.45,7,9,6.55,9,6V3c0-0.55,0.45-1,1-1h4C14.55,2,15,2.45,15,3z" fill="#C3464B"/>
+
+</g>
+
+<g>
+
+<path d="M18,6v15c0,0.55-0.45,1-1,1H7c-0.55,0-1-0.45-1-1V6c0-0.55,0.45-1,1-1h10C17.55,5,18,5.45,18,6z" fill="#E05757"/>
+
+</g>
+
+</g>
+
+<path d="M13.4141,14l1.293-1.293c0.3906-0.3906,0.3906-1.0234,0-1.4141s-1.0234-0.3906-1.4141,0L12,12.5859   l-1.293-1.293c-0.3906-0.3906-1.0234-0.3906-1.4141,0s-0.3906,1.0234,0,1.4141L10.5859,14l-1.293,1.293   c-0.3906,0.3906-0.3906,1.0234,0,1.4141C9.4883,16.9023,9.7441,17,10,17s0.5117-0.0977,0.707-0.293L12,15.4141l1.293,1.293   C13.4883,16.9023,13.7441,17,14,17s0.5117-0.0977,0.707-0.293c0.3906-0.3906,0.3906-1.0234,0-1.4141L13.4141,14z" fill="#C3464B"/>
+
+</g>
+
+<g id="Battery09"/>
+
+<g id="Battery08"/>
+
+<g id="Battery07"/>
+
+<g id="Battery06"/>
+
+<g id="Battery05"/>
+
+<g id="Battery04"/>
+
+<g id="Battery03"/>
+
+<g id="Battery02"/>
+
+<g id="Battery01"/>
+
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g id="horse">
+	<rect x="384" y="102.044" style="fill:#110302;" width="25.964" height="25.956"/>
+	<path style="fill:#993618;" d="M435,128v-25.6V77h-25V51h-26h-26v26h-25v25h-26v26h-25v26h-26v25h-26v26h-25.2H179v-26h-25.4H128
+		h-26v26H77v25H51v26v25.6v25.6V333h26v-25.8V282h25v25.2v25.6v25.6V384v25.6v25.6V461h26v-25.8v-25.6V384v-26h25.6h25.6h25.6h25.6
+		H256v26v25.6v25.6V461h26v-25.8v-25.6V384v-26h25.2H333v-25h25v-25.8v-25.6V256h26v-25.6v-25.6V179h25.6h25.6H461v-25.4V128H435z
+		 M410,128h-26v-26h26V128z"/>
+	<g>
+		<polygon style="fill:#7C2909;" points="154,384 154,409.6 154,435.2 154,461 179,461 179,435.2 179,409.6 179,384 179,358 
+			154,358 		"/>
+		<polygon style="fill:#7C2909;" points="307,358 307,384 307,409.6 307,435.2 307,461 333,461 333,435.2 333,409.6 333,384 
+			333,358 		"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

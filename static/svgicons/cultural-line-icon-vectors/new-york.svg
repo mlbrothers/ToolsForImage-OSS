@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>new_york</title>
+
+<g id="new_york">
+
+<path d="M20.6,6.5c0-1.048.761-3.5,1.7-3.5S24,5.452,24,6.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="15" x2="31" y2="12" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32.937" y1="15.063" x2="34" y2="13" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29.062" y1="15.062" x2="28" y2="13" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M24,7H21.571A1.572,1.572,0,0,0,20,8.573h0a1.572,1.572,0,0,0,.157.684L21,11v5.784a7.62,7.62,0,0,0,1.189,4.086l2.19,3.442v3.862L26,32.036v7.723L25,41.69V61H37.9V33.966h.6a3.5,3.5,0,0,0,2.328-.885h0A3.5,3.5,0,0,0,42,30.461v-.356L44,27l-2.242-2.688L37.9,28.174l-1.067-2.135a3.124,3.124,0,0,0-2.8-1.727h0V17.427A2.426,2.426,0,0,0,31.607,15h-1.18A2.426,2.426,0,0,0,28,17.427v6.885L24,18Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="25" y1="42" x2="33.798" y2="33.27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="34.034 24.312 34 47 37 47" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="37" y1="48" x2="25" y2="57" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24.379" y1="28.174" x2="28.241" y2="24.312" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29.75,15h2.535a1.75,1.75,0,0,1,1.75,1.75v2.735a2.9,2.9,0,0,1-2.9,2.9H30.9a2.9,2.9,0,0,1-2.9-2.9V16.75A1.75,1.75,0,0,1,29.75,15Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,55 @@
+<nav>
+    <div class="nav-logo"><a href="/" style="text-decoration: none; color: inherit;">ToolsForImage</a></div>
+    <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="/image-compression">Compress Image</a></li>
+        <li><a href="/image-resize">Resize Image</a></li>
+        <li><a href="/convert-image-format">Convert Image</a></li>
+        <li><a href="/image-rotate">Rotate Image</a></li>
+        <li class="more-menu">
+            <a href="javascript:void(0)" class="more-menu-button">More</a>
+            <div class="more-menu-content">
+                <a href="/image-watermarking">Watermark</a>
+                <a href="/image-effects">Image Effects</a>
+                <a href="/image-crop">Crop Image</a>
+                <a href="/blur-face">Blur Face</a>
+                <a href="/remove-background">Remove Background</a>
+                
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const moreMenuButton = document.querySelector('.more-menu-button');
+        const moreMenuContent = document.querySelector('.more-menu-content');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        moreMenuButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            moreMenuContent.classList.toggle('show');
+        });
+
+        // Close the menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+            if (!moreMenuContent.contains(e.target) && !moreMenuButton.contains(e.target)) {
+                moreMenuContent.classList.remove('show');
+            }
+        });
+    });
+</script>

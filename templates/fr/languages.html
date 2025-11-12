@@ -1,0 +1,75 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Choose your preferred language for ToolsForImage - Access our image tools in English, Hindi, or French.">
+{% endblock %}
+
+{% block title %}Sélection de la langue | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Choisissez votre langue</h1>
+<p>Sélectionnez votre langue préférée pour utiliser ToolsForImage :</p>
+<div class="language-container">
+    <div class="language-box">
+        <a href="/{{ g.lang }}/en">English</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/hi">हिन्दी (Hindi)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/fr">Français (French)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/zh">中文 (Chinese)</a>
+    </div>
+    <div class="language-box">
+        <a href="{{ g.lang }}/es">Español (Spanish)</a>
+    </div>
+</div>
+
+
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .language-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .language-box {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-box a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    
+</style>
+{% endblock %}

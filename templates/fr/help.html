@@ -1,0 +1,121 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Obtenez de l'aide et du support pour ToolsForImage - Votre ressource complète pour la compression d'images, le redimensionnement, le recadrage, la conversion de format, la rotation, le filigrane, le flou des visages, et plus encore. Trouvez des réponses aux questions courantes et apprenez à utiliser efficacement nos outils d'amélioration d'images.">
+{% endblock %}
+
+{% block title %}Aide | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Centre d'Aide</h1>
+
+<div class="help-section">
+    <h2>Commencer</h2>
+    <p>Bienvenue sur ToolsForImage ! Voici comment commencer :</p>
+    <ol>
+        <li>1 - Choisissez l'outil dont vous avez besoin dans notre menu de navigation.</li>
+        <li>2 - Téléchargez votre image en utilisant l'interface fournie.</li>
+        <li>3 - Ajustez les paramètres si nécessaire.</li>
+        <li>4 - Traitez votre image et téléchargez le résultat.</li>
+    </ol>
+</div>
+
+<div class="help-section">
+    <h2>Questions Fréquemment Posées</h2>
+    <p>Pour une liste complète de FAQ, veuillez visiter notre <a href="/{{ g.lang }}/faq">page FAQ</a>.</p>
+</div>
+
+<div class="help-section">
+    <h2>Aide Spécifique aux Outils</h2>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">Compression d'Image</a> - Réduisez la taille du fichier tout en maintenant la qualité</li>
+        <li><a href="/{{ g.lang }}/image-resize">Redimensionnement d'Image</a> - Modifiez les dimensions de l'image</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">Conversion de Format</a> - Convertissez entre différents formats d'image</li>
+        <li><a href="/{{ g.lang }}/image-rotate">Rotation d'Image</a> - Faites pivoter ou retourner vos images</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">Filigrane</a> - Ajoutez des filigranes texte ou image</li>
+        <li><a href="/{{ g.lang }}/image-effects">Effets d'Image</a> - Appliquez divers filtres et effets</li>
+        <li><a href="/{{ g.lang }}/image-crop">Recadrage d'Image</a> - Découpez des portions de votre image</li>
+        <li><a href="/{{ g.lang }}/blur-face">Flou de Visage</a> - Détectez et floutez automatiquement les visages dans les images</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">Tous les outils</a></li>
+    </ul>
+</div>
+
+<div class="help-section">
+    <h2>Contactez le Support</h2>
+    <p>Si vous avez besoin d'une assistance supplémentaire, n'hésitez pas à contacter notre équipe de support à <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a>.</p>
+</div>
+
+
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .help-section {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color); /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        max-width: 1200px; /* Ensure the content stays within a manageable width */
+        margin: 0 auto; /* Center align the content */
+        border: var(--background-color) 3px solid; /* Use border similar to tools list */
+        font-weight: 400; /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s; /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .help-section a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .help-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block; /* Makes it inline and allows padding */
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        background-color: var(--box-color); /* Background color */
+        color: black; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+
+    
+</style>
+{% endblock %}

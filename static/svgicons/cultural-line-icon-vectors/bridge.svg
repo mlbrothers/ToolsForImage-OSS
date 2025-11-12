@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>bridge</title>
+
+<g id="bridge">
+
+<line x1="44.67" y1="54" x2="20.225" y2="54" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="58 16 58 14 58 11.333 53 6 48 11.333 48 14 48 16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="60 21.333 58 16 56 21.333 56 24 60 24 60 21.333" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="50 21.333 48 16 46 21.333 46 24 50 24 50 21.333" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M51,41.588V37.5A1.5,1.5,0,0,1,52.5,36h1A1.5,1.5,0,0,1,55,37.5v4.144" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="46" y="24" width="14" height="27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="45 56 45 51 61 51 61 61" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53" y1="17" x2="53" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="51" y1="28" x2="51" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="55" y1="28" x2="55" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="51" y1="46" x2="51" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="55" y1="46" x2="55" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="4 61 4 51 20 51 20 56" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="19.255" y1="24" x2="45.75" y2="24" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="45.75" y1="28" x2="19.255" y2="28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="38" y1="22" x2="38" y2="27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="27" y1="22" x2="27" y2="27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="19.255 45.861 30 40 30 43 19.592 50.57" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="45.75 45.864 35 40 35 43 45.408 50.569" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="34" cy="6" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="24" cy="8" r="1"/>
+
+<line x1="60" y1="33" x2="46" y2="33" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="46" y1="42" x2="60" y2="42" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="58" y1="14" x2="48" y2="14" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="17 16 17 14 17 11.333 12 6 7 11.333 7 14 7 16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="19 21.333 17 16 15 21.333 15 24 19 24 19 21.333" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="9 21.333 7 16 5 21.333 5 24 9 24 9 21.333" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M10,41.588V37.5A1.5,1.5,0,0,1,11.5,36h1A1.5,1.5,0,0,1,14,37.5v4.144" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="5" y="24" width="14" height="27" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="12" y1="17" x2="12" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10" y1="28" x2="10" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="14" y1="28" x2="14" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10" y1="46" x2="10" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="14" y1="46" x2="14" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="19" y1="33" x2="5" y2="33" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="5" y1="42" x2="19" y2="42" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="17" y1="14" x2="7" y2="14" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

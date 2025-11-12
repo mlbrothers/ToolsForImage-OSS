@@ -1,0 +1,195 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ PNG को WebP छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन PNG से WebP कनवर्टर।">
+{% endblock %}
+
+{% block title %}PNG से WebP ऑनलाइन परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त PNG से WebP रूपांतरण उपकरण</h1>
+<p>आसानी से अपने PNG चित्रों को WebP प्रारूप में परिवर्तित करें। एक PNG चित्र अपलोड करें और हम इसे आपके लिए WebP में परिवर्तित करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>PNG से WebP रूपांतरण क्या है?</h2>
+        <p>PNG से WebP रूपांतरण वह प्रक्रिया है जिसमें PNG प्रारूप के चित्र फ़ाइलों को WebP प्रारूप में परिवर्तित किया जाता है। WebP एक आधुनिक चित्र प्रारूप है जिसे Google द्वारा विकसित किया गया है, जो चित्रों के लिए बेहतर संपीड़न प्रदान करता है, जिसके परिणामस्वरूप गुणवत्ता को न खोते हुए छोटे फ़ाइल आकार मिलते हैं। PNG चित्रों को WebP में परिवर्तित करने से आपके चित्रों को वेब उपयोग के लिए ऑप्टिमाइज़ करने में मदद मिलती है, जिससे वे तेजी से लोड होते हैं और स्टोरेज स्पेस की बचत होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG को WebP में क्यों परिवर्तित करें?</h2>
+        <p>PNG चित्रों को WebP में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>छोटा फ़ाइल आकार:</strong> WebP चित्र अक्सर PNG फ़ाइलों की तुलना में काफी छोटे होते हैं, जिससे वेबसाइट लोडिंग समय में सुधार होता है।</li>
+            <li><strong>उच्च गुणवत्ता:</strong> WebP उच्च चित्र गुणवत्ता बनाए रखता है, यह सुनिश्चित करता है कि आपके दृश्य तेज और जीवंत रहें।</li>
+            <li><strong>पारदर्शिता का समर्थन:</strong> PNG की तरह, WebP पारदर्शिता का समर्थन करता है, जिससे यह ग्राफिक्स और लोगो के लिए आदर्श बनता है।</li>
+            <li><strong>वेब प्रदर्शन में सुधार:</strong> WebP का उपयोग करना वेबसाइट पर उपयोगकर्ता अनुभव को बेहतर बना सकता है, जिससे चित्र लोडिंग समय कम होता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे PNG से WebP कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे PNG से WebP रूपांतरण उपकरण का उपयोग करना सरल और तेज है। यहां बताया गया है कि कैसे:</p>
+        <ul>
+            <li>जिस PNG चित्र को आप परिवर्तित करना चाहते हैं, उसे चुनने के लिए "PNG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>एक बार जब आपका चित्र अपलोड हो जाता है, तो हमारा उपकरण स्वचालित रूप से इसे WebP प्रारूप में परिवर्तित करना शुरू कर देगा।</li>
+            <li>रूपांतरण पूरा होने के बाद, "WebP डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई छवि को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न PNG फ़ाइलों का समर्थन करता है, जिससे सभी उपयोगकर्ताओं के लिए प्रक्रिया सहज हो जाती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे PNG से WebP कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>यहां हमारे रूपांतरण उपकरण का उपयोग करने के कुछ फायदे हैं:</p>
+        <ul>
+            <li><strong>तेज़ और कुशल:</strong> अपने PNG चित्रों को तेजी से और आसानी से कुछ ही क्लिक में WebP में परिवर्तित करें।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> रूपांतरण प्रक्रिया के दौरान कोई हानि नहीं होने के साथ उच्च गुणवत्ता वाले परिणाम प्राप्त करें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> बिना किसी सॉफ़्टवेयर डाउनलोड करने की आवश्यकता के, हमारे उपकरण का उपयोग ऑनलाइन मुफ्त में करें।</li>
+            <li><strong>उपयोगकर्ता-अनुकूल इंटरफ़ेस:</strong> हमारा उपकरण सहज और नेविगेट करने में आसान डिज़ाइन किया गया है, जिससे अनुभव सुचारू होता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG से WebP रूपांतरण के सामान्य उपयोग</h2>
+        <p>यहां कुछ स्थितियाँ हैं जहां PNG को WebP में परिवर्तित करना फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>वेब डिज़ाइन:</strong> अपनी वेबसाइट पर WebP चित्रों का उपयोग करें ताकि प्रदर्शन और लोडिंग गति में सुधार हो सके।</li>
+            <li><strong>मोबाइल अनुप्रयोग:</strong> मोबाइल ऐप्स के लिए चित्रों को ऑप्टिमाइज़ करें ताकि तेजी से लोडिंग और बेहतर उपयोगकर्ता अनुभव सुनिश्चित हो सके।</li>
+            <li><strong>सोशल मीडिया:</strong> ऐसे चित्र साझा करें जो तेजी से लोड होते हैं और सोशल प्लेटफ़ॉर्म पर शानदार दिखते हैं।</li>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> ऐसे ग्राफिक्स और चित्र बनाएँ जो हल्के होते हुए भी गुणवत्ता बनाए रखते हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG को WebP में परिवर्तित करना कैसे मदद कर सकता है</h2>
+        <p>अपने PNG चित्रों को WebP में परिवर्तित करने से उनकी उपयोगिता और प्रदर्शन में सुधार हो सकता है। यहां बताया गया है कि कैसे:</p>
+        <ul>
+            <li><strong>तेज लोडिंग समय:</strong> छोटे WebP फ़ाइलें आपकी वेबसाइट को तेजी से लोड करने में मदद करती हैं, जिससे उपयोगकर्ता संतोष में सुधार होता है।</li>
+            <li><strong>संग्रहण क्षमता में सुधार:</strong> WebP का उपयोग करके अपने सर्वर पर चित्रों द्वारा लिए जाने वाले स्थान को कम करें।</li>
+            <li><strong>बेहतर संगतता:</strong> WebP अधिकांश आधुनिक ब्राउज़रों द्वारा समर्थित है, यह सुनिश्चित करता है कि आपकी चित्रें व्यापक दर्शकों द्वारा देखी जा सकें।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

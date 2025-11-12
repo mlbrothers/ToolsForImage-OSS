@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<circle cx="256" cy="256" fill="#65A0D6" r="164" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="none" points="   284.443,137.68 256,186.944 227.558,137.68  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="none" points="   227.557,379.983 256,330.719 284.442,379.983  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="none" points="   129.681,227.558 178.945,256.001 129.681,284.443  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="none" points="   388.48,284.443 339.216,256 388.48,227.558  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<circle cx="256" cy="256" fill="none" r="164" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<circle cx="256" cy="256" fill="none" r="20" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="256" x2="409" y1="420" y2="420"/>
+
+<polygon fill="#D9DCE1" points="   284.443,137.68 256,186.944 227.558,137.68  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="#D9DCE1" points="   227.557,379.983 256,330.719 284.442,379.983  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="#D9DCE1" points="   129.681,227.558 178.945,256.001 129.681,284.443  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="#D9DCE1" points="   388.48,284.443 339.216,256 388.48,227.558  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<circle cx="256" cy="256" fill="#D9DCE1" r="20" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="256" x2="409" y1="420" y2="420"/>
+
+</g>
+
+</svg>

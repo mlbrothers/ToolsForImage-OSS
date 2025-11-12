@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>barcode</title>
+<path d="M29 6.031h-26c-1.104 0-2 0.896-2 2v16.938c0 1.104 0.896 2 2 2h26c1.104 0 2-0.896 2-2v-16.938c0-1.104-0.896-2-2-2zM6 23.969h-2v-14.938h2v14.938zM8 22.031h-1v-13h1v13zM11 22.031h-1v-13h1v13zM14 22.031h-2v-13h2v13zM16 22.031h-1v-13h1v13zM20 22.031h-2v-13h2v13zM22 22.031h-1v-13h1v13zM25 22.031h-1v-13h1v13zM28 23.969h-2v-14.938h2v14.938z"></path>
+</svg>

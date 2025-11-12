@@ -1,0 +1,124 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}关于我们 | ToolsForImage | 提供全面免费在线工具：模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage 提供免费的在线工具，用于转换、调整大小、裁剪、压缩和编辑图像。通过用户友好的工具，轻松处理 JPG、PNG 等多种格式的图像，满足您所有的编辑需求。">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="about-content">
+    <h1>关于 ToolsForImage</h1>
+    <p>欢迎来到 ToolsForImage，一个免费的在线图像工具套件。我们是您的一站式免费在线图像编辑工具目的地。使用高质量且易于使用的图像处理解决方案，完全在线、免费地编辑您的图像。</p>
+
+    <h2>我们的使命</h2>
+    <p>在 ToolsForImage，我们的使命是让专业级别的图像编辑对每个人都可及，并且完全免费且在线。通过完全基于浏览器的处理，无需安装任何软件。无论您是专业摄影师、平面设计师，还是仅仅想提升个人照片效果的人，我们都能满足您的需求。</p>
+
+    <h2>我们的服务</h2>
+    <p>我们提供多种图像编辑工具，包括：</p>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">图像压缩</a> - 减小文件大小，同时保持质量</li>
+        <li><a href="/{{ g.lang }}/image-resize">图像调整大小</a> - 根据需求调整图像尺寸</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">格式转换</a> - 在各种图像格式之间进行转换</li>
+        <li><a href="/{{ g.lang }}/image-rotate">图像旋转</a> - 轻松旋转和翻转图像</li>
+        <li><a href="/{{ g.lang }}/image-effects">图像效果</a> - 应用惊艳的滤镜和效果</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">水印添加</a> - 使用自定义水印保护您的图像</li>
+        <li><a href="/{{ g.lang }}/blur-face">人脸模糊</a> - 保护照片中的隐私</li>
+        <li><a href="/{{ g.lang }}/remove-background">移除背景</a> - 免费在线移除图像背景</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">所有工具</a></li>
+    </ul>
+
+    <h2>为什么选择 ToolsForImage？</h2>
+    <p>我们的平台因以下特点而脱颖而出：</p>
+    <ul>
+        <li>100% 免费：所有工具完全免费使用</li>
+        <li>无需注册：立即开始编辑</li>
+        <li>用户友好：界面易于导航和使用</li>
+        <li>高质量结果：专业级输出</li>
+        <li>注重隐私：我们不存储您的图像</li>
+        <li>持续改进：我们定期更新并添加新功能</li>
+    </ul>
+
+    <h2>我们的承诺</h2>
+    <p>我们致力于提供最佳的在线图像编辑体验。我们的团队不断努力改进现有工具并开发新工具，以满足您的图像处理需求。</p>
+
+    <p>无论您需要 <a href="/{{ g.lang }}/image-compression">压缩图像</a> 以加快网页加载速度，<a href="/{{ g.lang }}/image-resize">调整图像大小</a> 以适应社交媒体，还是 <a href="/{{ g.lang }}/convert-image-format">转换图像格式</a> 以提高兼容性，ToolsForImage 都可以帮助您。我们的 <a href="/{{ g.lang }}/image-effects">图像效果</a> 可以改变您的照片，而我们的 <a href="/{{ g.lang }}/image-watermarking">水印工具</a> 可以保护您的作品。</p>
+
+    <p>感谢您选择 ToolsForImage。我们很高兴成为您创意之旅的一部分！</p>
+</div>
+
+
+<style>
+    .about-content {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color);
+        /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Add subtle shadow for depth */
+        max-width: 1200px;
+        /* Ensure the content stays within a manageable width */
+        margin: 0 auto;
+        /* Center align the content */
+        border: var(--background-color) 3px solid;
+        /* Use border similar to tools list */
+        font-weight: 400;
+        /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s;
+        /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .about-content a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .about-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .about-content a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block;
+        /* Makes it inline and allows padding */
+        padding: 10px 20px;
+        /* Add padding for button-like appearance */
+        background-color: var(--box-color);
+        /* Background color */
+        color: black;
+        /* Text color */
+        border-radius: 5px;
+        /* Rounded corners */
+        text-align: center;
+        /* Center text */
+        text-decoration: none;
+        /* Remove underline */
+        font-weight: bold;
+        /* Bold text */
+        transition: background-color 0.3s, transform 0.2s;
+        /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+</style>
+{% endblock %}

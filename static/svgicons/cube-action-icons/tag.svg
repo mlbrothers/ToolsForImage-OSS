@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_twee{fill:#67625D;}
+	.cubies_eenentwintig{fill:#C9483A;}
+	.cubies_tweeentwintig{fill:#D97360;}
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_negentien{fill:#F2C99E;}
+	.st0{fill:#65C3AB;}
+	.st1{fill:#EDB57E;}
+	.st2{fill:#98D3BC;}
+	.st3{fill:#E3D4C0;}
+	.st4{fill:#FFF2DF;}
+	.st5{fill:#CCE2CD;}
+	.st6{fill:#4C4842;}
+	.st7{fill:#EDEAE5;}
+	.st8{fill:#C9C6C0;}
+	.st9{fill:#BCD269;}
+	.st10{fill:#A4C83F;}
+	.st11{fill:#837F79;}
+	.st12{fill:#EC9B5A;}
+	.st13{fill:#2EB39A;}
+	.st14{fill:#725A48;}
+	.st15{fill:#8E7866;}
+	.st16{fill:#E69D8A;}
+	.st17{fill:#A5A29C;}
+	.st18{fill:#D1DE8B;}
+	.st19{fill:#E8E8B5;}
+</style>
+<g>
+	<path class="cubies_negentien" d="M29,0H3C1.343,0,0,1.343,0,3v26c0,1.657,1.343,3,3,3h26c1.657,0,3-1.343,3-3V3
+		C32,1.343,30.657,0,29,0z M9,9C7.895,9,7,8.105,7,7c0-1.105,0.895-2,2-2s2,0.895,2,2C11,8.105,10.105,9,9,9z"/>
+	<path class="cubies_eenentwintig" d="M9,3C8.653,3,7.347,3,7,3C4.791,3,3,4.791,3,7c0,2.209,1.791,4,4,4c0.347,0,1.653,0,2,0
+		c2.209,0,4-1.791,4-4C13,4.791,11.209,3,9,3z M7,7c0-0.738,0.405-1.376,1-1.723C8.595,5.624,9,6.262,9,7
+		c0,0.738-0.405,1.376-1,1.723C7.405,8.376,7,7.738,7,7z"/>
+	<path class="cubies_twintig" d="M27,0H3C1.343,0,0,1.343,0,3v26c0,1.657,1.343,3,3,3h24c1.657,0,3-1.343,3-3V3
+		C30,1.343,28.657,0,27,0z M7,9C5.895,9,5,8.105,5,7c0-1.105,0.895-2,2-2s2,0.895,2,2C9,8.105,8.105,9,7,9z"/>
+	<path class="cubies_tweeentwintig" d="M7,3C4.791,3,3,4.791,3,7c0,2.209,1.791,4,4,4s4-1.791,4-4C11,4.791,9.209,3,7,3z M7,9
+		C5.895,9,5,8.105,5,7c0-1.105,0.895-2,2-2s2,0.895,2,2C9,8.105,8.105,9,7,9z"/>
+	<path class="cubies_twee" d="M22,25c0,0.552-0.448,1-1,1H9c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h12C21.552,24,22,24.448,22,25
+		z M9,18h12c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H9c-0.552,0-1,0.448-1,1C8,17.552,8.448,18,9,18z M21,20H9
+		c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h12c0.552,0,1-0.448,1-1C22,20.448,21.552,20,21,20z"/>
+</g>
+</svg>

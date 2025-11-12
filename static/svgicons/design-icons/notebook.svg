@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="-6.71 0 79.4 79.4" xmlns="http://www.w3.org/2000/svg">
+  <g id="Notebook" transform="translate(-407.03 -230.442)">
+    <g id="Group_22" data-name="Group 22">
+      <g id="Group_21" data-name="Group 21">
+        <path id="Path_47" data-name="Path 47" d="M473,246.122v48.04a15.7,15.7,0,0,1-15.691,15.68H410.03a3,3,0,0,1-3-3v-73.4a3,3,0,0,1,3-3h47.28A15.7,15.7,0,0,1,473,246.122Zm-6,48.04v-8.02H452.03v17.7h5.28A9.7,9.7,0,0,0,467,294.162Zm0-14.02v-20H452.03v20Zm0-26v-8.02a9.7,9.7,0,0,0-9.691-9.68h-5.28v17.7Zm-20.971,49.7v-17.7h-33v17.7Zm0-23.7v-20h-33v20Zm0-26v-17.7h-33v17.7Z" fill="#104386"/>
+        <path id="Path_48" data-name="Path 48" d="M467,286.142v8.02a9.7,9.7,0,0,1-9.691,9.68h-5.28v-17.7Z" fill="#69f"/>
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="14.97" height="20" transform="translate(452.03 260.142)" fill="#f60"/>
+        <path id="Path_49" data-name="Path 49" d="M467,246.122v8.02H452.03v-17.7h5.28A9.7,9.7,0,0,1,467,246.122Z" fill="#69f"/>
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="33" height="17.7" transform="translate(413.03 286.142)" fill="#69f"/>
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="33" height="20" transform="translate(413.03 260.142)" fill="#f60"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="33" height="17.7" transform="translate(413.03 236.442)" fill="#69f"/>
+      </g>
+    </g>
+  </g>
+</svg>

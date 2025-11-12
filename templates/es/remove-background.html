@@ -1,0 +1,192 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Elimina fondos de imágenes fácilmente con la herramienta avanzada de ToolsForImage impulsada por IA. Nuestro servicio gratuito de eliminación de fondos en línea utiliza inteligencia artificial de vanguardia para resultados precisos y profesionales.">
+{% endblock %}
+
+{% block title %}Herramienta de Eliminación de Fondos con IA | ToolsForImage | Herramientas en línea gratuitas para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Eliminador de Fondos en Línea Gratuito con IA</h1>
+<p>Experimenta el poder de la inteligencia artificial en la edición de imágenes. Nuestros algoritmos avanzados de IA hacen que sea increíblemente fácil eliminar fondos de tus imágenes con una precisión y eficiencia sin igual. Simplemente sube una imagen y deja que nuestro modelo de aprendizaje automático de última generación haga el resto.</p>
+<form id="remove-bg-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir Imagen</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button type="button" class="remove-bg-button" onclick="removeBackground()">Eliminar Fondo con IA</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Eliminación de Fondos con IA?</h2>
+        <p>La eliminación de fondos con IA es un proceso de vanguardia que utiliza inteligencia artificial y algoritmos de aprendizaje automático para separar automáticamente el sujeto principal de una imagen de su fondo. Esta tecnología avanzada analiza patrones complejos, bordes y distribuciones de color para lograr resultados altamente precisos, superando las técnicas tradicionales de procesamiento de imágenes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Usar IA para Eliminar Fondos de Imágenes?</h2>
+        <p>La inteligencia artificial ofrece numerosas ventajas en la eliminación de fondos:</p>
+        <ul>
+            <li><strong>Precisión Mejorada:</strong> Los modelos de IA pueden detectar detalles intrincados y bordes complejos que podrían pasar desapercibidos con métodos convencionales.</li>
+            <li><strong>Eficiencia en el Tiempo:</strong> La IA procesa imágenes en segundos, ahorrando horas de trabajo de edición manual.</li>
+            <li><strong>Consistencia:</strong> La IA garantiza una calidad uniforme en grandes lotes de imágenes.</li>
+            <li><strong>Manejo de Imágenes Complejas:</strong> La IA sobresale en la eliminación de fondos de imágenes desafiantes con detalles intrincados o formas irregulares.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestra Herramienta de Eliminación de Fondos con IA</h2>
+        <p>Aprovechar el poder de la IA para eliminar fondos es sencillo con nuestra herramienta fácil de usar:</p>
+        <ol>
+            <li>Haz clic en el botón "Subir Imagen" para seleccionar la imagen que deseas procesar.</li>
+            <li>Una vez que tu imagen esté subida, haz clic en el botón "Eliminar Fondo con IA".</li>
+            <li>Nuestro sofisticado modelo de IA analizará tu imagen y eliminará automáticamente el fondo.</li>
+            <li>Después del procesamiento, podrás descargar tu imagen con el fondo eliminado de manera perfecta.</li>
+        </ol>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestra Herramienta de Eliminación de Fondos con IA</h2>
+        <ul>
+            <li><strong>Tecnología de IA de Vanguardia:</strong> Aprovecha los últimos avances en inteligencia artificial y aprendizaje automático para obtener resultados superiores.</li>
+            <li><strong>Procesamiento Rápido:</strong> Nuestros algoritmos de IA trabajan a la velocidad de la luz, entregando resultados en segundos.</li>
+            <li><strong>Interfaz Amigable:</strong> Disfruta del poder de la IA sin necesidad de conocimientos técnicos.</li>
+            <li><strong>Mejora Continua:</strong> Nuestros modelos de IA están en constante aprendizaje y mejora, asegurando que siempre obtengas los mejores resultados posibles.</li>
+            <li><strong>Versatilidad:</strong> Nuestra IA puede manejar una amplia gama de tipos y complejidades de imágenes, desde fotos simples de productos hasta retratos intrincados.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button, .remove-bg-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .upload-button:hover, .remove-bg-button:hover {
+        transform: scale(1.05);
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .info-container {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .info-section {
+        margin-bottom: 30px;
+    }
+
+    .info-section h2 {
+        color: var(--secondary-color);
+    }
+
+    .info-section ul, .info-section ol {
+        padding-left: 20px;
+    }
+
+    .info-section li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Include MediaPipe Selfie Segmentation -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let img;
+
+    // Initialize MediaPipe Selfie Segmentation
+    const selfieSegmentation = new SelfieSegmentation({
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+    });
+
+    selfieSegmentation.setOptions({
+        modelSelection: 1, // Use general model
+    });
+
+    selfieSegmentation.onResults((results) => {
+        // Draw the original image on the canvas
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Get the segmentation mask
+        const mask = results.segmentationMask;
+
+        // Apply blur to the background
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.filter = 'blur(10px)';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Restore the foreground
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(mask, 0, 0, canvas.width, canvas.height);
+
+        // Reset composite operation
+        ctx.globalCompositeOperation = 'source-over';
+    });
+
+    // Handle image upload
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                imagePreview.src = img.src;
+                imagePreview.style.display = 'block';
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    }
+
+    // Apply background blur
+    async function removeBackground() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Send the image to MediaPipe for processing
+        await selfieSegmentation.send({ image: img });
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'remove_background.png';
+        a.click();
+    }
+</script>
+{% endblock %}

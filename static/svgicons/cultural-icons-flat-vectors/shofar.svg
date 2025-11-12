@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>shofar</title>
+
+<g id="shofar">
+
+<circle cx="23.5" cy="33.5" r="21.5" style="fill:#e5efef"/>
+
+<circle cx="55.044" cy="45.014" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="13.5" cy="31.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="23" y1="22" x2="26" y2="25" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="26" y1="22" x2="23" y2="25" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M5.165,55.676C17.261,54.2,59.858,46.754,59,15L38.985,7.722a1.247,1.247,0,0,0-1.666,1.3c.647,6.473-.2,27.062-33.58,41.253A2.833,2.833,0,0,0,2,52.88H2A2.819,2.819,0,0,0,5.165,55.676Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36.25,8.783C39.068,12.348,46.651,19.631,59,15c0,0-3.816-9.921-16.114-9.1A3.62,3.62,0,0,1,40.243,5h0A2.761,2.761,0,0,0,36.2,5.4h0A2.766,2.766,0,0,0,36.25,8.783Z" style="fill:#fc8c29;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M58.926,15.4C58.516,17.219,56,24.875,42,31" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33,35s11,3,20-1" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31,42s-6.609-1.9-16.8,3.053" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M35,43a20.851,20.851,0,0,0,8.332,0" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M9.642,47.539A32.733,32.733,0,0,1,19,48" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44,21s-4.852,3.9-7.865-.294" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<ellipse cx="48.322" cy="11.103" rx="2" ry="6.662" transform="matrix(0.305, -0.952, 0.952, 0.305, 22.997, 53.729)" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

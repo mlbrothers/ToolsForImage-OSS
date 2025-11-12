@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_zesentwintig{fill:#65C3AB;}
+	.cubies_zevenentwintig{fill:#98D3BC;}
+	.cubies_achtentwintig{fill:#CCE2CD;}
+	.cubies_twee{fill:#67625D;}
+	.cubies_een{fill:#4C4842;}
+	.st0{fill:#F2C99E;}
+	.st1{fill:#F9E0BD;}
+	.st2{fill:#725A48;}
+	.st3{fill:#8E7866;}
+	.st4{fill:#D97360;}
+	.st5{fill:#C9483A;}
+	.st6{fill:#EDB57E;}
+	.st7{fill:#EC9B5A;}
+	.st8{fill:#FFF2DF;}
+	.st9{fill:#C9C6C0;}
+	.st10{fill:#EDEAE5;}
+	.st11{fill:#A4C83F;}
+	.st12{fill:#BCD269;}
+	.st13{fill:#D1DE8B;}
+	.st14{fill:#E69D8A;}
+	.st15{fill:#E3D4C0;}
+	.st16{fill:#C6B5A2;}
+	.st17{fill:#837F79;}
+	.st18{fill:#A5A29C;}
+	.st19{fill:#2EB39A;}
+	.st20{fill:#AB9784;}
+</style>
+<g>
+	<path class="cubies_een" d="M29,0H3C1.343,0,0,1.343,0,3v22c0,1.657,1.343,3,3,3h8v3c0,0.552,0.448,1,1,1h8c0.552,0,1-0.448,1-1v-3
+		h8c1.657,0,3-1.343,3-3V3C32,1.343,30.657,0,29,0z"/>
+	<path class="cubies_twee" d="M27,0H3C1.343,0,0,1.343,0,3v22c0,1.657,1.343,3,3,3h8v3c0,0.552,0.448,1,1,1h6c0.552,0,1-0.448,1-1
+		v-3h8c1.657,0,3-1.343,3-3V3C30,1.343,28.657,0,27,0z"/>
+	<path class="cubies_achtentwintig" d="M25,24H5c-0.552,0-1-0.448-1-1V5c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1v18
+		C26,23.552,25.552,24,25,24z"/>
+	<path class="cubies_een" d="M6,24H5c-0.552,0-1-0.448-1-1V5c0-0.552,0.448-1,1-1h1C5.448,4,5,4.448,5,5v18C5,23.552,5.448,24,6,24z
+		"/>
+	<path class="cubies_zesentwintig" d="M10,10c0-0.552,0.448-1,1-1h9c0.552,0,1,0.448,1,1c0,0.552-0.448,1-1,1h-9
+		C10.448,11,10,10.552,10,10z M20,13h-9c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h9c0.552,0,1-0.448,1-1C21,13.448,20.552,13,20,13
+		z M20,17h-9c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1h9c0.552,0,1-0.448,1-1C21,17.448,20.552,17,20,17z"/>
+	<rect x="11" y="28" class="cubies_achtentwintig" width="8" height="2"/>
+	<rect x="19" y="28" class="cubies_zevenentwintig" width="2" height="2"/>
+</g>
+</svg>

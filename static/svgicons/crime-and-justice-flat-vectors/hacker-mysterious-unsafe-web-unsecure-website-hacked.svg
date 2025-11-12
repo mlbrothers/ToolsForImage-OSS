@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+	.st0{fill:#B4E6DD;}
+	.st1{fill:#80D4C4;}
+	.st2{fill:#D2F0EA;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#FBD872;}
+	.st5{fill:#DB7767;}
+	.st6{fill:#F38E7A;}
+	.st7{fill:#F6AF62;}
+	.st8{fill:#32A48E;}
+	.st9{fill:#A38FD8;}
+	.st10{fill:#7C64BD;}
+	.st11{fill:#EAA157;}
+	.st12{fill:#9681CF;}
+	.st13{fill:#F9C46A;}
+	.st14{fill:#CE6B61;}
+</style>
+
+<g>
+
+<g>
+
+<circle class="st6" cx="32" cy="16.07" r="8.07"/>
+
+<path class="st9" d="M45.31,39.18v-7.12c0-0.04,0-0.08,0-0.11c-0.04-4.69-4.79-7.95-9.26-6.54c-1.28,0.4-2.64,0.62-4.05,0.62    c-1.41,0-2.77-0.22-4.05-0.62c-4.47-1.42-9.22,1.84-9.26,6.54c0,0.04,0,0.08,0,0.11v7.12H45.31z"/>
+
+</g>
+
+<path class="st2" d="M46.87,32.57H17.13c-1.77,0-3.16,1.53-2.99,3.29l1.89,17.29h31.94l1.89-17.29   C50.03,34.09,48.65,32.57,46.87,32.57z"/>
+
+<rect class="st1" height="2.85" width="33.96" x="15.02" y="53.15"/>
+
+<rect class="st0" height="9.91" width="7.55" x="28.22" y="43.24"/>
+
+<circle class="st3" cx="32" cy="43.24" r="3.78"/>
+
+</g>
+
+</svg>

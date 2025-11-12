@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#000000;}
+</style>
+<g>
+	<path class="st0" d="M0,145.217v336.004h512V145.217H0z M480,252.929h-78.658v32.001H480v164.292H32V284.93h78.666v-32.001H32
+		v-75.711H480V252.929z"/>
+	<path class="st0" d="M215.558,79.528c10.398-10.375,24.598-16.742,40.442-16.75c15.844,0.007,30.043,6.374,40.441,16.75
+		c10.376,10.399,16.747,24.594,16.755,40.454h32C345.189,70.7,305.263,30.785,256,30.778c-49.266,0.007-89.189,39.922-89.197,89.204
+		h32C198.812,104.122,205.183,89.927,215.558,79.528z"/>
+	<rect x="329.337" y="240.452" class="st0" width="48.004" height="64.001"/>
+	<rect x="206.668" y="252.929" class="st0" width="98.669" height="32.001"/>
+	<rect x="134.667" y="240.452" class="st0" width="48" height="64.001"/>
+</g>
+</svg>

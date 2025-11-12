@@ -1,0 +1,194 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert ICO to JPEG images with ToolsForImage. Free, fast, and secure online BMP to ICO converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online ICO to JPEG converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online ICO to JPEG Converter</h1>
+<p>Easily convert your images from ICO to JPEG format. Upload an ICO image and we'll convert it to JPEG for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is ICO to JPEG Conversion?</h2>
+        <p>ICO to JPEG conversion is the process of changing image files from ICO format to JPEG format. JPEG (Joint Photographic Experts Group) is a widely-used, lossy compression image format. This conversion is useful when you need to use icon images in contexts where JPEG is preferred or required.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert ICO to JPEG?</h2>
+        <p>There are several reasons to convert ICO images to JPEG:</p>
+        <ul>
+            <li><strong>Smaller File Size:</strong> JPEG compression can significantly reduce file size, making it ideal for web use.</li>
+            <li><strong>Wide Compatibility:</strong> JPEG is universally supported across different platforms and applications.</li>
+            <li><strong>Photography Use:</strong> JPEG is particularly well-suited for photographic images with smooth color transitions.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our ICO to JPEG Converter</h2>
+        <p>Using our ICO to JPEG conversion tool is simple and quick. Here's how it works:</p>
+        <ul>
+            <li>Click the "Upload ICO File" button to select the ICO image you want to convert.</li>
+            <li>Once your image is uploaded, our tool will automatically start converting it to JPEG format.</li>
+            <li>After the conversion is complete, click "Download JPEG" to save your new image file to your device.</li>
+        </ul>
+        <p>Our converter supports various ICO files, ensuring a smooth and efficient conversion experience for all users.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our ICO to JPEG Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your ICO images to JPEG quickly with just a few clicks.</li>
+            <li><strong>Optimized Quality:</strong> Balance between image quality and file size during the conversion process.</li>
+            <li><strong>Free and Accessible:</strong> Use our tool online for free, with no downloads or installations needed.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed to be intuitive and easy to navigate for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for ICO to JPEG Conversion</h2>
+        <p>Here are some common situations where converting ICO to JPEG can be helpful:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Use icon images in web projects where smaller file sizes are crucial.</li>
+            <li><strong>Email Marketing:</strong> Include icon images in email campaigns where JPEG is widely supported.</li>
+            <li><strong>Social Media:</strong> Use converted icons in social media posts where JPEG is commonly used.</li>
+            <li><strong>Print Materials:</strong> Incorporate icon images into print designs where JPEG is preferred.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting ICO to JPEG Can Help</h2>
+        <p>Converting your ICO images to JPEG can enhance their usability in various contexts. Here's how:</p>
+        <ul>
+            <li><strong>Reduced File Size:</strong> JPEG compression can significantly decrease file size, improving load times.</li>
+            <li><strong>Broader Compatibility:</strong> JPEG is universally supported, ensuring your images can be viewed across different platforms.</li>
+            <li><strong>Efficient Storage:</strong> Smaller file sizes mean you can store more images in the same amount of space.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+{% endblock %}

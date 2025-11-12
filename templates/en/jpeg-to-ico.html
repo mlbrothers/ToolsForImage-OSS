@@ -1,0 +1,194 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert JPEG to ICO images with ToolsForImage. Free, fast, and secure online JPEG to ICO converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online JPEG to ICO converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online JPEG to ICO Converter</h1>
+<p>Easily convert your images from JPEG to ICO format. Upload a JPEG image and we'll convert it to ICO for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/JPEG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is JPEG to ICO Conversion?</h2>
+        <p>JPEG to ICO conversion is the process of changing image files from JPEG format to ICO format. ICO is a file format used for icons in Microsoft Windows. This conversion is useful when you need to create icons for Windows applications, websites, or favicons.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert JPEG to ICO?</h2>
+        <p>There are several reasons to convert JPEG images to ICO:</p>
+        <ul>
+            <li><strong>Create Windows Icons:</strong> ICO is the standard format for Windows application icons.</li>
+            <li><strong>Website Favicons:</strong> ICO is commonly used for website favicons, the small icons displayed in browser tabs.</li>
+            <li><strong>Multiple Sizes:</strong> ICO files can contain multiple image sizes in one file, useful for different display scenarios.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our JPEG to ICO Converter</h2>
+        <p>Using our JPEG to ICO conversion tool is simple and quick. Here's how it works:</p>
+        <ul>
+            <li>Click the "Upload JPEG File" button to select the JPEG image you want to convert.</li>
+            <li>Once your image is uploaded, our tool will automatically start converting it to ICO format.</li>
+            <li>After the conversion is complete, click "Download ICO" to save your new icon file to your device.</li>
+        </ul>
+        <p>Our converter supports various JPEG files, ensuring a smooth and efficient conversion experience for all users.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our JPEG to ICO Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your JPEG images to ICO quickly with just a few clicks.</li>
+            <li><strong>High Quality:</strong> Maintain image quality during the conversion process.</li>
+            <li><strong>Free and Accessible:</strong> Use our tool online for free, with no downloads or installations needed.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed to be intuitive and easy to navigate for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for JPEG to ICO Conversion</h2>
+        <p>Here are some common situations where converting JPEG to ICO can be helpful:</p>
+        <ul>
+            <li><strong>Application Development:</strong> Create icons for Windows applications.</li>
+            <li><strong>Web Design:</strong> Generate favicons for websites to display in browser tabs and bookmarks.</li>
+            <li><strong>Custom Folder Icons:</strong> Create personalized icons for Windows folders.</li>
+            <li><strong>Desktop Shortcuts:</strong> Design custom icons for desktop shortcuts.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting JPEG to ICO Can Help</h2>
+        <p>Converting your JPEG images to ICO can enhance their usability in specific contexts. Here's how:</p>
+        <ul>
+            <li><strong>Windows Compatibility:</strong> ICO is the native icon format for Windows, ensuring proper display.</li>
+            <li><strong>Web Standards:</strong> ICO is widely supported as the favicon format across different browsers.</li>
+            <li><strong>Multiple Resolutions:</strong> ICO files can store multiple image sizes, useful for different display scenarios.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'ico';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

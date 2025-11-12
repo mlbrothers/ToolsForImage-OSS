@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>wine-france-pouring-ico</title>
+
+<g id="wine-france-pouring-ico">
+
+<line x1="7" y1="5" x2="7" y2="7" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="7" y1="11" x2="7" y2="13" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="3" y1="9" x2="5" y2="9" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="34" cy="35" r="23" style="fill:#e5efef"/>
+
+<line x1="9" y1="9" x2="11" y2="9" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="56.5" cy="27.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20.651,5.1a1.069,1.069,0,1,1-1.069-1.069A1.069,1.069,0,0,1,20.651,5.1Z" style="fill:#4c241d"/>
+
+<path d="M47.651,46.1a1.069,1.069,0,1,1-1.069-1.069A1.069,1.069,0,0,1,47.651,46.1Z" style="fill:#4c241d"/>
+
+<path d="M31,62H15a3,3,0,0,1,3-3H28a3,3,0,0,1,3,3Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21,47l-3.465-3.465A12.072,12.072,0,0,1,14,35h0l2-10H30l2,10h0a12.069,12.069,0,0,1-3.536,8.535L25,47,23,59Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31.959,34.793A6.981,6.981,0,0,1,28,31a11.248,11.248,0,0,1-.8-6,20.592,20.592,0,0,1,.8-4l-1-2a11.3,11.3,0,0,0-.729,2.056,18.991,18.991,0,0,0-.6,4.076c-.03.669-.038,1.339-.006,2.009.183,3.8.08,11.109-3.67,8.859a9.4,9.4,0,0,0-7.972-.431,12.061,12.061,0,0,0,3.507,7.966l2.659,2.659A2.752,2.752,0,0,0,22.14,47h1.72a2.752,2.752,0,0,0,1.946-.806l2.658-2.659A12.069,12.069,0,0,0,32,35Z" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.893,3l-1.9,1.9a3.243,3.243,0,0,0,0,4.587h0a1.756,1.756,0,0,1,0,2.484l-6.657,6.658,3.535,3.535,6.658-6.657a1.756,1.756,0,0,1,2.484,0,3.245,3.245,0,0,0,4.587,0L50.2,7.9,45.3,3Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

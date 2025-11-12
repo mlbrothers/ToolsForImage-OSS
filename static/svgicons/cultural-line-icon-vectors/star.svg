@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>star</title>
+
+<g id="star">
+
+<line x1="57.951" y1="13" x2="55.003" y2="15.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="57.951" y1="15.948" x2="55.003" y2="13" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="55" cy="55" r="1"/>
+
+<circle cx="9" cy="8" r="1"/>
+
+<path d="M15.162,47.162,8.178,40.178a10.152,10.152,0,0,1,0-14.356L15,19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M46,50l-6.822,6.822a10.152,10.152,0,0,1-14.356,0l-7.006-7.006" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M49,19l6.822,6.822a10.152,10.152,0,0,1,0,14.356L49,47" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M17.89,16.11l6.932-6.932a10.152,10.152,0,0,1,14.356,0l6.949,6.949" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="32 9 38.56 17.162 48.971 16.029 47.838 26.44 56 33 47.838 39.56 48.971 49.971 38.56 48.838 32 57 25.44 48.838 15.029 49.971 16.162 39.56 8 33 16.162 26.44 15.029 16.029 25.44 17.162 32 9" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="19.979 20.979 27.353 21.781 32 16 36.647 21.781 44.021 20.979 43.219 28.353 49 33 43.219 37.647 44.021 45.021 36.647 44.219 32 50 27.353 44.219 19.979 45.021 20.781 37.647 15 33 20.781 28.353 19.979 20.979" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

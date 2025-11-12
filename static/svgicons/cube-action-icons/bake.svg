@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_vijfentwintig{fill:#2EB39A;}
+	.cubies_zesentwintig{fill:#65C3AB;}
+	.cubies_zevenentwintig{fill:#98D3BC;}
+	.cubies_achtentwintig{fill:#CCE2CD;}
+	.cubies_twaalf{fill:#FFF2DF;}
+	.st0{fill:#C9483A;}
+	.st1{fill:#D97360;}
+	.st2{fill:#F2C99E;}
+	.st3{fill:#4C4842;}
+	.st4{fill:#67625D;}
+	.st5{fill:#EDEAE5;}
+	.st6{fill:#C9C6C0;}
+	.st7{fill:#EDB57E;}
+	.st8{fill:#E69D8A;}
+	.st9{fill:#BCD269;}
+	.st10{fill:#D1DE8B;}
+	.st11{fill:#EC9B5A;}
+	.st12{fill:#837F79;}
+	.st13{fill:#A5A29C;}
+	.st14{fill:#8E7866;}
+	.st15{fill:#725A48;}
+	.st16{fill:#F2C7B5;}
+	.st17{fill:#A4C83F;}
+	.st18{fill:#E3D4C0;}
+</style>
+<g>
+	<path class="cubies_zesentwintig" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_zevenentwintig" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<path class="cubies_vijfentwintig" d="M25,28H5c-0.552,0-1-0.448-1-1V11c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1v16
+		C26,27.552,25.552,28,25,28z"/>
+	<path class="cubies_twintig" d="M17,5c0,1.105-0.895,2-2,2h-1c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2h1C16.105,3,17,3.895,17,5z
+		 M7,3H6C4.895,3,4,3.895,4,5c0,1.105,0.895,2,2,2h1c1.105,0,2-0.895,2-2C9,3.895,8.105,3,7,3z M23,3h-1c-1.105,0-2,0.895-2,2
+		c0,1.105,0.895,2,2,2h1c1.105,0,2-0.895,2-2C25,3.895,24.105,3,23,3z"/>
+	<path class="cubies_twaalf" d="M8,5c0,1.105-0.895,2-2,2S4,6.105,4,5s0.895-2,2-2S8,3.895,8,5z M14,3c-1.105,0-2,0.895-2,2
+		s0.895,2,2,2s2-0.895,2-2S15.105,3,14,3z M22,3c-1.105,0-2,0.895-2,2s0.895,2,2,2s2-0.895,2-2S23.105,3,22,3z"/>
+	<path class="cubies_zevenentwintig" d="M7,14c0,0.552,0.448,1,1,1h14c0.552,0,1-0.448,1-1v0c0-0.552-0.448-1-1-1H8
+		C7.448,13,7,13.448,7,14L7,14z"/>
+	<path class="cubies_achtentwintig" d="M21,15H8c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h13c0.552,0,1,0.448,1,1v0
+		C22,14.552,21.552,15,21,15z"/>
+</g>
+</svg>

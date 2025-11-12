@@ -1,0 +1,122 @@
+{% extends 'fr/base.html' %}
+
+{% block title %}À propos de | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Découvrez ToolsForImage, votre plateforme de retouche d'images en ligne gratuite. Découvrez notre mission, nos services et notre engagement à fournir des solutions de traitement d'images de haute qualité.">
+{% endblock %}
+
+{% block content %}
+
+<div class="about-content">
+    <h1>À propos de ToolsForImage</h1>
+    <p>Bienvenue sur ToolsForImage, une boîte à outils en ligne gratuite pour la retouche d'images. Votre destination unique pour des outils de retouche d'images en ligne gratuits. Modifiez vos images avec des solutions de traitement d'images de haute qualité, faciles à utiliser, entièrement en ligne et gratuites.</p>
+
+    <h2>Notre Mission</h2>
+    <p>Chez ToolsForImage, notre mission est de rendre la retouche d'images de qualité professionnelle accessible à tous, entièrement gratuite et en ligne. Tout se fait directement dans le navigateur, donc il n'y a pas besoin d'installer de logiciel. Que vous soyez un photographe professionnel, un designer graphique, ou simplement quelqu'un qui souhaite améliorer ses photos personnelles, nous avons ce qu'il vous faut.</p>
+
+    <h2>Nos Services</h2>
+    <p>Nous offrons une large gamme d'outils de retouche d'images, notamment :</p>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">Compression d'images</a> - Réduisez la taille des fichiers sans compromettre la qualité</li>
+        <li><a href="/{{ g.lang }}/image-resize">Redimensionnement d'images</a> - Ajustez les dimensions des images selon vos besoins</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">Conversion de formats</a> - Convertissez entre différents formats d'image</li>
+        <li><a href="/{{ g.lang }}/image-rotate">Rotation d'images</a> - Faites pivoter et retournez facilement vos images</li>
+        <li><a href="/{{ g.lang }}/image-effects">Effets sur les images</a> - Appliquez des filtres et des effets époustouflants</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">Ajout de filigrane</a> - Protégez vos images avec des filigranes personnalisés</li>
+        <li><a href="/{{ g.lang }}/blur-face">Floutage du visage</a> - Protégez la confidentialité dans vos photos</li>
+        <li><a href="/{{ g.lang }}/remove-background">Suppression de fond</a> - Supprimez le fond de vos images en ligne gratuitement</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">Tous les outils</a></li>
+    </ul>
+
+    <h2>Pourquoi Choisir ToolsForImage ?</h2>
+    <p>Notre plateforme se distingue pour plusieurs raisons :</p>
+    <ul>
+        <li>100% Gratuit : Tous nos outils sont entièrement gratuits</li>
+        <li>Aucune inscription requise : Commencez à retoucher immédiatement</li>
+        <li>Interface conviviale : Facile à naviguer et à utiliser</li>
+        <li>Résultats de haute qualité : Sortie de qualité professionnelle</li>
+        <li>Respect de la vie privée : Nous ne conservons pas vos images</li>
+        <li>En constante évolution : Nous mettons régulièrement à jour et ajoutons de nouvelles fonctionnalités</li>
+    </ul>
+
+    <h2>Notre Engagement</h2>
+    <p>Nous nous engageons à offrir la meilleure expérience de retouche d'images en ligne. Notre équipe travaille constamment à améliorer nos outils existants et à en développer de nouveaux pour répondre à vos besoins en matière de traitement d'images.</p>
+
+    <p>Que vous ayez besoin de <a href="/{{ g.lang }}/image-compression">compresser des images</a> pour un chargement plus rapide sur le web, de <a href="/{{ g.lang }}/image-resize">redimensionner des images</a> pour les réseaux sociaux, ou de <a href="/{{ g.lang }}/convert-image-format">convertir des formats d'image</a> pour assurer la compatibilité, ToolsForImage est là pour vous aider. Nos <a href="/{{ g.lang }}/image-effects">effets sur les images</a> peuvent transformer vos photos, tandis que notre outil de <a href="/{{ g.lang }}/image-watermarking">filigrane</a> vous aide à protéger votre travail.</p>
+
+    <p>Merci de choisir ToolsForImage. Nous sommes ravis de faire partie de votre parcours créatif !</p>
+</div>
+
+<style>
+    .about-content {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color);
+        /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Add subtle shadow for depth */
+        max-width: 1200px;
+        /* Ensure the content stays within a manageable width */
+        margin: 0 auto;
+        /* Center align the content */
+        border: var(--background-color) 3px solid;
+        /* Use border similar to tools list */
+        font-weight: 400;
+        /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s;
+        /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .about-content a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .about-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .about-content a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block;
+        /* Makes it inline and allows padding */
+        padding: 10px 20px;
+        /* Add padding for button-like appearance */
+        background-color: var(--box-color);
+        /* Background color */
+        color: black;
+        /* Text color */
+        border-radius: 5px;
+        /* Rounded corners */
+        text-align: center;
+        /* Center text */
+        text-decoration: none;
+        /* Remove underline */
+        font-weight: bold;
+        /* Bold text */
+        transition: background-color 0.3s, transform 0.2s;
+        /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+</style>
+{% endblock %}

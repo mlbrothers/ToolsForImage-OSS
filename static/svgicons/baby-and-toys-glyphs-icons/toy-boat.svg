@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path d="M29,19H17v-2h5c0.3,0,0.7-0.2,0.9-0.5s0.2-0.7,0-1l-6-12c0,0,0,0-0.1-0.1c-0.1-0.1-0.1-0.2-0.2-0.2c0,0-0.1-0.1-0.1-0.1
+	c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0.1c0,0,0,0-0.1,0
+	c-0.1,0-0.2,0.1-0.3,0.2l-13,12C2,15.5,1.9,16,2.1,16.4S2.6,17,3,17h12v2H3c-0.6,0-1,0.4-1,1c0,5,4,9,9,9h10c5,0,9-4,9-9
+	C30,19.4,29.6,19,29,19z M17,15V8.2l3.4,6.8H17z M5.6,15L15,6.3V15H5.6z"/>
+</svg>

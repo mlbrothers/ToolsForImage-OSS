@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>male</title>
+
+<g id="male">
+
+<circle cx="26" cy="27" r="23" style="fill:#e5efef"/>
+
+<path d="M44.556,45.207l-8.587-3.9c.008-.1.031-.2.031-.3V39H28v2c0,.1.023.2.031.3l-8.587,3.9A9.389,9.389,0,0,0,14,53.775V62H50V53.775A9.389,9.389,0,0,0,44.556,45.207Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="21" y1="62" x2="21" y2="57" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="43" y1="62" x2="43" y2="57" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="5.5" cy="9.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="55.5" cy="32.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="59.5" cy="17.5" r="1.132" style="fill:#4c241d"/>
+
+<circle cx="8.5" cy="19.5" r="1.132" style="fill:#4c241d"/>
+
+<circle cx="13.5" cy="3.5" r="1.132" style="fill:#4c241d"/>
+
+<line x1="56.837" y1="7.663" x2="53.163" y2="11.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53.163" y1="7.663" x2="56.837" y2="11.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10.837" y1="37.663" x2="7.163" y2="41.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="7.163" y1="37.663" x2="10.837" y2="41.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M45,24.5a5.692,5.692,0,0,1-.072-1.575,3.138,3.138,0,0,0-2.366-3.1,39.921,39.921,0,0,0-21.067.682,2.066,2.066,0,0,0-1.436,2.042A7.6,7.6,0,0,1,20,24.5a2.5,2.5,0,0,0-2.5,2.591,2.56,2.56,0,0,0,1.183,1.97,2.225,2.225,0,0,0,2.108.3A13.9,13.9,0,0,0,30.15,39.808a6.978,6.978,0,0,0,4.285-.046l.444-.144a13.9,13.9,0,0,0,9.293-10.269,2.282,2.282,0,0,0,2.093-.238,2.537,2.537,0,0,0,1.215-1.793A2.5,2.5,0,0,0,45,24.5Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27.592,2h9.816A2.592,2.592,0,0,1,40,4.592V11a0,0,0,0,1,0,0H25a0,0,0,0,1,0,0V4.592A2.592,2.592,0,0,1,27.592,2Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="37" cy="29" r="1" style="fill:#4c241d"/>
+
+<circle cx="28" cy="29" r="1" style="fill:#4c241d"/>
+
+<line x1="31.95" y1="40.292" x2="31.95" y2="61.565" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36,38H29a2,2,0,0,0-2-2l-6-4,4.6,17.583a2.416,2.416,0,0,0,3.48,1.878L32,50l4.027,1.726a2.416,2.416,0,0,0,3.351-1.938L44,32l-6,4A2,2,0,0,0,36,38Z" style="fill:#ccc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26.463,6H34a0,0,0,0,1,0,0v9.537A8.463,8.463,0,0,1,25.537,24H18a0,0,0,0,1,0,0V14.463A8.463,8.463,0,0,1,26.463,6Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31,6h7.537A8.463,8.463,0,0,1,47,14.463V24H39.463A8.463,8.463,0,0,1,31,15.537" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="36" y1="45" x2="36" y2="51" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="51" x2="29" y2="48" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22,12.592A2.593,2.593,0,0,1,24.592,10H40.408A2.593,2.593,0,0,1,43,12.592" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="45" x2="29" y2="41" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="35" x2="34" y2="35" style="fill:none;stroke:#e66353;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

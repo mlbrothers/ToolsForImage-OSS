@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#979797" stroke-linecap="round" stroke-width="2" d="M24.3033009,36.7652416 L24.3033009,43.2799603" transform="rotate(45 24.303 40.023)"/>
+    <polygon fill="#B4DFFB" points="33.724 12.052 45.724 12.052 45.724 37.153 33.724 37.153" transform="rotate(45 39.724 24.602)"/>
+    <path stroke="#5EA7FF" stroke-linecap="square" stroke-width="2" d="M34.0918831,23.5771645 L36.0918831,23.5771645" transform="rotate(45 35.092 23.577)"/>
+    <path stroke="#5EA7FF" stroke-linecap="square" stroke-width="2" d="M37.627417,20.0416306 L39.627417,20.0416306" transform="rotate(45 38.627 20.042)"/>
+    <path stroke="#5EA7FF" stroke-linecap="square" stroke-width="2" d="M41.1629509,16.5060967 L43.1629509,16.5060967" transform="rotate(45 42.163 16.506)"/>
+    <rect width="10" height="9" x="46.78" y="8.046" fill="#D8D8D8" transform="rotate(45 51.78 12.546)"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M51.7799603,16.0459415 L51.7799603,9.04594155" transform="rotate(45 51.78 12.546)"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M48.9515331,13.2175144 L48.9515331,6.21751442" transform="rotate(45 48.952 9.718)"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M54.6083874,18.8743687 L54.6083874,11.8743687" transform="rotate(45 54.608 15.374)"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M46.9619408,9.36396103 L62.9619408,9.36396103" transform="rotate(45 54.962 9.364)"/>
+    <path stroke="#5EA7FF" stroke-linecap="square" stroke-width="2" d="M28.6776695,30.6482323 L38.6776695,30.6482323" transform="rotate(45 33.678 30.648)"/>
+    <rect width="6" height="7" x="25.374" y="32.452" fill="#80D25B" transform="rotate(45 28.374 35.952)"/>
+    <path fill="#5EA7FF" d="M7.32142857,39 C4.71780047,39 3,41.9900983 3,45.6785714 C3,49.3670446 4.71780047,61 7.32142857,61 C8.84029254,61 9.01282031,51.3395704 11.0535714,51.3308234 C13.4871797,51.3395704 13.2668503,61 14.7857143,61 C17.3893424,61 19.1071429,49.3670446 19.1071429,45.6785714 C19.1071429,41.9900983 17.3893424,39 14.7857143,39 C13.5416667,39 12.297619,40.1785714 11.0535714,40.1785714 C9.80952381,40.1785714 8.56547619,39 7.32142857,39 Z"/>
+  </g>
+</svg>

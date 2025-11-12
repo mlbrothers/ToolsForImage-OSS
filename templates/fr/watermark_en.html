@@ -1,0 +1,355 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Ajoutez facilement des filigranes à vos images avec notre outil de filigrane. Protégez vos images et ajoutez votre marque sans effort.">
+{% endblock %}
+
+{% block title %}Outil de Filigrane d'Image en Ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Filigrane d'Image</h1>
+
+<div class="watermark-editor">
+    <div class="watermark-controls">
+        <label for="imageUpload">Télécharger l'Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="watermarkText">Texte du Filigrane:</label>
+        <input type="text" id="watermarkText" placeholder="Entrez le texte du filigrane">
+        
+        <label for="watermarkColor">Couleur du Filigrane:</label>
+        <input type="color" id="watermarkColor" value="#000000">
+        
+        <label for="watermarkOpacity">Opacité du Filigrane:</label>
+        <input type="range" id="watermarkOpacity" min="0" max="1" step="0.1" value="0.5">
+        
+        <label for="watermarkFontSize">Taille de la Police du Filigrane:</label>
+        <input type="number" id="watermarkFontSize" min="8" value="20" placeholder="Taille de police">
+        
+        <label for="watermarkPosition">Position du Filigrane:</label>
+        <select id="watermarkPosition">
+            <option value="top-left">En Haut à Gauche</option>
+            <option value="top-right">En Haut à Droite</option>
+            <option value="bottom-left">En Bas à Gauche</option>
+            <option value="bottom-right">En Bas à Droite</option>
+            <option value="center">Centre</option>
+        </select>
+        
+        <label for="watermarkFontStyle">Style de la Police du Filigrane:</label>
+        <select id="watermarkFontStyle">
+            <option value="normal">Normal</option>
+            <option value="bold">Gras</option>
+            <option value="italic">Italique</option>
+            <option value="bold-italic">Gras Italique</option>
+        </select>
+    </div>
+
+    <div class="watermark-preview">
+        <img id="previewImage" src="" alt="Aperçu">
+    </div>
+
+    <button class="button" id="downloadImage">Télécharger l'Image avec Filigrane</button>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que le Filigrane d'Image ?</h2>
+        <p>Le filigrane d'image est le processus consistant à ajouter un logo, un texte ou un symbole à vos images pour les protéger contre une utilisation non autorisée. Un filigrane peut être une petite marque semi-transparente placée n'importe où sur l'image. Cet outil vous aide à ajouter facilement des filigranes, garantissant que vos photos, graphiques ou créations numériques sont protégés et identifiables comme les vôtres.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Utiliser des Filigranes sur Vos Images ?</h2>
+        <p>Ajouter un filigrane à vos images est important pour plusieurs raisons :</p>
+        <ul>
+            <li><strong>Protégez votre Travail :</strong> Empêchez les autres de voler ou d'utiliser vos images sans autorisation en ajoutant un filigrane.</li>
+            <li><strong>Renforcez Votre Marque :</strong> Ajouter un filigrane avec votre logo ou nom de marque peut augmenter la visibilité et la reconnaissance de la marque.</li>
+            <li><strong>Partagez en Toute Sécurité en Ligne :</strong> Lors du partage d'images sur les réseaux sociaux, blogs ou sites Web, un filigrane peut aider à protéger votre propriété intellectuelle.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Outil de Filigrane</h2>
+        <p>Notre outil de filigrane est facile à utiliser et vous aide à ajouter rapidement un filigrane à vos images. Suivez ces étapes :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger depuis l'ordinateur" pour télécharger votre image.</li>
+            <li>Entrez le texte ou téléchargez votre logo pour l'utiliser comme filigrane.</li>
+            <li>Ajustez la taille, l'opacité et la position de votre filigrane selon vos préférences.</li>
+            <li>Une fois satisfait, cliquez sur "Télécharger l'Image avec Filigrane" pour enregistrer votre image protégée sur votre appareil.</li>
+        </ul>
+        <p>Notre outil prend en charge différents formats d'image, y compris PNG, JPG et BMP, tout en conservant la qualité de votre image.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'Utilisation de Notre Outil de Filigrane</h2>
+        <p>Voici les principaux avantages de l'utilisation de notre outil de filigrane :</p>
+        <ul>
+            <li><strong>Rapide et Facile :</strong> Ajoutez un filigrane à vos images en quelques clics, sans besoin de compétences en design.</li>
+            <li><strong>Filigranes Personnalisables :</strong> Choisissez le texte, la police, la taille et l'emplacement qui répondent le mieux à vos besoins.</li>
+            <li><strong>Protégez Vos Images :</strong> Assurez-vous que vos images sont protégées et reconnues comme votre travail en ligne.</li>
+            <li><strong>Gratuit :</strong> Notre outil est gratuit et accessible, sans téléchargement de logiciel requis.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations Courantes du Filigrane d'Image</h2>
+        <p>Le filigrane est utile dans de nombreuses situations, telles que :</p>
+        <ul>
+            <li><strong>Photographes :</strong> Protégez vos photographies de l'utilisation non autorisée en ajoutant votre nom ou logo.</li>
+            <li><strong>Graphistes :</strong> Ajoutez un filigrane à vos créations numériques pour éviter que d'autres ne les revendiquent.</li>
+            <li><strong>Entreprises et Marques :</strong> Utilisez des filigranes pour promouvoir votre marque et vous assurer que vos images sont reconnues comme les vôtres.</li>
+            <li><strong>Créateurs de Contenu :</strong> Protégez votre contenu original lorsque vous le partagez sur les réseaux sociaux ou les sites Web.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi le Filigrane de Vos Images est Important</h2>
+        <p>Le filigrane aide à protéger vos images contre le vol ou l'utilisation abusive. Voici pourquoi il est important :</p>
+        <ul>
+            <li><strong>Protection des Droits d'Auteur :</strong> Les filigranes dissuadent ceux qui pourraient essayer d'utiliser vos images sans autorisation.</li>
+            <li><strong>Augmenter la Notoriété de la Marque :</strong> Lorsque votre filigrane inclut votre logo ou nom de marque, il contribue à faire connaître votre entreprise lorsque vos images sont partagées en ligne.</li>
+            <li><strong>Protégez Votre Travail :</strong> Que vous soyez photographe, designer ou créateur de contenu, le filigrane garantit que votre travail est crédité à vous, où qu'il soit affiché.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+
+    #downloadImage{
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .watermark-editor {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        margin-top: 2em;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .watermark-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-controls input, .watermark-controls select {
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-preview {
+        width: 100%;
+        height: 400px;
+        border: 1px solid var(--secondary-color);
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .watermark-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .watermark-text {
+        position: absolute;
+        cursor: move;
+        user-select: none;
+    }
+
+    .button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        border: none;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: var(--link-hover-color);
+        color: var(--box-color);
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    const imageUpload = document.getElementById('imageUpload');
+    const watermarkText = document.getElementById('watermarkText');
+    const watermarkColor = document.getElementById('watermarkColor');
+    const watermarkOpacity = document.getElementById('watermarkOpacity');
+    const watermarkFontSize = document.getElementById('watermarkFontSize');
+    const watermarkPosition = document.getElementById('watermarkPosition');
+    const watermarkFontStyle = document.getElementById('watermarkFontStyle');
+    const previewImage = document.getElementById('previewImage');
+    const downloadButton = document.getElementById('downloadImage');
+
+    let originalImage = null;
+
+    imageUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+            originalImage = new Image();
+            originalImage.onload = () => {
+                previewImage.src = originalImage.src;
+                applyWatermark(); // Apply watermark when the image is loaded
+            };
+            originalImage.src = event.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    // Debounce function to limit the rate of applying watermark
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    // Add event listeners for real-time updates with debouncing
+    const debouncedApplyWatermark = debounce(applyWatermark, 200); // 200ms delay
+    watermarkText.addEventListener('input', debouncedApplyWatermark);
+    watermarkColor.addEventListener('input', debouncedApplyWatermark);
+    watermarkOpacity.addEventListener('input', debouncedApplyWatermark);
+    watermarkFontSize.addEventListener('input', debouncedApplyWatermark);
+    watermarkPosition.addEventListener('change', debouncedApplyWatermark);
+    watermarkFontStyle.addEventListener('change', debouncedApplyWatermark);
+
+    downloadButton.addEventListener('click', downloadWatermarkedImage);
+
+    function applyWatermark() {
+        if (!originalImage) {
+            return;
+        }
+
+        // Create an offscreen canvas to apply watermark
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size to match the image size
+        canvas.width = originalImage.width;
+        canvas.height = originalImage.height;
+
+        // Draw the original image onto the canvas
+        ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+
+        // Set the watermark text style
+        const fontSize = parseInt(watermarkFontSize.value);
+        const fontStyle = watermarkFontStyle.value;
+
+        // Check if the font style includes both bold and italic
+        let fullFontStyle = '';
+        if (fontStyle === 'bold-italic') {
+            fullFontStyle = 'bold italic';
+        } else if (fontStyle === 'bold') {
+            fullFontStyle = 'bold';
+        } else if (fontStyle === 'italic') {
+            fullFontStyle = 'italic';
+        } else {
+            fullFontStyle = 'normal';
+        }
+
+        // Apply the font settings to the canvas context
+        ctx.font = `${fullFontStyle} ${fontSize}px Arial`;
+
+        ctx.fillStyle = watermarkColor.value;
+        ctx.globalAlpha = watermarkOpacity.value;
+
+        // Get text dimensions
+        const text = watermarkText.value;
+        const textMetrics = ctx.measureText(text);
+        const textWidth = textMetrics.width;
+        const textHeight = fontSize; // Approximate height based on font size
+
+        // Adjust for italic and bold font style
+        let italicAdjustment = 0;
+        if (fullFontStyle.includes('italic')) {
+            italicAdjustment = fontSize * 0.2; // Adjust this factor as needed
+        }
+
+        // Calculate text position based on the selected alignment
+        let x, y;
+        const position = watermarkPosition.value;
+
+        switch (position) {
+            case 'top-left':
+                x = 10 + italicAdjustment; // Add some padding
+                y = textHeight + 10;
+                break;
+            case 'top-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = textHeight + 10;
+                break;
+            case 'bottom-left':
+                x = 10 + italicAdjustment; // Left padding
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'bottom-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'center':
+                x = (canvas.width - textWidth) / 2 + italicAdjustment / 2;
+                y = (canvas.height + textHeight) / 2;
+                break;
+            default:
+                x = 10 + italicAdjustment;
+                y = textHeight + 10;
+        }
+
+        // Debug: Log the font style to ensure it's set correctly
+        console.log('Font style applied:', ctx.font);
+
+        // Draw the watermark text on the canvas
+        ctx.fillText(text, x, y);
+
+        // Update the preview image with the canvas content
+        previewImage.src = canvas.toDataURL();
+    }
+
+    function downloadWatermarkedImage() {
+        if (!originalImage) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const a = document.createElement('a');
+        a.href = previewImage.src;
+        a.download = 'watermarked_image.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+{% endblock %}

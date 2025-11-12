@@ -1,0 +1,106 @@
+{% extends 'es/base.html' %}
+
+{% block title %}Sobre Nosotros | ToolsForImage | Herramientas Gratuitas en Línea para Difuminar Rostros, Conversión de Imágenes, Edición, Redimensionamiento, Eliminar Fondo, Difuminar Fondo y Más{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage ofrece herramientas gratuitas en línea para convertir, redimensionar, recortar, comprimir y editar imágenes. Procesa imágenes fácilmente en varios formatos como JPG, PNG y más con herramientas fáciles de usar diseñadas para todas tus necesidades de edición.">
+{% endblock %}
+
+{% block content %}
+
+<div class="about-content">
+    <h1>Sobre ToolsForImage</h1>
+    <p>Bienvenido a ToolsForImage, un kit de herramientas de imagen gratuito en línea. Un destino único para herramientas de edición de imágenes gratuitas en línea. Edita tus imágenes con soluciones de procesamiento de imágenes de alta calidad y fáciles de usar para usuarios de todo el mundo, completamente en línea y gratis.</p>
+
+    <h2>Nuestra Misión</h2>
+    <p>En ToolsForImage, nuestra misión es proporcionar edición de imágenes de calidad profesional accesible para todos, completamente gratis y en línea. Procesamiento completamente basado en el navegador, por lo que no es necesario instalar ningún software. Ya seas un fotógrafo profesional, un diseñador gráfico o simplemente alguien que desea mejorar sus fotos personales, estamos aquí para ayudarte.</p>
+
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos una amplia gama de herramientas de edición de imágenes, que incluyen:</p>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">Compresión de Imágenes</a> - Reduce el tamaño de los archivos sin comprometer la calidad</li>
+        <li><a href="/{{ g.lang }}/image-resize">Redimensionamiento de Imágenes</a> - Ajusta las dimensiones de la imagen según tus necesidades</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">Conversión de Formato</a> - Convierte entre varios formatos de imagen</li>
+        <li><a href="/{{ g.lang }}/image-rotate">Rotación de Imágenes</a> - Gira y voltea tus imágenes fácilmente</li>
+        <li><a href="/{{ g.lang }}/image-effects">Efectos de Imágenes</a> - Aplica filtros y efectos impresionantes</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">Marca de Agua</a> - Protege tus imágenes con marcas de agua personalizadas</li>
+        <li><a href="/{{ g.lang }}/blur-face">Difuminar Rostros</a> - Mantén la privacidad en tus fotos</li>
+        <li><a href="/{{ g.lang }}/remove-background">Eliminar Fondo</a> - Elimina el fondo de tus imágenes en línea de forma gratuita</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">Todas las herramientas</a></li>
+    </ul>
+
+    <h2>¿Por Qué Elegir ToolsForImage?</h2>
+    <p>Nuestra plataforma se destaca por varias razones:</p>
+    <ul>
+        <li>100% Gratis: Todas nuestras herramientas son completamente gratuitas</li>
+        <li>No Se Requiere Registro: Comienza a editar de inmediato</li>
+        <li>Interfaz Fácil de Usar: Fácil de navegar y usar</li>
+        <li>Resultados de Alta Calidad: Salida de calidad profesional</li>
+        <li>Enfoque en la Privacidad: No almacenamos tus imágenes</li>
+        <li>Evolución Constante: Actualizamos y añadimos nuevas funciones regularmente</li>
+    </ul>
+
+    <h2>Nuestro Compromiso</h2>
+    <p>Estamos comprometidos a proporcionar la mejor experiencia de edición de imágenes en línea. Nuestro equipo trabaja constantemente en mejorar nuestras herramientas existentes y desarrollar nuevas para satisfacer tus necesidades de procesamiento de imágenes.</p>
+
+    <p>Ya sea que necesites <a href="/{{ g.lang }}/image-compression">comprimir imágenes</a> para una carga web más rápida, <a href="/{{ g.lang }}/image-resize">redimensionar imágenes</a> para redes sociales, o <a href="/{{ g.lang }}/convert-image-format">convertir formatos de imagen</a> para compatibilidad, ToolsForImage está aquí para ayudarte. Nuestros <a href="/{{ g.lang }}/image-effects">efectos de imagen</a> pueden transformar tus fotos, mientras que nuestra <a href="/{{ g.lang }}/image-watermarking">herramienta de marca de agua</a> ayuda a proteger tu trabajo.</p>
+
+    <p>Gracias por elegir ToolsForImage. ¡Estamos emocionados de ser parte de tu viaje creativo!</p>
+</div>
+
+<style>
+    .about-content {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        margin: 0 auto;
+        border: var(--background-color) 3px solid;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .about-content a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .about-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .about-content a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--box-color);
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+</style>
+{% endblock %}

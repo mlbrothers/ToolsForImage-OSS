@@ -1,0 +1,196 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert PNG to BMP images with ToolsForImage. Free, fast, and secure online PNG to BMP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online PNG to BMP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online PNG to BMP Converter</h1>
+<p>Easily convert your images from PNG to BMP format. Upload a PNG image and we'll convert it to BMP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/PNG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is PNG to BMP Conversion?</h2>
+        <p>PNG to BMP conversion is the process of changing image files from PNG format to BMP format. BMP (Bitmap) is a raster graphics format used for storing digital images. Converting PNG images to BMP can be helpful when you need to use a simple, uncompressed image format that retains high quality for editing or printing purposes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert PNG to BMP?</h2>
+        <p>There are several reasons to convert PNG images to BMP:</p>
+        <ul>
+            <li><strong>High-Quality Images:</strong> BMP files maintain excellent image quality without compression, making them ideal for professional applications.</li>
+            <li><strong>Editing Flexibility:</strong> BMP format is often preferred for editing and graphic design due to its simplicity and lack of compression artifacts.</li>
+            <li><strong>Compatibility:</strong> BMP files are widely supported by many software applications, ensuring easy access and use across different platforms.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our PNG to BMP Converter</h2>
+        <p>Our PNG to BMP conversion tool is designed to be user-friendly and straightforward. Here’s how you can use it:</p>
+        <ul>
+            <li>Click the "Upload PNG File" button to select the PNG image you want to convert.</li>
+            <li>Once the image is uploaded, our tool will automatically process the conversion to BMP format.</li>
+            <li>After the conversion is complete, click "Download BMP" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter supports a variety of PNG files, ensuring a smooth conversion experience every time.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our PNG to BMP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Efficient:</strong> Convert your PNG images to BMP quickly and easily, without any complicated steps.</li>
+            <li><strong>No Loss of Quality:</strong> Enjoy high-quality output with no compression, ensuring that your images look their best.</li>
+            <li><strong>Free and Online:</strong> Use our tool for free, directly in your web browser, with no need for software downloads.</li>
+            <li><strong>User-Friendly Interface:</strong> Designed for everyone, our tool is simple and easy to navigate, making it accessible for all users.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for PNG to BMP Conversion</h2>
+        <p>Here are some situations where converting PNG to BMP can be beneficial:</p>
+        <ul>
+            <li><strong>Graphic Design:</strong> Use BMP images for graphic design projects where high-quality and uncompressed images are required.</li>
+            <li><strong>Image Editing:</strong> Convert PNG files to BMP for easier editing in various software applications.</li>
+            <li><strong>Printing:</strong> Use BMP images for printing purposes, as they retain high quality without compression artifacts.</li>
+            <li><strong>Archiving:</strong> Store images in BMP format for long-term archival, preserving their quality over time.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting PNG to BMP Can Help</h2>
+        <p>Converting your PNG images to BMP can enhance their usability and performance in various applications. Here’s how:</p>
+        <ul>
+            <li><strong>Better Editing Experience:</strong> BMP images are easier to work with in graphic design software, making your editing process smoother.</li>
+            <li><strong>Improved Print Quality:</strong> Use BMP files to ensure your printed images maintain their sharpness and clarity.</li>
+            <li><strong>Easy Access:</strong> BMP format is compatible with many applications, ensuring that your images can be used wherever you need them.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

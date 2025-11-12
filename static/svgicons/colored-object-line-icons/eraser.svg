@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<polygon fill="#E371FF" points="28.21,5 23.21,15 14.58,15 19.58,5 "/>
+<polygon fill="#FFA28D" points="22.21,17 17.71,26 8.79,26 13.29,17 "/>
+<path fill="#2D2220" d="M29.1,5.45l-10.5,21C18.43,26.79,18.09,27,17.71,27H8.5C8.22,27,8,26.78,8,26.5S8.22,26,8.5,26h9.21l5-10
+	H9.29l-5,10H5.5C5.78,26,6,26.22,6,26.5S5.78,27,5.5,27H4.29c-0.35,0-0.67-0.18-0.85-0.47c-0.18-0.3-0.2-0.67-0.04-0.98l10.5-21
+	C14.06,4.21,14.41,4,14.79,4h8.71C23.78,4,24,4.22,24,4.5S23.78,5,23.5,5h-8.71l-5,10h13.42l5-10H25.5C25.22,5,25,4.78,25,4.5
+	S25.22,4,25.5,4h2.71c0.35,0,0.67,0.18,0.85,0.47C29.24,4.77,29.26,5.14,29.1,5.45z"/>
+</svg>

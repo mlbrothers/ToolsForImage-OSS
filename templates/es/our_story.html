@@ -1,0 +1,152 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Descubre la historia de ToolsForImage - Desde una simple idea hasta una suite completa de herramientas gratuitas de edición de imágenes en línea. Conoce nuestra misión, valores y compromiso de proporcionar soluciones accesibles de procesamiento de imágenes.">
+{% endblock %}
+
+{% block title %}Nuestra Historia | ToolsForImage | Herramientas gratuitas en línea para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Nuestra Historia</h1>
+<p>Bienvenido a la historia de ToolsForImage, un viaje que comenzó con una simple idea y ha crecido hasta convertirse en una suite completa de herramientas gratuitas de edición de imágenes en línea.</p>
+
+<h2>El Comienzo</h2>
+<p>ToolsForImage nació de la necesidad de herramientas de edición de imágenes accesibles y fáciles de usar. Nuestros fundadores, un grupo de desarrolladores y diseñadores apasionados, reconocieron la creciente demanda de soluciones rápidas y eficientes para el procesamiento de imágenes en la era digital.</p>
+
+<h2>Nuestra Misión</h2>
+<p>Desde el principio, nuestra misión ha sido clara: hacer que la edición de imágenes de nivel profesional sea accesible para todos, independientemente de su experiencia técnica o presupuesto. Creemos que las herramientas poderosas de edición de imágenes deberían estar disponibles para todos, desde fotógrafos profesionales hasta usuarios casuales de redes sociales.</p>
+
+<h2>Crecimiento y Evolución</h2>
+<p>Lo que comenzó como una simple herramienta de compresión de imágenes ha evolucionado hasta convertirse en una plataforma completa que ofrece una amplia gama de servicios. Hoy, ToolsForImage proporciona soluciones para compresión de imágenes, redimensionamiento, conversión de formato, rotación, marca de agua y más.</p>
+
+<h2>Nuestros Valores</h2>
+<p>A lo largo de nuestro viaje, hemos mantenido nuestro compromiso con nuestros valores fundamentales:</p>
+<ul>
+    <li>Accesibilidad: Mantener nuestras herramientas gratuitas y fáciles de usar.</li>
+    <li>Calidad: Ofrecer resultados de nivel profesional.</li>
+    <li>Privacidad: Respetar los datos del usuario y mantener la seguridad.</li>
+    <li>Innovación: Mejorar y expandir continuamente nuestras ofertas.</li>
+</ul>
+
+<h2>Mirando hacia el Futuro</h2>
+<p>A medida que continuamos creciendo, estamos emocionados por el futuro de ToolsForImage. Estamos trabajando constantemente en nuevas funciones y mejoras, siempre con las necesidades de nuestros usuarios en mente. Desde mejorar nuestras herramientas existentes hasta desarrollar tecnologías de vanguardia para el procesamiento de imágenes, estamos comprometidos a mantenernos a la vanguardia de la edición de imágenes en línea.</p>
+
+<h2>Únete a Nuestro Viaje</h2>
+<p>Te invitamos a ser parte de nuestra historia. Ya sea que estés comprimiendo imágenes para una carga más rápida en la web, redimensionando fotos para redes sociales o aplicando efectos creativos a tu trabajo, ToolsForImage está aquí para apoyar tus necesidades de edición de imágenes.</p>
+
+<p>Gracias por elegir ToolsForImage. Estamos emocionados de continuar este viaje contigo, haciendo que la edición de imágenes sea accesible, eficiente y disfrutable para todos.</p>
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 10px auto 10px auto;
+        padding: 20px; /* Added padding for better spacing */
+        background-color: var(--box-color); /* Consistent background color */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border: var(--background-color) 3px solid; /* Consistent border */
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em; /* Slightly larger font size for section headings */
+        font-weight: 600;
+        margin-bottom: 1em; /* Spacing below section headings */
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6; /* Improved readability */
+        margin-bottom: 1.5em; /* Spacing between paragraphs */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px; /* Indent bullet points */
+        margin-bottom: 2em; /* Spacing after the list */
+    }
+
+    ul li {
+        margin-bottom: 0.75em; /* Spacing between list items */
+        font-size: 16px; /* Matching paragraph font size */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    a {
+        color: var(--secondary-color); /* Link color matching theme */
+        text-decoration: none;
+        font-weight: 700; /* Bold links for emphasis */
+    }
+
+    a:hover {
+        color: var(--box-hover-text-color); /* Hover effect on links */
+    }
+
+    .tool-name {
+        font-weight: bold;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        display: flex;
+        border: var(--background-color) 3px solid;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block;
+        padding: 15px;
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            padding: 15px; /* Adjust padding for smaller screens */
+        }
+
+        h1 {
+            font-size: 1.8em; /* Reduce font size for mobile */
+        }
+
+        h2 {
+            font-size: 1.2em; /* Reduce section heading size */
+        }
+
+        p, ul li {
+            font-size: 15px; /* Adjust text size for mobile */
+        }
+    }
+</style>
+
+{% endblock %}

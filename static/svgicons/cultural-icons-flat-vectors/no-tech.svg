@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>no-tech</title>
+
+<g id="no-tech">
+
+<circle cx="22.5" cy="41.5" r="21.5" style="fill:#e5efef"/>
+
+<rect x="23" y="11" width="21" height="39" rx="2.838" ry="2.838" style="fill:#02eae6;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="14" x2="35" y2="14" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="11.518" y1="13.518" x2="52.481" y2="54.481" style="fill:none;stroke:#f53e28;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.5,50v.5A4.5,4.5,0,0,1,29,55H23.5A4.5,4.5,0,0,1,19,50.5h0A4.5,4.5,0,0,0,14.5,46H4" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="51" y1="32" x2="51" y2="34" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="51" y1="38" x2="51" y2="40" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47" y1="36" x2="49" y2="36" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="53" y1="36" x2="55" y2="36" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="59.511" cy="57.113" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="58.511" cy="9.113" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="12.5" cy="27.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="33" cy="33" r="29" style="fill:none;stroke:#f53e28;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="33.5" cy="46" r="1.5" style="fill:#4c241d"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#71c285;}.cls-2{fill:#ccc;}.cls-3{fill:#f2f2f2;}.cls-4{fill:#4c8056;}.cls-5{fill:#98856e;}.cls-6{fill:#cbb292;}.cls-7{fill:#5f443e;}.cls-8{fill:#7f5b53;}.cls-9{fill:#849eb4;}.cls-10{fill:#b0d3f0;}.cls-11{fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 4" id="Layer_4">
+
+<polygon class="cls-1" points="58 58 58 42.71 58 42.71 34 35 34 58 58 58"/>
+
+<rect class="cls-2" height="4" width="16" x="38" y="46"/>
+
+<rect class="cls-3" height="4" width="13" x="38" y="46"/>
+
+<rect class="cls-2" height="4" width="16" x="38" y="50"/>
+
+<rect class="cls-3" height="4" width="13" x="38" y="50"/>
+
+<rect class="cls-2" height="4" width="16" x="38" y="54"/>
+
+<rect class="cls-3" height="4" width="13" x="38" y="54"/>
+
+<polyline class="cls-4" points="34 31 62 40 62 44 34 35"/>
+
+<rect class="cls-5" height="4" width="12" x="34" y="20"/>
+
+<rect class="cls-6" height="4" width="9" x="34" y="20"/>
+
+<rect class="cls-7" height="4" width="60" x="2" y="58"/>
+
+<rect class="cls-8" height="4" width="57" x="2" y="58"/>
+
+<rect class="cls-5" height="50" width="30" x="4" y="8"/>
+
+<rect class="cls-6" height="50" width="27" x="4" y="8"/>
+
+<path class="cls-2" d="M14,58V53a5,5,0,0,1,5-5h0a5,5,0,0,1,5,5v5"/>
+
+<path class="cls-3" d="M17.5,48.25A5,5,0,0,0,14,53v5h7V53A5,5,0,0,0,17.5,48.25Z"/>
+
+<rect class="cls-9" height="10" width="15" x="4" y="14"/>
+
+<rect class="cls-10" height="10" width="12" x="4" y="14"/>
+
+<rect class="cls-9" height="10" width="15" x="19" y="14"/>
+
+<rect class="cls-10" height="10" width="12" x="19" y="14"/>
+
+<rect class="cls-9" height="10" width="15" x="19" y="24"/>
+
+<rect class="cls-10" height="10" width="12" x="19" y="24"/>
+
+<rect class="cls-9" height="10" width="15" x="19" y="34"/>
+
+<rect class="cls-10" height="10" width="12" x="19" y="34"/>
+
+<rect class="cls-9" height="10" width="15" x="4" y="34"/>
+
+<rect class="cls-10" height="10" width="12" x="4" y="34"/>
+
+<rect class="cls-9" height="10" width="15" x="4" y="24"/>
+
+<rect class="cls-10" height="10" width="12" x="4" y="24"/>
+
+<rect class="cls-7" height="6" width="34" x="2" y="2"/>
+
+<rect class="cls-8" height="6" width="31" x="2" y="2"/>
+
+<rect class="cls-11" height="4" width="60" x="2" y="58"/>
+
+<polyline class="cls-11" points="4 58 4 8 34 8 34 58"/>
+
+<line class="cls-11" x1="4" x2="34" y1="14" y2="14"/>
+
+<polyline class="cls-11" points="34 31 62 40 62 44 34 35"/>
+
+<polyline class="cls-11" points="34 24 46 24 46 20 34 20"/>
+
+<line class="cls-11" x1="4" x2="34" y1="24" y2="24"/>
+
+<line class="cls-11" x1="19" x2="19" y1="14" y2="24"/>
+
+<line class="cls-11" x1="4" x2="34" y1="34" y2="34"/>
+
+<line class="cls-11" x1="19" x2="19" y1="24" y2="34"/>
+
+<line class="cls-11" x1="4" x2="34" y1="44" y2="44"/>
+
+<line class="cls-11" x1="19" x2="19" y1="34" y2="44"/>
+
+<path class="cls-11" d="M14,58V53a5,5,0,0,1,5-5h0a5,5,0,0,1,5,5v5"/>
+
+<line class="cls-11" x1="7" x2="11" y1="21" y2="17"/>
+
+<line class="cls-11" x1="12" x2="16" y1="21" y2="17"/>
+
+<line class="cls-11" x1="22" x2="26" y1="21" y2="17"/>
+
+<line class="cls-11" x1="27" x2="31" y1="21" y2="17"/>
+
+<line class="cls-11" x1="22" x2="26" y1="31" y2="27"/>
+
+<line class="cls-11" x1="27" x2="31" y1="31" y2="27"/>
+
+<line class="cls-11" x1="22" x2="26" y1="41" y2="37"/>
+
+<line class="cls-11" x1="27" x2="31" y1="41" y2="37"/>
+
+<line class="cls-11" x1="7" x2="11" y1="41" y2="37"/>
+
+<line class="cls-11" x1="12" x2="16" y1="41" y2="37"/>
+
+<line class="cls-11" x1="7" x2="11" y1="31" y2="27"/>
+
+<line class="cls-11" x1="12" x2="16" y1="31" y2="27"/>
+
+<rect class="cls-11" height="6" width="34" x="2" y="2"/>
+
+<line class="cls-11" x1="58" x2="58" y1="42.71" y2="58"/>
+
+<polyline class="cls-11" points="38 58 38 46 54 46 54 58"/>
+
+<line class="cls-11" x1="38" x2="54" y1="50" y2="50"/>
+
+<line class="cls-11" x1="38" x2="54" y1="54" y2="54"/>
+
+<polyline class="cls-11" points="34 14 46 14 46 20"/>
+
+<line class="cls-11" x1="38" x2="38" y1="14" y2="20"/>
+
+<line class="cls-11" x1="42" x2="42" y1="14" y2="20"/>
+
+<line class="cls-11" x1="42" x2="42" y1="24" y2="33"/>
+
+<line class="cls-11" x1="42" x2="34" y1="28" y2="28"/>
+
+</g>
+
+</svg>

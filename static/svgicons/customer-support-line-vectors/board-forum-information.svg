@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1_1_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<rect height="2" width="2" x="5" y="5"/>
+
+<rect height="2" width="2" x="9" y="5"/>
+
+<rect height="2" width="2" x="13" y="5"/>
+
+<path d="M63,15h-6V1H1v48h8v6h22v8h28v-8h4V15z M61,23H11v-6h50V23z M55,3v6H3V3H55z M3,47V11h52v4H9v32H3z M39,41h-8v8H15V31h24   V41z M57,61H33V43h24V61z M59,53V41H41V29H13v22h18v2H11V25h50v28H59z"/>
+
+<rect height="2" width="2" x="13" y="19"/>
+
+<rect height="2" width="2" x="17" y="19"/>
+
+<rect height="2" width="2" x="21" y="19"/>
+
+<rect height="2" width="20" x="17" y="33"/>
+
+<rect height="2" width="20" x="17" y="37"/>
+
+<rect height="2" width="12" x="17" y="41"/>
+
+<rect height="2" width="12" x="17" y="45"/>
+
+<rect height="2" width="20" x="35" y="45"/>
+
+<rect height="2" width="20" x="35" y="49"/>
+
+<rect height="2" width="20" x="35" y="53"/>
+
+<rect height="2" width="2" x="53" y="57"/>
+
+<rect height="2" width="16" x="35" y="57"/>
+
+</g>
+
+</svg>

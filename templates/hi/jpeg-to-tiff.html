@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ JPEG को TIFF छवियों में आसानी से कनवर्ट करें। मुफ्त ऑनलाइन JPEG से TIFF कनवर्टर।">
+{% endblock %}
+
+{% block title %}JPEG को TIFF में ऑनलाइन कनवर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त JPEG से TIFF कन्वर्जन टूल</h1>
+<p>अपनी JPEG छवियों को TIFF प्रारूप में आसानी से कन्वर्ट करें। एक JPEG छवि अपलोड करें और हम इसे आपके लिए TIFF में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpeg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>JPEG से TIFF कन्वर्जन क्या है?</h2>
+        <p>JPEG से TIFF कन्वर्जन का अर्थ है JPEG (जॉइंट फोटोग्राफिक एक्सपर्ट्स ग्रुप) प्रारूप से TIFF (टैग्ड इमेज फाइल फॉर्मेट) प्रारूप में छवि फ़ाइलों को बदलना। यह कन्वर्जन उन उपयोगकर्ताओं के लिए महत्वपूर्ण है जिन्हें प्रिंटिंग या आर्काइविंग के लिए उच्च गुणवत्ता वाली छवियों की आवश्यकता होती है। हमारा टूल JPEG छवियों को TIFF में बदलना आसान बनाता है, केवल कुछ क्लिक में।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG को TIFF में क्यों कन्वर्ट करें?</h2>
+        <p>JPEG छवियों को TIFF में कन्वर्ट करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>उच्च गुणवत्ता:</strong> TIFF फ़ाइलें अधिक छवि विवरण बनाए रखती हैं और पेशेवर प्रिंटिंग और संपादन के लिए आदर्श हैं। </li>
+            <li><strong>लेयर्स का समर्थन:</strong> TIFF प्रारूप कई लेयर्स और चैनल स्टोर कर सकता है, जिससे यह ग्राफिक डिज़ाइन और फ़ोटोग्राफी के काम के लिए उपयोगी है। </li>
+            <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> JPEG के विपरीत, जो लॉसी संकुचन का उपयोग करता है, TIFF फ़ाइलें मूल छवि गुणवत्ता को बनाए रखती हैं। </li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPEG से TIFF कन्वर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे JPEG से TIFF कन्वर्जन टूल का उपयोग करना सरल और उपयोगकर्ता के अनुकूल है। यहाँ यह कैसे काम करता है:</p>
+        <ul>
+            <li>JPEG छवि को चुनने के लिए "JPEG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>एक बार जब छवि अपलोड हो जाती है, तो हमारा टूल इसे स्वचालित रूप से TIFF प्रारूप में बदल देगा।</li>
+            <li>कन्वर्जन पूरा होने के बाद, अपने नए चित्र को अपने डिवाइस पर सहेजने के लिए "TIFF डाउनलोड करें" पर क्लिक करें।</li>
+        </ul>
+        <p>हमारा कन्वर्टर विभिन्न JPEG फ़ाइलों का समर्थन करता है, जिससे हर बार एक सहज कन्वर्जन प्रक्रिया सुनिश्चित होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPEG से TIFF कन्वर्टर के उपयोग के लाभ</h2>
+        <p>यहाँ हमारे कन्वर्जन टूल का उपयोग करने के कुछ लाभ हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> बिना किसी जटिल चरणों के, कुछ क्लिक में अपनी JPEG छवियों को TIFF में बदलें।</li>
+            <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> हमारी लॉसलेस कन्वर्जन सुविधा के साथ उच्च गुणवत्ता वाली छवियों का आनंद लें, यह सुनिश्चित करते हुए कि आपकी छवियाँ अपनी सर्वश्रेष्ठ दिखें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> किसी भी डाउनलोड या इंस्टॉलेशन की आवश्यकता के बिना, मुफ्त में हमारे ऑनलाइन कन्वर्टर का उपयोग करें।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> सभी के लिए डिज़ाइन किया गया, हमारा टूल नेविगेट करना आसान है, चाहे आपकी तकनीकी कौशल कुछ भी हो।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG से TIFF कन्वर्जन के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ परिस्थितियाँ हैं जहाँ JPEG को TIFF में बदलना लाभदायक हो सकता है:</p>
+        <ul>
+            <li><strong>पेशेवर प्रिंटिंग:</strong> उच्च गुणवत्ता के प्रिंट के लिए TIFF फ़ाइलों का उपयोग करें जो विवरण और स्पष्टता की आवश्यकता होती है।</li>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> ऐसे डिज़ाइन प्रोजेक्ट के लिए छवियों को कन्वर्ट करें जिनमें लेयर और उच्च रिज़ॉल्यूशन की छवियाँ शामिल हों।</li>
+            <li><strong>आर्काइविंग:</strong> उच्च गुणवत्ता और कई चैनलों के समर्थन के कारण आर्काइविंग के लिए TIFF एक पसंदीदा प्रारूप है।</li>
+            <li><strong>फोटोग्राफी:</strong> फ़ोटोग्राफ़र अक्सर JPEG को TIFF में कन्वर्ट करते हैं ताकि संपादन के लिए अपनी छवियों की गुणवत्ता को बनाए रख सकें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPEG को TIFF में कन्वर्ट करने से आपकी छवियों में सुधार कैसे हो सकता है</h2>
+        <p>अपनी JPEG छवियों को TIFF में बदलने से उनकी गुणवत्ता और उपयोगिता में काफी सुधार हो सकता है। यहाँ यह कैसे है:</p>
+        <ul>
+            <li><strong>बढ़ी हुई विस्तार:</strong> TIFF फ़ाइलें अधिक छवि जानकारी बनाए रखती हैं, जिससे छवियाँ स्पष्ट और अधिक विस्तृत होती हैं।</li>
+            <li><strong>संपादन की बेहतर लचीलापन:</strong> लेयर का समर्थन करने की क्षमता ग्राफिक डिज़ाइन में अधिक उन्नत संपादन क्षमताओं की अनुमति देती है।</li>
+            <li><strong>दीर्घकालिक भंडारण:</strong> TIFF प्रारूप दीर्घकालिक छवि भंडारण के लिए आदर्श है, यह सुनिश्चित करते हुए कि आपकी फ़ोटो वर्षों तक उच्च गुणवत्ता में बनी रहें।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

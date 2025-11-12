@@ -1,0 +1,194 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="轻松将PNG转换为TIFF图像，使用ToolsForImage。免费的快速、安全的在线PNG到TIFF转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线PNG到TIFF转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线PNG到TIFF转换器</h1>
+<p>轻松将您的PNG图像转换为TIFF格式。上传PNG图像，我们将为您转换为TIFF。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是PNG到TIFF转换？</h2>
+        <p>PNG到TIFF转换是将PNG格式的图像文件转换为TIFF格式的过程。TIFF（标记图像文件格式）以其高质量而闻名，通常用于专业摄影和打印。将PNG图像转换为TIFF可以帮助保留图像细节和颜色，非常适合高分辨率项目。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将PNG转换为TIFF？</h2>
+        <p>将PNG图像转换为TIFF有几个原因：</p>
+        <ul>
+            <li><strong>高质量：</strong>TIFF文件保留更多的图像数据，提供更好的打印和编辑质量。</li>
+            <li><strong>无损压缩：</strong>TIFF支持无损压缩，确保您的图像在转换过程中不会丢失质量。</li>
+            <li><strong>专业用途：</strong>TIFF在摄影、图形设计和出版等行业中因其高保真度而受到青睐。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的PNG到TIFF转换器</h2>
+        <p>使用我们的PNG到TIFF转换工具非常简单快速。操作步骤如下：</p>
+        <ul>
+            <li>点击“上传PNG文件”按钮，选择您想转换的PNG图像。</li>
+            <li>上传图像后，我们的工具将自动开始将其转换为TIFF格式。</li>
+            <li>转换完成后，点击“下载TIFF”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持多种PNG文件，使整个过程对所有用户都非常顺畅。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的PNG到TIFF转换器的好处</h2>
+        <p>使用我们的转换工具的优势如下：</p>
+        <ul>
+            <li><strong>快速高效：</strong>只需几次点击即可快速将PNG图像转换为TIFF。</li>
+            <li><strong>无质量损失：</strong>享受高质量的转换结果，转换过程中没有质量下降。</li>
+            <li><strong>免费且易于访问：</strong>您可以在线免费使用我们的工具，无需下载任何软件。</li>
+            <li><strong>用户友好界面：</strong>我们的工具设计直观易用，确保用户体验流畅。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG到TIFF转换的常见用途</h2>
+        <p>以下是将PNG转换为TIFF的一些常见用途：</p>
+        <ul>
+            <li><strong>专业打印：</strong>使用TIFF文件进行高质量的摄影或图形设计打印。</li>
+            <li><strong>档案存储：</strong>以TIFF格式保存重要图像，以便长期存储而不会丢失质量。</li>
+            <li><strong>图形设计：</strong>创建需要详细和高分辨率图像的设计。</li>
+            <li><strong>扫描：</strong>将扫描图像从PNG转换为TIFF，以获得更好的质量和编辑选项。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将PNG转换为TIFF的好处</h2>
+        <p>将您的PNG图像转换为TIFF可以提高它们的可用性和性能。以下是一些优势：</p>
+        <ul>
+            <li><strong>增强细节：</strong>TIFF文件捕捉更多的细节，非常适合专业用途。</li>
+            <li><strong>灵活编辑：</strong>TIFF图像在专业软件中更容易编辑，为您的项目提供灵活性。</li>
+            <li><strong>更好的色彩表现：</strong>TIFF文件支持更广泛的颜色范围，确保您的图像看起来鲜艳且色彩真实。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ PNG को JPG चित्रों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन PNG से JPG परिवर्तक।">
+{% endblock %}
+
+{% block title %}ऑनलाइन PNG को JPG में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त PNG से JPG परिवर्तक उपकरण</h1>
+<p>आसानी से अपने PNG चित्रों को JPG प्रारूप में परिवर्तित करें। एक PNG चित्र अपलोड करें और हम इसे आपके लिए JPG में परिवर्तित करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>PNG से JPG परिवर्तक क्या है?</h2>
+        <p>PNG से JPG परिवर्तक वह प्रक्रिया है जिसमें चित्र फ़ाइलों को PNG प्रारूप से JPG (या JPEG) प्रारूप में परिवर्तित किया जाता है। JPG एक लोकप्रिय चित्र प्रारूप है जो फ़ाइल का आकार कम करने के लिए संकुचन का उपयोग करता है जबकि अच्छी चित्र गुणवत्ता बनाए रखता है। यह परिवर्तक तब उपयोगी होता है जब आप वेब या सोशल मीडिया पर साझा करने के लिए छोटे फ़ाइलों की आवश्यकता होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG को JPG में क्यों परिवर्तित करें?</h2>
+        <p>PNG चित्रों को JPG में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>फ़ाइल का आकार कम करना:</strong> JPG फ़ाइलें आमतौर पर PNG फ़ाइलों की तुलना में छोटी होती हैं, जिससे इन्हें अपलोड और साझा करना आसान होता है।</li>
+            <li><strong>वेब अनुकूलन:</strong> JPG अक्सर वेबसाइटों पर चित्रों के लिए पसंदीदा प्रारूप होता है क्योंकि यह गुणवत्ता और फ़ाइल के आकार के बीच संतुलन बनाता है, लोडिंग गति में सुधार करता है।</li>
+            <li><strong>व्यापक संगतता:</strong> JPG फ़ाइलें अधिकांश उपकरणों और सॉफ़्टवेयर के साथ संगत होती हैं, जिससे इन्हें आसानी से देखा और साझा किया जा सकता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे PNG से JPG परिवर्तक का उपयोग कैसे करें</h2>
+        <p>हमारे PNG से JPG परिवर्तक का उपयोग करना सरल और त्वरित है। यह कैसे काम करता है:</p>
+        <ul>
+            <li>"PNG फ़ाइल अपलोड करें" बटन पर क्लिक करें और वह PNG चित्र चुनें जिसे आप परिवर्तित करना चाहते हैं।</li>
+            <li>एक बार आपका चित्र अपलोड हो जाने पर, हमारा उपकरण स्वचालित रूप से इसे JPG प्रारूप में परिवर्तित करना शुरू कर देगा।</li>
+            <li>परिवर्तन पूर्ण होने के बाद, "JPG डाउनलोड करें" पर क्लिक करें और अपनी नई चित्र को अपने उपकरण में सहेजें।</li>
+        </ul>
+        <p>हमारा परिवर्तक विभिन्न PNG फ़ाइलों का समर्थन करता है, जिससे सभी उपयोगकर्ताओं के लिए एक सुगम और कुशल परिवर्तक अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे PNG से JPG परिवर्तक का उपयोग करने के लाभ</h2>
+        <p>हमारे परिवर्तक उपकरण का उपयोग करने के कुछ फायदे:</p>
+        <ul>
+            <li><strong>त्वरित और सरल:</strong> कुछ क्लिक में अपने PNG चित्रों को JPG में जल्दी परिवर्तित करें।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> परिवर्तक प्रक्रिया के दौरान न्यूनतम हानि के साथ उच्च गुणवत्ता वाले परिणामों का आनंद लें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारे उपकरण का ऑनलाइन उपयोग करें, बिना किसी डाउनलोड या स्थापना की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता-अनुकूल इंटरफ़ेस:</strong> हमारा उपकरण सभी के लिए सहज और आसान बनाने के लिए डिज़ाइन किया गया है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG से JPG में परिवर्तक के सामान्य उपयोग</h2>
+        <p>यहां कुछ सामान्य स्थितियां हैं जहां PNG से JPG में परिवर्तित करना उपयोगी हो सकता है:</p>
+        <ul>
+            <li><strong>वेब डिज़ाइन:</strong> वेबसाइटों के लिए JPG चित्रों का उपयोग करें ताकि लोडिंग समय का अनुकूलन हो सके और उपयोगकर्ता अनुभव में सुधार हो सके।</li>
+            <li><strong>सोशल मीडिया:</strong> सोशल मीडिया प्लेटफार्मों पर तेजी से अपलोड और बेहतर सहभागिता के लिए छोटे JPG चित्र साझा करें।</li>
+            <li><strong>फोटोग्राफी:</strong> PNG चित्रों को JPG में परिवर्तित करें ताकि उन्हें सहेजना और साझा करना आसान हो सके जबकि अच्छी गुणवत्ता बनाए रखें।</li>
+            <li><strong>ईमेल अटैचमेंट:</strong> JPG चित्रों को ईमेल अटैचमेंट के रूप में भेजें, क्योंकि वे आमतौर पर PNG की तुलना में छोटे फ़ाइल आकार होते हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG को JPG में परिवर्तित करने से कैसे मदद मिल सकती है</h2>
+        <p>अपने PNG चित्रों को JPG में परिवर्तित करने से उनकी उपयोगिता और प्रदर्शन को बढ़ाया जा सकता है। यहां बताया गया है कि यह कैसे मदद कर सकता है:</p>
+        <ul>
+            <li><strong>अनुकूलित फ़ाइल आकार:</strong> JPG चित्र आमतौर पर छोटे होते हैं, जिससे इन्हें अपलोड और डाउनलोड करना तेज़ होता है।</li>
+            <li><strong>साझाकरण में सुधार:</strong> JPG प्रारूप वेब पर चित्र साझा करने के लिए आदर्श है, जिससे अधिकांश प्लेटफार्मों के साथ संगतता सुनिश्चित होती है।</li>
+            <li><strong>संपादन में आसानी:</strong> JPG चित्रों को विभिन्न सॉफ़्टवेयर में आसानी से संपादित किया जा सकता है, जो आपके प्रोजेक्ट के लिए लचीलापन प्रदान करता है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

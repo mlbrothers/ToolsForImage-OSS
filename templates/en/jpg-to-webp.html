@@ -1,0 +1,197 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert JPG to WEBP images with ToolsForImage. Free, fast, and secure online JPG to WEBP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online JPG to WEBP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online JPG to WEBP Converter</h1>
+<p>Easily convert your images from JPG to WebP format. Upload a JPG image and we'll convert it to WebP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/JPG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is JPG to WebP Conversion?</h2>
+        <p>JPG to WebP conversion is the process of changing image files from JPG format to WebP format. WebP is a modern image format developed by Google that provides superior compression techniques, allowing for smaller file sizes without losing quality. This conversion is essential for optimizing images for web use, ensuring faster load times and better performance.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert JPG to WebP?</h2>
+        <p>There are several reasons to convert JPG images to WebP:</p>
+        <ul>
+            <li><strong>Reduced File Size:</strong> WebP images are smaller than JPGs, which helps in reducing storage space and improving loading speeds on websites.</li>
+            <li><strong>Enhanced Image Quality:</strong> WebP maintains high image quality while compressing files, resulting in clear and vibrant visuals.</li>
+            <li><strong>Support for Transparency:</strong> Unlike JPG, WebP supports transparent backgrounds, making it ideal for logos and graphics.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our JPG to WebP Converter</h2>
+        <p>Our JPG to WebP conversion tool is user-friendly and straightforward. Here’s how to use it:</p>
+        <ul>
+            <li>Click the "Upload JPG File" button to select the JPG image you want to convert.</li>
+            <li>After uploading, our tool will process the conversion to WebP format automatically.</li>
+            <li>Once the conversion is complete, click "Download WebP" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter works seamlessly with various JPG files, ensuring a smooth conversion experience every time.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our JPG to WebP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Efficient:</strong> Convert your JPG images to WebP in just a few clicks, without any hassle.</li>
+            <li><strong>Quality Preservation:</strong> Enjoy high-quality output while reducing file sizes significantly.</li>
+            <li><strong>Free and Online:</strong> Use our converter for free, directly in your web browser, with no software downloads needed.</li>
+            <li><strong>Easy to Use:</strong> Designed for all users, our tool is simple and intuitive, making it accessible for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for JPG to WebP Conversion</h2>
+        <p>Here are some situations where converting JPG to WebP can be beneficial:</p>
+        <ul>
+            <li><strong>Website Optimization:</strong> Use WebP images on your website to improve loading speeds and enhance user experience.</li>
+            <li><strong>Mobile Applications:</strong> Optimize images for mobile apps to ensure faster downloads and better performance.</li>
+            <li><strong>Social Media Sharing:</strong> Share WebP images on social media platforms for quicker uploads and downloads.</li>
+            <li><strong>Image Galleries:</strong> Use WebP format for online galleries to showcase images with reduced load times.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting JPG to WebP Can Help</h2>
+        <p>Converting your JPG images to WebP can enhance their usability and performance. Here’s how:</p>
+        <ul>
+            <li><strong>Faster Loading:</strong> WebP images load faster on websites, improving overall performance and user satisfaction.</li>
+            <li><strong>Better Image Management:</strong> Smaller file sizes make it easier to manage and store images, especially for large collections.</li>
+            <li><strong>Improved SEO:</strong> Faster loading times can lead to better search engine rankings, helping your content reach a wider audience.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

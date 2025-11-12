@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+
+</defs>
+
+<g id="roll_brush" data-name="roll brush">
+
+<line class="cls-1" x1="23.5" y1="1.47" x2="0.49" y2="1.47"/>
+
+<rect class="cls-1" x="10.56" y="8.67" width="12.47" height="5.75" transform="translate(28.34 -5.25) rotate(90)"/>
+
+<rect class="cls-1" x="-1.43" y="11.06" width="17.26" height="5.75" transform="translate(21.14 6.74) rotate(90)"/>
+
+</g>
+
+</svg>

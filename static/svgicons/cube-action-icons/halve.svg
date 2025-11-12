@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_veertien{fill:#BCD269;}
+	.cubies_zeven{fill:#725A48;}
+	.cubies_acht{fill:#8E7866;}
+	.cubies_zestien{fill:#E8E8B5;}
+	.st0{fill:#2EB39A;}
+	.st1{fill:#65C3AB;}
+	.st2{fill:#CCE2CD;}
+	.st3{fill:#98D3BC;}
+	.st4{fill:#A4C83F;}
+	.st5{fill:#BCD269;}
+	.st6{fill:#D1DE8B;}
+	.st7{fill:#F2C99E;}
+	.st8{fill:#C9483A;}
+	.st9{fill:#D97360;}
+	.st10{fill:#F9E0BD;}
+	.st11{fill:#4C4842;}
+	.st12{fill:#67625D;}
+	.st13{fill:#FFF2DF;}
+	.st14{fill:#837F79;}
+	.st15{fill:#C9C6C0;}
+	.st16{fill:#EDEAE5;}
+	.st17{fill:#EC9B5A;}
+	.st18{fill:#EDB57E;}
+	.st19{fill:#E3D4C0;}
+	.st20{fill:#E69D8A;}
+	.st21{fill:#AB9784;}
+	.st22{fill:#C6B5A2;}
+	.st23{fill:#F2C7B5;}
+</style>
+<g>
+	<path class="cubies_zeven" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_acht" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<path class="cubies_zestien" d="M26,30H4c-1.105,0-2-0.895-2-2V4c0-1.105,0.895-2,2-2h22c1.105,0,2,0.895,2,2v24
+		C28,29.105,27.105,30,26,30z"/>
+	<path class="cubies_veertien" d="M26,29H4c-0.552,0-1-0.448-1-1V4c0-0.552,0.448-1,1-1h22c0.552,0,1,0.448,1,1v24
+		C27,28.552,26.552,29,26,29z"/>
+	<path class="cubies_acht" d="M19,17c0,2.761-2.308,4-4,4s-4-1.239-4-4s2-6,4-6S19,14.239,19,17z"/>
+</g>
+</svg>

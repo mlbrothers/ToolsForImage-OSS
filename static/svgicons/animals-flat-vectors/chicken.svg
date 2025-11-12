@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <polyline fill="#E43535" points="19.494 57 15 61.428 23.441 62.524 24.751 58.83"/>
+    <polyline fill="#E43535" points="41.494 57 37 61.428 45.441 62.524 46.751 58.83" transform="matrix(-1 0 0 1 83.75 0)"/>
+    <circle cx="31" cy="42" r="19" fill="#ED9111"/>
+    <circle cx="31" cy="21" r="19" fill="#FFAF40"/>
+    <path fill="#E43535" d="M17.7693596,30 C20.649313,34.2255414 25.5006518,37 31,37 C36.4993482,37 41.350687,34.2255414 44.2306404,30 L17.7693596,30 Z"/>
+    <ellipse cx="19" cy="23" fill="#595959" rx="4" ry="5"/>
+    <circle cx="19" cy="21" r="1" fill="#FFF"/>
+    <ellipse cx="43" cy="23" fill="#595959" rx="4" ry="5"/>
+    <circle cx="43" cy="21" r="1" fill="#FFF"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>watch1</title>
+<path d="M28 18.031h-1v7c0 1.656-1.344 3-3 3h-4v3.938h-11v-3.938h-4c-1.657 0-3-1.344-3-3v-17c0-1.657 1.343-3 3-3h4v-4h11v4h4c1.656 0 3 1.343 3 3v7h1c0.552 0 1 0.448 1 1v1c0 0.552-0.448 1-1 1zM25 9.031c0-1.105-0.896-2-2-2h-17c-1.104 0-2 0.896-2 2v15c0 1.104 0.896 2 2 2h17c1.104 0 2-0.896 2-2v-15zM21 17.031h-2v-3h1v2h1v-2h1v5h-1v-2zM16 19.031h-1v-5h3v5h-2zM17 15.031h-1v3h1v-3zM13 17.031h1v1h-1v-1zM13 15.031h1v1h-1v-1zM10 19.031v-1h1v-1h-1v-1h1v-1h-1v-1h2v5h-2zM7 19.031v-3h1v-1h-1v-1h2v3h-1v1h1v1h-2z"></path>
+</svg>

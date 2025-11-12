@@ -1,0 +1,193 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将ICO转换为BMP图像。快速、安全的在线ICO到BMP转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线ICO到BMP转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线ICO到BMP转换器</h1>
+<p>轻松将您的ICO图像转换为BMP格式。上传ICO图像，我们将为您转换为BMP格式。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是ICO到BMP转换？</h2>
+        <p>ICO到BMP转换是将ICO格式的图像文件转换为BMP格式的过程。BMP（位图图像文件）是一种用于存储位图数字图像的光栅图像文件格式。当需要在要求或偏好使用BMP格式的上下文中使用图标图像时，这种转换非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将ICO转换为BMP？</h2>
+        <p>将ICO图像转换为BMP的原因有很多：</p>
+        <ul>
+            <li><strong>兼容性：</strong> BMP在不同的平台和应用程序中得到广泛支持。</li>
+            <li><strong>无损质量：</strong> BMP是无损格式，转换过程中不会丢失图像质量。</li>
+            <li><strong>简单性：</strong> BMP文件简单直接，易于处理。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的ICO到BMP转换器</h2>
+        <p>使用我们的ICO到BMP转换工具简单快捷。操作如下：</p>
+        <ul>
+            <li>点击“上传ICO文件”按钮选择您想转换的ICO图像。</li>
+            <li>上传图像后，我们的工具将自动开始转换为BMP格式。</li>
+            <li>转换完成后，点击“下载BMP”按钮，将新图像文件保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种ICO文件，确保为所有用户提供流畅高效的转换体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用ICO到BMP转换器的好处</h2>
+        <p>使用我们转换工具的优势如下：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需点击几下，即可快速将ICO图像转换为BMP。</li>
+            <li><strong>高质量：</strong>在转换过程中保持图像质量。</li>
+            <li><strong>免费且易于访问：</strong>无需下载或安装，即可在线免费使用我们的工具。</li>
+            <li><strong>用户友好的界面：</strong>我们的工具设计简洁直观，适合所有用户操作。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO到BMP转换的常见用途</h2>
+        <p>以下是一些将ICO转换为BMP的常见情况：</p>
+        <ul>
+            <li><strong>旧系统：</strong>在更老的系统中使用需要BMP格式的图标图像。</li>
+            <li><strong>图形设计：</strong>将图标图像融入需要BMP文件的大型设计项目中。</li>
+            <li><strong>软件开发：</strong>在更适合使用BMP格式的应用程序中使用图标图像。</li>
+            <li><strong>文档创建：</strong>在需要BMP格式的文档或演示文稿中插入图标图像。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>ICO到BMP转换的帮助</h2>
+        <p>将ICO图像转换为BMP可以增强它们在各种环境中的可用性。具体方式如下：</p>
+        <ul>
+            <li><strong>增强兼容性：</strong>BMP在不同的平台和软件中得到广泛支持。</li>
+            <li><strong>无损质量：</strong>BMP在转换过程中确保图像质量不丢失。</li>
+            <li><strong>简单性：</strong>BMP文件简单易用，适用于各种应用程序。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

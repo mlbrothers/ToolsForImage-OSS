@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#ccc;}.cls-2{fill:#5f443e;}.cls-3{fill:#7f5b53;}.cls-4{fill:#98856e;}.cls-5{fill:#cbb292;}.cls-6{fill:#849eb4;}.cls-7{fill:#b0d3f0;}.cls-8{fill:#559264;}.cls-9{fill:#71c285;}.cls-10{fill:#993839;}.cls-11{fill:#cc4b4c;}.cls-12{fill:#e0e0e0;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 6" id="Layer_6">
+
+<rect class="cls-1" height="44" width="52" x="6" y="14"/>
+
+<rect class="cls-2" height="12" width="28" x="10" y="46"/>
+
+<rect class="cls-3" height="12" width="25" x="10" y="46"/>
+
+<rect class="cls-4" height="4" width="20" x="14" y="50"/>
+
+<rect class="cls-5" height="4" width="17" x="14" y="50"/>
+
+<rect class="cls-6" height="18" width="28" x="10" y="28"/>
+
+<rect class="cls-7" height="18" width="25" x="10" y="28"/>
+
+<rect class="cls-4" height="4" width="12" x="42" y="30"/>
+
+<rect class="cls-5" height="4" width="9" x="42" y="30"/>
+
+<polyline class="cls-8" points="42 58 42 38 54 38 54 58"/>
+
+<rect class="cls-9" height="20" width="9" x="42" y="38"/>
+
+<rect class="cls-4" height="4" width="60" x="2" y="58"/>
+
+<rect class="cls-5" height="4" width="57" x="2" y="58"/>
+
+<rect class="cls-4" height="6" width="60" x="2" y="8"/>
+
+<rect class="cls-5" height="6" width="57" x="2" y="8"/>
+
+<rect class="cls-10" height="8" width="22" x="21" y="2"/>
+
+<rect class="cls-11" height="8" width="19" x="21" y="2"/>
+
+<path class="cls-10" d="M52,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M54.5,23.7A4,4,0,0,0,57,20V14H52v6A4,4,0,0,0,54.5,23.7Z"/>
+
+<path class="cls-10" d="M44,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M46.5,23.7A4,4,0,0,0,49,20V14H44v6A4,4,0,0,0,46.5,23.7Z"/>
+
+<path class="cls-10" d="M36,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M38.5,23.7A4,4,0,0,0,41,20V14H36v6A4,4,0,0,0,38.5,23.7Z"/>
+
+<path class="cls-10" d="M28,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M30.5,23.7A4,4,0,0,0,33,20V14H28v6A4,4,0,0,0,30.5,23.7Z"/>
+
+<path class="cls-10" d="M20,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M22.5,23.7A4,4,0,0,0,25,20V14H20v6A4,4,0,0,0,22.5,23.7Z"/>
+
+<path class="cls-10" d="M12,14v6a4,4,0,0,0,4,4h0a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M14.5,23.7A4,4,0,0,0,17,20V14H12v6A4,4,0,0,0,14.5,23.7Z"/>
+
+<path class="cls-10" d="M4,14v6a4,4,0,0,0,4,4H8a4,4,0,0,0,4-4V14"/>
+
+<path class="cls-11" d="M6.5,23.7A4,4,0,0,0,9,20V14H4v6A4,4,0,0,0,6.5,23.7Z"/>
+
+<rect class="cls-12" height="2" transform="translate(-20.6 24.27) rotate(-45)" width="11.31" x="13.34" y="36"/>
+
+<rect class="cls-12" height="2" transform="translate(-17.67 31.34) rotate(-45)" width="11.31" x="23.34" y="36"/>
+
+<rect class="cls-12" height="2" width="16" x="24" y="5"/>
+
+<rect class="cls-8" height="4" width="2" x="45" y="45"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta_description %}
+    <meta name="description" content="Your default description here.">
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/image-conversion@2.1.1/build/conversion.js"></script>
+    <title>{% block title %}ToolsForImage{% endblock %}</title>
+</head>
+<body>
+    {% include 'en/navbar.html' %}
+    <main>
+        {% block content %}{% endblock %}
+        {% set excluded_endpoints = ['index', 'tools'] %}
+        {% if request.endpoint not in excluded_endpoints %}
+            {% include 'en/our_all_tools.html' %}
+        {% endif %}
+    </main>
+    {% include 'en/navigation_tools.html' %}
+    {% include 'en/footer.html' %}
+</body>
+</html>

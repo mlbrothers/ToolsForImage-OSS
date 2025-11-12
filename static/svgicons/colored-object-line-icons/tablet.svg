@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<rect x="13" y="9" fill="#FFD561" width="1" height="15"/>
+<rect x="11" y="9" fill="#FFD561" width="1" height="15"/>
+<rect x="15" y="10" fill="#FFD561" width="11" height="14"/>
+<g>
+	<path fill="#2D2220" d="M28,7H5C3,7,3,9,3,9v15c0,2,2,2,2,2h3v-1H5.01C4.55,24.99,4,24.81,4,24V9.01C4.01,8.55,4.19,8,5,8h22.99
+		C28.45,8.01,29,8.2,29,9v14.99C28.99,24.45,28.81,25,28,25H15v1h13c2,0,2-2,2-2V9C30,7,28,7,28,7z"/>
+</g>
+<path fill="#2D2220" d="M23,9v1h2v13H6V10h15V9H5v15h21V9H23z"/>
+<rect x="27" y="14" fill="#2D2220" width="1" height="5"/>
+<rect x="28" y="15" fill="#FFD561" width="1" height="5"/>
+<rect x="9" y="25" fill="#2D2220" width="1" height="1"/>
+<rect x="11" y="25" fill="#2D2220" width="1" height="1"/>
+<rect x="13" y="25" fill="#2D2220" width="1" height="1"/>
+</svg>

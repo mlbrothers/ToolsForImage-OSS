@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="drug">
+
+<rect class="cls-1" x="4.34" y="0.3" width="6.74" height="14.83" rx="3.37" transform="translate(7.71 -3.19) rotate(45)"/>
+
+<circle class="cls-1" cx="16.76" cy="16.76" r="5.72"/>
+
+<line class="cls-1" x1="20.77" y1="20.77" x2="12.95" y2="12.95"/>
+
+<line class="cls-1" x1="10.09" y1="10.09" x2="5.33" y2="5.33"/>
+
+</g>
+
+</svg>

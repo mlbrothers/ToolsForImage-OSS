@@ -1,0 +1,259 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage के साथ JPEG को JPG छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन JPEG से JPG कनवर्टर।">
+{% endblock %}
+
+{% block title %}JPEG से JPG ऑनलाइन कनवर्ज़न | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री JPEG से JPG कनवर्ज़न टूल</h1>
+<p>अपने JPEG चित्रों को JPG प्रारूप में आसानी से परिवर्तित करें। एक JPEG चित्र अपलोड करें और हम इसे आपके लिए JPG में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpeg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<section>
+    <h2>JPEG से JPG में कनवर्ज़न के लिए चरण-दर-चरण मार्गदर्शिका</h2>
+    <div class="step-container">
+        <div class="step">चरण 1: रूपांतरित करने के लिए एक JPEG का चयन करें और फ्रेम को व्यक्तिगत JPG छवियों में परिवर्तित करें</div>
+        <div class="arrow">↓</div>
+        <div class="step">चरण 2: एक JPEG अपलोड करें और कनवर्ज़न प्रक्रिया शुरू करें</div>
+        <div class="arrow">↓</div>
+        <div class="step">चरण 3: JPG फ़ाइलें डाउनलोड करें</div>
+    </div>
+</section>
+
+<div class="faq-container">
+    <h2>अक्सर पूछे जाने वाले प्रश्न (FAQs)</h2>
+    <div class="info-container">
+        <div class="info-section">
+            <h2>JPEG से JPG कनवर्ज़न क्या है?</h2>
+            <p>JPEG से JPG कनवर्ज़न वह प्रक्रिया है जिसमें छवि फ़ाइलों को JPEG (जॉइंट फ़ोटोग्राफ़िक एक्सपर्ट्स ग्रुप) प्रारूप से JPG (JPEG का एक सामान्य रूप से इस्तेमाल किया जाने वाला संक्षेप) में बदला जाता है। विभिन्न फ़ाइल एक्सटेंशनों के बावजूद, दोनों प्रारूप मूल रूप से समान हैं, उच्च गुणवत्ता वाली छवियों के लिए लॉसी संपीड़न का उपयोग करते हैं। हमारा टूल आपके JPEG फ़ाइलों को जल्दी और कुशलता से JPG में परिवर्तित करना आसान बनाता है।</p>
+        </div>
+
+        <div class="info-section">
+            <h2>JPEG को JPG में परिवर्तित क्यों करें?</h2>
+            <p>JPEG छवियों को JPG में परिवर्तित करने के कुछ कारण हैं:</p>
+            <ul>
+                <li><strong>फ़ाइल संगतता:</strong> कुछ सॉफ़्टवेयर या प्लेटफ़ॉर्म JPG फ़ाइलों को JPEG की तुलना में पसंद करते हैं। परिवर्तित करने से विभिन्न अनुप्रयोगों के साथ संगतता सुनिश्चित होती है।</li>
+                <li><strong>फ़ाइल नाम में कमी:</strong> JPEG के बजाय JPG का उपयोग करने से फ़ाइल नाम छोटे हो सकते हैं, जो बड़ी छवि संग्रहों को व्यवस्थित करने के लिए उपयोगी है।</li>
+                <li><strong>एकरूपता:</strong> यदि आपके पास JPEG और JPG फ़ाइलों का मिश्रण है, तो उन्हें एक प्रारूप में परिवर्तित करने से आपके छवि पुस्तकालय में स्थिरता बनाए रखने में मदद मिल सकती है।</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>हमारे JPEG से JPG कनवर्टर का उपयोग कैसे करें</h2>
+            <p>हमारा JPEG से JPG कनवर्ज़न टूल उपयोगकर्ता के अनुकूल है। इसका उपयोग कैसे करें:</p>
+            <ul>
+                <li>कनवर्ट करने के लिए JPEG छवि चुनने के लिए "JPEG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+                <li>छवि अपलोड होने के बाद, हमारा टूल इसे JPG प्रारूप में स्वचालित रूप से परिवर्तित करेगा।</li>
+                <li>जब कनवर्ज़न पूरा हो जाए, तो अपने नए फ़ाइल को अपने उपकरण पर सहेजने के लिए "JPG डाउनलोड करें" पर क्लिक करें।</li>
+            </ul>
+            <p>हमारा कनवर्टर विभिन्न JPEG फ़ाइलों का समर्थन करता है, जिससे हर बार सुचारू कनवर्ज़न अनुभव सुनिश्चित होता है।</p>
+        </div>
+
+        <div class="info-section">
+            <h2>हमारे JPEG से JPG कनवर्टर का उपयोग करने के लाभ</h2>
+            <p>हमारे कनवर्ज़न टूल के उपयोग के कुछ लाभ यहाँ हैं:</p>
+            <ul>
+                <li><strong>त्वरित और आसान:</strong> केवल कुछ क्लिक में अपने JPEG चित्रों को JPG में परिवर्तित करें, बिना किसी परेशानी के।</li>
+                <li><strong>गुणवत्ता में कोई हानि नहीं:</strong> हमारे लॉसलेस कनवर्ज़न फ़ीचर के साथ उच्च गुणवत्ता वाली छवियों का आनंद लें।</li>
+                <li><strong>मुफ्त और सुलभ:</strong> किसी भी सॉफ़्टवेयर को डाउनलोड किए बिना, मुफ्त में हमारे ऑनलाइन कनवर्टर का उपयोग करें।</li>
+                <li><strong>उपयोगकर्ता-अनुकूल इंटरफ़ेस:</strong> हर किसी के लिए डिज़ाइन किया गया, हमारा टूल छवियों को परिवर्तित करना आसान बनाता है, चाहे आपकी तकनीकी कौशल कोई भी हो।</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>JPEG से JPG कनवर्ज़न के सामान्य उपयोग</h2>
+            <p>यहाँ कुछ ऐसे हालात हैं जहाँ JPEG को JPG में परिवर्तित करना मददगार हो सकता है:</p>
+            <ul>
+                <li><strong>फ़ाइल प्रबंधन:</strong> बेहतर संगठन के लिए छवियों को परिवर्तित करें, विशेष रूप से यदि आपके पास कई JPEG फ़ाइलें हैं।</li>
+                <li><strong>वेब अपलोड:</strong> कुछ वेबसाइटों या अनुप्रयोगों को JPG फ़ाइलों की आवश्यकता होती है, इसलिए परिवर्तित करना निर्बाध अपलोड सुनिश्चित करता है।</li>
+                <li><strong>अन्य लोगों के साथ साझा करना:</strong> सुनिश्चित करें कि आपकी छवियाँ मित्रों, परिवार या सहयोगियों के लिए पसंदीदा प्रारूप में हैं।</li>
+                <li><strong>सोशल मीडिया:</strong> उन सोशल मीडिया प्लेटफार्मों के लिए अपनी छवियों को तैयार करें जो JPEG के मुकाबले JPG फ़ाइलों को प्राथमिकता दे सकते हैं।</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>JPEG को JPG में परिवर्तित करने से आपकी छवियाँ कैसे सुधार सकती हैं</h2>
+            <p>अपने JPEG चित्रों को JPG में परिवर्तित करने से उनकी उपयोगिता और सुलभता में सुधार हो सकता है। यहाँ कैसे:</p>
+            <ul>
+                <li><strong>बढ़ी हुई संगतता:</strong> सुनिश्चित करें कि आपकी छवियाँ विभिन्न अनुप्रयोगों और प्लेटफ़ॉर्मों के साथ सुचारू रूप से काम करती हैं।</li>
+                <li><strong>कुशल भंडारण:</strong> JPG फ़ाइलें सामान्यतः छोटी होती हैं, जिससे उन्हें स्टोर और साझा करना आसान होता है।</li>
+                <li><strong>सुसंगत फ़ाइल नामकरण:</strong> फ़ाइलों को आसानी से पहचानने और पुनर्प्राप्त करने के लिए JPG एक्सटेंशन के साथ मानकीकरण करें।</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .gif-image{
+        margin: 35px auto;
+        max-width: 600px;
+        max-height: 360px;
+        border: var(--box-hover-color) 1px solid;
+        border-radius: 8px;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    section {
+        margin: 20px auto 10px auto;
+    }
+
+    .step-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

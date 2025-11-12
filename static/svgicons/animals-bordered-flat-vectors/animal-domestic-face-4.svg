@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 300 300" id="monkey3" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<circle cx="74" cy="82" r="32" style="fill-rule:evenodd;clip-rule:evenodd;fill:#997843;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="234" cy="82" r="32" style="fill-rule:evenodd;clip-rule:evenodd;fill:#997843;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="154" cy="138" r="88" style="fill-rule:evenodd;clip-rule:evenodd;fill:#997843;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M154,117.996C146.702,108.283,135.085,102,122,102c-22.091,0-40,17.909-40,40s17.909,40,40,40c13.085,0,24.702-6.283,32-15.996   c7.298,9.713,18.915,15.996,32,15.996c22.091,0,40-17.909,40-40s-17.909-40-40-40C172.915,102,161.298,108.283,154,117.996z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#777777;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M154,258c22.091,0,40-17.909,40-40s-17.909-64-40-64s-40,41.909-40,64S131.909,258,154,258z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#DDDDDD;stroke:#000000;stroke-width:7.7333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M114,218c12.102,5.113,25.839,8,40.402,8c14.241,0,27.693-2.761,39.598-7.664" style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="122" cy="134" r="8" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+
+<circle cx="190" cy="134" r="8" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+
+<path d="   M148.875,172.466c2.83-3.296,7.43-3.281,10.247,0l13.365,15.566c2.829,3.296,1.574,5.967-2.781,5.967h-31.415   c-4.365,0-5.597-2.687-2.781-5.967L148.875,172.466z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#595959;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+</g>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+</svg>

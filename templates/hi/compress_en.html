@@ -1,0 +1,176 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ अपने चित्रों को बिना किसी गुणवत्ता की हानि के बिना आसानी से संकुचित करें। तेज़ वेब लोडिंग समय के लिए फ़ाइल का आकार कम करें।">
+{% endblock %}
+
+{% block title %}ऑनलाइन छवि संकुचन | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त छवि संकुचन उपकरण</h1>
+<p>शीर्ष गुणवत्ता और सर्वोत्तम संकुचन के साथ एक <strong>JPG/JPEG</strong>, <strong>PNG</strong>, या <strong>WEBP</strong> छवि को बिना किसी कठिनाई के संकुचित करें।</p>
+
+<p>अपनी छवि फ़ाइल अपलोड करें और तुरंत संकुचित करें। अपनी छवि चुनें:</p>
+
+<form id="compression-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <label for="compression-level">संपीड़न के बाद फ़ाइल का आकार (%):</label>
+    <input type="range" id="compression-level" name="compression-level" min="1" max="100" value="50">
+    <span id="compression-value">50%</span>
+    <br>
+    <button type="button" class="compress-button" onclick="compressImage()">संपीड़ित करें!</button>
+</form>
+
+<p>आपकी छवि सर्वोत्तम गुणवत्ता और सबसे छोटे फ़ाइल आकार को प्राप्त करने के लिए संकुचित की जाएगी।</p>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>छवि संकुचन क्या है?</h2>
+        <p>छवि संकुचन एक महत्वपूर्ण विधि है जो डिजिटल छवियों के फ़ाइल आकार को कम करती है जबकि उनकी गुणवत्ता को संभवतः अच्छा बनाए रखती है। यह अनावश्यक डेटा को हटाने और छवि फ़ाइलों को अधिक कुशलता से व्यवस्थित करने के लिए विशेष तकनीकों का उपयोग करती है, जिससे संग्रहण स्थान की बचत होती है। छवि संकुचन के दो मुख्य प्रकार हैं: लॉसलेस और लॉसी। लॉसलेस संकुचन सभी मूल डेटा को बनाए रखता है, ताकि आप सही छवि को वापस प्राप्त कर सकें, जबकि लॉसी संकुचन कुछ डेटा को हटाकर फ़ाइल को छोटा बनाता है, जो वेब पृष्ठों को तेजी से लोड करने में मदद कर सकता है। डिजिटल छवियों के साथ काम करने वाले किसी भी व्यक्ति के लिए छवि संकुचन के बारे में जानना महत्वपूर्ण है, क्योंकि यह वेबसाइटों और ऑनलाइन सेवाओं के प्रदर्शन को बेहतर बनाने में मदद करता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>छवि संकुचन के लाभ</h2>
+        <p>छवि संकुचन के लाभ केवल फ़ाइलों को छोटा करने से परे जाते हैं। एक बड़ा लाभ यह है कि यह वेबसाइटों को बेहतर तरीके से चलाने में मदद करता है। संकुचित छवियां अधिक तेजी से लोड होती हैं, जो उपयोगकर्ता अनुभव को बेहतर बनाती हैं और लोगों को साइट छोड़ने से रोकती हैं। यह विशेष रूप से ऑनलाइन शॉपिंग वेबसाइटों के लिए महत्वपूर्ण है, जहां धीमी छवियों के कारण ग्राहक अपनी कार्ट छोड़ सकते हैं और बिक्री से चूक सकते हैं। इसके अलावा, गूगल जैसी खोज इंजन तेज़ लोड होने वाली वेबसाइटों को रैंकिंग करते समय देखती हैं, इसलिए अनुकूलित छवियों का उपयोग आपकी साइट को खोज परिणामों में उच्च रैंकिंग प्राप्त करने में मदद कर सकता है। अंत में, छवि संकुचन उपयोगकर्ताओं के लिए ब्राउज़िंग को सुचारू और आनंददायक बनाता है, जिससे अधिक इंटरैक्शन और बिक्री होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>छवि संकुचन के उपयोग मामले</h2>
+        <p>छवि संकुचन विभिन्न क्षेत्रों और प्लेटफार्मों में उपयोगी है। उदाहरण के लिए, सोशल मीडिया साइटें उपयोगकर्ताओं को फ़ोटो को जल्दी और आसानी से अपलोड और साझा करने के लिए छवि संकुचन का उपयोग करती हैं। वेब साइटें जो बहुत सारी छवियाँ दिखाती हैं, जैसे गैलरी या समाचार वेबसाइटें, अपने पृष्ठों को तेज़ी से लोड रखने और डेटा को कुशलतापूर्वक प्रबंधित करने के लिए संकुचित छवियों का लाभ उठाती हैं। इसके अलावा, मोबाइल ऐप्स जो छवियों को प्रदर्शित करते हैं, अक्सर डेटा उपयोग को कम करने और प्रदर्शन को बेहतर बनाने के लिए संकुचन का उपयोग करते हैं, विशेष रूप से धीमे इंटरनेट वाले क्षेत्रों में। संक्षेप में, छवि संकुचन डिजिटल सामग्री को बेहतर बनाने के लिए एक आवश्यक उपकरण है, जो व्यवसायों और उपयोगकर्ताओं दोनों की जरूरतों को पूरा करता है और ऑनलाइन गति, उपयोगकर्ता अनुभव, और समग्र प्रभावशीलता को बढ़ाता है।</p>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Update the compression level display
+    const compressionLevelInput = document.getElementById('compression-level');
+    const compressionValueDisplay = document.getElementById('compression-value');
+    compressionLevelInput.addEventListener('input', function() {
+        compressionValueDisplay.textContent = `${this.value}%`;
+    });
+
+    async function compressImage() {
+        const file = document.getElementById('image-upload').files[0];
+        if (!file) {
+            alert('Please select an image to compress.');
+            return;
+        }
+
+        const compressionLevel = parseInt(document.getElementById('compression-level').value, 10);
+        const quality = compressionLevel / 100; // Convert percentage to a decimal (0.01 to 1.0)
+
+        try {
+            const compressedFile = await imageConversion.compress(file, { quality: quality });
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(compressedFile);
+            downloadLink.download = `compressed_image_${compressionLevel}%.jpg`; // Dynamic file name
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        } catch (error) {
+            console.error('Error compressing image:', error);
+            alert('An error occurred while compressing the image.');
+        }
+    }
+</script>
+
+<style>
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+    .compress-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+{% endblock %}

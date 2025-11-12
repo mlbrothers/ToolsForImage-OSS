@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="folder">
+
+<path class="cls-1" d="M22.5,11.05v9.54a1.92,1.92,0,0,1-1.91,1.91H3.41A1.92,1.92,0,0,1,1.5,20.59V9.14H8.18l1.91,1.91Z"/>
+
+<path class="cls-1" d="M3.41,9.14V1.5H15.82l4.77,4.77v4.78"/>
+
+<polygon class="cls-1" points="20.59 7.23 14.86 7.23 14.86 1.5 15.82 1.5 20.59 6.27 20.59 7.23"/>
+
+<line class="cls-1" x1="9.14" y1="16.77" x2="14.86" y2="16.77"/>
+
+<line class="cls-1" x1="12" y1="13.91" x2="12" y2="19.64"/>
+
+</g>
+
+</svg>

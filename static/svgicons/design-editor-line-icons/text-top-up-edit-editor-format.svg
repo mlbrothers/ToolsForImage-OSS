@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+<g id="layer1">
+
+<path d="M 7 1 L 7 2 L 17 2 L 17 1 L 7 1 z M 2.5 5 L 0 7.5 L 0 9 L 2 7 L 2 19 L 3 19 L 3 7 L 5 9 L 5 7.5 L 2.5 5 z M 7 5 L 7 6 L 12 6 L 12 5 L 7 5 z M 7 9 L 7 10 L 20 10 L 20 9 L 7 9 z " style="fill:#222222; fill-opacity:1; stroke:none; stroke-width:0px;"/>
+
+</g>
+
+</svg>

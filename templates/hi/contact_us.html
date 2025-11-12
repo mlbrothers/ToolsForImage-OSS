@@ -1,0 +1,37 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage से संपर्क करें - हमारी छवि प्रसंस्करण उपकरणों के बारे में किसी भी प्रश्न, प्रतिक्रिया, या सहायता के लिए हमसे संपर्क करें। हम छवि संकुचन, आकार बदलने, फ़ॉर्मेट परिवर्तनों, और अधिक में आपकी मदद करने के लिए यहाँ हैं।">
+{% endblock %}
+
+{% block title %}हमसे संपर्क करें ToolsForImage - मुफ्त ऑनलाइन छवि संपादन उपकरण{% endblock %}
+
+{% block content %}
+<h1>हमसे संपर्क करें</h1>
+
+<div class="contact-section">
+    <h2>हमसे जुड़ें</h2>
+    <p>हमें आपसे सुनने में खुशी होगी! चाहे आपके पास हमारे उपकरणों के बारे में कोई प्रश्न हो, तकनीकी सहायता की आवश्यकता
+        हो, या आप प्रतिक्रिया देना चाहते हों, कृपया संपर्क करने में संकोच न करें।</p>
+
+    <p>हमें ईमेल करें: <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a></p>
+</div>
+
+<div class="contact-section">
+    <h2>हम तक पहुँचने के अन्य तरीके</h2>
+    <p>तेज़ प्रतिक्रियाओं के लिए, कृपया पहले हमारी <a href="/{{ g.lang }}/faq">FAQ पृष्ठ</a> की जाँच करें। वहाँ कई
+        सामान्य प्रश्नों के उत्तर दिए गए हैं।</p>
+</div>
+
+
+<style>
+    .contact-section {
+        margin-bottom: 2em;
+        padding: 1em;
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+    }
+</style>
+{% endblock %}

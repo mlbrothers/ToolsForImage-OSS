@@ -1,0 +1,195 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage轻松将PNG转换为JPG图像。免费、快速、安全的在线PNG到JPG转换器，提供高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线PNG到JPG转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线PNG到JPG转换器</h1>
+<p>轻松将您的图像从PNG格式转换为JPG格式。上传PNG图像，我们将为您转换为JPG。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是PNG到JPG转换？</h2>
+        <p>PNG到JPG转换是将图像文件从PNG格式转换为JPG（或JPEG）格式的过程。JPG是一种流行的图像格式，使用压缩来减小文件大小，同时保持良好的图像质量。此转换对于希望将图像压缩为更小的文件以便在网页或社交媒体上轻松分享时非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将PNG转换为JPG？</h2>
+        <p>将PNG图像转换为JPG有许多理由：</p>
+        <ul>
+            <li><strong>减少文件大小：</strong>JPG文件通常比PNG文件小，使其更容易上传和分享。</li>
+            <li><strong>网页优化：</strong>JPG通常是网站上图像的首选格式，因为它在质量和文件大小之间取得了良好的平衡，从而提高了加载速度。</li>
+            <li><strong>更广泛的兼容性：</strong>JPG文件与大多数设备和软件兼容，确保图像可以轻松查看和分享。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的PNG到JPG转换器</h2>
+        <p>使用我们的PNG到JPG转换工具既简单又快捷。操作如下：</p>
+        <ul>
+            <li>点击“上传PNG文件”按钮，选择您要转换的PNG图像。</li>
+            <li>上传图像后，我们的工具将自动开始将其转换为JPG格式。</li>
+            <li>转换完成后，点击“下载JPG”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持各种PNG文件，确保为所有用户提供顺畅高效的转换体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的PNG到JPG转换器的好处</h2>
+        <p>使用我们的转换工具有以下一些优点：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需几次点击，您就能快速将PNG图像转换为JPG。</li>
+            <li><strong>无质量损失：</strong>转换过程中保持高质量，质量损失最小。</li>
+            <li><strong>免费且便捷：</strong>在线免费使用我们的工具，无需下载或安装任何软件。</li>
+            <li><strong>用户友好界面：</strong>我们的工具设计直观，方便所有用户使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG到JPG转换的常见用途</h2>
+        <p>在以下常见场景中，转换PNG到JPG是非常有帮助的：</p>
+        <ul>
+            <li><strong>网页设计：</strong>在网站上使用JPG图像优化加载速度并改善用户体验。</li>
+            <li><strong>社交媒体：</strong>在社交媒体平台上分享较小的JPG图像，快速上传并提高参与度。</li>
+            <li><strong>摄影：</strong>将PNG图像转换为JPG，便于存储和分享，同时保持良好的质量。</li>
+            <li><strong>电子邮件附件：</strong>发送JPG图像作为电子邮件附件，因为它们的文件大小通常比PNG小。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>PNG到JPG转换的好处</h2>
+        <p>将您的PNG图像转换为JPG可以提升其可用性和性能。以下是一些帮助：</p>
+        <ul>
+            <li><strong>优化文件大小：</strong>JPG图像通常更小，因此上传和下载速度更快。</li>
+            <li><strong>更方便分享：</strong>JPG格式非常适合在互联网上分享图像，确保与大多数平台兼容。</li>
+            <li><strong>易于编辑：</strong>JPG图像可以轻松在各种软件中编辑，为您的项目提供更多灵活性。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

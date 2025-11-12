@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="-3.88 0 63.75 63.75" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group_69" data-name="Group 69" transform="translate(-323 -599.25)">
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="54" height="34" transform="translate(324 628)" fill="#fff1b6" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_92" data-name="Line 92" x2="25.203" y2="25.203" transform="translate(344.458 602.209)" fill="#ffffff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="3" cy="3" r="3" transform="translate(342 599.25)" fill="#333"/>
+    <g id="Group_68" data-name="Group 68">
+      <circle id="Ellipse_20" data-name="Ellipse 20" cx="11" cy="11" r="11" transform="translate(332 634)" fill="#e8f7f9" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_93" data-name="Line 93" y1="14.688" x2="14.687" transform="translate(335.93 637.438)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_94" data-name="Line 94" y1="12.625" x2="12.625" transform="translate(333.43 635)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_95" data-name="Line 95" y1="13.344" x2="13.344" transform="translate(339.931 641.782)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <circle id="Ellipse_21" data-name="Ellipse 21" cx="4" cy="4" r="4" transform="translate(361 648)" fill="#ffc2c2" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_96" data-name="Line 96" x2="10" transform="translate(360 635)" fill="#ffffff" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_97" data-name="Line 97" x2="10" transform="translate(360 639)" fill="#ffffff" stroke="#333" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,192 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="通过ToolsForImage的先进AI驱动工具轻松去除图像背景。我们免费的在线背景去除服务利用最先进的人工智能技术，提供精确和专业的结果。">
+{% endblock %}
+
+{% block title %}AI驱动的背景去除工具 | ToolsForImage | 全面免费的在线工具，包括模糊人脸、图像转换、编辑、调整大小、去除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>使用AI的免费在线背景去除工具</h1>
+<p>体验图像编辑中的人工智能力量。我们先进的AI算法使得从图像中去除背景变得异常简单，精度和效率无与伦比。只需上传图像，让我们最先进的机器学习模型来完成其余的工作。</p>
+<form id="remove-bg-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">上传图片</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button type="button" class="remove-bg-button" onclick="removeBackground()">使用AI移除背景</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是AI驱动的背景去除？</h2>
+        <p>AI驱动的背景去除是一种前沿技术，使用人工智能和机器学习算法自动将图像的主要主体与背景分离。这项先进的技术分析复杂的模式、边缘和颜色分布，以实现高度准确的结果，超越传统的图像处理技术。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么使用AI去除图像背景？</h2>
+        <p>人工智能在背景去除中提供了诸多优势：</p>
+        <ul>
+            <li><strong>增强的精确度：</strong>AI模型能够检测到传统方法可能忽略的复杂细节和边缘。</li>
+            <li><strong>时间效率：</strong>AI在几秒钟内处理图像，节省了大量的手动编辑工作时间。</li>
+            <li><strong>一致性：</strong>AI确保大量图像处理的一致质量。</li>
+            <li><strong>处理复杂图像：</strong>AI在处理复杂图像（如细节丰富或形状不规则的图像）时表现出色。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的AI驱动的背景去除工具</h2>
+        <p>利用AI进行背景去除非常简单，使用我们易于操作的工具：</p>
+        <ol>
+            <li>点击“上传图像”按钮选择您要处理的图像。</li>
+            <li>上传图像后，点击“使用AI去除背景”按钮。</li>
+            <li>我们的先进AI模型将分析您的图像并自动去除背景。</li>
+            <li>处理完成后，您可以下载去除背景的图像。</li>
+        </ol>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们AI驱动的背景去除工具的好处</h2>
+        <ul>
+            <li><strong>前沿AI技术：</strong>利用人工智能和机器学习的最新进展，获得卓越的结果。</li>
+            <li><strong>快速处理：</strong>我们的AI算法以闪电般的速度工作，几秒钟内即可提供结果。</li>
+            <li><strong>用户友好的界面：</strong>享受AI的强大功能，无需技术专业知识。</li>
+            <li><strong>持续改进：</strong>我们的AI模型不断学习和改进，确保您始终获得最佳结果。</li>
+            <li><strong>多功能性：</strong>我们的AI能够处理各种类型和复杂度的图像，从简单的产品照片到复杂的人物肖像。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button, .remove-bg-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .upload-button:hover, .remove-bg-button:hover {
+        transform: scale(1.05);
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .info-container {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .info-section {
+        margin-bottom: 30px;
+    }
+
+    .info-section h2 {
+        color: var(--secondary-color);
+    }
+
+    .info-section ul, .info-section ol {
+        padding-left: 20px;
+    }
+
+    .info-section li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Include MediaPipe Selfie Segmentation -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let img;
+
+    // Initialize MediaPipe Selfie Segmentation
+    const selfieSegmentation = new SelfieSegmentation({
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+    });
+
+    selfieSegmentation.setOptions({
+        modelSelection: 1, // Use general model
+    });
+
+    selfieSegmentation.onResults((results) => {
+        // Draw the original image on the canvas
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Get the segmentation mask
+        const mask = results.segmentationMask;
+
+        // Apply blur to the background
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.filter = 'blur(10px)';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Restore the foreground
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(mask, 0, 0, canvas.width, canvas.height);
+
+        // Reset composite operation
+        ctx.globalCompositeOperation = 'source-over';
+    });
+
+    // Handle image upload
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                imagePreview.src = img.src;
+                imagePreview.style.display = 'block';
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    }
+
+    // Apply background blur
+    async function removeBackground() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Send the image to MediaPipe for processing
+        await selfieSegmentation.send({ image: img });
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'remove_background.png';
+        a.click();
+    }
+</script>
+{% endblock %}

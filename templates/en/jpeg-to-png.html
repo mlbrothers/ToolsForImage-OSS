@@ -1,0 +1,197 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert JPEG to PNG images with ToolsForImage. Free, fast, and secure online JPEG to PNG converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online JPEG to PNG converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online JPEG to PNG Converter</h1>
+<p>Easily convert your images from JPEG to PNG format. Upload a JPEG image and we'll convert it to PNG for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/JPEG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is JPEG to PNG Conversion?</h2>
+        <p>JPEG to PNG conversion is the process of changing image files from JPEG (Joint Photographic Experts Group) format to PNG (Portable Network Graphics) format. This conversion is useful for preserving image quality and transparency. Our tool allows you to easily convert your JPEG images to PNG with just a few clicks.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert JPEG to PNG?</h2>
+        <p>There are several reasons to convert JPEG images to PNG:</p>
+        <ul>
+            <li><strong>Lossless Compression:</strong> PNG format uses lossless compression, which means your images maintain their original quality without any loss.</li>
+            <li><strong>Transparency Support:</strong> PNG files support transparent backgrounds, making them ideal for web graphics and logos.</li>
+            <li><strong>Better for Editing:</strong> If you plan to edit your images, PNG format is preferred because it preserves details better than JPEG.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our JPEG to PNG Converter</h2>
+        <p>Our JPEG to PNG conversion tool is simple to use. Here’s how:</p>
+        <ul>
+            <li>Click the "Upload JPEG File" button to choose the JPEG image you want to convert.</li>
+            <li>After the image is uploaded, our tool will automatically convert it to PNG format.</li>
+            <li>Once the conversion is complete, click "Download PNG" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter supports various JPEG files, ensuring a smooth conversion experience every time.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our JPEG to PNG Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Quick and Easy:</strong> Convert your JPEG images to PNG in just a few clicks, without any hassle.</li>
+            <li><strong>No Loss of Quality:</strong> Enjoy high-quality images with our lossless conversion feature.</li>
+            <li><strong>Free and Accessible:</strong> Use our online converter for free, without needing to download any software.</li>
+            <li><strong>User-Friendly Interface:</strong> Designed for everyone, our tool makes it easy to convert images, regardless of your technical skills.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for JPEG to PNG Conversion</h2>
+        <p>Here are a few situations where converting JPEG to PNG can be helpful:</p>
+        <ul>
+            <li><strong>Web Graphics:</strong> Use PNG files for website images that require transparency or crisp details.</li>
+            <li><strong>Logos and Icons:</strong> PNG is ideal for logos and icons that need a transparent background.</li>
+            <li><strong>Image Editing:</strong> If you plan to make adjustments to your images, PNG files preserve quality better than JPEGs.</li>
+            <li><strong>Social Media:</strong> Ensure your images look great on social media with high-quality PNG format.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting JPEG to PNG Can Enhance Your Images</h2>
+        <p>Converting your JPEG images to PNG can significantly improve their usability and accessibility. Here’s how:</p>
+        <ul>
+            <li><strong>Preserving Quality:</strong> PNG files retain more detail and clarity, making your images look better in any application.</li>
+            <li><strong>Enhanced Transparency:</strong> The ability to have transparent backgrounds allows for versatile use in design and web applications.</li>
+            <li><strong>Consistent File Handling:</strong> Standardizing your images to PNG can simplify your workflow, especially in graphic design projects.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1{
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

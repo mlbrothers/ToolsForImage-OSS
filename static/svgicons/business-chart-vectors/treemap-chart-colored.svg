@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="800px" height="800px" viewBox="0 -1.5 2253 2253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+
+<rect id="area_chart" x="1.997" y="0" width="2250" height="2250" style="fill:none;"/>
+
+<path d="M314.497,1958.33l0,-622.916l416.667,-522.917l416.667,208.333l625,-520.833l-0,1458.33" style="fill:#ea6a47;stroke:#202020;stroke-width:66.67px;"/>
+
+<path d="M1772.83,1958.33l-1458.33,0l0,-416.666l416.667,-416.667l416.667,227.54l625,-435.873l-0,1041.67" style="fill:#1c4e80;stroke:#202020;stroke-width:66.67px;"/>
+
+<g>
+
+<path d="M289.497,387.5l-100,-200l-100,200l200,-0Z" style="fill:#202020;"/>
+
+<path d="M1864.5,1962.5l200,100l-200,100l0,-200Z" style="fill:#202020;"/>
+
+<path d="M189.497,347.5l0,1715l1715,-0" style="fill:none;stroke:#202020;stroke-width:66.67px;"/>
+
+</g>
+
+</svg>

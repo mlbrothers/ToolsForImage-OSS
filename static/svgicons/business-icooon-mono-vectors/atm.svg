@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#000000;}
+]]>
+</style>
+<g>
+	<path class="st0" d="M469.922,0H42.078C23.156,0,7.859,15.313,7.844,34.219v102.688c0.016,18.906,15.313,34.219,34.234,34.234
+		h47.75v-34.234h-47.75V34.219h427.844v102.688h-47.75v34.234h47.75c18.906-0.016,34.219-15.328,34.234-34.234V34.219
+		C504.141,15.313,488.828,0,469.922,0z"/>
+	<rect x="189.891" y="181.125" class="st0" width="51.344" height="51.344"/>
+	<rect x="224.125" y="296.656" class="st0" width="25.672" height="128.344"/>
+	<rect x="172.781" y="296.656" class="st0" width="25.672" height="94.125"/>
+	<path class="st0" d="M111.969,512h288.094v-12.844V95.563H111.969V512z M374.391,486.328h-33.344V121.234h33.344V486.328z
+		 M137.641,121.234h160.625v365.094H137.641V121.234z"/>
+</g>
+</svg>

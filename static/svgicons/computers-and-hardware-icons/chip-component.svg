@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M23,25H9c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v14C25,24.1,24.1,25,23,25z"/>
+<path class="st0" d="M19,21h-6c-1.1,0-2-0.9-2-2v-6c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2v6C21,20.1,20.1,21,19,21z"/>
+<line class="st0" x1="14" y1="3" x2="14" y2="7"/>
+<line class="st0" x1="10" y1="3" x2="10" y2="7"/>
+<line class="st0" x1="22" y1="3" x2="22" y2="7"/>
+<line class="st0" x1="18" y1="3" x2="18" y2="7"/>
+<line class="st0" x1="14" y1="25" x2="14" y2="29"/>
+<line class="st0" x1="10" y1="25" x2="10" y2="29"/>
+<line class="st0" x1="22" y1="25" x2="22" y2="29"/>
+<line class="st0" x1="18" y1="25" x2="18" y2="29"/>
+<line class="st0" x1="25" y1="18" x2="29" y2="18"/>
+<line class="st0" x1="25" y1="22" x2="29" y2="22"/>
+<line class="st0" x1="25" y1="10" x2="29" y2="10"/>
+<line class="st0" x1="25" y1="14" x2="29" y2="14"/>
+<line class="st0" x1="3" y1="18" x2="7" y2="18"/>
+<line class="st0" x1="3" y1="22" x2="7" y2="22"/>
+<line class="st0" x1="3" y1="10" x2="7" y2="10"/>
+<line class="st0" x1="3" y1="14" x2="7" y2="14"/>
+</svg>

@@ -1,0 +1,192 @@
+{% extends "en/base.html" %}
+
+{% block title %}Free online Remove Background with AI | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Remove image backgrounds easily online for free with ToolsForImage's AI-powered background removal tool. Free online background removal using artificial intelligence.">
+{% endblock %}
+
+{% block content %}
+<h1>Free online AI-Powered Background Removal Tool</h1>
+<p>Easily remove the background of your images using our advanced artificial intelligence algorithm. Upload an image and let our AI do the work for you!</p>
+<form id="remove-bg-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload Image</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button type="button" class="remove-bg-button" onclick="removeBackground()">Remove Background with AI</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is AI-Powered Background Removal?</h2>
+        <p>Our AI-powered background removal tool uses advanced artificial intelligence algorithms to automatically detect the main subject in your image and remove the background. This creates a professional-looking image with a transparent background, perfect for various applications.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Use AI to Remove Image Backgrounds?</h2>
+        <p>There are several benefits to using our AI-powered background removal tool:</p>
+        <ul>
+            <li><strong>Professional Look:</strong> Create stunning, professional-looking images with a transparent background that highlights the main subject.</li>
+            <li><strong>Time-Saving:</strong> Our AI does the work for you, eliminating the need for manual editing or complex software.</li>
+            <li><strong>Enhance Privacy:</strong> Remove sensitive information or distracting elements in the background of your photos.</li>
+            <li><strong>Versatility:</strong> Use the images with transparent backgrounds for various purposes, such as product photography, social media, or design projects.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our AI Background Removal Tool</h2>
+        <p>Using our artificial intelligence-powered background removal tool is quick and easy:</p>
+        <ol>
+            <li>Click the "Upload Image" button to select the image you want to edit.</li>
+            <li>Once your image is uploaded, click "Remove Background with AI" to start the process.</li>
+            <li>Our AI will analyze your image, detect the main subject, and remove the background.</li>
+            <li>After processing, you can download your newly edited image with a transparent background.</li>
+        </ol>
+    </div>
+
+    <div class="info-section">
+        <h2>Applications of AI Background Removal</h2>
+        <p>Our AI-powered background removal tool can be useful in various scenarios:</p>
+        <ul>
+            <li><strong>Portrait Photography:</strong> Remove backgrounds from portrait photos for a clean, professional look.</li>
+            <li><strong>Product Photography:</strong> Make products stand out by removing the background in product shots.</li>
+            <li><strong>Social Media:</strong> Create eye-catching social media posts with transparent backgrounds.</li>
+            <li><strong>Design Projects:</strong> Use images with transparent backgrounds in graphic design or marketing materials.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button, .remove-bg-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .upload-button:hover, .remove-bg-button:hover {
+        transform: scale(1.05);
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .info-container {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .info-section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: var(--secondary-color);
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Include MediaPipe Selfie Segmentation -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let img;
+
+    // Initialize MediaPipe Selfie Segmentation
+    const selfieSegmentation = new SelfieSegmentation({
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+    });
+
+    selfieSegmentation.setOptions({
+        modelSelection: 1, // Use general model
+    });
+
+    selfieSegmentation.onResults((results) => {
+        // Draw the original image on the canvas
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Get the segmentation mask
+        const mask = results.segmentationMask;
+
+        // Apply blur to the background
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.filter = 'blur(10px)';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Restore the foreground
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(mask, 0, 0, canvas.width, canvas.height);
+
+        // Reset composite operation
+        ctx.globalCompositeOperation = 'source-over';
+    });
+
+    // Handle image upload
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                imagePreview.src = img.src;
+                imagePreview.style.display = 'block';
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    }
+
+    // Apply background blur
+    async function removeBackground() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Send the image to MediaPipe for processing
+        await selfieSegmentation.send({ image: img });
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'remove_background.png';
+        a.click();
+    }
+</script>
+{% endblock %}

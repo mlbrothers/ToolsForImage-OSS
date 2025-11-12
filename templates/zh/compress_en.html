@@ -1,0 +1,177 @@
+{% extends "zh/base.html" %}
+
+{% block title %}在线压缩图片 | ToolsForImage | 提供面部模糊、图片转换、编辑、调整大小、背景移除、模糊背景等全面免费的在线工具{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="使用ToolsForImage强大的在线工具压缩您的图片。有效地减小文件大小，同时不影响质量，以提高网站性能。">
+{% endblock %}
+
+{% block content %}
+<h1>免费在线图片压缩器</h1>
+<p>轻松压缩单个<strong>JPG/JPEG</strong>、<strong>PNG</strong>或<strong>WEBP</strong>图片，提供一流的质量和最佳的压缩效果。</p>
+
+<p>上传您的图片文件并立即压缩。选择您的图片：</p>
+
+<form id="compression-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <label for="compression-level">压缩后的文件大小 (%):</label>
+    <input type="range" id="compression-level" name="compression-level" min="1" max="100" value="50">
+    <span id="compression-value">50%</span>
+    <br>
+    <button type="button" class="compress-button" onclick="compressImage()">压缩！</button>
+</form>
+
+<p>您的图片将被压缩，以达到最佳质量和最小文件大小。</p>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是图片压缩？</h2>
+        <p>图片压缩是一种重要的方法，可以减少数字图像的文件大小，同时尽可能保持其质量。它使用特殊技术去除不必要的数据，并更有效地组织图像文件，从而帮助节省存储空间。图片压缩有两种主要类型：无损压缩和有损压缩。无损压缩保留所有原始数据，因此您可以还原出完全相同的图片，而有损压缩则会去除部分数据，以减小文件大小，这有助于网页更快加载。了解图片压缩对于任何从事数字图像工作的人都很重要，因为它有助于提高网站和在线服务的性能。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>图片压缩的好处</h2>
+        <p>图片压缩的好处不仅仅在于减小文件大小。最大的优势之一是它有助于网站运行得更好。压缩后的图片加载更快，提升了用户体验，减少了用户离开网站的可能性。这对于在线购物网站尤为重要，因为加载缓慢的图片可能导致顾客放弃购物车并错失购买机会。此外，像谷歌这样的搜索引擎在排名时会考虑网站加载速度，因此使用优化后的图片可以帮助您的网站在搜索结果中排名更高。最终，图片压缩使浏览体验更加顺畅和愉悦，带来了更多的互动和销售。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>图片压缩的使用场景</h2>
+        <p>图片压缩在许多不同的领域和平台中都非常有用。例如，社交媒体网站使用图片压缩让用户快速便捷地上传和分享照片。展示大量图片的网站，如画廊或新闻网站，通过压缩图片保持页面加载速度快，并有效管理数据。此外，显示图片的移动应用也常常使用压缩来减少数据使用量并提升性能，特别是在网络较慢的地区。总之，图片压缩是改善数字内容的一个重要工具，它通过提升速度、用户体验和在线效果，满足了企业和用户的需求。</p>
+    </div>
+</div>
+
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Update the compression level display
+    const compressionLevelInput = document.getElementById('compression-level');
+    const compressionValueDisplay = document.getElementById('compression-value');
+    compressionLevelInput.addEventListener('input', function() {
+        compressionValueDisplay.textContent = `${this.value}%`;
+    });
+
+    async function compressImage() {
+        const file = document.getElementById('image-upload').files[0];
+        if (!file) {
+            alert('Please select an image to compress.');
+            return;
+        }
+
+        const compressionLevel = parseInt(document.getElementById('compression-level').value, 10);
+        const quality = compressionLevel / 100; // Convert percentage to a decimal (0.01 to 1.0)
+
+        try {
+            const compressedFile = await imageConversion.compress(file, { quality: quality });
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(compressedFile);
+            downloadLink.download = `compressed_image_${compressionLevel}%.jpg`; // Dynamic file name
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        } catch (error) {
+            console.error('Error compressing image:', error);
+            alert('An error occurred while compressing the image.');
+        }
+    }
+</script>
+
+<style>
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+    .compress-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="50" height="9" x="7" y="26" fill="#E43535"/>
+    <g transform="translate(7 33)">
+      <path stroke="#FFAF40" stroke-linecap="square" stroke-width="2" d="M25,14 L25,0"/>
+      <path stroke="#FFAF40" stroke-linecap="round" stroke-width="2" d="M5,15 L5,9.9999433 L5,9.9999433 C5,7.79083562 6.79642476,6 9.00002553,6 L40.9999745,6 C43.2091276,6 45,7.79965349 45,9.9999433 L45,15"/>
+      <rect width="10" height="9" y="15" fill="#5B68C0"/>
+      <rect width="10" height="9" x="40" y="15" fill="#5B68C0"/>
+      <rect width="10" height="9" x="20" y="15" fill="#5B68C0"/>
+    </g>
+    <path stroke="#FFAF40" stroke-linecap="square" stroke-width="2" d="M32,29 L32,15" transform="matrix(1 0 0 -1 0 44)"/>
+    <path stroke="#FFAF40" stroke-linecap="round" stroke-width="2" d="M12,23 L12,17.9999433 L12,17.9999433 C12,15.7908356 13.7964248,14 16.0000255,14 L47.9999745,14 C50.2091276,14 52,15.7996535 52,17.9999433 L52,23" transform="matrix(1 0 0 -1 0 37)"/>
+    <rect width="10" height="9" x="7" y="5" fill="#5B68C0" transform="matrix(1 0 0 -1 0 19)"/>
+    <rect width="10" height="9" x="47" y="5" fill="#5B68C0" transform="matrix(1 0 0 -1 0 19)"/>
+    <rect width="10" height="9" x="27" y="5" fill="#5B68C0" transform="matrix(1 0 0 -1 0 19)"/>
+  </g>
+</svg>

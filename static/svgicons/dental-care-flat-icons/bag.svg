@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#22BA8E" d="M30,22.2234175 C20.375756,23.6706329 13,31.9737327 13,42 L13,52.0094932 C13,57.5279241 17.4729022,62 22.9905068,62 L43.0094932,62 C48.5279241,62 53,57.5270978 53,52.0094932 L53,42 C53,31.9717207 45.6225262,23.6705446 36,22.2234445 L36,20 L30,20 L30,22.2234175 Z"/>
+    <circle cx="33" cy="42" r="13" stroke="#B4DFFB" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="33" cy="42" r="9" stroke="#B4DFFB" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="33" cy="42" r="5" stroke="#B4DFFB" stroke-linecap="round" stroke-width="2"/>
+    <path stroke="#B4DFFB" stroke-linecap="round" stroke-width="2" d="M33.0077069,28.9065037 L33.0077069,12.0195898 C33.0077069,9.80874719 34.7935773,8.01650517 37.0120354,8.01650517 L45.9910448,8.01650517 C48.2025743,8.01650517 49.9953733,9.80726129 49.9953733,12.0164942 L49.9953733,15.0099738 C49.9953733,17.2191067 51.7771751,19.0162708 54.0036207,19.0241528 L59.0140578,19.0418908"/>
+  </g>
+</svg>

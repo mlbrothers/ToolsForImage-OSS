@@ -1,0 +1,54 @@
+<nav>
+    <div class="nav-logo"><a href="/{{ g.lang }}/" style="text-decoration: none; color: inherit;">ToolsForImage</a></div>
+    <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="/{{ g.lang }}/image-compression">Comprimir Imagen</a></li>
+        <li><a href="/{{ g.lang }}/image-resize">Redimensionar Imagen</a></li>
+        <li><a href="/{{ g.lang }}/convert-image-format">Convertir Imagen</a></li>
+        <li><a href="/{{ g.lang }}/image-rotate">Rotar Imagen</a></li>
+        <li class="more-menu">
+            <a href="javascript:void(0)" class="more-menu-button">Más</a>
+            <div class="more-menu-content">
+                <a href="/{{ g.lang }}/image-watermarking">Marca de Agua</a>
+                <a href="/{{ g.lang }}/image-effects">Efectos de Imagen</a>
+                <a href="/{{ g.lang }}/image-crop">Recortar Imagen</a>
+                <a href="/{{ g.lang }}/blur-face">Desenfocar Cara</a>
+                <a href="/{{ g.lang }}/remove-background">Eliminar Fondo</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const moreMenuButton = document.querySelector('.more-menu-button');
+        const moreMenuContent = document.querySelector('.more-menu-content');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        moreMenuButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            moreMenuContent.classList.toggle('show');
+        });
+
+        // Close the menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+            if (!moreMenuContent.contains(e.target) && !moreMenuButton.contains(e.target)) {
+                moreMenuContent.classList.remove('show');
+            }
+        });
+    });
+</script>

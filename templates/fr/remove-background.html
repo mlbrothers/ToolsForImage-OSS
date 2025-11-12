@@ -1,0 +1,192 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Supprimez l'arrière-plan des images sans effort avec l'outil avancé de suppression d'arrière-plan alimenté par l'IA de ToolsForImage. Notre service gratuit de suppression d'arrière-plan en ligne utilise une intelligence artificielle de pointe pour des résultats précis et professionnels.">
+{% endblock %}
+
+{% block title %}Outil de Suppression d'Arrière-Plan Alimenté par l'IA | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Suppression d'Arrière-Plan Alimenté par l'IA</h1>
+<p>Découvrez la puissance de l'intelligence artificielle dans l'édition d'images. Nos algorithmes avancés d'IA rendent incroyablement facile la suppression des arrière-plans de vos images avec une précision et une efficacité sans précédent. Il vous suffit de télécharger une image, et laissez notre modèle d'apprentissage automatique à la pointe de la technologie faire le reste.</p>
+<form id="remove-bg-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger l'Image</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'Image" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button type="button" class="remove-bg-button" onclick="removeBackground()">Supprimer l'Arrière-plan avec IA</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Suppression d'Arrière-Plan Alimentée par l'IA ?</h2>
+        <p>La suppression d'arrière-plan alimentée par l'IA est un processus de pointe qui utilise l'intelligence artificielle et des algorithmes d'apprentissage automatique pour séparer automatiquement le sujet principal d'une image de son arrière-plan. Cette technologie avancée analyse des motifs complexes, des contours et des distributions de couleurs pour obtenir des résultats très précis, surpassant les techniques de traitement d'image traditionnelles.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Utiliser l'IA pour Supprimer les Arrière-Plans d'Images ?</h2>
+        <p>L'intelligence artificielle offre de nombreux avantages pour la suppression d'arrière-plan :</p>
+        <ul>
+            <li><strong>Précision Améliorée :</strong> Les modèles d'IA peuvent détecter des détails complexes et des contours difficiles à repérer avec des méthodes conventionnelles.</li>
+            <li><strong>Efficacité Temporelle :</strong> L'IA traite les images en quelques secondes, économisant des heures de travail d'édition manuelle.</li>
+            <li><strong>Uniformité :</strong> L'IA garantit une qualité uniforme à travers de grands lots d'images.</li>
+            <li><strong>Gestion des Images Complexes :</strong> L'IA excelle à supprimer les arrière-plans d'images difficiles avec des détails complexes ou des formes irrégulières.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Outil de Suppression d'Arrière-Plan Alimenté par l'IA</h2>
+        <p>Exploiter la puissance de l'IA pour la suppression d'arrière-plan est simple avec notre outil convivial :</p>
+        <ol>
+            <li>Cliquez sur le bouton "Télécharger l'Image" pour sélectionner l'image que vous souhaitez traiter.</li>
+            <li>Une fois votre image téléchargée, cliquez sur le bouton "Supprimer l'Arrière-Plan avec l'IA".</li>
+            <li>Notre modèle d'IA sophistiqué analysera votre image et supprimera automatiquement l'arrière-plan.</li>
+            <li>Après le traitement, vous pourrez télécharger votre image avec l'arrière-plan supprimé de manière transparente.</li>
+        </ol>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'Utilisation de Notre Outil de Suppression d'Arrière-Plan Alimenté par l'IA</h2>
+        <ul>
+            <li><strong>Technologie IA de Pointe :</strong> Profitez des dernières avancées en matière d'intelligence artificielle et d'apprentissage automatique pour des résultats supérieurs.</li>
+            <li><strong>Traitement Rapide :</strong> Nos algorithmes d'IA fonctionnent à une vitesse fulgurante, fournissant des résultats en quelques secondes.</li>
+            <li><strong>Interface Conviviale :</strong> Profitez de la puissance de l'IA sans nécessiter d'expertise technique.</li>
+            <li><strong>Amélioration Continue :</strong> Nos modèles d'IA apprennent et s'améliorent constamment, garantissant que vous obtenez toujours les meilleurs résultats possibles.</li>
+            <li><strong>Polyvalence :</strong> Notre IA peut traiter une large gamme de types d'images et de complexités, des simples photos de produits aux portraits complexes.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button, .remove-bg-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .upload-button:hover, .remove-bg-button:hover {
+        transform: scale(1.05);
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .info-container {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .info-section {
+        margin-bottom: 30px;
+    }
+
+    .info-section h2 {
+        color: var(--secondary-color);
+    }
+
+    .info-section ul, .info-section ol {
+        padding-left: 20px;
+    }
+
+    .info-section li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Include MediaPipe Selfie Segmentation -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let img;
+
+    // Initialize MediaPipe Selfie Segmentation
+    const selfieSegmentation = new SelfieSegmentation({
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+    });
+
+    selfieSegmentation.setOptions({
+        modelSelection: 1, // Use general model
+    });
+
+    selfieSegmentation.onResults((results) => {
+        // Draw the original image on the canvas
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Get the segmentation mask
+        const mask = results.segmentationMask;
+
+        // Apply blur to the background
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.filter = 'blur(10px)';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Restore the foreground
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(mask, 0, 0, canvas.width, canvas.height);
+
+        // Reset composite operation
+        ctx.globalCompositeOperation = 'source-over';
+    });
+
+    // Handle image upload
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                imagePreview.src = img.src;
+                imagePreview.style.display = 'block';
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    }
+
+    // Apply background blur
+    async function removeBackground() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Send the image to MediaPipe for processing
+        await selfieSegmentation.send({ image: img });
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'remove_background.png';
+        a.click();
+    }
+</script>
+{% endblock %}

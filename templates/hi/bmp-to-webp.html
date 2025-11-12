@@ -1,0 +1,196 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}BMP से WEBP ऑनलाइन रूपांतरण | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ BMP को WEBP छवियों में आसानी से परिवर्तित करें। नि:शुल्क ऑनलाइन BMP से WEBP रूपांतरण।">
+{% endblock %}
+
+{% block content %}
+
+    <h1>नि:शुल्क BMP से WEBP रूपांतरण उपकरण</h1>
+    <p>अपने BMP छवियों को WEBP प्रारूप में आसानी से परिवर्तित करें। एक BMP छवि अपलोड करें और हम इसे WEBP में परिवर्तित कर देंगे।</p>
+    <form id="conversion-form" method="post" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+        <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+        <br>
+        <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+        <br>
+        <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+    </form>
+
+    <div class="info-container">
+        <div class="info-section">
+            <h2>BMP से WEBP रूपांतरण क्या है?</h2>
+            <p>BMP से WEBP रूपांतरण वह प्रक्रिया है जिसमें छवि फ़ाइलों को BMP (Bitmap) प्रारूप से WEBP (वेब चित्र प्रारूप) में परिवर्तित किया जाता है। BMP फ़ाइलें उच्च गुणवत्ता वाली होती हैं लेकिन आकार में बड़ी हो सकती हैं, जबकि WEBP फ़ाइलें उत्कृष्ट संकुचन प्रदान करती हैं, जिससे गुणवत्ता को बनाए रखते हुए फ़ाइल के आकार को कम किया जा सकता है। हमारा उपकरण इस रूपांतरण को आसान और तेज बनाता है, जिससे आप अपनी छवियों को वेब उपयोग के लिए अनुकूलित कर सकते हैं।</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP को WEBP में परिवर्तित करने के लाभ</h2>
+            <p>BMP छवियों को WEBP में परिवर्तित करने के कई लाभ हैं:</p>
+            <ul>
+                <li><strong>छोटे फ़ाइल आकार:</strong> WEBP फ़ाइलें BMP फ़ाइलों की तुलना में काफी छोटी होती हैं, जिससे उन्हें वेबसाइटों पर लोड करना और ऑनलाइन साझा करना आसान होता है।</li>
+                <li><strong>उच्च गुणवत्ता वाली छवियाँ:</strong> WEBP दोनों लॉस्सी और लॉसलेस संकुचन का समर्थन करता है, जिससे आप फ़ाइल के आकार को कम करते हुए छवि की गुणवत्ता बनाए रख सकते हैं।</li>
+                <li><strong>पारदर्शिता का समर्थन:</strong> WEBP पारदर्शी पृष्ठभूमियों का समर्थन करता है, जिससे यह वेब पर उपयोग किए जाने वाले ग्राफिक्स और लोगो के लिए आदर्श है।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>हमारे BMP से WEBP रूपांतरण उपकरण का उपयोग कैसे करें</h2>
+            <p>हमारा BMP से WEBP रूपांतरण उपकरण सरलता के लिए डिज़ाइन किया गया है। इसका उपयोग कैसे करें:</p>
+            <ul>
+                <li>"BMP फ़ाइल अपलोड करें" बटन पर क्लिक करें और उस BMP छवि का चयन करें जिसे आप परिवर्तित करना चाहते हैं।</li>
+                <li>अपलोड करने के बाद, हमारा उपकरण स्वचालित रूप से BMP फ़ाइल को WEBP प्रारूप में परिवर्तित करेगा।</li>
+                <li>जब रूपांतरण पूरा हो जाए, तो अपने नए चित्र को अपने डिवाइस पर सहेजने के लिए "WEBP डाउनलोड करें" पर क्लिक करें।</li>
+            </ul>
+            <p>हमारा रूपांतरण उपकरण विभिन्न BMP फ़ाइलों का समर्थन करता है, जिससे हर बार बिना किसी परेशानी के रूपांतरण अनुभव सुनिश्चित होता है।</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>हमारे BMP से WEBP रूपांतरण उपकरण के लाभ</h2>
+            <p>यहां हमारे रूपांतरण उपकरण के कुछ लाभ दिए गए हैं:</p>
+            <ul>
+                <li><strong>तेज़ और प्रभावी:</strong> अपने BMP छवियों को WEBP में जल्दी और आसानी से परिवर्तित करें।</li>
+                <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> हमारे लॉसलेस रूपांतरण विकल्प के साथ उच्च-रिज़ॉल्यूशन छवियों का आनंद लें।</li>
+                <li><strong>नि:शुल्क और सुलभ:</strong> हमारे ऑनलाइन रूपांतरण उपकरण का उपयोग नि:शुल्क करें, बिना किसी डाउनलोड या स्थापना की आवश्यकता के।</li>
+                <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> सभी के लिए डिज़ाइन किया गया, हमारा सहज उपकरण आपको तकनीकी कौशल की परवाह किए बिना छवियों को परिवर्तित करने में मदद करता है।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP से WEBP रूपांतरण के सामान्य उपयोग</h2>
+            <p>BMP को WEBP में परिवर्तित करने के कई लाभकारी परिदृश्य हैं:</p>
+            <ul>
+                <li><strong>वेबसाइट अनुकूलन:</strong> छोटे WEBP फ़ाइलों का उपयोग करके लोड समय को कम करें, उपयोगकर्ता अनुभव और SEO में सुधार करें।</li>
+                <li><strong>सोशल मीडिया:</strong> बड़ी फ़ाइलों के आकार की चिंता किए बिना उच्च गुणवत्ता वाली छवियाँ साझा करें।</li>
+                <li><strong>ग्राफिक डिज़ाइन:</strong> गुणवत्ता को बनाए रखते हुए हल्के वेब-तैयार ग्राफिक्स बनाएं।</li>
+                <li><strong>छवि गैलरी:</strong> छवि गैलरी या पोर्टफोलियो में तेजी से लोडिंग के लिए WEBP प्रारूप का उपयोग करें।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP को WEBP में परिवर्तित करने से आपकी छवियों में कैसे सुधार होता है</h2>
+            <p>आपकी BMP छवियों को WEBP में बदलने से उनकी उपयोगिता और ऑनलाइन प्रदर्शन में बहुत सुधार हो सकता है। यहां बताया गया है:</p>
+            <ul>
+                <li><strong>बेहतर लोडिंग गति:</strong> छोटे WEBP फ़ाइलें वेबसाइटों पर तेजी से लोड होती हैं, जिससे उपयोगकर्ता अनुभव में सुधार होता है।</li>
+                <li><strong>बहुपरकारी फ़ाइल उपयोग:</strong> WEBP प्रारूप आधुनिक ब्राउज़रों द्वारा व्यापक रूप से समर्थित है, जिससे यह वेब अनुप्रयोगों के लिए आदर्श है।</li>
+                <li><strong>गुणवत्ता बनाए रखना:</strong> WEBP संकुचन के साथ उच्च गुणवत्ता वाली छवियाँ प्रदान करता है, जो वेब ग्राफिक्स और फ़ोटो के लिए सही है।</li>
+            </ul>
+        </div>
+    </div>  
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

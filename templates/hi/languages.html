@@ -1,0 +1,72 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के लिए अपनी पसंदीदा भाषा चुनें - अंग्रेजी या हिंदी में हमारे छवि उपकरणों तक पहुँचें।">
+{% endblock %}
+
+{% block title %}भाषा चयन | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>अपनी भाषा चुनें</h1>
+<p>ToolsForImage का उपयोग करने के लिए अपनी पसंदीदा भाषा का चयन करें:</p>
+<div class="language-container">
+    <div class="language-box">
+        <a href="/{{ g.lang }}/en">अंग्रेजी (English)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/hi">हिन्दी (Hindi)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/fr">फ्रेंच (French)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/zh">चीनी (Chinese)</a>
+    </div>
+    <div class="language-box">
+        <a href="{{ g.lang }}/es">Español (Spanish)</a>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .language-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .language-box {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-box a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    
+</style>
+{% endblock %}

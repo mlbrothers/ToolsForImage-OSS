@@ -1,0 +1,161 @@
+{% extends 'es/base.html' %}
+
+{% block title %}Cómo rotar imágenes | ToolsForImage | Herramientas gratuitas en línea para difuminar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, difuminar fondos y más{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Descubre cómo rotar imágenes en línea de forma gratuita.">
+{% endblock %}
+
+{% block content %}
+<article class="blog-post">
+    <h1>Rotar Imágenes</h1>
+    <p><em>Publicado el: 22 de octubre de 2024</em></p>
+
+    <section>
+        <h2>Introducción</h2>
+        <p> <span class="bold-text">La rotación de imágenes</span> es el proceso de girar una imagen alrededor de un punto específico, generalmente su centro. Esta manipulación cambia la orientación de la imagen sin alterar su contenido.
+            <span class="bold-text">Rotar imágenes</span> se puede hacer en varios grados, como 90, 180 o 270 grados, dependiendo del resultado deseado. Esta técnica es esencial en fotografía, diseño gráfico y redes sociales, donde la orientación correcta puede mejorar el atractivo visual y el mensaje de una imagen.
+        </p>
+
+        <p>
+            Rotar una imagen es crucial por varias razones. Primero, te permite corregir la orientación de fotos tomadas en ángulos incómodos, asegurando que tus imágenes se vean profesionales. Segundo, puede ayudar a crear composiciones más dinámicas, haciendo que tus visuales sean más atractivos. Además,
+            rotar imágenes puede resaltar elementos específicos o mejorar la estética general de un diseño. Ya sea para uso personal o proyectos profesionales,
+            <span class="bold-text">rotar imágenes</span> puede impactar significativamente en cómo se perciben.
+        </p>
+
+
+        <p>Con
+            <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a>,
+            rotar una imagen nunca ha sido tan fácil. Nuestra <a class="bold-text" href="/{{ g.lang }}/image-rotate">herramienta de rotación de imágenes</a> proporciona una
+            interfaz fácil de usar que te permite
+            <span class="bold-text">rotar imágenes</span> de manera rápida y eficiente. No necesitas descargar ningún software ni tener conocimientos técnicos: simplemente sube tu imagen,
+            elige el grado de rotación y ¡listo! Nuestra herramienta está diseñada para usuarios de todos los niveles, asegurando una experiencia sin complicaciones.
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Cómo usar nuestra herramienta de rotación de imágenes</h2>
+        <div class="container">
+            <div class="step">Paso 1: Haz clic en el botón "Subir desde la computadora" para cargar la imagen que deseas rotar y podrás ver la vista previa de la imagen</div>
+            <div class="arrow">↓</div>
+            <div class="step">Paso 2: Ahora usa el botón "Rotar a la izquierda" o "Rotar a la derecha" para rotar la imagen hacia la izquierda o la derecha</div>
+            <div class="arrow">↓</div>
+            <div class="step">Paso 3: Una vez que obtengas el ángulo de rotación deseado, haz clic en "Descargar imagen rotada" y la descarga de la imagen comenzará automáticamente</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusión</h2>
+        <p>Elegir
+            <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a> para tus necesidades de
+            <a class="bold-text" href="/{{ g.lang }}/image-rotate">rotación de imágenes</a> ofrece numerosas ventajas. Nuestra
+            herramienta es completamente en línea, lo que significa que puedes acceder a ella desde cualquier lugar, en cualquier momento, sin
+            necesidad de instalar nada. Priorizamos la velocidad y la facilidad de uso, asegurando que puedas
+            <a class="bold-text" href="/{{ g.lang }}/image-rotate">rotar imágenes</a> en
+            solo unos pocos clics. Además, nuestra plataforma admite varios formatos de archivo, adaptándose a tus
+            requisitos específicos. Con un compromiso con la calidad y la satisfacción del usuario,
+            somos tu solución ideal para todas las tareas de manipulación de imágenes.</p>
+    </section>
+
+    <a href="{{ url_for('blogs', lang='es') }}" class="back-link">← Volver a los blogs</a>
+</article>
+
+<style>
+    .bold-text {
+        font-weight: 900;
+        color: #000000;
+    }
+
+    .blog-post {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+
+    .back-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section a {
+        text-decoration: underline;
+        color: #344b53;
+        font-weight: 900;
+    }
+
+    section a:hover {
+        color: #287791;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+{% endblock %}

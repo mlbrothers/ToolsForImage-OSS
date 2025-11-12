@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="6" height="11" x="29" y="43" fill="#D8D8D8"/>
+    <rect width="14" height="1" x="25" y="55" stroke="#979797" stroke-width="2"/>
+    <path fill="#868686" d="M2,8.99550699 C2,7.34113416 3.33730974,6 4.99593743,6 L59.0040626,6 C60.6586731,6 62,7.34246828 62,8.99550699 L62,42.004493 C62,43.6588658 60.6626903,45 59.0040626,45 L4.99593743,45 C3.34132688,45 2,43.6575317 2,42.004493 L2,8.99550699 Z"/>
+    <rect width="54" height="33" x="5" y="9" fill="#DFCC00"/>
+    <rect width="24" height="4" x="22" y="18" fill="#5B68C0"/>
+    <rect width="24" height="4" x="17" y="29" fill="#5B68C0"/>
+    <polygon fill="#5B68C0" points="15 20 23 15 23 25"/>
+    <polygon fill="#5B68C0" points="40 31 48 26 48 36" transform="rotate(-180 44 31)"/>
+  </g>
+</svg>

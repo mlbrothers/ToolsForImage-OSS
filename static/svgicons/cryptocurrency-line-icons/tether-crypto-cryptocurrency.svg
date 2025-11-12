@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#455A64;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]>
+</style>
+
+<g id="tether_x2C__crypto">
+
+<g id="XMLID_13_">
+
+<path class="st1" d="M30.19,15.68L16.7,28.7c-0.39,0.38-1.01,0.38-1.4,0L1.81,15.68c-0.31-0.3-0.4-0.77-0.21-1.17    L6.59,4.08C6.76,3.72,7.11,3.5,7.51,3.5h16.98c0.4,0,0.75,0.22,0.92,0.58l4.99,10.43C30.59,14.91,30.5,15.38,30.19,15.68z" id="XMLID_213_"/>
+
+<path class="st1" d="M18,12.55c4.01,0.2,7,1,7,1.95c0,1.1-4.03,2-9,2s-9-0.9-9-2c0-0.96,3.02-1.76,7.06-1.95" id="XMLID_4327_"/>
+
+<line class="st1" id="XMLID_4303_" x1="22.5" x2="9.5" y1="8.5" y2="8.5"/>
+
+<line class="st1" id="XMLID_4310_" x1="16" x2="16" y1="16.5" y2="23"/>
+
+<line class="st1" id="XMLID_4278_" x1="16" x2="16" y1="8.5" y2="14.5"/>
+
+</g>
+
+</g>
+
+</svg>

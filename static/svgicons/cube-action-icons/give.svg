@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_achtien{fill:#EDB57E;}
+	.cubies_negentien{fill:#F2C99E;}
+	.cubies_tweeentwintig{fill:#D97360;}
+	.cubies_eenentwintig{fill:#C9483A;}
+	.cubies_twaalf{fill:#FFF2DF;}
+	.st0{fill:#A4C83F;}
+	.st1{fill:#BCD269;}
+	.st2{fill:#D1DE8B;}
+	.st3{fill:#2EB39A;}
+	.st4{fill:#EC9B5A;}
+	.st5{fill:#A5C64A;}
+	.st6{fill:#65C3AB;}
+	.st7{fill:#F9E0BD;}
+	.st8{fill:#98D3BC;}
+	.st9{fill:#CCE2CD;}
+	.st10{fill:#E69D8A;}
+	.st11{fill:#4C4842;}
+	.st12{fill:#67625D;}
+	.st13{fill:#C9C6C0;}
+	.st14{fill:#725A48;}
+	.st15{fill:#8E7866;}
+	.st16{fill:#EDEAE5;}
+	.st17{fill:#837F79;}
+	.st18{fill:#A5A29C;}
+	.st19{fill:#E3D4C0;}
+	.st20{fill:#E8E8B5;}
+	.st21{fill:#F2C99E;}
+	.st22{fill:#EDB57E;}
+	.st23{fill:#AB9784;}
+</style>
+<g>
+	<path class="cubies_achtien" d="M29,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v26
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_negentien" d="M27,32H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v26
+		C30,30.657,28.657,32,27,32z"/>
+	<polygon class="cubies_tweeentwintig" points="30,14 17,14 17,0 13,0 13,14 0,14 0,18 13,18 13,32 17,32 17,18 30,18 	"/>
+	<rect x="30" y="14" class="cubies_eenentwintig" width="2" height="4"/>
+	<path class="cubies_twaalf" d="M15,17v4.586c0,0.265,0.105,0.52,0.293,0.707l5,5c0.391,0.391,1.024,0.391,1.414,0l4.586-4.586
+		c0.391-0.391,0.391-1.024,0-1.414l-5-5C21.105,16.105,20.851,16,20.586,16H16C15.448,16,15,16.448,15,17z"/>
+</g>
+</svg>

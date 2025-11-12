@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<line class="st0" x1="13" y1="17" x2="19" y2="12"/>
+<line class="st0" x1="13" y1="21" x2="19" y2="16"/>
+<line class="st0" x1="13" y1="25" x2="19" y2="20"/>
+<path class="st0" d="M18,3v3h-4V3H7v0c0,2.5,1.1,4.9,3.1,6.6L13,12v13l3,4l3-4V12l2.9-2.4C23.9,7.9,25,5.5,25,3v0H18z"/>
+</svg>

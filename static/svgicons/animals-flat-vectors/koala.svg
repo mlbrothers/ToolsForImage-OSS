@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="52" cy="29" r="11" fill="#979797"/>
+    <circle cx="12" cy="29" r="11" fill="#979797"/>
+    <path fill="#D8D8D8" d="M32,50 C55.5032159,50 54,42.836556 54,34 C54,25.163444 44.1502645,18 32,18 C19.8497355,18 10,25.163444 10,34 C10,42.836556 8.49678408,50 32,50 Z"/>
+    <circle cx="45" cy="35" r="6" fill="#B4DFFB" stroke="#979797" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="19" cy="35" r="6" fill="#B4DFFB" stroke="#979797" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="18" cy="33" r="3" fill="#595959"/>
+    <circle cx="45" cy="33" r="3" fill="#595959"/>
+    <path fill="#979797" d="M32,46 C38.5889832,46 39,41.7319865 39,34 C39,26.2680135 35.8659932,18 32,18 C28.1340068,18 25,26.2680135 25,34 C25,41.7319865 25.4110168,46 32,46 Z"/>
+    <circle cx="29" cy="42" r="2" fill="#595959"/>
+    <circle cx="35" cy="42" r="2" fill="#595959"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#DFCC00" d="M31,14 L59.0040626,14 C60.6586731,14 62,15.3424683 62,16.995507 L62,50.004493 C62,51.6588658 60.6626903,53 59.0040626,53 L4.99593743,53 C3.34132688,53 2,51.6575317 2,50.004493 L2,16 L2,13.0016655 C2,11.3438914 3.34312337,10 5.00793008,10 L24.9920699,10 C26.6533038,10 28.8091867,11.0789156 29.8001978,12.4002638 L31,14 Z"/>
+    <circle cx="10" cy="45" r="2" fill="#5B68C0"/>
+    <circle cx="22" cy="33" r="2" fill="#5B68C0"/>
+    <circle cx="34" cy="39" r="2" fill="#5B68C0"/>
+    <circle cx="45" cy="25" r="2" fill="#5B68C0"/>
+    <circle cx="57" cy="25" r="2" fill="#5B68C0"/>
+    <polyline stroke="#5B68C0" stroke-linecap="round" stroke-width="2" points="10.197 44.868 22.177 33.012 34.005 39.064 45.137 25.086 57.079 25.086"/>
+  </g>
+</svg>

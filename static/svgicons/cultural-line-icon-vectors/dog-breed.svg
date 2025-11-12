@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>dog-breed</title>
+
+<g id="dog-breed">
+
+<circle cx="58" cy="6" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="62.129" y1="24" x2="59.181" y2="26.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="59.181" y1="24" x2="62.129" y2="26.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="32.5" cy="6.5" r="1.132"/>
+
+<path d="M49.876,40.832A36.124,36.124,0,0,0,51,31.88c0-5.3-1.233-9.09-3.327-11.777l.8-1.066" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21.5,57.039A15.715,15.715,0,0,0,30.5,60a15.668,15.668,0,0,0,8.868-2.87" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M15.423,17.609C12.036,20.25,10,24.671,10,31.88a36.124,36.124,0,0,0,1.124,8.952" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M41,11l-1.607,4.018A37.27,37.27,0,0,0,30,14a39.677,39.677,0,0,0-7.358.591" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M8,51H8a8,8,0,0,0,8,8h0a8,8,0,0,0,8-8V49a2,2,0,0,1,2-2h9a2,2,0,0,1,2,2v2a8,8,0,0,0,8,8h0a8,8,0,0,0,8-8h0c0-8.284-6.716-17-15-17H23C14.716,34,8,42.716,8,51Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37.08,51.468A13.7,13.7,0,0,0,30.5,50a13.489,13.489,0,0,0-6.717,1.548" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31.765,43h-2.53a1.989,1.989,0,0,1-1.678-.8L26.2,40.1c-.623-.964.284-2.1,1.678-2.1h5.244c1.394,0,2.3,1.135,1.678,2.1l-1.357,2.1A1.989,1.989,0,0,1,31.765,43Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M38,20.771a7.772,7.772,0,0,0-3.641,4.7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M23,20.771A8.153,8.153,0,0,1,27,28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M41,10.881l7.194-.769A5.048,5.048,0,0,1,53.35,14.7L54,21.85S43.093,16.576,41,10.881Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22.657,14.67l-5.921-4.159A5.047,5.047,0,0,0,10,12.026L5.97,17.965S18.067,18.637,22.657,14.67Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="42.5" cy="48.5" r="1.132"/>
+
+<circle cx="13.5" cy="53.5" r="1.132"/>
+
+<circle cx="22.5" cy="45.5" r="1.132"/>
+
+<circle cx="19.5" cy="50.5" r="1.132"/>
+
+<circle cx="42.5" cy="52.5" r="1.132"/>
+
+<circle cx="45.5" cy="54.5" r="1.132"/>
+
+<circle cx="18.5" cy="46.5" r="1.132"/>
+
+<circle cx="40.5" cy="45.5" r="1.132"/>
+
+<circle cx="47.5" cy="51.5" r="1.132"/>
+
+<path d="M42,31c0-1.105-1.9-2-3-2a2,2,0,0,0,0,4C40.1,33,42,32.1,42,31Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M24,31a2,2,0,0,0-2-2c-1.105,0-3,.895-3,2s1.895,2,3,2A2,2,0,0,0,24,31Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M30,27V21a3,3,0,0,0-3-3h0" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M30,26V24a3,3,0,0,1,3-3h0" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

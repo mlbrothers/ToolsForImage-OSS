@@ -1,0 +1,73 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के पीछे की प्रतिभाशाली टीम से मिलें - इमेज कम्प्रेशन, रिसाइजिंग, फॉर्मेट कन्वर्जन, और अधिक में विशेषज्ञ। हमारे डेवलपर्स और विचारकों के बारे में जानें जो हमारे मुफ्त ऑनलाइन इमेज एडिटिंग टूल्स को संभव बनाते हैं।">
+{% endblock %}
+
+{% block title %}हमारी टीम | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>हमारी टीम से मिलें</h1>
+<p>ToolsForImage में, हम बेहतरीन मुफ्त ऑनलाइन इमेज एडिटिंग टूल्स प्रदान करने के प्रति उत्साही हैं। हमारी विशेषज्ञों की टीम इमेज कम्प्रेशन, रिसाइजिंग, फॉर्मेट कन्वर्जन, और अधिक के लिए शीर्ष-स्तरीय समाधान लाने के लिए tirelessly काम करती है।</p>
+
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='sid.svg') }}" alt="सिद्धार्थ">
+        <h2>सिद्धार्थ</h2>
+        <p>लीड डेवलपर</p>
+        <p>सिद्धार्थ हमारे कोडिंग जादूगर हैं, जो इमेज प्रोसेसिंग एल्गोरिदम और ऑप्टिमाइजेशन तकनीकों में विशेषज्ञता रखते हैं। वह हमारे शक्तिशाली इमेज कम्प्रेशन और रिसाइजिंग टूल्स के पीछे का दिमाग हैं।</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nandan.svg') }}" alt="नंदन">
+        <h2>नंदन</h2>
+        <p>फ्रंटेंड डेवलपर</p>
+        <p>नंदन हमारे उपयोगकर्ता के अनुकूल इंटरफेस तैयार करते हैं, यह सुनिश्चित करते हैं कि हमारे इमेज एडिटिंग टूल्स सभी के लिए, शुरुआती से लेकर पेशेवरों तक, सुलभ और उपयोग में आसान हों।</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jeni.svg') }}" alt="जेनिश">
+        <h2>जेनिश</h2>
+        <p>उत्पाद विचारक</p>
+        <p>जेनिश हमारे विचारों के जनक हैं, जो हमारे इमेज एडिटिंग सुइट को सुधारने के नए तरीकों की खोज में लगातार लगे रहते हैं। वॉटरमार्किंग से लेकर फेस ब्लरिंग तक, वह हमेशा संभावनाओं की सीमाओं को आगे बढ़ाते हैं।</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='viraj.svg') }}" alt="विराज">
+        <h2>विराज</h2>
+        <p>गुणवत्ता आश्वासन</p>
+        <p>विराज यह सुनिश्चित करते हैं कि हमारे सभी इमेज टूल्स, फॉर्मेट कन्वर्जन से लेकर रोटेशन तक, उच्चतम गुणवत्ता और विश्वसनीयता के मानकों को पूरा करते हैं। वह आपके इमेज एडिटिंग अनुभव के संरक्षक हैं।</p>
+    </div>
+</div>
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .team-member {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1.5em;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    
+</style>
+{% endblock %}

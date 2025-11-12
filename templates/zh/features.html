@@ -1,0 +1,225 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="探索 ToolsForImage 的强大功能 - 您的终极图像压缩、调整大小、格式转换、旋转、水印、面部模糊等解决方案。了解我们的免费在线图像编辑工具如何轻松提升您的视觉内容。">
+{% endblock %}
+
+{% block title %}功能 | ToolsForImage | 综合免费在线工具，适用于模糊面部、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>ToolsForImage 功能：全面的图像编辑解决方案</h1>
+
+<p>欢迎来到 ToolsForImage，您的全能平台，提供专业级的图像编辑和优化工具。我们强大且易于使用的工具套件旨在满足您所有的图像处理需求，无论您是专业摄影师、数字营销人员，还是单纯希望提升个人照片的用户。让我们深入了解 ToolsForImage 成为全球图像编辑爱好者首选的丰富功能。</p>
+
+<h2>我们的核心功能</h2>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <h3>图像压缩</h3>
+        <p>我们先进的图像压缩算法可以在不影响质量的情况下减少文件大小。此功能对于优化网页使用的图像、提高页面加载速度和节省存储空间至关重要。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>图像调整大小</h3>
+        <p>使用我们的直观调整大小工具精确调整图像尺寸。无论您需要将高分辨率照片缩小以用于网页，还是将图像放大用于打印，我们的调整大小功能都能保持图像质量和比例。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>格式转换</h3>
+        <p>将您的图像在各种格式之间进行转换，包括 JPEG、PNG、GIF、WebP 等。我们的格式转换工具确保与不同平台和使用场景的兼容性。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>图像旋转</h3>
+        <p>使用我们的旋转工具轻松修正图像方向。您可以按 90 度增量旋转图像，或者使用细微调整来获得完美角度。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>水印</h3>
+        <p>通过我们的水印功能保护您的知识产权并为图像加上品牌标识。添加文本或图像水印，并自定义透明度、大小和位置。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>图像效果</h3>
+        <p>使用各种效果和滤镜提升图像效果。从亮度和对比度等基本调整到复古滤镜和色彩分级等高级效果。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>图像裁剪</h3>
+        <p>使用我们的精确裁剪工具聚焦图像中的重要部分。去除不需要的区域，改变比例，或创建完美尺寸的缩略图。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>面部模糊</h3>
+        <p>通过我们的面部模糊工具保护隐私和匿名性。自动检测并模糊图像中的面部，适合在敏感照片中保持机密性或遵守隐私规定。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>移除背景</h3>
+        <p>使用先进的 AI 技术自动去除图像背景，获得干净、专业的外观。</p>
+    </div>
+
+    <div class="grid-item">
+        <h3>模糊背景</h3>
+        <p>利用 AI 智能模糊图像背景，突出主题，同时保持自然美感。</p>
+    </div>
+
+</div>
+
+<h2>为什么选择 ToolsForImage？</h2>
+
+<p>ToolsForImage 在多个方面脱颖而出：</p>
+
+<ul>
+    <li><strong>用户友好的界面：</strong>我们的直观设计使各个技能水平的用户都能轻松编辑和增强图像，避免陡峭的学习曲线。</li>
+    <li><strong>无需安装软件：</strong>作为一个基于网络的平台，您可以在任何设备上通过互联网访问我们的工具，无需下载或安装软件。</li>
+    <li><strong>快速处理：</strong>我们的优化算法确保快速处理，即使是大图像或批量操作。</li>
+    <li><strong>隐私和安全：</strong>我们优先考虑您的图像安全。所有上传的图像都经过加密处理，且处理后不会存储您的图像。</li>
+    <li><strong>批量处理：</strong>通过我们的批量处理功能，您可以节省时间同时编辑多个图像。</li>
+    <li><strong>定期更新：</strong>我们根据用户反馈和技术进步不断改进工具并增加新功能。</li>
+</ul>
+
+<style>
+    /* Container for main content */
+    main {
+        max-width: 900px;
+        margin: 10px auto 10px auto;
+        padding: 20px;
+        background-color: var(--box-color);
+        /* Consistent background color */
+        border-radius: 5px;
+        border: var(--background-color) 3px solid;
+        /* Consistent border */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Soft shadow for depth */
+    }
+
+    /* Main heading */
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+
+    /* Section headings */
+    h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    /* Feature grid container */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 2em;
+        /* Space after grid section */
+    }
+
+    /* Individual grid items */
+    .grid-item {
+        padding: 15px;
+        background-color: var(--background-color);
+        /* Background of each grid item */
+        border: 1px solid var(--secondary-color);
+        /* Border to match the theme */
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Smooth hover effects */
+        min-height: 260px;
+    }
+
+    .grid-item:hover {
+        transform: translateY(-5px);
+        /* Lift effect on hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        /* Enhance shadow on hover */
+    }
+
+    /* Subheadings inside grid items */
+    .grid-item h3 {
+        font-size: 1.4em;
+        color: var(--secondary-color);
+        margin-bottom: 0.8em;
+    }
+
+    /* Paragraphs inside grid items */
+    .grid-item p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--text-color);
+        /* Text color consistency */
+    }
+
+    /* Paragraphs outside grid */
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 1.5em;
+        color: var(--text-color);
+        /* Consistent text color */
+    }
+
+    /* List styling for reasons to choose */
+    ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    ul li {
+        font-size: 16px;
+        color: var(--text-color);
+    }
+
+    ul li strong {
+        color: var(--secondary-color);
+        /* Highlight strong text */
+    }
+
+    /* Link styling */
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    a:hover {
+        color: var(--box-hover-text-color);
+        /* Hover effect on links */
+    }
+
+
+
+    /* Responsive design for mobile */
+    @media (max-width: 768px) {
+        main {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.3em;
+        }
+
+        .grid-container {
+            grid-template-columns: 1fr;
+            /* Single column for smaller screens */
+        }
+
+        .grid-item {
+            padding: 10px;
+        }
+
+        ul li {
+            font-size: 15px;
+        }
+    }
+</style>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Choose your preferred language for ToolsForImage - Access our image tools in English, Hindi, or French.">
+{% endblock %}
+
+{% block title %}Language Selection | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block content %}
+<h1>Choose Your Language</h1>
+<p>Select your preferred language to use ToolsForImage:</p>
+<div class="language-container">
+    <div class="language-box">
+        <a href="/en">English</a>
+    </div>
+    <div class="language-box">
+        <a href="/hi">हिन्दी (Hindi)</a>
+    </div>
+    <div class="language-box">
+        <a href="/fr">Français (French)</a>
+    </div>
+    <div class="language-box">
+        <a href="/zh">中文 (Chinese)</a>
+    </div>
+    <div class="language-box">
+        <a href="/es">Español (Spanish)</a>
+    </div>
+</div>
+
+
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .language-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .language-box {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-box a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    
+</style>
+{% endblock %}

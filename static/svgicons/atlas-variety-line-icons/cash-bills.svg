@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1,.cls-2{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}.cls-2{stroke-linecap:square;}</style>
+
+</defs>
+
+<g id="money_stack" data-name="money stack">
+
+<line class="cls-1" x1="4.36" y1="15.82" x2="6.27" y2="15.82"/>
+
+<line class="cls-1" x1="17.73" y1="15.82" x2="19.64" y2="15.82"/>
+
+<rect class="cls-2" x="1.5" y="9.14" width="21" height="13.36"/>
+
+<line class="cls-2" x1="3.41" y1="5.32" x2="20.59" y2="5.32"/>
+
+<line class="cls-2" x1="5.32" y1="1.5" x2="18.68" y2="1.5"/>
+
+<circle class="cls-2" cx="12" cy="15.82" r="3.82"/>
+
+<line class="cls-1" x1="4.36" y1="15.82" x2="6.27" y2="15.82"/>
+
+<line class="cls-1" x1="17.73" y1="15.82" x2="19.64" y2="15.82"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<g>
+
+<circle cx="32" cy="32" fill="#FCCE6B" r="30"/>
+
+</g>
+
+<g>
+
+<g>
+
+<polygon fill="#54321F" points="39.9,50.6 24.1,50.6 21.7,21.5 42.3,21.5    "/>
+
+</g>
+
+<g>
+
+<rect fill="#A88771" height="1.7" width="20.6" x="21.7" y="19.8"/>
+
+</g>
+
+<g>
+
+<polygon fill="#D8D8D7" points="40.7,17.5 39,14.9 24.8,14.9 23.1,17.5 21.7,19.8 42.3,19.8    "/>
+
+</g>
+
+<g>
+
+<polygon fill="#A88771" points="40.4,43.9 41.9,26.3 22,26.3 23.5,43.9    "/>
+
+</g>
+
+<g opacity="0.25">
+
+<polygon fill="#E8E7E7" points="21.8,19.8 39.9,50.6 42.3,21.5 42.3,19.8    "/>
+
+</g>
+
+<g>
+
+<path d="M32,17c1,0,1.9-0.8,1.9-1.9c0-0.1,0-0.2,0-0.3h-3.7c0,0.1,0,0.2,0,0.3C30.1,16.2,31,17,32,17z" fill="#442718"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>

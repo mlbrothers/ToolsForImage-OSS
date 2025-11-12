@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#000000;}
+</style>
+<g>
+	<polygon class="st0" points="463.547,0 351.952,0 255.98,175.338 160.048,0 48.453,0 161.032,205.723 64.999,205.723 
+		64.999,283.674 196.974,283.674 196.974,334.478 64.999,334.478 64.999,412.409 196.974,412.409 196.974,512 208.004,512 
+		303.997,512 315.006,512 315.006,412.409 446.981,412.409 446.981,334.478 315.006,334.478 315.006,283.674 446.981,283.674 
+		446.981,205.723 350.968,205.723 	"/>
+</g>
+</svg>

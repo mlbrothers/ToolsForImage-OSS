@@ -1,0 +1,74 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Rencontrez l'équipe talentueuse derrière ToolsForImage - des experts en compression d'images, redimensionnement, conversion de format, et plus encore. Découvrez nos développeurs et visionnaires qui rendent possibles nos outils de retouche d'image gratuits en ligne.">
+{% endblock %}
+
+{% block title %}Notre Équipe | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Rencontrez Notre Équipe</h1>
+<p>Chez ToolsForImage, nous sommes passionnés par la fourniture des meilleurs outils de retouche d'image gratuits en ligne. Notre équipe d'experts travaille sans relâche pour vous offrir des solutions de premier ordre pour la compression d'images, le redimensionnement, la conversion de format, et plus encore.</p>
+
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='sid.svg') }}" alt="Siddharth">
+        <h2>Siddharth</h2>
+        <p>Développeur Principal</p>
+        <p>Siddharth est notre sorcier du codage, spécialisé dans les algorithmes de traitement d'images et les techniques d'optimisation. C'est lui qui est à l'origine de nos puissants outils de compression et de redimensionnement d'images.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nandan.svg') }}" alt="Nandan">
+        <h2>Nandan</h2>
+        <p>Développeur Frontend</p>
+        <p>Nandan crée nos interfaces conviviales, garantissant que nos outils de retouche d'image soient accessibles et faciles à utiliser pour tous, des débutants aux professionnels.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jeni.svg') }}" alt="Jenish">
+        <h2>Jenish</h2>
+        <p>Visionnaire Produit</p>
+        <p>Jenish est notre générateur d'idées, explorant constamment de nouvelles façons d'améliorer notre suite d'outils de retouche d'image. Du filigrane au floutage de visage, il repousse toujours les limites de ce qui est possible.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='viraj.svg') }}" alt="Viraj">
+        <h2>Viraj</h2>
+        <p>Assurance Qualité</p>
+        <p>Viraj s'assure que tous nos outils d'image, de la conversion de format à la rotation, respectent les normes les plus élevées de qualité et de fiabilité. Il est le gardien de votre expérience de retouche d'image.</p>
+    </div>
+</div>
+
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .team-member {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1.5em;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    
+</style>
+{% endblock %}

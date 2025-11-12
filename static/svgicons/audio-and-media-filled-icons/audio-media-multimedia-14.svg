@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<polygon fill="none" points="   447.1,307.429 364.327,280.041 364.327,238.654 447.1,204.571  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<path d="   M364.327,341.161c0,8.067-6.54,14.606-14.606,14.606H79.507c-8.067,0-14.606-6.539-14.606-14.606V170.839   c0-8.067,6.539-14.606,14.606-14.606h270.214c8.066,0,14.606,6.539,14.606,14.606V341.161z" fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<polygon fill="#D9DCE1" points="   447.1,307.429 364.327,280.041 364.327,238.654 447.1,204.571  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<path d="   M364.327,341.161c0,8.067-6.54,14.606-14.606,14.606H79.507c-8.067,0-14.606-6.539-14.606-14.606V170.839   c0-8.067,6.539-14.606,14.606-14.606h270.214c8.066,0,14.606,6.539,14.606,14.606V341.161z" fill="#65A0D6" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+</g>
+
+</svg>

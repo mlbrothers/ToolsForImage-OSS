@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>hamsa</title>
+
+<g id="hamsa">
+
+<circle cx="39.5" cy="31.5" r="21.5" style="fill:#e5efef"/>
+
+<circle cx="10.5" cy="45.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="57.044" cy="25.014" r="1.069" style="fill:#4c241d"/>
+
+<line x1="55" y1="16" x2="58" y2="19" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="58" y1="16" x2="55" y2="19" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M19,32h9a0,0,0,0,1,0,0V50.5A4.5,4.5,0,0,1,23.5,55h0A4.5,4.5,0,0,1,19,50.5V32A0,0,0,0,1,19,32Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28,32h9a0,0,0,0,1,0,0V56.5A4.5,4.5,0,0,1,32.5,61h0A4.5,4.5,0,0,1,28,56.5V32A0,0,0,0,1,28,32Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37,32h9a0,0,0,0,1,0,0V50.5A4.5,4.5,0,0,1,41.5,55h0A4.5,4.5,0,0,1,37,50.5V32a0,0,0,0,1,0,0Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39.5,32c5,7,18,5,18,5-11-1-10-24.847-10-24.847A8.153,8.153,0,0,0,39.347,4H25.153A8.153,8.153,0,0,0,17,12.153S18,36,7,37c0,0,13,2,18-5Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M43.273,18S38.226,23,32,23s-11.273-5-11.273-5S25.774,13,32,13,43.273,18,43.273,18Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="32" cy="18" r="5" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="23.044" cy="51.014" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="31.044" cy="35.014" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="34.044" cy="35.014" r="1.069" style="fill:#4c241d"/>
+
+<circle cx="42.044" cy="51.014" r="1.069" style="fill:#4c241d"/>
+
+<line x1="27" y1="29" x2="37" y2="29" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="27" y1="26" x2="37" y2="26" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

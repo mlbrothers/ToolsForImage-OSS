@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#00df8e;}.cls-2{fill:#bfffc8;}</style>
+
+</defs>
+
+<title/>
+
+<g id="fill">
+
+<circle class="cls-1" cx="16" cy="16" r="14"/>
+
+<path class="cls-2" d="M16,17H9.78a1,1,0,0,1,0-2H15V8.22a1,1,0,1,1,2,0V16A1,1,0,0,1,16,17Z"/>
+
+</g>
+
+</svg>

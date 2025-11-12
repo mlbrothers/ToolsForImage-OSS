@@ -1,0 +1,35 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Contactez ToolsForImage - Contactez-nous pour toute question, commentaire ou support concernant nos outils de traitement d'image. Nous sommes là pour vous aider avec la compression, le redimensionnement, la conversion de format d'image, et plus encore.">
+{% endblock %}
+
+{% block title %}Contactez-nous | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Contactez-nous</h1>
+
+<div class="contact-section">
+    <h2>Entrer en contact</h2>
+    <p>Nous serions ravis de vous entendre ! Que vous ayez une question concernant nos outils, besoin d'un support technique ou souhaitiez nous faire part de vos commentaires, n'hésitez pas à nous contacter.</p>
+    
+    <p>Envoyez-nous un e-mail à : <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a></p>
+</div>
+
+<div class="contact-section">
+    <h2>Autres moyens de nous contacter</h2>
+    <p>Pour des réponses plus rapides, veuillez consulter d'abord notre <a href="/{{ g.lang }}/faq">page FAQ</a>. De nombreuses questions courantes y sont abordées.</p>
+</div>
+
+<style>
+    .contact-section {
+        margin-bottom: 2em;
+        padding: 1em;
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+    }
+
+    
+</style>
+{% endblock %}

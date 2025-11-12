@@ -1,0 +1,193 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用 ToolsForImage 轻松将 JPG 转换为 ICO 图像。免费、快速且安全的在线 JPG 到 ICO 转换工具，可进行高质量的图像转换。">
+{% endblock %}
+
+{% block title %}在线 JPG 到 ICO 转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线 JPG 到 ICO 转换器</h1>
+<p>轻松将您的图像从 JPG 格式转换为 ICO 格式。上传一张 JPG 图像，我们将为您将其转换为 ICO。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 JPG 到 ICO 转换？</h2>
+        <p>JPG 到 ICO 转换是将图像文件从 JPG 格式更改为 ICO 格式的过程。ICO 是一种用于 Microsoft Windows 图标的文件格式。当您需要为 Windows 应用程序、网站或网站图标创建图标时，此转换非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么将 JPG 转换为 ICO？</h2>
+        <p>将 JPG 图像转换为 ICO 有几个原因：</p>
+        <ul>
+            <li><strong>创建 Windows 图标：</strong>ICO 是 Windows 应用程序图标的标准格式。</li>
+            <li><strong>网站图标：</strong>ICO 通常用作网站图标，显示在浏览器标签页中。</li>
+            <li><strong>多种尺寸：</strong>ICO 文件可以包含一个文件中的多种图像尺寸，适用于不同的显示场景。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 JPG 到 ICO 转换器</h2>
+        <p>使用我们的 JPG 到 ICO 转换工具简单快捷。以下是操作方法：</p>
+        <ul>
+            <li>点击“上传 JPG 文件”按钮，选择您想要转换的 JPG 图像。</li>
+            <li>上传后，我们的工具将自动开始将图像转换为 ICO 格式。</li>
+            <li>转换完成后，点击“下载 ICO”以将新图标文件保存到您的设备。</li>
+        </ul>
+        <p>我们的转换器支持多种 JPG 文件，确保为所有用户提供流畅高效的转换体验。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的 JPG 到 ICO 转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速简单：</strong>仅需几次点击，即可快速将您的 JPG 图像转换为 ICO。</li>
+            <li><strong>高质量：</strong>在转换过程中保持图像质量。</li>
+            <li><strong>免费且易用：</strong>在线使用我们的工具，无需下载或安装。</li>
+            <li><strong>用户友好的界面：</strong>我们的工具设计直观，易于每个人使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG 到 ICO 转换的常见用途</h2>
+        <p>以下是一些常见情况下将 JPG 转换为 ICO 的用途：</p>
+        <ul>
+            <li><strong>应用程序开发：</strong>为 Windows 应用程序创建图标。</li>
+            <li><strong>网页设计：</strong>生成网站的图标，用于显示在浏览器标签和书签中。</li>
+            <li><strong>自定义文件夹图标：</strong>为 Windows 文件夹创建个性化图标。</li>
+            <li><strong>桌面快捷方式：</strong>设计桌面快捷方式的自定义图标。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 JPG 转换为 ICO 的优势</h2>
+        <p>将您的 JPG 图像转换为 ICO 格式可以在特定情况下提升其可用性。以下是优势：</p>
+        <ul>
+            <li><strong>Windows 兼容性：</strong>ICO 是 Windows 的本地图标格式，确保正确显示。</li>
+            <li><strong>网页标准：</strong>ICO 是浏览器中广泛支持的网站图标格式。</li>
+            <li><strong>多分辨率支持：</strong>ICO 文件可存储多个图像尺寸，适用于不同的显示场景。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'ico';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ BMP को ICO छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन BMP से ICO कनवर्टर।">
+{% endblock %}
+
+{% block title %}ToolsForImage पर ऑनलाइन BMP को ICO में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त BMP से ICO कनवर्जन टूल</h1>
+<p>अपने BMP छवियों को ICO प्रारूप में आसानी से परिवर्तित करें। एक BMP छवि अपलोड करें और हम इसे आपके लिए ICO में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>BMP से ICO कनवर्जन क्या है?</h2>
+        <p>BMP से ICO कनवर्जन एक प्रक्रिया है जिसमें छवि फ़ाइलों को BMP प्रारूप से ICO प्रारूप में बदला जाता है। ICO फ़ाइल प्रारूप Microsoft Windows में आइकनों के लिए उपयोग किया जाता है। यह कनवर्जन तब उपयोगी होता है जब आपको Windows अनुप्रयोगों, वेबसाइटों या फ़ेविकॉन्स के लिए आइकन बनाने की आवश्यकता होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP को ICO में परिवर्तित करने के लिए क्यों?</h2>
+        <p>BMP छवियों को ICO में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>Windows आइकन बनाना:</strong> ICO Windows अनुप्रयोग आइकनों के लिए मानक प्रारूप है।</li>
+            <li><strong>वेबसाइट फ़ेविकॉन्स:</strong> ICO वेबसाइट फ़ेविकॉन्स के लिए आमतौर पर उपयोग किया जाता है, जो ब्राउज़र टैब में दिखाए जाने वाले छोटे आइकन होते हैं।</li>
+            <li><strong>एकाधिक आकार:</strong> ICO फ़ाइलों में एक फ़ाइल में कई छवि आकार हो सकते हैं, जो विभिन्न प्रदर्शन परिदृश्यों के लिए उपयोगी हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से ICO कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे BMP से ICO कनवर्जन टूल का उपयोग करना सरल और त्वरित है। यह इस तरह काम करता है:</p>
+        <ul>
+            <li>"BMP फ़ाइल अपलोड करें" बटन पर क्लिक करें और वह BMP छवि चुनें जिसे आप परिवर्तित करना चाहते हैं।</li>
+            <li>एक बार आपकी छवि अपलोड हो जाने पर, हमारा टूल स्वचालित रूप से इसे ICO प्रारूप में परिवर्तित करना शुरू कर देगा।</li>
+            <li>एक बार कनवर्जन पूरा होने के बाद, "ICO डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई आइकन फ़ाइल अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न BMP फ़ाइलों का समर्थन करता है, सभी उपयोगकर्ताओं के लिए एक चिकनी और कुशल कनवर्जन अनुभव सुनिश्चित करता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से ICO कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>यहाँ हमारे कनवर्जन टूल का उपयोग करने के कुछ फायदे हैं:</p>
+        <ul>
+            <li><strong>त्वरित और आसान:</strong> अपने BMP छवियों को केवल कुछ क्लिक के साथ तेजी से ICO में परिवर्तित करें।</li>
+            <li><strong>उच्च गुणवत्ता:</strong> कनवर्जन प्रक्रिया के दौरान छवि गुणवत्ता बनाए रखें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारे टूल का उपयोग ऑनलाइन मुफ्त में करें, बिना किसी डाउनलोड या इंस्टॉलेशन की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता-अनुकूल इंटरफेस:</strong> हमारा टूल सहज और सभी के लिए नेविगेट करने में आसान बनाने के लिए डिज़ाइन किया गया है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP से ICO कनवर्जन के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ सामान्य स्थितियाँ हैं जहाँ BMP को ICO में परिवर्तित करना मददगार हो सकता है:</p>
+        <ul>
+            <li><strong>अनुप्रयोग विकास:</strong> Windows अनुप्रयोगों के लिए आइकन बनाना।</li>
+            <li><strong>वेब डिज़ाइन:</strong> वेबसाइटों के लिए फ़ेविकॉन्स उत्पन्न करना जो ब्राउज़र टैब और बुकमार्क में प्रदर्शित होते हैं।</li>
+            <li><strong>कस्टम फ़ोल्डर आइकन:</strong> Windows फ़ोल्डरों के लिए व्यक्तिगत आइकन बनाना।</li>
+            <li><strong>डेस्कटॉप शॉर्टकट:</strong> डेस्कटॉप शॉर्टकट के लिए कस्टम आइकन डिज़ाइन करना।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP को ICO में परिवर्तित करना कैसे मदद कर सकता है</h2>
+        <p>अपने BMP छवियों को ICO में परिवर्तित करना उनके विशिष्ट संदर्भों में उपयोगिता बढ़ा सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>Windows संगतता:</strong> ICO Windows के लिए मूल आइकन प्रारूप है, सही प्रदर्शन सुनिश्चित करता है।</li>
+            <li><strong>वेब मानक:</strong> ICO विभिन्न ब्राउज़रों में फ़ेविकॉन प्रारूप के रूप में व्यापक रूप से समर्थित है।</li>
+            <li><strong>एकाधिक रिज़ॉल्यूशन्स:</strong> ICO फ़ाइलें कई छवि आकारों को संग्रहीत कर सकती हैं, जो विभिन्न प्रदर्शन परिदृश्यों के लिए उपयोगी हैं।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'ico';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+<g>
+	<polygon fill="#CCCCCC" points="41.44,28.714 19.618,28.714 9.113,28.714 3.219,14.787 19.237,14.787 41.142,14.787 57.25,14.787 
+		52.458,28.714 	"/>
+	
+		<polygon fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		58.42,14.234 58.42,52.285 1.958,52.285 1.958,14.234 19.237,14.234 41.142,14.234 	"/>
+	
+		<polyline fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		41.142,14.234 41.142,6.4 19.237,6.4 19.237,14.234 	"/>
+	
+		<polyline fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		2.873,15.737 8.603,29.354 19.672,29.354 40.787,29.354 52.929,29.354 57.506,15.737 	"/>
+	<path fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M19.339,27.285l-0.102,4.789L19.339,27.285z"/>
+	<path fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M41.193,27.285l-0.102,4.789L41.193,27.285z"/>
+	<path fill="none" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M19.339,27.285l-0.102,4.789L19.339,27.285z"/>
+</g>
+</svg>

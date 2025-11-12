@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 300 300" id="shrimps" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="214" x2="178" y1="170" y2="178"/>
+
+<path d="   M74,182c0,0-35.121,18.347-20.392,52" style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M248.733,157.6c18.839-16.673,26.615-38.968,17.375-49.792c-9.241-10.824-32.003-6.085-50.841,10.592   c-18.839,16.673-26.615,38.968-17.375,49.792S229.895,174.274,248.733,157.6z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M154,98c0,0-35.121,18.347-20.392,52" style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="138" x2="114" y1="86" y2="98"/>
+
+<path d="   M218.663,116.695c14.622,20.541,36.027,30.612,47.808,22.496c11.785-8.117,9.484-31.349-5.137-51.887   c-14.618-20.541-36.023-30.612-47.804-22.496C201.745,72.925,204.045,96.154,218.663,116.695z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#ED5481;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M205.148,105.207c23.8,8.981,47.055,4.973,51.944-8.948c4.889-13.925-10.443-32.489-34.239-41.47   c-23.8-8.976-47.055-4.969-51.944,8.952C166.019,77.662,181.351,96.23,205.148,105.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="154" x2="126" y1="98" y2="106"/>
+
+<path d="   M186.877,99.287c25.118-6.629,42.401-23.328,38.599-37.292c-3.797-13.968-27.235-19.913-52.35-13.284   c-25.118,6.629-42.4,23.328-38.603,37.296C138.32,99.971,161.763,105.92,186.877,99.287z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#ED5481;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="152" cy="72" r="6" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="134" x2="98" y1="254" y2="262"/>
+
+<path d="   M168.733,241.6c18.839-16.673,26.615-38.968,17.375-49.792c-9.241-10.824-32.003-6.085-50.841,10.592   c-18.839,16.673-26.615,38.968-17.375,49.792S149.895,258.274,168.733,241.6z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="58" x2="34" y1="170" y2="182"/>
+
+<path d="   M138.663,200.695c14.622,20.541,36.027,30.612,47.808,22.496c11.785-8.117,9.484-31.349-5.137-51.887   c-14.618-20.541-36.023-30.612-47.804-22.496C121.745,156.925,124.045,180.154,138.663,200.695z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#ED5481;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="74" x2="46" y1="182" y2="190"/>
+
+<path d="   M125.148,189.207c23.8,8.981,47.055,4.973,51.944-8.948c4.889-13.925-10.443-32.489-34.239-41.47   c-23.8-8.976-47.055-4.969-51.944,8.952C86.019,161.662,101.351,180.23,125.148,189.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M106.877,183.287c25.118-6.629,42.401-23.328,38.599-37.292c-3.797-13.968-27.235-19.913-52.35-13.284   c-25.118,6.63-42.4,23.328-38.603,37.296C58.32,183.971,81.763,189.92,106.877,183.287z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#ED5481;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="72" cy="156" r="6" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+
+</g>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+</svg>

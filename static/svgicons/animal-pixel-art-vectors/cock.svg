@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g id="cock">
+	<rect x="358.4" y="76.8" style="fill:#F84508;" width="25.6" height="25.6"/>
+	<rect x="384" y="76.8" style="fill:#F84508;" width="25.6" height="25.6"/>
+	<rect x="384" y="128" width="26.017" height="26.011"/>
+	<rect x="435" y="154" style="fill:#F84508;" width="26.012" height="25.6"/>
+	<g>
+		<rect x="435" y="128" style="fill:#DE8647;" width="26" height="26"/>
+		<polygon style="fill:#DE8647;" points="128,179 128,154 102.4,154 77,154 77,179 102.4,179 		"/>
+		<rect x="51" y="179" style="fill:#DE8647;" width="26" height="26"/>
+		<polygon style="fill:#DE8647;" points="128,179 128,205 153.6,205 179,205 179,179 153.6,179 		"/>
+		<polygon style="fill:#DE8647;" points="77,205 77,230 102.4,230 128,230 128,205 102.4,205 		"/>
+		<polygon style="fill:#DE8647;" points="307,230.4 307,256 307,282 333,282 333,256 333,230.4 333,205 307,205 		"/>
+		<polygon style="fill:#DE8647;" points="153.6,256 179,256 179,230 153.6,230 128,230 128,256 		"/>
+		<polygon style="fill:#DE8647;" points="230,230.4 230,205 205,205 205,230.4 205,256 230,256 		"/>
+		<polygon style="fill:#DE8647;" points="77,256 77,282 102.4,282 128,282 128,256 102.4,256 		"/>
+		<polygon style="fill:#DE8647;" points="282,256 282,230.4 282,205 256,205 256,230.4 256,256 256,282 282,282 		"/>
+		<polygon style="fill:#DE8647;" points="153.6,307 179,307 179,282 153.6,282 128,282 128,307 		"/>
+		<polygon style="fill:#DE8647;" points="230.4,282 205,282 205,307 230.4,307 256,307 256,282 		"/>
+		<rect x="282" y="282" style="fill:#DE8647;" width="25" height="25"/>
+		<polygon style="fill:#DE8647;" points="256,333 230.4,333 205,333 205,358 230.4,358 256,358 282,358 282,332.8 282,307 256,307 
+					"/>
+		<rect x="154" y="333" style="fill:#DE8647;" width="25" height="25"/>
+	</g>
+	<g>
+		<path style="fill:#E06100;" d="M409.6,102H384h-26v26v26h-25v25.2v25.6v25.6V256v26h-26v25h-25v25.8V358h-26h-25.6H205v-25h25.4
+			H256v-26h-25.6H205v-25h25.4H256v-26v-25.6V205h-26v25.4V256h-25v-25.6V205h-25.8h-25.6H128v25h25.6H179v26h-25.4H128v26h25.6H179
+			v25h-25.4H128v26h25.6H179v25.4V384h25.8h25.6H256h25.6h25.6h25.6H358v-26h26v-25h26v-26h25v-25.4V256v-25.6v-25.6v-25.6v-25.6
+			V128v-26H409.6z M410,154h-26v-26h26V154z"/>
+		<polygon style="fill:#E06100;" points="128,205 128,179 102.4,179 77,179 77,205 102.4,205 		"/>
+		<rect x="51" y="205" style="fill:#E06100;" width="26" height="25"/>
+		<polygon style="fill:#E06100;" points="102.4,230 77,230 77,256 102.4,256 128,256 128,230 		"/>
+		<polygon style="fill:#E06100;" points="307,256 307,230.4 307,205 282,205 282,230.4 282,256 282,282 307,282 		"/>
+		<rect x="102" y="282" style="fill:#E06100;" width="26" height="25"/>
+		<rect x="256" y="282" style="fill:#E06100;" width="26" height="25"/>
+	</g>
+	<g>
+		<polygon style="fill:#A47D48;" points="205,409.6 205,435.2 205,461 230,461 230,435.2 230,409.6 230,384 205,384 		"/>
+		<polygon style="fill:#A47D48;" points="282,384 282,409.6 282,435.2 282,461 307,461 307,435.2 307,409.6 307,384 		"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

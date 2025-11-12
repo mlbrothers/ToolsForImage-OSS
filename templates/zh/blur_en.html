@@ -1,0 +1,357 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}免费在线模糊人脸 | ToolsForImage | 提供全面免费在线工具：模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="轻松在线免费模糊图像中的人脸或特定区域。使用 ToolsForImage 免费工具模糊照片中的人脸。通过选择性地模糊照片的部分内容来保护隐私。单击即可模糊人脸。">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h1>在线模糊特定区域</h1>
+    <p>免费在线工具，用于模糊图像的特定区域</p>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <button class="upload-button" onclick="document.getElementById('image-upload').click();">上传图片</button>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="blur-box">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <div id="blur-controls" style="display: none;">
+        <label for="blur-intensity">模糊强度: <span id="blur-value">10px</span></label>
+        <input type="range" id="blur-intensity" min="1" max="50" value="10">
+    </div>
+    <button id="apply-blur" style="display: none;">应用模糊效果</button>
+    <div id="error-message"></div>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是人脸模糊？</h2>
+        <p>人脸模糊是通过模糊或像素化图像或视频中的人脸来保护个人身份的过程。这项技术在在线分享个人内容时，保护隐私和匿名性方面尤为重要。我们的人脸模糊工具可以让您轻松快捷地模糊人脸，确保您的图片符合隐私标准，同时保持视觉美观。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要模糊图片或视频中的人脸？</h2>
+        <p>模糊人脸的原因有很多重要之处：</p>
+        <ul>
+            <li><strong>保护隐私：</strong>模糊人脸有助于保护个人隐私，尤其是在事件、抗议或公共场合等敏感情况下。</li>
+            <li><strong>遵守法律：</strong>许多司法辖区要求使用个人可识别图像时需获得同意。模糊人脸有助于您遵守隐私法律。</li>
+            <li><strong>突出重点：</strong>通过模糊人脸，您可以将注意力集中在图像或视频中的主要主题或动作上，而不会分散注意力。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的免费在线人脸模糊工具</h2>
+        <p>我们的免费在线人脸模糊工具使用简单，几步即可保护身份：</p>
+        <ul>
+            <li>点击“从电脑上传”按钮上传您的图片或视频。</li>
+            <li>人脸模糊工具将自动在您的内容中应用模糊效果，您可以选择要模糊的人脸。</li>
+            <li>调整满意后，点击“应用模糊效果”将保护后的内容保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持多种格式，确保与您的图片和视频兼容。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的免费在线人脸模糊工具的优势</h2>
+        <p>以下是使用我们人脸模糊工具的主要好处：</p>
+        <ul>
+            <li><strong>快速高效：</strong>无需复杂软件，几步即可轻松模糊人脸。</li>
+            <li><strong>自动检测：</strong>工具会自动识别人脸，使操作更快速更方便。</li>
+            <li><strong>保持质量：</strong>在保护隐私的同时，确保您的图片和视频保持高质量。</li>
+            <li><strong>免费易用：</strong>我们的工具在线免费使用，无需下载或安装。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>人脸模糊的常见用例</h2>
+        <p>在人脸模糊可以应用于多种场景，例如：</p>
+        <ul>
+            <li><strong>活动摄影：</strong>保护在公共活动或聚会中拍摄的照片中的个人身份。</li>
+            <li><strong>纪录片和新闻报道：</strong>在采访或视频中模糊人脸，避免未获得同意的个人身份暴露。</li>
+            <li><strong>社交媒体分享：</strong>在线分享图片或视频，同时确保内容中人物的隐私。</li>
+            <li><strong>家庭照片：</strong>在公开平台上分享个人照片时，模糊儿童或亲属的面部。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何通过模糊人脸保护隐私</h2>
+        <p>模糊人脸是确保个人隐私和安全的有效方法。以下是它的作用：</p>
+        <ul>
+            <li><strong>防止未经授权使用：</strong>模糊人脸可以防止他人未经同意使用您的图片或视频来识别个人。</li>
+            <li><strong>增强安全性：</strong>保护敏感情况下个人身份，有助于维护他们的安全和隐私。</li>
+            <li><strong>促进伦理内容分享：</strong>通过使用我们的人脸模糊工具，您可以推广负责任的内容分享，尊重个人隐私权。</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    #canvas-container {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #canvas {
+        display: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #blur-box {
+        position: absolute;
+        border: 2px dashed #fff;
+        background-color: rgba(174, 107, 255, 0.3);
+        cursor: move;
+        display: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+    }
+
+    .resize-handle.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+    }
+
+    .resize-handle.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+    }
+
+    .resize-handle.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+    }
+
+    #apply-blur {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const blurBox = document.getElementById('blur-box');
+    const applyBlurButton = document.getElementById('apply-blur');
+    const errorMessage = document.getElementById('error-message');
+    const blurIntensityInput = document.getElementById('blur-intensity');
+    const blurValueDisplay = document.getElementById('blur-value');
+    let img;
+    let scale = 1;
+
+    // Handle image upload
+    document.getElementById('image-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                const maxWidth = window.innerWidth * 0.8;
+                const maxHeight = window.innerHeight * 0.8;
+                scale = Math.min(1, maxWidth / img.width, maxHeight / img.height);
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                canvas.style.display = 'block';
+                blurBox.style.display = 'block';
+                applyBlurButton.style.display = 'block';
+                document.getElementById('blur-controls').style.display = 'block';
+                errorMessage.style.display = 'none';
+                resetBlurBox();
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    });
+
+    // Dragging and resizing logic
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+
+    blurBox.addEventListener('mousedown', function (e) {
+        if (e.target.classList.contains('resize-handle')) {
+            isResizing = true;
+            currentHandle = e.target;
+        } else {
+            isDragging = true;
+        }
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = blurBox.offsetLeft;
+        startTop = blurBox.offsetTop;
+        startWidth = parseInt(getComputedStyle(blurBox).width, 10);
+        startHeight = parseInt(getComputedStyle(blurBox).height, 10);
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newLeft = startLeft + dx;
+            let newTop = startTop + dy;
+
+            newLeft = Math.max(0, Math.min(newLeft, canvas.width - blurBox.offsetWidth));
+            newTop = Math.max(0, Math.min(newTop, canvas.height - blurBox.offsetHeight));
+
+            blurBox.style.left = newLeft + 'px';
+            blurBox.style.top = newTop + 'px';
+        } else if (isResizing) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newWidth, newHeight, newLeft, newTop;
+
+            if (currentHandle.classList.contains('se')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+            } else if (currentHandle.classList.contains('sw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+                newLeft = Math.max(0, startLeft + dx);
+            } else if (currentHandle.classList.contains('ne')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newTop = Math.max(0, startTop + dy);
+            } else if (currentHandle.classList.contains('nw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newLeft = Math.max(0, startLeft + dx);
+                newTop = Math.max(0, startTop + dy);
+            }
+
+            // Ensure minimum size for blur box
+            const minSize = 20;
+            newWidth = Math.max(newWidth, minSize);
+            newHeight = Math.max(newHeight, minSize);
+
+            blurBox.style.width = `${newWidth}px`;
+            blurBox.style.height = `${newHeight}px`;
+            if (newLeft !== undefined) blurBox.style.left = `${newLeft}px`;
+            if (newTop !== undefined) blurBox.style.top = `${newTop}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+        isResizing = false;
+    });
+
+    // Reset blur box to initial size and position
+    function resetBlurBox() {
+        const initialSize = Math.min(100, canvas.width / 2, canvas.height / 2);
+        blurBox.style.width = `${initialSize}px`;
+        blurBox.style.height = `${initialSize}px`;
+        blurBox.style.left = '0px';
+        blurBox.style.top = '0px';
+    }
+
+    // Update blur intensity display
+    blurIntensityInput.addEventListener('input', function () {
+        blurValueDisplay.textContent = `${this.value}px`;
+    });
+
+    // Apply blur effect to the selected area
+    applyBlurButton.addEventListener('click', function () {
+        const boxRect = blurBox.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const x = boxRect.left - canvasRect.left;
+        const y = boxRect.top - canvasRect.top;
+        const width = boxRect.width;
+        const height = boxRect.height;
+
+        // Apply blur effect to the selected area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(x, y, width, height);
+        ctx.clip();
+        ctx.filter = `blur(${blurIntensityInput.value}px)`;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.restore();
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'blurred_image.png';
+        a.click();
+    });
+</script>
+{% endblock %}

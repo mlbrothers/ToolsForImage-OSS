@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+<g id="layer1">
+
+<path d="M 5,1 V 15 H 15 V 6 5 L 11,1 h -1 z m 1,1 h 4 v 3 1 h 4 v 8 H 6 Z M 11,2.3535156 13.646484,5 H 11 Z M 8,16 v 1 H 0 v 1 h 8 v 1 h 4 v -1 h 8 v -1 h -8 v -1 z m 1,1 h 2 v 1 H 9 Z" style="fill:#222222; fill-opacity:1; stroke:none; stroke-width:0px;"/>
+
+</g>
+
+</svg>

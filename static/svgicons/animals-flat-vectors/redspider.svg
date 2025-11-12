@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="32" cy="25" r="4" fill="#595959"/>
+    <path stroke="#979797" stroke-linecap="round" stroke-width="2" d="M30 21.8694872L30 18M34 21.8694872L34 18"/>
+    <g stroke="#979797" stroke-linecap="round" stroke-width="2" transform="translate(4 3)">
+      <polyline points="24 26 9.642 12.443 0 0"/>
+      <polyline points="22 31 14.661 29.724 7 22"/>
+      <path d="M21,35 L12,38"/>
+      <polyline points="21.812 57 18 50.1 18.283 41.023 23 39 18 50.1"/>
+    </g>
+    <g stroke="#979797" stroke-linecap="round" stroke-width="2" transform="matrix(-1 0 0 1 61 3)">
+      <polyline points="25.081 26.299 10.631 12.773 .928 .358"/>
+      <polyline points="23.185 30.583 15.913 29.376 8.322 22.074"/>
+      <path d="M21.9993637,34.8216612 L12.7097737,37.6041537"/>
+      <polyline points="22.714 56.845 19.068 49.825 19.339 40.591 23.851 38.533 19.068 49.825"/>
+    </g>
+    <path fill="#E43535" d="M32,46 C36.418278,46 40,43.5228475 40,38 C40,32.4771525 36.418278,26 32,26 C27.581722,26 24,32.4771525 24,38 C24,43.5228475 27.581722,46 32,46 Z"/>
+  </g>
+</svg>

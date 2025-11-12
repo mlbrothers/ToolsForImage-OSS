@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>dolphin</title>
+
+<g id="dolphin">
+
+<circle cx="54.5" cy="11.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="59.251" cy="19.232" r="1.069"/>
+
+<path d="M32.894,6.319c2.23-1.909,6.912-4.2,14.223.426,0,0-5.444.016-6.3,4.181" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33.711,46.766A4.99,4.99,0,0,1,32,43a5,5,0,0,1-10,0,5,5,0,0,1-10,0A5,5,0,0,1,2,43" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M62,43a5,5,0,0,1-10,0,5,5,0,0,1-2.675,4.428" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M15.224,28.46c1.512,2.181,4.381,3.811,9.805,2.716,0,0-4.328-1.667-4.457-5.225" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26.76,24.684C16.253,23.7,9.647,34.208,7.785,34.628c-2.182.491-2.433-2.661-1.954-4.6a12.194,12.194,0,0,0,.354-3.518S-4.746,20.718,5.9,10.986s32.961-8.341,40.284,7.889.8,25.949.8,25.949,5.837,5.561,2.948,13.088c0,0-5.974-11.261-18.332-7.1,0,0,.228-5.094,9.925-6.82,0,0,4.531-10.5-7.816-17.074" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="10.902" cy="22.007" r="1.5"/>
+
+<path d="M28.237,20.8S22.223,30.924,34.46,34.127c0,0-5.609-6.045,1.565-9.724" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13.173,10.723A20.2,20.2,0,0,1,24.081,8.266" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

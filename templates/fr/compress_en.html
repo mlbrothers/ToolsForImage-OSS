@@ -1,0 +1,176 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Compressez vos images facilement avec ToolsForImage. Réduisez la taille des fichiers sans compromettre la qualité pour des temps de chargement web plus rapides.">
+{% endblock %}
+
+{% block title %}Compresser une image en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de Compression d'Images Gratuit</h1>
+<p>Compressez facilement une image <strong>JPG/JPEG</strong>, <strong>PNG</strong> ou <strong>WEBP</strong> en conservant une qualité optimale et une compression maximale.</p>
+
+<p>Téléchargez votre fichier image et compressez-le instantanément. Choisissez votre image :</p>
+
+<form id="compression-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <label for="compression-level">Taille du fichier après compression (%):</label>
+    <input type="range" id="compression-level" name="compression-level" min="1" max="100" value="50">
+    <span id="compression-value">50%</span>
+    <br>
+    <button type="button" class="compress-button" onclick="compressImage()">Compresser !</button>
+</form>
+
+<p>Votre image sera compressée pour obtenir la meilleure qualité et la plus petite taille de fichier.</p>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Compression d'Image ?</h2>
+        <p>La compression d'image est une méthode importante qui réduit la taille des fichiers d'images numériques tout en conservant leur qualité autant que possible. Elle utilise des techniques spécifiques pour éliminer les données inutiles et organiser les fichiers d'image de manière plus efficace, ce qui aide à économiser de l'espace de stockage. Il existe deux principaux types de compression d'image : la compression sans perte et la compression avec perte. La compression sans perte conserve toutes les données d'origine, tandis que la compression avec perte supprime certaines données pour réduire la taille du fichier, ce qui peut aider les pages web à se charger plus rapidement. Comprendre la compression d'image est essentiel pour toute personne travaillant avec des images numériques, car cela améliore les performances des sites web et des services en ligne.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de la Compression d'Image</h2>
+        <p>Les avantages de la compression d'image vont au-delà de la simple réduction de taille des fichiers. L'un des plus grands avantages est qu'elle permet aux sites web de mieux fonctionner. Les images compressées se chargent plus rapidement, améliorant l'expérience utilisateur et évitant que les visiteurs quittent le site. Cela est particulièrement important pour les sites de vente en ligne, où des images lentes peuvent entraîner des abandons de panier et une perte de ventes. En outre, les moteurs de recherche comme Google prennent en compte la vitesse de chargement dans leur classement, donc utiliser des images optimisées peut aider votre site à obtenir un meilleur classement. En fin de compte, la compression d'image rend la navigation plus fluide et agréable, ce qui augmente les interactions et les ventes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Cas d'utilisation de la Compression d'Image</h2>
+        <p>La compression d'image est utile dans de nombreux domaines et plateformes différents. Par exemple, les réseaux sociaux utilisent la compression d'image pour permettre aux utilisateurs de télécharger et partager des photos rapidement et facilement. Les sites web affichant de nombreuses images, comme les galeries ou les sites d'actualités, bénéficient d'images compressées pour maintenir un chargement rapide des pages et gérer efficacement les données. De plus, les applications mobiles affichant des images utilisent souvent la compression pour réduire l'utilisation des données et améliorer les performances, surtout dans les zones à faible connexion. En bref, la compression d'image est un outil essentiel pour améliorer le contenu numérique, répondant aux besoins des entreprises et des utilisateurs en améliorant la vitesse, l'expérience utilisateur et l'efficacité en ligne.</p>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Update the compression level display
+    const compressionLevelInput = document.getElementById('compression-level');
+    const compressionValueDisplay = document.getElementById('compression-value');
+    compressionLevelInput.addEventListener('input', function() {
+        compressionValueDisplay.textContent = `${this.value}%`;
+    });
+
+    async function compressImage() {
+        const file = document.getElementById('image-upload').files[0];
+        if (!file) {
+            alert('Please select an image to compress.');
+            return;
+        }
+
+        const compressionLevel = parseInt(document.getElementById('compression-level').value, 10);
+        const quality = compressionLevel / 100; // Convert percentage to a decimal (0.01 to 1.0)
+
+        try {
+            const compressedFile = await imageConversion.compress(file, { quality: quality });
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(compressedFile);
+            downloadLink.download = `compressed_image_${compressionLevel}%.jpg`; // Dynamic file name
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        } catch (error) {
+            console.error('Error compressing image:', error);
+            alert('An error occurred while compressing the image.');
+        }
+    }
+</script>
+
+<style>
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+    .compress-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+{% endblock %}

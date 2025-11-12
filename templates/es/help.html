@@ -1,0 +1,119 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Obtén ayuda y soporte para ToolsForImage: tu recurso integral para compresión de imágenes, redimensionamiento, recorte, conversión de formatos, rotación, marca de agua, difuminado de rostros y más. Encuentra respuestas a preguntas comunes y aprende a usar nuestras herramientas de mejora de imágenes de manera efectiva.">
+{% endblock %}
+
+{% block title %}Ayuda | ToolsForImage | Herramientas Gratuitas Integrales para Difuminar Rostros, Conversión de Imágenes, Edición, Redimensionar, Eliminar Fondo, Difuminar Fondo y Más{% endblock %}
+
+{% block content %}
+<h1>Centro de Ayuda - ToolsForImage</h1>
+
+<div class="help-section">
+    <h2>Comenzar</h2>
+    <p>¡Bienvenido a ToolsForImage! Aquí te explicamos cómo empezar:</p>
+    <ol>
+        <li>1 - Elige la herramienta que necesitas en nuestro menú de navegación.</li>
+        <li>2 - Sube tu imagen utilizando la interfaz proporcionada.</li>
+        <li>3 - Ajusta la configuración según sea necesario.</li>
+        <li>4 - Procesa tu imagen y descarga el resultado.</li>
+    </ol>
+</div>
+
+<div class="help-section">
+    <h2>Preguntas Frecuentes</h2>
+    <p>Para una lista completa de preguntas frecuentes, visita nuestra <a href="/{{ g.lang }}/faq">página de preguntas frecuentes</a>.</p>
+</div>
+
+<div class="help-section">
+    <h2>Ayuda Específica por Herramienta</h2>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">Compresión de Imágenes</a> - Reduce el tamaño del archivo manteniendo la calidad</li>
+        <li><a href="/{{ g.lang }}/image-resize">Redimensionamiento de Imágenes</a> - Cambia las dimensiones de la imagen</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">Conversión de Formatos</a> - Convierte entre diferentes formatos de imagen</li>
+        <li><a href="/{{ g.lang }}/image-rotate">Rotación de Imágenes</a> - Rota o voltea tus imágenes</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">Marca de Agua</a> - Agrega marcas de agua de texto o imagen</li>
+        <li><a href="/{{ g.lang }}/image-effects">Efectos de Imágenes</a> - Aplica varios filtros y efectos</li>
+        <li><a href="/{{ g.lang }}/image-crop">Recorte de Imágenes</a> - Recorta partes de tu imagen</li>
+        <li><a href="/{{ g.lang }}/blur-face">Difuminado de Rostros</a> - Detecta y difumina automáticamente los rostros en las imágenes</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">Todas las herramientas</a></li>
+    </ul>
+</div>
+
+<div class="help-section">
+    <h2>Contactar al Soporte</h2>
+    <p>Si necesitas más ayuda, no dudes en contactar a nuestro equipo de soporte en <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a>.</p>
+</div>
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .help-section {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color); /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        max-width: 1200px; /* Ensure the content stays within a manageable width */
+        margin: 0 auto; /* Center align the content */
+        border: var(--background-color) 3px solid; /* Use border similar to tools list */
+        font-weight: 400; /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s; /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .help-section a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .help-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block; /* Makes it inline and allows padding */
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        background-color: var(--box-color); /* Background color */
+        color: black; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+
+    
+</style>
+{% endblock %}

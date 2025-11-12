@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#B4DFFB" d="M33,5 C26.372583,5 22,12.6111593 22,22 C22,31.3888407 26.372583,61 33,61 C36.8661992,61 37.3053608,36.4098157 42.5,36.3875505 C48.6946392,36.4098157 48.1338008,61 52,61 C58.627417,61 63,31.3888407 63,22 C63,12.6111593 58.627417,5 52,5 C48.8333333,5 45.6666667,8 42.5,8 C39.3333333,8 36.1666667,5 33,5 Z"/>
+    <g transform="rotate(90 9.5 9.5)">
+      <path fill="#22BA8E" d="M0,11 C0,9.8954305 0.904756604,9 2.00134006,9 L42.3792329,9 L61.0277499,6.41241601 C62.6692783,6.18464494 64,7.34967041 64,9.00925446 L64,9.99074554 C64,11.6527109 62.663269,13 60.9989882,13 L2.00329863,13 C0.896907345,13 0,12.1122704 0,11 L0,11 Z"/>
+      <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M3,7 L3,0.91723747"/>
+      <path stroke="#D8D8D8" stroke-linecap="square" stroke-width="2" d="M7,7 L7,0.91723747"/>
+      <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M11,7 L11,0.91723747"/>
+      <path stroke="#D8D8D8" stroke-linecap="square" stroke-width="2" d="M15,7 L15,0.91723747"/>
+      <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M19,7 L19,0.91723747"/>
+    </g>
+  </g>
+</svg>

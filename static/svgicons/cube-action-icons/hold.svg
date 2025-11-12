@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_zeventien{fill:#EC9B5A;}
+	.cubies_achtien{fill:#EDB57E;}
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_negentien{fill:#F2C99E;}
+	.cubies_acht{fill:#8E7866;}
+	.cubies_zeven{fill:#725A48;}
+	.cubies_negen{fill:#AB9784;}
+	.st0{fill:#A4C83F;}
+	.st1{fill:#BCD269;}
+	.st2{fill:#D1DE8B;}
+	.st3{fill:#2EB39A;}
+	.st4{fill:#65C3AB;}
+	.st5{fill:#98D3BC;}
+	.st6{fill:#CCE2CD;}
+	.st7{fill:#D97360;}
+	.st8{fill:#E69D8A;}
+	.st9{fill:#4C4842;}
+	.st10{fill:#67625D;}
+	.st11{fill:#C9483A;}
+	.st12{fill:#FFF2DF;}
+	.st13{fill:#C9C6C0;}
+	.st14{fill:#EDEAE5;}
+	.st15{fill:#837F79;}
+	.st16{fill:#A5A29C;}
+	.st17{fill:#E3D4C0;}
+	.st18{fill:#E8E8B5;}
+	.st19{fill:#F2C99E;}
+	.st20{fill:#F9E0BD;}
+</style>
+<g>
+	<path class="cubies_achtien" d="M3,0l26,0c1.657,0,3,1.343,3,3v26c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3L0,3
+		C0,1.343,1.343,0,3,0z"/>
+	<path class="cubies_negentien" d="M27,0H3C1.343,0,0,1.343,0,3v26c0,1.657,1.343,3,3,3h11v-9c0-0.552,0.448-1,1-1s1,0.448,1,1v9h11
+		c1.657,0,3-1.343,3-3V3C30,1.343,28.657,0,27,0z"/>
+	<path class="cubies_negen" d="M4,10H0V4h4V10z M21,8V6c0-1.105-0.895-2-2-2H6v6h13C20.105,10,21,9.105,21,8z"/>
+	<rect x="30" y="4" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 62 14)" class="cubies_zeven" width="2" height="6"/>
+	<path class="cubies_acht" d="M30,10h-4V4h4V10z M19,4c1.105,0,2,0.895,2,2v2c0,1.105-0.895,2-2,2h5V4H19z M17,6
+		c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S17.552,6,17,6z M14,6c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S14.552,6,14,6z
+		"/>
+	<path class="cubies_twintig" d="M19,6.5V4c0-0.552-0.448-1-1-1h-6c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1h6
+		c0.552,0,1-0.448,1-1V7.5c0.276,0,0.5-0.224,0.5-0.5S19.276,6.5,19,6.5z M18,10h-6V4h6v2.5h-1c-0.276,0-0.5,0.224-0.5,0.5
+		s0.224,0.5,0.5,0.5h1V10z"/>
+	<path class="cubies_achtien" d="M1,22H0V12h3c0.552,0,1,0.448,1,1v6C4,20.657,2.657,22,1,22z M29,22h1V12h-3c-0.552,0-1,0.448-1,1
+		v6C26,20.657,27.343,22,29,22z"/>
+	<rect x="30" y="12" class="cubies_zeventien" width="2" height="10"/>
+</g>
+</svg>

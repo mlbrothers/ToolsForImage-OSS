@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>amulet</title>
+
+<g id="amulet">
+
+<line x1="10" y1="13" x2="10" y2="16" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10" y1="20" x2="10" y2="23" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="18" x2="5" y2="18" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M12,29.763V50.237a1.27,1.27,0,0,0,.635,1.1l17.73,10.237a1.269,1.269,0,0,0,1.27,0l17.73-10.237a1.27,1.27,0,0,0,.635-1.1V29.763a1.27,1.27,0,0,0-.635-1.1L31.635,18.427a1.269,1.269,0,0,0-1.27,0L12.635,28.664A1.27,1.27,0,0,0,12,29.763Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="15" y1="18" x2="12" y2="18" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="54" cy="53" r="1"/>
+
+<line x1="17.652" y1="47.728" x2="12" y2="51" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="50" y1="29" x2="44.393" y2="32.246" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="43.982" y1="47.516" x2="50" y2="51" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="12" y1="29" x2="18.018" y2="32.484" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="55" x2="31" y2="62" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="18" x2="31" y2="24.676" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="11" cy="57" r="1"/>
+
+<circle cx="56.5" cy="36.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M30.571,25.011a15,15,0,1,0,2.69,29.819" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M46,40A15,15,0,0,0,31,25c-.144,0-.286.007-.429.011A7.5,7.5,0,0,0,30.786,40h.9a7.5,7.5,0,0,1,1.579,14.83A15,15,0,0,0,46,40Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="30.729" cy="31.957" r="2.957" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="30.729" cy="47.957" r="2.957" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="31" cy="15" r="3" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="15 1 31 15 47 1" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

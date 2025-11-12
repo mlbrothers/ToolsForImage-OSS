@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#ffffff;}.cls-4{fill:#d9dce1;}</style>
+
+</defs>
+
+<g id="project">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<rect class="cls-2" height="20" width="28" x="2" y="6"/>
+
+<rect class="cls-3" height="5" width="8" x="12" y="15"/>
+
+<rect class="cls-4" height="6" width="12" x="10" y="2"/>
+
+<path class="cls-4" d="M2,6v8.74l.71.22A45.24,45.24,0,0,0,16,17a45.24,45.24,0,0,0,13.29-2l.71-.22V6Z"/>
+
+<path d="M22,6V2H10V6H2V26H30V6ZM12,4h8V6H12ZM4,8H28v5.26a43.09,43.09,0,0,1-9.24,1.63H18v0c-1.33.06-2.67.06-4,0v0h-.76A43.09,43.09,0,0,1,4,13.26Zm10,8.94c.67,0,1.33,0,2,0s1.33,0,2,0V18H14ZM4,24V15.33a45.68,45.68,0,0,0,8,1.47V20h8V16.8a45.68,45.68,0,0,0,8-1.47V24Z"/>
+
+</g>
+
+</svg>

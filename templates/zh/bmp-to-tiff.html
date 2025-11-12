@@ -1,0 +1,198 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}BMP 转 TIFF 在线工具 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="使用 ToolsForImage 轻松将 BMP 转换为 TIFF 图像。免费、快速、安全的在线 BMP 转 TIFF 转换器，为您提供高质量的图像转换服务。">
+{% endblock %}
+
+{% block content %}
+
+<h1>免费在线 BMP 转 TIFF 转换器</h1>
+<p>轻松将您的图像从 BMP 格式转换为 TIFF 格式。上传 BMP 图像，我们将为您将其转换为 TIFF。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 BMP 转 TIFF 转换？</h2>
+        <p>BMP 转 TIFF 是将图像文件从 BMP（位图）格式转换为 TIFF（标记图像文件格式）格式的过程。BMP 文件以高质量著称，但文件较大；而 TIFF 文件质量极高，广泛应用于专业领域，特别是打印和归档。我们的工具让这一转换变得简单，让您轻松享受两种格式的优点。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 BMP 转换为 TIFF？</h2>
+        <p>将 BMP 图像转换为 TIFF 有以下几个优势：</p>
+        <ul>
+            <li><strong>高质量：</strong>TIFF 文件以其卓越的图像质量著称，非常适合打印和专业摄影。</li>
+            <li><strong>多种色深支持：</strong>TIFF 支持多种色深，非常适合处理精细图像和图形。</li>
+            <li><strong>无损压缩：</strong>TIFF 文件可以在不丢失质量的情况下进行压缩，非常适合图像归档。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 BMP 转 TIFF 转换器</h2>
+        <p>我们的 BMP 转 TIFF 转换工具简单易用，只需按照以下步骤操作：</p>
+        <ul>
+            <li>点击“上传 BMP 文件”按钮，选择您要转换的 BMP 图像。</li>
+            <li>图像上传后，我们的工具会自动将其转换为 TIFF 格式。</li>
+            <li>转换完成后，点击“下载 TIFF”将新图像保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持各种 BMP 文件，确保每次转换都顺利进行。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们 BMP 转 TIFF 转换器的优势</h2>
+        <p>以下是使用我们转换工具的几个好处：</p>
+        <ul>
+            <li><strong>快速高效：</strong>快速轻松地将 BMP 图像转换为 TIFF。</li>
+            <li><strong>无质量损失：</strong>通过我们的无损转换过程享受高分辨率图像。</li>
+            <li><strong>免费可用：</strong>免费使用我们的在线转换器，无需下载或安装任何软件。</li>
+            <li><strong>用户友好：</strong>我们的直观界面让任何人都能轻松完成图像转换，无需技术背景。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP 转 TIFF 转换的常见用途</h2>
+        <p>在以下场景中，将 BMP 转换为 TIFF 会非常有帮助：</p>
+        <ul>
+            <li><strong>专业打印：</strong>使用 TIFF 图像进行高质量打印，确保颜色和清晰度的精确性。</li>
+            <li><strong>归档：</strong>将重要图像存储为 TIFF 格式，长期保存而不会丢失质量。</li>
+            <li><strong>图形设计：</strong>在设计项目中使用细节丰富的图像和插图。</li>
+            <li><strong>医学影像：</strong>TIFF 常用于医学应用，能够处理不丢失细节的大图像。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 BMP 转换为 TIFF 如何提升图像质量</h2>
+        <p>将 BMP 图像转换为 TIFF 可以显著提升图像的可用性和质量。以下是其中的好处：</p>
+        <ul>
+            <li><strong>卓越的图像质量：</strong>TIFF 文件保留更多细节，非常适合专业用途。</li>
+            <li><strong>多用途文件使用：</strong>TIFF 格式被大多数图像编辑软件接受，为您的项目提供更大的灵活性。</li>
+            <li><strong>更好的归档：</strong>TIFF 的无损压缩使其成为长期保存重要图像的首选。</li>
+        </ul>
+    </div>
+</div>
+    
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}

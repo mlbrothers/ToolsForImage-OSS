@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#ffffff;}.cls-4{fill:#d9dce1;}</style>
+
+</defs>
+
+<g id="store">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<polygon class="cls-2" points="16 1.9 2 8.36 2 30 30 30 30 8.36 16 1.9"/>
+
+<rect class="cls-3" height="6" width="20" x="6" y="24"/>
+
+<rect class="cls-4" height="6" width="20" x="6" y="18"/>
+
+<rect class="cls-3" height="6" width="20" x="6" y="12"/>
+
+<path d="M16,1.9,2,8.36V30H30V8.36ZM8,28V26H24v2Zm0-6H24v2H8Zm0-4H24v2H8Zm16-2H8V14H24Zm4,12H26V12H6V28H4V9.64L16,4.1,28,9.64Z"/>
+
+</g>
+
+</svg>

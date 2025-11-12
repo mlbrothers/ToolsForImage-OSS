@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ JPG को PNG छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन JPG से PNG कनवर्टर।">
+{% endblock %}
+
+{% block title %}JPG को PNG में कनवर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त JPG से PNG कनवर्ज़न टूल</h1>
+<p>अपने JPG चित्रों को PNG फ़ॉर्मेट में आसानी से परिवर्तित करें। एक JPG चित्र अपलोड करें और हम इसे आपके लिए PNG में परिवर्तित करेंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>JPG से PNG कनवर्ज़न क्या है?</h2>
+        <p>JPG से PNG कनवर्ज़न वह प्रक्रिया है जिसमें छवि फ़ाइलों को JPG फ़ॉर्मेट से PNG (पोर्टेबल नेटवर्क ग्राफ़िक्स) फ़ॉर्मेट में बदला जाता है। जबकि JPG का उपयोग आमतौर पर फोटो के लिए किया जाता है, PNG उन चित्रों के लिए बेहतर है जिन्हें पारदर्शिता या उच्च गुणवत्ता वाले ग्राफिक्स की आवश्यकता होती है। हमारा टूल आपको केवल कुछ क्लिक में JPG चित्रों को PNG में आसानी से परिवर्तित करने की अनुमति देता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG को PNG में परिवर्तित करने के लाभ?</h2>
+        <p>JPG चित्रों को PNG में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>पारदर्शिता समर्थन:</strong> PNG फ़ॉर्मेट पारदर्शी पृष्ठभूमियों की अनुमति देता है, जिससे यह लोगो और ग्राफिक्स के लिए आदर्श बनता है।</li>
+            <li><strong>लॉसलेस संपीड़न:</strong> PNG फ़ाइलें उच्च गुणवत्ता बनाए रखती हैं बिना विवरण खोए, जो स्पष्टता की आवश्यकता वाले चित्रों के लिए आदर्श है।</li>
+            <li><strong>सुधारी गई गुणवत्ता:</strong> PNG में परिवर्तित करने से आपके चित्रों की दृश्य गुणवत्ता में सुधार हो सकता है, खासकर उन ग्राफिक्स के लिए जिनमें टेक्स्ट या तेज़ रेखाएँ होती हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPG से PNG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे JPG से PNG कनवर्ज़न टूल का उपयोग करना सीधा है। यहाँ यह कैसे काम करता है:</p>
+        <ul>
+            <li>जिस JPG चित्र को आप परिवर्तित करना चाहते हैं, उसे चुनने के लिए "JPG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड करने के बाद, हमारा टूल आपके चित्र को स्वचालित रूप से PNG फ़ॉर्मेट में परिवर्तित कर देगा।</li>
+            <li>एक बार कन्वर्ज़न पूरा हो जाने पर, "PNG डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई छवि अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न JPG फ़ाइलों का समर्थन करता है, जिससे हर बार सुगम कन्वर्ज़न अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPG से PNG कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>हमारे कनवर्ज़न टूल का उपयोग करने के कुछ फायदे यहाँ दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> केवल कुछ क्लिक में अपने JPG चित्रों को PNG में परिवर्तित करें, बिना जटिल चरणों के।</li>
+            <li><strong>उच्च गुणवत्ता वाला आउटपुट:</strong> कनवर्ज़न प्रक्रिया के दौरान स्पष्ट और तेज़ चित्रों का आनंद लें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारे ऑनलाइन कनवर्टर का उपयोग मुफ्त में करें, बिना किसी डाउनलोड या स्थापना की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> सभी के लिए डिज़ाइन किया गया, हमारा टूल सभी के लिए नेविगेट करना आसान है, चाहे आपकी तकनीकी कौशल कैसी भी हो।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG से PNG कनवर्ज़न के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ परिस्थितियाँ हैं जहाँ JPG को PNG में परिवर्तित करना लाभकारी हो सकता है:</p>
+        <ul>
+            <li><strong>वेब डिज़ाइन:</strong> वेबसाइटों के लिए PNG चित्रों का उपयोग करें जिन्हें पारदर्शी पृष्ठभूमियों की आवश्यकता होती है ताकि अधिक पॉलिश दिख सके।</li>
+            <li><strong>ग्राफिक्स और लोगो:</strong> PNG लोगो, आइकनों, और ग्राफिक्स के लिए आदर्श है जिन्हें उच्च गुणवत्ता और पारदर्शिता की आवश्यकता होती है।</li>
+            <li><strong>डिजिटल कला:</strong> कलाकार अक्सर PNG फ़ॉर्मेट को अपनी कलाकृति के विवरण और रंगों को बिना नुकसान के संरक्षित करने के लिए पसंद करते हैं।</li>
+            <li><strong>सोशल मीडिया:</strong> PNG फ़ॉर्मेट का समर्थन करने वाले प्लेटफ़ॉर्म पर पारदर्शी पृष्ठभूमियों वाले चित्र साझा करें ताकि दृश्य अपील बेहतर हो सके।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG को PNG में परिवर्तित करने से कैसे मदद मिल सकती है</h2>
+        <p>अपने JPG चित्रों को PNG में परिवर्तित करना उनकी उपयोगिता और उपस्थिति को बढ़ा सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>बेहतर पारदर्शिता:</strong> PNG पारदर्शी पृष्ठभूमियों की अनुमति देता है, जो डिज़ाइन में चित्रों को परत करने के लिए उपयोगी होता है।</li>
+            <li><strong>सुधारी गई गुणवत्ता:</strong> PNG फ़ॉर्मेट छवि गुणवत्ता को संरक्षित करता है, जिससे आपकी फ़ोटो और ग्राफिक्स अपने सबसे अच्छे दिखते हैं।</li>
+            <li><strong>सुधारी गई लचीलापन:</strong> PNG चित्रों का उपयोग करने से आपको अपने ग्राफिक्स को प्रस्तुत करने के लिए अधिक विकल्प मिलते हैं, खासकर ऑनलाइन।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

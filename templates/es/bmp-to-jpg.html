@@ -1,0 +1,197 @@
+{% extends 'es/base.html' %}
+
+{% block title %}BMP a JPG en línea | ToolsForImage | Conversor de imágenes gratuito en línea{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Convierte fácilmente imágenes BMP a JPG con ToolsForImage. Conversor en línea gratuito, rápido y seguro para transformaciones de imágenes de alta calidad.">
+{% endblock %}
+
+{% block content %}
+
+<h1>Conversor Gratuito en Línea de BMP a JPG</h1>
+<p>Convierte fácilmente tus imágenes de formato BMP a JPG. Sube una imagen BMP y la convertiremos a JPG por ti.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Conversión de BMP a JPG?</h2>
+        <p>La conversión de BMP a JPG se refiere al proceso de cambiar archivos de imagen del formato BMP (Bitmap) al formato JPG (Joint Photographic Experts Group). Los archivos BMP son conocidos por su alta calidad y detalle, mientras que los archivos JPG están comprimidos, lo que los hace más convenientes para compartir y almacenar. Nuestra herramienta simplifica este proceso, permitiéndote convertir imágenes BMP a JPG de manera fácil y rápida.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Convertir BMP a JPG?</h2>
+        <p>Hay varias razones importantes para convertir imágenes BMP a JPG:</p>
+        <ul>
+            <li><strong>Tamaño de Archivo Más Pequeño:</strong> Los archivos JPG son significativamente más pequeños que los BMP, lo que significa que ocupan menos espacio de almacenamiento y se cargan/descargan más rápido.</li>
+            <li><strong>Mejor Compartición:</strong> JPG es uno de los formatos de imagen más utilizados en la web, lo que facilita compartir tus imágenes en redes sociales y sitios web.</li>
+            <li><strong>Mejor Compatibilidad:</strong> La mayoría de los dispositivos y aplicaciones admiten el formato JPG, lo que garantiza que tus imágenes puedan verse en cualquier lugar.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestro Conversor de BMP a JPG</h2>
+        <p>Usar nuestro conversor de BMP a JPG es simple y directo. Solo sigue estos pasos:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir Imagen BMP" para seleccionar tu imagen BMP.</li>
+            <li>Después de subirla, nuestra herramienta convertirá automáticamente tu imagen a formato JPG.</li>
+            <li>Una vez que se complete la conversión, haz clic en "Descargar JPG" para guardar tu nueva imagen en tu dispositivo.</li>
+        </ul>
+        <p>Nuestro conversor admite una amplia gama de archivos BMP, asegurando un proceso de conversión fluido y eficiente.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestro Conversor de BMP a JPG</h2>
+        <p>Nuestra herramienta de conversión ofrece varias ventajas:</p>
+        <ul>
+            <li><strong>Rápido y Eficiente:</strong> Convierte imágenes BMP a JPG rápidamente con solo unos clics.</li>
+            <li><strong>Sin Pérdida de Calidad:</strong> Mantén la calidad de la imagen durante el proceso de conversión.</li>
+            <li><strong>Gratuito y en Línea:</strong> Usa nuestra herramienta de forma gratuita, sin necesidad de descargar software.</li>
+            <li><strong>Fácil de Usar:</strong> Interfaz amigable diseñada para todos, sin importar el nivel de habilidad técnica.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Usos Comunes para la Conversión de BMP a JPG</h2>
+        <p>Convertir BMP a JPG puede ser beneficioso en varias situaciones:</p>
+        <ul>
+            <li><strong>Uso en la Web:</strong> Optimiza imágenes para sitios web y blogs para mejorar los tiempos de carga.</li>
+            <li><strong>Redes Sociales:</strong> Comparte imágenes en plataformas como Instagram y Facebook, donde se prefiere el formato JPG.</li>
+            <li><strong>Gestión de Almacenamiento:</strong> Ahorra espacio en tus dispositivos convirtiendo archivos BMP grandes a archivos JPG más pequeños.</li>
+            <li><strong>Diseño Gráfico:</strong> Usa fácilmente imágenes convertidas en software de diseño que admita el formato JPG.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Convertir BMP a JPG Mejora Tus Imágenes</h2>
+        <p>Transformar tus imágenes BMP a JPG puede mejorar significativamente cómo gestionas y muestras tus visuales. Aquí te decimos cómo:</p>
+        <ul>
+            <li><strong>Usabilidad Mejorada:</strong> Los archivos JPG son más versátiles y pueden usarse en varias plataformas y aplicaciones.</li>
+            <li><strong>Estética Mejorada:</strong> Convertir a JPG puede mejorar la calidad del color y la claridad, haciendo que las imágenes sean más atractivas.</li>
+            <li><strong>Accesibilidad Más Amplia:</strong> Las imágenes JPG son accesibles en todos los dispositivos, asegurando que todos puedan ver tu contenido sin problemas.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

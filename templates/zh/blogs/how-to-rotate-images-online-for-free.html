@@ -1,0 +1,146 @@
+{% extends 'zh/base.html' %}
+
+{% block title %}如何旋转图像 | ToolsForImage | 综合免费的在线工具，适用于模糊脸部、图像转换、编辑、调整大小、去除背景、模糊背景等{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="了解如何免费在线旋转图像。">
+{% endblock %}
+
+{% block content %}
+<article class="blog-post">
+    <h1>旋转图像</h1>
+    <p><em>发布日期：2024年10月22日</em></p>
+
+    <section>
+        <h2>简介</h2>
+        <p> <span class="bold-text">图像旋转</span> 是围绕特定点（通常是图像的中心）旋转图像的过程。这种操作可以改变图像的方向，而不改变其内容。<span class="bold-text">旋转图像</span> 可以以不同的角度进行，例如90度、180度或270度，具体取决于所需的效果。此技术在摄影、平面设计和社交媒体中至关重要，因为正确的方向可以增强图像的视觉吸引力和信息传达。
+        </p>
+
+        <p>
+            旋转图像对于多种原因来说非常重要。首先，它允许您纠正拍摄角度不正的照片，确保您的图像看起来更专业。其次，它有助于创建更具动态的构图，使视觉效果更加引人入胜。此外，旋转图像还可以帮助突出特定元素或改善设计的整体美学。无论是个人使用还是专业项目，<span class="bold-text">旋转图像</span> 都能显著影响图像的感知方式。
+        </p>
+
+        <p>使用
+            <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a>，旋转图像变得前所未有的简单。我们的 <a class="bold-text" href="/{{ g.lang }}/image-rotate">图像旋转器</a> 提供了一个用户友好的界面，使您可以快速高效地 <span class="bold-text">旋转图像</span>。您无需下载任何软件或具备技术专长，只需上传您的图像，选择旋转角度，便可以开始操作！我们的工具适用于所有技能水平的用户，确保您获得无缝的体验。
+        </p>
+
+    </section>
+
+    <section>
+        <h2>如何使用我们的图像旋转工具</h2>
+        <div class="container">
+            <div class="step">步骤1：点击“从计算机上传”按钮上传您想要旋转的图像，您可以看到图像预览</div>
+            <div class="arrow">↓</div>
+            <div class="step">步骤2：现在使用“向左旋转”或“向右旋转”按钮，旋转图像至左或右</div>
+            <div class="arrow">↓</div>
+            <div class="step">步骤3：一旦获得所需的旋转角度，点击“下载旋转后的图像”，图像将自动开始下载</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>结论</h2>
+        <p>选择
+            <a class="bold-text" href="/{{ g.lang }}/">toolsforimage</a> 来满足您的 <a class="bold-text" href="/{{ g.lang }}/image-rotate">图像旋转</a> 需求，提供了众多优势。我们的工具完全在线，意味着您可以随时随地访问它，无需安装任何软件。我们优先考虑速度和易用性，确保您仅需几次点击便能 <a class="bold-text" href="/{{ g.lang }}/image-rotate">旋转图像</a>。此外，我们的平台支持多种文件格式，以满足您的特定需求。我们致力于提供高质量的服务并确保用户满意，是您处理所有图像操作的首选解决方案。</p>
+    </section>
+
+    <a href="{{ url_for('blogs', lang='zh') }}" class="back-link">← 返回博客</a>
+</article>
+
+<style>
+    .bold-text {
+        font-weight: 900;
+        color: #000000;
+    }
+
+    .blog-post {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+
+    .back-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section a {
+        text-decoration: underline;
+        color: #344b53;
+        font-weight: 900;
+    }
+
+    section a:hover {
+        color: #287791;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+{% endblock %}

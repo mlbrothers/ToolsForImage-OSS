@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;}.cls-2{fill:#17061c;}.cls-3{fill:#ff4a64;}</style>
+
+</defs>
+
+<title/>
+
+<g id="location">
+
+<rect class="cls-1" height="32" id="bg" width="32"/>
+
+<path class="cls-2" d="M16,29.49c-6,0-10-12.08-10-17a10,10,0,0,1,20,0C26,17.41,22,29.49,16,29.49Zm0-25a8,8,0,0,0-8,8c0,4.68,3.87,15,8,15s8-10.3,8-15A8,8,0,0,0,16,4.51Z"/>
+
+<circle class="cls-3" cx="16" cy="12.64" r="3.99"/>
+
+<path class="cls-2" d="M16,17.63a5,5,0,1,1,5-5A5,5,0,0,1,16,17.63Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,16,9.66Z"/>
+
+</g>
+
+</svg>

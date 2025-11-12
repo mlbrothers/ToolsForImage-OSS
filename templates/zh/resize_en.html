@@ -1,0 +1,272 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="通过ToolsForImage轻松调整图像大小。根据像素或百分比调整尺寸，同时保持或忽略宽高比。">
+{% endblock %}
+
+{% block title %}调整图像大小 | ToolsForImage | 全面免费的在线工具，包括模糊人脸、图像转换、编辑、调整大小、去除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>免费在线图像调整大小工具</h1>
+<p>通过指定像素或百分比的尺寸，轻松调整图像大小。您可以选择保持或忽略宽高比。</p>
+
+<form id="resize-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">上传图片</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    
+    <div class="resize-options">
+        <label>
+            <input type="radio" name="resizeType" value="pixel" checked onchange="updateDimensionLabels()"> 像素
+        </label>
+        <label>
+            <input type="radio" name="resizeType" value="percentage" onchange="updateDimensionLabels()"> 百分比
+        </label>
+        <br><br>
+        <label for="width"><span id="widthLabel">宽度 (px):</span></label>
+        <input type="number" id="width" name="width" min="1" required>
+        <label for="height"><span id="heightLabel">高度 (px):</span></label>
+        <input type="number" id="height" name="height" min="1" required>
+        <br><br>
+        <label>
+            <input type="checkbox" id="lockRatio" checked> 锁定宽高比
+        </label>
+    </div>
+    <br>
+    <button type="button" class="resize-button" onclick="resizeImage()">调整图片大小</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是图像调整大小？</h2>
+        <p>图像调整大小是改变图像尺寸的过程。您可以根据需要调整宽度和高度。无论是为网站、社交媒体还是打印准备图像，调整大小有助于确保图像看起来最佳。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>调整图像大小的好处</h2>
+        <p>调整图像大小可以大大提高网站性能。较小的图像加载速度更快，增强了用户体验，并保持访客的参与度。这对于在线商店尤其重要，因为图像加载缓慢可能导致销售损失。此外，适当大小的图像有助于搜索引擎优化（SEO），因为搜索引擎偏爱快速加载的页面。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>何时调整图像大小</h2>
+        <p>在将图像上传到网站或社交媒体之前进行调整大小。大图像可能会减慢加载时间，因此调整其大小有助于提高性能。当您想要创建缩略图或为特定设备优化图像时，这也是很有帮助的。</p>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .resize-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 300px;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .resize-options {
+        margin-top: 20px;
+    }
+
+    .resize-options label {
+        margin-right: 10px;
+    }
+
+    .resize-options input[type="number"] {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .resize-options input[type="radio"],
+    .resize-options input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let originalWidth, originalHeight, aspectRatio;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                const img = new Image();
+                img.onload = function() {
+                    originalWidth = img.width;
+                    originalHeight = img.height;
+                    aspectRatio = originalWidth / originalHeight;
+                    document.getElementById('width').value = originalWidth;
+                    document.getElementById('height').value = originalHeight;
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.getElementById('width').addEventListener('input', updateHeight);
+    document.getElementById('height').addEventListener('input', updateWidth);
+
+    function updateHeight() {
+        if (document.getElementById('lockRatio').checked) {
+            const width = document.getElementById('width').value;
+            document.getElementById('height').value = Math.round(width / aspectRatio);
+        }
+    }
+
+    function updateWidth() {
+        if (document.getElementById('lockRatio').checked) {
+            const height = document.getElementById('height').value;
+            document.getElementById('width').value = Math.round(height * aspectRatio);
+        }
+    }
+
+    function updateDimensionLabels() {
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthLabel = document.getElementById('widthLabel');
+        const heightLabel = document.getElementById('heightLabel');
+        
+        if (resizeType === 'pixel') {
+            widthLabel.textContent = 'Width (px):';
+            heightLabel.textContent = 'Height (px):';
+        } else {
+            widthLabel.textContent = 'Width (%):';
+            heightLabel.textContent = 'Height (%):';
+        }
+    }
+
+    function resizeImage() {
+        const imagePreview = document.getElementById('image-preview');
+        if (!imagePreview.src) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthInput = document.getElementById('width').value;
+        const heightInput = document.getElementById('height').value;
+
+        let newWidth, newHeight;
+
+        if (resizeType === 'pixel') {
+            newWidth = parseInt(widthInput, 10);
+            newHeight = parseInt(heightInput, 10);
+        } else {
+            const widthPercentage = parseFloat(widthInput) / 100;
+            const heightPercentage = parseFloat(heightInput) / 100;
+            newWidth = Math.round(originalWidth * widthPercentage);
+            newHeight = Math.round(originalHeight * heightPercentage);
+        }
+
+        const canvas = document.createElement('canvas');
+        canvas.width = newWidth;
+        canvas.height = newHeight;
+        const ctx = canvas.getContext('2d');
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, newWidth, newHeight);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = canvas.toDataURL('image/png');
+            downloadLink.download = 'resized_image.png';
+            downloadLink.click();
+        }
+        img.src = imagePreview.src;
+    }
+</script>
+{% endblock %}

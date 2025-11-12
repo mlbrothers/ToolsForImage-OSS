@@ -1,0 +1,190 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="轻松使用 ToolsForImage 将 WEBP 图像转换为 BMP。免费、快速且安全的在线 WEBP 到 BMP 转换工具，提供高质量图像转换。">
+{% endblock %}
+
+{% block title %}在线 WEBP 到 BMP 转换工具 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线 WEBP 到 BMP 转换工具</h1>
+<p>轻松将图像从 WEBP 格式转换为 BMP 格式。上传一个 WEBP 图像，我们将为您转换为 BMP 格式。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 WebP 到 BMP 转换？</h2>
+        <p>WebP 到 BMP 转换是将图像文件从 WebP 格式更改为 BMP（位图）格式的过程。WebP 是一种现代图像格式，具有出色的压缩和质量，而 BMP 是一种传统格式，以其简单性和高质量的图像表示而闻名。将 WebP 图像转换为 BMP 格式在您需要用于打印或编辑的无压缩高质量图像时非常有用。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 WebP 转换为 BMP？</h2>
+        <p>将 WebP 图像转换为 BMP 格式有多种原因：</p>
+        <ul>
+            <li><strong>高图像质量：</strong> BMP 文件保留最高质量，因为它们是无压缩的，非常适合专业使用。</li>
+            <li><strong>简单性：</strong> BMP 格式简单且被许多应用程序广泛支持，确保在不同平台上的兼容性。</li>
+            <li><strong>编辑灵活性：</strong> 转换为 BMP 使其更易于在可能不支持 WebP 的各种图形软件中进行编辑。</li>
+            <li><strong>无细节丢失：</strong> BMP 保留所有图像细节，非常适合需要图像保真度的情况。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 WebP 到 BMP 转换器</h2>
+        <p>使用我们的 WebP 到 BMP 转换工具简单且用户友好。以下是开始的步骤：</p>
+        <ul>
+            <li>点击“上传 WEBP 文件”按钮选择您要转换的 WEBP 图像。</li>
+            <li>上传完成后，我们的工具将自动开始转换过程。</li>
+            <li>转换完成后，点击“下载 BMP”以将新的 BMP 图像保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持多种 WebP 格式，让您轻松完成图像转换。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们 WebP 到 BMP 转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速高效：</strong> 只需几次点击即可将您的 WebP 图像转换为 BMP，节省时间。</li>
+            <li><strong>无质量损失：</strong> 在转换过程中，享受高质量的 BMP 图像而不会牺牲任何细节。</li>
+            <li><strong>免费在线：</strong> 我们的工具是免费的，无需下载或安装软件。</li>
+            <li><strong>用户友好的界面：</strong> 我们的工具简化了转换过程，便于使用。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>WebP 到 BMP 转换的常见用途</h2>
+        <p>将 WebP 转换为 BMP 在多种情况下非常有用：</p>
+        <ul>
+            <li><strong>打印：</strong> 将 BMP 图像用于高质量的打印项目，这些项目对清晰度有严格要求。</li>
+            <li><strong>图形设计：</strong> 确保与最好支持 BMP 文件的设计软件的兼容性。</li>
+            <li><strong>图像归档：</strong> 将图像存储为 BMP 格式，以供将来编辑和高质量参考。</li>
+            <li><strong>个人使用：</strong> 轻松转换图像，用于家庭相册或需要高分辨率的照片收藏。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>WebP 转换为 BMP 的优势</h2>
+        <p>将 WebP 图像转换为 BMP 格式可以提高可用性和兼容性。以下是好处：</p>
+        <ul>
+            <li><strong>改进的兼容性：</strong> BMP 被广泛支持，使您的图像更易于进行编辑。</li>
+            <li><strong>无压缩质量：</strong> BMP 文件保留所有图像细节，确保图像清晰且锐利。</li>
+            <li><strong>更易于编辑：</strong> 在您喜欢的图形软件中使用无压缩的 BMP 文件，无需担心质量损失。</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: block;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

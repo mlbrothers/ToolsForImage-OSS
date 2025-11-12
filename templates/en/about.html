@@ -1,0 +1,132 @@
+{% extends 'en/base.html' %}
+
+{% block title %}About Us | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage offers free online tools to convert, resize, crop, compress, and edit images. Easily process images in various formats like JPG, PNG, and more with user-friendly tools designed for all your editing needs.">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="about-content">
+    <h1>About ToolsForImage</h1>
+    <p>Welcome to ToolsForImage, an online free image tools kit. One-stop destination for free online image editing
+        tools. Edit your images with high-quality, easy-to-use image processing solutions to users worldwide completely
+        online and free.</p>
+
+    <h2>Our Mission</h2>
+    <p>At ToolsForImage, our mission is to provide professional-grade image editing accessible to everyone completely
+        free and online. Complete browser based processing so one does not have to install any software. Whether you're
+        a professional photographer, a graphic designer, or just someone who wants to enhance their personal photos,
+        we've got you covered.</p>
+
+    <h2>Our Services</h2>
+    <p>We offer a wide range of image editing tools, including:</p>
+    <ul>
+        <li><a href="/image-compression">Image Compression</a> - Reduce file sizes without compromising quality</li>
+        <li><a href="/image-resize">Image Resizing</a> - Adjust image dimensions to your needs</li>
+        <li><a href="/convert-image-format">Format Conversion</a> - Convert between various image formats</li>
+        <li><a href="/image-rotate">Image Rotation</a> - Easily rotate and flip your images</li>
+        <li><a href="/image-effects">Image Effects</a> - Apply stunning filters and effects</li>
+        <li><a href="/image-watermarking">Watermarking</a> - Protect your images with custom watermarks</li>
+        <li><a href="/blur-face">Face Blurring</a> - Maintain privacy in your photos</li>
+        <li><a href="/remove-background">Remove Background</a> - Remove background from your images online for free</li>        <li class="all-tools-li"><a href="/tools">All tools</a></li>
+    </ul>
+
+    <h2>Why Choose ToolsForImage?</h2>
+    <p>Our platform stands out for several reasons:</p>
+    <ul>
+        <li>100% Free: All our tools are completely free to use</li>
+        <li>No Registration Required: Start editing right away</li>
+        <li>User-Friendly Interface: Easy to navigate and use</li>
+        <li>High-Quality Results: Professional-grade output</li>
+        <li>Privacy-Focused: We don't store your images</li>
+        <li>Constantly Evolving: We regularly update and add new features</li>
+    </ul>
+
+    <h2>Our Commitment</h2>
+    <p>We're committed to providing the best online image editing experience. Our team is constantly working on
+        improving our existing tools and developing new ones to meet your image processing needs.</p>
+
+    <p>Whether you need to <a href="/image-compression">compress images</a> for faster web loading, <a
+            href="/image-resize">resize images</a> for social media, or <a href="/convert-image-format">convert image
+            formats</a> for compatibility, ToolsForImage is here to help. Our <a href="/image-effects">image effects</a>
+        can transform your photos, while our <a href="/image-watermarking">watermarking tool</a> helps protect your
+        work.</p>
+
+    <p>Thank you for choosing ToolsForImage. We're excited to be part of your creative journey!</p>
+</div>
+
+<style>
+    .about-content {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color);
+        /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Add subtle shadow for depth */
+        max-width: 1200px;
+        /* Ensure the content stays within a manageable width */
+        margin: 0 auto;
+        /* Center align the content */
+        border: var(--background-color) 3px solid;
+        /* Use border similar to tools list */
+        font-weight: 400;
+        /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s;
+        /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .about-content a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .about-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .about-content a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block;
+        /* Makes it inline and allows padding */
+        padding: 10px 20px;
+        /* Add padding for button-like appearance */
+        background-color: var(--box-color);
+        /* Background color */
+        color: black;
+        /* Text color */
+        border-radius: 5px;
+        /* Rounded corners */
+        text-align: center;
+        /* Center text */
+        text-decoration: none;
+        /* Remove underline */
+        font-weight: bold;
+        /* Bold text */
+        transition: background-color 0.3s, transform 0.2s;
+        /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+</style>
+{% endblock %}

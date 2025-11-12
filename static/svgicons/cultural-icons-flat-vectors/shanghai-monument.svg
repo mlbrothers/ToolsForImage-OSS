@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>shanghai</title>
+
+<g id="shanghai">
+
+<circle cx="27.5" cy="34.5" r="22.5" style="fill:#edebdc"/>
+
+<line x1="22" y1="62" x2="44" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="31" y="25.952" width="4" height="36.048" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="36.641" y1="51.985" x2="42" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29.537" y1="51.985" x2="24" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27.813,23a5,5,0,0,0,9.8,0Z" style="fill:#b5a19c;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37.712,22a5,5,0,1,0-9.9,1h9.8A5.062,5.062,0,0,0,37.712,22Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M32.859,43a5,5,0,0,0-4.578,3h9.156A5,5,0,0,0,32.859,43Z" style="fill:#b5a19c;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M32.859,53a5,5,0,0,0,4.578-3H28.281A5,5,0,0,0,32.859,53Z" style="fill:#b5a19c;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37.437,46H28.281a4.95,4.95,0,0,0,0,4h9.156a4.95,4.95,0,0,0,0-4Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="3" x2="33" y2="17" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="31" y="9" width="4" height="3.911" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="30" x2="35" y2="30" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="33" x2="35" y2="33" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="36" x2="35" y2="36" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="39" x2="35" y2="39" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="56" x2="35" y2="56" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="59" x2="35" y2="59" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

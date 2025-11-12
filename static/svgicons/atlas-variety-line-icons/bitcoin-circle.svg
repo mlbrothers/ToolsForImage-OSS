@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-linecap:square;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="bitcoin_coin" data-name="bitcoin coin">
+
+<circle class="cls-1" cx="12" cy="12" r="10.5"/>
+
+<path class="cls-1" d="M9.14,8.18h4.77a1.91,1.91,0,0,1,1.91,1.91v0A1.91,1.91,0,0,1,13.91,12H9.14a0,0,0,0,1,0,0V8.18A0,0,0,0,1,9.14,8.18Z"/>
+
+<path class="cls-1" d="M9.14,12h4.77a1.91,1.91,0,0,1,1.91,1.91v0a1.91,1.91,0,0,1-1.91,1.91H9.14a0,0,0,0,1,0,0V12a0,0,0,0,1,0,0Z"/>
+
+<line class="cls-1" x1="10.09" y1="6.27" x2="10.09" y2="8.18"/>
+
+<line class="cls-1" x1="13.91" y1="6.27" x2="13.91" y2="8.18"/>
+
+<line class="cls-1" x1="10.09" y1="15.82" x2="10.09" y2="17.73"/>
+
+<line class="cls-1" x1="13.91" y1="15.82" x2="13.91" y2="17.73"/>
+
+<line class="cls-1" x1="8.18" y1="8.18" x2="9.14" y2="8.18"/>
+
+<line class="cls-1" x1="8.18" y1="15.82" x2="9.14" y2="15.82"/>
+
+</g>
+
+</svg>

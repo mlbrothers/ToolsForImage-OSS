@@ -1,0 +1,354 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="使用我们的水印工具轻松为您的图像添加水印。保护您的图像并轻松添加品牌标识。">
+{% endblock %}
+
+{% block title %}在线图片水印工具 | ToolsForImage | 免费在线工具，用于模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等功能{% endblock %}
+
+{% block content %}
+<h1>免费图片水印工具</h1>
+
+<div class="watermark-editor">
+    <div class="watermark-controls">
+        <label for="imageUpload">上传图片:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="watermarkText">水印文字:</label>
+        <input type="text" id="watermarkText" placeholder="输入水印文字">
+        
+        <label for="watermarkColor">水印颜色:</label>
+        <input type="color" id="watermarkColor" value="#000000">
+        
+        <label for="watermarkOpacity">水印透明度:</label>
+        <input type="range" id="watermarkOpacity" min="0" max="1" step="0.1" value="0.5">
+        
+        <label for="watermarkFontSize">水印字体大小:</label>
+        <input type="number" id="watermarkFontSize" min="8" value="20" placeholder="字体大小">
+        
+        <label for="watermarkPosition">水印位置:</label>
+        <select id="watermarkPosition">
+            <option value="top-left">左上</option>
+            <option value="top-right">右上</option>
+            <option value="bottom-left">左下</option>
+            <option value="bottom-right">右下</option>
+            <option value="center">中心</option>
+        </select>
+        
+        <label for="watermarkFontStyle">水印字体样式:</label>
+        <select id="watermarkFontStyle">
+            <option value="normal">普通</option>
+            <option value="bold">粗体</option>
+            <option value="italic">斜体</option>
+            <option value="bold-italic">粗斜体</option>
+        </select>
+    </div>
+
+    <div class="watermark-preview">
+        <img id="previewImage" src="" alt="预览">
+    </div>
+
+    <button class="button" id="downloadImage">下载带水印的图片</button>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是图片水印？</h2>
+        <p>图片水印是指在您的图像上添加标志、文字或符号，以防止未经授权的使用。水印通常是一个小的、半透明的标记，可以放置在图像的任意位置。我们的工具可以帮助您轻松添加水印，确保您的照片、图形或数字创作受到保护，并可以轻松识别为您的作品。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要给图片添加水印？</h2>
+        <p>为您的图片添加水印非常重要，原因包括：</p>
+        <ul>
+            <li><strong>保护您的作品：</strong>通过添加水印，防止他人未经许可窃取或使用您的图像。</li>
+            <li><strong>打造您的品牌：</strong>添加带有您的标志或品牌名称的水印可以提高可见性和品牌认知度。</li>
+            <li><strong>安全分享在线内容：</strong>在社交媒体、博客或网站上分享图片时，水印可以帮助保护您的知识产权。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的水印工具</h2>
+        <p>我们的水印工具操作简单，可帮助您快速在图像上添加水印。请按照以下步骤操作：</p>
+        <ul>
+            <li>点击“从电脑上传”按钮上传您的图片。</li>
+            <li>输入文字或上传标志作为水印。</li>
+            <li>调整水印的大小、透明度和位置。</li>
+            <li>满意后，点击“下载带水印的图片”将受保护的图片保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持多种图像格式，包括 PNG、JPG 和 BMP，并确保图像质量保持不变。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们水印工具的好处</h2>
+        <p>使用我们的水印工具有以下主要好处：</p>
+        <ul>
+            <li><strong>快速简便：</strong>只需点击几下即可为图像添加水印，无需设计技能。</li>
+            <li><strong>可定制水印：</strong>选择符合您需求的文字、字体、大小和位置。</li>
+            <li><strong>保护您的图片：</strong>确保您的图片在网络上受到保护，并能被识别为您的作品。</li>
+            <li><strong>免费使用：</strong>我们的工具免费提供，无需下载软件。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>图片水印的常见应用场景</h2>
+        <p>水印在许多情况下非常实用，例如：</p>
+        <ul>
+            <li><strong>摄影师：</strong>通过添加您的名字或标志保护您的摄影作品免受未经授权的使用。</li>
+            <li><strong>平面设计师：</strong>在您的数字艺术品上添加水印，以防止他人声称为己有。</li>
+            <li><strong>企业和品牌：</strong>使用水印推广您的品牌，确保您的图片被识别为您的作品。</li>
+            <li><strong>内容创作者：</strong>在社交媒体或网站上分享内容时，确保您的原创内容受到保护。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么为您的图片添加水印很重要</h2>
+        <p>水印可以防止您的图片被盗用或滥用。以下是重要原因：</p>
+        <ul>
+            <li><strong>版权保护：</strong>水印可以阻止试图未经授权使用您图片的人。</li>
+            <li><strong>提高品牌意识：</strong>当水印包含您的标志或品牌名称时，它可以在您的图片在线传播时帮助提高品牌知名度。</li>
+            <li><strong>保护您的作品：</strong>无论您是摄影师、设计师还是内容创作者，水印都能确保您的辛勤劳动始终归属于您。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+
+    #downloadImage{
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .watermark-editor {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        margin-top: 2em;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .watermark-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-controls input, .watermark-controls select {
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-preview {
+        width: 100%;
+        height: 400px;
+        border: 1px solid var(--secondary-color);
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .watermark-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .watermark-text {
+        position: absolute;
+        cursor: move;
+        user-select: none;
+    }
+
+    .button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        border: none;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: var(--link-hover-color);
+        color: var(--box-color);
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    const imageUpload = document.getElementById('imageUpload');
+    const watermarkText = document.getElementById('watermarkText');
+    const watermarkColor = document.getElementById('watermarkColor');
+    const watermarkOpacity = document.getElementById('watermarkOpacity');
+    const watermarkFontSize = document.getElementById('watermarkFontSize');
+    const watermarkPosition = document.getElementById('watermarkPosition');
+    const watermarkFontStyle = document.getElementById('watermarkFontStyle');
+    const previewImage = document.getElementById('previewImage');
+    const downloadButton = document.getElementById('downloadImage');
+
+    let originalImage = null;
+
+    imageUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+            originalImage = new Image();
+            originalImage.onload = () => {
+                previewImage.src = originalImage.src;
+                applyWatermark(); // Apply watermark when the image is loaded
+            };
+            originalImage.src = event.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    // Debounce function to limit the rate of applying watermark
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    // Add event listeners for real-time updates with debouncing
+    const debouncedApplyWatermark = debounce(applyWatermark, 200); // 200ms delay
+    watermarkText.addEventListener('input', debouncedApplyWatermark);
+    watermarkColor.addEventListener('input', debouncedApplyWatermark);
+    watermarkOpacity.addEventListener('input', debouncedApplyWatermark);
+    watermarkFontSize.addEventListener('input', debouncedApplyWatermark);
+    watermarkPosition.addEventListener('change', debouncedApplyWatermark);
+    watermarkFontStyle.addEventListener('change', debouncedApplyWatermark);
+
+    downloadButton.addEventListener('click', downloadWatermarkedImage);
+
+    function applyWatermark() {
+        if (!originalImage) {
+            return;
+        }
+
+        // Create an offscreen canvas to apply watermark
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size to match the image size
+        canvas.width = originalImage.width;
+        canvas.height = originalImage.height;
+
+        // Draw the original image onto the canvas
+        ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+
+        // Set the watermark text style
+        const fontSize = parseInt(watermarkFontSize.value);
+        const fontStyle = watermarkFontStyle.value;
+
+        // Check if the font style includes both bold and italic
+        let fullFontStyle = '';
+        if (fontStyle === 'bold-italic') {
+            fullFontStyle = 'bold italic';
+        } else if (fontStyle === 'bold') {
+            fullFontStyle = 'bold';
+        } else if (fontStyle === 'italic') {
+            fullFontStyle = 'italic';
+        } else {
+            fullFontStyle = 'normal';
+        }
+
+        // Apply the font settings to the canvas context
+        ctx.font = `${fullFontStyle} ${fontSize}px Arial`;
+
+        ctx.fillStyle = watermarkColor.value;
+        ctx.globalAlpha = watermarkOpacity.value;
+
+        // Get text dimensions
+        const text = watermarkText.value;
+        const textMetrics = ctx.measureText(text);
+        const textWidth = textMetrics.width;
+        const textHeight = fontSize; // Approximate height based on font size
+
+        // Adjust for italic and bold font style
+        let italicAdjustment = 0;
+        if (fullFontStyle.includes('italic')) {
+            italicAdjustment = fontSize * 0.2; // Adjust this factor as needed
+        }
+
+        // Calculate text position based on the selected alignment
+        let x, y;
+        const position = watermarkPosition.value;
+
+        switch (position) {
+            case 'top-left':
+                x = 10 + italicAdjustment; // Add some padding
+                y = textHeight + 10;
+                break;
+            case 'top-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = textHeight + 10;
+                break;
+            case 'bottom-left':
+                x = 10 + italicAdjustment; // Left padding
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'bottom-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'center':
+                x = (canvas.width - textWidth) / 2 + italicAdjustment / 2;
+                y = (canvas.height + textHeight) / 2;
+                break;
+            default:
+                x = 10 + italicAdjustment;
+                y = textHeight + 10;
+        }
+
+        // Debug: Log the font style to ensure it's set correctly
+        console.log('Font style applied:', ctx.font);
+
+        // Draw the watermark text on the canvas
+        ctx.fillText(text, x, y);
+
+        // Update the preview image with the canvas content
+        previewImage.src = canvas.toDataURL();
+    }
+
+    function downloadWatermarkedImage() {
+        if (!originalImage) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const a = document.createElement('a');
+        a.href = previewImage.src;
+        a.download = 'watermarked_image.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+{% endblock %}

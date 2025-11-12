@@ -1,0 +1,192 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images TIFF en WebP avec ToolsForImage. Convertisseur en ligne gratuit de TIFF en WebP.">
+{% endblock %}
+
+{% block title %}Convertir TIFF en WebP en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Conversion de TIFF en WebP</h1>
+<p>Convertissez facilement vos images TIFF au format WebP. Téléchargez une image TIFF et nous la convertirons en WebP pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Conversion de TIFF en WebP ?</h2>
+        <p>La conversion de TIFF en WebP est le processus de transformation des fichiers image du format TIFF (Tagged Image File Format) au format WebP. Les fichiers TIFF sont connus pour leur haute qualité et sont souvent utilisés dans les domaines professionnels tels que la photographie et l'impression. WebP, développé par Google, est un format d'image moderne qui offre une compression supérieure, résultant en des fichiers de plus petite taille tout en maintenant une excellente qualité d'image. La conversion des images TIFF en WebP permet de réduire les temps de chargement et d'améliorer les performances, en particulier sur les sites web.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Convertir TIFF en WebP ?</h2>
+        <p>Il y a de nombreux avantages à convertir des images TIFF au format WebP :</p>
+        <ul>
+            <li><strong>Fichiers de Plus Petite Taille :</strong> Les fichiers WebP sont significativement plus petits que les fichiers TIFF, ce qui les rend idéaux pour une utilisation web et des temps de chargement plus rapides.</li>
+            <li><strong>Images de Haute Qualité :</strong> Le format WebP maintient une qualité visuelle élevée même avec une compression, garantissant que vos images sont superbes.</li>
+            <li><strong>Arrière-Plans Transparents :</strong> Le format WebP prend en charge la transparence, ce qui le rend adapté aux logos et aux graphiques nécessitant un arrière-plan clair.</li>
+            <li><strong>Compatibilité Étendue :</strong> WebP est pris en charge par la plupart des navigateurs modernes, garantissant que vos images sont accessibles à tous les utilisateurs.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Convertisseur de TIFF en WebP</h2>
+        <p>Utiliser notre outil de conversion de TIFF en WebP est simple et rapide. Voici comment procéder :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger un Fichier TIFF" pour sélectionner l'image TIFF que vous souhaitez convertir.</li>
+            <li>Une fois le téléchargement terminé, le processus de conversion commencera automatiquement.</li>
+            <li>Après la conversion, cliquez sur "Télécharger WebP" pour sauvegarder votre nouvelle image WebP sur votre appareil.</li>
+        </ul>
+        <p>Notre outil prend en charge différents formats TIFF, facilitant la conversion de vos images sans tracas.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'Utilisation de Notre Convertisseur de TIFF en WebP</h2>
+        <p>Voici quelques avantages de notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et Efficace :</strong> Convertissez vos images TIFF en WebP en quelques clics seulement, économisant votre temps.</li>
+            <li><strong>Aucune Perte de Qualité :</strong> Profitez d'images de haute qualité sans perte de clarté pendant la conversion.</li>
+            <li><strong>Gratuit et en Ligne :</strong> Notre outil est disponible gratuitement en ligne, sans besoin de téléchargements ou d'installations.</li>
+            <li><strong>Interface Conviviale :</strong> Conçu pour être facile à utiliser, notre outil rend la conversion d'images simple et agréable.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations Courantes de la Conversion de TIFF en WebP</h2>
+        <p>La conversion de TIFF en WebP est utile dans divers scénarios :</p>
+        <ul>
+            <li><strong>Développement Web :</strong> Optimisez les images pour les sites web pour améliorer la vitesse de chargement et l'expérience utilisateur.</li>
+            <li><strong>Marketing Digital :</strong> Utilisez des images WebP dans des publicités en ligne pour de meilleures performances et une utilisation réduite de la bande passante.</li>
+            <li><strong>Conception Graphique :</strong> Créez des graphiques visuellement attrayants avec des arrière-plans transparents pour une utilisation web.</li>
+            <li><strong>Usage Personnel :</strong> Gagnez de l'espace sur vos appareils en convertissant de grands fichiers TIFF en images WebP efficaces.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la Conversion de TIFF en WebP Peut Vous Aider</h2>
+        <p>La conversion de vos images TIFF au format WebP peut améliorer l'utilisabilité et l'accessibilité. Voici comment :</p>
+        <ul>
+            <li><strong>Amélioration des Temps de Chargement :</strong> Des fichiers WebP plus petits conduisent à des vitesses de chargement plus rapides sur les sites web, améliorant l'expérience utilisateur.</li>
+            <li><strong>Meilleure Qualité d'Image :</strong> L'algorithme de compression de WebP garantit que vos images conservent clarté et détails.</li>
+            <li><strong>Compatibilité Améliorée :</strong> Avec une large compatibilité avec les navigateurs modernes, vos images seront accessibles à tous les utilisateurs.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

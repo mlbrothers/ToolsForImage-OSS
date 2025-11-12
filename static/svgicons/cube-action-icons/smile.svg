@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_twee{fill:#67625D;}
+	.cubies_eenentwintig{fill:#C9483A;}
+	.cubies_tweeentwintig{fill:#D97360;}
+	.cubies_zes{fill:#EDEAE5;}
+	.cubies_vijf{fill:#C9C6C0;}
+	.cubies_een{fill:#4C4842;}
+	.st0{fill:#F2C99E;}
+	.st1{fill:#F9E0BD;}
+	.st2{fill:#65C3AB;}
+	.st3{fill:#EDB57E;}
+	.st4{fill:#98D3BC;}
+	.st5{fill:#E3D4C0;}
+	.st6{fill:#FFF2DF;}
+	.st7{fill:#CCE2CD;}
+	.st8{fill:#BCD269;}
+	.st9{fill:#A4C83F;}
+	.st10{fill:#837F79;}
+	.st11{fill:#EC9B5A;}
+	.st12{fill:#2EB39A;}
+	.st13{fill:#725A48;}
+	.st14{fill:#8E7866;}
+	.st15{fill:#E69D8A;}
+	.st16{fill:#A5A29C;}
+	.st17{fill:#D1DE8B;}
+	.st18{fill:#E8E8B5;}
+</style>
+<g>
+	<path class="cubies_eenentwintig" d="M0,14V3c0-1.657,1.343-3,3-3h26c1.657,0,3,1.343,3,3v11H0z M0,18v11c0,1.657,1.343,3,3,3h26
+		c1.657,0,3-1.343,3-3V18H0z"/>
+	<path class="cubies_tweeentwintig" d="M0,14V3c0-1.657,1.343-3,3-3h24c1.657,0,3,1.343,3,3v11H0z M0,18v11c0,1.657,1.343,3,3,3h24
+		c1.657,0,3-1.343,3-3V18H0z"/>
+	<rect y="14" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 32 32)" class="cubies_een" width="32" height="4"/>
+	<rect y="14" class="cubies_twee" width="30" height="4"/>
+	<path class="cubies_zes" d="M28,17h2v9h-1c-1.105,0-2-0.895-2-2c0,1.105-0.895,2-2,2h-2c-1.105,0-2-0.895-2-2c0,1.105-0.895,2-2,2
+		h-2c-1.105,0-2-0.895-2-2c0,1.105-0.895,2-2,2h-2c-1.105,0-2-0.895-2-2c0,1.105-0.895,2-2,2H5c-1.105,0-2-0.895-2-2
+		c0,1.105-0.895,2-2,2H0v-9h2c0.552,0,1,0.448,1,1c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1c0-0.552,0.448-1,1-1h4
+		c0.552,0,1,0.448,1,1c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1
+		C27,17.448,27.448,17,28,17z M29,6c-1.105,0-2,0.895-2,2c0-1.105-0.895-2-2-2h-2c-1.105,0-2,0.895-2,2c0-1.105-0.895-2-2-2h-2
+		c-1.105,0-2,0.895-2,2c0-1.105-0.895-2-2-2h-2C9.895,6,9,6.895,9,8c0-1.105-0.895-2-2-2H5C3.895,6,3,6.895,3,8c0-1.105-0.895-2-2-2
+		H0v9h2c0.552,0,1-0.448,1-1c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1
+		c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1c0,0.552,0.448,1,1,1h2V6H29z"/>
+	<path class="cubies_vijf" d="M32,15h-2V6h2V15z M32,17h-2v9h2V17z"/>
+</g>
+</svg>

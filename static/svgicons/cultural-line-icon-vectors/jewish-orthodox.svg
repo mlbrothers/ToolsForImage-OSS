@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>jewish-orthodox</title>
+
+<g id="jewish-orthodox">
+
+<path d="M21.13,30,16.448,47.39a1.5,1.5,0,1,1-2.9-.78L18.5,28.231" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M45.807,29.766,50.552,47.39a1.5,1.5,0,0,0,2.9-.78L48.5,28.231" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M48.5,27.657l7.992,12.492a1.5,1.5,0,1,0,2.527-1.617L48.067,21.413" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M18.5,27.657,10.508,40.149a1.5,1.5,0,0,1-1.715.623,1.525,1.525,0,0,1-.357-.168,1.5,1.5,0,0,1-.455-2.072l11.1-17.345" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44.268,48.8l1.439.508C48.926,50.449,51,52.986,51,55.785V62" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M16,62V55.785c0-2.8,2.074-5.336,5.293-6.473l1.439-.508" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="38.5 46.1 34 56 45 48 40.309 45.654" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="28.644 46.417 33 56 22 48 26.5 45.75" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="54.5" cy="5.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="35.224 30 38 30 42 35 45 30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="22 30 25 35 29 30 31.808 30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22,30v8.562A7.438,7.438,0,0,0,29.438,46h8.124A7.438,7.438,0,0,0,45,38.562V30l.172-.651a2.285,2.285,0,0,0,2.093-.238,2.537,2.537,0,0,0,1.215-1.793A2.5,2.5,0,0,0,46,24.5V21H21v3.5a2.5,2.5,0,0,0-2.5,2.591,2.56,2.56,0,0,0,1.183,1.97,2.225,2.225,0,0,0,2.108.3Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="39.5" cy="26.5" r="1"/>
+
+<circle cx="27.5" cy="26.5" r="1"/>
+
+<path d="M46.282,16H59.5A2.5,2.5,0,0,1,62,18.5h0A2.5,2.5,0,0,1,59.5,21H7.5A2.5,2.5,0,0,1,5,18.5H5A2.5,2.5,0,0,1,7.5,16H20.8" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="7" cy="53" r="1"/>
+
+<path d="M41.774,5H25.226A4.226,4.226,0,0,0,21,9.226V15.6A2.4,2.4,0,0,0,23.4,18H43.6A2.4,2.4,0,0,0,46,15.6V9.226A4.226,4.226,0,0,0,41.774,5Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="25 8 34 9 42 8" style="fill:#bf7e68;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M35,28v1.667A1.424,1.424,0,0,1,33.5,31h0A1.424,1.424,0,0,1,32,29.667V28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="31" y1="34" x2="36" y2="34" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="46" y1="14" x2="21" y2="14" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

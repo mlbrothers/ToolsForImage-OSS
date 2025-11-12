@@ -1,0 +1,192 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images webp en BMP avec ToolsForImage. Convertisseur webp en BMP gratuit en ligne.">
+{% endblock %}
+
+{% block title %}Convertir webp en BMP en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de Conversion Webp en BMP Gratuit</h1>
+<p>Convertissez facilement vos images webp en format BMP. Téléchargez une image webp et nous la convertirons en BMP pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la Conversion WebP en BMP ?</h2>
+        <p>La conversion de WebP en BMP est le processus de changement des fichiers image du format WebP au format BMP (Bitmap). WebP est un format d'image moderne qui offre une excellente compression et qualité, tandis que BMP est un format traditionnel connu pour sa simplicité et sa représentation de haute qualité des images. La conversion des images WebP en BMP peut être utile lorsque vous avez besoin d'images avec une qualité non compressée pour des fins d'impression ou d'édition.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi Convertir WebP en BMP ?</h2>
+        <p>Il existe plusieurs raisons de convertir les images WebP en format BMP :</p>
+        <ul>
+            <li><strong>Haute Qualité d'Image :</strong> Les fichiers BMP conservent la plus haute qualité car ils sont non compressés, les rendant idéaux pour un usage professionnel.</li>
+            <li><strong>Simplicité :</strong> Le format BMP est simple et largement supporté par de nombreuses applications, assurant la compatibilité sur différentes plateformes.</li>
+            <li><strong>Flexibilité d'Édition :</strong> Convertir en BMP permet une édition plus facile dans divers logiciels graphiques qui peuvent ne pas prendre en charge le WebP.</li>
+            <li><strong>Aucune Perte de Détails :</strong> Le BMP préserve tous les détails de l'image, le rendant parfait pour les situations où la fidélité de l'image est cruciale.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment Utiliser Notre Convertisseur WebP en BMP</h2>
+        <p>Utiliser notre outil de conversion WebP en BMP est simple et convivial. Voici comment commencer :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger le fichier WebP" pour sélectionner l'image WebP que vous souhaitez convertir.</li>
+            <li>Une fois le téléchargement terminé, notre outil commencera automatiquement le processus de conversion.</li>
+            <li>Une fois la conversion terminée, cliquez sur "Télécharger BMP" pour enregistrer votre nouvelle image BMP sur votre appareil.</li>
+        </ul>
+        <p>Notre outil prend en charge plusieurs formats WebP, vous permettant de convertir vos images avec facilité.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'Utiliser Notre Convertisseur WebP en BMP</h2>
+        <p>Voici quelques avantages d'utiliser notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et Efficace :</strong> Convertissez vos images WebP en BMP en quelques clics seulement, vous faisant gagner du temps.</li>
+            <li><strong>Aucune Perte de Qualité :</strong> Profitez d'images BMP de haute qualité sans sacrifier aucun détail pendant la conversion.</li>
+            <li><strong>Gratuit et En Ligne :</strong> Notre outil est disponible gratuitement en ligne, sans téléchargement ni installation requise.</li>
+            <li><strong>Interface Conviviale :</strong> Conçu pour la facilité d'utilisation, notre outil simplifie le processus de conversion.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations Courantes de la Conversion WebP en BMP</h2>
+        <p>Convertir WebP en BMP peut être bénéfique dans divers scénarios :</p>
+        <ul>
+            <li><strong>Impression :</strong> Utilisez des images BMP pour des projets d'impression de haute qualité où la clarté est essentielle.</li>
+            <li><strong>Conception Graphique :</strong> Assurez-vous de la compatibilité avec les logiciels de conception qui fonctionnent mieux avec des fichiers BMP.</li>
+            <li><strong>Archivage d'Images :</strong> Stockez des images au format BMP pour une édition future et une référence de haute qualité.</li>
+            <li><strong>Usage Personnel :</strong> Convertissez facilement des images pour des albums de famille ou des collections de photos nécessitant une haute résolution.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la Conversion de WebP en BMP Peut Aider</h2>
+        <p>Convertir vos images WebP au format BMP peut améliorer l'utilisabilité et la compatibilité. Voici comment :</p>
+        <ul>
+            <li><strong>Compatibilité Améliorée :</strong> BMP est supporté par une large gamme d'applications, rendant vos images plus accessibles pour l'édition.</li>
+            <li><strong>Qualité Non Compressée :</strong> Les fichiers BMP conservent tous les détails de l'image, garantissant que vos images ont l'air nettes et claires.</li>
+            <li><strong>Édition Plus Facile :</strong> Travaillez avec des fichiers BMP non compressés dans votre logiciel graphique préféré sans perte de qualité.</li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: block;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

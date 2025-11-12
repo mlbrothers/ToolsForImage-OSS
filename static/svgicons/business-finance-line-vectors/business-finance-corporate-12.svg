@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:6,5;}
+</style>
+
+<g>
+
+<polygon class="st1" points="43,26 43,52 15,52 15,18 35,18 35,26  "/>
+
+<polygon class="st1" points="43,26 35,26 35,18  "/>
+
+<polygon class="st1" points="49,20 49,46 43,46 43,26 35,26 35,18 21,18 21,12 41,12  "/>
+
+<polygon class="st1" points="49,20 41,20 41,12  "/>
+
+<polygon class="st1" points="43,26 35,26 35,18  "/>
+
+<circle class="st1" cx="23" cy="26" r="4"/>
+
+<line class="st1" x1="38" x2="20" y1="45" y2="45"/>
+
+<line class="st1" x1="38" x2="20" y1="40" y2="40"/>
+
+<line class="st1" x1="29" x2="20" y1="35" y2="35"/>
+
+</g>
+
+</svg>

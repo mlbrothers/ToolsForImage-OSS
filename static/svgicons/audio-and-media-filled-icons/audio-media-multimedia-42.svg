@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<path d="   M443,170.865v235H69v-235h112v-52.73c0-6.63,5.37-12,12-12h126c6.63,0,12,5.37,12,12v52.73H443z" fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<circle cx="256" cy="287.229" fill="none" r="83.708" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<path d="   M256,323.938c-20.24,0-36.708-16.467-36.708-36.708S235.76,250.521,256,250.521c20.241,0,36.708,16.467,36.708,36.708   S276.241,323.938,256,323.938z" fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="369" x2="411" y1="203.521" y2="203.521"/>
+
+<rect fill="none" height="32" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="53" x="87" y="138.865"/>
+
+<path d="   M443,170.865v235H69v-235h112v-52.73c0-6.63,5.37-12,12-12h126c6.63,0,12,5.37,12,12v52.73H443z" fill="#65A0D6" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<circle cx="256" cy="287.229" fill="#D9DCE1" r="83.708" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<path d="   M256,323.938c-20.24,0-36.708-16.467-36.708-36.708S235.76,250.521,256,250.521c20.241,0,36.708,16.467,36.708,36.708   S276.241,323.938,256,323.938z" fill="#3C74BA" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="369" x2="411" y1="203.521" y2="203.521"/>
+
+<rect fill="#3C74BA" height="32" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="53" x="87" y="138.865"/>
+
+</g>
+
+</svg>

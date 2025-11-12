@@ -1,0 +1,192 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के उन्नत AI-संचालित उपकरण के साथ छवियों से पृष्ठभूमि को आसानी से हटाएँ। हमारी मुफ्त ऑनलाइन पृष्ठभूमि हटाने की सेवा सटीक और पेशेवर परिणामों के लिए अत्याधुनिक कृत्रिम बुद्धिमत्ता का उपयोग करती है।">
+{% endblock %}
+
+{% block title %}AI-संचालित पृष्ठभूमि हटाने का उपकरण | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त AI-संचालित पृष्ठभूमि हटाने का उपकरण</h1>
+<p>छवि संपादन में कृत्रिम बुद्धिमत्ता की शक्ति का अनुभव करें। हमारे उन्नत AI एल्गोरिदम आपकी छवियों से पृष्ठभूमियों को हटाना बेहद आसान बनाते हैं, बिना किसी पूर्वाग्रह के सटीकता और दक्षता के साथ। बस एक छवि अपलोड करें, और हमारे अत्याधुनिक मशीन लर्निंग मॉडल को बाकी करने दें।</p>
+<form id="remove-bg-form" action="#" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">छवि अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button type="button" class="remove-bg-button" onclick="removeBackground()">AI के साथ पृष्ठभूमि हटाएं</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>AI-संचालित पृष्ठभूमि हटाने का क्या अर्थ है?</h2>
+        <p>AI-संचालित पृष्ठभूमि हटाना एक अत्याधुनिक प्रक्रिया है जो कृत्रिम बुद्धिमत्ता और मशीन लर्निंग एल्गोरिदम का उपयोग करके स्वचालित रूप से छवि के मुख्य विषय को इसके पृष्ठभूमि से अलग करती है। यह उन्नत तकनीक जटिल पैटर्न, किनारों और रंग वितरण का विश्लेषण करती है ताकि अत्यधिक सटीक परिणाम प्राप्त किया जा सके, जो पारंपरिक छवि प्रसंस्करण तकनीकों से बेहतर होते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>छवि पृष्ठभूमियों को हटाने के लिए AI का उपयोग क्यों करें?</h2>
+        <p>कृत्रिम बुद्धिमत्ता पृष्ठभूमि हटाने में कई लाभ प्रदान करती है:</p>
+        <ul>
+            <li><strong>सुधरी हुई सटीकता:</strong> AI मॉडल जटिल विवरण और जटिल किनारों का पता लगा सकते हैं जो पारंपरिक तरीकों से छूट सकते हैं।</li>
+            <li><strong>समय की दक्षता:</strong> AI छवियों को सेकंड में प्रोसेस करता है, मैनुअल संपादन के काम के घंटों की बचत करता है।</li>
+            <li><strong>संगति:</strong> AI बड़े बैचों की छवियों में समान गुणवत्ता सुनिश्चित करता है।</li>
+            <li><strong>जटिल छवियों का प्रबंधन:</strong> AI जटिल विवरण या अनियमित आकारों वाली चुनौतीपूर्ण छवियों से पृष्ठभूमियों को हटाने में उत्कृष्टता प्राप्त करता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे AI-संचालित पृष्ठभूमि हटाने के उपकरण का उपयोग कैसे करें</h2>
+        <p>पृष्ठभूमि हटाने के लिए AI की शक्ति का उपयोग करना हमारे उपयोगकर्ता के अनुकूल उपकरण के साथ आसान है:</p>
+        <ol>
+            <li>"छवि अपलोड करें" बटन पर क्लिक करें ताकि आप जिस छवि को प्रोसेस करना चाहते हैं उसे चुन सकें।</li>
+            <li>जब आपकी छवि अपलोड हो जाए, तो "AI के साथ पृष्ठभूमि हटाएँ" बटन पर क्लिक करें।</li>
+            <li>हमारा उन्नत AI मॉडल आपकी छवि का विश्लेषण करेगा और स्वचालित रूप से पृष्ठभूमि हटा देगा।</li>
+            <li>प्रसंस्करण के बाद, आप बिना पृष्ठभूमि के अपनी छवि डाउनलोड कर सकते हैं।</li>
+        </ol>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे AI-चालित पृष्ठभूमि हटाने के उपकरण के उपयोग के लाभ</h2>
+        <ul>
+            <li><strong>अत्याधुनिक AI प्रौद्योगिकी:</strong> उच्च गुणवत्ता के परिणामों के लिए कृत्रिम बुद्धिमत्ता और मशीन लर्निंग में नवीनतम प्रगति का लाभ उठाएँ।</li>
+            <li><strong>त्वरित प्रसंस्करण:</strong> हमारे AI एल्गोरिदम बिजली की गति से काम करते हैं, परिणामों को सेकंड में प्रदान करते हैं।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> तकनीकी विशेषज्ञता की आवश्यकता के बिना AI की शक्ति का आनंद लें।</li>
+            <li><strong>निरंतर सुधार:</strong> हमारे AI मॉडल लगातार सीख रहे हैं और सुधार कर रहे हैं, यह सुनिश्चित करते हुए कि आप हमेशा संभवतः सर्वश्रेष्ठ परिणाम प्राप्त करें।</li>
+            <li><strong>बहुपरकारिता:</strong> हमारा AI विभिन्न प्रकार की छवियों और जटिलताओं का प्रबंधन कर सकता है, सरल उत्पाद फ़ोटो से लेकर जटिल चित्रों तक।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button, .remove-bg-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .upload-button:hover, .remove-bg-button:hover {
+        transform: scale(1.05);
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .info-container {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .info-section {
+        margin-bottom: 30px;
+    }
+
+    .info-section h2 {
+        color: var(--secondary-color);
+    }
+
+    .info-section ul, .info-section ol {
+        padding-left: 20px;
+    }
+
+    .info-section li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Include MediaPipe Selfie Segmentation -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let img;
+
+    // Initialize MediaPipe Selfie Segmentation
+    const selfieSegmentation = new SelfieSegmentation({
+        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/${file}`
+    });
+
+    selfieSegmentation.setOptions({
+        modelSelection: 1, // Use general model
+    });
+
+    selfieSegmentation.onResults((results) => {
+        // Draw the original image on the canvas
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Get the segmentation mask
+        const mask = results.segmentationMask;
+
+        // Apply blur to the background
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.filter = 'blur(10px)';
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Restore the foreground
+        ctx.globalCompositeOperation = 'destination-in';
+        ctx.drawImage(mask, 0, 0, canvas.width, canvas.height);
+
+        // Reset composite operation
+        ctx.globalCompositeOperation = 'source-over';
+    });
+
+    // Handle image upload
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                imagePreview.src = img.src;
+                imagePreview.style.display = 'block';
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    }
+
+    // Apply background blur
+    async function removeBackground() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Send the image to MediaPipe for processing
+        await selfieSegmentation.send({ image: img });
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'remove_background.png';
+        a.click();
+    }
+</script>
+{% endblock %}

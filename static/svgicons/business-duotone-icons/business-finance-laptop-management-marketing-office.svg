@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#ffffff;}</style>
+
+</defs>
+
+<g id="laptop">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<path class="cls-2" d="M26,6H6A2,2,0,0,0,4,8V25H28V8A2,2,0,0,0,26,6Z"/>
+
+<path class="cls-3" d="M2,23v5a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V23Z"/>
+
+<path d="M28,23V8a2,2,0,0,0-2-2H6A2,2,0,0,0,4,8V23H2v5a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V23ZM6,8H26V23H6ZM4,28V25H28v3Z"/>
+
+</g>
+
+</svg>

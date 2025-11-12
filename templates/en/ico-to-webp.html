@@ -1,0 +1,196 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert ICO to WEBP images with ToolsForImage. Free, fast, and secure online ICO to WEBP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online ICO to WEBP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online ICO to WEBP Converter</h1>
+<p>Easily convert your images from ICO to WebP format. Upload an ICO image and we'll convert it to WebP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is ICO to WebP Conversion?</h2>
+        <p>ICO to WebP conversion is the process of changing image files from ICO format to WebP format. WebP is a modern image format developed by Google that provides superior compression and quality compared to many other formats. This conversion is useful when you need to use icon images in contexts where WebP is preferred or required.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert ICO to WebP?</h2>
+        <p>There are several reasons to convert ICO images to WebP:</p>
+        <ul>
+            <li><strong>Smaller File Size:</strong> WebP offers better compression than many other formats, resulting in smaller file sizes.</li>
+            <li><strong>Faster Loading Times:</strong> Smaller file sizes lead to faster loading times, especially important for web applications.</li>
+            <li><strong>Quality Retention:</strong> WebP maintains high image quality even at lower file sizes.</li>
+            <li><strong>Transparency Support:</strong> Like PNG, WebP supports alpha channel transparency.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our ICO to WebP Converter</h2>
+        <p>Using our ICO to WebP conversion tool is simple and quick. Here's how it works:</p>
+        <ul>
+            <li>Click the "Upload ICO File" button to select the ICO image you want to convert.</li>
+            <li>Once your image is uploaded, our tool will automatically start converting it to WebP format.</li>
+            <li>After the conversion is complete, click "Download WebP" to save your new image file to your device.</li>
+        </ul>
+        <p>Our converter supports various ICO files, ensuring a smooth and efficient conversion experience for all users.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our ICO to WebP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your ICO images to WebP quickly with just a few clicks.</li>
+            <li><strong>High Quality:</strong> Maintain image quality during the conversion process.</li>
+            <li><strong>Free and Accessible:</strong> Use our tool online for free, with no downloads or installations needed.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed to be intuitive and easy to navigate for everyone.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for ICO to WebP Conversion</h2>
+        <p>Here are some common situations where converting ICO to WebP can be helpful:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Use icon images in web projects where WebP is preferred for its superior compression.</li>
+            <li><strong>Mobile Apps:</strong> Utilize WebP images in mobile applications to reduce data usage and improve load times.</li>
+            <li><strong>E-commerce:</strong> Optimize product images and icons for faster page loading and better user experience.</li>
+            <li><strong>Digital Marketing:</strong> Use WebP images in online advertisements for faster loading and better performance.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting ICO to WebP Can Help</h2>
+        <p>Converting your ICO images to WebP can enhance their usability in various contexts. Here's how:</p>
+        <ul>
+            <li><strong>Improved Website Performance:</strong> WebP images load faster, improving overall website speed.</li>
+            <li><strong>Reduced Bandwidth Usage:</strong> Smaller file sizes mean less data transfer, beneficial for both users and servers.</li>
+            <li><strong>Better User Experience:</strong> Faster loading times and high-quality images contribute to a better user experience.</li>
+            <li><strong>SEO Benefits:</strong> Faster websites tend to rank better in search engine results.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

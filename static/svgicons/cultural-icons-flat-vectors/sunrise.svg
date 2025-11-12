@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>sunrise</title>
+
+<g id="sunrise">
+
+<circle cx="24.5" cy="28.5" r="21.5" style="fill:#e5efef"/>
+
+<circle cx="35" cy="38" r="21" style="fill:#fc8c29;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="35.432 61 32.589 51.531 28.255 51.531 27.204 48.929 28.255 43.519 22.633 42.429 21.719 36.857 16.234 35 9.478 44.086 9.478 51.514 6.178 52.643 1.607 61 35.432 61" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="28.118 51.456 25.376 54.198 25.376 56.941" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="15.32 45.97 16.234 43.228 16.234 40.485 13.811 38.684" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="62.75 61 63 56 59 51 57 45 52 41 47 49 39 53 39.32 61 62.75 61" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47" y1="49" x2="46" y2="57" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="59" y1="51" x2="54" y2="52" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="22.478 42.222 21.755 46.336 23.2 49.225" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="40 51 33 51 32 61 41 61 40 51" style="fill:#00ccca;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="35" y1="4" x2="35" y2="14" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="54.799" y1="18.201" x2="51.971" y2="21.029" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="60.667" y1="26.81" x2="57" y2="28.409" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="45.822" y1="12.176" x2="44.276" y2="15.865" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="15.144" y1="18.201" x2="17.972" y2="21.029" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="9.276" y1="26.81" x2="12.942" y2="28.409" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24.121" y1="12.176" x2="25.667" y2="15.865" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="32 7 35 4 38 7" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

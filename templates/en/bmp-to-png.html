@@ -1,0 +1,200 @@
+{% extends 'en/base.html' %}
+
+{% block title %}BMP to PNG online | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert BMP to PNG images with ToolsForImage. Free, fast, and secure online BMP to PNG converter for high-quality image transformations.">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Free Online BMP to PNG Converter</h1>
+    <p>Easily convert your images from BMP to PNG format. Upload a BMP image and we'll convert it to PNG for you.</p>
+    <form id="conversion-form" method="post" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+        <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+        <br>
+        <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+        <br>
+        <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+    </form>
+
+    <div class="info-container">
+        <div class="info-section">
+            <h2>What is BMP to PNG Conversion?</h2>
+            <p>BMP to PNG conversion is the process of changing image files from BMP (Bitmap) format to PNG (Portable Network Graphics) format. BMP files are known for their high quality but can be large in size, while PNG files offer lossless compression, meaning they maintain quality while reducing file size. Our tool makes it easy to convert BMP images to PNG, helping you achieve the best results for your graphics.</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>Why Convert BMP to PNG?</h2>
+            <p>There are several compelling reasons to convert BMP images to PNG:</p>
+            <ul>
+                <li><strong>Lossless Compression:</strong> PNG files retain the original image quality without any loss, making them perfect for detailed graphics.</li>
+                <li><strong>Transparency Support:</strong> PNG format supports transparent backgrounds, allowing for versatile use in web design and presentations.</li>
+                <li><strong>Better Web Compatibility:</strong> PNG is widely used on the internet, ensuring your images look great on websites and social media.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>How to Use Our BMP to PNG Converter</h2>
+            <p>Using our BMP to PNG converter is straightforward. Follow these simple steps:</p>
+            <ul>
+                <li>Click the "Upload BMP File" button to select the BMP image you want to convert.</li>
+                <li>Once the image is uploaded, our tool will automatically convert it to PNG format.</li>
+                <li>After the conversion is complete, click "Download PNG" to save the new image to your device.</li>
+            </ul>
+            <p>Our tool supports a variety of BMP files, ensuring a smooth conversion process every time.</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>Benefits of Using Our BMP to PNG Converter</h2>
+            <p>Our conversion tool offers numerous advantages:</p>
+            <ul>
+                <li><strong>Fast and Efficient:</strong> Convert BMP images to PNG quickly and effortlessly.</li>
+                <li><strong>No Quality Loss:</strong> Enjoy high-quality images with our lossless conversion process.</li>
+                <li><strong>Free and Accessible:</strong> Use our online tool for free, with no downloads or installations required.</li>
+                <li><strong>User-Friendly:</strong> Designed for everyone, our interface makes converting images easy, regardless of your technical skills.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>Common Uses for BMP to PNG Conversion</h2>
+            <p>Converting BMP to PNG can be helpful in various situations:</p>
+            <ul>
+                <li><strong>Graphic Design:</strong> Use PNG images in your design projects for high-quality graphics.</li>
+                <li><strong>Web Development:</strong> Optimize images for websites where transparency and quality are essential.</li>
+                <li><strong>Social Media:</strong> Share images on platforms like Facebook and Instagram, where PNG is commonly supported.</li>
+                <li><strong>Personal Use:</strong> Keep family photos and artwork in PNG format to preserve quality and details.</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>How Converting BMP to PNG Enhances Your Images</h2>
+            <p>Transforming your BMP images to PNG can significantly improve their usability and appearance. Here’s how:</p>
+            <ul>
+                <li><strong>Improved Quality:</strong> PNG files preserve every detail of your image, ensuring it looks its best.</li>
+                <li><strong>Flexible Use:</strong> PNG format allows for transparent backgrounds, making it ideal for overlays and logos.</li>
+                <li><strong>Wider Accessibility:</strong> PNG images are easily viewed on all devices, ensuring your content is accessible to everyone.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+    
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

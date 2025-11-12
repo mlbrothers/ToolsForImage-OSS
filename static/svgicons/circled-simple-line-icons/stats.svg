@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="800px"
+	 height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Download_x5F_25_x25_">
+</g>
+<g id="Download_x5F_50_x25_">
+</g>
+<g id="Download_x5F_75_x25_">
+</g>
+<g id="Download_x5F_100_x25_">
+</g>
+<g id="Upload">
+</g>
+<g id="Next">
+</g>
+<g id="Last">
+</g>
+<g id="OK">
+</g>
+<g id="Fail">
+</g>
+<g id="Add">
+</g>
+<g id="Spinner_x5F_0_x25_">
+</g>
+<g id="Spinner_x5F_25_x25_">
+</g>
+<g id="Spinner_x5F_50_x25_">
+</g>
+<g id="Spinner_x5F_75_x25_">
+</g>
+<g id="Brightest_x5F_25_x25_">
+</g>
+<g id="Brightest_x5F_50_x25_">
+</g>
+<g id="Brightest_x5F_75_x25_">
+</g>
+<g id="Brightest_x5F_100_x25_">
+</g>
+<g id="Reload">
+</g>
+<g id="Forbidden">
+</g>
+<g id="Clock">
+</g>
+<g id="Compass">
+</g>
+<g id="World">
+</g>
+<g id="Speed">
+</g>
+<g id="Microphone">
+</g>
+<g id="Options">
+</g>
+<g id="Chronometer">
+</g>
+<g id="Lock">
+</g>
+<g id="User">
+</g>
+<g id="Position">
+</g>
+<g id="No_x5F_Signal">
+</g>
+<g id="Low_x5F_Signal">
+</g>
+<g id="Mid_x5F_Signal">
+</g>
+<g id="High_x5F_Signal">
+</g>
+<g id="Options_1_">
+</g>
+<g id="Flash">
+</g>
+<g id="No_x5F_Signal_x5F_02">
+</g>
+<g id="Low_x5F_Signal_x5F_02">
+</g>
+<g id="Mid_x5F_Signal_x5F_02">
+</g>
+<g id="High_x5F_Signal_x5F_02">
+</g>
+<g id="Favorite">
+</g>
+<g id="Search">
+</g>
+<g id="Stats_x5F_01">
+</g>
+<g id="Stats_x5F_02">
+	<path fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M27.125,52.445c-0.754-7.363,1.942-14.117,6.666-18.841c4.196-4.196,9.993-6.792,16.396-6.792V44c0,3.314,2.686,6,6,6h17.188
+		c0,13.676-11.839,24.586-25.828,23.041C36.826,71.857,28.223,63.175,27.125,52.445z"/>
+	<path fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M56.5,41.687V27.688c6,0,15.998,11.645,15.998,15.999H58.5C57.395,43.687,56.5,42.792,56.5,41.687z"/>
+</g>
+<g id="Turn_x5F_On_x5F_Off">
+</g>
+<g id="Full_x5F_Height">
+</g>
+<g id="Full_x5F_Width">
+</g>
+<g id="Full_x5F_Screen">
+</g>
+<g id="Compress_x5F_Screen">
+</g>
+<g id="Chat">
+</g>
+<g id="Bluetooth">
+</g>
+<g id="Share_x5F_iOS">
+</g>
+<g id="Share_x5F_Android">
+</g>
+<g id="Love__x2F__Favorite">
+</g>
+<g id="Hamburguer">
+</g>
+<g id="Flying">
+</g>
+<g id="Take_x5F_Off">
+</g>
+<g id="Land">
+</g>
+<g id="City">
+</g>
+<g id="Nature">
+</g>
+<g id="Pointer">
+</g>
+<g id="Prize">
+</g>
+<g id="Extract">
+</g>
+<g id="Play">
+</g>
+<g id="Pause">
+</g>
+<g id="Stop">
+</g>
+<g id="Forward">
+</g>
+<g id="Reverse">
+</g>
+<g id="Next_1_">
+</g>
+<g id="Last_1_">
+</g>
+<g id="Empty_x5F_Basket">
+</g>
+<g id="Add_x5F_Basket">
+</g>
+<g id="Delete_x5F_Basket">
+</g>
+<g id="Error_x5F_Basket">
+</g>
+<g id="OK_x5F_Basket">
+</g>
+</svg>

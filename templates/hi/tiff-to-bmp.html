@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ TIFF को BMP छवियों में आसानी से कनवर्ट करें। मुफ्त ऑनलाइन TIFF से BMP कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन TIFF से BMP कन्वर्जन | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त TIFF से BMP कन्वर्जन टूल</h1>
+<p>अपनी TIFF छवियों को BMP प्रारूप में आसानी से कन्वर्ट करें। एक TIFF छवि अपलोड करें और हम इसे आपके लिए BMP में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>TIFF से BMP कन्वर्जन क्या है?</h2>
+        <p>TIFF से BMP कन्वर्जन उस प्रक्रिया को कहते हैं जिसमें इमेज फ़ाइलों को TIFF प्रारूप से BMP प्रारूप में बदला जाता है। TIFF (Tagged Image File Format) उच्च गुणवत्ता के लिए जाना जाता है और अक्सर पेशेवर फोटोग्राफी और ग्राफिक डिजाइन में उपयोग किया जाता है। BMP (Bitmap) एक सरल इमेज प्रारूप है जो विभिन्न अनुप्रयोगों के साथ आसान संगतता प्रदान करता है। TIFF छवियों को BMP में कन्वर्ट करने से आप अपनी छवियों का उपयोग अधिक बहुपरकारी वातावरण में कर सकते हैं जबकि उनकी गुणवत्ता बनाए रखते हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को BMP में कन्वर्ट करने के फायदे क्या हैं?</h2>
+        <p>TIFF छवियों को BMP में कन्वर्ट करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>व्यापक संगतता:</strong> BMP फ़ाइलें कई सॉफ़्टवेयर और प्लेटफ़ॉर्म में व्यापक रूप से समर्थित होती हैं, जिससे उन्हें विभिन्न अनुप्रयोगों में उपयोग करना आसान हो जाता है।</li>
+            <li><strong>सरलता:</strong> BMP फ़ाइलें सीधी होती हैं और जटिल डिकोडिंग की आवश्यकता नहीं होती, जो त्वरित संपादन के लिए फायदेमंद हो सकता है।</li>
+            <li><strong>उच्च गुणवत्ता:</strong> BMP मूल TIFF छवि की गुणवत्ता को बनाए रखता है, जिससे आपके दृश्य शानदार दिखते हैं।</li>
+            <li><strong>कोई संपीड़न नहीं:</strong> BMP प्रारूप अनकंप्रेस्ड होता है, जिसका अर्थ है कि यह सभी छवि विवरणों को बिना जानकारी खोए बनाए रखता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से BMP कन्वर्टर का उपयोग कैसे करें</h2>
+        <p>हमारा TIFF से BMP कन्वर्जन टूल उपयोग में आसान और कुशल है। यहाँ अपनी छवियों को कन्वर्ट करने का तरीका है:</p>
+        <ul>
+            <li>TIFF छवि को चयनित करने के लिए "TIFF फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड के बाद, हमारा टूल स्वचालित रूप से छवि को BMP प्रारूप में कन्वर्ट करना शुरू कर देगा।</li>
+            <li>कन्वर्जन पूरा होने पर, नई छवि को अपने डिवाइस पर सहेजने के लिए "BMP डाउनलोड करें" पर क्लिक करें।</li>
+        </ul>
+        <p>हमारा कन्वर्टर विभिन्न TIFF फ़ाइलों का समर्थन करता है, जिससे सभी उपयोगकर्ताओं के लिए एक सहज अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से BMP कन्वर्टर का उपयोग करने के लाभ</h2>
+        <p>हमारे कन्वर्जन टूल का उपयोग करने के कुछ लाभ हैं:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> बस कुछ क्लिक में अपने TIFF छवियों को BMP में जल्दी से कन्वर्ट करें।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> कन्वर्जन प्रक्रिया के दौरान कोई गिरावट नहीं होने पर उच्च गुणवत्ता वाले परिणाम प्राप्त करें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> बिना किसी सॉफ़्टवेयर इंस्टॉल किए, हमारे टूल का ऑनलाइन मुफ्त में उपयोग करें।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> हमारा टूल सहज और नेविगेट करने में आसान है, जो एक सहज अनुभव सुनिश्चित करता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF से BMP कन्वर्जन के सामान्य उपयोग</h2>
+        <p>यहाँ कुछ परिदृश्यों का वर्णन है जहाँ TIFF को BMP में कन्वर्ट करना फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>ग्राफिक डिजाइन:</strong> BMP छवियों का उपयोग त्वरित संपादनों के लिए या जब केवल BMP प्रारूप का समर्थन करने वाले सॉफ़्टवेयर के साथ काम करते समय करें।</li>
+            <li><strong>फोटोग्राफी:</strong> उच्च-रिज़ॉल्यूशन TIFF छवियों को आसानी से देखने या साझा करने के लिए बिना गुणवत्ता खोए कन्वर्ट करें।</li>
+            <li><strong>वेब अनुप्रयोग:</strong> उन वेब अनुप्रयोगों में BMP छवियों को शामिल करें जिन्हें आसान संगतता की आवश्यकता होती है।</li>
+            <li><strong>दस्तावेज़ निर्माण:</strong> उन दस्तावेज़ों या प्रस्तुतियों में BMP फ़ाइलों का उपयोग करें जहाँ सरलता और संगतता प्रमुख हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को BMP में कन्वर्ट करने से कैसे मदद मिल सकती है</h2>
+        <p>अपने TIFF छवियों को BMP में कन्वर्ट करना उनकी उपयोगिता और प्रदर्शन को बढ़ा सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>वृद्धि हुई संगतता:</strong> BMP फ़ाइलों को विभिन्न अनुप्रयोगों में आसानी से खोला और संपादित किया जा सकता है, जिससे उन्हें अधिक बहुपरकारी बनाया जा सकता है।</li>
+            <li><strong>सरल संपादन:</strong> BMP की अनकंप्रेस्ड प्रकृति छवियों के संपादन और हेरफेर को आसान बनाती है।</li>
+            <li><strong>सुरक्षित गुणवत्ता:</strong> BMP में कन्वर्ट करना सुनिश्चित करता है कि आपकी TIFF छवियों के उच्च-गुणवत्ता विवरण सुरक्षित रहें।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

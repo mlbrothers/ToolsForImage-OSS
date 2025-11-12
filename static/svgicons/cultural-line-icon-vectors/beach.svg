@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>beach</title>
+
+<g id="beach">
+
+<path d="M29.923,23.586A12.318,12.318,0,1,1,26.167,7.079" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M21.327,15.913a16.929,16.929,0,0,0-2.434,4.67s4.095-.8,4.924,2.515c0,0,4.976-2.488,7.464,1.659,0,0,6.634-2.488,9.122,2.488,0,0,3.317-3.318,7.463.829,0,0,.554-1.1,2.951-.892a1.132,1.132,0,0,0,1.2-1.148A17,17,0,0,0,35.012,9h-.056a16.179,16.179,0,0,0-7.329,1.907l-.652.336A16.155,16.155,0,0,0,21.327,15.913Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36.966,9.115A21.253,21.253,0,0,0,24,22.527" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31.322,24.245a21.986,21.986,0,0,1,7.43-14.827" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M40.98,10.08c.95,3.525,2.47,11.205-.377,16.788" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M47.981,27.4a21.68,21.68,0,0,0-4.875-16.357" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30.061" y1="46.5" x2="36" y2="25" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M11.8,55H1a8,8,0,0,1,8-8H55a8,8,0,0,1,8,8H19.409" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M63,39.246a6.151,6.151,0,0,0-5.4.187h0a6.136,6.136,0,0,1-5.782,0h0a6.151,6.151,0,0,0-5.4-.187l-1.372.619a6.156,6.156,0,0,1-5.026,0l-1.371-.619a6.151,6.151,0,0,0-5.4.187h0a6.136,6.136,0,0,1-5.782,0h0a6.151,6.151,0,0,0-5.4-.187l-1.371.619a6.156,6.156,0,0,1-5.026,0l-1.372-.619a6.151,6.151,0,0,0-5.4.187h0a6.136,6.136,0,0,1-5.782,0h0a6.034,6.034,0,0,0-2.224-.687" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

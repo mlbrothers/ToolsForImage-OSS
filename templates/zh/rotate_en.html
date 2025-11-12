@@ -1,0 +1,290 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="使用ToolsForImage轻松旋转图像。快速轻松地调整图像方向。可以旋转图像到任何方向。">
+{% endblock %}
+
+{% block title %}旋转图像 | ToolsForImage | 综合免费的在线工具，提供模糊人脸、图像转换、编辑、调整大小、去除背景、模糊背景等功能{% endblock %}
+
+{% block content %}
+<h1>免费在线图像旋转工具</h1>
+<p>使用ToolsForImage轻松旋转图像。上传图像，预览旋转效果，并下载结果。</p>
+<p>上传您的图像文件，立即旋转它。选择您的图像：</p>
+<form id="rotation-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;"
+        onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" class="image-preview" src="#" alt="图片预览">
+    </div>
+    <br>
+    <div class="rotate-controls">
+        <button type="button" class="rotate-button" onclick="rotateImage(-90)">
+            向左旋转
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+            </svg>
+        </button>
+        <button type="button" class="rotate-button" onclick="rotateImage(90)">
+            向右旋转
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                <path d="M21 3v5h-5"></path>
+            </svg>
+        </button>
+    </div>
+    <br>
+    <button type="button" class="rotate-button" onclick="downloadRotatedImage()">下载旋转后的图片</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是图像旋转？</h2>
+        <p>图像旋转是通过顺时针或逆时针旋转图像来改变图像方向的过程。此功能在您的照片或图形方向错误时非常有用，比如当它是倒过来或侧着拍摄时。通过旋转图像，您可以迅速调整它们到正确的角度，确保它们适合查看或共享。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要旋转图像？</h2>
+        <p>旋转图像有很多原因。有时，智能手机或相机拍摄的照片并没有捕捉到所需的方向。旋转图像可以帮助您实现完美的对齐，使照片看起来更加专业。此外，旋转图像有助于设计布局，提供更多灵活性，以便图像能够与网站、社交媒体帖子或打印项目中的其他元素配合使用。正确旋转的图像还可以改善用户体验，尤其是在网页上，正确的方向能够增强视觉吸引力。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的图像旋转工具</h2>
+        <p>我们的图像旋转工具旨在快速且易于使用。使用方法如下：</p>
+        <ul>
+            <li>首先，通过点击“从电脑上传”按钮上传您想要旋转的图像。</li>
+            <li>图像上传后，您将看到预览。</li>
+            <li>使用“向左旋转”或“向右旋转”按钮，以90度为增量旋转图像，直到方向符合要求。</li>
+            <li>一旦您对旋转结果满意，点击“下载旋转后的图像”以将调整后的图像保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持多种格式的图像旋转，包括PNG、JPG、JPEG、BMP等。最棒的是，它可以保持图像的原始质量，因此您不必担心任何质量下降的问题。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们图像旋转工具的好处</h2>
+        <p>我们的图像旋转工具提供了多个优势：</p>
+        <ul>
+            <li><strong>快速且简便：</strong>仅需几次点击即可旋转图像，无需任何特殊软件。</li>
+            <li><strong>支持所有格式：</strong>无论您使用的是PNG、JPG还是其他流行格式，我们的工具都能处理。</li>
+            <li><strong>无质量损失：</strong>旋转图像时，不会影响图像的分辨率或清晰度。</li>
+            <li><strong>免费且易于访问：</strong>在线免费使用我们的工具，无需下载或安装。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>图像旋转的常见用途</h2>
+        <p>以下是一些您可能需要旋转图像的常见情况：</p>
+        <ul>
+            <li><strong>摄影：</strong>调整拍摄方向错误的照片。</li>
+            <li><strong>设计布局：</strong>旋转图像以使其在设计项目或演示文稿中正确适配。</li>
+            <li><strong>社交媒体：</strong>确保您的照片和图形在社交平台上正确显示，如Instagram或Facebook。</li>
+            <li><strong>网页内容：</strong>通过确保图像正确对齐来提升网站的视觉吸引力。</li>
+            <li><strong>个人用途：</strong>快速旋转家庭照片、度假图像或任何个人照片，确保它们按预期显示。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>图像旋转如何帮助您</h2>
+        <p>旋转图像可以显著改善其可用性和外观。以下是旋转图像的一些好处：</p>
+        <ul>
+            <li><strong>修正方向：</strong>许多使用智能手机或相机拍摄的照片都会出现错误的方向。旋转这些图像可以确保它们正确显示，提升整体观看体验。</li>
+            <li><strong>提高视觉吸引力：</strong>旋转后的图像可以创造更加平衡和美观的外观，使照片更具吸引力，吸引观众的注意。</li>
+            <li><strong>更好的社交媒体分享：</strong>社交媒体平台通常偏好某些方向的图像。旋转图像可以确保它们按预期显示，增加互动和分享。</li>
+        </ul>
+    </div>
+    
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .rotate-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .image-preview-container {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-preview {
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .rotate-controls {
+        margin-top: 20px;
+    }
+
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create three equal columns */
+        gap: 20px;
+        /* Space between the grid items */
+        margin: 20px auto;
+        /* Center the container */
+    }
+
+    /* Center the last row when it has fewer than three items */
+    .info-container> :nth-last-child(-n+3) {
+        justify-self: center;
+        /* Center the items in the last row */
+    }
+
+    /* Ensuring each section maintains its styling */
+    .info-section {
+        padding: 20px;
+        /* Padding for each section */
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Shadow for depth */
+    }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let rotation = 0;
+    let img, canvas, ctx;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                img = new Image();
+                img.onload = function () {
+                    canvas = document.createElement('canvas');
+                    ctx = canvas.getContext('2d');
+                    resetRotation();
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function rotateImage(degrees) {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        rotation = (rotation + degrees) % 360;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = `rotate(${rotation}deg)`;
+
+        // Adjust container size based on rotation
+        const container = document.querySelector('.image-preview-container');
+        if (rotation % 180 !== 0) {
+            container.style.height = imagePreview.offsetWidth + 'px';
+        } else {
+            container.style.height = 'auto';
+        }
+    }
+
+    function resetRotation() {
+        rotation = 0;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = 'rotate(0deg)';
+        document.querySelector('.image-preview-container').style.height = 'auto';
+    }
+
+    function downloadRotatedImage() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Create a canvas to draw the rotated image
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Translate and rotate the canvas
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((rotation * Math.PI) / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+
+        // Reset the canvas transformation
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        // Download the rotated image
+        const downloadLink = document.createElement('a');
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.download = 'rotated_image.png';
+        downloadLink.click();
+    }
+</script>
+{% endblock %}

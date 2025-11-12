@@ -1,0 +1,289 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage के साथ अपने चित्रों को आसानी से घुमाएँ। चित्र की ओरिएंटेशन को जल्दी और आसानी से समायोजित करें।">
+{% endblock %}
+
+{% block title %}ऑनलाइन इमेज रोटेट | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>फ्री इमेज रोटेशन टूल</h1>
+<p>ToolsForImage के साथ अपने चित्रों को आसानी से घुमाएँ। एक चित्र अपलोड करें, घुमाव का पूर्वावलोकन करें, और परिणाम डाउनलोड करें।</p>
+<p>अपना इमेज फ़ाइल अपलोड करें और तुरंत घुमाएँ। अपना चित्र चुनें:</p>
+<form id="rotation-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;"
+        onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <div class="image-preview-container">
+        <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन">
+    </div>
+    <br>
+    <div class="rotate-controls">
+        <button type="button" class="rotate-button" onclick="rotateImage(-90)">
+            बाईं ओर घुमाएँ
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+            </svg>
+        </button>
+        <button type="button" class="rotate-button" onclick="rotateImage(90)">
+            दाईं ओर घुमाएँ
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: -4px;">
+                <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                <path d="M21 3v5h-5"></path>
+            </svg>
+        </button>
+    </div>
+    <br>
+    <button type="button" class="rotate-button" onclick="downloadRotatedImage()">घुमाई गई छवि डाउनलोड करें</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>चित्र रोटेशन क्या है?</h2>
+        <p>चित्र रोटेशन एक चित्र की ओरिएंटेशन को घुमाने की प्रक्रिया है, इसे घड़ी की दिशा में या घड़ी की दिशा के विपरीत घुमाया जाता है। यह सुविधा उपयोगी होती है जब आपकी फोटो या ग्राफिक गलत तरीके से ओरिएंटेड होती है, जैसे कि जब इसे उल्टा या साइडवेज लिया गया हो। चित्रों को घुमाकर, आप उन्हें जल्दी से सही कोण में समायोजित कर सकते हैं, यह सुनिश्चित करते हुए कि वे देखने या साझा करने के लिए सही तरीके से संरेखित हैं।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>अपने चित्रों को घुमाने के कारण?</h2>
+        <p>चित्रों को घुमाने के कई कारण होते हैं। कभी-कभी, स्मार्टफ़ोन या कैमरे से ली गई फ़ोटो सही ओरिएंटेशन में नहीं आती हैं। चित्र को घुमाने से आपको सही संरेखण प्राप्त करने में मदद मिलती है, जिससे आपकी फ़ोटो पेशेवर दिखती हैं। इसके अतिरिक्त, चित्रों को घुमाना डिज़ाइन लेआउट में मदद कर सकता है, आपको वेबसाइटों, सोशल मीडिया पोस्ट, या प्रिंट प्रोजेक्ट्स पर अन्य तत्वों के साथ चित्र के फिटिंग में अधिक लचीलापन प्रदान करता है। सही तरीके से घुमाए गए चित्र भी उपयोगकर्ता अनुभव को बढ़ाते हैं, विशेष रूप से वेब पृष्ठों पर जहां सही ओरिएंटेशन बेहतर दृश्य अपील सुनिश्चित करता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे चित्र रोटेशन टूल का उपयोग कैसे करें</h2>
+        <p>हमारा चित्र रोटेशन टूल त्वरित और उपयोगकर्ता के अनुकूल डिज़ाइन किया गया है। यहाँ यह कैसे काम करता है:</p>
+        <ul>
+            <li>पहले, "कंप्यूटर से अपलोड करें" बटन पर क्लिक करके वह चित्र अपलोड करें जिसे आप घुमाना चाहते हैं।</li>
+            <li>चित्र अपलोड होने के बाद, आप एक पूर्वावलोकन देखेंगे।</li>
+            <li>चित्र को 90 डिग्री के चरणों में घुमाने के लिए "बाएं घुमाएँ" या "दाएं घुमाएँ" बटनों का उपयोग करें जब तक कि ओरिएंटेशन वांछित न हो।</li>
+            <li>जब आप रोटेशन से संतुष्ट हों, तो समायोजित चित्र को अपने डिवाइस पर सहेजने के लिए "घुमाया हुआ चित्र डाउनलोड करें" पर क्लिक करें।</li>
+        </ul>
+        <p>हमारा टूल PNG, JPG, JPEG, BMP और अधिक सहित कई फ़ॉर्मेट में चित्रों को घुमाने की अनुमति देता है। सबसे अच्छी बात? यह आपके चित्र की मूल गुणवत्ता को बनाए रखता है, इसलिए आपको किसी भी प्रकार के नुकसान की चिंता करने की आवश्यकता नहीं है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे चित्र रोटेशन टूल के लाभ</h2>
+        <p>हमारा चित्र रोटेशन टूल कई लाभ प्रदान करता है:</p>
+        <ul>
+            <li><strong>तेज़ और आसान:</strong> केवल कुछ क्लिक में चित्रों को घुमाएँ, बिना किसी विशेष सॉफ़्टवेयर की आवश्यकता के।</li>
+            <li><strong>सभी फ़ॉर्मेट का समर्थन करता है:</strong> चाहे आप PNGs, JPGs, या अन्य लोकप्रिय फ़ॉर्मेट के साथ काम कर रहे हों, हमारा टूल आपकी सहायता करता है।</li>
+            <li><strong>गुणवत्ता की हानि नहीं:</strong> अपने चित्रों को उनके संकल्प या स्पष्टता का समझौता किए बिना घुमाएँ।</li>
+            <li><strong>फ्री और उपलब्ध:</strong> बिना किसी डाउनलोड या इंस्टॉलेशन के ऑनलाइन हमारे टूल का उपयोग करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>चित्र रोटेशन के लिए सामान्य उपयोग के मामले</h2>
+        <p>यहाँ कुछ सामान्य स्थितियाँ हैं जहाँ आपको चित्रों को घुमाने की आवश्यकता हो सकती है:</p>
+        <ul>
+            <li><strong>फोटोग्राफी:</strong> गलत ओरिएंटेशन में ली गई फ़ोटोज़ को समायोजित करें।</li>
+            <li><strong>डिज़ाइन लेआउट:</strong> डिज़ाइन प्रोजेक्ट्स या प्रस्तुतियों में ठीक से फ़िट करने के लिए चित्रों को घुमाएँ।</li>
+            <li><strong>सोशल मीडिया:</strong> सुनिश्चित करें कि आपकी फ़ोटो और ग्राफिक्स सोशल प्लेटफॉर्म्स जैसे इंस्टाग्राम या फेसबुक पर साझा करते समय सही ओरिएंटेशन में दिखाई दें।</li>
+            <li><strong>वेब सामग्री:</strong> सुनिश्चित करें कि चित्र सही तरीके से संरेखित हों ताकि आपकी वेबसाइट की दृश्य अपील बढ़े।</li>
+            <li><strong>व्यक्तिगत उपयोग:</strong> सुनिश्चित करें कि आपके पारिवारिक फ़ोटो, छुट्टी की तस्वीरें, या कोई भी व्यक्तिगत चित्र जिस तरीके से प्रदर्शित होनी चाहिए, उसे तुरंत घुमाएँ।</li>
+        </ul>
+    </div>
+    <div class="info-section">
+        <h2>चित्रों को घुमाना किस प्रकार मददगार हो सकता है</h2>
+        <p>चित्रों को घुमाने से उनकी उपयोगिता और उपस्थिति में काफी सुधार हो सकता है। यहाँ कुछ तरीके हैं जिनसे चित्रों को घुमाना फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>ओरिएंटेशन को सही करना:</strong> कई फ़ोटो जो स्मार्टफोन या कैमरे से ली जाती हैं, गलत ओरिएंटेशन में आती हैं। चित्र को घुमाने से इन मुद्दों को हल किया जा सकता है।</li>
+            <li><strong>डिज़ाइन तत्वों के साथ सामंजस्य बनाना:</strong> चित्रों को अन्य डिज़ाइन तत्वों के साथ सही तरीके से संरेखित करने से लेआउट में मदद मिलती है।</li>
+            <li><strong>फोटो की दृश्य अपील बढ़ाना:</strong> सही ओरिएंटेशन से चित्रों को देखने में अधिक आकर्षक बनाता है।</li>
+            <li><strong>कहानी को बेहतर बनाना:</strong> चित्रों को घुमाने से किसी दृश्य या कहानी को संप्रेषित करने में मदद मिल सकती है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .rotate-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .image-preview-container {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-preview {
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .rotate-controls {
+        margin-top: 20px;
+    }
+
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Create three equal columns */
+        gap: 20px;
+        /* Space between the grid items */
+        margin: 20px auto;
+        /* Center the container */
+    }
+
+    /* Center the last row when it has fewer than three items */
+    .info-container> :nth-last-child(-n+3) {
+        justify-self: center;
+        /* Center the items in the last row */
+    }
+
+    /* Ensuring each section maintains its styling */
+    .info-section {
+        padding: 20px;
+        /* Padding for each section */
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Shadow for depth */
+    }
+
+    p {
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let rotation = 0;
+    let img, canvas, ctx;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                img = new Image();
+                img.onload = function () {
+                    canvas = document.createElement('canvas');
+                    ctx = canvas.getContext('2d');
+                    resetRotation();
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function rotateImage(degrees) {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        rotation = (rotation + degrees) % 360;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = `rotate(${rotation}deg)`;
+
+        // Adjust container size based on rotation
+        const container = document.querySelector('.image-preview-container');
+        if (rotation % 180 !== 0) {
+            container.style.height = imagePreview.offsetWidth + 'px';
+        } else {
+            container.style.height = 'auto';
+        }
+    }
+
+    function resetRotation() {
+        rotation = 0;
+        const imagePreview = document.getElementById('image-preview');
+        imagePreview.style.transform = 'rotate(0deg)';
+        document.querySelector('.image-preview-container').style.height = 'auto';
+    }
+
+    function downloadRotatedImage() {
+        if (!img) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        // Create a canvas to draw the rotated image
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Translate and rotate the canvas
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((rotation * Math.PI) / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+
+        // Reset the canvas transformation
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+        // Download the rotated image
+        const downloadLink = document.createElement('a');
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.download = 'rotated_image.png';
+        downloadLink.click();
+    }
+</script>
+{% endblock %}

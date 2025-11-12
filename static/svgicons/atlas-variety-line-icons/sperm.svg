@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="sperma">
+
+<ellipse class="cls-1" cx="15.8" cy="4.36" rx="3.82" ry="2.86"/>
+
+<ellipse class="cls-1" cx="18.66" cy="19.64" rx="3.82" ry="2.86"/>
+
+<ellipse class="cls-1" cx="11.98" cy="12.95" rx="3.82" ry="2.86"/>
+
+<path class="cls-1" d="M7.2,4.17c.8,0,.8.38,1.59.38s.8-.38,1.6-.38.79.38,1.59.38"/>
+
+<line class="cls-1" x1="4.34" y1="4.36" x2="6.25" y2="4.36"/>
+
+<path class="cls-1" d="M10.07,19.45c.79,0,.79.38,1.59.38s.79-.38,1.59-.38.8.38,1.59.38"/>
+
+<line class="cls-1" x1="7.2" y1="19.64" x2="9.11" y2="19.64"/>
+
+<path class="cls-1" d="M3.39,12.76c.79,0,.79.39,1.59.39s.79-.39,1.59-.39.79.39,1.59.39"/>
+
+<line class="cls-1" x1="0.52" y1="12.95" x2="2.43" y2="12.95"/>
+
+</g>
+
+</svg>

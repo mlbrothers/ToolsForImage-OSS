@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <polygon fill="var(--ci-primary-color, #000000)" points="40 288 40 416 464 416 464 288 432 288 432 384 72 384 72 288 40 288" class="ci-primary"/>
+</svg>

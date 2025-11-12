@@ -1,0 +1,120 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="获取ToolsForImage的帮助和支持——您的图像压缩、调整大小、裁剪、格式转换、旋转、水印、面部模糊等功能的全面资源。找到常见问题的答案，并学习如何有效使用我们的图像增强工具。">
+{% endblock %}
+
+{% block title %}帮助 | ToolsForImage | 综合免费的在线工具，用于面部模糊、图像转换、编辑、调整大小、去除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>帮助中心 - ToolsForImage</h1>
+
+<div class="help-section">
+    <h2>入门指南</h2>
+    <p>欢迎使用ToolsForImage！以下是开始使用的方法：</p>
+    <ol>
+        <li>1 - 从我们的导航菜单中选择您需要的工具。</li>
+        <li>2 - 使用提供的界面上传您的图像。</li>
+        <li>3 - 根据需要调整设置。</li>
+        <li>4 - 处理您的图像并下载结果。</li>
+    </ol>
+</div>
+
+<div class="help-section">
+    <h2>常见问题</h2>
+    <p>有关常见问题的完整列表，请访问我们的<a href="/{{ g.lang }}/faq">常见问题页面</a>。</p>
+</div>
+
+<div class="help-section">
+    <h2>工具特定帮助</h2>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">图像压缩</a> - 在保持质量的同时减少文件大小</li>
+        <li><a href="/{{ g.lang }}/image-resize">图像调整大小</a> - 更改图像的尺寸</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">格式转换</a> - 在不同的图像格式之间进行转换</li>
+        <li><a href="/{{ g.lang }}/image-rotate">图像旋转</a> - 旋转或翻转您的图像</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">添加水印</a> - 添加文本或图像水印</li>
+        <li><a href="/{{ g.lang }}/image-effects">图像效果</a> - 应用各种滤镜和效果</li>
+        <li><a href="/{{ g.lang }}/image-crop">图像裁剪</a> - 剪切图像的部分区域</li>
+        <li><a href="/{{ g.lang }}/blur-face">面部模糊</a> - 自动检测并模糊图像中的面部</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">所有工具</a></li>
+    </ul>
+</div>
+
+<div class="help-section">
+    <h2>联系支持</h2>
+    <p>如果您需要进一步的帮助，请随时通过<a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a>联系我们的支持团队。</p>
+</div>
+
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .help-section {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color); /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        max-width: 1200px; /* Ensure the content stays within a manageable width */
+        margin: 0 auto; /* Center align the content */
+        border: var(--background-color) 3px solid; /* Use border similar to tools list */
+        font-weight: 400; /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s; /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .help-section a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .help-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block; /* Makes it inline and allows padding */
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        background-color: var(--box-color); /* Background color */
+        color: black; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+
+    
+</style>
+{% endblock %}

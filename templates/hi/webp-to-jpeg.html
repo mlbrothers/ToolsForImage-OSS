@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ वेबपी को JPEG छवियों में आसानी से परिवर्तित करें। मुफ्त ऑनलाइन वेबपी से JPEG कनवर्टर।">
+{% endblock %}
+
+{% block title %}ऑनलाइन वेबपी को JPEG में परिवर्तित करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त वेबपी से JPEG रूपांतरण उपकरण</h1>
+<p>अपने वेबपी छवियों को JPEG प्रारूप में आसानी से परिवर्तित करें। एक वेबपी छवि अपलोड करें और हम इसे आपके लिए JPEG में परिवर्तित कर देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>वेबपी से JPEG रूपांतरण क्या है?</h2>
+        <p>वेबपी से JPEG रूपांतरण वह प्रक्रिया है जिसमें छवि फ़ाइलों को वेबपी प्रारूप से JPEG प्रारूप में बदला जाता है। वेबपी एक आधुनिक छवि प्रारूप है जो उत्कृष्ट संपीड़न प्रदान करता है, जबकि JPEG एक व्यापक रूप से उपयोग किया जाने वाला प्रारूप है जो गुणवत्ता और फ़ाइल आकार के बीच संतुलन के लिए जाना जाता है। जब आपको वेबसाइटों, सोशल मीडिया, या अन्य अनुप्रयोगों के लिए JPEG प्रारूप की छवियों की आवश्यकता होती है, तो वेबपी छवियों को JPEG में परिवर्तित करना सहायक होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को JPEG में परिवर्तित करने के लाभ क्या हैं?</h2>
+        <p>वेबपी छवियों को JPEG प्रारूप में परिवर्तित करने के कई कारण हैं:</p>
+        <ul>
+            <li><strong>व्यापक संगतता:</strong> JPEG सबसे अधिक समर्थित छवि प्रारूपों में से एक है, यह सुनिश्चित करता है कि आपकी छवियाँ किसी भी डिवाइस या सॉफ़्टवेयर पर देखी जा सकें।</li>
+            <li><strong>वेब उपयोग के लिए अनुकूलित:</strong> JPEG छवियाँ गुणवत्ता और फ़ाइल आकार के बीच एक अच्छा संतुलन प्रदान करती हैं, जिससे वेबसाइटें तेजी से लोड होती हैं।</li>
+            <li><strong>आसान साझा करना:</strong> JPEG प्रारूप को सोशल मीडिया और अन्य प्लेटफार्मों पर छवियों को साझा करने के लिए प्राथमिकता दी जाती है, जिससे आपके दृश्यों को साझा करना आसान हो जाता है।</li>
+            <li><strong>अच्छा संपीड़न:</strong> JPEG उत्कृष्ट संपीड़न क्षमताएँ प्रदान करता है, जिससे बिना महत्वपूर्ण गुणवत्ता के नुकसान के छोटे फ़ाइल आकार संभव होते हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से JPEG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे वेबपी से JPEG रूपांतरण उपकरण का उपयोग सरल है। यहां बताया गया है कि आप कैसे शुरू कर सकते हैं:</p>
+        <ul>
+            <li>"वेबपी फ़ाइल अपलोड करें" बटन पर क्लिक करें और वह वेबपी छवि चुनें जिसे आप परिवर्तित करना चाहते हैं।</li>
+            <li>अपलोड करने के बाद, हमारा उपकरण स्वचालित रूप से रूपांतरण प्रक्रिया शुरू कर देगा।</li>
+            <li>रूपांतरण पूरा होने के बाद, "JPEG डाउनलोड करें" पर क्लिक करें और अपनी नई JPEG छवि को अपने डिवाइस पर सहेजें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न वेबपी प्रारूपों का समर्थन करता है, जिससे आपके छवियों को जल्दी से परिवर्तित करना आसान हो जाता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे वेबपी से JPEG कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>हमारे रूपांतरण उपकरण का उपयोग करने के कुछ लाभ यहां दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज़ और कुशल:</strong> अपने वेबपी छवियों को केवल कुछ क्लिक में JPEG में परिवर्तित करें, जिससे आपका समय और प्रयास बचे।</li>
+            <li><strong>कोई गुणवत्ता हानि नहीं:</strong> रूपांतरण के दौरान महत्वपूर्ण विवरण खोए बिना उच्च गुणवत्ता वाली JPEG छवियों का आनंद लें।</li>
+            <li><strong>मुफ्त और ऑनलाइन:</strong> हमारा उपकरण मुफ्त में ऑनलाइन उपलब्ध है, बिना किसी डाउनलोड या इंस्टॉलेशन की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता-अनुकूल इंटरफ़ेस:</strong> उपयोग में आसानी के लिए डिज़ाइन किया गया, हमारा उपकरण सभी के लिए रूपांतरण प्रक्रिया को सरल बनाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी से JPEG रूपांतरण के सामान्य उपयोग</h2>
+        <p>वेबपी को JPEG में परिवर्तित करना विभिन्न परिदृश्यों में लाभकारी हो सकता है:</p>
+        <ul>
+            <li><strong>वेबसाइटें:</strong> पृष्ठ लोड समय में सुधार और सभी ब्राउज़रों के साथ संगतता के लिए JPEG छवियों का उपयोग करें।</li>
+            <li><strong>सोशल मीडिया:</strong> फेसबुक और इंस्टाग्राम जैसे प्लेटफार्मों पर बेहतर जुड़ाव और दृश्यता के लिए JPEG प्रारूप में छवियों को साझा करें।</li>
+            <li><strong>डिजिटल फ़ोटोग्राफी:</strong> आसान साझा करने और संग्रहण के लिए JPEG प्रारूप में फ़ोटो सहेजें और संपादित करें।</li>
+            <li><strong>व्यक्तिगत उपयोग:</strong> पारिवारिक एल्बमों या स्क्रैपबुकिंग प्रोजेक्टों के लिए छवियों को परिवर्तित करें जिन्हें सामान्य रूप से उपयोग किए जाने वाले प्रारूप की आवश्यकता होती है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>वेबपी को JPEG में परिवर्तित करने से कैसे मदद मिल सकती है</h2>
+        <p>अपने वेबपी छवियों को JPEG प्रारूप में परिवर्तित करना उपयोगिता और साझा करने को बढ़ा सकता है। यहां बताया गया है कि:</p>
+        <ul>
+            <li><strong>सुधरी हुई संगतता:</strong> JPEG लगभग सभी डिवाइस और सॉफ़्टवेयर के साथ संगत है, जिससे आपकी छवियाँ आसानी से सुलभ हो जाती हैं।</li>
+            <li><strong>छोटे फ़ाइल आकार:</strong> JPEG छवियों में अक्सर छोटे फ़ाइल आकार होते हैं, जिससे वेबसाइटों पर तेज़ लोडिंग समय में मदद मिलती है।</li>
+            <li><strong>आसान साझा करना:</strong> JPEG फ़ाइलें कई ऑनलाइन प्लेटफार्मों के लिए प्राथमिक पसंद हैं, जिससे साझा करने की प्रक्रिया को सरल बनाना।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

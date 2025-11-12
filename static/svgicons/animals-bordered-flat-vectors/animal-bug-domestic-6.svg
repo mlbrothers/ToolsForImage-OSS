@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 300 300" id="fly2" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="152" x2="152" y1="244" y2="264"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="144" x2="124" y1="72" y2="44"/>
+
+<line style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="164" x2="184" y1="72" y2="44"/>
+
+<circle cx="220" cy="156" r="48" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<circle cx="88" cy="156" r="48" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M116,103.996C116,84.116,132.113,68,152,68c19.882,0,36,16.082,36,35.996V196h-72V103.996z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#FCAD3A;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M116,196h72v24c0,13.255-10.779,24-23.975,24h-24.05C126.734,244,116,233.228,116,220V196z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFDD95;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<rect height="16" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="72" x="116" y="164"/>
+
+<rect height="16" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F87EA1;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="72" x="116" y="132"/>
+
+</g>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+</svg>

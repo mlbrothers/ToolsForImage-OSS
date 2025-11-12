@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>singapore</title>
+
+<g id="singapore">
+
+<rect x="50" y="22" width="5" height="4" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="15" y="22" width="5" height="4" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="57 29 46.375 29 45.715 41.145 50.976 56.929 57 56.929 57 29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="44.857 56.929 50.976 56.929 45.715 41.145 44.857 56.929" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="41 29 30.375 29 29.715 41.145 34.976 56.929 41 56.929 41 29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="28.857 56.929 34.976 56.929 29.715 41.145 28.857 56.929" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="25 29 14.375 29 13.715 41.145 18.976 56.929 25 56.929 25 29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="12.857 56.929 18.976 56.929 13.715 41.145 12.857 56.929" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="5.896" y1="56.929" x2="62" y2="56.929" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M59,29H4.062A1.063,1.063,0,0,1,3,27.938H3a1.062,1.062,0,0,1,.93-1.054L11,26H59Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

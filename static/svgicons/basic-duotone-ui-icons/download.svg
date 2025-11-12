@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" data-name="Icon Set - Black" id="Icon_Set_-_Black" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;}.cls-1,.cls-2,.cls-3{stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}.cls-1,.cls-2{stroke-width:8px;}.cls-2{fill:#ccc;}.cls-3{fill:#ffffff;stroke-width:8.19px;}</style>
+
+</defs>
+
+<g id="Download">
+
+<line class="cls-1" x1="8" x2="8" y1="35" y2="44"/>
+
+<rect class="cls-2" height="12" width="48" x="8" y="44"/>
+
+<line class="cls-1" x1="56" x2="56" y1="35" y2="45"/>
+
+<polyline class="cls-3" points="44.02 20.24 32.62 32.81 19.96 20.24"/>
+
+<line class="cls-1" x1="32" x2="32" y1="9" y2="31"/>
+
+</g>
+
+</svg>

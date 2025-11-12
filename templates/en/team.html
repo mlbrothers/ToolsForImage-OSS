@@ -1,0 +1,75 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Meet the talented team behind ToolsForImage - experts in image compression, resizing, format conversion, and more. Learn about our developers and visionaries who make our free online image editing tools possible.">
+{% endblock %}
+
+{% block title %}Our Team | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block content %}
+<h1>Meet Our Team</h1>
+<p>At ToolsForImage, we're passionate about providing the best free online image editing tools. Our team of experts works tirelessly to bring you top-notch solutions for image compression, resizing, format conversion, and more.</p>
+
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='sid.svg') }}" alt="Siddharth">
+        <h2>Siddharth</h2>
+        <p>Lead Developer</p>
+        <p>Siddharth is our coding wizard, specializing in image processing algorithms and optimization techniques. He's the brains behind our powerful image compression and resizing tools.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='nandan.svg') }}" alt="Nandan">
+        <h2>Nandan</h2>
+        <p>Frontend Developer</p>
+        <p>Nandan crafts our user-friendly interfaces, ensuring that our image editing tools are accessible and easy to use for everyone, from beginners to professionals.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='jeni.svg') }}" alt="Jenish">
+        <h2>Jenish</h2>
+        <p>Product Visionary</p>
+        <p>Jenish is our idea generator, constantly exploring new ways to enhance our image editing suite. From watermarking to face blurring, he's always pushing the boundaries of what's possible.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="{{ url_for('static', filename='viraj.svg') }}" alt="Viraj">
+        <h2>Viraj</h2>
+        <p>Quality Assurance</p>
+        <p>Viraj ensures that all our image tools, from format conversion to rotation, meet the highest standards of quality and reliability. He's the guardian of your image editing experience.</p>
+    </div>
+</div>
+
+
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .team-member {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1.5em;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    
+</style>
+{% endblock %}

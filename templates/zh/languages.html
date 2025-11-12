@@ -1,0 +1,72 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="选择您喜欢的语言，访问 ToolsForImage - 使用我们的图像工具，支持英语、印地语或法语。">
+{% endblock %}
+
+{% block title %}语言选择 | ToolsForImage | 综合免费在线工具，包括模糊人脸、图像转换、编辑、调整大小、去背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>选择您的语言</h1>
+<p>选择您喜欢的语言以使用 ToolsForImage：</p>
+<div class="language-container">
+    <div class="language-box">
+        <a href="/{{ g.lang }}/en">英语 (English)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/hi">हिन्दी (Hindi)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/fr">Français (French)</a>
+    </div>
+    <div class="language-box">
+        <a href="/{{ g.lang }}/zh">中文 (Chinese)</a>
+    </div>
+    <div class="language-box">
+        <a href="{{ g.lang }}/es">Español (Spanish)</a>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .language-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .language-box {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-box a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    
+</style>
+{% endblock %}

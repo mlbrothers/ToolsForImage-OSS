@@ -1,0 +1,194 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ JPG को JPEG छवियों में आसानी से बदलें। मुफ्त ऑनलाइन JPG से JPEG कनवर्टर।">
+{% endblock %}
+
+{% block title %}JPG से JPEG ऑनलाइन कनवर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त JPG से JPEG रूपांतरण उपकरण</h1>
+<p>आसानी से अपने JPG छवियों को JPEG प्रारूप में बदलें। एक JPG छवि अपलोड करें और हम इसे आपके लिए JPEG में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>JPG से JPEG रूपांतरण क्या है?</h2>
+        <p>JPG से JPEG रूपांतरण एक प्रक्रिया है जो छवि फ़ाइलों को JPG प्रारूप से JPEG (जॉइंट फ़ोटोग्राफ़िक एक्सपर्ट्स ग्रुप) प्रारूप में बदलती है। जबकि JPG और JPEG एक ही छवि प्रारूप को संदर्भित करते हैं, उनके बीच रूपांतरण विभिन्न अनुप्रयोगों और उपकरणों के साथ संगतता सुनिश्चित करने के लिए उपयोगी हो सकता है। हमारा उपकरण JPG छवियों को JPEG में जल्दी और प्रभावी रूप से बदलना आसान बनाता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG को JPEG में बदलने का कारण क्या है?</h2>
+        <p>हालांकि JPG और JPEG मूल रूप से समान हैं, लेकिन JPG छवियों को JPEG में बदलने के कुछ कारण हो सकते हैं:</p>
+        <ul>
+            <li><strong>फ़ाइल संगतता:</strong> कुछ सॉफ़्टवेयर या प्लेटफ़ॉर्म विशेष रूप से JPEG एक्सटेंशन की आवश्यकता हो सकती है, इसलिए रूपांतरण यह सुनिश्चित करता है कि आपकी छवि बिना किसी समस्या के काम करे।</li>
+            <li><strong>मानकीकरण:</strong> JPEG प्रारूप का उपयोग आपके छवि फ़ाइलों के बीच स्थिरता बनाए रखने में मदद कर सकता है, विशेष रूप से पेशेवर सेटिंग में।</li>
+            <li><strong>उपयोग में आसानी:</strong> हमारा कनवर्टर प्रक्रिया को सरल बनाता है, जिससे आप केवल कुछ क्लिक में अपनी छवियों को बदल सकते हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPG से JPEG कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे JPG से JPEG रूपांतरण उपकरण का उपयोग करना सरल और उपयोगकर्ता के अनुकूल है। यह इस प्रकार काम करता है:</p>
+        <ul>
+            <li>जिस JPG छवि को आप बदलना चाहते हैं, उसे चुनने के लिए "JPG फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड करने के बाद, हमारा उपकरण आपकी छवि को स्वचालित रूप से JPEG प्रारूप में बदल देगा।</li>
+            <li>एक बार रूपांतरण पूरा होने के बाद, "JPEG डाउनलोड करें" पर क्लिक करें ताकि आप अपनी नई छवि को अपने डिवाइस पर सहेज सकें।</li>
+        </ul>
+        <p>हमारा कनवर्टर विभिन्न JPG फ़ाइलों का समर्थन करता है, जिससे हर बार एक सुगम रूपांतरण अनुभव सुनिश्चित होता है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे JPG से JPEG कनवर्टर का उपयोग करने के लाभ</h2>
+        <p>यहां हमारे रूपांतरण उपकरण के कुछ लाभ दिए गए हैं:</p>
+        <ul>
+            <li><strong>तेज और आसान:</strong> केवल कुछ क्लिक में अपने JPG छवियों को JPEG में बदलें, बिना किसी जटिल कदम के।</li>
+            <li><strong>गुणवत्ता संरक्षण:</strong> रूपांतरण प्रक्रिया के दौरान उच्च गुणवत्ता वाली छवियों का आनंद लें, यह सुनिश्चित करते हुए कि आपकी छवियां शानदार दिखें।</li>
+            <li><strong>मुफ्त और सुलभ:</strong> हमारे ऑनलाइन कनवर्टर का उपयोग मुफ्त में करें, बिना किसी डाउनलोड या स्थापना की आवश्यकता के।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> सभी के लिए डिज़ाइन किया गया, हमारा उपकरण नेविगेट करने में आसान है, चाहे आपकी तकनीकी क्षमताएँ कोई भी हों।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG से JPEG रूपांतरण के सामान्य उपयोग</h2>
+        <p>यहां कुछ ऐसे मामले दिए गए हैं जहां JPG को JPEG में बदलना फायदेमंद हो सकता है:</p>
+        <ul>
+            <li><strong>वेब प्रकाशन:</strong> यह सुनिश्चित करें कि आपकी छवियां बेहतर संगतता के लिए JPEG प्रारूप में हों।</li>
+            <li><strong>छवि साझा करना:</strong> विभिन्न सोशल मीडिया और ऑनलाइन प्लेटफ़ॉर्म पर आसानी से छवियों को साझा करने के लिए JPEG फ़ाइलों का उपयोग करें।</li>
+            <li><strong>डिजिटल फोटोग्राफी:</strong> सभी छवियों के लिए JPEG प्रारूप का उपयोग करके अपने फ़ोटो लाइब्रेरी को मानकीकृत करें।</li>
+            <li><strong>पेशेवर उपयोग:</strong> उच्च गुणवत्ता वाली छवियों की आवश्यकता वाले प्रोजेक्ट पर काम करते समय फ़ाइल प्रारूप में स्थिरता बनाए रखें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>JPG को JPEG में बदलने से कैसे मदद मिल सकती है</h2>
+        <p>JPG छवियों को JPEG में बदलने से उनकी उपयोगिता और संगतता बढ़ सकती है। यह इस प्रकार है:</p>
+        <ul>
+            <li><strong>निर्बाध संगतता:</strong> यह सुनिश्चित करें कि आपकी छवियां विभिन्न प्लेटफ़ॉर्म और अनुप्रयोगों में सही तरीके से काम करें।</li>
+            <li><strong>संगत फ़ाइल नामकरण:</strong> JPEG प्रारूप का उपयोग आपके फ़ाइल नामकरण को सुसंगत रखने में मदद कर सकता है, जिससे छवियों को व्यवस्थित और खोजना आसान हो जाता है।</li>
+            <li><strong>सरल कार्यप्रवाह:</strong> हमारा उपकरण आपकी छवियों का प्रबंधन करना आसान बनाता है, जिससे आपके संपादन या प्रकाशन प्रक्रिया में आसानी होती है।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

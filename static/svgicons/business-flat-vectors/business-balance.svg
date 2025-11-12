@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="6" height="58" x="27" y="5" fill="#9F5757"/>
+    <path fill="#BD7575" d="M36,64 C36,62.3431458 33.3137085,61 30,61 C26.6862915,61 24,62.3431458 24,64 L36,64 Z"/>
+    <path stroke="#D8D8D8" stroke-linecap="round" d="M11.079082,11.111983 L6.33391181,25.8793389"/>
+    <path stroke="#D8D8D8" stroke-linecap="round" d="M16.079082,11.111983 L11.3339118,25.8793389" transform="matrix(-1 0 0 1 27.413 0)"/>
+    <path stroke="#D8D8D8" stroke-linecap="round" d="M47.079082,11.111983 L42.3339118,25.8793389"/>
+    <path stroke="#D8D8D8" stroke-linecap="round" d="M52.079082,11.111983 L47.3339118,25.8793389" transform="matrix(-1 0 0 1 99.413 0)"/>
+    <rect width="46" height="2" x="7" y="10" fill="#BD7575"/>
+    <path fill="#FFAF40" d="M18.1061918,26 C18.1061918,22.1340068 14.9721851,19 11.1061918,19 C7.24019858,19 4.10619183,22.1340068 4.10619183,26 L18.1061918,26 Z" transform="rotate(-180 11.106 26)"/>
+    <rect width="21" height="13" x="37" y="21" fill="#BD7575" rx="1"/>
+    <rect width="21" height="5" x="37" y="21" fill="#9F5757"/>
+    <rect width="7" height="5" x="44" y="19" stroke="#9F5757" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

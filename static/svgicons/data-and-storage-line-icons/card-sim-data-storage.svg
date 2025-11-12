@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+<g id="layer1">
+
+<path d="M 0 4 L 0 4.5 L 0 17 L 16.707031 17 L 20 13.707031 L 20 4 L 0 4 z M 1 5 L 19 5 L 19 13.292969 L 16.292969 16 L 1 16 L 1 5 z M 2 6 L 2 6.5 L 2 15 L 13 15 L 13 6 L 2 6 z M 3 7 L 12 7 L 12 8 L 9 8 L 9 9 L 12 9 L 12 10 L 9 10 L 9 11 L 12 11 L 12 12 L 9 12 L 9 13 L 12 13 L 12 14 L 3 14 L 3 13 L 6 13 L 6 12 L 3 12 L 3 11 L 6 11 L 6 10 L 3 10 L 3 9 L 6 9 L 6 8 L 3 8 L 3 7 z " style="fill:#222222; fill-opacity:1; stroke:none; stroke-width:0px;"/>
+
+</g>
+
+</svg>

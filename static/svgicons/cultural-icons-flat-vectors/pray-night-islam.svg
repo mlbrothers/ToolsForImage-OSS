@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>pray-night</title>
+
+<g id="pray-night">
+
+<circle cx="40.5" cy="23.5" r="21.5" style="fill:#e5efef"/>
+
+<path d="M54,27.006C54,13.1,30,1.818,30,1.818S6,13.1,6,27.006A25.951,25.951,0,0,0,10.047,41H10V63H50V41h-.047A25.951,25.951,0,0,0,54,27.006Z" style="fill:#816982"/>
+
+<circle cx="36" cy="14" r="1" style="fill:#fff"/>
+
+<circle cx="15" cy="25" r="1" style="fill:#fff"/>
+
+<circle cx="46" cy="47" r="1" style="fill:#fff"/>
+
+<circle cx="38" cy="31" r="1" style="fill:#fff"/>
+
+<circle cx="11" cy="33" r="1" style="fill:#fff"/>
+
+<circle cx="18" cy="34" r="1" style="fill:#fff"/>
+
+<circle cx="15" cy="47" r="1" style="fill:#fff"/>
+
+<path d="M37.243,50.029H32.471l.4-4.587a9.378,9.378,0,0,0-.187-2.855L31,35l-2-9-5-3L20.273,47.311,20,50.994a5.594,5.594,0,0,0,5.23,5.582L32,57,14,60l-3.029,3H37.515A6.485,6.485,0,0,0,44,56.315,6.666,6.666,0,0,0,37.243,50.029Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27.59,25.911l4.823-1.234-1.838-8.45a5.355,5.355,0,0,0-6.3-3.857h0a5.042,5.042,0,0,0-3.54,6.186L21.893,23.2a4.093,4.093,0,0,0,1.7,2.435" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20.9,11.094h7.23A2.071,2.071,0,0,1,30.2,13.166v2.929a0,0,0,0,1,0,0H18.833a0,0,0,0,1,0,0V13.166A2.071,2.071,0,0,1,20.9,11.094Z" transform="translate(-2.159 4.975) rotate(-11.102)" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M42.559,36.463l-6.5,3.035-5.707-7.836c-1.039-1.426-2.786-1.923-3.9-1.11h0c-1.116.813-1.179,2.628-.14,4.054l6.09,8.361c1.451,1.992,3.891,2.686,5.45,1.551l6.421-4.677Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44.268,39.841l4.165-3.034a1.412,1.412,0,0,0-1.428-2.42l-4.446,2.076Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="37" y1="57" x2="35" y2="57" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="43" y1="19.463" x2="43" y2="20.878" style="fill:none;stroke:#ffce56;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="43" y1="25.122" x2="43" y2="26.537" style="fill:none;stroke:#ffce56;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="39.463" y1="23" x2="40.878" y2="23" style="fill:none;stroke:#ffce56;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="45.122" y1="23" x2="46.537" y2="23" style="fill:none;stroke:#ffce56;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="6" y1="63" x2="56" y2="63" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

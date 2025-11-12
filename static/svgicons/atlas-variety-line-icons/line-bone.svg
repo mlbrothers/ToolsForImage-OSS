@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="breackbone">
+
+<path class="cls-1" d="M10.79,9.83l3-3a3.34,3.34,0,0,1,5-4.37,3.27,3.27,0,0,1,.94,1.78"/>
+
+<path class="cls-1" d="M4.26,19.76a3.34,3.34,0,0,1-1.78-5.65,3.35,3.35,0,0,1,4.37-.31l2.52-2.53"/>
+
+<path class="cls-1" d="M16.8,5.19A3.33,3.33,0,0,1,21.52,9.9a3.34,3.34,0,0,1-4.36.32h0l-.77.75-2.21,2.23"/>
+
+<path class="cls-1" d="M12.74,14.64,11,16.4l-.77.77a3.34,3.34,0,1,1-5-.36"/>
+
+<line class="cls-1" x1="7.23" y1="9.14" x2="14.86" y2="16.77"/>
+
+</g>
+
+</svg>

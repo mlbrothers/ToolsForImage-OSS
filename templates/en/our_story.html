@@ -1,0 +1,152 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Discover the journey of ToolsForImage - From a simple idea to a comprehensive suite of free online image editing tools. Learn about our mission, values, and commitment to providing accessible image processing solutions.">
+{% endblock %}
+
+{% block title %}Our Story | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block content %}
+<h1>Our Story</h1>
+<p>Welcome to the story of ToolsForImage, a journey that began with a simple idea and has grown into a comprehensive suite of free online image editing tools.</p>
+
+<h2>The Beginning</h2>
+<p>ToolsForImage was born out of a need for accessible, user-friendly image editing tools. Our founders, a group of passionate developers and designers, recognized the growing demand for quick and efficient image processing solutions in the digital age.</p>
+
+<h2>Our Mission</h2>
+<p>From the start, our mission has been clear: to make professional-grade image editing accessible to everyone, regardless of their technical expertise or budget. We believe that powerful image tools should be available to all, from professional photographers to casual social media users.</p>
+
+<h2>Growth and Evolution</h2>
+<p>What started as a simple image compression tool has evolved into a comprehensive platform offering a wide range of services. Today, ToolsForImage provides solutions for image compression, resizing, format conversion, rotation, watermarking, and more.</p>
+
+<h2>Our Values</h2>
+<p>Throughout our journey, we've remained committed to our core values:</p>
+<ul>
+    <li>Accessibility: Keeping our tools free and easy to use</li>
+    <li>Quality: Delivering professional-grade results</li>
+    <li>Privacy: Respecting user data and maintaining security</li>
+    <li>Innovation: Continuously improving and expanding our offerings</li>
+</ul>
+
+<h2>Looking to the Future</h2>
+<p>As we continue to grow, we're excited about the future of ToolsForImage. We're constantly working on new features and improvements, always with our users' needs in mind. From enhancing our existing tools to developing cutting-edge image processing technologies, we're committed to staying at the forefront of online image editing.</p>
+
+<h2>Join Our Journey</h2>
+<p>We invite you to be part of our story. Whether you're compressing images for faster web loading, resizing photos for social media, or applying creative effects to your work, ToolsForImage is here to support your image editing needs.</p>
+
+<p>Thank you for choosing ToolsForImage. We're excited to continue this journey with you, making image editing accessible, efficient, and enjoyable for everyone.</p>
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 10px auto 10px auto;
+        padding: 20px; /* Added padding for better spacing */
+        background-color: var(--box-color); /* Consistent background color */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border: var(--background-color) 3px solid; /* Consistent border */
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em; /* Slightly larger font size for section headings */
+        font-weight: 600;
+        margin-bottom: 1em; /* Spacing below section headings */
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6; /* Improved readability */
+        margin-bottom: 1.5em; /* Spacing between paragraphs */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px; /* Indent bullet points */
+        margin-bottom: 2em; /* Spacing after the list */
+    }
+
+    ul li {
+        margin-bottom: 0.75em; /* Spacing between list items */
+        font-size: 16px; /* Matching paragraph font size */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    a {
+        color: var(--secondary-color); /* Link color matching theme */
+        text-decoration: none;
+        font-weight: 700; /* Bold links for emphasis */
+    }
+
+    a:hover {
+        color: var(--box-hover-text-color); /* Hover effect on links */
+    }
+
+    .tool-name {
+        font-weight: bold;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        display: flex;
+        border: var(--background-color) 3px solid;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block;
+        padding: 15px;
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            padding: 15px; /* Adjust padding for smaller screens */
+        }
+
+        h1 {
+            font-size: 1.8em; /* Reduce font size for mobile */
+        }
+
+        h2 {
+            font-size: 1.2em; /* Reduce section heading size */
+        }
+
+        p, ul li {
+            font-size: 15px; /* Adjust text size for mobile */
+        }
+    }
+</style>
+
+{% endblock %}

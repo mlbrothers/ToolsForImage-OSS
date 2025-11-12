@@ -1,0 +1,173 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ToolsForImage पर हमारी इमेज टूल्स की रेंज का अन्वेषण करें - संपीड़न, आकार बदलना, क्रॉपिंग, फॉर्मेट कन्वर्शन, घुमाव, वॉटरमार्किंग, चेहरा ब्लर करना, और अधिक। हमारे उपयोगकर्ता-अनुकूल टूल्स के साथ अपनी इमेज को आसानी से सुधारें।">
+{% endblock %}
+
+{% block title %}चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल | ToolsForImage{% endblock %}
+
+{% block content %}
+<h1>हमारे मुफ्त इमेज टूल्स</h1>
+<ul class="tools-list">
+    <li><a href="/{{ g.lang }}/image-compression"><span class="tool-name">इमेज संपीड़न</span> - गुणवत्ता को बनाए रखते
+            हुए फ़ाइल का आकार घटाएं</a></li>
+    <li><a href="/{{ g.lang }}/image-resize"><span class="tool-name">इमेज का आकार बदलें</span> - अपनी जरूरत के अनुसार
+            इमेज के आयाम समायोजित करें</a></li>
+    <li><a href="/{{ g.lang }}/convert-image-format"><span class="tool-name">इमेज फॉर्मेट बदलें</span> - इमेज के फॉर्मेट
+            को बदलें (JPEG, PNG, GIF, आदि)</a></li>
+    <li><a href="/{{ g.lang }}/image-rotate"><span class="tool-name">इमेज घुमाएं</span> - इमेज को सही ओरिएंटेशन में
+            घुमाएं</a></li>
+    <li><a href="/{{ g.lang }}/image-watermarking"><span class="tool-name">इमेज पर वॉटरमार्क लगाएं</span> - अपनी इमेज को
+            सुरक्षा देने के लिए वॉटरमार्क जोड़ें</a></li>
+    <li><a href="/{{ g.lang }}/image-effects"><span class="tool-name">इमेज इफेक्ट्स</span> - क्रिएटिव इफेक्ट्स और फिल्टर
+            लागू करें</a></li>
+    <li><a href="/{{ g.lang }}/image-crop"><span class="tool-name">इमेज क्रॉप करें</span> - अपनी इमेज से अनचाहे
+            क्षेत्रों को हटाएं</a></li>
+    <li><a href="/{{ g.lang }}/blur-face"><span class="tool-name">चेहरा ब्लर करें</span> - गोपनीयता के लिए इमेज में
+            चेहरों को स्वचालित रूप से ब्लर करें</a></li>
+    <li><a href="/{{ g.lang }}/remove-background"><span class="tool-name">पृष्ठभूमि हटाएं</span> - एआई के साथ स्वचालित
+            रूप से इमेज में पृष्ठभूमि हटाएं</a></li>
+</ul>
+<h2 style="text-align: center;">मुफ्त इमेज फॉर्मेट कन्वर्शन टूल्स</h2>
+<ul class="tools-list">
+    <li><a href="/{{ g.lang }}/convert/png-to-jpg"><span class="tool-name">PNG को JPG में बदलें</span> - PNG इमेज को JPG
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-jpeg"><span class="tool-name">PNG को JPEG में बदलें</span> - PNG इमेज को
+            JPEG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-bmp"><span class="tool-name">PNG को BMP में बदलें</span> - PNG इमेज को BMP
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-tiff"><span class="tool-name">PNG को TIFF में बदलें</span> - PNG इमेज को
+            TIFF फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-webp"><span class="tool-name">PNG को WebP में बदलें</span> - PNG इमेज को
+            WebP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-ico"><span class="tool-name">PNG को ICO में बदलें</span> - PNG इमेज को ICO
+            फॉर्मेट में बदलें</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/jpg-to-png"><span class="tool-name">JPG को PNG में बदलें</span> - JPG इमेज को PNG
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-jpeg"><span class="tool-name">JPG को JPEG में बदलें</span> - JPG इमेज को
+            JPEG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-bmp"><span class="tool-name">JPG को BMP में बदलें</span> - JPG इमेज को BMP
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-tiff"><span class="tool-name">JPG को TIFF में बदलें</span> - JPG इमेज को
+            TIFF फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-webp"><span class="tool-name">JPG को WebP में बदलें</span> - JPG इमेज को
+            WebP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-ico"><span class="tool-name">JPG को ICO में बदलें</span> - JPG इमेज को ICO
+            फॉर्मेट में बदलें</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-png"><span class="tool-name">JPEG को PNG में बदलें</span> - JPEG इमेज को
+            PNG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-jpg"><span class="tool-name">JPEG को JPG में बदलें</span> - JPEG इमेज को
+            JPG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-bmp"><span class="tool-name">JPEG को BMP में बदलें</span> - JPEG इमेज को
+            BMP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-tiff"><span class="tool-name">JPEG को TIFF में बदलें</span> - JPEG इमेज
+            को TIFF फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-webp"><span class="tool-name">JPEG को WebP में बदलें</span> - JPEG इमेज
+            को WebP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-ico"><span class="tool-name">JPEG को ICO में बदलें</span> - JPEG इमेज को
+            ICO फॉर्मेट में बदलें</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/bmp-to-png"><span class="tool-name">BMP को PNG में बदलें</span> - BMP इमेज को PNG
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-jpg"><span class="tool-name">BMP को JPG में बदलें</span> - BMP इमेज को JPG
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-jpeg"><span class="tool-name">BMP को JPEG में बदलें</span> - BMP इमेज को
+            JPEG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-tiff"><span class="tool-name">BMP को TIFF में बदलें</span> - BMP इमेज को
+            TIFF फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-webp"><span class="tool-name">BMP को WebP में बदलें</span> - BMP इमेज को
+            WebP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-ico"><span class="tool-name">BMP को ICO में बदलें</span> - BMP इमेज को ICO
+            फॉर्मेट में बदलें</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/tiff-to-png"><span class="tool-name">TIFF को PNG में बदलें</span> - TIFF इमेज को
+            PNG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-jpg"><span class="tool-name">TIFF को JPG में बदलें</span> - TIFF इमेज को
+            JPG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-jpeg"><span class="tool-name">TIFF को JPEG में बदलें</span> - TIFF इमेज
+            को JPEG फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-bmp"><span class="tool-name">TIFF को BMP में बदलें</span> - TIFF इमेज को
+            BMP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-webp"><span class="tool-name">TIFF को WebP में बदलें</span> - TIFF इमेज
+            को WebP फॉर्मेट में बदलें</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-ico"><span class="tool-name">TIFF को ICO में बदलें</span> - TIFF इमेज को
+            ICO फॉर्मेट में बदलें</a></li>
+
+    <li><a href="/convert/webp-to-png"><span class="tool-name">WebP को PNG में बदलें</span> - WebP इमेज को PNG फॉर्मेट
+            में बदलें</a></li>
+    <li><a href="/convert/webp-to-jpg"><span class="tool-name">WebP को JPG में बदलें</span> - WebP इमेज को JPG फॉर्मेट
+            में बदलें</a></li>
+    <li><a href="/convert/webp-to-jpeg"><span class="tool-name">WebP को JPEG में बदलें</span> - WebP इमेज को JPEG
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/convert/webp-to-bmp"><span class="tool-name">WebP को BMP में बदलें</span> - WebP इमेज को BMP फॉर्मेट
+            में बदलें</a></li>
+    <li><a href="/convert/webp-to-tiff"><span class="tool-name">WebP को TIFF में बदलें</span> - WebP इमेज को TIFF
+            फॉर्मेट में बदलें</a></li>
+    <li><a href="/convert/webp-to-ico"><span class="tool-name">WebP को ICO में बदलें</span> - WebP इमेज को ICO फॉर्मेट
+            में बदलें</a></li>
+
+    <li><a href="/convert/ico-to-png"><span class="tool-name">ICO को PNG में बदलें</span> - ICO इमेज को PNG फॉर्मेट में
+            बदलें</a></li>
+    <li><a href="/convert/ico-to-jpg"><span class="tool-name">ICO को JPG में बदलें</span> - ICO इमेज को JPG फॉर्मेट में
+            बदलें</a></li>
+    <li><a href="/convert/ico-to-jpeg"><span class="tool-name">ICO को JPEG में बदलें</span> - ICO इमेज को JPEG फॉर्मेट
+            में बदलें</a></li>
+    <li><a href="/convert/ico-to-bmp"><span class="tool-name">ICO को BMP में बदलें</span> - ICO इमेज को BMP फॉर्मेट में
+            बदलें</a></li>
+    <li><a href="/convert/ico-to-tiff"><span class="tool-name">ICO को TIFF में बदलें</span> - ICO इमेज को TIFF फॉर्मेट
+            में बदलें</a></li>
+    <li><a href="/convert/ico-to-webp"><span class="tool-name">ICO को WebP में बदलें</span> - ICO इमेज को WebP फॉर्मेट
+            में बदलें</a></li>
+
+</ul>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        text-align: center;
+    }
+
+    .tool-name {
+        font-weight: bold;
+        /* Make the tool name bold */
+    }
+
+    .tools-list {
+        list-style-type: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        border: var(--background-color) 3px solid;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block;
+        /* Makes the anchor fill the list item */
+        padding: 15px;
+        /* Add padding for better click area */
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%;
+        /* Ensures the anchor takes full height */
+        border-radius: 5px;
+        /* Match the list item border radius */
+    }
+</style>
+{% endblock %}

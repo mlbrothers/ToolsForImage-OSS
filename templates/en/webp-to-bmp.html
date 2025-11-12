@@ -1,0 +1,192 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert WEBP to BMP images with ToolsForImage. Free, fast, and secure online WEBP to BMP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online WEBP to BMP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online WEBP to BMP Converter</h1>
+<p>Easily convert your images from WEBP to BMP format. Upload a webp image and we'll convert it to BMP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is WebP to BMP Conversion?</h2>
+        <p>WebP to BMP conversion is the process of changing image files from WebP format to BMP (Bitmap) format. WebP is a modern image format that offers excellent compression and quality, while BMP is a traditional format known for its simplicity and high-quality representation of images. Converting WebP images to BMP can be useful when you need images with uncompressed quality for printing or editing purposes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert WebP to BMP?</h2>
+        <p>There are several reasons to convert WebP images to BMP format:</p>
+        <ul>
+            <li><strong>High Image Quality:</strong> BMP files retain the highest quality as they are uncompressed, making them ideal for professional use.</li>
+            <li><strong>Simplicity:</strong> BMP format is straightforward and widely supported by many applications, ensuring compatibility across different platforms.</li>
+            <li><strong>Editing Flexibility:</strong> Converting to BMP allows for easier editing in various graphics software that may not support WebP.</li>
+            <li><strong>No Loss of Detail:</strong> BMP preserves all image details, making it perfect for situations where image fidelity is crucial.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our WebP to BMP Converter</h2>
+        <p>Using our WebP to BMP conversion tool is simple and user-friendly. Here’s how to get started:</p>
+        <ul>
+            <li>Click the "Upload WebP File" button to select the WebP image you want to convert.</li>
+            <li>After the upload is complete, our tool will automatically start the conversion process.</li>
+            <li>Once the conversion is done, click "Download BMP" to save your new BMP image to your device.</li>
+        </ul>
+        <p>Our tool supports multiple WebP formats, allowing you to convert your images with ease.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our WebP to BMP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Efficient:</strong> Convert your WebP images to BMP in just a few clicks, saving you time.</li>
+            <li><strong>No Quality Loss:</strong> Enjoy high-quality BMP images without sacrificing any detail during conversion.</li>
+            <li><strong>Free and Online:</strong> Our tool is available for free online, with no downloads or installations required.</li>
+            <li><strong>User-Friendly Interface:</strong> Designed for ease of use, our tool simplifies the conversion process.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for WebP to BMP Conversion</h2>
+        <p>Converting WebP to BMP can be beneficial in various scenarios:</p>
+        <ul>
+            <li><strong>Printing:</strong> Use BMP images for high-quality print projects where clarity is essential.</li>
+            <li><strong>Graphic Design:</strong> Ensure compatibility with design software that works best with BMP files.</li>
+            <li><strong>Image Archiving:</strong> Store images in BMP format for future editing and high-quality reference.</li>
+            <li><strong>Personal Use:</strong> Easily convert images for family albums or photo collections that require high resolution.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting WebP to BMP Can Help</h2>
+        <p>Converting your WebP images to BMP format can enhance usability and compatibility. Here’s how:</p>
+        <ul>
+            <li><strong>Improved Compatibility:</strong> BMP is supported by a wide range of applications, making your images more accessible for editing.</li>
+            <li><strong>Uncompressed Quality:</strong> BMP files retain all image details, ensuring your images look sharp and clear.</li>
+            <li><strong>Easier Editing:</strong> Work with uncompressed BMP files in your favorite graphics software without quality loss.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: block;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

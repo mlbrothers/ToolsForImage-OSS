@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>letters</title>
+
+<g id="letters">
+
+<circle cx="9.5" cy="7.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="55.837" y1="55.663" x2="52.163" y2="59.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="52.163" y1="55.663" x2="55.837" y2="59.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="40.5" cy="24.5" r="21.5" style="fill:#e5efef"/>
+
+<circle cx="55" cy="17" r="1" style="fill:#4c241d"/>
+
+<circle cx="19" cy="59" r="1" style="fill:#4c241d"/>
+
+<circle cx="7" cy="43" r="1" style="fill:#4c241d"/>
+
+<polygon points="32 5 39.38 14.182 51.092 12.908 49.818 24.62 59 32 49.818 39.38 51.092 51.092 39.38 49.818 32 59 24.62 49.818 12.908 51.092 14.182 39.38 5 32 14.182 24.62 12.908 12.908 24.62 14.182 32 5" style="fill:#ffce56"/>
+
+<path d="M19,20a31.123,31.123,0,0,1,.655-6.358l-6.747-.734L14.182,24.62,5,32l9.182,7.38L12.908,51.092,24.62,49.818,32,59l7.38-9.182,3.743.407A31.005,31.005,0,0,1,19,20Z" style="fill:#fc8c29"/>
+
+<path d="M50.2,51l.891.1-.013-.119C50.787,50.983,50.5,50.993,50.2,51Z" style="fill:#fc8c29"/>
+
+<polygon points="32 5 39.38 14.182 51.092 12.908 49.818 24.62 59 32 49.818 39.38 51.092 51.092 39.38 49.818 32 59 24.62 49.818 12.908 51.092 14.182 39.38 5 32 14.182 24.62 12.908 12.908 24.62 14.182 32 5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="21 39 25 39 25 24" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="29 39 33 39 33 24" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="24" x2="29" y2="30" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M33,34H46s-3-4-6-4" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

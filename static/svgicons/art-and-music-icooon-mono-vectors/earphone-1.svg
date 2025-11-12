@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#000000;}
+</style>
+<g>
+	<rect x="379.863" y="383.348" class="st0" width="35.446" height="128.652"/>
+	<path class="st0" d="M328.664,7.877h-66.953v47.261H222.72V0h-49.891c-42.415,0-99.768,36.684-99.768,92.591v53.668
+		c0,55.906,57.353,92.591,99.768,92.591h49.891v-57.684h38.992v47.261h75.969c9.861,0,17.86,8,17.86,17.862v23.1h83.399V118.152
+		C438.939,57.246,389.572,7.877,328.664,7.877z"/>
+	<path class="st0" d="M355.541,315.08c0,23.03,18.67,41.699,41.7,41.699c23.03,0,41.699-18.669,41.699-41.699v-24.692h-83.399
+		V315.08z"/>
+</g>
+</svg>

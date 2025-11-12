@@ -1,0 +1,37 @@
+{% extends "zh/base.html" %}
+
+{% block title %}联系我们 | ToolsForImage | 提供面部模糊、图片转换、编辑、调整大小、背景移除、模糊背景等全面免费的在线工具{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="联系我们 - ToolsForImage。若您对我们的图片处理工具有任何问题、反馈或需要支持，随时与我们联系。我们在这里为您提供图片压缩、调整大小、格式转换等帮助。">
+{% endblock %}
+
+
+{% block content %}
+<h1>联系我们 - ToolsForImage</h1>
+
+<div class="contact-section">
+    <h2>与我们联系</h2>
+    <p>我们很高兴收到您的来信！无论您有关于我们工具的问题、需要技术支持，还是想提供反馈，请随时与我们联系。</p>
+    
+    <p>通过电子邮件联系我们：<a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a></p>
+</div>
+
+<div class="contact-section">
+    <h2>其他联系方式</h2>
+    <p>为了更快速的响应，请首先查看我们的<a href="/{{ g.lang }}/faq">常见问题页面</a>。许多常见问题的答案都可以在这里找到。</p>
+</div>
+
+
+<style>
+    .contact-section {
+        margin-bottom: 2em;
+        padding: 1em;
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+    }
+
+    
+</style>
+{% endblock %}

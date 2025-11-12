@@ -1,0 +1,354 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Agrega marcas de agua a tus imágenes fácilmente con nuestra herramienta de marca de agua. Protege tus imágenes y añade branding sin esfuerzo.">
+{% endblock %}
+
+{% block title %}Herramienta de Marca de Agua en Imágenes en línea | ToolsForImage | Herramientas en línea gratuitas para desenfocar caras, conversión de imágenes, edición, redimensionamiento, eliminar fondos, desenfocar fondos y más{% endblock %}
+
+{% block content %}
+<h1>Herramienta Gratuita de Marca de Agua en Imágenes</h1>
+
+<div class="watermark-editor">
+    <div class="watermark-controls">
+        <label for="imageUpload">Subir Imagen:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="watermarkText">Texto de la Marca de Agua:</label>
+        <input type="text" id="watermarkText" placeholder="Ingrese el texto de la marca de agua">
+        
+        <label for="watermarkColor">Color de la Marca de Agua:</label>
+        <input type="color" id="watermarkColor" value="#000000">
+        
+        <label for="watermarkOpacity">Opacidad de la Marca de Agua:</label>
+        <input type="range" id="watermarkOpacity" min="0" max="1" step="0.1" value="0.5">
+        
+        <label for="watermarkFontSize">Tamaño de la Fuente de la Marca de Agua:</label>
+        <input type="number" id="watermarkFontSize" min="8" value="20" placeholder="Tamaño de fuente">
+        
+        <label for="watermarkPosition">Posición de la Marca de Agua:</label>
+        <select id="watermarkPosition">
+            <option value="top-left">Arriba a la Izquierda</option>
+            <option value="top-right">Arriba a la Derecha</option>
+            <option value="bottom-left">Abajo a la Izquierda</option>
+            <option value="bottom-right">Abajo a la Derecha</option>
+            <option value="center">Centro</option>
+        </select>
+        
+        <label for="watermarkFontStyle">Estilo de la Fuente de la Marca de Agua:</label>
+        <select id="watermarkFontStyle">
+            <option value="normal">Normal</option>
+            <option value="bold">Negrita</option>
+            <option value="italic">Cursiva</option>
+            <option value="bold-italic">Negrita Cursiva</option>
+        </select>
+    </div>
+
+    <div class="watermark-preview">
+        <img id="previewImage" src="" alt="Vista Previa">
+    </div>
+
+    <button class="button" id="downloadImage">Descargar Imagen con Marca de Agua</button>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Marca de Agua en Imágenes?</h2>
+        <p>La marca de agua en imágenes es el proceso de agregar un logotipo, texto o símbolo a tus imágenes para protegerlas del uso no autorizado. Una marca de agua puede ser una marca pequeña y semitransparente colocada en cualquier parte de la imagen. Esta herramienta te ayuda a agregar marcas de agua fácilmente, asegurando que tus fotos, gráficos o creaciones digitales estén protegidas y sean fácilmente identificables como tuyas.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Usar Marcas de Agua en tus Imágenes?</h2>
+        <p>Agregar marcas de agua a tus imágenes es importante por varias razones:</p>
+        <ul>
+            <li><strong>Protege tu Trabajo:</strong> Evita que otros roben o usen tus imágenes sin permiso al agregar una marca de agua.</li>
+            <li><strong>Construye tu Marca:</strong> Agregar una marca de agua con tu logotipo o nombre de marca puede aumentar la visibilidad y el reconocimiento de tu marca.</li>
+            <li><strong>Comparte de Forma Segura en Línea:</strong> Al compartir imágenes en redes sociales, blogs o sitios web, una marca de agua puede ayudar a proteger tu propiedad intelectual.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestra Herramienta de Marca de Agua</h2>
+        <p>Nuestra herramienta de marca de agua es fácil de usar y te ayuda a agregar una marca de agua a tus imágenes rápidamente. Sigue estos pasos:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir desde Computadora" para cargar tu imagen.</li>
+            <li>Ingresa el texto o carga tu logotipo para usarlo como marca de agua.</li>
+            <li>Ajusta el tamaño, la opacidad y la posición de tu marca de agua según tus preferencias.</li>
+            <li>Una vez que estés satisfecho, haz clic en "Descargar Imagen con Marca de Agua" para guardar tu imagen protegida en tu dispositivo.</li>
+        </ul>
+        <p>Nuestra herramienta admite varios formatos de imagen, incluidos PNG, JPG y BMP, y garantiza que se mantenga la calidad de tu imagen.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestra Herramienta de Marca de Agua</h2>
+        <p>Aquí están los principales beneficios de usar nuestra herramienta de marca de agua:</p>
+        <ul>
+            <li><strong>Rápido y Fácil:</strong> Agrega una marca de agua a tus imágenes con solo unos pocos clics, sin necesidad de habilidades de diseño.</li>
+            <li><strong>Marcas de Agua Personalizables:</strong> Elige el texto, la fuente, el tamaño y la ubicación que mejor se adapten a tus necesidades.</li>
+            <li><strong>Protege tus Imágenes:</strong> Asegúrate de que tus imágenes estén protegidas y sean reconocidas como tu trabajo en línea.</li>
+            <li><strong>Gratuito:</strong> Nuestra herramienta es gratuita y accesible, sin necesidad de descargar software.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Casos Comunes de Uso para la Marca de Agua en Imágenes</h2>
+        <p>La marca de agua es útil en muchas situaciones, como:</p>
+        <ul>
+            <li><strong>Fotógrafos:</strong> Protege tus fotografías del uso no autorizado agregando tu nombre o logotipo.</li>
+            <li><strong>Diseñadores Gráficos:</strong> Agrega una marca de agua a tu arte digital para evitar que otros lo reclamen como propio.</li>
+            <li><strong>Empresas y Marcas:</strong> Usa marcas de agua para promover tu marca y asegurarte de que tus imágenes sean reconocidas como tuyas.</li>
+            <li><strong>Creadores de Contenido:</strong> Asegúrate de que tu contenido original esté protegido al compartirlo en redes sociales o sitios web.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Por Qué es Importante la Marca de Agua en tus Imágenes</h2>
+        <p>La marca de agua ayuda a proteger tus imágenes de ser robadas o utilizadas indebidamente. Aquí te explicamos por qué es importante:</p>
+        <ul>
+            <li><strong>Protección de Derechos de Autor:</strong> Las marcas de agua actúan como un disuasivo para aquellos que podrían intentar usar tus imágenes sin permiso.</li>
+            <li><strong>Aumenta el Reconocimiento de la Marca:</strong> Cuando tu marca de agua incluye tu logotipo o nombre de marca, ayuda a difundir el conocimiento de tu negocio a medida que tus imágenes se comparten en línea.</li>
+            <li><strong>Mantén tu Trabajo Seguro:</strong> Ya seas fotógrafo, diseñador o creador de contenido, la marca de agua asegura que tu trabajo duro sea acreditado a ti, dondequiera que se muestre.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+
+    #downloadImage{
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .watermark-editor {
+        background-color: var(--box-color);
+        border: 1px solid var(--secondary-color);
+        padding: 2em;
+        margin-top: 2em;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .watermark-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-controls input, .watermark-controls select {
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .watermark-preview {
+        width: 100%;
+        height: 400px;
+        border: 1px solid var(--secondary-color);
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .watermark-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .watermark-text {
+        position: absolute;
+        cursor: move;
+        user-select: none;
+    }
+
+    .button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        border: none;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: var(--link-hover-color);
+        color: var(--box-color);
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    const imageUpload = document.getElementById('imageUpload');
+    const watermarkText = document.getElementById('watermarkText');
+    const watermarkColor = document.getElementById('watermarkColor');
+    const watermarkOpacity = document.getElementById('watermarkOpacity');
+    const watermarkFontSize = document.getElementById('watermarkFontSize');
+    const watermarkPosition = document.getElementById('watermarkPosition');
+    const watermarkFontStyle = document.getElementById('watermarkFontStyle');
+    const previewImage = document.getElementById('previewImage');
+    const downloadButton = document.getElementById('downloadImage');
+
+    let originalImage = null;
+
+    imageUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+            originalImage = new Image();
+            originalImage.onload = () => {
+                previewImage.src = originalImage.src;
+                applyWatermark(); // Apply watermark when the image is loaded
+            };
+            originalImage.src = event.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    // Debounce function to limit the rate of applying watermark
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    // Add event listeners for real-time updates with debouncing
+    const debouncedApplyWatermark = debounce(applyWatermark, 200); // 200ms delay
+    watermarkText.addEventListener('input', debouncedApplyWatermark);
+    watermarkColor.addEventListener('input', debouncedApplyWatermark);
+    watermarkOpacity.addEventListener('input', debouncedApplyWatermark);
+    watermarkFontSize.addEventListener('input', debouncedApplyWatermark);
+    watermarkPosition.addEventListener('change', debouncedApplyWatermark);
+    watermarkFontStyle.addEventListener('change', debouncedApplyWatermark);
+
+    downloadButton.addEventListener('click', downloadWatermarkedImage);
+
+    function applyWatermark() {
+        if (!originalImage) {
+            return;
+        }
+
+        // Create an offscreen canvas to apply watermark
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size to match the image size
+        canvas.width = originalImage.width;
+        canvas.height = originalImage.height;
+
+        // Draw the original image onto the canvas
+        ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+
+        // Set the watermark text style
+        const fontSize = parseInt(watermarkFontSize.value);
+        const fontStyle = watermarkFontStyle.value;
+
+        // Check if the font style includes both bold and italic
+        let fullFontStyle = '';
+        if (fontStyle === 'bold-italic') {
+            fullFontStyle = 'bold italic';
+        } else if (fontStyle === 'bold') {
+            fullFontStyle = 'bold';
+        } else if (fontStyle === 'italic') {
+            fullFontStyle = 'italic';
+        } else {
+            fullFontStyle = 'normal';
+        }
+
+        // Apply the font settings to the canvas context
+        ctx.font = `${fullFontStyle} ${fontSize}px Arial`;
+
+        ctx.fillStyle = watermarkColor.value;
+        ctx.globalAlpha = watermarkOpacity.value;
+
+        // Get text dimensions
+        const text = watermarkText.value;
+        const textMetrics = ctx.measureText(text);
+        const textWidth = textMetrics.width;
+        const textHeight = fontSize; // Approximate height based on font size
+
+        // Adjust for italic and bold font style
+        let italicAdjustment = 0;
+        if (fullFontStyle.includes('italic')) {
+            italicAdjustment = fontSize * 0.2; // Adjust this factor as needed
+        }
+
+        // Calculate text position based on the selected alignment
+        let x, y;
+        const position = watermarkPosition.value;
+
+        switch (position) {
+            case 'top-left':
+                x = 10 + italicAdjustment; // Add some padding
+                y = textHeight + 10;
+                break;
+            case 'top-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = textHeight + 10;
+                break;
+            case 'bottom-left':
+                x = 10 + italicAdjustment; // Left padding
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'bottom-right':
+                x = canvas.width - textWidth - 10 + italicAdjustment; // Right padding with italic adjustment
+                y = canvas.height - 10; // Bottom padding
+                break;
+            case 'center':
+                x = (canvas.width - textWidth) / 2 + italicAdjustment / 2;
+                y = (canvas.height + textHeight) / 2;
+                break;
+            default:
+                x = 10 + italicAdjustment;
+                y = textHeight + 10;
+        }
+
+        // Debug: Log the font style to ensure it's set correctly
+        console.log('Font style applied:', ctx.font);
+
+        // Draw the watermark text on the canvas
+        ctx.fillText(text, x, y);
+
+        // Update the preview image with the canvas content
+        previewImage.src = canvas.toDataURL();
+    }
+
+    function downloadWatermarkedImage() {
+        if (!originalImage) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const a = document.createElement('a');
+        a.href = previewImage.src;
+        a.download = 'watermarked_image.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>
+{% endblock %}

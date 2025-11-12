@@ -1,0 +1,196 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}BMP से PNG ऑनलाइन कन्वर्ट करें | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ BMP से PNG इमेज को आसानी से कन्वर्ट करें। मुफ्त ऑनलाइन BMP से PNG कन्वर्टर।">
+{% endblock %}
+
+{% block content %}
+
+    <h1>फ्री BMP से PNG कन्वर्ज़न टूल</h1>
+    <p>अपने BMP इमेज को PNG फ़ॉर्मेट में आसानी से कन्वर्ट करें। एक BMP इमेज अपलोड करें और हम इसे आपके लिए PNG में कन्वर्ट कर देंगे।</p>
+    <form id="conversion-form" method="post" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+        <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+        <br>
+        <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+        <br>
+        <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+    </form>
+
+    <div class="info-container">
+        <div class="info-section">
+            <h2>BMP से PNG कन्वर्ज़न क्या है?</h2>
+            <p>BMP से PNG कन्वर्ज़न का मतलब है BMP (Bitmap) फ़ॉर्मेट से PNG (Portable Network Graphics) फ़ॉर्मेट में इमेज फ़ाइलों को बदलना। BMP फ़ाइलें उच्च गुणवत्ता के लिए जानी जाती हैं, लेकिन आकार में बड़ी हो सकती हैं, जबकि PNG फ़ाइलें लॉसलेस संपीड़न प्रदान करती हैं, जिसका मतलब है कि वे फ़ाइल के आकार को कम करते हुए गुणवत्ता बनाए रखती हैं। हमारा टूल BMP इमेज को PNG में कन्वर्ट करना आसान बनाता है, जिससे आप अपने ग्राफिक्स के लिए बेहतरीन परिणाम प्राप्त कर सकें।</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP को PNG में कन्वर्ट करने के फायदे क्या हैं?</h2>
+            <p>BMP इमेज को PNG में कन्वर्ट करने के कई ठोस कारण हैं:</p>
+            <ul>
+                <li><strong>लॉसलेस संपीड़न:</strong> PNG फ़ाइलें मूल इमेज गुणवत्ता को बिना किसी हानि के बनाए रखती हैं, जिससे वे विस्तृत ग्राफिक्स के लिए आदर्श होती हैं।</li>
+                <li><strong>पारदर्शिता समर्थन:</strong> PNG फ़ॉर्मेट पारदर्शी पृष्ठभूमियों का समर्थन करता है, जो वेब डिज़ाइन और प्रस्तुतियों में बहुउपयोगी होता है।</li>
+                <li><strong>बेहतर वेब संगतता:</strong> PNG इंटरनेट पर व्यापक रूप से उपयोग किया जाता है, यह सुनिश्चित करता है कि आपकी इमेज वेबसाइटों और सोशल मीडिया पर बेहतरीन दिखे।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>हमारे BMP से PNG कन्वर्टर का उपयोग कैसे करें</h2>
+            <p>हमारे BMP से PNG कन्वर्टर का उपयोग सरल है। इन सरल कदमों का पालन करें:</p>
+            <ul>
+                <li>"BMP फ़ाइल अपलोड करें" बटन पर क्लिक करें और वह BMP इमेज चुनें जिसे आप कन्वर्ट करना चाहते हैं।</li>
+                <li>एक बार जब इमेज अपलोड हो जाए, तो हमारा टूल स्वचालित रूप से इसे PNG फ़ॉर्मेट में कन्वर्ट कर देगा।</li>
+                <li>कन्वर्ज़न पूरा होने के बाद, "PNG डाउनलोड करें" पर क्लिक करें और नई इमेज को अपने डिवाइस पर सहेजें।</li>
+            </ul>
+            <p>हमारा टूल विभिन्न प्रकार की BMP फ़ाइलों का समर्थन करता है, हर बार एक सुचारू कन्वर्ज़न प्रक्रिया सुनिश्चित करता है।</p>
+        </div>
+    
+        <div class="info-section">
+            <h2>हमारे BMP से PNG कन्वर्टर के लाभ</h2>
+            <p>हमारा कन्वर्ज़न टूल कई लाभ प्रदान करता है:</p>
+            <ul>
+                <li><strong>तेज और कुशल:</strong> BMP इमेज को PNG में जल्दी और आसान तरीके से कन्वर्ट करें।</li>
+                <li><strong>कोई गुणवत्ता हानि नहीं:</strong> हमारी लॉसलेस कन्वर्ज़न प्रक्रिया के साथ उच्च गुणवत्ता वाली इमेज का आनंद लें।</li>
+                <li><strong>मुफ्त और सुलभ:</strong> हमारे ऑनलाइन टूल का उपयोग मुफ्त में करें, बिना किसी डाउनलोड या इंस्टॉलेशन की आवश्यकता।</li>
+                <li><strong>उपयोगकर्ता के अनुकूल:</strong> सभी के लिए डिज़ाइन किया गया, हमारा इंटरफ़ेस इमेज को कन्वर्ट करना आसान बनाता है, चाहे आपकी तकनीकी क्षमताएँ कुछ भी हों।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP से PNG कन्वर्ज़न के सामान्य उपयोग</h2>
+            <p>BMP को PNG में कन्वर्ट करना विभिन्न परिस्थितियों में सहायक हो सकता है:</p>
+            <ul>
+                <li><strong>ग्राफिक डिज़ाइन:</strong> अपने डिज़ाइन प्रोजेक्ट्स में उच्च गुणवत्ता वाली ग्राफिक्स के लिए PNG इमेज का उपयोग करें।</li>
+                <li><strong>वेब विकास:</strong> उन वेबसाइटों के लिए इमेज को ऑप्टिमाइज़ करें जहाँ पारदर्शिता और गुणवत्ता महत्वपूर्ण हैं।</li>
+                <li><strong>सोशल मीडिया:</strong> Facebook और Instagram जैसी प्लेटफार्मों पर इमेज साझा करें, जहाँ PNG सामान्यतः समर्थित होता है।</li>
+                <li><strong>व्यक्तिगत उपयोग:</strong> परिवार की तस्वीरें और कलाकृतियाँ PNG फ़ॉर्मेट में रखें ताकि गुणवत्ता और विवरण संरक्षित रह सकें।</li>
+            </ul>
+        </div>
+    
+        <div class="info-section">
+            <h2>BMP को PNG में कन्वर्ट करना आपकी इमेज को कैसे बढ़ाता है</h2>
+            <p>अपने BMP इमेज को PNG में बदलना उनकी उपयोगिता और उपस्थिति को काफी हद तक सुधार सकता है। यहाँ कैसे:</p>
+            <ul>
+                <li><strong>सुधरी हुई गुणवत्ता:</strong> PNG फ़ाइलें आपकी इमेज का हर विवरण संरक्षित करती हैं, यह सुनिश्चित करती हैं कि यह अपने सर्वश्रेष्ठ रूप में दिखे।</li>
+                <li><strong>लचीला उपयोग:</strong> PNG फ़ॉर्मेट पारदर्शी पृष्ठभूमियों की अनुमति देता है, जो ओवरले और लोगो के लिए आदर्श बनाता है।</li>
+                <li><strong>व्यापक पहुँच:</strong> PNG इमेज सभी उपकरणों पर आसानी से देखी जाती हैं, यह सुनिश्चित करती हैं कि आपकी सामग्री सभी के लिए सुलभ हो।</li>
+            </ul>
+        </div>
+    </div>
+    
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

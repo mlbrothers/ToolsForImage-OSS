@@ -1,0 +1,198 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert JPEG to BMP images with ToolsForImage. Free, fast, and secure online JPEG to BMP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online JPEG to BMP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online JPEG to BMP Converter</h1>
+<p>Easily convert your images from JPEG to BMP format. Upload a JPEG image and we'll convert it to BMP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/JPEG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is JPEG to BMP Conversion?</h2>
+        <p>JPEG to BMP conversion is the process of changing image files from JPEG (Joint Photographic Experts Group) format to BMP (Bitmap) format. JPEG is a popular format for photographs due to its efficient compression, while BMP is known for its high quality and simplicity. Our tool makes this conversion easy, helping you transform your JPEG images into BMP files quickly and efficiently.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert JPEG to BMP?</h2>
+        <p>There are several reasons to convert JPEG images to BMP:</p>
+        <ul>
+            <li><strong>Uncompressed Quality:</strong> BMP files are uncompressed, which means they maintain the highest quality without any loss of detail, making them perfect for editing or printing.</li>
+            <li><strong>Simple Format:</strong> BMP is a straightforward format that is easy to use in various applications, especially in graphic design and printing.</li>
+            <li><strong>Editing Flexibility:</strong> Converting to BMP allows for easier editing in some software, as it retains all image data.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our JPEG to BMP Converter</h2>
+        <p>Our JPEG to BMP conversion tool is user-friendly and straightforward. Here’s how to use it:</p>
+        <ul>
+            <li>Click on the "Upload JPEG File" button to select the JPEG image you wish to convert.</li>
+            <li>After the upload, our tool will automatically convert your JPEG file into BMP format.</li>
+            <li>Once the conversion is complete, click "Download BMP" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter supports various JPEG files, ensuring a smooth and hassle-free conversion experience every time.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our JPEG to BMP Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Efficient:</strong> Convert your JPEG images to BMP quickly and without complications.</li>
+            <li><strong>No Loss of Quality:</strong> Enjoy high-resolution images with our lossless conversion feature.</li>
+            <li><strong>Free and Accessible:</strong> Use our online converter for free, with no need for downloads or installations.</li>
+            <li><strong>User-Friendly Interface:</strong> Our tool is designed for everyone, making it easy to convert images, regardless of your technical skills.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for JPEG to BMP Conversion</h2>
+        <p>There are many situations where converting JPEG to BMP can be beneficial:</p>
+        <ul>
+            <li><strong>Image Editing:</strong> Use BMP files for detailed editing in graphic design software, ensuring maximum quality.</li>
+            <li><strong>Printing:</strong> BMP images are ideal for printing, as they retain all details without compression artifacts.</li>
+            <li><strong>Graphic Design:</strong> Create high-quality graphics and illustrations by working with BMP files.</li>
+            <li><strong>Archiving:</strong> Store images in BMP format for future use, ensuring that no data is lost during compression.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting JPEG to BMP Enhances Your Images</h2>
+        <p>Transforming your JPEG images to BMP can greatly improve their usability and overall quality. Here’s how:</p>
+        <ul>
+            <li><strong>Improved Quality for Editing:</strong> BMP files allow for detailed editing and manipulation without quality loss, making them perfect for professionals.</li>
+            <li><strong>Higher Detail Retention:</strong> BMP files maintain the original image quality, making them suitable for high-resolution prints.</li>
+            <li><strong>Compatibility:</strong> BMP format is widely compatible with many software applications, ensuring easy access for editing and printing.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'bmp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

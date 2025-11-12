@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_drie{fill:#716558;}
+	.avocado_zeventien{fill:#CC4121;}
+	.avocado_vier{fill:#AF9480;}
+	.st0{fill:#FFFAEE;}
+	.st1{fill:#3D3935;}
+	.st2{fill:#E0A838;}
+	.st3{fill:#DBD2C1;}
+	.st4{fill:#A3AEB5;}
+	.st5{fill:#788287;}
+	.st6{fill:#EAD13F;}
+	.st7{fill:#D1712A;}
+	.st8{fill:#8D3E93;}
+	.st9{fill:#248EBC;}
+	.st10{fill:#6F9B45;}
+	.st11{fill:#C3CC6A;}
+</style>
+<g>
+	<polygon class="avocado_drie" points="8.207,18.5 1.707,12 12,1.707 18.5,8.207 18.5,18.5 	"/>
+	<path class="avocado_vier" d="M13,14l-3,3l-2-2l3-3L13,14z M8,9l-3,3l2,2l3-3L8,9z M11,10l3-3l-2-2L9,8L11,10z M14,13l3-3
+		l-2-2l-3,3L14,13z M11,18l0.5,0.5h3L16,17l-2-2L11,18z M18,11l-3,3l2,2l1.5-1.5v-3L18,11z"/>
+	<polygon class="avocado_zeventien" points="10.207,20.5 7.793,20.5 6,22.293 4.707,21 7.207,18.5 18.5,18.5 18.5,7.207 
+		21,4.707 22.293,6 20.5,7.793 20.5,10.207 30.293,20 20,30.293 	"/>
+	<path class="avocado_een" d="M21,10V8l2-2l-2-2l-3,3l-6-6L1,12l6,6l-3,3l2,2l2-2h2l10,10l11-11L21,10z M2.414,12L12,2.414
+		l6,6V18H8.414L2.414,12z M10.414,20H7.586L6,21.586L5.414,21l2-2H19V7.414l2-2L21.586,6L20,7.586v2.828L29.586,20L20,29.586
+		L10.414,20z"/>
+</g>
+</svg>

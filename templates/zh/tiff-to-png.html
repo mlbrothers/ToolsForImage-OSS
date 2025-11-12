@@ -1,0 +1,191 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="轻松使用 ToolsForImage 将 TIFF 转换为 PNG 图像。免费的、快速且安全的在线 TIFF 转 PNG 转换器，提供高质量的图像转换服务。">
+{% endblock %}
+
+{% block title %}在线 TIFF 转 PNG 转换器 | ToolsForImage | 免费在线图像转换器{% endblock %}
+
+{% block content %}
+<h1>免费在线 TIFF 转 PNG 转换器</h1>
+<p>轻松将您的图像从 TIFF 格式转换为 PNG 格式。上传 TIFF 图像，我们将为您转换为 PNG。</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">从电脑上传</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="图片预览" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">转换！</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>什么是 TIFF 转 PNG 转换？</h2>
+        <p>TIFF 转 PNG 转换是将图像从 TIFF（标记图像文件格式）转换为 PNG（便携式网络图形）格式的过程。TIFF 文件以其高质量而闻名，通常用于专业摄影和出版。另一方面，PNG 文件因其无损压缩而广受欢迎，可在不牺牲清晰度的情况下保持高质量图像。将 TIFF 图像转换为 PNG，可以在保持图像质量的同时享受 PNG 的广泛兼容性和透明度支持。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>为什么要将 TIFF 转换为 PNG？</h2>
+        <p>将 TIFF 图像转换为 PNG 有以下几个原因：</p>
+        <ul>
+            <li><strong>无损质量：</strong>PNG 在没有压缩损失的情况下保持图像的原始质量，非常适合带有文字的图形和图像。</li>
+            <li><strong>支持透明度：</strong>PNG 格式支持透明背景，非常适合用于标志和网页图形。</li>
+            <li><strong>更广泛的兼容性：</strong>PNG 得到了所有平台和浏览器的广泛支持，确保您的图像在任何地方都能呈现良好效果。</li>
+            <li><strong>适合网页使用：</strong>PNG 文件非常适合网页使用，提供高质量的视觉效果，提升用户体验。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>如何使用我们的 TIFF 转 PNG 转换器</h2>
+        <p>我们的 TIFF 转 PNG 转换工具设计简单易用。以下是使用方法：</p>
+        <ul>
+            <li>点击“上传 TIFF 文件”按钮，选择您想转换的 TIFF 图像。</li>
+            <li>上传完成后，转换将自动开始。</li>
+            <li>转换完成后，点击“下载 PNG”将新的 PNG 图像保存到您的设备。</li>
+        </ul>
+        <p>我们的工具支持多种 TIFF 格式，确保您可以无障碍地转换图像。</p>
+    </div>
+
+    <div class="info-section">
+        <h2>使用我们的 TIFF 转 PNG 转换器的好处</h2>
+        <p>以下是使用我们转换工具的一些优势：</p>
+        <ul>
+            <li><strong>快速简单：</strong>只需几次点击即可将 TIFF 图像转换为 PNG。</li>
+            <li><strong>无质量损失：</strong>享受高质量的转换结果，图像不会在转换过程中受到损害。</li>
+            <li><strong>免费且可访问：</strong>我们的工具可以免费在线使用，无需下载或安装软件。</li>
+            <li><strong>用户友好界面：</strong>我们的工具直观易用，确保您拥有流畅的使用体验。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF 转 PNG 转换的常见用途</h2>
+        <p>在许多情况下，将 TIFF 转换为 PNG 非常有用：</p>
+        <ul>
+            <li><strong>平面设计：</strong>使用 PNG 进行高质量的图形设计，支持透明或清晰的图像。</li>
+            <li><strong>网页内容：</strong>用清晰的图像美化网站，这些图像加载快且显得专业。</li>
+            <li><strong>社交媒体：</strong>分享保持质量的图像，在各个平台上都能呈现良好效果。</li>
+            <li><strong>存档：</strong>将图像保存为无损格式，便于长期存储和访问。</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>将 TIFF 转换为 PNG 的好处</h2>
+        <p>将您的 TIFF 图像转换为 PNG 可以提高其可用性和性能。以下是方式：</p>
+        <ul>
+            <li><strong>增强质量：</strong>PNG 文件保留了原始图像质量，非常适合细节丰富的图形。</li>
+            <li><strong>改善共享：</strong>PNG 格式被广泛接受，确保您的图像在在线共享时效果良好。</li>
+            <li><strong>更大灵活性：</strong>PNG 对透明度的支持使其在各种项目中使用更具灵活性。</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

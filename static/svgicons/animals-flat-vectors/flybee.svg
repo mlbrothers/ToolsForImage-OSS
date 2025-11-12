@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <polyline stroke="#595959" stroke-linecap="round" stroke-width="2" points="25.346 8.407 17.951 7.802 12.854 3.895"/>
+    <polyline stroke="#595959" stroke-linecap="round" stroke-width="2" points="25.985 15.506 19.599 15.017 14.201 20.501 8.684 22.089"/>
+    <polyline stroke="#595959" stroke-linecap="round" stroke-width="2" points="51.146 8.407 43.751 7.802 38.654 3.895" transform="matrix(-1 0 0 1 89.8 0)"/>
+    <polyline stroke="#595959" stroke-linecap="round" stroke-width="2" points="55.316 15.506 48.93 15.017 43.532 20.501 38.015 22.089" transform="matrix(-1 0 0 1 93.33 0)"/>
+    <ellipse cx="24" cy="40" fill="#B4DFFB" rx="7" ry="23"/>
+    <ellipse cx="39.375" cy="40" fill="#B4DFFB" rx="7" ry="23"/>
+    <path fill="#FFAF40" d="M32,12 C36.418278,12 40,10.209139 40,8 C40,5.790861 32,2.41601966 32,2.41601966 C32,2.41601966 24,5.790861 24,8 C24,10.209139 27.581722,12 32,12 Z"/>
+    <path stroke="#595959" stroke-linecap="round" stroke-width="2" d="M34,4.03837196 C34,4.03837196 36.1297003,2 40.1850695,2"/>
+    <path stroke="#595959" stroke-linecap="round" stroke-width="2" d="M24,4.03837196 C24,4.03837196 26.1297003,2 30.1850695,2" transform="matrix(-1 0 0 1 54.185 0)"/>
+    <path fill="#FFAF40" d="M32,43 C35.8659932,43 39,32.5228475 39,27 C39,21.4771525 35.8659932,20 32,20 C28.1340068,20 25,21.4771525 25,27 C25,32.5228475 28.1340068,43 32,43 Z"/>
+    <rect width="14" height="10" x="25" y="11" fill="#595959" rx="4"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>pray-time</title>
+
+<g id="pray-time">
+
+<circle cx="25.5" cy="24.5" r="21.5" style="fill:#e5efef"/>
+
+<path d="M57,16.623A6.623,6.623,0,0,0,50.377,10H21.623A6.623,6.623,0,0,0,15,16.623V19H57Z" style="fill:#9dc1e4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M15,19V43.377A6.623,6.623,0,0,0,21.623,50H50.377A6.623,6.623,0,0,0,57,43.377V19Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="25" y1="12" x2="25" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="12" x2="32" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="40" y1="12" x2="40" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47" y1="12" x2="47" y2="6" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M4,62V55.247a4.374,4.374,0,0,1,3.378-4,45.373,45.373,0,0,0,5.1-1.717L16,48l3.522,1.531a45.373,45.373,0,0,0,5.1,1.717,4.374,4.374,0,0,1,3.378,4V62" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M14,46h4a0,0,0,0,1,0,0v3a2,2,0,0,1-2,2h0a2,2,0,0,1-2-2V46A0,0,0,0,1,14,46Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M9,30h9.5A4.5,4.5,0,0,1,23,34.5v8A4.5,4.5,0,0,1,18.5,47h-5A4.5,4.5,0,0,1,9,42.5V30a0,0,0,0,1,0,0Z" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="23" y1="57" x2="23" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="9" y1="57" x2="9" y2="62" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M10.847,28H21.153A2.847,2.847,0,0,1,24,30.847V36a0,0,0,0,1,0,0H8a0,0,0,0,1,0,0V30.847A2.847,2.847,0,0,1,10.847,28Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M10,30V27.847A2.847,2.847,0,0,1,12.847,25h6.306A2.847,2.847,0,0,1,22,27.847V30" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="16" y1="61" x2="16" y2="51" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="45" cy="57" r="1" style="fill:#4c241d"/>
+
+<circle cx="60" cy="7" r="1" style="fill:#4c241d"/>
+
+<circle cx="6.5" cy="7.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M38.337,29.812h0a3.192,3.192,0,0,1-4.112.029l-.034-.028a2.393,2.393,0,0,1-.847-1.84V25.49a2.908,2.908,0,0,1,2.909-2.908h0a2.908,2.908,0,0,1,2.908,2.908v2.5A2.388,2.388,0,0,1,38.337,29.812Z" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36.253,30.581h0a5.09,5.09,0,0,1,5.09,5.09v5.09a0,0,0,0,1,0,0H31.162a0,0,0,0,1,0,0v-5.09a5.09,5.09,0,0,1,5.09-5.09Z" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M42.65,39.834a31.256,31.256,0,0,0-6.373.816,31.264,31.264,0,0,0-6.374-.816,2.8,2.8,0,0,0,0,5.595,22.292,22.292,0,0,0,6.374-1.816,22.287,22.287,0,0,0,6.373,1.816,2.8,2.8,0,1,0,0-5.595Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M45.478,37.652a1.654,1.654,0,0,1-1.654,1.655l-4.661.83" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27,37.652a1.655,1.655,0,0,0,1.654,1.655l4.661.83" style="fill:#ffe8dc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

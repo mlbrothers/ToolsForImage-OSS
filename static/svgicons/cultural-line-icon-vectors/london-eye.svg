@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>london_eye</title>
+
+<g id="london_eye">
+
+<path d="M28.385,6.731a3.7,3.7,0,1,1,7.133-.049" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M10.667,24.344a3.7,3.7,0,1,0-.945,7.286,3.675,3.675,0,0,0,.747-.076" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M53.222,31.508a3.7,3.7,0,1,0-.034-7.155" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M14.144,15.78a3.7,3.7,0,1,1,4.829-5.35" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M50.069,40.271a3.96,3.96,0,0,1,.466.381,3.7,3.7,0,1,1-5.619,4.77" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M49.74,15.782A3.7,3.7,0,1,0,45.4,9.859a3.767,3.767,0,0,0-.383.429" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M14.146,40.071a3.7,3.7,0,1,0,4.827,5.351" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="35.801" y1="28" x2="48" y2="28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="16" y1="28" x2="28.388" y2="28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34.23" y1="30.948" x2="42.984" y2="39.684" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="19.885" y1="16.632" x2="28.841" y2="25.57" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29.857" y1="30.749" x2="20.904" y2="39.684" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="44.004" y1="16.632" x2="34.955" y2="25.662" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="31.565" x2="32" y2="44" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="32" y1="12" x2="32" y2="24.103" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="31.944" cy="27.926" r="3.387" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31.944,6.681A21.245,21.245,0,1,0,53.19,27.926,21.245,21.245,0,0,0,31.944,6.681Zm0,37.748a16.5,16.5,0,1,1,16.5-16.5A16.5,16.5,0,0,1,31.944,44.429Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="32 32 20.352 62 44.243 62 32 32" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="23" y1="56" x2="41" y2="56" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

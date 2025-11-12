@@ -1,0 +1,191 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के साथ TIFF को WebP चित्रों में आसानी से बदलें। मुफ्त ऑनलाइन TIFF से WebP कनवर्टर।">
+{% endblock %}
+
+{% block title %}TIFF से WebP में परिवर्तन | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>मुफ्त TIFF से WebP रूपांतरण उपकरण</h1>
+<p>आसानी से अपने TIFF चित्रों को WebP प्रारूप में बदलें। एक TIFF चित्र अपलोड करें और हम इसे आपके लिए WebP में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/tiff" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>TIFF से WebP रूपांतरण क्या है?</h2>
+        <p>TIFF से WebP रूपांतरण वह प्रक्रिया है जिसमें चित्र फ़ाइलों को TIFF (Tagged Image File Format) से WebP प्रारूप में बदला जाता है। TIFF फ़ाइलें अपनी उच्च गुणवत्ता के लिए जानी जाती हैं और अक्सर पेशेवर सेटिंग्स जैसे फ़ोटोग्राफी और प्रिंटिंग में उपयोग की जाती हैं। WebP, जिसे Google ने विकसित किया है, एक आधुनिक चित्र प्रारूप है जो बेहतर संपीड़न प्रदान करता है, जिसके परिणामस्वरूप फ़ाइल का आकार छोटा होता है जबकि उत्कृष्ट चित्र गुणवत्ता बनाए रखी जाती है। TIFF चित्रों को WebP में बदलने से आपको तेजी से लोडिंग समय और बेहतर प्रदर्शन का आनंद मिलता है, विशेष रूप से वेबसाइटों पर।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को WebP में बदलने के फायदे क्या हैं?</h2>
+        <p>TIFF चित्रों को WebP प्रारूप में बदलने के कई लाभ हैं:</p>
+        <ul>
+            <li><strong>छोटा फ़ाइल आकार:</strong> WebP फ़ाइलें TIFF फ़ाइलों की तुलना में काफी छोटी होती हैं, जिससे वे वेब उपयोग और तेजी से लोडिंग समय के लिए आदर्श होती हैं।</li>
+            <li><strong>उच्च गुणवत्ता वाले चित्र:</strong> WebP संपीड़न के साथ भी उच्च दृश्य गुणवत्ता बनाए रखता है, यह सुनिश्चित करता है कि आपके चित्र शानदार दिखें।</li>
+            <li><strong>पारदर्शी पृष्ठभूमियाँ:</strong> WebP पारदर्शिता का समर्थन करता है, जिससे यह लोगो और ग्राफिक्स के लिए उपयुक्त होता है जिन्हें स्पष्ट पृष्ठभूमि की आवश्यकता होती है।</li>
+            <li><strong>व्यापक संगतता:</strong> WebP अधिकांश आधुनिक ब्राउज़रों द्वारा समर्थित है, यह सुनिश्चित करता है कि आपके चित्र सभी उपयोगकर्ताओं के लिए उपलब्ध हैं।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से WebP कनवर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे TIFF से WebP रूपांतरण उपकरण का उपयोग करना सरल और स्पष्ट है। शुरू करने के लिए यहाँ है:</p>
+        <ul>
+            <li>TIFF चित्र चुनने के लिए "TIFF फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>एक बार अपलोड पूरा होने पर, रूपांतरण प्रक्रिया स्वचालित रूप से शुरू हो जाएगी।</li>
+            <li>रूपांतरण समाप्त होने के बाद, अपने नए WebP चित्र को अपने डिवाइस पर सहेजने के लिए "WebP डाउनलोड करें" पर क्लिक करें।</li>
+        </ul>
+        <p>हमारा उपकरण विभिन्न TIFF प्रारूपों का समर्थन करता है, जिससे आपको बिना किसी परेशानी के अपने चित्रों को बदलने में आसानी होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे TIFF से WebP कनवर्टर के लाभ</h2>
+        <p>यहाँ हमारे रूपांतरण उपकरण के कुछ लाभ हैं:</p>
+        <ul>
+            <li><strong>तेज़ और कुशल:</strong> केवल कुछ क्लिक में अपने TIFF चित्रों को WebP में बदलें, समय की बचत करें।</li>
+            <li><strong>गुणवत्ता की हानि नहीं:</strong> रूपांतरण के दौरान स्पष्टता को बिना त्याग किए उच्च गुणवत्ता वाले चित्रों का आनंद लें।</li>
+            <li><strong>मुफ्त और ऑनलाइन:</strong> हमारा उपकरण मुफ्त में ऑनलाइन उपलब्ध है, बिना किसी डाउनलोड या स्थापना की आवश्यकता।</li>
+            <li><strong>उपयोगकर्ता के अनुकूल इंटरफ़ेस:</strong> उपयोग में आसानी के लिए डिज़ाइन किया गया, हमारा उपकरण चित्रों को परिवर्तित करना आसान बनाता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF से WebP रूपांतरण के सामान्य उपयोग</h2>
+        <p>TIFF को WebP में बदलना विभिन्न परिदृश्यों में उपयोगी है:</p>
+        <ul>
+            <li><strong>वेब विकास:</strong> वेबसाइटों के लिए चित्रों का अनुकूलन करें ताकि लोडिंग गति और उपयोगकर्ता अनुभव में सुधार हो।</li>
+            <li><strong>डिजिटल मार्केटिंग:</strong> बेहतर प्रदर्शन और बैंडविड्थ उपयोग में कमी के लिए ऑनलाइन विज्ञापनों में WebP चित्रों का उपयोग करें।</li>
+            <li><strong>ग्राफिक डिजाइन:</strong> वेब उपयोग के लिए पारदर्शी पृष्ठभूमियों के साथ दृष्टिगत रूप से आकर्षक ग्राफिक्स बनाएं।</li>
+            <li><strong>व्यक्तिगत उपयोग:</strong> अपने उपकरणों पर स्थान बचाने के लिए बड़े TIFF फ़ाइलों को प्रभावी WebP चित्रों में बदलें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>TIFF को WebP में बदलने से कैसे मदद मिलती है</h2>
+        <p>TIFF चित्रों को WebP प्रारूप में बदलने से उपयोगिता और पहुंच में सुधार हो सकता है। यहाँ कैसे:</p>
+        <ul>
+            <li><strong>बेहतर लोडिंग समय:</strong> छोटे WebP फ़ाइलें वेबसाइटों पर तेजी से लोडिंग गति को सुनिश्चित करती हैं, उपयोगकर्ता अनुभव को बढ़ाती हैं।</li>
+            <li><strong>बेहतर चित्र गुणवत्ता:</strong> WebP का संपीड़न एल्गोरिदम यह सुनिश्चित करता है कि आपके चित्र स्पष्टता और विवरण बनाए रखें।</li>
+            <li><strong>सुधरी हुई संगतता:</strong> आधुनिक ब्राउज़रों में व्यापक समर्थन के साथ, आपके चित्र सभी उपयोगकर्ताओं के लिए उपलब्ध रहेंगे।</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

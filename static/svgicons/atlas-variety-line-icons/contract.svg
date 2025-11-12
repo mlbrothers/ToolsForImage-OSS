@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1,.cls-2{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}.cls-1{stroke-linecap:square;}</style>
+
+</defs>
+
+<g id="agreement">
+
+<rect class="cls-1" x="3.41" y="1.5" width="17.18" height="21"/>
+
+<path class="cls-1" d="M16.77,7.23h0Z"/>
+
+<path class="cls-1" d="M16.77,11.05h0Z"/>
+
+<polyline class="cls-2" points="8.18 19.64 8.18 18.68 10.09 15.82 11.04 18.68 12.96 17.73 13.91 18.68 16.77 18.68"/>
+
+</g>
+
+</svg>

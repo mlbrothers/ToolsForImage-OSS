@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+
+</defs>
+
+<g id="roll_brush" data-name="roll brush">
+
+<rect class="cls-1" x="8.13" y="8.17" width="7.67" height="7.67"/>
+
+<line class="cls-1" x1="0.46" y1="4.33" x2="2.38" y2="4.33"/>
+
+<line class="cls-1" x1="0.46" y1="8.17" x2="2.38" y2="8.17"/>
+
+<line class="cls-1" x1="0.46" y1="12" x2="2.38" y2="12"/>
+
+<line class="cls-1" x1="3.34" y1="1.45" x2="5.26" y2="1.45"/>
+
+<line class="cls-1" x1="0.46" y1="15.84" x2="2.38" y2="15.84"/>
+
+<line class="cls-1" x1="21.56" y1="8.17" x2="23.48" y2="8.17"/>
+
+<line class="cls-1" x1="17.72" y1="8.17" x2="19.64" y2="8.17"/>
+
+<line class="cls-1" x1="21.56" y1="12" x2="23.48" y2="12"/>
+
+<line class="cls-1" x1="21.56" y1="15.84" x2="23.48" y2="15.84"/>
+
+<line class="cls-1" x1="21.56" y1="19.68" x2="23.48" y2="19.68"/>
+
+<line class="cls-1" x1="21.56" y1="22.55" x2="23.48" y2="22.55"/>
+
+<line class="cls-1" x1="4.3" y1="15.84" x2="6.22" y2="15.84"/>
+
+<line class="cls-1" x1="0.46" y1="1.45" x2="2.38" y2="1.45"/>
+
+<line class="cls-1" x1="7.17" y1="1.45" x2="9.09" y2="1.45"/>
+
+<line class="cls-1" x1="11.01" y1="1.45" x2="12.93" y2="1.45"/>
+
+<line class="cls-1" x1="14.85" y1="1.45" x2="16.77" y2="1.45"/>
+
+<line class="cls-1" x1="7.17" y1="22.55" x2="9.09" y2="22.55"/>
+
+<line class="cls-1" x1="7.17" y1="18.72" x2="9.09" y2="18.72"/>
+
+<line class="cls-1" x1="11.01" y1="22.55" x2="12.93" y2="22.55"/>
+
+<line class="cls-1" x1="14.85" y1="22.55" x2="16.77" y2="22.55"/>
+
+<line class="cls-1" x1="18.68" y1="22.55" x2="20.6" y2="22.55"/>
+
+<line class="cls-1" x1="14.85" y1="5.29" x2="16.77" y2="5.29"/>
+
+</g>
+
+</svg>

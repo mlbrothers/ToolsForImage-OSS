@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>open-quran</title>
+
+<g id="open-quran">
+
+<circle cx="53.5" cy="10.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="13.837" y1="5.663" x2="10.163" y2="9.337" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10.163" y1="5.663" x2="13.837" y2="9.337" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="8" cy="13" r="1"/>
+
+<polyline points="56.363 23 61 23 61 57 7 57 7 23 12 23" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34,55.685V22.8s7.76-7.893,21.987-5.262V50.423S43.053,49.107,34,55.685Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39,27.483A25.91,25.91,0,0,1,49.916,25" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39,31.483A25.91,25.91,0,0,1,49.916,29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M39,35.483A25.91,25.91,0,0,1,49.916,33" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34,55.685V22.8s-7.765-7.893-22-5.262V50.423S24.941,49.107,34,55.685Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="30" y1="12" x2="27" y2="9" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="38" y1="12" x2="41" y2="9" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34" y1="12" x2="34" y2="8" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28.916,27.483A25.9,25.9,0,0,0,18,25" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28.916,31.483A25.9,25.9,0,0,0,18,29" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28.916,35.483A25.9,25.9,0,0,0,18,33" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

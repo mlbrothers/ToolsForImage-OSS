@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>spoons</title>
+
+<g id="spoons">
+
+<circle cx="32" cy="25" r="23" style="fill:#edebdc"/>
+
+<circle cx="29.5" cy="31.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="58.5" cy="58.5" r="2.5" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="16" cy="38" r="1" style="fill:#4c241d"/>
+
+<line x1="41.837" y1="7.663" x2="38.163" y2="11.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="38.163" y1="7.663" x2="41.837" y2="11.337" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M31,18H27.7C26.3,13.436,20.289,10,14,10,6.82,10,2,14.477,2,20S6.82,30,14,30c5.821,0,11.4-2.943,13.309-7H31Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="31" y="19" width="23" height="3" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="58 23 54 23 54 18 58 18 61 19 61 22 58 23" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20,20c0-1.092-.983-2.039-2.437-2.563C17.039,15.983,16.092,15,15,15s-2.039.983-2.563,2.437C10.983,17.961,10,18.908,10,20s.983,2.039,2.437,2.563C12.961,24.017,13.908,25,15,25s2.039-.983,2.563-2.437C19.017,22.039,20,21.092,20,20Z" style="fill:#bd53b5;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="15" cy="20" r="1" style="fill:#ffce56"/>
+
+<path d="M32,42h3.3c1.4-4.564,7.408-8,13.7-8,7.18,0,12,4.477,12,10S56.18,54,49,54c-5.821,0-11.4-2.943-13.309-7H32Z" style="fill:#e66353;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="9" y="43" width="23" height="3" transform="translate(41 89) rotate(180)" style="fill:#ffce56;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="5 47 9 47 9 42 5 42 2 43 2 46 5 47" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M43,44c0-1.092.983-2.039,2.437-2.563C45.961,39.983,46.908,39,48,39s2.039.983,2.563,2.437C52.017,41.961,53,42.908,53,44s-.983,2.039-2.437,2.563C50.039,48.017,49.092,49,48,49s-2.039-.983-2.563-2.437C43.983,46.039,43,45.092,43,44Z" style="fill:#bd53b5;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="48" cy="44" r="1" style="fill:#ffce56"/>
+
+</g>
+
+</svg>

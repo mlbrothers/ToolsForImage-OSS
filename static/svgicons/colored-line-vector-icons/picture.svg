@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="-2 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="18" height="17" transform="translate(1134 259)" fill="#99ecff" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="picture" transform="translate(-1129.087 -254)">
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="26" height="30" transform="translate(1130.087 255)" fill="#e8f7f9" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="Group_52" data-name="Group 52">
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="18" height="17" transform="translate(1134 259)" fill="#99ecff"/>
+      <g id="Group_51" data-name="Group 51" clip-path="url(#clip-path)">
+        <path id="Path_54" data-name="Path 54" d="M1128,279l11.087-10L1149,279" fill="#cbff94" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_55" data-name="Path 55" d="M1137,277l13.087-12L1163,277" fill="#cbff94" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="18" height="17" transform="translate(1134 259)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

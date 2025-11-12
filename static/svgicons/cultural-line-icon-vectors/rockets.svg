@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>rockets</title>
+
+<g id="rockets">
+
+<path d="M42.852,32.239C40.766,31.424,41.465,31,39.133,31H35v-.218A1.782,1.782,0,0,0,33.218,29H21.782A1.782,1.782,0,0,0,20,30.782V31H18l-1-2H15v8h2l1-2h2v.218A1.782,1.782,0,0,0,21.782,37H33.218A1.782,1.782,0,0,0,35,35.218V35h4.133c2.332,0,1.633-.424,3.719-1.239L44.8,33Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M57.852,46.239C55.766,45.424,56.465,45,54.133,45H50v-.218A1.782,1.782,0,0,0,48.218,43H36.782A1.782,1.782,0,0,0,35,44.782V45H33l-1-2H30v8h2l1-2h2v.218A1.782,1.782,0,0,0,36.782,51H48.218A1.782,1.782,0,0,0,50,49.218V49h4.133c2.332,0,1.633-.424,3.719-1.239L59.8,47Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M60.852,19.239C58.766,18.424,59.465,18,57.133,18H53v-.218A1.782,1.782,0,0,0,51.218,16H39.782A1.782,1.782,0,0,0,38,17.782V18H36l-1-2H33v8h2l1-2h2v.218A1.782,1.782,0,0,0,39.782,24H51.218A1.782,1.782,0,0,0,53,22.218V22h4.133c2.332,0,1.633-.424,3.719-1.239L62.8,20Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24" y1="29" x2="24" y2="37" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="39" y1="43" x2="39" y2="51" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="42" y1="16" x2="42" y2="24" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28,15H11.5A3.5,3.5,0,0,1,8,11.5H8A3.5,3.5,0,0,1,11.5,8H13" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="29" y1="19" x2="22" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="18" y1="19" x2="13" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M29,24H12a5,5,0,0,0-5,5H7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="12" y1="33" x2="5" y2="33" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="22" y1="41" x2="17" y2="41" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M26,51H8a3,3,0,0,0-3,3H5a3,3,0,0,0,3,3H18" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="10.5" y1="41" x2="13" y2="41" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M25,47H7a3,3,0,0,1-3-3H4a3,3,0,0,1,3-3" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

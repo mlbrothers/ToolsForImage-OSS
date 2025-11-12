@@ -1,0 +1,191 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convierte fácilmente imágenes WEBP a JPEG con ToolsForImage. Conversor online gratuito, rápido y seguro de WEBP a JPEG para transformaciones de imágenes de alta calidad.">
+{% endblock %}
+
+{% block title %}Conversor online de WEBP a JPEG | ToolsForImage | Conversor de imágenes online gratuito{% endblock %}
+
+{% block content %}
+<h1>Conversor Gratuito Online de WEBP a JPEG</h1>
+<p>Convierte fácilmente tus imágenes de WebP a formato JPEG. Sube una imagen WebP y la convertiremos a JPEG para ti.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la conversión de WebP a JPEG?</h2>
+        <p>La conversión de WebP a JPEG es el proceso de cambiar archivos de imágenes del formato WebP al formato JPEG. WebP es un formato de imagen moderno que ofrece una excelente compresión, mientras que JPEG es un formato ampliamente utilizado conocido por su equilibrio entre calidad y tamaño de archivo. Convertir imágenes WebP a JPEG es útil cuando necesitas imágenes para sitios web, redes sociales u otras aplicaciones que prefieren el formato JPEG.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por qué convertir WebP a JPEG?</h2>
+        <p>Hay varias razones para convertir imágenes WebP a formato JPEG:</p>
+        <ul>
+            <li><strong>Compatibilidad generalizada:</strong> JPEG es uno de los formatos de imagen más ampliamente compatibles, lo que garantiza que tus imágenes puedan verse en cualquier dispositivo o software.</li>
+            <li><strong>Optimizado para uso web:</strong> Las imágenes JPEG son ideales para uso web, ya que ofrecen un buen equilibrio entre calidad y tamaño de archivo, lo que hace que los sitios web carguen más rápido.</li>
+            <li><strong>Compartir fácilmente:</strong> El formato JPEG es preferido para compartir imágenes en redes sociales y otras plataformas, lo que facilita compartir tus imágenes.</li>
+            <li><strong>Buena compresión:</strong> JPEG ofrece excelentes capacidades de compresión, permitiendo tamaños de archivo más pequeños sin una pérdida significativa de calidad.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo usar nuestro conversor de WebP a JPEG</h2>
+        <p>Usar nuestra herramienta de conversión de WebP a JPEG es sencillo. Aquí te explicamos cómo empezar:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir archivo WebP" para elegir la imagen WebP que deseas convertir.</li>
+            <li>Después de subirla, nuestra herramienta comenzará automáticamente el proceso de conversión.</li>
+            <li>Una vez que la conversión esté completa, haz clic en "Descargar JPEG" para guardar tu nueva imagen JPEG en tu dispositivo.</li>
+        </ul>
+        <p>Nuestro conversor admite varios formatos WebP, lo que facilita la conversión rápida de tus imágenes.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de usar nuestro conversor de WebP a JPEG</h2>
+        <p>Aquí tienes algunas ventajas de usar nuestra herramienta de conversión:</p>
+        <ul>
+            <li><strong>Rápido y eficiente:</strong> Convierte tus imágenes WebP a JPEG en solo unos clics, ahorrándote tiempo y esfuerzo.</li>
+            <li><strong>Sin pérdida de calidad:</strong> Disfruta de imágenes JPEG de alta calidad sin perder detalles importantes durante la conversión.</li>
+            <li><strong>Gratuito y online:</strong> Nuestra herramienta es accesible gratuitamente en línea, sin necesidad de descargas ni instalaciones.</li>
+            <li><strong>Interfaz fácil de usar:</strong> Diseñada para ser intuitiva, nuestra herramienta simplifica el proceso de conversión para todos.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Usos comunes de la conversión de WebP a JPEG</h2>
+        <p>Convertir WebP a JPEG puede ser beneficioso en varios escenarios:</p>
+        <ul>
+            <li><strong>Sitios web:</strong> Usa imágenes JPEG para mejorar los tiempos de carga de las páginas y la compatibilidad con todos los navegadores.</li>
+            <li><strong>Redes sociales:</strong> Comparte imágenes en formato JPEG para una mejor participación y visibilidad en plataformas como Facebook e Instagram.</li>
+            <li><strong>Fotografía digital:</strong> Guarda y edita fotos en formato JPEG para facilitar su compartición y almacenamiento.</li>
+            <li><strong>Uso personal:</strong> Convierte imágenes para álbumes familiares o proyectos de scrapbooking que requieran un formato comúnmente utilizado.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo puede ayudar convertir WebP a JPEG</h2>
+        <p>Convertir tus imágenes WebP a formato JPEG puede mejorar su usabilidad y facilidad de compartición. Aquí te explicamos cómo:</p>
+        <ul>
+            <li><strong>Mejor compatibilidad:</strong> JPEG es compatible con casi todos los dispositivos y software, lo que hace que tus imágenes sean fácilmente accesibles.</li>
+            <li><strong>Tamaños de archivo más pequeños:</strong> Las imágenes JPEG suelen tener tamaños de archivo más pequeños, lo que ayuda a que los sitios web carguen más rápido.</li>
+            <li><strong>Compartir más fácilmente:</strong> Los archivos JPEG son la opción preferida para muchas plataformas en línea, simplificando el proceso de compartir.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpeg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

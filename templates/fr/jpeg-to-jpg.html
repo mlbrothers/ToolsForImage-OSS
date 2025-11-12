@@ -1,0 +1,260 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Convertir facilement les images JPEG en JPG avec ToolsForImage. Convertisseur JPEG en JPG en ligne gratuit.">
+{% endblock %}
+
+{% block title %}Convertir JPEG en JPG en ligne avec | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion gratuit de JPEG à JPG</h1>
+<p>Convertissez facilement vos images JPEG au format JPG. Téléchargez une image JPEG et nous la convertirons en JPG pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/jpeg" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<section>
+    <h2>Guide de conversion étape par étape de JPEG à JPG</h2>
+    <div class="step-container">
+        <div class="step">Étape 1 : Sélectionnez un jpeg pour convertir les images en JPG individuelles</div>
+        <div class="arrow">↓</div>
+        <div class="step">Étape 2 : Téléchargez un jpeg et commencez le processus de conversion</div>
+        <div class="arrow">↓</div>
+        <div class="step">Étape 3 : Téléchargez les fichiers JPG</div>
+    </div>
+</section>
+
+<div class="faq-container">
+    <h2>FAQs (Questions Fréquemment Posées)</h2>
+    <div class="info-container">
+        <div class="info-section">
+            <h2>Qu'est-ce que la conversion de JPEG à JPG ?</h2>
+            <p>La conversion de JPEG à JPG est le processus de changement de fichiers image du format JPEG (Joint Photographic Experts Group) au format JPG (une abréviation couramment utilisée de JPEG). Malgré les différentes extensions de fichiers, les deux formats sont essentiellement les mêmes, utilisant la compression avec perte pour des images de haute qualité. Notre outil facilite la conversion de vos fichiers JPEG en JPG rapidement et efficacement.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Pourquoi convertir JPEG en JPG ?</h2>
+            <p>Il y a quelques raisons pour lesquelles vous pourriez vouloir convertir des images JPEG en JPG :</p>
+            <ul>
+                <li><strong>Compatibilité des fichiers :</strong> Certains logiciels ou plateformes préfèrent les fichiers JPG aux fichiers JPEG. La conversion garantit la compatibilité avec diverses applications.</li>
+                <li><strong>Raccourcissement des noms de fichiers :</strong> Utiliser JPG au lieu de JPEG peut rendre les noms de fichiers plus courts, ce qui est utile pour organiser de grandes collections d'images.</li>
+                <li><strong>Uniformité :</strong> Si vous avez un mélange de fichiers JPEG et JPG, les convertir en un seul format peut aider à maintenir la cohérence dans votre bibliothèque d'images.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Comment utiliser notre convertisseur de JPEG à JPG</h2>
+            <p>Notre outil de conversion de JPEG à JPG est conçu pour être convivial. Voici comment l'utiliser :</p>
+            <ul>
+                <li>Cliquez sur le bouton "Télécharger le fichier JPEG" pour choisir l'image JPEG que vous souhaitez convertir.</li>
+                <li>Après le téléchargement de l'image, notre outil la convertira automatiquement au format JPG.</li>
+                <li>Une fois la conversion terminée, cliquez sur "Télécharger JPG" pour enregistrer votre nouveau fichier sur votre appareil.</li>
+            </ul>
+            <p>Notre convertisseur prend en charge divers fichiers JPEG, garantissant une expérience de conversion fluide à chaque fois.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Avantages de l'utilisation de notre convertisseur de JPEG à JPG</h2>
+            <p>Voici quelques avantages de l'utilisation de notre outil de conversion :</p>
+            <ul>
+                <li><strong>Rapide et facile :</strong> Convertissez vos images JPEG en JPG en quelques clics, sans tracas.</li>
+                <li><strong>Pas de perte de qualité :</strong> Profitez d'images de haute qualité avec notre fonction de conversion sans perte.</li>
+                <li><strong>Gratuit et accessible :</strong> Utilisez notre convertisseur en ligne gratuitement, sans avoir besoin de télécharger un logiciel.</li>
+                <li><strong>Interface conviviale :</strong> Conçu pour tout le monde, notre outil facilite la conversion d'images, quelle que soit votre compétence technique.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Utilisations courantes de la conversion de JPEG à JPG</h2>
+            <p>Voici quelques situations où convertir JPEG en JPG peut être utile :</p>
+            <ul>
+                <li><strong>Gestion de fichiers :</strong> Convertissez des images pour une meilleure organisation, surtout si vous avez de nombreux fichiers JPEG à trier.</li>
+                <li><strong>Téléchargements sur le web :</strong> Certains sites web ou applications préfèrent les fichiers JPG, donc la conversion garantit des téléchargements sans souci.</li>
+                <li><strong>Partage avec d'autres :</strong> Assurez-vous que vos images sont au format préféré pour vos amis, votre famille ou vos collègues.</li>
+                <li><strong>Réseaux sociaux :</strong> Préparez vos images pour les plateformes de réseaux sociaux qui peuvent privilégier les fichiers JPG aux fichiers JPEG.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Comment la conversion de JPEG en JPG peut améliorer vos images</h2>
+            <p>Convertir vos images JPEG en JPG peut améliorer leur utilité et leur accessibilité. Voici comment :</p>
+            <ul>
+                <li><strong>Compatibilité accrue :</strong> Assurez-vous que vos images fonctionnent sans problème avec une variété d'applications et de plateformes.</li>
+                <li><strong>Stockage efficace :</strong> Les fichiers JPG sont généralement plus petits, ce qui les rend plus faciles à stocker et à partager.</li>
+                <li><strong>Nommage de fichiers cohérent :</strong> Standardisez vos fichiers avec l'extension JPG pour une identification et un accès plus faciles.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .gif-image{
+        margin: 35px auto;
+        max-width: 600px;
+        max-height: 360px;
+        border: var(--box-hover-color) 1px solid;
+        border-radius: 8px;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    section {
+        margin: 20px auto 10px auto;
+    }
+
+    .step-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

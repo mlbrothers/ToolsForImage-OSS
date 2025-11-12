@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_negen{fill:#6F9B45;}
+	.avocado_tien{fill:#C3CC6A;}
+	.avocado_vijf{fill:#DBD2C1;}
+	.st0{fill:#EAD13F;}
+	.st1{fill:#CC4121;}
+	.st2{fill:#FFFAEE;}
+	.st3{fill:#E0A838;}
+	.st4{fill:#D1712A;}
+	.st5{fill:#A3AEB5;}
+	.st6{fill:#788287;}
+	.st7{fill:#248EBC;}
+	.st8{fill:#8D3E93;}
+	.st9{fill:#3D3935;}
+	.st10{fill:#D36781;}
+	.st11{fill:#E598A3;}
+	.st12{fill:#716558;}
+	.st13{fill:#AF9480;}
+	.st14{fill:#231F20;}
+</style>
+<g>
+	<g>
+		<polygon class="avocado_vijf" points="4.5,28.793 6.207,30.5 27.5,30.5 27.5,3.207 25.793,1.5 25.5,1.5 25.5,28.5 4.5,28.5 
+					"/>
+	</g>
+	<rect x="4.5" y="1.5" class="avocado_tien" width="21" height="27"/>
+	<rect x="4.5" y="1.5" class="avocado_negen" width="2.5" height="27"/>
+	<path class="avocado_een" d="M26,1L4,1l0,28l2,2h22l0-28L26,1z M5,2h20v26H5V2z M27,30H6.414l-1-1H26V2.414l1,1L27,30z
+		 M19,11h-6v-1h6V11z M13,14h6v1h-6V14z M12,12h8v1h-8V12z"/>
+</g>
+</svg>

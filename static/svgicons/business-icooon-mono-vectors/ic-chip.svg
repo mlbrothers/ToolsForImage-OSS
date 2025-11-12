@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#000000;}
+]]>
+</style>
+<g>
+	<path class="st0" d="M0,68.031V108h152V0H68.031C30.469,0,0,30.469,0,68.031z"/>
+	<rect y="140" class="st0" width="152" height="100"/>
+	<rect x="360" y="140" class="st0" width="152" height="100"/>
+	<rect y="272" class="st0" width="152" height="100"/>
+	<rect x="360" y="272" class="st0" width="152" height="100"/>
+	<path class="st0" d="M0,443.969C0,481.531,30.469,512,68.031,512H152V404H0V443.969z"/>
+	<path class="st0" d="M443.969,0H428H184v512h144V108h184V68.031C512,30.469,481.531,0,443.969,0z"/>
+	<path class="st0" d="M360,512h83.969C481.531,512,512,481.531,512,443.969V404H360V512z"/>
+</g>
+</svg>

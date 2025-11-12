@@ -1,0 +1,355 @@
+{% extends 'es/base.html' %}
+
+{% block title %}Difuminar Rostros Gratis en Línea | ToolsForImage | Herramientas Gratuitas en Línea para Difuminar Rostros, Conversión de Imágenes, Edición, Redimensionamiento, Eliminar Fondo, Difuminar Fondo y Más{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Difumina rostros o áreas específicas en tus imágenes de forma gratuita y fácil en línea. Herramienta gratuita para difuminar rostros en fotos en ToolsForImage. Protege la privacidad difuminando selectivamente partes de tus fotos. Difumina rostros con un solo clic.">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Difuminar Áreas Específicas en Línea</h1>
+    <p>Herramienta en línea gratuita para difuminar áreas específicas de tus imágenes</p>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <button class="upload-button" onclick="document.getElementById('image-upload').click();">Subir Imagen</button>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <div id="blur-box">
+            <div class="resize-handle nw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle se"></div>
+        </div>
+    </div>
+    <div id="blur-controls" style="display: none;">
+        <label for="blur-intensity">Intensidad del Difuminado: <span id="blur-value">10px</span></label>
+        <input type="range" id="blur-intensity" min="1" max="50" value="10">
+    </div>
+    <button id="apply-blur" style="display: none;">Aplicar Efecto de Difuminado</button>
+    <div id="error-message"></div>
+</div>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es el Difuminado de Rostros?</h2>
+        <p>El difuminado de rostros es el proceso de ocultar o pixelar rostros en imágenes o videos para proteger la identidad de las personas. Esta técnica es esencial para mantener la privacidad y el anonimato, especialmente al compartir contenido personal en línea. Nuestra herramienta de difuminado de rostros te permite difuminar rostros de manera fácil y rápida, asegurando que tus imágenes cumplan con los estándares de privacidad mientras siguen siendo visualmente atractivas.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por qué Difuminar Rostros en Imágenes o Videos?</h2>
+        <p>Hay varias razones importantes para difuminar rostros en tu contenido:</p>
+        <ul>
+            <li><strong>Proteger la Privacidad:</strong> Difuminar rostros ayuda a salvaguardar la privacidad de las personas, especialmente en situaciones sensibles como eventos, protestas o reuniones públicas.</li>
+            <li><strong>Cumplir con las Leyes:</strong> Muchas jurisdicciones requieren consentimiento para usar imágenes identificables de personas. Difuminar rostros puede ayudarte a cumplir con las leyes de privacidad.</li>
+            <li><strong>Enfocarse en el Tema Principal:</strong> Al difuminar rostros, puedes dirigir la atención al tema principal o acción en tu imagen o video sin distracciones.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestra Herramienta Gratuita de Difuminado de Rostros en Línea</h2>
+        <p>Nuestra herramienta gratuita de difuminado de rostros en línea está diseñada para ser fácil de usar, permitiéndote proteger identidades en solo unos pasos:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir desde la Computadora" para cargar tu imagen o video.</li>
+            <li>La herramienta de difuminado aplicará el efecto de difuminado en tu contenido. Puedes elegir qué rostros difuminar.</li>
+            <li>Una vez que estés satisfecho con los ajustes, haz clic en "Aplicar efecto de difuminado" para guardar tu contenido protegido en tu dispositivo.</li>
+        </ul>
+        <p>Nuestra herramienta admite varios formatos, asegurando la compatibilidad con tus imágenes y videos.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestra Herramienta Gratuita de Difuminado de Rostros en Línea</h2>
+        <p>Estos son los beneficios clave de usar nuestra herramienta de difuminado de rostros:</p>
+        <ul>
+            <li><strong>Rápido y Eficiente:</strong> Difumina rostros en solo unos clics sin necesidad de software complejo.</li>
+            <li><strong>Detección Automática:</strong> La herramienta identifica automáticamente los rostros, haciendo el proceso más rápido y conveniente.</li>
+            <li><strong>Mantén la Calidad:</strong> Asegúrate de que tus imágenes y videos mantengan su calidad mientras proteges la privacidad.</li>
+            <li><strong>Gratuito y Accesible:</strong> Nuestra herramienta está disponible en línea de forma gratuita, sin necesidad de descargas o instalaciones.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Casos de Uso Comunes para el Difuminado de Rostros</h2>
+        <p>El difuminado de rostros es útil en varios escenarios, como:</p>
+        <ul>
+            <li><strong>Fotografía de Eventos:</strong> Protege las identidades de las personas en fotos tomadas en eventos públicos o reuniones.</li>
+            <li><strong>Documentales y Reportajes:</strong> Difumina rostros en entrevistas o grabaciones donde las personas no han dado su consentimiento para revelar su identidad.</li>
+            <li><strong>Compartir en Redes Sociales:</strong> Comparte imágenes o videos en línea mientras aseguras la privacidad de quienes aparecen en tu contenido.</li>
+            <li><strong>Fotos Familiares:</strong> Difumina rostros de niños o familiares al compartir imágenes personales en plataformas públicas.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo el Difuminado de Rostros Puede Ayudar a Proteger la Privacidad</h2>
+        <p>Difuminar rostros es una forma efectiva de garantizar la privacidad y seguridad de las personas. Aquí te explicamos cómo puede ayudar:</p>
+        <ul>
+            <li><strong>Prevenir el Uso No Autorizado:</strong> Difuminar rostros evita que otros usen tus imágenes o videos para identificar personas sin su consentimiento.</li>
+            <li><strong>Mejorar la Seguridad:</strong> Proteger las identidades de las personas en situaciones sensibles ayuda a mantener su seguridad.</li>
+            <li><strong>Promover el Compartir Ético de Contenido:</strong> Al usar nuestra herramienta de difuminado, promueves el compartir responsable de contenido que respeta los derechos de privacidad de las personas.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    #canvas-container {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #canvas {
+        display: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #blur-box {
+        position: absolute;
+        border: 2px dashed #fff;
+        background-color: rgba(174, 107, 255, 0.3);
+        cursor: move;
+        display: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .resize-handle {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .resize-handle.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+    }
+
+    .resize-handle.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+    }
+
+    .resize-handle.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+    }
+
+    .resize-handle.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+    }
+
+    #apply-blur {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+</style>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const blurBox = document.getElementById('blur-box');
+    const applyBlurButton = document.getElementById('apply-blur');
+    const errorMessage = document.getElementById('error-message');
+    const blurIntensityInput = document.getElementById('blur-intensity');
+    const blurValueDisplay = document.getElementById('blur-value');
+    let img;
+    let scale = 1;
+
+    // Handle image upload
+    document.getElementById('image-upload').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            img = new Image();
+            img.onload = function () {
+                const maxWidth = window.innerWidth * 0.8;
+                const maxHeight = window.innerHeight * 0.8;
+                scale = Math.min(1, maxWidth / img.width, maxHeight / img.height);
+
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                canvas.style.display = 'block';
+                blurBox.style.display = 'block';
+                applyBlurButton.style.display = 'block';
+                document.getElementById('blur-controls').style.display = 'block';
+                errorMessage.style.display = 'none';
+                resetBlurBox();
+            }
+            img.src = URL.createObjectURL(file);
+        }
+    });
+
+    // Dragging and resizing logic
+    let isDragging = false;
+    let isResizing = false;
+    let startX, startY, startLeft, startTop, startWidth, startHeight;
+    let currentHandle;
+
+    blurBox.addEventListener('mousedown', function (e) {
+        if (e.target.classList.contains('resize-handle')) {
+            isResizing = true;
+            currentHandle = e.target;
+        } else {
+            isDragging = true;
+        }
+        startX = e.clientX;
+        startY = e.clientY;
+        startLeft = blurBox.offsetLeft;
+        startTop = blurBox.offsetTop;
+        startWidth = parseInt(getComputedStyle(blurBox).width, 10);
+        startHeight = parseInt(getComputedStyle(blurBox).height, 10);
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newLeft = startLeft + dx;
+            let newTop = startTop + dy;
+
+            newLeft = Math.max(0, Math.min(newLeft, canvas.width - blurBox.offsetWidth));
+            newTop = Math.max(0, Math.min(newTop, canvas.height - blurBox.offsetHeight));
+
+            blurBox.style.left = newLeft + 'px';
+            blurBox.style.top = newTop + 'px';
+        } else if (isResizing) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+
+            let newWidth, newHeight, newLeft, newTop;
+
+            if (currentHandle.classList.contains('se')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+            } else if (currentHandle.classList.contains('sw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight + dy, canvas.height - startTop);
+                newLeft = Math.max(0, startLeft + dx);
+            } else if (currentHandle.classList.contains('ne')) {
+                newWidth = Math.min(startWidth + dx, canvas.width - startLeft);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newTop = Math.max(0, startTop + dy);
+            } else if (currentHandle.classList.contains('nw')) {
+                newWidth = Math.min(startWidth - dx, startLeft + startWidth);
+                newHeight = Math.min(startHeight - dy, startTop + startHeight);
+                newLeft = Math.max(0, startLeft + dx);
+                newTop = Math.max(0, startTop + dy);
+            }
+
+            // Ensure minimum size for blur box
+            const minSize = 20;
+            newWidth = Math.max(newWidth, minSize);
+            newHeight = Math.max(newHeight, minSize);
+
+            blurBox.style.width = `${newWidth}px`;
+            blurBox.style.height = `${newHeight}px`;
+            if (newLeft !== undefined) blurBox.style.left = `${newLeft}px`;
+            if (newTop !== undefined) blurBox.style.top = `${newTop}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+        isResizing = false;
+    });
+
+    // Reset blur box to initial size and position
+    function resetBlurBox() {
+        const initialSize = Math.min(100, canvas.width / 2, canvas.height / 2);
+        blurBox.style.width = `${initialSize}px`;
+        blurBox.style.height = `${initialSize}px`;
+        blurBox.style.left = '0px';
+        blurBox.style.top = '0px';
+    }
+
+    // Update blur intensity display
+    blurIntensityInput.addEventListener('input', function () {
+        blurValueDisplay.textContent = `${this.value}px`;
+    });
+
+    // Apply blur effect to the selected area
+    applyBlurButton.addEventListener('click', function () {
+        const boxRect = blurBox.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        const x = boxRect.left - canvasRect.left;
+        const y = boxRect.top - canvasRect.top;
+        const width = boxRect.width;
+        const height = boxRect.height;
+
+        // Apply blur effect to the selected area
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(x, y, width, height);
+        ctx.clip();
+        ctx.filter = `blur(${blurIntensityInput.value}px)`;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.restore();
+
+        // Download the blurred image
+        const imageData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imageData;
+        a.download = 'blurred_image.png';
+        a.click();
+    });
+</script>
+{% endblock %}

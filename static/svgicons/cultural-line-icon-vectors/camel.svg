@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>camel</title>
+
+<g id="camel">
+
+<circle cx="14.207" cy="41.989" r="1.069"/>
+
+<line x1="7.951" y1="43" x2="5.003" y2="45.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="7.951" y1="45.948" x2="5.003" y2="43" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28.412,41h4.915c5.052,0,9.727-.876,13.371-2.944" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M51.322,34a15.362,15.362,0,0,0,2.746-7.192c-.364-.77-1.55-1.433-3.068-1.989v-.545A7.291,7.291,0,0,0,44.148,17a6.945,6.945,0,0,0-4.8,1.78,2.069,2.069,0,0,1-2.742-.048,7.173,7.173,0,0,0-8.145-.858A6.788,6.788,0,0,0,25,24.3a2.669,2.669,0,0,1-2.627,2.735,3.454,3.454,0,0,1-.7-.076A6.783,6.783,0,0,1,16.328,20c.094-2.447.314-5.358.265-7.923a5.156,5.156,0,0,0,1.242-4.758A5.014,5.014,0,0,0,17.1,5.68,2.072,2.072,0,1,0,14.235,3.6a4.967,4.967,0,0,0-.487-.126A5.156,5.156,0,0,0,8.674,5.46H5.427A3.588,3.588,0,0,0,1.78,8.73a3.456,3.456,0,0,0,3.451,3.642H9.3a5.305,5.305,0,0,0,1.2.811v7.459a17.032,17.032,0,0,0,2.65,9.232C14,31.2,14.6,31.606,17,32.785v1.3a6.92,6.92,0,0,0,6.5,6.907" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="13" cy="8" r="1"/>
+
+<path d="M11,62a5,5,0,0,1,5-5H53a5,5,0,0,1,5,5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M24,40V54H22a3,3,0,0,0-3,3h9V34" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M47,32V54H45a3,3,0,0,0-3,3h9V30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M54,27V39a2,2,0,0,0,2,2h2a2,2,0,0,0,2-2h0a2,2,0,0,1,2-2h1" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M28,34a4,4,0,0,0,4-4" style="fill:#bf7e68;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="52" cy="10" r="4" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="52" y1="3" x2="52" y2="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="45" y1="10" x2="44" y2="10" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="60" y1="10" x2="59" y2="10" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="56.95" y1="5.05" x2="57.657" y2="4.343" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="47.05" y1="5.05" x2="46.343" y2="4.343" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="57.657" y1="15.657" x2="56.95" y2="14.95" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

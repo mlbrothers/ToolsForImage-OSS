@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>peru</title>
+
+<g id="peru">
+
+<circle cx="25.5" cy="29.5" r="22.5" style="fill:#edebdc"/>
+
+<path d="M46.625,31.416,44.07,33.992l-3.26-4.93v3.286l-3.26-3.286-1.63,3.286-1.726-3.48-1.534,3.48-.764-1.54a.867.867,0,0,0-1.585.066L27.77,37.279l-1.63-1.644-1.63,1.644-1.8-2.719a1.477,1.477,0,0,0-2.577.2L9.84,57H60.37Z" style="fill:#c1dbdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="36.55" y1="40.47" x2="32.66" y2="32.32" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37.55,29.06l3.26,3.26L42,29l2.07,4.95L46.625,31.4l-5.9-10.885a1.6,1.6,0,0,0-2.87.112l-3.665,8.246L35.92,32.32Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22.567,52.555A6.893,6.893,0,0,0,9.315,48.907a3.718,3.718,0,0,0-1.044-.165,3.763,3.763,0,0,0-3.763,3.763c0,.076.018.148.023.223a3.753,3.753,0,0,0,1.232,7.3h16.3a3.754,3.754,0,0,0,.5-7.475Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M55.716,41.114c-.02,0-.038.006-.058.006a4.065,4.065,0,0,0-8.061.193A3.428,3.428,0,0,0,48.724,48h6.992a3.443,3.443,0,1,0,0-6.886Z" style="fill:#ffffff;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="39" y1="20" x2="39" y2="10" style="fill:none;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="39" y="11" width="7" height="3" style="fill:#f53e28;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,119 @@
+{% extends "hi/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="ToolsForImage के लिए सहायता और समर्थन प्राप्त करें - छवि संपीड़न, आकार बदलना, फसलना, प्रारूप रूपांतरण, घुमाव, वॉटरमार्किंग, चेहरे को धुंधला करने, और अधिक के लिए आपका समग्र संसाधन। सामान्य प्रश्नों के उत्तर खोजें और हमारे छवि संवर्धन उपकरणों का प्रभावी ढंग से उपयोग करना सीखें।">
+{% endblock %}
+
+{% block title %}सहायता | ToolsForImage | चेहरों को ब्लर करें, इमेज कन्वर्जन, एडिटिंग, रीसाइज़िंग, बैकग्राउंड हटाने, बैकग्राउंड ब्लर करने और अन्य के लिए व्यापक मुफ्त ऑनलाइन टूल{% endblock %}
+
+{% block content %}
+<h1>सहायता केंद्र</h1>
+
+<div class="help-section">
+    <h2>शुरू करना</h2>
+    <p>ToolsForImage में आपका स्वागत है! यहां यह बताया गया है कि कैसे शुरू करें:</p>
+    <ol>
+        <li>1 - हमारे नेविगेशन मेनू से आपको आवश्यकता वाला उपकरण चुनें।</li>
+        <li>2 - दिए गए इंटरफ़ेस का उपयोग करके अपनी छवि अपलोड करें।</li>
+        <li>3 - आवश्यकतानुसार सेटिंग्स समायोजित करें।</li>
+        <li>4 - अपनी छवि को संसाधित करें और परिणाम डाउनलोड करें।</li>
+    </ol>
+</div>
+
+<div class="help-section">
+    <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
+    <p>अक्सर पूछे जाने वाले प्रश्नों की व्यापक सूची के लिए, कृपया हमारी <a href="/{{ g.lang }}/faq">FAQ पृष्ठ</a> पर जाएँ।</p>
+</div>
+
+<div class="help-section">
+    <h2>उपकरण-विशिष्ट सहायता</h2>
+    <ul>
+        <li><a href="/{{ g.lang }}/image-compression">छवि संपीड़न</a> - गुणवत्ता बनाए रखते हुए फ़ाइल का आकार कम करें</li>
+        <li><a href="/{{ g.lang }}/image-resize">छवि आकार बदलना</a> - छवि के आयाम बदलें</li>
+        <li><a href="/{{ g.lang }}/convert-image-format">प्रारूप रूपांतरण</a> - विभिन्न छवि प्रारूपों के बीच रूपांतरण करें</li>
+        <li><a href="/{{ g.lang }}/image-rotate">छवि घुमाना</a> - अपनी छवियों को घुमाएँ या पलटें</li>
+        <li><a href="/{{ g.lang }}/image-watermarking">वॉटरमार्किंग</a> - पाठ या छवि वॉटरमार्क जोड़ें</li>
+        <li><a href="/{{ g.lang }}/image-effects">छवि प्रभाव</a> - विभिन्न फ़िल्टर और प्रभाव लागू करें</li>
+        <li><a href="/{{ g.lang }}/image-crop">छवि फसलना</a> - अपनी छवि के कुछ हिस्सों को काटें</li>
+        <li><a href="/{{ g.lang }}/blur-face">चेहरे को धुंधला करना</a> - छवियों में चेहरों का स्वचालित रूप से पता लगाएँ और धुंधला करें</li>
+        <li class="all-tools-li"><a href="/{{ g.lang }}/tools">सभी उपकरण</a></li>
+    </ul>
+</div>
+
+<div class="help-section">
+    <h2>सहायता से संपर्क करें</h2>
+    <p>यदि आपको आगे की सहायता की आवश्यकता है, तो कृपया हमारी सहायता टीम से संपर्क करने में संकोच न करें <a href="mailto:burstneuron1729@gmail.com">burstneuron1729@gmail.com</a> पर।</p>
+</div>
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .help-section {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--box-color); /* Matching the theme */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        max-width: 1200px; /* Ensure the content stays within a manageable width */
+        margin: 0 auto; /* Center align the content */
+        border: var(--background-color) 3px solid; /* Use border similar to tools list */
+        font-weight: 400; /* Set strong font-weight for headings and text */
+        transition: background-color 0.3s; /* Add a smooth transition */
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .help-section a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .help-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section ol {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-section a:hover {
+        color: var(--box-hover-text-color);
+    }
+
+    .all-tools-li {
+        margin-top: 14px;
+        display: inline-block; /* Makes it inline and allows padding */
+        padding: 10px 20px; /* Add padding for button-like appearance */
+        background-color: var(--box-color); /* Background color */
+        color: black; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+        border: 3px solid var(--background-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .all-tools-li:hover {
+        border: 3px solid var(--link-hover-color);
+    }
+
+    .all-tools-li a:hover {
+        color: black
+    }
+
+    
+</style>
+{% endblock %}

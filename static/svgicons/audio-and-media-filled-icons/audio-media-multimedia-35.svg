@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<polygon fill="none" points="   438.758,324.407 370.758,301.907 370.758,267.907 438.758,239.907  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<rect fill="none" height="143" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="239" x="131.758" y="210.657"/>
+
+<polygon fill="none" points="   306.758,210.657 98.737,210.657 98.737,175.527 254.777,175.527  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="176.425" x2="226.425" y1="324.407" y2="324.407"/>
+
+<rect fill="none" height="69.5" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="25.5" x="73.242" y="158.343"/>
+
+<polygon fill="#D9DCE1" points="   438.758,324.407 370.758,301.907 370.758,267.907 438.758,239.907  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<rect fill="#65A0D6" height="143" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="239" x="131.758" y="210.657"/>
+
+<polygon fill="#3C74BA" points="   306.758,210.657 98.737,210.657 98.737,175.527 254.777,175.527  " stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20"/>
+
+<line fill="none" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" x1="176.425" x2="226.425" y1="324.407" y2="324.407"/>
+
+<rect fill="#D9DCE1" height="69.5" stroke="#3B3A3E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" width="25.5" x="73.242" y="158.343"/>
+
+</g>
+
+</svg>

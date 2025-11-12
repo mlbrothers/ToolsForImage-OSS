@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#849eb4;}.cls-2{fill:#b0d3f0;}.cls-3{fill:#ccc;}.cls-4{fill:#f2f2f2;}.cls-5{fill:#98856e;}.cls-6{fill:#cbb292;}.cls-7{fill:#5f443e;}.cls-8{fill:#7f5b53;}.cls-9{fill:#f0c419;}.cls-10{fill:#f3d047;}.cls-11{fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 23" id="Layer_23">
+
+<rect class="cls-1" height="12" width="12" x="6" y="22"/>
+
+<rect class="cls-2" height="12" width="9" x="6" y="22"/>
+
+<rect class="cls-1" height="12" width="12" x="46" y="22"/>
+
+<rect class="cls-2" height="12" width="9" x="46" y="22"/>
+
+<rect class="cls-3" height="4" width="4" x="50" y="26"/>
+
+<rect class="cls-4" height="4" width="2" x="50" y="26"/>
+
+<rect class="cls-3" height="4" width="4" x="10" y="26"/>
+
+<rect class="cls-4" height="4" width="2" x="10" y="26"/>
+
+<rect class="cls-1" height="20" width="14" x="46" y="38"/>
+
+<rect class="cls-2" height="20" width="11" x="46" y="38"/>
+
+<rect class="cls-1" height="20" width="14" x="4" y="38"/>
+
+<rect class="cls-2" height="20" width="11" x="4" y="38"/>
+
+<rect class="cls-3" height="6" width="6" x="8" y="42"/>
+
+<rect class="cls-4" height="6" width="3" x="8" y="42"/>
+
+<rect class="cls-3" height="6" width="6" x="8" y="48"/>
+
+<rect class="cls-4" height="6" width="3" x="8" y="48"/>
+
+<rect class="cls-3" height="6" width="6" x="50" y="48"/>
+
+<rect class="cls-4" height="6" width="3" x="50" y="48"/>
+
+<rect class="cls-3" height="6" width="6" x="50" y="42"/>
+
+<rect class="cls-4" height="6" width="3" x="50" y="42"/>
+
+<rect class="cls-1" height="20" width="28" x="18" y="38"/>
+
+<rect class="cls-2" height="20" width="25" x="18" y="38"/>
+
+<rect class="cls-5" height="16" width="8" x="24" y="42"/>
+
+<rect class="cls-6" height="16" width="5" x="24" y="42"/>
+
+<rect class="cls-5" height="16" width="8" x="32" y="42"/>
+
+<rect class="cls-6" height="16" width="5" x="32" y="42"/>
+
+<rect class="cls-1" height="22" width="28" x="18" y="12"/>
+
+<rect class="cls-2" height="22" width="25" x="18" y="12"/>
+
+<rect class="cls-3" height="10" width="20" x="22" y="16"/>
+
+<rect class="cls-4" height="10" width="17" x="22" y="16"/>
+
+<rect class="cls-7" height="4" width="36" x="14" y="8"/>
+
+<rect class="cls-8" height="4" width="33" x="14" y="8"/>
+
+<path class="cls-9" d="M38,4h0a14.5,14.5,0,0,1-4.24,10.24L32,16l-1.76-1.76A14.5,14.5,0,0,1,26,4h0l6-2Z"/>
+
+<path class="cls-10" d="M30.5,2.5,26,4a14.5,14.5,0,0,0,4.24,10.24l.26.26.26-.26A14.5,14.5,0,0,0,35,4Z"/>
+
+<rect class="cls-7" height="4" width="14" x="4" y="18"/>
+
+<rect class="cls-8" height="4" width="11" x="4" y="18"/>
+
+<rect class="cls-7" height="4" width="14" x="46" y="18"/>
+
+<rect class="cls-8" height="4" width="11" x="46" y="18"/>
+
+<rect class="cls-7" height="4" width="60" x="2" y="58"/>
+
+<rect class="cls-8" height="4" width="56" x="2" y="58"/>
+
+<rect class="cls-7" height="4" width="60" x="2" y="34"/>
+
+<rect class="cls-8" height="4" width="56" x="2" y="34"/>
+
+<rect class="cls-11" height="4" width="60" x="2" y="58"/>
+
+<polyline class="cls-11" points="4 58 4 38 60 38 60 58"/>
+
+<line class="cls-11" x1="18" x2="18" y1="38" y2="58"/>
+
+<line class="cls-11" x1="46" x2="46" y1="38" y2="58"/>
+
+<polyline class="cls-11" points="24 58 24 42 40 42 40 58"/>
+
+<line class="cls-11" x1="32" x2="32" y1="42" y2="58"/>
+
+<rect class="cls-11" height="4" width="60" x="2" y="34"/>
+
+<polyline class="cls-11" points="46 12 46 34 18 34 18 12"/>
+
+<polyline class="cls-11" points="18 22 6 22 6 34"/>
+
+<rect class="cls-11" height="4" width="14" x="4" y="18"/>
+
+<polyline class="cls-11" points="46 22 58 22 58 34"/>
+
+<rect class="cls-11" height="4" transform="translate(106 40) rotate(180)" width="14" x="46" y="18"/>
+
+<rect class="cls-11" height="4" width="4" x="10" y="26"/>
+
+<rect class="cls-11" height="4" width="4" x="50" y="26"/>
+
+<rect class="cls-11" height="12" width="6" x="8" y="42"/>
+
+<rect class="cls-11" height="12" width="6" x="50" y="42"/>
+
+<line class="cls-11" x1="8" x2="14" y1="48" y2="48"/>
+
+<line class="cls-11" x1="50" x2="56" y1="48" y2="48"/>
+
+<polyline class="cls-11" points="36 16 42 16 42 26 22 26 22 16 28 16"/>
+
+<line class="cls-11" x1="27" x2="31" y1="23" y2="19"/>
+
+<line class="cls-11" x1="33" x2="37" y1="23" y2="19"/>
+
+<polyline class="cls-11" points="28.63 12 14 12 14 8 26.57 8"/>
+
+<polyline class="cls-11" points="37.44 8 50 8 50 12 35.63 12"/>
+
+<path class="cls-11" d="M38,4h0a14.5,14.5,0,0,1-4.24,10.24L32,16l-1.76-1.76A14.5,14.5,0,0,1,26,4h0l6-2Z"/>
+
+</g>
+
+</svg>

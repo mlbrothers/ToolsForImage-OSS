@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" data-name="Icon Set - Black" id="Icon_Set_-_Black" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1,.cls-2{fill:#ccc;}.cls-1,.cls-2,.cls-3{stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}.cls-1,.cls-3{stroke-width:8px;}.cls-2{stroke-width:8.19px;}.cls-3{fill:none;}</style>
+
+</defs>
+
+<g data-name="Right Arrow" id="Right_Arrow">
+
+<g data-name="Right Arrow" id="Right_Arrow-2">
+
+<rect class="cls-1" height="48" rx="24" transform="translate(64 64) rotate(180)" width="48" x="8" y="8"/>
+
+</g>
+
+<polyline class="cls-2" points="31.24 19.98 43.81 31.38 31.24 44.04"/>
+
+<line class="cls-3" x1="20" x2="42" y1="32" y2="32"/>
+
+</g>
+
+</svg>

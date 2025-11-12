@@ -1,0 +1,109 @@
+{% extends 'en/base.html' %}
+
+{% block title %}Blogs | ToolsForImage | Comprehensive Free Online Tools for Blur Faces, Image Conversion, Editing, Resizing, Remove Background, Blur background and More{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="Explore our blog for insights on using ToolsForImage's free tools like image conversion, resizing, cropping, compression, and background removal. Learn tips to maximize your image editing experience.">
+{% endblock %}
+
+{% block content %}
+
+
+<h1>Free Online Image Editing Tools: Guides, Tutorials, and Tips</h1>
+<p>Explore the latest trends, tips, and tutorials on using free online image editing tools for conversion, resizing, compression, and optimization.</p>
+
+<div class="blog-grid">
+    {% for blog in blogs %}
+    <div class="blog-post">
+        <img src="{{ url_for('static', filename=blog.image) }}" alt="{{ blog.title }}">
+        <h2>{{ blog.title }}</h2>
+        <p>{{ blog.description }}</p>
+        <div class="read-more-container">
+            <a href="{{ url_for('blog_post', blog_slug=blog.slug, lang=lang) }}" class="read-more">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+<style>
+    main p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+        grid-template-columns: repeat(3, 1fr);
+        /* Responsive columns */
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .blog-post {
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* min-width: 400px; */
+        max-width: 450px;
+    }
+
+    .blog-post img {
+        height: 50px;
+        object-fit: cover;
+        /* Ensure the image covers the space nicely */
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .blog-post p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #666;
+    }
+
+    .blog-post:hover {
+        transform: translateY(-5px);
+        /* Smooth hover effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Enhanced shadow on hover */
+    }
+
+    .read-more {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+
+    .read-more-container {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .read-more:hover {
+        border: var(--box-hover-text-color) 3px solid;
+        transform: translateY(-3px);
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,193 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertir facilement des images PNG en JPG avec ToolsForImage. Convertisseur PNG en JPG en ligne gratuit.">
+{% endblock %}
+
+{% block title %}Convertir PNG en JPG en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion gratuit de PNG en JPG</h1>
+<p>Convertissez facilement vos images PNG au format JPG. Téléchargez une image PNG et nous la convertirons en JPG pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/png" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la conversion de PNG en JPG ?</h2>
+        <p>La conversion de PNG en JPG est le processus de changement de fichiers image du format PNG au format JPG (ou JPEG). Le JPG est un format d'image populaire qui utilise la compression pour réduire la taille des fichiers tout en maintenant une bonne qualité d'image. Cette conversion est utile lorsque vous souhaitez des fichiers plus petits pour un partage plus facile sur le web ou les réseaux sociaux.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi convertir PNG en JPG ?</h2>
+        <p>Il y a de nombreuses raisons de convertir des images PNG en JPG :</p>
+        <ul>
+            <li><strong>Taille de fichier réduite :</strong> Les fichiers JPG sont généralement plus petits que les fichiers PNG, ce qui les rend plus faciles à télécharger et à partager.</li>
+            <li><strong>Optimisation web :</strong> Le JPG est souvent le format préféré pour les images sur les sites web en raison de son équilibre entre qualité et taille de fichier, ce qui améliore les vitesses de chargement.</li>
+            <li><strong>Compatibilité plus large :</strong> Les fichiers JPG sont compatibles avec la plupart des appareils et logiciels, garantissant une visualisation et un partage faciles.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre convertisseur PNG en JPG</h2>
+        <p>Utiliser notre outil de conversion de PNG en JPG est simple et rapide. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger un fichier PNG" pour sélectionner l'image PNG que vous souhaitez convertir.</li>
+            <li>Une fois votre image téléchargée, notre outil commencera automatiquement à la convertir en format JPG.</li>
+            <li>Une fois la conversion terminée, cliquez sur "Télécharger JPG" pour enregistrer votre nouvelle image sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge divers fichiers PNG, garantissant une expérience de conversion fluide et efficace pour tous les utilisateurs.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages d'utiliser notre convertisseur PNG en JPG</h2>
+        <p>Voici quelques avantages de notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et facile :</strong> Convertissez vos images PNG en JPG rapidement en quelques clics.</li>
+            <li><strong>Pas de perte de qualité :</strong> Profitez de résultats de haute qualité avec une perte minimale lors du processus de conversion.</li>
+            <li><strong>Gratuit et accessible :</strong> Utilisez notre outil en ligne gratuitement, sans téléchargement ni installation nécessaires.</li>
+            <li><strong>Interface conviviale :</strong> Notre outil est conçu pour être intuitif et facile à naviguer pour tout le monde.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations courantes de la conversion PNG en JPG</h2>
+        <p>Voici quelques situations courantes où la conversion de PNG en JPG peut être utile :</p>
+        <ul>
+            <li><strong>Conception web :</strong> Utilisez des images JPG pour les sites web afin d'optimiser les temps de chargement et d'améliorer l'expérience utilisateur.</li>
+            <li><strong>Réseaux sociaux :</strong> Partagez des images JPG plus petites sur les plateformes de médias sociaux pour des téléchargements plus rapides et un meilleur engagement.</li>
+            <li><strong>Photographie :</strong> Convertissez des images PNG en JPG pour un stockage et un partage plus faciles tout en maintenant une bonne qualité.</li>
+            <li><strong>Pièces jointes par e-mail :</strong> Envoyez des images JPG en tant que pièces jointes par e-mail, car elles ont généralement des tailles de fichier plus petites que les PNG.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la conversion de PNG en JPG peut aider</h2>
+        <p>Convertir vos images PNG en JPG peut améliorer leur utilité et leur performance. Voici comment :</p>
+        <ul>
+            <li><strong>Taille de fichier optimisée :</strong> Les images JPG sont généralement plus petites, ce qui les rend plus rapides à télécharger et à télécharger.</li>
+            <li><strong>Partage amélioré :</strong> Le format JPG est idéal pour partager des images sur le web, garantissant la compatibilité avec la plupart des plateformes.</li>
+            <li><strong>Édition facile :</strong> Les images JPG peuvent être facilement éditées dans divers logiciels, offrant une flexibilité pour vos projets.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

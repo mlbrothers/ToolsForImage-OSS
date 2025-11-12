@@ -1,0 +1,192 @@
+{% extends "es/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convierte fácilmente imágenes ICO a PNG con ToolsForImage. Conversor en línea gratuito, rápido y seguro de ICO a PNG para transformaciones de imágenes de alta calidad.">
+{% endblock %}
+
+{% block title %}Conversor en línea de ICO a PNG | ToolsForImage | Conversor de imágenes gratuito en línea{% endblock %}
+
+{% block content %}
+<h1>Conversor Gratuito en Línea de ICO a PNG</h1>
+<p>Convierte fácilmente tus imágenes de formato ICO a PNG. Sube una imagen ICO y la convertiremos a PNG por ti.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/ico" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Subir desde la Computadora</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Vista Previa de la Imagen" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>¿Qué es la Conversión de ICO a PNG?</h2>
+        <p>La conversión de ICO a PNG es el proceso de cambiar archivos de imagen de formato ICO a formato PNG. PNG (Portable Network Graphics) es un formato de imagen ampliamente utilizado, sin pérdida de calidad, que admite transparencia. Esta conversión es útil cuando necesitas usar imágenes de iconos en contextos donde se prefiere o requiere PNG.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>¿Por Qué Convertir ICO a PNG?</h2>
+        <p>Hay varias razones para convertir imágenes ICO a PNG:</p>
+        <ul>
+            <li><strong>Mayor Compatibilidad:</strong> PNG es más ampliamente compatible en diferentes plataformas y aplicaciones.</li>
+            <li><strong>Flexibilidad de Edición:</strong> Los archivos PNG son más fáciles de editar en la mayoría de los programas de edición de imágenes.</li>
+            <li><strong>Uso en la Web:</strong> PNG se usa comúnmente para gráficos web debido a su soporte para transparencia y una amplia gama de colores.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Usar Nuestro Conversor de ICO a PNG</h2>
+        <p>Usar nuestra herramienta de conversión de ICO a PNG es simple y rápido. Así es como funciona:</p>
+        <ul>
+            <li>Haz clic en el botón "Subir Archivo ICO" para seleccionar la imagen ICO que deseas convertir.</li>
+            <li>Una vez que tu imagen esté subida, nuestra herramienta comenzará automáticamente a convertirla a formato PNG.</li>
+            <li>Después de que la conversión esté completa, haz clic en "Descargar PNG" para guardar tu nuevo archivo de imagen en tu dispositivo.</li>
+        </ul>
+        <p>Nuestro conversor admite varios archivos ICO, asegurando una experiencia de conversión fluida y eficiente para todos los usuarios.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Beneficios de Usar Nuestro Conversor de ICO a PNG</h2>
+        <p>Aquí hay algunas ventajas de usar nuestra herramienta de conversión:</p>
+        <ul>
+            <li><strong>Rápido y Fácil:</strong> Convierte tus imágenes ICO a PNG rápidamente con solo unos clics.</li>
+            <li><strong>Alta Calidad:</strong> Mantén la calidad de la imagen durante el proceso de conversión.</li>
+            <li><strong>Gratuito y Accesible:</strong> Usa nuestra herramienta en línea de forma gratuita, sin necesidad de descargas o instalaciones.</li>
+            <li><strong>Interfaz Amigable:</strong> Nuestra herramienta está diseñada para ser intuitiva y fácil de navegar para todos.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Usos Comunes para la Conversión de ICO a PNG</h2>
+        <p>Aquí hay algunas situaciones comunes donde convertir ICO a PNG puede ser útil:</p>
+        <ul>
+            <li><strong>Desarrollo Web:</strong> Usa imágenes de iconos en proyectos web donde PNG es preferido.</li>
+            <li><strong>Diseño Gráfico:</strong> Incorpora imágenes de iconos en proyectos de diseño más grandes.</li>
+            <li><strong>Desarrollo de Aplicaciones:</strong> Usa imágenes de iconos en aplicaciones multiplataforma donde PNG es más adecuado.</li>
+            <li><strong>Creación de Documentos:</strong> Incluye imágenes de iconos en documentos o presentaciones.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Cómo Convertir ICO a PNG Puede Ayudar</h2>
+        <p>Convertir tus imágenes ICO a PNG puede mejorar su usabilidad en varios contextos. Aquí te explicamos cómo:</p>
+        <ul>
+            <li><strong>Compatibilidad Mejorada:</strong> PNG es ampliamente compatible en diferentes plataformas y software.</li>
+            <li><strong>Escalado Mejorado:</strong> Las imágenes PNG se pueden escalar más fácilmente sin pérdida de calidad.</li>
+            <li><strong>Soporte para Transparencia:</strong> PNG admite transparencia de canal alfa, lo que permite un uso flexible en varios diseños.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+{% endblock %}

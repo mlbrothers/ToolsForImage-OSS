@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 64 64" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g id="orgami"/>
+
+<g id="embroidery"/>
+
+<g id="craftsman"/>
+
+<g id="pottery"/>
+
+<g id="sculpt"/>
+
+<g id="yarn"/>
+
+<g id="scissors"/>
+
+<g id="sewing_machine"/>
+
+<g id="knitting"/>
+
+<g id="stationary"/>
+
+<g id="stapler">
+
+<path d="M60.5,17.9c0.3-0.2,0.5-0.5,0.5-0.9v-5c0-0.3-0.2-0.6-0.4-0.8c-0.3-0.2-0.6-0.2-0.9-0.1l-30,12C29.2,23.2,29,23.6,29,24v5   H4c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h3v4H4c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h56c0.6,0,1-0.4,1-1v-8c0-0.6-0.4-1-1-1H49v-2   c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v2H27v-4h21c0.6,0,1-0.4,1-1v-8c0-0.6-0.4-1-1-1h-3v-2L60.5,17.9z M31,24.7l28-11.2v3   l-15.5,9.1c-0.3,0.2-0.5,0.5-0.5,0.9V33H31V24.7z M59,51H5v-6h3h18h16h6h11V51z M43,42h4v1h-4V42z M9,43v-8h16v8H9z M47,31v6H27v-3   c0-0.6-0.4-1-1-1H8c-0.6,0-1,0.4-1,1v3H5v-6h24v3c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1v-3H47z"/>
+
+</g>
+
+<g id="compass"/>
+
+<g id="cutter"/>
+
+<g id="pin_tool"/>
+
+<g id="wood_chisel"/>
+
+<g id="adhesive_tape"/>
+
+<g id="sewing_clothes"/>
+
+<g id="anvil"/>
+
+<g id="glue_gun"/>
+
+<g id="roller_brush"/>
+
+</svg>

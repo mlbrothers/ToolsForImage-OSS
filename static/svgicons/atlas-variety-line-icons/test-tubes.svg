@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="test_tubes" data-name="test tubes">
+
+<line class="cls-1" x1="3.41" y1="1.5" x2="11.05" y2="1.5"/>
+
+<line class="cls-1" x1="12.95" y1="1.5" x2="20.59" y2="1.5"/>
+
+<path class="cls-1" d="M5.32,1.5H9.14a0,0,0,0,1,0,0V16.77a1.91,1.91,0,0,1-1.91,1.91h0a1.91,1.91,0,0,1-1.91-1.91V1.5A0,0,0,0,1,5.32,1.5Z"/>
+
+<line class="cls-1" x1="0.55" y1="22.5" x2="23.45" y2="22.5"/>
+
+<line class="cls-1" x1="0.55" y1="6.27" x2="23.45" y2="6.27"/>
+
+<path class="cls-1" d="M14.86,1.5h3.82a0,0,0,0,1,0,0V16.77a1.91,1.91,0,0,1-1.91,1.91h0a1.91,1.91,0,0,1-1.91-1.91V1.5a0,0,0,0,1,0,0Z"/>
+
+<line class="cls-1" x1="1.5" y1="6.27" x2="1.5" y2="22.5"/>
+
+<line class="cls-1" x1="22.5" y1="6.27" x2="22.5" y2="22.5"/>
+
+<line class="cls-1" x1="5.32" y1="10.09" x2="9.14" y2="10.09"/>
+
+<line class="cls-1" x1="14.86" y1="12" x2="18.68" y2="12"/>
+
+</g>
+
+</svg>

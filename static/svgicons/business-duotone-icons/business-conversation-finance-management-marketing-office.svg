@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:#dbe9fa;}.cls-2{fill:#52acf9;}.cls-3{fill:#d9dce1;}.cls-4{fill:#ffffff;}</style>
+
+</defs>
+
+<g id="conversation">
+
+<circle class="cls-1" cx="16" cy="16" r="16"/>
+
+<path class="cls-2" d="M17,2H2V13a2,2,0,0,0,1.11,1.79A2,2,0,0,0,5.2,14.6L7.33,13H17Z"/>
+
+<path class="cls-2" d="M15,17V28h9.67l2.13,1.6A2,2,0,0,0,30,28V17Z"/>
+
+<path class="cls-3" d="M7,9A2,2,0,1,1,9,7,2,2,0,0,1,7,9ZM7,7Z"/>
+
+<path class="cls-3" d="M12,9a2,2,0,1,1,2-2A2,2,0,0,1,12,9Zm0-2Z"/>
+
+<path class="cls-4" d="M25,24a2,2,0,1,1,2-2A2,2,0,0,1,25,24Zm0-2Z"/>
+
+<path class="cls-4" d="M20,24a2,2,0,1,1,2-2A2,2,0,0,1,20,24Zm0-2Z"/>
+
+<path d="M17,2H2V13a2,2,0,0,0,1.11,1.79A2,2,0,0,0,5.2,14.6L7.33,13H17Zm-2,9H6.67L4,13V4H15Zm0,6V28h9.67l2.13,1.6A2,2,0,0,0,30,28V17ZM28,28l-2.67-2H17V19H28Z"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 32 32" id="_x3C_Layer_x3E_" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#455A64;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]>
+</style>
+
+<g id="Tron_x2C__crypto">
+
+<g id="XMLID_128_">
+
+<circle class="st1" cx="16" cy="16" id="XMLID_138_" r="14.5"/>
+
+<line class="st1" id="XMLID_119_" x1="25.5" x2="17" y1="13.54" y2="14.8"/>
+
+<line class="st1" id="XMLID_118_" x1="8.5" x2="17" y1="7.87" y2="14.8"/>
+
+<polyline class="st1" id="XMLID_117_" points="15.43,26.13 17,14.8 22.16,10.26   "/>
+
+<polygon class="st1" id="XMLID_116_" points="8.5,7.87 15.43,26.13 25.5,13.54 22.16,10.26   "/>
+
+</g>
+
+</g>
+
+</svg>

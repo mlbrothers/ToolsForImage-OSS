@@ -1,0 +1,157 @@
+{% extends 'fr/base.html' %}
+
+{% block title %}Comment recadrer des images | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Découvrez comment recadrer des images en ligne gratuitement.">
+{% endblock %}
+
+{% block content %}
+<article class="blog-post">
+    <h1>Recadrer des Images</h1>
+    <p><em>Publié le : 23 octobre 2024</em></p>
+
+    <section>
+        <h2>Qu'est-ce que le recadrage d'image ?</h2>
+        <p><span class="bold-text">Le recadrage d'image</span> est le processus de suppression des zones extérieures indésirables d'une photographie ou d'une image. Cette technique aide à se concentrer sur le sujet principal, améliorant l'attrait visuel et la composition. <a class="bold-text" href="/{{ g.lang }}/image-crop">Recadrer une image</a> peut changer son rapport d'aspect, la rendant plus adaptée à diverses plateformes, que ce soit pour les réseaux sociaux, les sites web ou l'impression. En coupant l'excès de fond, le recadrage met en avant les détails importants, permettant au spectateur de s'engager plus efficacement avec le contenu.</p>
+    </section>
+
+    <section>
+        <h2>Pourquoi recadrer une image ?</h2>
+        <p>
+            <a class="bold-text" href="/{{ g.lang }}/image-crop">Recadrer une image</a> sert plusieurs objectifs. Tout d'abord, cela peut éliminer les distractions en supprimant les éléments inutiles qui détournent l'attention du sujet principal. Deuxièmement, cela vous permet d'ajuster la composition, rendant l'image plus équilibrée et visuellement attrayante. Enfin, le recadrage peut améliorer la narration en se concentrant sur des détails spécifiques, menant à un message plus percutant. Que ce soit pour un usage professionnel ou des projets personnels, le recadrage est un outil essentiel pour améliorer la qualité des images.
+        </p>
+    </section>
+
+    <section>
+        <h2>Quand recadrer une image ?</h2>
+        <p>
+            Le bon moment pour <a class="bold-text" href="/{{ g.lang }}/image-crop">recadrer une image</a> est souvent après l'avoir capturée. Si la photo contient des détails superflus ou si le sujet n'est pas bien encadré, le recadrage peut affiner le focus. Envisagez de recadrer lors de la préparation d'images pour les réseaux sociaux, où l'attention est limitée, ou lors de la création de matériel promotionnel, où des visuels clairs sont essentiels. De plus, <span class="bold-text">le recadrage</span> peut être bénéfique lors de l'édition, surtout si vous souhaitez changer l'orientation ou le rapport d'aspect de l'image pour l'adapter à un format spécifique.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conseils pour un recadrage d'image efficace</h2>
+        <p>
+            Pour <a class="bold-text" href="/{{ g.lang }}/image-crop">recadrer des images</a> efficacement, commencez par identifier le point focal. Visez à créer une composition claire et engageante en utilisant la règle des tiers : divisez l'image en une grille et positionnez le sujet le long de ces lignes. Maintenez le rapport d'aspect naturel de l'image si nécessaire pour éviter la distorsion. Expérimentez avec différents recadrages pour voir quelle version améliore le plus l'image. Enfin, évitez de recadrer trop étroitement, car cela peut entraîner une perte de contexte ou de détails importants.
+        </p>
+    </section>
+
+    <section>
+        <h2>Comment recadrer des images avec toolsforimage</h2>
+        <div class="container">
+            <div class="step">Étape 1 : Appuyez sur le bouton "Télécharger l'image" pour télécharger l'image que vous souhaitez recadrer et vous pourrez voir l'aperçu de l'image.</div>
+            <div class="arrow">↓</div>
+            <div class="step">Étape 2 : Sur l'aperçu de l'image, vous pouvez voir la boîte de sélection, utilisez cette boîte de sélection pour recadrer l'image. Ajustez la boîte de recadrage selon vos besoins.</div>
+            <div class="arrow">↓</div>
+            <div class="step">Étape 3 : Une fois que vous avez obtenu la zone de recadrage requise de l'image, appuyez sur "Recadrer l'image" et le téléchargement de l'image commencera automatiquement.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Avantages du recadrage d'image</h2>
+        <p> Les avantages du <a class="bold-text" href="/{{ g.lang }}/image-crop">recadrage d'image</a> sont significatifs. Cela améliore l'esthétique globale d'une image, la rendant plus attrayante et concentrée. Le recadrage peut également aider à atteindre un rapport d'aspect spécifique, améliorant l'adaptabilité de l'image à diverses plateformes. De plus, cela économise de l'espace de stockage en réduisant la taille des fichiers, ce qui est bénéfique pour une utilisation en ligne. Surtout, un recadrage efficace peut élever votre narration visuelle, aidant vos images à transmettre le message souhaité de manière plus puissante.
+        </p>
+    </section>
+
+    <a href="{{ url_for('blogs', lang='fr') }}" class="back-link">← Retour aux Blogs</a>
+</article>
+
+<style>
+    .bold-text {
+        font-weight: 900;
+        color: #000000;
+    }
+
+    .blog-post {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+
+    .back-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section a {
+        text-decoration: underline;
+        color: #344b53;
+        font-weight: 900;
+    }
+
+    section a:hover {
+        color: #287791;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .step {
+        background-color: #93b3be;
+        color: black;
+        border: 2px solid #546E7A;
+        padding: 15px 20px;
+        width: 500px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any padding */
+    }
+
+    .step+.arrow {
+        margin-top: -14px;
+    }
+
+    .arrow+.step {
+        margin-top: 0px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_acht{fill:#A3AEB5;}
+	.avocado_een{fill:#231F20;}
+	.avocado_zeven{fill:#788287;}
+	.avocado_zes{fill:#FFFAEE;}
+	.st0{fill:#AF9480;}
+	.st1{fill:#DBD2C1;}
+	.st2{fill:#CC4121;}
+	.st3{fill:#EAD13F;}
+	.st4{fill:#C3CC6A;}
+	.st5{fill:#D1712A;}
+	.st6{fill:#E0A838;}
+	.st7{fill:#716558;}
+	.st8{fill:#6F9B45;}
+	.st9{fill:#0E608E;}
+	.st10{fill:#E598A3;}
+	.st11{fill:#FFFAEE;}
+	.st12{fill:#3D3935;}
+	.st13{fill:#248EBC;}
+	.st14{fill:#BF63C1;}
+</style>
+<g>
+	<path class="avocado_zeven" d="M16,28.18L21.337,9.5h8.716L16,30.098V28.18z M11.268,9.5L16,2.86l4.743,6.64H11.268z"/>
+	<g>
+		<path class="avocado_acht" d="M25.5,3.561L21.257,9.5h0.08L16,28.18L10.663,9.5H1.946L1.609,9.007L6,2.86l4.743,6.64h10
+			L16.5,3.561V2.5h9V3.561z"/>
+	</g>
+	<path class="avocado_zes" d="M1.946,9.5h8.717L16,28.18v1.918L1.946,9.5z M6.5,3.561V2.5h9v1.061L11.268,9.5h-0.525
+		L6.5,3.561z M30.054,9.5l0.337-0.493L26,2.86L21.257,9.5H30.054z"/>
+	<path class="avocado_een" d="M26,2H6L1,9l15,22L31,9L26,2z M20.674,10L16,26.36L11.326,10H20.674z M12.229,9L16,3.72
+		L19.771,9H12.229z M15.619,28.666L2.892,10h7.394L15.619,28.666z M21.714,10h7.394L16.381,28.666L21.714,10z M29.771,9h-7.542
+		L26,3.72L29.771,9z M25.286,3L21,9l-4.286-6H25.286z M15.286,3L11,9L6.714,3H15.286z M9.771,9H2.229L6,3.72L9.771,9z"/>
+</g>
+</svg>

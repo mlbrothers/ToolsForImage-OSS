@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 300 300" id="fly3" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g>
+
+<polyline points="   126,60 97.584,57.315 78,40  " style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<polyline points="   130,85.936 104.9,84 83.686,105.711 62,112  " style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<polyline points="   182,60 210.415,57.315 230,40  " style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<polyline points="   178,85.936 203.1,84 224.314,105.711 246,112  " style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M162,40c0,0,8.264-8,24-8" style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M146,40c0,0-8.264-8-24-8" style="fill:#26BBEC;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<ellipse cx="122" cy="184" rx="28" ry="92" style="fill-rule:evenodd;clip-rule:evenodd;fill:#DDDDDD;stroke:#000000;stroke-width:7.7333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<ellipse cx="182" cy="184" rx="28" ry="92" style="fill-rule:evenodd;clip-rule:evenodd;fill:#DDDDDD;stroke:#000000;stroke-width:7.7333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M154,72c17.673,0,32-7.475,32-16.694S154,32,154,32s-32,14.086-32,23.306S136.327,72,154,72z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#85D839;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M154,196c15.464,0,28-41.909,28-64s-12.536-28-28-28s-28,5.909-28,28S138.536,196,154,196z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#85D839;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<path d="   M126,84.039C126,75.181,133.149,68,141.972,68h24.055C174.849,68,182,75.151,182,84.039v7.922c0,8.858-7.149,16.039-15.972,16.039   h-24.055C133.151,108,126,100.849,126,91.961V84.039z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#85D839;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+</g>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+<g/>
+
+</svg>

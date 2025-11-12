@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style>
+
+</defs>
+
+<title/>
+
+<g data-name="Layer 2" id="Layer_2">
+
+<g id="Interface-Light">
+
+<path class="cls-1" d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z" id="interface-light-rating-star"/>
+
+</g>
+
+</g>
+
+</svg>

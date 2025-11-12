@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="58" height="32" x="8" y="17" fill="#D8D8D8" rx="2" transform="rotate(90 37 33)"/>
+    <circle cx="37" cy="59" r="2" fill="#868686" transform="rotate(90 37 59)"/>
+    <rect width="49" height="28" x="12.5" y="17.5" fill="#325AA6" rx="1" transform="rotate(90 37 31.5)"/>
+    <rect width="38" height="29" x="13" y="18" fill="#22BA8E"/>
+    <path stroke="#80D25B" stroke-width="2" d="M13,25 L13,25 C16.8659932,25 20,21.8659932 20,18"/>
+    <path stroke="#80D25B" stroke-width="2" d="M13,47 L13,47 C16.8659932,47 20,43.8659932 20,40" transform="matrix(1 0 0 -1 0 87)"/>
+    <path fill="#80D25B" d="M51,23 C45.4771525,23 41,27.4771525 41,33 C41,38.5228475 45.4771525,43 51,43 L51,23 Z"/>
+  </g>
+</svg>

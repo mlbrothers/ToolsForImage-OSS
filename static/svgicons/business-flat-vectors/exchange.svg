@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="16" cy="16" r="15" fill="#FFAF40"/>
+    <text fill="#FFDD95" font-family="MarkerFelt-Thin, Marker Felt" font-size="18" font-weight="300">
+      <tspan x="11" y="23">$</tspan>
+    </text>
+    <circle cx="16" cy="16" r="10" stroke="#FFDD95" stroke-linecap="round" stroke-width="2"/>
+    <path stroke="#FFDD95" stroke-linecap="round" stroke-width="2" d="M16.0735619,3.37011964 L16.0735619,5.18098303 M24.1918925,6.32495033 L23.0278919,7.71215217 M28.5115659,13.8068443 L26.7282136,14.1212974 M27.0113591,22.3149402 L25.4431054,21.4095085 M20.3932353,27.8682054 L19.7738836,26.1665504 M11.7538884,27.8682054 L12.3732401,26.1665504 M5.13576461,22.3149402 L6.70401831,21.4095085 M3.63555775,13.8068443 L5.41891005,14.1212974 M7.95523124,6.32495033 L9.11923179,7.71215217"/>
+    <circle cx="48" cy="48" r="15" fill="#FFAF40"/>
+    <text fill="#FFDD95" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
+      <tspan x="42" y="54">€</tspan>
+    </text>
+    <circle cx="48" cy="48" r="10" stroke="#FFDD95" stroke-linecap="round" stroke-width="2"/>
+    <path stroke="#FFDD95" stroke-linecap="round" stroke-width="2" d="M48.0735619,35.3701196 L48.0735619,37.180983 M56.1918925,38.3249503 L55.0278919,39.7121522 M60.5115659,45.8068443 L58.7282136,46.1212974 M59.0113591,54.3149402 L57.4431054,53.4095085 M52.3932353,59.8682054 L51.7738836,58.1665504 M43.7538884,59.8682054 L44.3732401,58.1665504 M37.1357646,54.3149402 L38.7040183,53.4095085 M35.6355578,45.8068443 L37.4189101,46.1212974 M39.9552312,38.3249503 L41.1192318,39.7121522"/>
+    <path stroke="#4796E7" stroke-linecap="round" stroke-width="3" d="M8,32.5 C8,46.0309764 18.9690236,57 32.5,57 L32.5,57 M57,32.5 C57,18.9690236 46.0309764,8 32.5,8"/>
+    <polyline stroke="#4796E7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="36.347 14.143 32 8.337 37.612 4"/>
+    <polyline stroke="#4796E7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="31.347 61.143 27 55.337 32.612 51" transform="rotate(-180 29.806 56.071)"/>
+  </g>
+</svg>

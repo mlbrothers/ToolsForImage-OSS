@@ -1,0 +1,192 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert TIFF to WEBP images with ToolsForImage. Free, fast, and secure online TIFF to WEBP converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online TIFF to WEBP converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online TIFF to WEBP Converter</h1>
+<p>Easily convert your images from TIFF to WebP format. Upload a TIFF image and we'll convert it to WebP for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/TIFF" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is TIFF to WebP Conversion?</h2>
+        <p>TIFF to WebP conversion is the process of changing image files from TIFF (Tagged Image File Format) to WebP format. TIFF files are known for their high quality and are often used in professional settings like photography and printing. WebP, developed by Google, is a modern image format that provides superior compression, resulting in smaller file sizes while maintaining excellent image quality. Converting TIFF images to WebP allows you to enjoy reduced loading times and improved performance, especially on websites.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert TIFF to WebP?</h2>
+        <p>There are many advantages to converting TIFF images to WebP format:</p>
+        <ul>
+            <li><strong>Smaller File Sizes:</strong> WebP files are significantly smaller than TIFF files, making them ideal for web use and faster loading times.</li>
+            <li><strong>High-Quality Images:</strong> WebP maintains high visual quality even with compression, ensuring your images look stunning.</li>
+            <li><strong>Transparent Backgrounds:</strong> WebP supports transparency, making it suitable for logos and graphics that require a clear background.</li>
+            <li><strong>Wide Compatibility:</strong> WebP is supported by most modern browsers, ensuring your images are accessible to all users.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our TIFF to WebP Converter</h2>
+        <p>Using our TIFF to WebP conversion tool is simple and straightforward. Here’s how to get started:</p>
+        <ul>
+            <li>Click on the "Upload TIFF File" button to select the TIFF image you want to convert.</li>
+            <li>Once the upload is complete, the conversion process will begin automatically.</li>
+            <li>After the conversion is finished, click "Download WebP" to save your new WebP image to your device.</li>
+        </ul>
+        <p>Our tool supports various TIFF formats, making it easy for you to convert your images without hassle.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our TIFF to WebP Converter</h2>
+        <p>Here are some benefits of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Efficient:</strong> Convert your TIFF images to WebP in just a few clicks, saving you time.</li>
+            <li><strong>No Loss of Quality:</strong> Enjoy high-quality images without sacrificing clarity during conversion.</li>
+            <li><strong>Free and Online:</strong> Our tool is available online for free, with no downloads or installations needed.</li>
+            <li><strong>User-Friendly Interface:</strong> Designed for ease of use, our tool makes converting images a breeze.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for TIFF to WebP Conversion</h2>
+        <p>Converting TIFF to WebP is useful in various scenarios:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Optimize images for websites to improve loading speed and user experience.</li>
+            <li><strong>Digital Marketing:</strong> Use WebP images in online ads for better performance and reduced bandwidth usage.</li>
+            <li><strong>Graphic Design:</strong> Create visually appealing graphics with transparent backgrounds for web use.</li>
+            <li><strong>Personal Use:</strong> Save space on your devices by converting large TIFF files to efficient WebP images.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting TIFF to WebP Can Help</h2>
+        <p>Converting your TIFF images to WebP format can enhance usability and accessibility. Here’s how:</p>
+        <ul>
+            <li><strong>Improved Loading Times:</strong> Smaller WebP files lead to faster loading speeds on websites, enhancing the user experience.</li>
+            <li><strong>Better Image Quality:</strong> WebP’s compression algorithm ensures your images retain clarity and detail.</li>
+            <li><strong>Enhanced Compatibility:</strong> With broad support across modern browsers, your images will be accessible to all users.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'webp';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}

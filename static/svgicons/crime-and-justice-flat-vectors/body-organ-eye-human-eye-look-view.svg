@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+	.st0{fill:#B4E6DD;}
+	.st1{fill:#80D4C4;}
+	.st2{fill:#D2F0EA;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#FBD872;}
+	.st5{fill:#DB7767;}
+	.st6{fill:#F38E7A;}
+	.st7{fill:#F6AF62;}
+	.st8{fill:#32A48E;}
+	.st9{fill:#A38FD8;}
+	.st10{fill:#7C64BD;}
+	.st11{fill:#EAA157;}
+	.st12{fill:#9681CF;}
+	.st13{fill:#F9C46A;}
+	.st14{fill:#CE6B61;}
+</style>
+
+<g>
+
+<path class="st0" d="M53.62,29.35c-11.94-13.27-31.29-13.27-43.23,0L8,32l2.38,2.65c11.94,13.27,31.29,13.27,43.23,0L56,32   L53.62,29.35z"/>
+
+<path class="st1" d="M22.4,42.88c6.23,2.28,12.98,2.28,19.21,0V32H22.4V42.88z"/>
+
+<circle class="st3" cx="32" cy="32" r="9.6"/>
+
+<path class="st9" d="M35.2,30.93c-1.77,0-3.2-1.43-3.2-3.2c0-0.79,0.3-1.51,0.78-2.07c-0.26-0.03-0.51-0.07-0.78-0.07   c-3.54,0-6.4,2.87-6.4,6.4s2.87,6.4,6.4,6.4s6.4-2.87,6.4-6.4c0-0.89-0.2-1.73-0.53-2.51C37.3,30.36,36.32,30.93,35.2,30.93z    M28.1,35.9c-0.59,0-1.07-0.48-1.07-1.07s0.48-1.07,1.07-1.07c0.59,0,1.07,0.48,1.07,1.07S28.69,35.9,28.1,35.9z"/>
+
+</g>
+
+</svg>

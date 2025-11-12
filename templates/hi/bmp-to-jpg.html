@@ -1,0 +1,216 @@
+{% extends 'hi/base.html' %}
+
+{% block title %}BMP से JPG में ऑनलाइन कन्वर्ट करें ToolsForImage - मुफ्त ऑनलाइन इमेज संपादन उपकरण{% endblock %}
+
+{% block meta_description %}
+<meta name="description"
+    content="ऑनलाइन BMP से JPG कनवर्टर मुफ्त। ToolsForImage के साथ BMP को JPG छवियों में आसानी से कनवर्ट करें।">
+{% endblock %}
+
+{% block content %}
+
+<h1>मुफ्त BMP से JPG कन्वर्ज़न टूल</h1>
+<p>अपनी BMP छवियों को JPG फ़ॉर्मेट में आसानी से कन्वर्ट करें। एक BMP छवि अपलोड करें और हम इसे JPG में बदल देंगे।</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">कंप्यूटर से अपलोड करें</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="छवि पूर्वावलोकन" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">कन्वर्ट करें!</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>BMP से JPG कन्वर्ज़न क्या है?</h2>
+        <p>BMP से JPG कन्वर्ज़न का तात्पर्य BMP (Bitmap) प्रारूप से JPG (Joint Photographic Experts Group) प्रारूप में
+            छवि फ़ाइलों को बदलने की प्रक्रिया से है। BMP फ़ाइलें अपनी उच्च गुणवत्ता और विस्तार के लिए जानी जाती हैं,
+            जबकि JPG फ़ाइलें संकुचित होती हैं, जिससे इन्हें साझा करना और संग्रहित करना अधिक सुविधाजनक होता है। हमारा
+            उपकरण इस प्रक्रिया को सरल बनाता है, जिससे आप आसानी से और तेजी से BMP छवियों को JPG में कन्वर्ट कर सकते हैं।
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP को JPG में कन्वर्ट करने के कारण</h2>
+        <p>BMP छवियों को JPG में कन्वर्ट करने के कई महत्वपूर्ण कारण हैं:</p>
+        <ul>
+            <li><strong>छोटी फ़ाइल आकार:</strong> JPG फ़ाइलें BMP फ़ाइलों की तुलना में काफी छोटी होती हैं, जिसका अर्थ है
+                कि कम संग्रहण स्थान की आवश्यकता होती है और तेज़ अपलोड/डाउनलोड होते हैं।</li>
+            <li><strong>साझा करने में सुधार:</strong> JPG वेब पर सबसे अधिक उपयोग की जाने वाली छवि फ़ॉर्मेट में से एक है,
+                जिससे आपके छवियों को सोशल मीडिया और वेबसाइटों पर साझा करना आसान होता है।</li>
+            <li><strong>बेहतर संगतता:</strong> अधिकांश उपकरण और अनुप्रयोग JPG प्रारूप का समर्थन करते हैं, जिससे यह
+                सुनिश्चित होता है कि आपकी छवियों को कहीं भी देखा जा सकता है।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से JPG कन्वर्टर का उपयोग कैसे करें</h2>
+        <p>हमारे BMP से JPG कन्वर्टर का उपयोग करना सरल और सीधा है। बस इन चरणों का पालन करें:</p>
+        <ul>
+            <li>अपने BMP छवि को चुनने के लिए "BMP फ़ाइल अपलोड करें" बटन पर क्लिक करें।</li>
+            <li>अपलोड करने के बाद, हमारा उपकरण स्वचालित रूप से आपकी छवि को JPG प्रारूप में कन्वर्ट कर देगा।</li>
+            <li>जब कन्वर्ज़न पूरा हो जाए, तो "JPG डाउनलोड करें" पर क्लिक करें ताकि आपकी नई छवि आपके उपकरण में सहेजी जा
+                सके।</li>
+        </ul>
+        <p>हमारा कन्वर्टर विभिन्न BMP फ़ाइलों का समर्थन करता है, जिससे एक चिकनी और कुशल कन्वर्ज़न प्रक्रिया सुनिश्चित
+            होती है।</p>
+    </div>
+
+    <div class="info-section">
+        <h2>हमारे BMP से JPG कन्वर्टर का उपयोग करने के लाभ</h2>
+        <p>हमारा कन्वर्ज़न उपकरण कई लाभ प्रदान करता है:</p>
+        <ul>
+            <li><strong>तेज और कुशल:</strong> कुछ ही क्लिक में BMP छवियों को JPG में तेजी से कन्वर्ट करें।</li>
+            <li><strong>गुणवत्ता का कोई नुकसान नहीं:</strong> कन्वर्ज़न प्रक्रिया के दौरान छवि गुणवत्ता बनाए रखें।</li>
+            <li><strong>मुफ्त और ऑनलाइन:</strong> किसी सॉफ़्टवेयर को डाउनलोड करने की आवश्यकता के बिना, हमारे उपकरण का
+                उपयोग करें।</li>
+            <li><strong>उपयोग में सरल:</strong> सभी के लिए डिज़ाइन किया गया उपयोगकर्ता-अनुकूल इंटरफ़ेस, तकनीकी कौशल की
+                परवाह किए बिना।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP से JPG कन्वर्ज़न के सामान्य उपयोग</h2>
+        <p>BMP को JPG में कन्वर्ट करना विभिन्न परिस्थितियों में लाभकारी हो सकता है:</p>
+        <ul>
+            <li><strong>वेब उपयोग:</strong> वेबसाइटों और ब्लॉगों के लिए छवियों को अनुकूलित करें ताकि लोडिंग समय में
+                सुधार हो।</li>
+            <li><strong>सोशल मीडिया:</strong> इंस्टाग्राम और फेसबुक जैसे प्लेटफार्मों पर JPG साझा करें जहाँ JPG
+                प्राथमिकता दी जाती है।</li>
+            <li><strong>संग्रहण प्रबंधन:</strong> बड़े BMP फ़ाइलों को छोटे JPG फ़ाइलों में परिवर्तित करके अपने उपकरणों
+                पर स्थान बचाएँ।</li>
+            <li><strong>ग्राफिक डिज़ाइन:</strong> डिज़ाइन सॉफ़्टवेयर में JPG प्रारूप का समर्थन करने वाली छवियों का उपयोग
+                करें।</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>BMP को JPG में कन्वर्ट करने से आपकी छवियों में सुधार कैसे होता है</h2>
+        <p>अपनी BMP छवियों को JPG में बदलने से आपकी दृश्य सामग्रियों को प्रबंधित और प्रदर्शित करने के तरीके में
+            महत्वपूर्ण सुधार हो सकता है। यहां बताया गया है:</p>
+        <ul>
+            <li><strong>उपयोगिता में सुधार:</strong> JPG फ़ाइलें अधिक बहुपरकारी होती हैं और विभिन्न प्लेटफार्मों और
+                अनुप्रयोगों में उपयोग की जा सकती हैं।</li>
+            <li><strong>सौंदर्य में सुधार:</strong> JPG में कन्वर्ट करना कभी-कभी रंग गुणवत्ता और स्पष्टता को बढ़ा सकता
+                है, जिससे छवियां अधिक आकर्षक बनती हैं।</li>
+            <li><strong>व्यापक पहुँच:</strong> JPG छवियाँ सभी उपकरणों पर सुलभ होती हैं, यह सुनिश्चित करते हुए कि सभी लोग
+                आपकी सामग्री को बिना किसी समस्या के देख सकते हैं।</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'jpg';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

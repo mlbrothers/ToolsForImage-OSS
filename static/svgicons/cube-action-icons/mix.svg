@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_eenentwintig{fill:#C9483A;}
+	.cubies_tweeentwintig{fill:#D97360;}
+	.cubies_vijf{fill:#C9C6C0;}
+	.cubies_zes{fill:#EDEAE5;}
+	.st0{fill:#2EB39A;}
+	.st1{fill:#65C3AB;}
+	.st2{fill:#CCE2CD;}
+	.st3{fill:#98D3BC;}
+	.st4{fill:#A4C83F;}
+	.st5{fill:#BCD269;}
+	.st6{fill:#E8E8B5;}
+	.st7{fill:#D1DE8B;}
+	.st8{fill:#F2C99E;}
+	.st9{fill:#F9E0BD;}
+	.st10{fill:#4C4842;}
+	.st11{fill:#67625D;}
+	.st12{fill:#FFF2DF;}
+	.st13{fill:#837F79;}
+	.st14{fill:#EC9B5A;}
+	.st15{fill:#EDB57E;}
+	.st16{fill:#E3D4C0;}
+	.st17{fill:#E69D8A;}
+	.st18{fill:#AB9784;}
+	.st19{fill:#C6B5A2;}
+	.st20{fill:#F2C7B5;}
+	.st21{fill:#8E7866;}
+	.st22{fill:#725A48;}
+</style>
+<g>
+	<path class="cubies_vijf" d="M31,14h-8v-2h-2v2h-8c-0.552,0-1,0.448-1,1v10c0,1.657,1.343,3,3,3h14c1.657,0,3-1.343,3-3V15
+		C32,14.448,31.552,14,31,14z"/>
+	<path class="cubies_zes" d="M27,28H15c-1.657,0-3-1.343-3-3V15c0-0.552,0.448-1,1-1h16c0.552,0,1,0.448,1,1v10
+		C30,26.657,28.657,28,27,28z"/>
+	<path class="cubies_eenentwintig" d="M13,12h18c0.552,0,1-0.448,1-1V3c0-1.657-1.343-3-3-3H3C1.343,0,0,1.343,0,3v26
+		c0,1.657,1.343,3,3,3h26c1.657,0,3-1.343,3-3c0-0.552-0.448-1-1-1H15c-1.657,0-3-1.343-3-3V13C12,12.448,12.448,12,13,12z"/>
+	<path class="cubies_tweeentwintig" d="M13,12h16c0.552,0,1-0.448,1-1V3c0-1.657-1.343-3-3-3H3C1.343,0,0,1.343,0,3v26
+		c0,1.657,1.343,3,3,3h24c1.657,0,3-1.343,3-3c0-0.552-0.448-1-1-1H15c-1.657,0-3-1.343-3-3V13C12,12.448,12.448,12,13,12z"/>
+	<path class="cubies_vijf" d="M3,19c0-1.105,0.895-2,2-2h1c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2H5C3.895,21,3,20.105,3,19z
+		 M6,23H5c-1.105,0-2,0.895-2,2c0,1.105,0.895,2,2,2h1c1.105,0,2-0.895,2-2C8,23.895,7.105,23,6,23z"/>
+	<path class="cubies_zes" d="M7,19c0,1.105-0.895,2-2,2s-2-0.895-2-2s0.895-2,2-2S7,17.895,7,19z M5,23c-1.105,0-2,0.895-2,2
+		s0.895,2,2,2s2-0.895,2-2S6.105,23,5,23z"/>
+</g>
+</svg>

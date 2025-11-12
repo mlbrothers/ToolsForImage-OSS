@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.avocado_een{fill:#231F20;}
+	.avocado_dertien{fill:#8D3E93;}
+	.avocado_veertien{fill:#BF63C1;}
+	.st0{fill:#E0A838;}
+	.st1{fill:#EAD13F;}
+	.st2{fill:#788287;}
+	.st3{fill:#FFFAEE;}
+	.st4{fill:#DBD2C1;}
+	.st5{fill:#3D3935;}
+	.st6{fill:#6F9B45;}
+	.st7{fill:#CC4121;}
+	.st8{fill:#E598A3;}
+	.st9{fill:#D36781;}
+	.st10{fill:#A3AEB5;}
+	.st11{fill:#AF9480;}
+	.st12{fill:#716558;}
+	.st13{fill:#0E608E;}
+	.st14{fill:#248EBC;}
+	.st15{fill:#D1712A;}
+	.st16{fill:#C3CC6A;}
+</style>
+<g>
+	<rect x="10.5" y="2.5" class="avocado_veertien" width="11" height="20"/>
+	<g>
+		<g>
+			<path class="avocado_dertien" d="M18.5,12.5c0,3.939-1.258,6-2.5,6s-2.5-2.061-2.5-6s1.258-6,2.5-6S18.5,8.561,18.5,12.5z
+				 M21.5,24.5v-2h-11v2h0.402l4.375,7h1.445l4.375-7H21.5z M10.5,0.5v2h11v-2H10.5z"/>
+		</g>
+	</g>
+	<path class="avocado_een" d="M10,0v25h0.625L15,32h2l4.375-7H22V0H10z M16.446,31h-0.891l-3.75-6h8.391L16.446,31z M21,24H11
+		v-1h10V24z M21,22H11V3h10V22z M21,2H11V1h10V2z"/>
+</g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+
+<svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g id="_x37_19-_bluetooth__x2C__network__x2C__communication__x2C__security__x2C_">
+
+<g>
+
+<g id="XMLID_91_">
+
+<g>
+
+<polygon points="      371.364,371.275 256.449,486.139 256.449,256.475 256.505,256.475     " style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+<polygon points="      371.364,141.672 256.505,256.475 256.449,256.475 256.449,26.814     " style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"/>
+
+</g>
+
+<g>
+
+<line style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="256.449" x2="141.585" y1="256.475" y2="371.275"/>
+
+<line style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="371.364" x2="256.505" y1="141.672" y2="256.475"/>
+
+<polyline points="      371.364,371.275 256.505,256.475 256.449,256.475 141.585,141.672     " style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;"/>
+
+<polyline points="      371.364,141.672 256.449,26.814 256.449,256.475 256.449,486.139     " style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;"/>
+
+<line style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="371.364" x2="256.449" y1="371.275" y2="486.139"/>
+
+</g>
+
+</g>
+
+</g>
+
+</g>
+
+<g id="Layer_1"/>
+
+</svg>

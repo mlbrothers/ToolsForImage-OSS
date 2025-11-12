@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<g id="insurance">
+
+<path class="cls-1" d="M12,22.5h0A12.56,12.56,0,0,1,3.41,10.58V5.32L12,1.5l8.59,3.82v5.26A12.56,12.56,0,0,1,12,22.5Z"/>
+
+<line class="cls-1" x1="8.18" y1="12" x2="15.82" y2="12"/>
+
+<line class="cls-1" x1="12" y1="8.18" x2="12" y2="15.82"/>
+
+</g>
+
+</svg>

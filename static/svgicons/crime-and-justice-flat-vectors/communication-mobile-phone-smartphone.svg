@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 64 64" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+	.st0{fill:#B4E6DD;}
+	.st1{fill:#80D4C4;}
+	.st2{fill:#D2F0EA;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#FBD872;}
+	.st5{fill:#DB7767;}
+	.st6{fill:#F38E7A;}
+	.st7{fill:#F6AF62;}
+	.st8{fill:#32A48E;}
+	.st9{fill:#A38FD8;}
+	.st10{fill:#7C64BD;}
+	.st11{fill:#EAA157;}
+	.st12{fill:#9681CF;}
+	.st13{fill:#F9C46A;}
+	.st14{fill:#CE6B61;}
+</style>
+
+<g>
+
+<path class="st2" d="M35.57,8h-19.4c-2.21,0-4,1.79-4,4v40c0,2.21,1.79,4,4,4h19.4c2.21,0,4-1.79,4-4V12   C39.57,9.79,37.78,8,35.57,8z"/>
+
+<rect class="st9" height="34.58" width="24.34" x="13.7" y="14.71"/>
+
+<circle class="st3" cx="25.87" cy="52.64" r="1.68"/>
+
+<path class="st3" d="M30.95,10.88H20.78c-0.26,0-0.47,0.21-0.47,0.47c0,0.26,0.21,0.47,0.47,0.47h10.17c0.26,0,0.47-0.21,0.47-0.47   C31.43,11.1,31.22,10.88,30.95,10.88z"/>
+
+<rect class="st10" height="17.29" width="10.73" x="27.3" y="32"/>
+
+<circle class="st2" cx="39.57" cy="32" r="12.26"/>
+
+<path class="st6" d="M39.57,42.31c-5.69,0-10.31-4.63-10.31-10.31s4.63-10.31,10.31-10.31S49.88,26.31,49.88,32   S45.25,42.31,39.57,42.31z"/>
+
+<g>
+
+<polygon class="st3" points="37.3,37.06 33.65,33.41 35.59,31.46 37.3,33.17 43.54,26.94 45.49,28.88   "/>
+
+</g>
+
+</g>
+
+</svg>

@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+
+
+<svg width="800px" height="800px" viewBox="0 0 48 48" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #353535;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #353535;
+      }
+    </style>
+
+</defs>
+
+<title/>
+
+<g>
+
+<g>
+
+<path class="cls-1" d="M17.30639,11.25243a5.29412,5.29412,0,1,0-10.58824,0,5.23707,5.23707,0,0,0,.584,2.37007A5.27955,5.27955,0,0,0,8.8358,23.95831"/>
+
+<path class="cls-2" d="M3.58191,21.56266a7.00047,7.00047,0,1,0,11.32225,6.78321V28"/>
+
+<path class="cls-1" d="M8.43086,42.32855A6.21606,6.21606,0,0,1,5.108,36.82494a6.14985,6.14985,0,0,1,.68573-2.78316"/>
+
+<path class="cls-2" d="M19,16a5,5,0,0,1-5,5"/>
+
+<g>
+
+<polyline class="cls-2" points="19 16.01 30.5 16.01 32.521 13.99"/>
+
+<polyline class="cls-2" points="25.5 20.01 31.5 20.01 33.521 17.99 39 17.99"/>
+
+<polyline class="cls-2" points="24.917 31.99 30.5 31.99 32.521 34.01"/>
+
+<polyline class="cls-2" points="24.917 27.99 31.5 27.99 33.521 30.01 39 30.01"/>
+
+<path class="cls-2" d="M39,38.01018H31.52094l-1.52061-2.02061-4.95867.00011v6.05209a5,5,0,0,1-10,0"/>
+
+</g>
+
+<path class="cls-2" d="M17.04167,4.13392a4.05277,4.05277,0,0,1,8,.91833V12.01l4.45868.00013L31.521,9.98956H39"/>
+
+<line class="cls-2" x1="36" x2="25.04167" y1="24" y2="24"/>
+
+<circle class="cls-3" cx="11" cy="20" r="1"/>
+
+<circle class="cls-3" cx="11.79167" cy="43.5" r="1"/>
+
+</g>
+
+<circle class="cls-2" cx="41.47922" cy="10" r="2"/>
+
+<circle class="cls-2" cx="41.47922" cy="18" r="2"/>
+
+<circle class="cls-2" cx="41.47922" cy="30" r="2"/>
+
+<circle class="cls-2" cx="41.47922" cy="38" r="2"/>
+
+</g>
+
+</svg>

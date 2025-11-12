@@ -1,0 +1,116 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="在 ToolsForImage 探索我们的图像工具范围 - 压缩、调整大小、裁剪、格式转换、旋转、加水印、模糊人脸等。使用我们用户友好的工具轻松优化您的图像。">
+{% endblock %}
+
+{% block title %}| ToolsForImage | 免费综合在线工具，模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>我们的免费图像工具</h1>
+<ul class="tools-list">
+    <li><a href="/{{ g.lang }}/image-compression"><span class="tool-name">图像压缩</span> - 在不影响质量的情况下减少文件大小</a></li>
+    <li><a href="/{{ g.lang }}/image-resize"><span class="tool-name">图像调整大小</span> - 根据您的需要调整图像尺寸</a></li>
+    <li><a href="/{{ g.lang }}/convert-image-format"><span class="tool-name">图像格式转换</span> - 更改图像格式（JPEG、PNG、GIF 等）</a></li>
+    <li><a href="/{{ g.lang }}/image-rotate"><span class="tool-name">图像旋转</span> - 旋转图像以纠正方向</a></li>
+    <li><a href="/{{ g.lang }}/image-watermarking"><span class="tool-name">图像加水印</span> - 添加水印以保护您的图像</a></li>
+    <li><a href="/{{ g.lang }}/image-effects"><span class="tool-name">图像特效</span> - 应用创意效果和滤镜</a></li>
+    <li><a href="/{{ g.lang }}/image-crop"><span class="tool-name">图像裁剪</span> - 去除图像中的不需要部分</a></li>
+    <li><a href="/{{ g.lang }}/blur-face"><span class="tool-name">模糊人脸</span> - 自动模糊图像中的人脸以保护隐私</a></li>
+    <li><a href="/{{ g.lang }}/remove-background"><span class="tool-name">移除背景</span> - 使用 AI 自动移除图像背景</a></li>
+</ul>
+<h2 style="text-align: center;">免费图像格式转换工具</h2>
+<ul class="tools-list">
+    <li><a href="/{{ g.lang }}/convert/png-to-jpg"><span class="tool-name">PNG 转 JPG</span> - 将 PNG 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-jpeg"><span class="tool-name">PNG 转 JPEG</span> - 将 PNG 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-bmp"><span class="tool-name">PNG 转 BMP</span> - 将 PNG 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-tiff"><span class="tool-name">PNG 转 TIFF</span> - 将 PNG 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-webp"><span class="tool-name">PNG 转 WebP</span> - 将 PNG 图像转换为 WebP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/png-to-ico"><span class="tool-name">PNG 转 ICO</span> - 将 PNG 图像转换为 ICO 格式</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/jpg-to-png"><span class="tool-name">JPG 转 PNG</span> - 将 JPG 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-jpeg"><span class="tool-name">JPG 转 JPEG</span> - 将 JPG 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-bmp"><span class="tool-name">JPG 转 BMP</span> - 将 JPG 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-tiff"><span class="tool-name">JPG 转 TIFF</span> - 将 JPG 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-webp"><span class="tool-name">JPG 转 WebP</span> - 将 JPG 图像转换为 WebP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpg-to-ico"><span class="tool-name">JPG 转 ICO</span> - 将 JPG 图像转换为 ICO 格式</a></li>
+
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-png"><span class="tool-name">JPEG 转 PNG</span> - 将 JPEG 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-jpg"><span class="tool-name">JPEG 转 JPG</span> - 将 JPEG 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-bmp"><span class="tool-name">JPEG 转 BMP</span> - 将 JPEG 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-tiff"><span class="tool-name">JPEG 转 TIFF</span> - 将 JPEG 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-webp"><span class="tool-name">JPEG 转 WebP</span> - 将 JPEG 图像转换为 WebP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/jpeg-to-ico"><span class="tool-name">JPEG 转 ICO</span> - 将 JPEG 图像转换为 ICO 格式</a></li>
+    
+    <li><a href="/{{ g.lang }}/convert/bmp-to-png"><span class="tool-name">BMP 转 PNG</span> - 将 BMP 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-jpg"><span class="tool-name">BMP 转 JPG</span> - 将 BMP 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-jpeg"><span class="tool-name">BMP 转 JPEG</span> - 将 BMP 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-tiff"><span class="tool-name">BMP 转 TIFF</span> - 将 BMP 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-webp"><span class="tool-name">BMP 转 WebP</span> - 将 BMP 图像转换为 WebP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/bmp-to-ico"><span class="tool-name">BMP 转 ICO</span> - 将 BMP 图像转换为 ICO 格式</a></li>
+    
+    <li><a href="/{{ g.lang }}/convert/tiff-to-png"><span class="tool-name">TIFF 转 PNG</span> - 将 TIFF 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-jpg"><span class="tool-name">TIFF 转 JPG</span> - 将 TIFF 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-jpeg"><span class="tool-name">TIFF 转 JPEG</span> - 将 TIFF 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-bmp"><span class="tool-name">TIFF 转 BMP</span> - 将 TIFF 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-webp"><span class="tool-name">TIFF 转 WebP</span> - 将 TIFF 图像转换为 WebP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/tiff-to-ico"><span class="tool-name">TIFF 转 ICO</span> - 将 TIFF 图像转换为 ICO 格式</a></li>
+    
+    <li><a href="/{{ g.lang }}/convert/webp-to-png"><span class="tool-name">WebP 转 PNG</span> - 将 WebP 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/webp-to-jpg"><span class="tool-name">WebP 转 JPG</span> - 将 WebP 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/webp-to-jpeg"><span class="tool-name">WebP 转 JPEG</span> - 将 WebP 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/webp-to-bmp"><span class="tool-name">WebP 转 BMP</span> - 将 WebP 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/webp-to-tiff"><span class="tool-name">WebP 转 TIFF</span> - 将 WebP 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/webp-to-ico"><span class="tool-name">WebP 转 ICO</span> - 将 WebP 图像转换为 ICO 格式</a></li>
+    
+    <li><a href="/{{ g.lang }}/convert/ico-to-png"><span class="tool-name">ICO 转 PNG</span> - 将 ICO 图像转换为 PNG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/ico-to-jpg"><span class="tool-name">ICO 转 JPG</span> - 将 ICO 图像转换为 JPG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/ico-to-jpeg"><span class="tool-name">ICO 转 JPEG</span> - 将 ICO 图像转换为 JPEG 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/ico-to-bmp"><span class="tool-name">ICO 转 BMP</span> - 将 ICO 图像转换为 BMP 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/ico-to-tiff"><span class="tool-name">ICO 转 TIFF</span> - 将 ICO 图像转换为 TIFF 格式</a></li>
+    <li><a href="/{{ g.lang }}/convert/ico-to-webp"><span class="tool-name">ICO 转 WebP</span> - 将 ICO 图像转换为 WebP 格式</a></li>
+</ul>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        text-align: center;
+    }
+
+    .tool-name {
+        font-weight: bold; /* Make the tool name bold */
+    }
+
+    .tools-list {
+        list-style-type: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        border: var(--background-color) 3px solid;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: background-color 0.3s;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block; /* Makes the anchor fill the list item */
+        padding: 15px; /* Add padding for better click area */
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%; /* Ensures the anchor takes full height */
+        border-radius: 5px; /* Match the list item border radius */
+    }
+
+</style>
+{% endblock %}

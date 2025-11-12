@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>queen-side</title>
+
+<g id="queen-side">
+
+<circle cx="49" cy="40" r="2" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="59.129" y1="55" x2="56.181" y2="57.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="56.181" y1="55" x2="59.129" y2="57.948" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="48" cy="52" r="1"/>
+
+<path d="M26.437,5.855a35.628,35.628,0,0,0-3.754-.678" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34.069,8.756a29.148,29.148,0,0,0-2.637-1.273" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44,17.749a30.7,30.7,0,0,0-2.433-3.064" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M48.113,25.853a33.68,33.68,0,0,0-1.6-3.833" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M11.63,20.685,11,21,8.632,24.157A3.164,3.164,0,0,0,8,26.054V32L4.48,35.52a.281.281,0,0,0,.2.48H7v3l1,3-.553,1.106a2,2,0,0,0,0,1.788h0A2,2,0,0,0,9.236,46H15l1,3V59l-4,4" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="58" x2="29.429" y2="48" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M25.647,38.074a3,3,0,1,0,0,5.852,7,7,0,1,0,10.858-8.28,2.888,2.888,0,0,0,.37-2.458l.978-1.467" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M16.271,14H15a3.992,3.992,0,0,0-.986,7.863c0,.046-.014.09-.014.137a3,3,0,0,0,3,3c.05,0,.1-.012.146-.015A3.872,3.872,0,0,0,18.5,29.1a3.95,3.95,0,0,0,2.513,5.763c0,.046-.014.09-.014.137a3,3,0,0,0,4.456,2.624" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M30,30a5,5,0,0,0,0,10" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="21.25 11.5 23 1 18 3 18 10.425" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="26.384 14.136 32.365 5.69 26.994 5.31 23.5 12.524" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="38.736 24.421 49.992 20.668 46.031 17.02 36.524 21.74" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="42.615 31.438 52.993 29.999 49.767 25.687 41.166 28.131" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="34.873 16.836 38.372 13.264 40.515 15.363 42.614 13.22 40.471 11.121 43.27 8.263 41.127 6.164 38.328 9.022 36.184 6.922 34.085 9.066 36.229 11.165 32.73 14.737 34.873 16.836" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M38.923,33.615l-.769-1.845C33.54,20.7,18.449,14.93,18.3,14.873l-1.873-.7,1.4-3.745,1.872.7c.687.258,16.871,6.45,22.144,19.1l.769,1.847Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M22,22a3,3,0,0,0,3,3" style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="32" x2="10" y2="32" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="40" x2="9" y2="40" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="24" y1="57" x2="16" y2="59" style="fill:#ffded5;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="8" y1="29" x2="11" y2="30" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

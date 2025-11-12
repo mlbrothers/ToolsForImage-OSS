@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#45AAB8" d="M56,54H8V18h8c1.062,0,2.078-0.422,2.828-1.172L25.656,10h12.688l6.828,6.828
+		C45.922,17.578,46.938,18,48,18h8V54z"/>
+	<path fill="#394240" d="M60,10H49.656l-6.828-6.828C42.078,2.422,41.062,2,40,2H24c-1.062,0-2.078,0.422-2.828,1.172L14.344,10H4
+		c-2.211,0-4,1.789-4,4v44c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V14C64,11.789,62.211,10,60,10z M56,54H8V18h8
+		c1.062,0,2.078-0.422,2.828-1.172L25.656,10h12.688l6.828,6.828C45.922,17.578,46.938,18,48,18h8V54z"/>
+	<path fill="#394240" d="M32,18c-8.824,0-16,7.18-16,16c0,8.824,7.176,16,16,16s16-7.176,16-16C48,25.18,40.824,18,32,18z M32,42
+		c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S36.41,42,32,42z"/>
+	<circle fill="#F9EBB2" cx="32" cy="34" r="8"/>
+</g>
+</svg>

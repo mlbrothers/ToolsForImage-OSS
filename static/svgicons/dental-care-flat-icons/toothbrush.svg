@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#22BA8E" d="M0,51 C0,49.8954305 0.904756604,49 2.00134006,49 L42.3792329,49 L61.0277499,46.412416 C62.6692783,46.1846449 64,47.3496704 64,49.0092545 L64,49.9907455 C64,51.6527109 62.663269,53 60.9989882,53 L2.00329863,53 C0.896907345,53 0,52.1122704 0,51 L0,51 Z"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M3,47 L3,40.9172375"/>
+    <path stroke="#D8D8D8" stroke-linecap="square" stroke-width="2" d="M7,47 L7,40.9172375"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M11,47 L11,40.9172375"/>
+    <path stroke="#D8D8D8" stroke-linecap="square" stroke-width="2" d="M15,47 L15,40.9172375"/>
+    <path stroke="#979797" stroke-linecap="square" stroke-width="2" d="M19,47 L19,40.9172375"/>
+    <polygon fill="#5EA7FF" points="16 10 56 7 56 31 16 27"/>
+    <polygon fill="#B4DFFB" points="56 7 61 8 61 30 56 31"/>
+    <polygon fill="#D8D8D8" points="6 15 16 14 16 21.769 16 23 6 22"/>
+    <path stroke="#FFF" stroke-width="2" d="M59,10 C57.3431458,10 56,11.3431458 56,13 C56,14.6568542 57.3431458,16 59,16 L59,16" transform="matrix(-1 0 0 1 115 0)"/>
+    <path stroke="#FFF" stroke-width="2" d="M59,16 C57.3431458,16 56,17.3431458 56,19 C56,20.6568542 57.3431458,22 59,22 L59,22" transform="matrix(-1 0 0 1 115 0)"/>
+    <path stroke="#FFF" stroke-width="2" d="M59,22 C57.3431458,22 56,23.3431458 56,25 C56,26.6568542 57.3431458,28 59,28 L59,28" transform="matrix(-1 0 0 1 115 0)"/>
+  </g>
+</svg>

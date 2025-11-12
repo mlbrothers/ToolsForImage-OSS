@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.cubies_negentien{fill:#F2C99E;}
+	.cubies_twintig{fill:#F9E0BD;}
+	.cubies_zesentwintig{fill:#65C3AB;}
+	.cubies_zevenentwintig{fill:#98D3BC;}
+	.st0{fill:#C9483A;}
+	.st1{fill:#D97360;}
+	.st2{fill:#CCE2CD;}
+	.st3{fill:#4C4842;}
+	.st4{fill:#67625D;}
+	.st5{fill:#EDEAE5;}
+	.st6{fill:#C9C6C0;}
+	.st7{fill:#EDB57E;}
+	.st8{fill:#E69D8A;}
+	.st9{fill:#2EB39A;}
+	.st10{fill:#FFF2DF;}
+	.st11{fill:#BCD269;}
+	.st12{fill:#D1DE8B;}
+	.st13{fill:#EC9B5A;}
+	.st14{fill:#837F79;}
+	.st15{fill:#A5A29C;}
+	.st16{fill:#8E7866;}
+	.st17{fill:#725A48;}
+	.st18{fill:#F2C7B5;}
+	.st19{fill:#A4C83F;}
+	.st20{fill:#E3D4C0;}
+</style>
+<g>
+	<path class="cubies_zesentwintig" d="M29,32H3c-1.657,0-3-1.343-3-3V9c0-0.552,0.448-1,1-1h30c0.552,0,1,0.448,1,1v20
+		C32,30.657,30.657,32,29,32z"/>
+	<path class="cubies_zevenentwintig" d="M27,32H3c-1.657,0-3-1.343-3-3V9c0-0.552,0.448-1,1-1h28c0.552,0,1,0.448,1,1v20
+		C30,30.657,28.657,32,27,32z"/>
+	<path class="cubies_negentien" d="M23,8h-4V3c0-0.551-0.435-1-0.968-1h-3.905c-0.533,0-0.968,0.449-0.968,1v5h-4V3
+		c0-1.654,1.331-3,2.968-3h7.905C21.669,0,23,1.346,23,3V8z"/>
+	<path class="cubies_twintig" d="M21.032,8h-2V3c0-0.551-0.435-1-0.969-1h-5.904c-0.533,0-0.968,0.449-0.968,1v5h-2V3
+		c0-1.654,1.331-3,2.968-3h5.904c1.637,0,2.969,1.346,2.969,3V8z"/>
+</g>
+</svg>

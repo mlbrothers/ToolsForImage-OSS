@@ -1,0 +1,191 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images WebP en PNG avec ToolsForImage. Convertisseur WebP en PNG gratuit en ligne.">
+{% endblock %}
+
+{% block title %}Convertir WebP en PNG en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil de conversion WebP en PNG gratuit</h1>
+<p>Convertissez facilement vos images WebP au format PNG. Téléchargez une image WebP et nous la convertirons en PNG pour vous.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/webp" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que la conversion WebP en PNG ?</h2>
+        <p>La conversion WebP en PNG est le processus de transformation des images du format WebP en format PNG. Bien que WebP offre une excellente compression et qualité, le PNG est un format sans perte qui préserve la clarté de l'image et prend en charge la transparence. Cette conversion est essentielle pour les utilisateurs qui ont besoin d'images de haute qualité sans perte de détails ou pour des applications spécifiques qui nécessitent le format PNG.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Pourquoi convertir WebP en PNG ?</h2>
+        <p>Voici quelques raisons de convertir les images WebP en PNG :</p>
+        <ul>
+            <li><strong>Qualité sans perte :</strong> Le format PNG conserve tous les détails de l'image sans perte de compression, idéal pour les graphiques et images avec texte.</li>
+            <li><strong>Support de la transparence :</strong> PNG prend en charge les arrière-plans transparents, utile pour les logos, icônes et superpositions.</li>
+            <li><strong>Compatibilité élargie :</strong> Le format PNG est largement accepté dans diverses applications et plateformes, assurant l'accessibilité de vos images.</li>
+            <li><strong>Idéal pour les graphiques :</strong> Si vous travaillez avec des graphiques nécessitant une grande fidélité et clarté, le PNG est le choix préféré.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment utiliser notre convertisseur WebP en PNG</h2>
+        <p>Utiliser notre outil de conversion WebP en PNG est simple et rapide. Voici comment cela fonctionne :</p>
+        <ul>
+            <li>Cliquez sur le bouton "Télécharger le fichier WebP" pour sélectionner l'image WebP que vous souhaitez convertir.</li>
+            <li>Après le téléchargement, l'outil convertira automatiquement l'image au format PNG.</li>
+            <li>Une fois la conversion terminée, cliquez sur "Télécharger PNG" pour enregistrer votre nouvelle image PNG sur votre appareil.</li>
+        </ul>
+        <p>Notre convertisseur prend en charge divers formats d'images WebP, assurant un processus de conversion fluide et efficace.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages de l'utilisation de notre convertisseur WebP en PNG</h2>
+        <p>Voici quelques avantages de notre outil de conversion :</p>
+        <ul>
+            <li><strong>Rapide et facile :</strong> Convertissez vos images WebP en PNG en quelques clics seulement, vous faisant gagner du temps.</li>
+            <li><strong>Sans perte de qualité :</strong> Profitez d'images PNG de haute qualité sans perte de détails pendant la conversion.</li>
+            <li><strong>Gratuit et accessible :</strong> Notre outil est disponible en ligne gratuitement, sans besoin de téléchargement ou d'installation.</li>
+            <li><strong>Interface conviviale :</strong> Conçu pour être facile à utiliser, notre outil simplifie le processus de conversion pour tout le monde.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Utilisations courantes de la conversion WebP en PNG</h2>
+        <p>La conversion de WebP en PNG peut être bénéfique dans divers scénarios :</p>
+        <ul>
+            <li><strong>Conception Web :</strong> Utilisez des images PNG pour des projets de conception web nécessitant des arrière-plans transparents.</li>
+            <li><strong>Graphisme :</strong> Enregistrez des logos et des graphiques au format PNG pour garantir clarté et détails.</li>
+            <li><strong>Édition d'images :</strong> Utilisez des images PNG dans des logiciels d'édition qui prennent en charge les formats sans perte.</li>
+            <li><strong>Médias sociaux :</strong> Partagez des images de haute qualité sur les plateformes sociales sans perte de détail.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Comment la conversion de WebP en PNG peut vous aider</h2>
+        <p>La conversion d'images WebP au format PNG peut améliorer l'utilisabilité et le partage. Voici comment :</p>
+        <ul>
+            <li><strong>Amélioration de la qualité d'image :</strong> Les images PNG conservent tous les détails visuels, parfaites pour des projets de haute qualité.</li>
+            <li><strong>Flexibilité avec la transparence :</strong> La fonction de transparence du PNG permet des conceptions polyvalentes, y compris des superpositions et des filigranes.</li>
+            <li><strong>Partage facile :</strong> Les fichiers PNG sont compatibles avec la plupart des plateformes, assurant un partage et une accessibilité sans souci.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'png';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+{% endblock %}

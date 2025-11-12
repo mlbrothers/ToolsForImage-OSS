@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title>candle</title>
+
+<g id="candle">
+
+<path d="M40.528,56.583,42,61h0a28.465,28.465,0,0,1-18,0h0l1.447-4.342" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="52.5" cy="19.5" r="2.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="58.044" cy="32.014" r="1.069"/>
+
+<line x1="17" y1="16" x2="20" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="20" y1="16" x2="17" y2="19" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M36.407,35.1C43.607,35.541,49,37.344,49,39.5V42A16,16,0,0,1,33,58h0A16,16,0,0,1,17,42V39.5c0-2.17,5.459-3.981,12.724-4.406" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M17,39.5c0,2.485,7.163,4.5,16,4.5s16-2.015,16-4.5" style="fill:none;stroke:#000000;stroke-linejoin:round;stroke-width:2px"/>
+
+<polyline points="30 40 30 28 36 28 36 40" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M37,21c0-2.209-4-7-4-7s-4,4.791-4,7a4,4,0,0,0,8,0Z" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="33" y1="22" x2="33" y2="28" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="34.371" y1="7" x2="49" y2="39" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<line x1="17" y1="39" x2="31.629" y2="7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<circle cx="33" cy="4" r="3" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

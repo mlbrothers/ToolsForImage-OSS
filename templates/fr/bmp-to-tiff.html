@@ -1,0 +1,197 @@
+{% extends 'fr/base.html' %}
+
+{% block title %}Convertir BMP en TIFF en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Convertissez facilement des images BMP en TIFF avec ToolsForImage. Convertisseur en ligne gratuit de BMP à TIFF.">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Outil gratuit de conversion BMP en TIFF</h1>
+    <p>Convertissez facilement vos images BMP au format TIFF. Téléchargez une image BMP et nous la convertirons en TIFF pour vous.</p>
+    <form id="conversion-form" method="post" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image" accept="image/bmp" style="display: none;" onchange="previewImage(event)">
+        <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger depuis l'ordinateur</button>
+        <br>
+        <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+        <br>
+        <button type="button" class="convert-button" onclick="convertImage()">Convertir !</button>
+    </form>
+
+    <div class="info-container">
+        <div class="info-section">
+            <h2>Qu'est-ce que la conversion de BMP en TIFF ?</h2>
+            <p>La conversion de BMP en TIFF est le processus qui consiste à transformer des fichiers image du format BMP (Bitmap) au format TIFF (Tagged Image File Format). Les fichiers BMP sont de haute qualité mais peuvent être volumineux, tandis que les fichiers TIFF offrent une excellente qualité et sont largement utilisés dans les milieux professionnels, notamment pour l'impression et l'archivage. Notre outil simplifie cette conversion, vous permettant de profiter des avantages de ces deux formats en toute simplicité.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Pourquoi convertir BMP en TIFF ?</h2>
+            <p>La conversion des images BMP en TIFF présente plusieurs avantages :</p>
+            <ul>
+                <li><strong>Haute qualité :</strong> Les fichiers TIFF sont réputés pour leur qualité d'image supérieure, ce qui les rend idéaux pour l'impression et la photographie professionnelle.</li>
+                <li><strong>Plusieurs profondeurs de couleur :</strong> Le TIFF prend en charge diverses profondeurs de couleur, utile pour les images et graphiques détaillés.</li>
+                <li><strong>Compression sans perte :</strong> Les fichiers TIFF peuvent être compressés sans perte de qualité, les rendant appropriés pour l'archivage d'images.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Comment utiliser notre convertisseur de BMP en TIFF</h2>
+            <p>Notre outil de conversion BMP en TIFF est conçu pour être simple d'utilisation. Suivez ces étapes faciles :</p>
+            <ul>
+                <li>Cliquez sur le bouton "Télécharger un fichier BMP" pour sélectionner l'image BMP que vous souhaitez convertir.</li>
+                <li>Une fois l'image téléchargée, notre outil la convertira automatiquement au format TIFF.</li>
+                <li>Après la conversion, cliquez sur "Télécharger TIFF" pour enregistrer votre nouvelle image sur votre appareil.</li>
+            </ul>
+            <p>Notre outil prend en charge divers fichiers BMP, garantissant une expérience de conversion sans tracas à chaque fois.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Avantages d'utiliser notre convertisseur de BMP en TIFF</h2>
+            <p>Voici quelques avantages de notre outil de conversion :</p>
+            <ul>
+                <li><strong>Rapide et efficace :</strong> Convertissez vos images BMP en TIFF rapidement et facilement.</li>
+                <li><strong>Sans perte de qualité :</strong> Profitez d'images haute résolution grâce à notre processus de conversion sans perte.</li>
+                <li><strong>Gratuit et accessible :</strong> Utilisez notre convertisseur en ligne gratuitement, sans téléchargement ni installation nécessaires.</li>
+                <li><strong>Facile à utiliser :</strong> Conçu pour tous, notre interface intuitive rend la conversion d'images facile, quel que soit votre niveau de compétence technique.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Utilisations courantes de la conversion BMP en TIFF</h2>
+            <p>Il existe de nombreux scénarios où la conversion de BMP en TIFF est bénéfique :</p>
+            <ul>
+                <li><strong>Impression professionnelle :</strong> Utilisez des images TIFF pour des impressions de haute qualité nécessitant une précision des couleurs et une netteté accrues.</li>
+                <li><strong>Archivage :</strong> Conservez des images importantes au format TIFF pour une préservation à long terme sans perte de qualité.</li>
+                <li><strong>Conception graphique :</strong> Créez des graphiques et des illustrations détaillés pour des projets de design.</li>
+                <li><strong>Imagerie médicale :</strong> Le TIFF est souvent utilisé dans les applications médicales pour sa capacité à gérer des images volumineuses sans perte de détails.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Comment la conversion de BMP en TIFF améliore vos images</h2>
+            <p>Convertir vos images BMP en TIFF peut considérablement améliorer leur utilisabilité et leur qualité. Voici comment :</p>
+            <ul>
+                <li><strong>Qualité d'image supérieure :</strong> Les fichiers TIFF conservent davantage de détails, ce qui les rend idéaux pour un usage professionnel.</li>
+                <li><strong>Utilisation de fichiers polyvalente :</strong> Le format TIFF est accepté par la plupart des logiciels de retouche d'image, offrant une flexibilité dans vos projets.</li>
+                <li><strong>Meilleur archivage :</strong> La compression sans perte du TIFF en fait un choix privilégié pour la préservation d'images importantes sur le long terme.</li>
+            </ul>
+        </div>
+    </div>  
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}

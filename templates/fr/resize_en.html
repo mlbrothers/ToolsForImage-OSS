@@ -1,0 +1,271 @@
+{% extends "fr/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Redimensionnez vos images sans effort avec ToolsForImage. Ajustez les dimensions en pixels ou en pourcentages tout en maintenant ou en ignorant le rapport d'aspect.">
+{% endblock %}
+
+{% block title %}Redimensionner l'image en ligne | ToolsForImage | Outils en ligne gratuits et complets pour flouter les visages, convertir des images, éditer, redimensionner, supprimer l'arrière-plan, flouter l'arrière-plan et bien plus encore{% endblock %}
+
+{% block content %}
+<h1>Outil Gratuit de Redimensionnement d'Image</h1>
+<p>Redimensionnez votre image sans effort en spécifiant les dimensions en pixels ou en pourcentages. Vous pouvez choisir de maintenir ou d'ignorer le rapport d'aspect.</p>
+
+<form id="resize-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Télécharger l'Image</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Aperçu de l'Image" style="display: none;">
+    
+    <div class="resize-options">
+        <label>
+            <input type="radio" name="resizeType" value="pixel" checked onchange="updateDimensionLabels()"> Pixels
+        </label>
+        <label>
+            <input type="radio" name="resizeType" value="percentage" onchange="updateDimensionLabels()"> Pourcentage
+        </label>
+        <br><br>
+        <label for="width"><span id="widthLabel">Largeur (px):</span></label>
+        <input type="number" id="width" name="width" min="1" required>
+        <label for="height"><span id="heightLabel">Hauteur (px):</span></label>
+        <input type="number" id="height" name="height" min="1" required>
+        <br><br>
+        <label>
+            <input type="checkbox" id="lockRatio" checked> Verrouiller le ratio d'aspect
+        </label>
+    </div>
+    <br>
+    <button type="button" class="resize-button" onclick="resizeImage()">Redimensionner l'Image</button>
+</form>
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>Qu'est-ce que le Redimensionnement d'Image ?</h2>
+        <p>Le redimensionnement d'image est le processus de changement des dimensions d'une image. Vous pouvez ajuster la largeur et la hauteur selon vos besoins. Que vous prépariez des images pour un site web, les réseaux sociaux ou l'impression, le redimensionnement aide à garantir que vos images sont à leur meilleur.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Avantages du Redimensionnement d'Images</h2>
+        <p>Redimensionner des images peut améliorer considérablement les performances d'un site web. Des images plus petites se chargent plus rapidement, améliorant ainsi l'expérience utilisateur et maintenant les visiteurs engagés. Cela est particulièrement important pour les magasins en ligne, où des images lentes peuvent entraîner des ventes perdues. De plus, des images correctement dimensionnées aident à l'optimisation des moteurs de recherche (SEO), car les moteurs de recherche privilégient les pages à chargement rapide.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Quand Redimensionner les Images</h2>
+        <p>Redimensionnez les images avant de les télécharger sur votre site web ou sur les réseaux sociaux. Des images volumineuses peuvent ralentir les temps de chargement, donc ajuster leur taille aide à améliorer les performances. C'est également utile lorsque vous souhaitez créer des vignettes ou optimiser des images pour des appareils spécifiques.</p>
+    </div>
+</div>
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .resize-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        border-radius: 5px; /* Added border radius */
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 300px;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .resize-options {
+        margin-top: 20px;
+    }
+
+    .resize-options label {
+        margin-right: 10px;
+    }
+
+    .resize-options input[type="number"] {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .resize-options input[type="radio"],
+    .resize-options input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-around; /* Space between boxes */
+        flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+        margin: 20px auto; /* Center the container */
+    }
+
+    .info-section {
+        margin: 10px; /* Space around each box */
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        background-color: var(--light-background-color);
+        flex: 1 1 300px; /* Flex-grow and shrink, with a base width */
+        max-width: 30%; /* Limit the max width of each box */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+
+    p {
+        text-align: justify;
+        margin: 10px 20px;
+        line-height: 1.6;
+    }
+
+    form, h1, p {
+        text-align: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+</style>
+
+<script>
+    let originalWidth, originalHeight, aspectRatio;
+
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                const img = new Image();
+                img.onload = function() {
+                    originalWidth = img.width;
+                    originalHeight = img.height;
+                    aspectRatio = originalWidth / originalHeight;
+                    document.getElementById('width').value = originalWidth;
+                    document.getElementById('height').value = originalHeight;
+                }
+                img.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.getElementById('width').addEventListener('input', updateHeight);
+    document.getElementById('height').addEventListener('input', updateWidth);
+
+    function updateHeight() {
+        if (document.getElementById('lockRatio').checked) {
+            const width = document.getElementById('width').value;
+            document.getElementById('height').value = Math.round(width / aspectRatio);
+        }
+    }
+
+    function updateWidth() {
+        if (document.getElementById('lockRatio').checked) {
+            const height = document.getElementById('height').value;
+            document.getElementById('width').value = Math.round(height * aspectRatio);
+        }
+    }
+
+    function updateDimensionLabels() {
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthLabel = document.getElementById('widthLabel');
+        const heightLabel = document.getElementById('heightLabel');
+        
+        if (resizeType === 'pixel') {
+            widthLabel.textContent = 'Width (px):';
+            heightLabel.textContent = 'Height (px):';
+        } else {
+            widthLabel.textContent = 'Width (%):';
+            heightLabel.textContent = 'Height (%):';
+        }
+    }
+
+    function resizeImage() {
+        const imagePreview = document.getElementById('image-preview');
+        if (!imagePreview.src) {
+            alert('Please upload an image first.');
+            return;
+        }
+
+        const resizeType = document.querySelector('input[name="resizeType"]:checked').value;
+        const widthInput = document.getElementById('width').value;
+        const heightInput = document.getElementById('height').value;
+
+        let newWidth, newHeight;
+
+        if (resizeType === 'pixel') {
+            newWidth = parseInt(widthInput, 10);
+            newHeight = parseInt(heightInput, 10);
+        } else {
+            const widthPercentage = parseFloat(widthInput) / 100;
+            const heightPercentage = parseFloat(heightInput) / 100;
+            newWidth = Math.round(originalWidth * widthPercentage);
+            newHeight = Math.round(originalHeight * heightPercentage);
+        }
+
+        const canvas = document.createElement('canvas');
+        canvas.width = newWidth;
+        canvas.height = newHeight;
+        const ctx = canvas.getContext('2d');
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, newWidth, newHeight);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = canvas.toDataURL('image/png');
+            downloadLink.download = 'resized_image.png';
+            downloadLink.click();
+        }
+        img.src = imagePreview.src;
+    }
+</script>
+{% endblock %}

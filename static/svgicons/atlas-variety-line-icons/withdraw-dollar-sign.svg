@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<style>.cls-1,.cls-2{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}.cls-1{stroke-linecap:square;}</style>
+
+</defs>
+
+<g id="withdrawl_dollar" data-name="withdrawl dollar">
+
+<path class="cls-1" d="M10.09,16.77h2.39a1.43,1.43,0,0,0,1.43-1.43h0a1.43,1.43,0,0,0-1.43-1.43h-1a1.43,1.43,0,0,1-1.43-1.43h0a1.43,1.43,0,0,1,1.43-1.43h2.39"/>
+
+<line class="cls-1" x1="12" y1="9.14" x2="12" y2="11.05"/>
+
+<line class="cls-1" x1="12" y1="16.77" x2="12" y2="18.68"/>
+
+<polygon class="cls-1" points="22.5 1.5 22.5 11.04 17.73 11.04 17.73 6.27 6.27 6.27 6.27 11.04 1.5 11.04 1.5 1.5 22.5 1.5"/>
+
+<line class="cls-1" x1="6.27" y1="6.27" x2="17.73" y2="6.27"/>
+
+<rect class="cls-1" x="6.27" y="6.27" width="11.45" height="16.23"/>
+
+<line class="cls-2" x1="4.36" y1="6.27" x2="19.64" y2="6.27"/>
+
+</g>
+
+</svg>

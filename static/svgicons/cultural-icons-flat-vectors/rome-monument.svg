@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+<title> rome</title>
+
+<g id="_rome" data-name=" rome">
+
+<circle cx="38.5" cy="28.5" r="22.5" style="fill:#edebdc"/>
+
+<polygon points="31 35 46 35 46 40 56 40 60 53 31 53 31 35" style="fill:#e7d1c4;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M44.5,44h0A2.5,2.5,0,0,1,47,46.5v6.471a0,0,0,0,1,0,0H42a0,0,0,0,1,0,0V46.5A2.5,2.5,0,0,1,44.5,44Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M52.5,44h0A2.5,2.5,0,0,1,55,46.5v6.471a0,0,0,0,1,0,0H50a0,0,0,0,1,0,0V46.5A2.5,2.5,0,0,1,52.5,44Z" style="fill:#6b4f5b;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<polygon points="46 53 40 44 37 44 31 31 27 31 21 17 4 17 4 53 46 53" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="2" y="17" width="22" height="4" rx="2" ry="2" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="2" y="29" width="31" height="4" rx="2" ry="2" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="2" y="41" width="38" height="4" rx="2" ry="2" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<rect x="2" y="52.971" width="60" height="4.029" style="fill:#bf7e68;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M6,24H6a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H4a0,0,0,0,1,0,0V26A2,2,0,0,1,6,24Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13,24h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H11a0,0,0,0,1,0,0V26A2,2,0,0,1,13,24Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20,24h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H18a0,0,0,0,1,0,0V26A2,2,0,0,1,20,24Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M6,36H6a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H4a0,0,0,0,1,0,0V38A2,2,0,0,1,6,36Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13,36h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H11a0,0,0,0,1,0,0V38A2,2,0,0,1,13,36Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20,36h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H18a0,0,0,0,1,0,0V38A2,2,0,0,1,20,36Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27,36h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H25a0,0,0,0,1,0,0V38A2,2,0,0,1,27,36Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M6,48H6a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H4a0,0,0,0,1,0,0V50A2,2,0,0,1,6,48Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M13,48h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H11a0,0,0,0,1,0,0V50A2,2,0,0,1,13,48Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M20,48h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H18a0,0,0,0,1,0,0V50A2,2,0,0,1,20,48Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M27,48h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H25a0,0,0,0,1,0,0V50A2,2,0,0,1,27,48Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+<path d="M34,48h0a2,2,0,0,1,2,2v3a0,0,0,0,1,0,0H32a0,0,0,0,1,0,0V50A2,2,0,0,1,34,48Z" style="fill:#edebdc;stroke:#4c241d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+
+</g>
+
+</svg>

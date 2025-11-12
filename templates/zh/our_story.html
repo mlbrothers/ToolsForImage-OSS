@@ -1,0 +1,152 @@
+{% extends "zh/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="探索ToolsForImage的历程 - 从一个简单的想法到一套全面的免费在线图像编辑工具。了解我们的使命、价值观，以及我们致力于提供可访问的图像处理解决方案。">
+{% endblock %}
+
+{% block title %}我们的故事 | ToolsForImage | 全面的免费在线工具：模糊人脸、图像转换、编辑、调整大小、移除背景、模糊背景等{% endblock %}
+
+{% block content %}
+<h1>我们的故事</h1>
+<p>欢迎来到ToolsForImage的故事，这是一段从一个简单的想法开始，发展成一套全面的免费在线图像编辑工具的旅程。</p>
+
+<h2>起点</h2>
+<p>ToolsForImage诞生于对可访问且易于使用的图像编辑工具的需求。我们的创始人——一群充满热情的开发者和设计师——意识到，随着数字时代的发展，对快速高效的图像处理解决方案的需求日益增长。</p>
+
+<h2>我们的使命</h2>
+<p>从一开始，我们的使命就非常明确：让每个人，无论其技术水平或预算如何，都能访问到专业级别的图像编辑工具。我们相信，强大的图像工具应当对所有人开放，从专业摄影师到普通社交媒体用户。</p>
+
+<h2>成长与演变</h2>
+<p>最初的图像压缩工具，现已发展为一个全面的平台，提供各种服务。今天，ToolsForImage提供图像压缩、调整大小、格式转换、旋转、水印等多种解决方案。</p>
+
+<h2>我们的价值观</h2>
+<p>在我们的旅程中，我们始终坚持以下核心价值观：</p>
+<ul>
+    <li>可访问性：保持工具免费且易于使用</li>
+    <li>质量：提供专业级的结果</li>
+    <li>隐私：尊重用户数据并保持安全</li>
+    <li>创新：不断改进和扩展我们的服务</li>
+</ul>
+
+<h2>展望未来</h2>
+<p>随着我们的不断发展，我们对ToolsForImage的未来充满期待。我们一直在努力开发新功能并不断改进，始终以用户需求为中心。从提升现有工具到开发尖端的图像处理技术，我们致力于保持在线图像编辑的领先地位。</p>
+
+<h2>加入我们的旅程</h2>
+<p>我们邀请您成为我们故事的一部分。无论是为了更快的网页加载压缩图像，还是为社交媒体调整大小，或是在您的作品中应用创意效果，ToolsForImage都在这里支持您的图像编辑需求。</p>
+
+<p>感谢您选择ToolsForImage。我们很高兴继续与您共同踏上这段旅程，让图像编辑变得更加可访问、高效和愉快。</p>
+
+<style>
+    main {
+        max-width: 800px;
+        margin: 10px auto 10px auto;
+        padding: 20px; /* Added padding for better spacing */
+        background-color: var(--box-color); /* Consistent background color */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border: var(--background-color) 3px solid; /* Consistent border */
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em; /* Slightly larger font size for section headings */
+        font-weight: 600;
+        margin-bottom: 1em; /* Spacing below section headings */
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6; /* Improved readability */
+        margin-bottom: 1.5em; /* Spacing between paragraphs */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px; /* Indent bullet points */
+        margin-bottom: 2em; /* Spacing after the list */
+    }
+
+    ul li {
+        margin-bottom: 0.75em; /* Spacing between list items */
+        font-size: 16px; /* Matching paragraph font size */
+        color: var(--text-color); /* Consistent text color */
+    }
+
+    a {
+        color: var(--secondary-color); /* Link color matching theme */
+        text-decoration: none;
+        font-weight: 700; /* Bold links for emphasis */
+    }
+
+    a:hover {
+        color: var(--box-hover-text-color); /* Hover effect on links */
+    }
+
+    .tool-name {
+        font-weight: bold;
+    }
+
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .tools-list li {
+        background-color: var(--box-color);
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        display: flex;
+        border: var(--background-color) 3px solid;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tools-list li:hover {
+        border: var(--link-hover-color) 3px solid;
+    }
+
+    .tools-list a {
+        display: block;
+        padding: 15px;
+        background-color: var(--box-color);
+        color: var(--link-color);
+        text-decoration: none;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            padding: 15px; /* Adjust padding for smaller screens */
+        }
+
+        h1 {
+            font-size: 1.8em; /* Reduce font size for mobile */
+        }
+
+        h2 {
+            font-size: 1.2em; /* Reduce section heading size */
+        }
+
+        p, ul li {
+            font-size: 15px; /* Adjust text size for mobile */
+        }
+    }
+</style>
+
+{% endblock %}

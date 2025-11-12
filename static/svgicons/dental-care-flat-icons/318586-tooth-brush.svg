@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#5EA7FF" d="M0,51 C0,49.3431458 1.33673096,48 3.00101185,48 L64,48 L64,54 L3.00101185,54 C1.34359877,54 0,52.6534829 0,51 L0,51 Z"/>
+    <rect width="3" height="23" x="3" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="6" y="25" fill="#979797"/>
+    <rect width="3" height="23" x="9" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="12" y="25" fill="#979797"/>
+    <rect width="3" height="23" x="15" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="18" y="25" fill="#979797"/>
+    <rect width="3" height="23" x="21" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="24" y="25" fill="#979797"/>
+    <rect width="3" height="23" x="27" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="30" y="25" fill="#979797"/>
+    <rect width="3" height="23" x="33" y="25" fill="#D8D8D8"/>
+    <rect width="3" height="23" x="36" y="25" fill="#979797"/>
+    <path fill="#FF78C7" d="M3,16.009763 C3,13.795232 4.7852456,12 6.99017859,12 L39,12 L39,17.990237 C39,20.204768 37.2147544,22 35.0098214,22 L3,22 L3,16.009763 Z"/>
+  </g>
+</svg>

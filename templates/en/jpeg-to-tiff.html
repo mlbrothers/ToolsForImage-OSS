@@ -1,0 +1,197 @@
+{% extends "en/base.html" %}
+
+{% block meta_description %}
+<meta name="description" content="Easily convert JPEG to TIFF images with ToolsForImage. Free, fast, and secure online JPEG to TIFF converter for high-quality image transformations.">
+{% endblock %}
+
+{% block title %}Online JPEG to TIFF converter | ToolsForImage | Free Online Image converter{% endblock %}
+
+{% block content %}
+<h1>Free Online JPEG to TIFF Converter</h1>
+<p>Easily convert your images from JPEG to TIFF format. Upload a JPEG image and we'll convert it to TIFF for you.</p>
+<form id="conversion-form" method="post" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="image" accept="image/JPEG" style="display: none;" onchange="previewImage(event)">
+    <button type="button" class="upload-button" onclick="document.getElementById('image-upload').click();">Upload from Computer</button>
+    <br>
+    <img id="image-preview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
+    <br>
+    <button type="button" class="convert-button" onclick="convertImage()">Convert!</button>
+</form>
+
+
+<div class="info-container">
+    <div class="info-section">
+        <h2>What is JPEG to TIFF Conversion?</h2>
+        <p>JPEG to TIFF conversion is the process of changing image files from JPEG (Joint Photographic Experts Group) format to TIFF (Tagged Image File Format). This conversion is important for users who need high-quality images for printing or archiving. Our tool makes it easy to convert JPEG images to TIFF with just a few clicks.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Why Convert JPEG to TIFF?</h2>
+        <p>There are several reasons to convert JPEG images to TIFF:</p>
+        <ul>
+            <li><strong>High Quality:</strong> TIFF files retain more image detail and are ideal for professional printing and editing.</li>
+            <li><strong>Support for Layers:</strong> TIFF format can store multiple layers and channels, making it useful for graphic design and photography work.</li>
+            <li><strong>No Loss of Quality:</strong> Unlike JPEG, which uses lossy compression, TIFF files preserve the original image quality.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How to Use Our JPEG to TIFF Converter</h2>
+        <p>Using our JPEG to TIFF conversion tool is simple and user-friendly. Here’s how it works:</p>
+        <ul>
+            <li>Click the "Upload JPEG File" button to choose the JPEG image you want to convert.</li>
+            <li>Once the image is uploaded, our tool will automatically convert it to TIFF format.</li>
+            <li>After the conversion is complete, click "Download TIFF" to save your new image to your device.</li>
+        </ul>
+        <p>Our converter supports a variety of JPEG files, ensuring a smooth conversion process every time.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Benefits of Using Our JPEG to TIFF Converter</h2>
+        <p>Here are some advantages of using our conversion tool:</p>
+        <ul>
+            <li><strong>Fast and Easy:</strong> Convert your JPEG images to TIFF in just a few clicks, without any complicated steps.</li>
+            <li><strong>No Loss of Quality:</strong> Enjoy high-quality images with our lossless conversion feature, ensuring your images look their best.</li>
+            <li><strong>Free and Accessible:</strong> Use our online converter for free, with no downloads or installations required.</li>
+            <li><strong>User-Friendly Interface:</strong> Designed for everyone, our tool is easy to navigate, regardless of your technical skills.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Common Uses for JPEG to TIFF Conversion</h2>
+        <p>Here are a few situations where converting JPEG to TIFF can be beneficial:</p>
+        <ul>
+            <li><strong>Professional Printing:</strong> Use TIFF files for high-quality prints that require fine detail and clarity.</li>
+            <li><strong>Graphic Design:</strong> Convert images for design projects that involve layers and high-resolution images.</li>
+            <li><strong>Archiving:</strong> TIFF is a preferred format for archiving images due to its high quality and support for multiple channels.</li>
+            <li><strong>Photography:</strong> Photographers often convert JPEGs to TIFF to maintain the quality of their images for editing.</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>How Converting JPEG to TIFF Can Improve Your Images</h2>
+        <p>Converting your JPEG images to TIFF can greatly enhance their quality and usability. Here’s how:</p>
+        <ul>
+            <li><strong>Enhanced Detail:</strong> TIFF files retain more image information, resulting in clearer and more detailed images.</li>
+            <li><strong>Better Editing Flexibility:</strong> The ability to support layers allows for more advanced editing capabilities in graphic design.</li>
+            <li><strong>Long-Term Storage:</strong> TIFF format is ideal for long-term image storage, ensuring your photos remain in top quality for years.</li>
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    h1 {
+        color: var(--secondary-color);
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .upload-button {
+        background-color: var(--link-hover-color);
+        color: var(--background-color);
+        padding: 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
+
+    .upload-button:hover {
+        transform: scale(1.1);
+    }
+
+    .convert-button {
+        background-color: var(--background-color);
+        color: var(--box-hover-color);
+        border: 2px solid var(--box-hover-color);
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.3s;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 300px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    li {
+        line-height: 1.6;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function validateImageSelection() {
+        const imageUpload = document.getElementById('image-upload');
+        if (!imageUpload.value) {
+            alert('Please select an image to upload.');
+            return false;
+        }
+        return true;
+    }
+
+    function previewImage(event) {
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function convertImage() {
+        const fileInput = document.getElementById('image-upload');
+        const outputFormat = 'tiff';
+
+        if (!fileInput.files || fileInput.files.length === 0) {
+            alert('Please select an image to upload.');
+            return;
+        }
+
+        const file = fileInput.files[0];
+        const mimeType = `image/${outputFormat}`;
+
+        try {
+            const convertedBlob = await imageConversion.compress(file, {
+                type: mimeType,
+                quality: 0.95 // Adjust quality as needed
+            });
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(convertedBlob);
+            downloadLink.download = `converted_image.${outputFormat}`;
+            downloadLink.click();
+        } catch (error) {
+            console.error('Error converting image:', error);
+            alert('An error occurred while converting the image.');
+        }
+    }
+</script>
+
+{% endblock %}
