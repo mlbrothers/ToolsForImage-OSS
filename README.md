@@ -1,5 +1,7 @@
 # ToolsForImage
 
+> **Note:** A hosted version of this tool is available for free (and ad-free) at [https://toolsforimage.com/](https://toolsforimage.com/)
+
 A multilingual web application that provides a suite of image processing tools. Built with Flask and Python, this application offers various image manipulation capabilities through an intuitive web interface.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
